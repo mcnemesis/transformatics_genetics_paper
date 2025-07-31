@@ -44,14 +44,6 @@ Joseph~Willrich Lutalo.
 \newblock {\em Academia.edu.}, 2025.
 \newblock \url{https://doi.org/10.6084/m9.figshare.29505824.v3}.
 
-\bibitem{geeksforgeeks_dna_2025}
-GeeksforGeeks~Biology Team.
-\newblock Diagram of dna structure.
-\newblock
-  \url{https://www.geeksforgeeks.org/biology/diagram-of-dna-structure/}, 2025.
-\newblock Accessed July 29, 2025. Provides a labelled diagram of DNA showing
-  the double helix, base pairs, and backbone.
-
 \bibitem{venville2006analogies}
 Grady Venville and Jenny Donovan.
 \newblock Analogies for life: a subjective view of analogies and metaphors used
@@ -123,7 +115,7 @@ Microsoft Copilot.
 Joseph~Willrich Lutalo.
 \newblock Concerning a special summation that preserves the base-10 orthogonal
   symbol set identity in both addends and the sum.
-\newblock 2025.
+\newblock {\em Academia}, 2025.
 \newblock \textit{Accessible via}
   \url{https://www.academia.edu/download/122499576/The_Symbol_Set_Identity_paper_Joseph_Willrich_Lutalo_25APR2025.pdf}.
 
@@ -134,9 +126,9 @@ Regina Bailey.
 \newblock Accessed July 2025. Explains RNA nucleotide composition and codon
   structure.
 
-\bibitem{RefSeq_INS_NM_000207_2}
+\bibitem{RefSeq}
 National~Center for Biotechnology Information~(NCBI).
-\newblock Refseq: Ins homo sapiens insulin [nm_000207.2].
+\newblock Refseq: Ins homo sapiens insulin [nm\_000207.2].
 \newblock
   \url{https://databases.lovd.nl/shared/refseq/INS_NM_000207.2_codingDNA.html},
   2020.
@@ -213,7 +205,7 @@ Joseph~Willrich Lutalo.
 \bibitem{jwlzha}
 Joseph~Willrich Lutalo.
 \newblock Introducing zha, a real q-agi.
-\newblock 2025.
+\newblock {\em FigShare}, 2025.
 \newblock \textit{Accessible via}
   \url{https://doi.org/10.6084/M9.FIGSHARE.29049794}.
 
@@ -221,7 +213,7 @@ Joseph~Willrich Lutalo.
 Joseph~Willrich Lutalo.
 \newblock Unraveling mysteries of the zha q-agi chatbot: an interview by icc,
   of fut. prof. jwl and m*a*p ade. psymaz of nuchwezi.
-\newblock 2025.
+\newblock {\em FigShare}, 2025.
 \newblock \textit{Accessible via}
   \url{https://doi.org/10.6084/M9.FIGSHARE.29064671}.
 
