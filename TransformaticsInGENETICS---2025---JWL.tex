@@ -426,6 +426,7 @@ $\Theta_4 \xrightarrow{O_{snss-gen-RNA}(\cdot)} \langle A, C, G \rangle \subset 
 And thus, we have the peculiar case in which a nucleic acid sequence can both be a legitimate DNA or RNA sequence! However, such a truly peculiar sequence it is! Because, given the START-codon symbol set, $\psi_{na-START}$, a sequence of all the ``start" kind codons whether of DNA or RNA type, is defined as such from all we currently know:
 
 \begin{defn}[The \textbf{Nucleic Acid START-codons}]
+\label{DEFSTARTCOD}
 For any known organism, prokaryote or eukaryote, the only legitimate and known codons of the START-kind are any of the codons or START 3-grams in the unordered sequence $\psi_{na-START}$, the \textbf{nucleic acid START-codon symbol set}.\\
 
 \begin{equation}
@@ -441,13 +442,34 @@ One interesting consequence of that definition is the following law:
 \begin{law}[\textbf{Non-Coding Gene Programs}]
 If any gene-program $\Theta_{na}$ is processed by a ribosome, and yet it has the property:\\
 
- $\psi_{DNA}(\Theta_na) \cap \psi_{na-START} = \emptyset \quad \lor \quad \psi_{RNA}(\Theta_na) \cap \psi_{na-START} = \emptyset$
+ $\psi_{DNA}(\Theta_na) \cap \psi_{na-START} = \emptyset \quad \lor \quad \psi_{RNA}(\Theta_na) \cap \psi_{na-START} = \emptyset$\\
  
 It implies that $\Theta_{na}$ shall never be executed by the ribosome, and neither shall it ever result in any new protein or new amino-acid product within the containing cell system\footnote{Refer to ribosome definition for details: \textbf{Definition \ref{DEFRIBOSOME}}}.
 \end{law}
 
 
-So, that, if say a nucleic acid program for producing some protein via some gene program $\Theta_{na}$ were to be processed by an ideal ribosome processor (see \textbf{Definition \ref{DEFRIBOSOME}}), the ribosome would never return --- or, equivalently, there is no guarantee that
+So, that, if say a nucleic acid program for producing some protein via some gene program $\Theta_{na}$ were to be processed by an ideal ribosome processor (see \textbf{Definition \ref{DEFRIBOSOME}}), the ribosome would never return --- or, equivalently, there is no guarantee that any products --- neither amino-acid, nor completed/new protein, shall be synthesized by the ribosome.
+
+Of course, it's very likely that such gene sequences exist, and there might be nothing wrong with them being natural too. However, we shall want to learn more about this from the domain experts in the future.
+
+That said, another, closely related case is that of the consequences of the STOP-codons or rather, the STOP-codon symbol set, $\psi_{na-STOP}$ defined as such:
+
+
+\begin{defn}[The \textbf{Nucleic Acid STOP-codons}]
+\label{DEFSTOPCOD}
+For any known organism, prokaryote or eukaryote, the only legitimate and known codons of the STOP-kind are any of the codons or STOP 3-grams in the unordered sequence $\psi_{na-STOP}$, the \textbf{nucleic acid STOP-codon symbol set}.\\
+
+\begin{equation}
+\label{EQNNASSSTOP}
+\psi_{na-STOP} = \{TAA,UAA,TAG,UAG,TGA,UGA\}
+\end{equation}\\
+\end{defn} 
+
+Among important consequences of \textbf{Definition \ref{DEFSTOPCOD}}, is that, if say a nucleic acid program for producing some protein via some gene program $\Theta_{na}$ were to ever be processed by an ideal ribosome (see \textbf{Definition \ref{DEFRIBOSOME}}), the ribosome might produce something --- some amino-acids for example, but would never return --- equivalently, there is no guarantee that any protein would be released by the protein manufacturing process/ribosome, no matter what or how many any amino-acid productions and translate instructions the gene program contains and which have been executed by the ribosome. As long as the gene-program doesn't contain any one of the members of $\psi_{na-STOP}$ that is.
+
+It is not immediately clear what the plausibility of such an \textit{evil gene-program} existing out there in nature might be, but given normal genes sometimes mutate\cite{gregory1987oxford}, it can't be ruled out that such awkward programs might exist. Though we won't dive into that here, who knows... from a computer security perspective, such a program might cause system errors or faults such as a System-Out-Of-Resources problem given the ribosome might attempt to produce an infinite length amino-acid, or perhaps that the cell's protein manufacturing closure might run out of space, or that the processor might end up hanging since the factory never is able to reach any of WAIT, DETACH or RESET states --- see \textbf{The Ribosome State Machine} in \textbf{Figure \ref{FIG4}} but also refer to the Protein Synthesis Process in \textbf{Figure \ref{FIG3}} to clearly, logically appreciate these kinds of problems and/or corner-case scenarios. 
+
+That said, in case a normally correct gene-program such as what we saw in $\psi_{insulin}$ is altered with --- perhaps by a natural mutation, or perhaps a virus, or even in a totally malicious feat of gene-manipulation medicine, and such a transformation results in a nucleic-acid sequence satisfying any of the above queer cases, who knows, but it might as well be the root case of some difficult flaw in the organism --- an incurable and fatal disease (if the faulty gene-program is crucial for normal life support and that it has no alternatives or simple way to be solved), and these might the kinds of hard problems that might require not just medical doctors, biologists or perhaps genetists to tackle, but also people like computer hackers, information-security experts and software debuggers!
 
 
 \section{The Modal Sequence Statistic as a Generic Genetic Code --- A Case of Bio-Automata}
@@ -1174,8 +1196,22 @@ If any gene-program $\Theta_{na}$ is processed by a ribosome, and yet it has the
 It implies that $\Theta_{na}$ shall never be executed by the ribosome, and neither shall it ever result in any new protein or new amino-acid product within the containing cell system\footnote{Refer to ribosome definition for details: \textbf{Definition \ref{DEFRIBOSOME}}}.
 \end{law}
 
+In a somewhat related scenario --- where, a gene program is presented to a ribosome, but which contains none of the STOP-codons in $\psi_{na-STOP}$ defined below:
 
-So, that, if say a nucleic acid program for producing some protein via some gene program $\Theta_{na}$ were to be processed by an ideal ribosome processor (see \textbf{Definition \ref{DEFRIBOSOME}}), the ribosome would never return --- or, equivalently, there is no guarantee that
+\begin{defn}[The \textbf{Nucleic Acid STOP-codons}]
+\label{DEFNASTOP}
+For any known organism, prokaryote or eukaryote, the only legitimate and known codons of the STOP-kind are any of the codons or STOP 3-grams in the unordered sequence $\psi_{na-STOP}$, the \textbf{nucleic acid STOP-codon symbol set}.\\
+
+\begin{equation}
+\label{EQNNASSSTOP}
+\psi_{na-STOP} = \{TAA,UAA,TAG,UAG,TGA,UGA\}
+\end{equation}\\
+\end{defn} 
+
+
+The consequences of \textbf{Definition \ref{DEFNASTOP}} are such that, if say a nucleic acid program for producing some protein via some gene program $\Theta_{na}$ were to be processed by an ideal ribosome (see \textbf{Definition \ref{DEFRIBOSOME}}), the ribosome would return --- or, equivalently, there is no guarantee that any protein would be output or returned by the protein generator even though it might be possible that the process of producing the amino-acids chain from which a protein could have been based did get initiated. This, because, by the ribosome operation process, it can not exit or terminate the protein synthesis task or program unless it has encountered or processed any one of the members of $\psi_{na-STOP}$. 
+
+It is not clear if any such programs might exist in nature, or rather naturally, however, in case they do, perhaps, for lack of a better idea what could happen to the organism or cell executing such a program, however, one might perhaps \textit{correctly} guess that such a \textit{evil gene program} might leave the system out of resources, cause it to trigger an error or fault response, or perhaps --- and this just a joke since we might need to conduct actual tests of such problems in a more controlled, laboratory setting in the future, or perhaps consult an authority on the matter --- leave the organism in an DOS/Denial-of-Service or MALFUNCTION State!
 
 
 \section{The Modal Sequence Statistic as a Generic Genetic Code --- A Case of Bio-Automata}
