@@ -1,0 +1,2363 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  31 JUL 2025 20:16
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./TransformaticsInGENETICS---2025---JWL.tex
+(TransformaticsInGENETICS---2025---JWL.tex
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-07-20>
+(C:\Program Files\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
+(C:\Program Files\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count199
+\c@figure=\count266
+\c@table=\count267
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count268
+\Gm@cntv=\count269
+\c@Gm@tempcnt=\count270
+\Gm@bindingoffset=\dimen142
+\Gm@wd@mp=\dimen143
+\Gm@odd@mp=\dimen144
+\Gm@even@mp=\dimen145
+\Gm@layoutwidth=\dimen146
+\Gm@layoutheight=\dimen147
+\Gm@layouthoffset=\dimen148
+\Gm@layoutvoffset=\dimen149
+\Gm@dimlist=\toks18
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Program Files\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip51
+\f@nch@offset@elh=\skip52
+\f@nch@offset@erh=\skip53
+\f@nch@offset@olh=\skip54
+\f@nch@offset@orh=\skip55
+\f@nch@offset@elf=\skip56
+\f@nch@offset@erf=\skip57
+\f@nch@offset@olf=\skip58
+\f@nch@offset@orf=\skip59
+\f@nch@height=\skip60
+\f@nch@footalignment=\skip61
+\f@nch@widthL=\skip62
+\f@nch@widthC=\skip63
+\f@nch@widthR=\skip64
+\@temptokenb=\toks19
+)
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen152
+\captionmargin=\dimen153
+\caption@leftmargin=\dimen154
+\caption@rightmargin=\dimen155
+\caption@width=\dimen156
+\caption@indent=\dimen157
+\caption@parindent=\dimen158
+\caption@hangindent=\dimen159
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count271
+\c@continuedfloat=\count272
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count273
+\float@exts=\toks20
+\float@box=\box52
+\@float@everytoks=\toks21
+\@floatcapt=\box53
+)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2024-07-10 v7.01j Hypertext links for LaTeX
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestring
+.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count274
+) (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count275
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen160
+\Hy@linkcounter=\count276
+\Hy@pagecounter=\count277
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2024-07-10 v7.01j Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count278
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2024-07-10 v7.01j Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count279
+
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen161
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count280
+\Field@Width=\dimen162
+\Fld@charsize=\dimen163
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count281
+\c@Item=\count282
+\c@Hfootnote=\count283
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2024-07-10 v7.01j Hyperref driver for pdfTeX
+
+(C:\Program Files\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count284
+\c@bookmark@seq@number=\count285
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.s
+ty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.s
+ty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip65
+) (C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty
+Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
+\col@sep=\dimen164
+\ar@mcellbox=\box54
+\extrarowheight=\dimen165
+\NC@list=\toks22
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box55
+)
+\TX@col@width=\dimen166
+\TX@old@table=\dimen167
+\TX@old@col=\dimen168
+\TX@target=\dimen169
+\TX@delta=\dimen170
+\TX@cols=\count286
+\TX@ftn=\toks23
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2024-04-26 v4.20 Multi-page Table package (DPC)
+\LTleft=\skip68
+\LTright=\skip69
+\LTpre=\skip70
+\LTpost=\skip71
+\LTchunksize=\count287
+\LTcapwidth=\dimen171
+\LT@head=\box56
+\LT@firsthead=\box57
+\LT@foot=\box58
+\LT@lastfoot=\box59
+\LT@gbox=\box60
+\LT@cols=\count288
+\LT@rows=\count289
+\c@LT@tables=\count290
+\c@LT@chunks=\count291
+\LT@p@ftn=\toks24
+)
+(C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count292
+\lst@gtempboxa=\box61
+\lst@token=\toks25
+\lst@length=\count293
+\lst@currlwidth=\dimen172
+\lst@column=\count294
+\lst@pos=\count295
+\lst@lostspace=\dimen173
+\lst@width=\dimen174
+\lst@newlines=\count296
+\lst@lineno=\count297
+\lst@maxwidth=\dimen175
+
+(C:\Program Files\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2024/05/25 1.10b (Carsten Heinz)
+)
+(C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
+\c@lstnumber=\count298
+\lst@skipnumbers=\count299
+\lst@framebox=\box62
+)
+(C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2024/05/25 1.10b listings configuration
+))
+Package: listings 2024/05/25 1.10b (Carsten Heinz)
+
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2024/05/23 v2.17q AMS math features
+\@mathmargin=\skip72
+
+For additional information on amsmath, use the `?' option.
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks26
+\ex@=\dimen176
+))
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen177
+)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count300
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count301
+\leftroot@=\count302
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count303
+\DOTSCASE@=\count304
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box63
+\strutbox@=\box64
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen178
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count305
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count306
+\dotsspace@=\muskip18
+\c@parentequation=\count307
+\dspbrk@lvl=\count308
+\tag@help=\toks27
+\row@=\count309
+\column@=\count310
+\maxfields@=\count311
+\andhelp@=\toks28
+\eqnshift@=\dimen179
+\alignsep@=\dimen180
+\tagshift@=\dimen181
+\tagwidth@=\dimen182
+\totwidth@=\dimen183
+\lineht@=\dimen184
+\@envbody=\toks29
+\multlinegap=\skip73
+\multlinetaggap=\skip74
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks31
+\thm@bodyfont=\toks32
+\thm@headfont=\toks33
+\thm@notefont=\toks34
+\thm@headpunct=\toks35
+\thm@preskip=\skip75
+\thm@postskip=\skip76
+\thm@headsep=\skip77
+\dth@everypar=\toks36
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/textgreek\textgreek.sty
+Package: textgreek 2011/10/09 v0.7 Greek symbols in text
+Package textgreek Info: Loading the definitions for the Greek fontencoding. on 
+input line 39.
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/greek-fontenc\lgrenc.def
+File: lgrenc.def 2023-09-12 2.5 LGR Greek font encoding definitions
+Now handling font encoding LGR ...
+... processing UTF-8 mapping file for font encoding LGR
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/greek-inputenc\lgrenc.dfu
+File: lgrenc.dfu 2023-03-21 1.9 UTF-8 support for Greek
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0259 (decimal 601)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+0374 (decimal 884)
+   defining Unicode char U+0375 (decimal 885)
+   defining Unicode char U+037A (decimal 890)
+   defining Unicode char U+037E (decimal 894)
+   defining Unicode char U+0384 (decimal 900)
+   defining Unicode char U+0385 (decimal 901)
+   defining Unicode char U+0386 (decimal 902)
+   defining Unicode char U+0387 (decimal 903)
+   defining Unicode char U+0388 (decimal 904)
+   defining Unicode char U+0389 (decimal 905)
+   defining Unicode char U+038A (decimal 906)
+   defining Unicode char U+038C (decimal 908)
+   defining Unicode char U+038E (decimal 910)
+   defining Unicode char U+038F (decimal 911)
+   defining Unicode char U+0390 (decimal 912)
+   defining Unicode char U+0391 (decimal 913)
+   defining Unicode char U+0392 (decimal 914)
+   defining Unicode char U+0393 (decimal 915)
+   defining Unicode char U+0394 (decimal 916)
+   defining Unicode char U+0395 (decimal 917)
+   defining Unicode char U+0396 (decimal 918)
+   defining Unicode char U+0397 (decimal 919)
+   defining Unicode char U+0398 (decimal 920)
+   defining Unicode char U+0399 (decimal 921)
+   defining Unicode char U+039A (decimal 922)
+   defining Unicode char U+039B (decimal 923)
+   defining Unicode char U+039C (decimal 924)
+   defining Unicode char U+039D (decimal 925)
+   defining Unicode char U+039E (decimal 926)
+   defining Unicode char U+039F (decimal 927)
+   defining Unicode char U+03A0 (decimal 928)
+   defining Unicode char U+03A1 (decimal 929)
+   defining Unicode char U+03A3 (decimal 931)
+   defining Unicode char U+03A4 (decimal 932)
+   defining Unicode char U+03A5 (decimal 933)
+   defining Unicode char U+03A6 (decimal 934)
+   defining Unicode char U+03A7 (decimal 935)
+   defining Unicode char U+03A8 (decimal 936)
+   defining Unicode char U+03A9 (decimal 937)
+   defining Unicode char U+03AA (decimal 938)
+   defining Unicode char U+03AB (decimal 939)
+   defining Unicode char U+03AC (decimal 940)
+   defining Unicode char U+03AD (decimal 941)
+   defining Unicode char U+03AE (decimal 942)
+   defining Unicode char U+03AF (decimal 943)
+   defining Unicode char U+03B0 (decimal 944)
+   defining Unicode char U+03B1 (decimal 945)
+   defining Unicode char U+03B2 (decimal 946)
+   defining Unicode char U+03B3 (decimal 947)
+   defining Unicode char U+03B4 (decimal 948)
+   defining Unicode char U+03B5 (decimal 949)
+   defining Unicode char U+03B6 (decimal 950)
+   defining Unicode char U+03B7 (decimal 951)
+   defining Unicode char U+03B8 (decimal 952)
+   defining Unicode char U+03B9 (decimal 953)
+   defining Unicode char U+03BA (decimal 954)
+   defining Unicode char U+03BB (decimal 955)
+   defining Unicode char U+03BC (decimal 956)
+   defining Unicode char U+03BD (decimal 957)
+   defining Unicode char U+03BE (decimal 958)
+   defining Unicode char U+03BF (decimal 959)
+   defining Unicode char U+03C0 (decimal 960)
+   defining Unicode char U+03C1 (decimal 961)
+   defining Unicode char U+03C2 (decimal 962)
+   defining Unicode char U+03C3 (decimal 963)
+   defining Unicode char U+03C4 (decimal 964)
+   defining Unicode char U+03C5 (decimal 965)
+   defining Unicode char U+03C6 (decimal 966)
+   defining Unicode char U+03C7 (decimal 967)
+   defining Unicode char U+03C8 (decimal 968)
+   defining Unicode char U+03C9 (decimal 969)
+   defining Unicode char U+03CA (decimal 970)
+   defining Unicode char U+03CB (decimal 971)
+   defining Unicode char U+03CC (decimal 972)
+   defining Unicode char U+03CD (decimal 973)
+   defining Unicode char U+03CE (decimal 974)
+   defining Unicode char U+03D0 (decimal 976)
+   defining Unicode char U+03D1 (decimal 977)
+   defining Unicode char U+03D5 (decimal 981)
+   defining Unicode char U+03D6 (decimal 982)
+   defining Unicode char U+03D8 (decimal 984)
+   defining Unicode char U+03D9 (decimal 985)
+   defining Unicode char U+03DA (decimal 986)
+   defining Unicode char U+03DB (decimal 987)
+   defining Unicode char U+03DC (decimal 988)
+   defining Unicode char U+03DD (decimal 989)
+   defining Unicode char U+03DE (decimal 990)
+   defining Unicode char U+03DF (decimal 991)
+   defining Unicode char U+03E0 (decimal 992)
+   defining Unicode char U+03E1 (decimal 993)
+   defining Unicode char U+03F0 (decimal 1008)
+   defining Unicode char U+03F1 (decimal 1009)
+   defining Unicode char U+03F4 (decimal 1012)
+   defining Unicode char U+03F5 (decimal 1013)
+   defining Unicode char U+1F00 (decimal 7936)
+   defining Unicode char U+1F01 (decimal 7937)
+   defining Unicode char U+1F02 (decimal 7938)
+   defining Unicode char U+1F03 (decimal 7939)
+   defining Unicode char U+1F04 (decimal 7940)
+   defining Unicode char U+1F05 (decimal 7941)
+   defining Unicode char U+1F06 (decimal 7942)
+   defining Unicode char U+1F07 (decimal 7943)
+   defining Unicode char U+1F08 (decimal 7944)
+   defining Unicode char U+1F09 (decimal 7945)
+   defining Unicode char U+1F0A (decimal 7946)
+   defining Unicode char U+1F0B (decimal 7947)
+   defining Unicode char U+1F0C (decimal 7948)
+   defining Unicode char U+1F0D (decimal 7949)
+   defining Unicode char U+1F0E (decimal 7950)
+   defining Unicode char U+1F0F (decimal 7951)
+   defining Unicode char U+1F10 (decimal 7952)
+   defining Unicode char U+1F11 (decimal 7953)
+   defining Unicode char U+1F12 (decimal 7954)
+   defining Unicode char U+1F13 (decimal 7955)
+   defining Unicode char U+1F14 (decimal 7956)
+   defining Unicode char U+1F15 (decimal 7957)
+   defining Unicode char U+1F18 (decimal 7960)
+   defining Unicode char U+1F19 (decimal 7961)
+   defining Unicode char U+1F1A (decimal 7962)
+   defining Unicode char U+1F1B (decimal 7963)
+   defining Unicode char U+1F1C (decimal 7964)
+   defining Unicode char U+1F1D (decimal 7965)
+   defining Unicode char U+1F20 (decimal 7968)
+   defining Unicode char U+1F21 (decimal 7969)
+   defining Unicode char U+1F22 (decimal 7970)
+   defining Unicode char U+1F23 (decimal 7971)
+   defining Unicode char U+1F24 (decimal 7972)
+   defining Unicode char U+1F25 (decimal 7973)
+   defining Unicode char U+1F26 (decimal 7974)
+   defining Unicode char U+1F27 (decimal 7975)
+   defining Unicode char U+1F28 (decimal 7976)
+   defining Unicode char U+1F29 (decimal 7977)
+   defining Unicode char U+1F2A (decimal 7978)
+   defining Unicode char U+1F2B (decimal 7979)
+   defining Unicode char U+1F2C (decimal 7980)
+   defining Unicode char U+1F2D (decimal 7981)
+   defining Unicode char U+1F2E (decimal 7982)
+   defining Unicode char U+1F2F (decimal 7983)
+   defining Unicode char U+1F30 (decimal 7984)
+   defining Unicode char U+1F31 (decimal 7985)
+   defining Unicode char U+1F32 (decimal 7986)
+   defining Unicode char U+1F33 (decimal 7987)
+   defining Unicode char U+1F34 (decimal 7988)
+   defining Unicode char U+1F35 (decimal 7989)
+   defining Unicode char U+1F36 (decimal 7990)
+   defining Unicode char U+1F37 (decimal 7991)
+   defining Unicode char U+1F38 (decimal 7992)
+   defining Unicode char U+1F39 (decimal 7993)
+   defining Unicode char U+1F3A (decimal 7994)
+   defining Unicode char U+1F3B (decimal 7995)
+   defining Unicode char U+1F3C (decimal 7996)
+   defining Unicode char U+1F3D (decimal 7997)
+   defining Unicode char U+1F3E (decimal 7998)
+   defining Unicode char U+1F3F (decimal 7999)
+   defining Unicode char U+1F40 (decimal 8000)
+   defining Unicode char U+1F41 (decimal 8001)
+   defining Unicode char U+1F42 (decimal 8002)
+   defining Unicode char U+1F43 (decimal 8003)
+   defining Unicode char U+1F44 (decimal 8004)
+   defining Unicode char U+1F45 (decimal 8005)
+   defining Unicode char U+1F48 (decimal 8008)
+   defining Unicode char U+1F49 (decimal 8009)
+   defining Unicode char U+1F4A (decimal 8010)
+   defining Unicode char U+1F4B (decimal 8011)
+   defining Unicode char U+1F4C (decimal 8012)
+   defining Unicode char U+1F4D (decimal 8013)
+   defining Unicode char U+1F50 (decimal 8016)
+   defining Unicode char U+1F51 (decimal 8017)
+   defining Unicode char U+1F52 (decimal 8018)
+   defining Unicode char U+1F53 (decimal 8019)
+   defining Unicode char U+1F54 (decimal 8020)
+   defining Unicode char U+1F55 (decimal 8021)
+   defining Unicode char U+1F56 (decimal 8022)
+   defining Unicode char U+1F57 (decimal 8023)
+   defining Unicode char U+1F59 (decimal 8025)
+   defining Unicode char U+1F5B (decimal 8027)
+   defining Unicode char U+1F5D (decimal 8029)
+   defining Unicode char U+1F5F (decimal 8031)
+   defining Unicode char U+1F60 (decimal 8032)
+   defining Unicode char U+1F61 (decimal 8033)
+   defining Unicode char U+1F62 (decimal 8034)
+   defining Unicode char U+1F63 (decimal 8035)
+   defining Unicode char U+1F64 (decimal 8036)
+   defining Unicode char U+1F65 (decimal 8037)
+   defining Unicode char U+1F66 (decimal 8038)
+   defining Unicode char U+1F67 (decimal 8039)
+   defining Unicode char U+1F68 (decimal 8040)
+   defining Unicode char U+1F69 (decimal 8041)
+   defining Unicode char U+1F6A (decimal 8042)
+   defining Unicode char U+1F6B (decimal 8043)
+   defining Unicode char U+1F6C (decimal 8044)
+   defining Unicode char U+1F6D (decimal 8045)
+   defining Unicode char U+1F6E (decimal 8046)
+   defining Unicode char U+1F6F (decimal 8047)
+   defining Unicode char U+1F70 (decimal 8048)
+   defining Unicode char U+1F71 (decimal 8049)
+   defining Unicode char U+1F72 (decimal 8050)
+   defining Unicode char U+1F73 (decimal 8051)
+   defining Unicode char U+1F74 (decimal 8052)
+   defining Unicode char U+1F75 (decimal 8053)
+   defining Unicode char U+1F76 (decimal 8054)
+   defining Unicode char U+1F77 (decimal 8055)
+   defining Unicode char U+1F78 (decimal 8056)
+   defining Unicode char U+1F79 (decimal 8057)
+   defining Unicode char U+1F7A (decimal 8058)
+   defining Unicode char U+1F7B (decimal 8059)
+   defining Unicode char U+1F7C (decimal 8060)
+   defining Unicode char U+1F7D (decimal 8061)
+   defining Unicode char U+1F80 (decimal 8064)
+   defining Unicode char U+1F81 (decimal 8065)
+   defining Unicode char U+1F82 (decimal 8066)
+   defining Unicode char U+1F83 (decimal 8067)
+   defining Unicode char U+1F84 (decimal 8068)
+   defining Unicode char U+1F85 (decimal 8069)
+   defining Unicode char U+1F86 (decimal 8070)
+   defining Unicode char U+1F87 (decimal 8071)
+   defining Unicode char U+1F88 (decimal 8072)
+   defining Unicode char U+1F89 (decimal 8073)
+   defining Unicode char U+1F8A (decimal 8074)
+   defining Unicode char U+1F8B (decimal 8075)
+   defining Unicode char U+1F8C (decimal 8076)
+   defining Unicode char U+1F8D (decimal 8077)
+   defining Unicode char U+1F8E (decimal 8078)
+   defining Unicode char U+1F8F (decimal 8079)
+   defining Unicode char U+1F90 (decimal 8080)
+   defining Unicode char U+1F91 (decimal 8081)
+   defining Unicode char U+1F92 (decimal 8082)
+   defining Unicode char U+1F93 (decimal 8083)
+   defining Unicode char U+1F94 (decimal 8084)
+   defining Unicode char U+1F95 (decimal 8085)
+   defining Unicode char U+1F96 (decimal 8086)
+   defining Unicode char U+1F97 (decimal 8087)
+   defining Unicode char U+1F98 (decimal 8088)
+   defining Unicode char U+1F99 (decimal 8089)
+   defining Unicode char U+1F9A (decimal 8090)
+   defining Unicode char U+1F9B (decimal 8091)
+   defining Unicode char U+1F9C (decimal 8092)
+   defining Unicode char U+1F9D (decimal 8093)
+   defining Unicode char U+1F9E (decimal 8094)
+   defining Unicode char U+1F9F (decimal 8095)
+   defining Unicode char U+1FA0 (decimal 8096)
+   defining Unicode char U+1FA1 (decimal 8097)
+   defining Unicode char U+1FA2 (decimal 8098)
+   defining Unicode char U+1FA3 (decimal 8099)
+   defining Unicode char U+1FA4 (decimal 8100)
+   defining Unicode char U+1FA5 (decimal 8101)
+   defining Unicode char U+1FA6 (decimal 8102)
+   defining Unicode char U+1FA7 (decimal 8103)
+   defining Unicode char U+1FA8 (decimal 8104)
+   defining Unicode char U+1FA9 (decimal 8105)
+   defining Unicode char U+1FAA (decimal 8106)
+   defining Unicode char U+1FAB (decimal 8107)
+   defining Unicode char U+1FAC (decimal 8108)
+   defining Unicode char U+1FAD (decimal 8109)
+   defining Unicode char U+1FAE (decimal 8110)
+   defining Unicode char U+1FAF (decimal 8111)
+   defining Unicode char U+1FB0 (decimal 8112)
+   defining Unicode char U+1FB1 (decimal 8113)
+   defining Unicode char U+1FB2 (decimal 8114)
+   defining Unicode char U+1FB3 (decimal 8115)
+   defining Unicode char U+1FB4 (decimal 8116)
+   defining Unicode char U+1FB6 (decimal 8118)
+   defining Unicode char U+1FB7 (decimal 8119)
+   defining Unicode char U+1FB8 (decimal 8120)
+   defining Unicode char U+1FB9 (decimal 8121)
+   defining Unicode char U+1FBA (decimal 8122)
+   defining Unicode char U+1FBB (decimal 8123)
+   defining Unicode char U+1FBC (decimal 8124)
+   defining Unicode char U+1FBD (decimal 8125)
+   defining Unicode char U+1FBE (decimal 8126)
+   defining Unicode char U+1FBF (decimal 8127)
+   defining Unicode char U+1FC0 (decimal 8128)
+   defining Unicode char U+1FC1 (decimal 8129)
+   defining Unicode char U+1FC2 (decimal 8130)
+   defining Unicode char U+1FC3 (decimal 8131)
+   defining Unicode char U+1FC4 (decimal 8132)
+   defining Unicode char U+1FC6 (decimal 8134)
+   defining Unicode char U+1FC7 (decimal 8135)
+   defining Unicode char U+1FC8 (decimal 8136)
+   defining Unicode char U+1FC9 (decimal 8137)
+   defining Unicode char U+1FCA (decimal 8138)
+   defining Unicode char U+1FCB (decimal 8139)
+   defining Unicode char U+1FCC (decimal 8140)
+   defining Unicode char U+1FCD (decimal 8141)
+   defining Unicode char U+1FCE (decimal 8142)
+   defining Unicode char U+1FCF (decimal 8143)
+   defining Unicode char U+1FD0 (decimal 8144)
+   defining Unicode char U+1FD1 (decimal 8145)
+   defining Unicode char U+1FD2 (decimal 8146)
+   defining Unicode char U+1FD3 (decimal 8147)
+   defining Unicode char U+1FD6 (decimal 8150)
+   defining Unicode char U+1FD7 (decimal 8151)
+   defining Unicode char U+1FD8 (decimal 8152)
+   defining Unicode char U+1FD9 (decimal 8153)
+   defining Unicode char U+1FDA (decimal 8154)
+   defining Unicode char U+1FDB (decimal 8155)
+   defining Unicode char U+1FDD (decimal 8157)
+   defining Unicode char U+1FDE (decimal 8158)
+   defining Unicode char U+1FDF (decimal 8159)
+   defining Unicode char U+1FE0 (decimal 8160)
+   defining Unicode char U+1FE1 (decimal 8161)
+   defining Unicode char U+1FE2 (decimal 8162)
+   defining Unicode char U+1FE3 (decimal 8163)
+   defining Unicode char U+1FE4 (decimal 8164)
+   defining Unicode char U+1FE5 (decimal 8165)
+   defining Unicode char U+1FE6 (decimal 8166)
+   defining Unicode char U+1FE7 (decimal 8167)
+   defining Unicode char U+1FE8 (decimal 8168)
+   defining Unicode char U+1FE9 (decimal 8169)
+   defining Unicode char U+1FEA (decimal 8170)
+   defining Unicode char U+1FEB (decimal 8171)
+   defining Unicode char U+1FEC (decimal 8172)
+   defining Unicode char U+1FED (decimal 8173)
+   defining Unicode char U+1FEE (decimal 8174)
+   defining Unicode char U+1FEF (decimal 8175)
+   defining Unicode char U+1FF2 (decimal 8178)
+   defining Unicode char U+1FF3 (decimal 8179)
+   defining Unicode char U+1FF4 (decimal 8180)
+   defining Unicode char U+1FF6 (decimal 8182)
+   defining Unicode char U+1FF7 (decimal 8183)
+   defining Unicode char U+1FF8 (decimal 8184)
+   defining Unicode char U+1FF9 (decimal 8185)
+   defining Unicode char U+1FFA (decimal 8186)
+   defining Unicode char U+1FFB (decimal 8187)
+   defining Unicode char U+1FFC (decimal 8188)
+   defining Unicode char U+1FFD (decimal 8189)
+   defining Unicode char U+1FFE (decimal 8190)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+10144 (decimal 65860)
+   defining Unicode char U+10145 (decimal 65861)
+   defining Unicode char U+10146 (decimal 65862)
+   defining Unicode char U+10147 (decimal 65863)
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/greek-fontenc\greek-fontenc.def
+File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
+))
+Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/
+*}. on input line 69.
+)
+\c@comp=\count312
+\c@theo=\count313
+\c@defn=\count314
+\c@lem=\count315
+\c@prop=\count316
+\c@axiom=\count317
+\c@post=\count318
+\c@trans=\count319
+\c@transf=\count320
+\c@law=\count321
+ (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/soul\soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks37
+\SOUL@lasttoken=\toks38
+\SOUL@syllable=\toks39
+\SOUL@cmds=\toks40
+\SOUL@buffer=\toks41
+\SOUL@token=\toks42
+\SOUL@syllgoal=\dimen185
+\SOUL@syllwidth=\dimen186
+\SOUL@charkern=\dimen187
+\SOUL@hyphkern=\dimen188
+\SOUL@dimen=\dimen189
+\SOUL@dimeni=\dimen190
+\SOUL@minus=\count322
+\SOUL@comma=\count323
+\SOUL@apo=\count324
+\SOUL@grave=\count325
+\SOUL@spaceskip=\skip78
+\SOUL@ttwidth=\dimen191
+\SOUL@uldp=\dimen192
+\SOUL@ulht=\dimen193
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen194
+\WF@size=\dimen195
+\c@WF@wrappedlines=\count326
+\WF@box=\box65
+\WF@everypar=\toks43
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2024/08/20 v0.6b Insert pages of external PDF documents (AM)
+
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count327
+\calc@Bcount=\count328
+\calc@Adimen=\dimen196
+\calc@Bdimen=\dimen197
+\calc@Askip=\skip79
+\calc@Bskip=\skip80
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count329
+\calc@Cskip=\skip81
+)
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen198
+\ESO@tempdimb=\dimen199
+)
+\AM@pagewidth=\dimen256
+\AM@pageheight=\dimen257
+\AM@fboxrule=\dimen258
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2024/08/20 v0.6b Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count330
+\AM@pagebox=\box66
+\AM@global@opts=\toks44
+\AM@pagecnt=\count331
+\AM@toc@title=\toks45
+\AM@lof@heading=\toks46
+\c@AM@survey=\count332
+\AM@templatesizebox=\box67
+)
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count333
+\l__pdf_internal_box=\box68
+)
+
+LaTeX Warning: Unused global option(s):
+    [18pt].
+
+(TransformaticsInGENETICS---2025---JWL.aux)
+\openout1 = `TransformaticsInGENETICS---2025---JWL.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 94.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 9
+4.
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
+File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
+)
+LaTeX Font Info:    ... okay on input line 94.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(57.81621pt, 496.32924pt, 43.36243pt)
+* v-part:(T,H,B)=(57.81621pt, 729.41443pt, 57.81621pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=496.32924pt
+* \textheight=729.41443pt
+* \oddsidemargin=-14.45378pt
+* \evensidemargin=-14.45378pt
+* \topmargin=-51.45378pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count334
+\scratchdimen=\dimen259
+\scratchbox=\box69
+\nofMPsegments=\count335
+\nofMParguments=\count336
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count337
+\MPscratchDim=\dimen260
+\MPnumerator=\count338
+\makeMPintoPDFobject=\count339
+\everyMPtoPDFconversion=\toks48
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring OFF on input line 94.
+
+(TransformaticsInGENETICS---2025---JWL.out)
+(TransformaticsInGENETICS---2025---JWL.out)
+\@outlinefile=\write3
+\openout3 = `TransformaticsInGENETICS---2025---JWL.out'.
+
+\c@lstlisting=\count340
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.
+sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+ (C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
+: found PDF version <1.7>, but at most version <1.5> allowed
+<resources/pdfs/front_cover.pdf, id=39, 596.98032pt x 844.65562pt>
+File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/front_cover.pdf>
+Package pdftex.def Info: resources/pdfs/front_cover.pdf  used on input line 97.
+
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
+: found PDF version <1.7>, but at most version <1.5> allowed
+File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/front_cover.pdf>
+Package pdftex.def Info: resources/pdfs/front_cover.pdf  used on input line 97.
+
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
+: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
+: found PDF version <1.7>, but at most version <1.5> allowed
+<resources/pdfs/front_cover.pdf, id=42, page=1, 596.98032pt x 844.65562pt>
+File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/front_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
+ine 97.
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/front_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
+ine 97.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/front_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
+ine 97.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/front_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
+ine 97.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+
+
+File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/front_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
+ine 97.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+[1
+
+
+ <./resources/pdfs/front_cover.pdf>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 100
+.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 100
+.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+
+ []
+
+
+
+[2{C:/Users/AKAM/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Overfull \hbox (5.68011pt too wide) in paragraph at lines 113--115
+[]\OT1/cmtt/m/n/14.4 Sex seems to have been invented around two billion years a
+go.
+ []
+
+
+Overfull \hbox (5.68011pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/14.4 Before then, new varieties of organisms could arise only fro
+m
+ []
+
+
+Overfull \hbox (42.73006pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/14.4 the accumulation of random mutations --- the selection of ch
+anges,
+ []
+
+
+Overfull \hbox (13.0901pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/14.4 letter by letter, in the genetic instructions. Evolution mus
+t
+ []
+
+
+Overfull \hbox (64.96002pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/14.4 have been agonizingly slow. With the invention of sex, two o
+rganisms
+ []
+
+
+Overfull \hbox (5.68011pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/14.4 could exchange whole paragraphs, pages and books of their DN
+A
+ []
+
+
+Overfull \hbox (20.50009pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/14.4 code, producing new varieties ready for the sieve of selecti
+on.
+ []
+
+
+Overfull \hbox (13.0901pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/14.4 Organisms are selected to engage in sex --- the ones that fi
+nd
+ []
+
+
+Overfull \hbox (13.0901pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/14.4 it uninteresting quickly become extinct. And this is true no
+t
+ []
+
+
+Overfull \hbox (20.50009pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/14.4 only for the microbes of two billion years ago. We humans ha
+ve
+ []
+
+
+Overfull \hbox (5.68011pt too wide) in paragraph at lines 124--126
+[]\OT1/cmtt/m/n/14.4 The material basis of heredity is DNA, a ladder-like molec
+ule
+ []
+
+
+Overfull \hbox (27.91008pt too wide) in paragraph at lines 124--126
+\OT1/cmtt/m/n/14.4 which carries a message in the form of a `four-letter' code,
+ the
+ []
+
+
+Overfull \hbox (20.50009pt too wide) in paragraph at lines 124--126
+\OT1/cmtt/m/n/14.4 letters being four chemical bases, each of which may occupy 
+any
+ []
+
+
+
+[3]
+<resources/images/dna_diagram.jpeg, id=91, 1003.75pt x 565.11125pt>
+File: resources/images/dna_diagram.jpeg Graphic file (type jpg)
+<use resources/images/dna_diagram.jpeg>
+Package pdftex.def Info: resources/images/dna_diagram.jpeg  used on input line 
+136.
+(pdftex.def)             Requested size: 446.69328pt x 251.49527pt.
+
+
+[4 <./resources/images/dna_diagram.jpeg>]
+Overfull \hbox (27.3102pt too wide) in paragraph at lines 150--151
+[]\OT1/cmr/bx/n/14.4 Letters\OT1/cmr/m/n/14.4 : Fi-nally, at the most ba-sic le
+vel of our ge-netic code/DNA-library/genome,
+ []
+
+
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
+
+ []
+
+
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+ []
+
+
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 248--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--277
+
+ []
+
+
+
+[9]
+Overfull \hbox (7.24994pt too wide) in paragraph at lines 282--282
+[]\OT1/cmr/bx/n/12 Sequence Ab-strac-tion: From Flat-Structure Se-quences to Hi
+gher-Level Se-quences 
+ []
+
+
+Overfull \hbox (23.09584pt too wide) detected at line 299
+[][][]\OT1/cmr/m/n/14.4 ^^B[] = ^^B[](\OML/cmm/m/it/14.4 n; k\OT1/cmr/m/n/14.4 
+) = \OMS/cmsy/m/n/14.4 h\OML/cmm/m/it/14.4 a[]; a[]; a[]; a[]; a[]; a[]; :::; a
+[]; :::; a[]; a[]\OMS/cmsy/m/n/14.4 i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 314--318
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--336
+
+ []
+
+
+
+[11]
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
+
+ []
+
+
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
+
+ []
+
+
+
+[14]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 465.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 465.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 465.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 465.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 465.
+
+
+Overfull \hbox (20.50009pt too wide) in paragraph at lines 470--472
+[]\OT1/cmtt/m/n/14.4 Code: A rule for transforming a message from one symbolic 
+form
+ []
+
+
+Overfull \hbox (35.32007pt too wide) in paragraph at lines 470--472
+\OT1/cmtt/m/n/14.4 (the source alphabet) into another (the target alphabet), us
+ually
+ []
+
+
+Overfull \hbox (13.0901pt too wide) in paragraph at lines 470--472
+\OT1/cmtt/m/n/14.4 without loss of information. The process of transformation i
+s
+ []
+
+<resources/images/protein_synthesis.png, id=297, 1045.9075pt x 747.79375pt>
+File: resources/images/protein_synthesis.png Graphic file (type png)
+<use resources/images/protein_synthesis.png>
+Package pdftex.def Info: resources/images/protein_synthesis.png  used on input 
+line 478.
+(pdftex.def)             Requested size: 446.69328pt x 319.37706pt.
+
+Overfull \vbox (0.29263pt too high) has occurred while \output is active []
+
+
+
+[15 <./resources/images/protein_synthesis.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
+
+ []
+
+
+LaTeX Warning: Reference `SEC..' on page 16 undefined on input line 508.
+
+
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 513--514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
+
+ []
+
+
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 570--571
+\OT1/cmr/m/n/14.4 ini-ti-ates
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
+[]|\OT1/cmr/m/n/14.4 Basic amino
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
+[]|\OT1/cmr/m/n/14.4 Non po-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
+[]|\OT1/cmr/m/n/14.4 Terminates
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 596--597
+\OT1/cmr/m/n/14.4 ini-ti-ates
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 598--599
+[]|\OT1/cmr/m/n/14.4 Basic amino
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--601
+[]|\OT1/cmr/m/n/14.4 Non po-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
+[]|\OT1/cmr/m/n/14.4 Terminates
+ []
+
+
+
+[18]
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/ProteinSynthesisProcessFlowChar
+t.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+<resources/pdfs/ProteinSynthesisProcessFlowChart.pdf, id=346, 614.295pt x 794.9
+7pt>
+File: resources/pdfs/ProteinSynthesisProcessFlowChart.pdf Graphic file (type pd
+f)
+<use resources/pdfs/ProteinSynthesisProcessFlowChart.pdf>
+Package pdftex.def Info: resources/pdfs/ProteinSynthesisProcessFlowChart.pdf  u
+sed on input line 630.
+(pdftex.def)             Requested size: 446.69328pt x 412.55904pt.
+
+
+[19]
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/RibosomeStateMachine.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<resources/pdfs/RibosomeStateMachine.pdf, id=361, 614.295pt x 794.97pt>
+File: resources/pdfs/RibosomeStateMachine.pdf Graphic file (type pdf)
+<use resources/pdfs/RibosomeStateMachine.pdf>
+Package pdftex.def Info: resources/pdfs/RibosomeStateMachine.pdf  used on input
+ line 641.
+(pdftex.def)             Requested size: 446.69328pt x 358.76486pt.
+
+
+[20 <./resources/pdfs/ProteinSynthesisProcessFlowChart.pdf>]
+
+[21 <./resources/pdfs/RibosomeStateMachine.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 651.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 651.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 651.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 651.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 651.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 651.
+
+
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--681
+
+ []
+
+
+
+[23]
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<resources/pdfs/note_cover.pdf, id=463, 596.98032pt x 844.65562pt>
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 712.
+
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 712.
+
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<resources/pdfs/note_cover.pdf, id=466, page=1, 596.98032pt x 844.65562pt>
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
+ne 712.
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
+ne 712.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+
+
+[24]
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
+ne 712.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
+ne 712.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+
+
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
+ne 712.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+[25
+
+ <./resources/pdfs/note_cover.pdf>]
+(TransformaticsInGENETICS---2025---JWL.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 31--36
+\OT1/cmtt/m/n/14.4 org / Bookshelves / Introductory _ and _ General _ Biology /
+ General _
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 48--54
+\OT1/cmtt/m/n/14.4 geeksforgeeks . org / biology / diagram-[]of-[]dna-[]structu
+re/$[]\OT1/cmr/m/n/14.4 , 2025.  Ac-
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 56--62
+[]\OT1/cmr/m/n/14.4 Grady Venville and Jenny Dono-van.  Analo-gies for life: a 
+sub-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--62
+\OT1/cmr/m/n/14.4 jec-tive view of analo-gies and metaphors used to teach about
+
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 56--62
+\OT1/cmr/m/n/14.4 genes and dna.  \OT1/cmr/m/it/14.4 Teach-ing Sci-ence\OT1/cmr
+/m/n/14.4 , 52(1):18--22, 2006.  Avail-able
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--62
+\OT1/cmr/m/n/14.4 at: []$\OT1/cmtt/m/n/14.4 https : / / research-[]repository .
+ uwa . edu . au / en / publications /
+ []
+
+
+Overfull \hbox (21.16966pt too wide) in paragraph at lines 56--62
+\OT1/cmtt/m/n/14.4 analogies-[]for-[]life-[]a-[]subjective-[]view-[]of-[]analog
+ies-[]and-[]metaphors-[]u$[]\OT1/cmr/m/n/14.4 . 
+ []
+
+
+Underfull \hbox (badness 3907) in paragraph at lines 71--78
+[]\OT1/cmr/m/n/14.4 Genomics Ed-u-ca-tion Pro-gramme.  Where does our genome co
+me
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 71--78
+\OT1/cmr/m/n/14.4 from?  []$\OT1/cmtt/m/n/14.4 https : / / www . genomicseducat
+ion . hee . nhs . uk / education /
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 71--78
+\OT1/cmtt/m/n/14.4 core-[]concepts / where-[]does-[]our-[]genome-[]come-[]from/
+$[]\OT1/cmr/m/n/14.4 , 2025.  Ac-cessed
+ []
+
+
+
+[26]
+Underfull \hbox (badness 7379) in paragraph at lines 80--86
+[]\OT1/cmr/m/n/14.4 OpenStax Bi-ol-ogy.  Ga-me-to-ge-n-e-sis (sper-mato-ge-n-e-
+sis and oo-ge-n-e-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--86
+\OT1/cmr/m/n/14.4 sis).  []$\OT1/cmtt/m/n/14.4 https : / / bio . libretexts . o
+rg / Bookshelves / Introductory _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--86
+\OT1/cmtt/m/n/14.4 and _ General _ Biology / General _ Biology _ 1e _ (OpenStax
+ ) /43 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--86
+\OT1/cmtt/m/n/14.4 _Animal _ Reproduction _ and _ Development / 43 . 3C : _Game
+togenesis _
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 88--94
+[]\OT1/cmr/m/n/14.4 University of Le-ices-ter.  The cell cy-cle, mi-to-sis and 
+meio-sis for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--94
+\OT1/cmr/m/n/14.4 higher ed-u-ca-tion.  []$\OT1/cmtt/m/n/14.4 https : / / le . 
+ac . uk / vgec / topics / cell-[]cycle /
+ []
+
+
+Underfull \hbox (badness 3209) in paragraph at lines 102--107
+[]\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  A gen-eral the-ory of num-ber ca
+r-di-nal-ity.
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 102--107
+\OT1/cmr/m/it/14.4 Academia.edu\OT1/cmr/m/n/14.4 , Jan 2024.  \OT1/cmr/m/it/14.
+4 Ac-ces-si-ble via []$\OT1/cmtt/m/n/14.4 https : / / www . academia . edu /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--129
+\OT1/cmr/m/it/14.4 Ac-ces-si-ble via []$\OT1/cmtt/m/n/14.4 https : / / www . ac
+ademia . edu / download / 122499576 / The _
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.139 ...ock Refseq: Ins homo sapiens insulin [nm_
+                                                  000207.2].
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command $ invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141 ...ed/refseq/INS_NM_000207.2_codingDNA.html}
+                                                  ,
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141 ...ed/refseq/INS_NM_000207.2_codingDNA.html}
+                                                  ,
+Please use the math alphabet \mathtt instead of the \ttfamily command. 
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.141 ...ed/refseq/INS_NM_000207.2_codingDNA.html}
+                                                  ,
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.141 ...ed/refseq/INS_NM_000207.2_codingDNA.html}
+                                                  ,
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.141 ...ed/refseq/INS_NM_000207.2_codingDNA.html}
+                                                  ,
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.141 ...ed/refseq/INS_NM_000207.2_codingDNA.html}
+                                                  ,
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+\Url@FormatString ...ndafter \UrlLeft \Url@String 
+                                                  \UrlRight \m@th $
+l.141 ...ed/refseq/INS_NM_000207.2_codingDNA.html}
+                                                  ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.141 ...ed/refseq/INS_NM_000207.2_codingDNA.html}
+                                                  ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.141 ...ed/refseq/INS_NM_000207.2_codingDNA.html}
+                                                  ,
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \endgroup.
+\Hy@endcolorlink ->\endgroup 
+                             
+l.141 ...ed/refseq/INS_NM_000207.2_codingDNA.html}
+                                                  ,
+Things are pretty mixed up, but I think the worst is over.
+
+! Extra \endgroup.
+\hyper@linkurl ...ce@end \close@pdflink \endgroup 
+                                                  
+l.141 ...ed/refseq/INS_NM_000207.2_codingDNA.html}
+                                                  ,
+Things are pretty mixed up, but I think the worst is over.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 \bibitem{Venter2001}
+                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 145
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.145 \bibitem{Venter2001}
+                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.145 \bibitem{Venter2001}
+                          
+I'm forgetting what you said and using zero instead.
+
+
+Overfull \hbox (9.50546pt too wide) in paragraph at lines 146--151
+[]\OT1/cmr/m/n/14.4 J. Craig Ven-ter et al.  The se-quence of the hu-man genome
+.  \OT1/cmr/m/it/14.4 Sci-ence\OT1/cmr/m/n/14.4 , 291(5507):1304--
+ []
+
+
+Overfull \hbox (15.58159pt too wide) in paragraph at lines 146--151
+\OT1/cmr/m/n/14.4 1351, 2001.  Avail-able at: []$\OT1/cmtt/m/n/14.4 https : / /
+ www . science . org / doi / pdf / 10 . 1126 / science .
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 \bibitem{Anderson1981}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 152
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.152 \bibitem{Anderson1981}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.152 \bibitem{Anderson1981}
+                            
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 \bibitem{adtpaper}
+                        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 158
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.158 \bibitem{adtpaper}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.158 \bibitem{adtpaper}
+                        
+I'm forgetting what you said and using zero instead.
+
+
+
+[27]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.168 \bibitem{geeksforgeeks2024protein}
+                                        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 168
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.168 \bibitem{geeksforgeeks2024protein}
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.168 \bibitem{geeksforgeeks2024protein}
+                                        
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176 \bibitem{newsmedical2025startcodons}
+                                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 176
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.176 \bibitem{newsmedical2025startcodons}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.176 \bibitem{newsmedical2025startcodons}
+                                          
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 \bibitem{lutalo2024software}
+                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 185
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.185 \bibitem{lutalo2024software}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.185 \bibitem{lutalo2024software}
+                                  
+I'm forgetting what you said and using zero instead.
+
+
+Overfull \hbox (89.05984pt too wide) in paragraph at lines 186--192
+[]$\OT1/cmtt/m/n/14.4 https : / / www . preprints . org / frontend / manuscript
+ / 3903e4cd075074a7005cb705a5ef26c5 /
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \bibitem{lutalo_tea_web}
+                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 193
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.193 \bibitem{lutalo_tea_web}
+                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.193 \bibitem{lutalo_tea_web}
+                              
+I'm forgetting what you said and using zero instead.
+
+
+Overfull \hbox (1.3414pt too wide) in paragraph at lines 194--200
+\OT1/cmr/m/n/14.4 ar-chi-tec-ture.  []$\OT1/cmtt/m/n/14.4 https : / / doi . org
+ / 10 . 6084 / M9 . FIGSHARE . 29591687$[]\OT1/cmr/m/n/14.4 , n.d.  figshare. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.201 \bibitem{lutalo2025transformatic}
+                                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 201
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.201 \bibitem{lutalo2025transformatic}
+                                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.201 \bibitem{lutalo2025transformatic}
+                                       
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 \bibitem{lutalo2024mysticism}
+                                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 207
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.207 \bibitem{lutalo2024mysticism}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.207 \bibitem{lutalo2024mysticism}
+                                   
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 \bibitem{jwlzha}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 213
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.213 \bibitem{jwlzha}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.213 \bibitem{jwlzha}
+                      
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 \bibitem{lutalo2025unraveling}
+                                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 220
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.220 \bibitem{lutalo2025unraveling}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.220 \bibitem{lutalo2025unraveling}
+                                    
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: \begin{document} ended by \end{thebibliography}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.228 \end{thebibliography}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.228 \end{thebibliography}
+                           
+Things are pretty mixed up, but I think the worst is over.
+
+)
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<resources/pdfs/back_cover.pdf, id=543, 596.98032pt x 844.65562pt>
+File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/back_cover.pdf>
+Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 732.
+
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/back_cover.pdf>
+Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 732.
+
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<resources/pdfs/back_cover.pdf, id=546, page=1, 596.98032pt x 844.65562pt>
+File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/back_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
+ne 732.
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/back_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
+ne 732.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+
+
+[28]
+File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/back_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
+ne 732.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/back_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
+ne 732.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+
+
+File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/back_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
+ne 732.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+[29
+
+ <./resources/pdfs/back_cover.pdf>]
+(TransformaticsInGENETICS---2025---JWL.aux)
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-07-20>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `TransformaticsInGENETICS---2025---JWL.out' h
+as not changed.
+(rerunfilecheck)             Checksum: C61F9BD50D4D601A9E3D6AD1F96F7CFD;3326.
+ ) 
+Here is how much of TeX's memory you used:
+ 17023 strings out of 473898
+ 270772 string characters out of 5736297
+ 1942960 words of memory out of 5000000
+ 39517 multiletter control sequences out of 15000+600000
+ 572516 words of font info for 90 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,20n,79p,3930b,710s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\AKAM\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1
+200.pk> <C:\Users\AKAM\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm0600.pk> <C:\Users\AKAM\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
+i600\tcrm0800.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pro
+gram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program F
+iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program F
+iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program F
+iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on TransformaticsInGENETICS---2025---JWL.pdf (29 pages, 4883695 
+bytes).
+PDF statistics:
+ 723 PDF objects out of 1000 (max. 8388607)
+ 142 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+

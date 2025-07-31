@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: TransformaticsInGENETICS---2025---JWL.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: references.bib
+Warning--empty journal in ossipaper
+Warning--empty journal in jwlzha
+Warning--empty journal in lutalo2025unraveling
+You've used 30 entries,
+            1791 wiz_defined-function locations,
+            606 strings with 10192 characters,
+and the built_in function-call counts, 4803 in all, are:
+= -- 442
+> -- 174
+< -- 0
++ -- 76
+- -- 46
+* -- 149
+:= -- 807
+add.period$ -- 118
+call.type$ -- 30
+change.case$ -- 28
+chr.to.int$ -- 0
+cite$ -- 33
+duplicate$ -- 198
+empty$ -- 540
+format.name$ -- 46
+if$ -- 1086
+int.to.chr$ -- 0
+int.to.str$ -- 30
+missing$ -- 14
+newline$ -- 181
+num.names$ -- 31
+pop$ -- 131
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 75
+stack$ -- 0
+substring$ -- 106
+swap$ -- 27
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 38
+width$ -- 32
+write$ -- 361
+(There were 3 warnings)

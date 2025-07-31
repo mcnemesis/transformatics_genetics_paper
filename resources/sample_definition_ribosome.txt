@@ -1,0 +1,19 @@
+If $S\langle a_i: G \langle \rho_j : j \times 3 \rangle \times n \rangle$ is the sequence of nucleotides\footnote{We say nucleotides in this definition because of the term's brevity perhaps, but also because of the fact that any nucleotide $\rho:N \in \psi_{DNA} \equiv N \in \psi_{DNA}$ for $N \in \mathbb{N}$ the position index of $\rho$ in $\psi_{DNA}$ $\implies$ $N \in [1,4]$ and so, a nucleobase $i \in \psi_{DNA}: i = T \implies \rho:i = T$ and since $\psi_{DNA}$ is a deduplicated set, it means talking of a particular nucleotide likewise implies the equivalent nucleobase and thus we might abstract away the nucleobase with a nucleotide when only the nucleobase aspect of the nucleotide or particular gene instruction is what is importart/what matters.} --- actually the \textbf{genetic code ordered sequence or rather DNA}, such that $\invpi(S) = n \times 3$ tells us the actual length of the flat-structure sequence (with no abstractions that is --- operating at nucleobase level), and so otherwise S is a sequence of $n$ sub-sequences each of exact length 3 (they contain exactly 3 members only and so we might as well call them triplets or 3-tuples or 3-grams) that are technically known as \textbf{codons}, and so $S$ is a sequence of codons and thus is a gene --- a single DNA program for the production of one particular protein (a chain of amino-acids each produced from an exactly corresponding particular kind of distinct codon in the same ordered sequence they occur within the gene). A \textbf{Ribosome} then, is any abstract machine (a transformer) of the kind: 
+
+ \begin{transf}[The \textbf{RIBOSOME Transformer}]
+\label{TRANSF2}
+
+A \textbf{RIBOSOME Transformer} is a sequence transformer that, starting from a sequence of nucleotides, $\Theta$ of length $n \times k$, generates a corresponding sequence of amino-acids or rather a protein, $ [\Theta^*]^3_n $, of length $n$, as specified in the transformer definition:\\
+
+$\Theta \xrightarrow{O_{mRNA-encode}(\Theta)} \Theta^* \xrightarrow{O_{amino-acid-encode}(\Theta^*)} [\Theta^*]^k_n ;$\\
+$\Theta_{k \times n}\langle \rho_i, \rangle \xrightarrow{O_{mRNA-encode}(\Theta)} \Theta^*_{k \times n}\langle\rho_i^*, \rangle \xrightarrow{O_{amino-acid-encode}(\Theta^*)} [\Theta^*]^3_n ;$\\
+$\forall \rho_i \in \Theta; n \in \mathbb{N}; i \in [1,n];$\\
+$ \Theta \rightarrow \Theta^* \implies \Theta\langle \rho_i, \rangle:n \rightarrow \Theta^*\langle \rho^*_i \rangle: n \implies \invpi(\Theta) = \invpi(\Theta^*) = n;$\\
+$ \forall \rho_i \in \Theta \quad \exists [\rho_i^*]^* \in [\Theta^*]^*; \invpi([\rho_i^*]) = n \times \invpi(\Theta^* \supset \rho_i) = n \times n$. Since $\psi(\Theta)_{DNA} = \psi_{DNA} \implies \psi_{\Theta} \equiv \{A, C, G, T\}; \forall \rho_i \in \Theta$, if $\rho_i^* \in \Theta^* \implies I(\rho_i^* \in \Theta^*) = I(\rho_i \in \Theta) = i \quad \land \quad n = \invpi(\psi_{DNA}) = 4$. Thus, if we constrain the positions of $\psi_{DNA}$ to a particular order, say $\psi_{DNA} = \langle A, C, G, T \rangle \quad \implies \quad \rho^* \in \Theta \equiv \rho_i \in \Theta \equiv \rho \in \psi_{DNA}: i = I(\rho, \psi_{DNA})$ and if $i = 4$, then $\rho = U \forall \rho \in \Theta^*$. 
+
+\end{transf}
+
+\end{defn}
+
+\end{minipage}}
+\\
