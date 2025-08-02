@@ -50,6 +50,10 @@
 %\usepackage{ntheorem}
 \usepackage{amsthm}
 
+\usepackage{tikz} % for v-aligned matrices with arrows between them
+\usetikzlibrary{matrix, positioning} % ← This line is essential
+
+
 % extra symbols
 \usepackage{textgreek}
 %\usepackage{mnsymbol}
@@ -131,6 +135,14 @@ In reality, we find that living, real organisms are influenced by genetics, thei
 So, if we bring on-board ideas from \textbf{transformatics}\cite{transformatics} --- a new mathematical statistics theory dealing with sequences of symbols or those of named structures and their processing as well as analysis, for example, if we take the concept of leveraging statistical measures to summarize essential properties of sequences such as DNA --- say, with use of the modal sequence statistic (MSS), we find that, independently of, and without needing to first consult or worry about mainstream genetic code analysis or genetic engineering theory and mechanics, that we can say many useful things about genetic code sequences and that we might be able to break new ground or solve some otherwise still intractable problems concerning sequences of genetic code.
 
 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{resources/images/dna_diagram.jpeg} \\
+		\caption{A basic diagram of the chemical structure of DNA base-pairs from \cite{wikipedia_basepair}}
+		\label{FIG1}
+\end{center}
+\end{figure}
+    
 
 
 For example, by borrowing a useful DNA-as-library metaphor from Venville et al\cite{venville2006analogies}, we would come to appreciate that by looking at \textit{DNA as a library of books}, we have a model such as:
@@ -149,7 +161,20 @@ So, with that introduction clearing up much of the basic genetics nomenclature a
 \section{Sequence Symbol Sets and Sequence Transforms Applied to Genetic Code}
 \label{SEC2}
 
-For the purposes of appreciating transformatics from a genetics engineering or general genetics research perspective, it shall be important to note that like in the original transformatics paper\cite{transformatics}, beginning by appreciating that whatever formalisms and mechanics we might develop or talk about concerning genetic code or rather DNA, had better begin with an appreciation that we can model DNA as merely an ordered sequence of symbols.
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\large
+\textbf{NOTE:}\\
+ On \textbf{Potentially Similar Mathematics}: \textit{Frobenoids?} \\
+
+Frobenioids\cite{mochizuki_frobenioids1}, as introduced by \textbf{Prof. Shinichi Mochizuki}, offer a category-theoretic abstraction of arithmetic structures such as divisors and line bundles, encoding transformations via morphisms that resemble symbolic rewritings under algebraic constraints\cite{copilot_dna_assistant}. In spirit, they parallel the logic of sequence transformers (from transformatics\cite{transformatics}), which operate by mapping one symbolic sequence to another through rule-based transformations constrained by set-theoretic, statistical or general mathematical logic. However, even though both systems might serve as structured environments for encoding and navigating symbolic changes across mathematical objects such as sequences and/or sets, we just wanted to bring this up here, so students and researchers interested in our transformatics mathematics, and who wish to take the discussions and ideas we present in this work to even more advanced levels or in unconventional directions, pick a leaf and comfortably proceed to do so.
+
+\end{minipage}}
+\\
+\end{center}
+
+For the purposes of appreciating transformatics from a genetics engineering or general genetics research perspective, it shall be important to note that like in the original transformatics paper\cite{transformatics}, beginning by appreciating that whatever formalisms and mechanics we might develop or talk about concerning genetic code or rather DNA, had better begin with an appreciation that we can model DNA as merely an ordered sequence of symbols.\\
+
 
 In the introduction (see \textbf{Section \ref{SEC1}}), we have already called out both the names and symbols assigned to the most basic units of any genetic code; essentially, the \textit{nucleobases} (or rather, nucleotides). For purposes of simplifying our mathematical logic later on, we shall here neatly define what roles these units play in the grand scheme concerning DNA and RNA code. Basically, we shall want to define the symbol sets for any DNA sequence and the symbol set for any RNA sequence.\\
 
@@ -173,7 +198,7 @@ And these are mapped to their representative, distinct single-letter symbols as 
 \psi(DNA) = \{A, T, C, G\}
 \end{equation}
 
-\textbf{Equation \ref{EQSSDNA}} helps to appreciate the extra non-intuitive fact that the special ordering of DNA base symbols in the order A-T-C-G is what is conventionally accepted\cite{nature_atcg}\cite{wikipedia_nucleic_acid} or commonly found in most genetics literature\footnote{It shall be important to bring it out at this point, that, especially for non-domain experts --- people not trained in or normally practicing in genetics or related fields, that the common ordering of the nucleotides in the A-T-C-G ordering might seem unconventional or peculiar! For example, one might wonder, why are they not listed in their alphabetical order? So, for purposes of settings things clear for everyone, the author consulted a reliable research assistant on this matter\cite{copilot_dna_assistant}, and it was made clear that: ``The order **A, T, C, G** isn't alphabetical, and yet it's the most commonly used sequence when referring to DNA bases." We further learn that, the order A-T-G-C reflects a mix of historical usage and bio-chemical structure; \textbf{base-pairing logic}: that the DNA's double-helix is stabilized by ``complimentary base pairing" in which A pairs with T (via 2 hydrogen bonds), and C pairs with G (via 3 hydrogen bonds), so that listing A with its partner T and then C with G emphasizes this pairing symmetry\cite{copilot_dna_assistant}. Further, we learn that early molecular biology texts and sequencing protocols (especially post-Watson \& Crick, 1953) adopted this order to reflect the ``functional relationships" between bases. It became entrenched in educational materials, sequencing software, and databases. And lastly, that in visual and structural conventions --- such as in diagrams and models, A–T and C–G are often shown side-by-side. Listing them in this order reinforces the \textbf{duality} of the DNA ladder's rungs\cite{copilot_dna_assistant}. Lastly, that though there is no single documented moment when this convention begun, that the A-T-C-G order likely solidified in the \textbf{1970s - 1980s} during the rise of \textbf{Sanger sequencing} (developed in the 1970s), GenBank and EMBL databases, and overall in textbooks and molecular biology curricula.}.
+\textbf{Equation \ref{EQSSDNA}} helps to appreciate the extra non-intuitive fact that the special ordering of DNA base symbols in the order A-T-C-G is what is conventionally accepted\cite{nature_atcg}\cite{wikipedia_nucleic_acid} or commonly found in most genetics literature\footnote{It shall be important to bring it out at this point, that, especially for non-domain experts --- people not trained in or normally practicing in genetics or related fields, that the common ordering of the nucleotides in the A-T-C-G ordering might seem unconventional or peculiar! For example, one might wonder, why are they not listed in their alphabetical order? So, for purposes of settings things clear for everyone, the author consulted a reliable research assistant on this matter\cite{copilot_dna_assistant}, and it was made clear that: ``The order **A, T, C, G** isn't alphabetical, and yet it's the most commonly used sequence when referring to DNA bases." We further learn that, the order A-T-G-C reflects a mix of historical usage and bio-chemical structure; \textbf{base-pairing logic}: that the DNA's double-helix is stabilized by ``complementary base pairing" in which A pairs with T (via 2 hydrogen bonds), and C pairs with G (via 3 hydrogen bonds), so that listing A with its partner T and then C with G emphasizes this pairing symmetry\cite{copilot_dna_assistant}. Further, we learn that early molecular biology texts and sequencing protocols (especially post-Watson \& Crick, 1953) adopted this order to reflect the ``functional relationships" between bases. It became entrenched in educational materials, sequencing software, and databases. And lastly, that in visual and structural conventions --- such as in diagrams (see \textbf{Figure \ref{FIG1}}) and models, A–T and C–G are often shown side-by-side. Listing them in this order reinforces the \textbf{duality} of the DNA ladder's rungs\cite{copilot_dna_assistant}. Lastly, that though there is no single documented moment when this convention begun, that the A-T-C-G order likely solidified in the \textbf{1970s - 1980s} during the rise of \textbf{Sanger sequencing} (developed in the 1970s), GenBank and EMBL databases, and overall in textbooks and molecular biology curricula.}.
 
 However, and especially because, for transformatics, we wish to work with an \textbf{ordered symbol set}\cite{ossipaper} and not just \textit{any possible symbol set} so that we can apply mathematical logic that respects the ordering of terms in any ordered sequence\cite{transformatics}, we shall then assume a convention similar to how we might derive an ordered symbol set for a sequence of numbers in some base (the concept $\psi_\beta(\Theta)$ --- see \textbf{Definition 5} in \cite{ossipaper}), and given we are using Latin-Alphabet symbols (from $\psi_{az}$\cite{transformatics}) for $\psi_{DNA}$, we might as well better define the \textbf{Lexically Ordered DNA Symbol Set}, $\psi_{DNA}$ as such:
 
@@ -212,7 +237,11 @@ As with many kinds of sequences dealt with in transformatics, the possession of 
 \begin{defn}[The \textbf{$na-$Sequences} --- (D/R)-NA Sequences: $\Theta_{na}:\mathbb{N} \times \psi_{na}$]
 \label{DEFNASEQ}
 
-Any sequence of DNA or RNA nucleotides, expressible as some sequence of symbols from $\psi_{na}$ is a \textbf{na-Sequence} and its symbol set is a superset of both $\psi_{DNA}$ and $\psi_{RNA}$.
+Any sequence of DNA or RNA nucleotides --- basically a sequence of nucleic acids, expressible as some sequence of symbols from $\psi_{na}$ is a \textbf{na-Sequence} and its symbol set is a superset of both $\psi_{DNA}$ and $\psi_{RNA}$. Equivalently:
+
+\begin{equation}
+\forall \Theta_{na} = \langle a_i, \rangle, \quad a_i \in \psi_{na} \implies a_i \in \psi_{DNA} \lor a_i \in \psi_{RNA}
+\end{equation}
 
 \end{defn}
 
@@ -301,7 +330,7 @@ And which sequence\footnote{$\Theta_{insulin}$ is the short coding DNA sequence 
 
 We might for example start to wonder, how might we go about determining if some two DNA sequences, $\Theta_1$ and $\Theta_2$ are the same or perhaps if they share parts of each other, and by how much? We might wonder if they are the same sequence merely shuffled/anagrammatized --- since we saw that this can occur during natural processes such as meiosis\cite{genomics2025origin}. In case they are different, we might want to for example quantify the relative frequency of their distinct members, e.g mapping $\psi_{DNA}$ or $\psi_{RNA}$ to a sequence of relative frequencies, etc. These are all things we shall soon look into and know very well how to do or talk about, using genetics terms and the mathematical language and techniques from transformatics.
 
-\subsection{Sequence Abstraction: From Flat-Structure Sequences to Higher-Level Sequences}
+\section{Sequence Abstraction using Symbol Sets: From Flat-Structure Sequences to Higher-Level Sequences}
 
 Especially for nucleic acid sequences, but also for any other kind of sequence $\Theta$, there might be legitimate situations in which looking at or dealing with the flat-structure sequence --- such as for the actually modest\footnote{`Modest' because, genomes and realistic genome sequences can typically span millions of genes or billions of nucleotides. We for example know that for a typical human cell's DNA there are $\approx$3.2 billion base pairs\cite{Venter2001}, and yet we know each base pair consists of two nucleotides, one for each strand of the double-helix (so that's $\approx$6.4 billion), plus a few more ($\approx$16,569 base pairs) from mitochondrial DNA\cite{Anderson1981}} $\Theta_{insulin}$, might be cumbersome. And so, we are going to briefly look at ways that we might re-write verbose flat-sequences in more terse or higher-level abstract ways so as to focus on details that the flat-structure perhaps doesn't clearly express. This for example is naturally relevant in nucleic acid sequences since they are for example useful in scenarios where their processing is done in n-tuples/n-grams --- such as with codons (nucleotide 3-grams) or as gene programs (self-contained sequences of codons), etc.
 
@@ -361,7 +390,7 @@ And the way we have bundled up the nucleotides in \textbf{Equation \ref{EQINSUL2
 Of course, though we might not delve into it here or at the moment, we know that by chaining several sequence transformers --- such that one operates on the output of the previous one to produce the next sequence (see \textbf{Transformer \ref{TRANS1}} as an example), we can arrive at even higher abstraction sequences that might render certain sequence processing programs easier to write, analyze or define. For example, we know that, much as a Ribosome Processor operates on a sequence of codons, and yet, any legitimate protein synthesis and genetic code sequence processing program will require some sort of necessary delimiters (such as the START and STOP codons --- refer to the Protein Synthesis Flow Chart in \textbf{Figure \ref{FIG3}}), and so that, we might (if we could), abstract away codons and instead generate from a flat-structure DNA or perhaps mRNA sequence, a higher-level n-gram sequence of genes or \textbf{gene-program sequences}.
 
 
-\section{Genetic Sequence Analysis Using Transformatics}
+\section{Sequence Analysis Using Symbol Sets}
 \label{SEC3}
 
 We now turn our attention to the matter of using ideas from transformatics to help analyze or understand genetic code sequences. For starters, we shall want to consider the matter of how to tell how far apart or dissimilar any two nucleic acid sequences might be. Of course, consequently, that would also translate into meaningful way to tell how far apart not just low-level genetic-creations such as tissue, cell-types, proteins, etc might be based on the genetic code that produces them, but also how different entire organisms (within the same species or not) might be.
@@ -499,13 +528,415 @@ It is not immediately clear what the plausibility of such an \textit{evil gene-p
 
 That said, in case a normally correct gene-program such as what we saw in $\psi_{insulin}$ (see \textbf{Equation \ref{EQINSULIN}}) is altered with --- perhaps by a natural mutation, or perhaps a virus, or even in a totally malicious feat of gene-manipulation medicine, and such a transformation results in a nucleic-acid sequence satisfying any of the above queer cases, who knows, but it might as well be the root case of some difficult flaw in the organism --- an incurable and fatal disease (if the faulty gene-program is crucial for normal life support and that it has no alternatives or simple way to be solved), and these might the kinds of hard problems that might require not just medical doctors, biologists or perhaps genetists to tackle, but also people like computer hackers, information-security experts and software debuggers\footnote{It shouldn't come as a surprise, that with a stronger marriage of computing theory and biology, or medicine, that certain problems in nature --- not just with humans or animals, but also with plants for example, and especially if they are either inheritable --- meaning genetic, or if they might somehow be remedied via clever hacking or debugging and modifying of the organism via gene programs, might call for the skills of and expertise of software engineers and program debuggers from hardcore computer science and not just the medical or biological sciences! A great background work on this subject by the author might come in handy --- refer to \cite{Lutalo2025debug}}!
 
+\section{Sequence Analysis Using Complement Sets}
+\label{SEC3A}
 
-\section{The Modal Sequence Statistic as a Generic Genetic Code --- A Case of Bio-Automata}
-\label{SEC4}
+The idea of complements when applied to na-Sequences has already been introduced in \textbf{Section \ref{SEC1}}, and we get to see it depicted in an exemplary typical diagrammatic depiction of the DNA structure in \textbf{Figure \ref{FIG1}}. However, apart from having talked about the fact that nucleic acids typically or naturally occur together in base-pairs depicting pairwise complements, we might want to leverage transformatics to study this idea at a more general level --- say, to explore the matter of \textbf{na-Sequence} (as well as \textit{any sequence}) complements, and thus this section.
 
-We are going to talk about the matter of the \textbf{Genetic Anagram Distance}, $0 \geq \tilde{A}(\Theta_{na} \rightarrow \Theta_{na}^*) \leq \infty$, between any two of species, populations, individual organisms or any entity specifiable via sequences. We are to deal with nucleic acid sequences mostly. 
+Assume we start by exploring simple binary sequences --- especially because bits help generalize many ideas in theory and practice. We can for example start by noticing that, like in the case of the interesting \textbf{Lu-Number System}\cite{lnspaper} --- in which any kind of \textit{basic information} can be abstracted by mapping it to either signal (>) or anti-signal (<), and that \textit{complex information} can then be generated from that using transforms on basic LNS sequences or expressions, etc. We can start by looking at what can be said of the transforms on the binary sequence symbol set, $\psi_{bin}$ --- or better, $\psi_{01}$. In our formulations, we shall denote the complement of a symbol $\rho$ by $\lnot\rho$, and for a sequence $\Theta$, with $\lnot\Theta$.
 
-Such a concept, derived from the ADM theory, can allow us to quantity by how much and/or if there is any significant variation between any two organisms, species or just arbitrary DNA sequences, given not just the composition of the DNA sequences themselves, but also the ordering of members within it matters in the mathematics and logic of processing, analyzing and or specifying \textbf{nucleic acid sequences} --- in which, as per . The following three hypothetical, but semantically and syntactically legitimate expressions of either DNA or mRNA nucleic acid sequences in formal sequence expressions:\\
+
+\begin{table}[H]
+  \centering
+  \Large
+	\begin{tabular}[t]{|p{2cm}|c|c|p{4cm}|}
+	\hline
+	Sequence Name & Sequence & Formula & Note\\
+	\hline
+	\hline
+	$\Theta1$ & 0 1 & $\psi_{01}$ & Binary Symbol Set as a basic Sequence\\
+	\hline
+	$\Theta2$ & 0 1 0 1 & $\psi_{01}\cdot\psi_{01}$ & Sequence Concatenation/Multiplication\\
+	\hline
+	$\Theta3$ & 0 2 0 1 & $\psi_{01}(1 + \psi_{01})$ & Sequence as Linear Combination of other Sequences: case of memberwise addition of the above two sequences\\
+	\hline
+	$\Theta4$ & 1 0 1 0 & $\lnot\Theta2 = \lnot\psi_{01} \cdot \lnot\psi_{01}$ & Basic Complement Transforms\\
+	\hline
+	              
+\end{tabular}
+ \caption{An example of exploring symbol and sequence complements in sequence transformations}
+  \label{TABCOMPLEMENTS}
+\end{table}
+
+So, we can begin by noting that, if some sequence $\Theta$ spans some symbol set $\psi_\beta$ --- such as how all the sequences in \textbf{Table \ref{TABCOMPLEMENTS}} span $\psi_{01}$, then we can say that the complement sequence, $\lnot\Theta$ spans the complement symbol set $\lnot\psi_\beta$. But not just that. You can readily tell from studying that table, that actually, if sequence $\Theta$ spans $\psi_\beta$, then it also spans $\lnot\psi_\beta$ --- meaning, its members essentially are one of the distinct elements from either symbol set even though the two sets might not necessarily have the same ordering of their members.
+
+Further, note that, if $\psi_\beta$ is the symbol set of some sequence $\Theta$, and that the \textbf{complement symbol set} it is equivalent to is $\lnot\psi_\beta$, then we can comfortably say that $\lnot\Theta$ spans $\lnot\psi_\beta$ as well. This is true, because, for any sequence $\Theta$, its complement, $\lnot\Theta$ is the sequence of the memberwise complements of $\Theta$. That is to say:
+
+\begin{equation}
+\psi_\beta = \lnot (\lnot \psi_\beta)
+\end{equation}
+
+and 
+
+\begin{equation}
+\Theta = \lnot(\lnot\Theta) \implies \lnot\Theta = \lnot(\Theta)
+\end{equation}
+
+So that, if
+
+\begin{equation}
+\label{EQCOMPSETS}
+\psi_\beta = \langle \prod\limits_{i=1}^{n} a_i \rangle \quad \implies \quad \lnot\psi_\beta = \langle \prod\limits_{i=1}^{n} a_{n-i} \rangle
+\end{equation}
+
+And for any $\Theta: \mathbb{N} \times \psi_\beta$ we know that:
+
+\begin{equation}
+\lnot\Theta = \prod\limits_{i=1}^{n} \lnot(a_i)
+\end{equation}
+
+for $n = \invpi(\Theta)$ and that $\forall a_i \in \psi_\beta$, 
+
+\begin{equation}
+\label{EQCOMPLEMENTS}
+\lnot(a_i) = \rho_i \in \lnot\psi_\beta
+\end{equation}
+
+
+So, one way to appreciate \textbf{Equation \ref{EQCOMPLEMENTS}}, is by realizing that by knowing the members and their order in $\psi_\beta$, we can then systematically determine the members and ordering of $\lnot\psi_\beta$ via \textbf{Equation \ref{EQCOMPSETS}}, and so that, for some $a_i$ in $\psi_\beta$, its complement in $\lnot\psi_\beta$ is the term at position index $n-1$ in $\psi_\beta$. Thus, as we saw in \textbf{Table \ref{TABCOMPLEMENTS}}, for $a_0 = 0$ in $\psi_{01}$, the complement, $\lnot a_0 = a_{\invpi(\psi_{01})-0} = a_2 = 1$. This mechanics can be extended or applied to sequences of arbitrary length and composition as necessary. For purposes of future use, we shall generalize this with a useful theorem as such:
+
+
+%\fbox{\begin{minipage}{0.9\textwidth}
+%\large
+
+\begin{theo}[\textbf{Complement Sequences}]
+\label{THEOCOMPLEMENTS}
+
+For any ordered sequence $\Theta_n\langle \prod\limits_{i=1}^{n} a_i \rangle$, its equivalent \textbf{complement sequence}, also denoted $\lnot\Theta_n$, is the sequence with the signature $\Omega_n\langle \prod\limits_{i=1}^{n} \rho_i \rangle$ such that $\rho_i = a_{n-1} \quad \forall a_i \in \Theta_n$. We shall also write $\Omega_n$ as $\lnot\Theta_n$ where necessary.
+
+\begin{proof}
+By \textbf{Equation \ref{EQCOMPSETS}}, we see that if $\Theta_n = \langle a_1, a_2, a_3,...,a_{n-1}, a_n \rangle$, then we can derive its complement $\lnot\Theta_n$ via the mapping of its members to corresponding members in its lateral inverse as such:
+
+\[
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+  % Matrix A
+  \matrix (A) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em] {
+    a_1 & a_2 & a_3 & \cdots & a_{n-1} & a_n \\
+  };
+
+  % Matrix B
+  \matrix (B) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em, below=3em of A] {
+    a_n & a_{n-1} & a_{n-2} & \cdots & a_2 & a_1 \\
+  };
+
+  % Draw arrows from A_i to B_i
+  \foreach \i in {1,2,3}
+    \draw[->] (A-1-\i) -- (B-1-\i);
+
+  % Optional: arrows for ellipsis and final element
+  \draw[->] (A-1-4) -- (B-1-4); % for \cdots
+  \draw[->] (A-1-5) -- (B-1-5); % for a_{n-1} → b_{n-1}
+  \draw[->] (A-1-6) -- (B-1-6); % for a_n → b_n
+\end{tikzpicture}
+\]
+
+\end{proof}
+
+\end{theo}
+%\end{minipage}}
+%\\
+
+And since we are dealing with sequence transformations in this work, we might as well define the necessary transformer:
+
+\begin{transf}[The \textbf{Complement Transformer}]
+\label{TRANSCOMPL}
+$ $\\
+$\Theta \xrightarrow{O_{complement}(\Theta)} \Theta^*; \quad \Theta^* = \lnot\Theta$
+\end{transf}
+
+
+\subsection{Significance of Sequence Complements, $\lnot\Theta$ and Complement Symbol Sets, $\lnot\psi_\beta$}
+
+First, we shall momentarily return to binary sequences. 
+
+We note that, for some binary sequence $\Theta: \mathbb{N} \times \psi_{01}$, the transform
+
+\begin{trans}
+$\Theta \xrightarrow{O_{complement}(\cdot)} \Theta^*; \Theta^* = \lnot\Theta$
+\end{trans}
+
+which applies \textbf{Transformer \ref{TRANSCOMPL}}, produces the same sequence as $\Theta$ but with all bits swapped by their complements, which, as per usual nomenclature in computer science for example, means the resultant sequence is produced from the source via a \textbf{bitwise NOT operation}, and which, for binary sequences, is as simple as merely flipping the bits individually.
+
+Thus, if our source sequence was 
+
+\begin{equation}
+\Theta = \langle 0 1 0 1 1 1 1 0 \rangle
+\end{equation}
+
+Then 
+
+\begin{trans}
+$\Theta \xrightarrow{O_{complement}(\Theta)}  \langle 1 0 1 0 0 0 0 1 \rangle$
+\end{trans}
+
+And then, returning to nucleic acid sequences, we note that if we for example have some na-Sequence such as 
+
+\begin{equation}
+\label{SEQATC}
+\Theta = \langle A T C G C G T A T \rangle
+\end{equation}
+
+\textbf{That we wish to treat as a DNA-sequence}, then its \textit{na-Complement} sequence would be derivable from $\psi_{DNA}$ as such:
+
+Since $\psi_{DNA} = \langle A, C, G, T \rangle$, then by \textbf{Equation \ref{EQCOMPSETS}}, we know that:
+
+\begin{equation}
+\lnot(\psi_{DNA}) = \lnot\psi_{DNA}) = \langle T, G, C, A \rangle
+\end{equation}
+
+So that, $\forall \rho \in \psi_{DNA}$, the equivalent complement is via the mapping:
+
+\[
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+  % Matrix A
+  \matrix (A) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em] {
+    A & C & G & T \\
+  };
+
+  % Matrix B
+  \matrix (B) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em, below=3em of A] {
+    T & G & C & A \\
+  };
+
+  % Draw arrows from A_i to B_i
+  \foreach \i in {1,2,3, 4}
+    \draw[->] (A-1-\i) -- (B-1-\i);
+\end{tikzpicture}
+\]
+
+Which is also the consequence of \textbf{Theorem \ref{THEOCOMPLEMENTS}}. Thus, for the sequence in \textbf{Equation \ref{SEQATC}}, the corresponding complement DNA sequence is:
+
+\begin{equation}
+\label{SEQATCCOMP}
+\lnot\Theta = \langle T A G C G C A T A \rangle
+\end{equation}
+
+This ideal can be further appreciated by noticing that the traditional DNA sequence base symbol set (which we shall denote by $\dot{\psi}_{DNA}$), is actually different from $\psi_{DNA}$, and is defined as:
+
+\begin{equation}
+\label{SSDNAT}
+\dot{\psi}_{DNA} = \langle A, T, C, G \rangle
+\end{equation}
+
+We should come to appreciate this special symbol set, or even justify it --- for logical and mathematical analyses, by acknowledging that it depicts not just a sequence of distinct symbols from $\psi_{DNA}$, but also their natural order based on both order of occurrence in $\psi_{DNA}$ \textbf{and} their equivalent \textbf{symbol complements} in $\lnot\psi_{DNA}$! It is such a terrific discovery/realization. And before we proceed, we note that the $\dot{\psi}_{DNA} \rightarrow \lnot\dot{\psi}_{DNA}$ mapping for pairwise-ordered DNA sequences is as such:
+
+
+\[
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+  % Matrix A
+  \matrix (A) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em] {
+    A & T & C & G \\
+  };
+
+  % Matrix B
+  \matrix (B) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em, below=3em of A] {
+    G & C & T & A \\
+  };
+
+  % Draw arrows from A_i to B_i
+  \foreach \i in {1,2,3, 4}
+    \draw[->] (A-1-\i) -- (B-1-\i);
+\end{tikzpicture}
+\]
+
+
+Because, from \textbf{Equation \ref{SSDNAT}}, we can tell that:
+
+\begin{equation}
+\label{SSDNATCOMP}
+\lnot\dot{\psi}_{DNA} = \langle G, C, T, A \rangle
+\end{equation}
+
+
+Perhaps, and worth checking out, even if momentarily, what would happen when the idea of complement symbols sets and complement sequences is applied to the more commonplace base-10 sequences (aka ``usual numbers")?
+
+First, note that since $\psi_{10}$ --- our choice of symbol for the decimal symbol set, is expressed as such:
+
+\begin{equation}
+\label{SSDEC}
+\psi_{10}= \langle 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \rangle
+\end{equation}
+
+Then, by \textbf{Theorem \ref{THEOCOMPLEMENTS}}, its complement is:
+
+
+\begin{equation}
+\label{SSDEC}
+\lnot\psi_{10}= \langle 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 \rangle
+\end{equation}
+
+So that, for any base-10 digit, the corresponding \textbf{complement digit} is as in the mapping below:
+
+
+\[
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+  % Matrix A
+  \matrix (A) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em] {
+    0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
+  };
+
+  % Matrix B
+  \matrix (B) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em, below=3em of A] {
+    9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0\\
+  };
+
+  % Draw arrows from A_i to B_i
+  \foreach \i in {1,2,3,4,5,6,7,8,9,10}
+    \draw[->] (A-1-\i) -- (B-1-\i);
+\end{tikzpicture}
+\]
+
+Such a peculiar cipher! Because, usual/familiar number sequences such as the \textbf{Hi-Fi o-SSI}\cite{adtpaper}, defined as such:
+
+\begin{equation}
+\Theta_{HiFi} = 8 6 4 9 1 3 7 5 2 0
+\end{equation}
+
+Has the complement:
+
+
+\begin{equation}
+\lnot\Theta_{HiFi} = 1 3 5 0 8 6 2 4 7 9
+\end{equation}
+
+Which, given how that special sequence was derived/discovered(see \textbf{Section 5.1} in \cite{ossipaper} or \textbf{Equation 19} in the same paper), it is interesting to note that its complement under $\psi_{10}$ is also an \textit{orthogonal symbol set identity}! For those who have studied the o-SSI paper\cite{ossipaper}, this can really be exciting for the study of symbol sets and sequences in general --- yes, even for nucleic acid sequences! But, that said, of course, it shouldn't come as a surprise, since, in simple terms, a sequence's complement is just one very special kind anagram among the set of all potential anagrams it can have, and so, before we leave the base-10 case, we can note that if some sequence $\Theta_{10}: \mathbb{N} \times \psi_{10}$ is a base-10 o-SSI, then its complement is also a base-10 o-SSI, and in fact, in general --- even for non-numeric symbol sets such as $\psi_{na}, \psi_{DNA}$ or special $\psi_{RNA}$, that:
+
+
+\begin{theo}[\textbf{Complement of an o-SSI is an o-SSI}]
+If some sequence $\Theta: \mathbb{N} \times \psi_\beta$ is an orthogonal symbol set identity for the base $\beta$, then its complement, $\lnot\Theta$ is also an orthogonal symbol set identity for $\beta$.
+\end{theo}
+
+\subsection{Potential Applications of Sequence Complements or Inverses}
+
+First, in genetics and analysis of genetic code sequences, note that for especially sequences in say the \textit{non-native}(non-storage) form, such as the processed/derived RNA-sequences, it might sometimes be useful to determine if some two sequences are the same, equivalent or closely related, even though their apparent ordering of members, or even member composition looks unlike, \textbf{as long as their cardinalities are the same}\footnote{This requirement to have their sizes the same, is a natural consequence of how a sequence and its anagram relate --- see \cite{adtpaper}}.
+
+We should note, and interestingly so, that the complement of any sequence $\Theta$, which is $\lnot\Theta$, is just an anagram of $\Theta$, and that in general, we can comfortably say:
+
+
+\begin{theo}[\textbf{Equivalence of Sequences under the Complement Transform}]
+If two sequences $\Theta$ and $\Omega$ that are \textbf{not equal}, but which do have the same cardinality and similar distribution of members, then they are essentially equivalent under the sequence complement transform.
+
+\begin{proof}
+The proofs are several:
+\begin{enumerate}
+\item Since $\invpi(\Theta) = \invpi(\Omega)$ and $\forall \alpha \in \Theta \quad \exists \rho \in \Omega: \alpha = \rho$ or equivalently, that $\forall a_i \in \Theta, \invpi(a_i \in \Theta) = \invpi(a_i \in \Omega)$, then there exists some anagram of $\Theta$, denoted $\Theta^*$ such that $\Theta^* \xrightarrow{O_{complement}(\cdot)} \Omega$, which is possible by \textbf{Theorem \ref{THEOCOMPLEMENTS}}.
+\item Because sequence complements are anagrams of each other, then if the two sequences are complements of each other, we expect that by the definition of the complement transformer (see \textbf{Transformer \ref{TRANSCOMPL}}), $\Omega = \lnot\Theta$ or that $\Theta = \lnot\Omega$.
+\item We might also proceed by use of \textbf{modal sequences}(see \textbf{Definition 1} in \cite{transformatics}): Given the conditions on the two sequences, we then expect that if $\Theta$ is a sequence complement of $\Omega$ or vice-versa, then, computing their corresponding modal sequence statistic should result in the following result: $\overset{>}{\Theta} = \lnot(\overset{>}{\lnot\Omega})$ or equivalently, $\overset{>}{\Omega} = \lnot(\overset{>}{\lnot\Theta})$
+\end{enumerate}
+\end{proof}
+
+\end{theo}
+
+
+Note that, for RNA, since $\psi_{RNA} = \langle A, C, G, U \rangle$ (\textbf{Equation \ref{EQRNASS}}), then: 
+
+\begin{equation}
+\label{EQRNACOMP}
+\lnot\psi_{RNA} = \langle U, G, C, A \rangle
+\end{equation}
+
+And this is what we'd expect via the complement mapping:
+
+
+\[
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+  % Matrix A
+  \matrix (A) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em] {
+    A & C & G & U \\
+  };
+
+  % Matrix B
+  \matrix (B) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em, below=3em of A] {
+    U & G & C & A \\
+  };
+
+  % Draw arrows from A_i to B_i
+  \foreach \i in {1,2,3, 4}
+    \draw[->] (A-1-\i) -- (B-1-\i);
+\end{tikzpicture}
+\]
+
+
+But, since the traditional pairwise ordered symbol set for RNA, $\dot{\psi}_{RNA}$ is
+
+
+\begin{equation}
+\label{EQRNATRAD}
+\dot{\psi}_{RNA} = \langle A, U, C, G \rangle
+\end{equation}
+
+Then its corresponding complement,$\lnot\dot{\psi}_{RNA}$, is
+
+\begin{equation}
+\label{EQRNATRADCOMP}
+\lnot\dot{\psi}_{RNA} = \langle G, C, U, A \rangle
+\end{equation}
+
+And so we have the associated complement mapping as
+
+\[
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+  % Matrix A
+  \matrix (A) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em] {
+    A & U & C & G \\
+  };
+
+  % Matrix B
+  \matrix (B) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em, below=3em of A] {
+    G & C & U & A \\
+  };
+
+  % Draw arrows from A_i to B_i
+  \foreach \i in {1,2,3, 4}
+    \draw[->] (A-1-\i) -- (B-1-\i);
+\end{tikzpicture}
+\]
+
+
+So, that, for some RNA-sequence such as $\Theta_{met}$:
+
+
+\begin{equation}
+\Theta_{met} = \langle A, U, G \rangle
+\end{equation}
+
+
+Which is the famous START-codon \textbf{Methionine} (see \textbf{Table \ref{TAB2}}), has as its corresponding nucleic acid sequence complement under $\dot{\psi}_{RNA}$:
+
+\begin{trans}
+\label{TRANSGCA}
+$\Theta_{met} \xrightarrow{O_{complement}(\Theta,\dot{\psi}_{RNA})}  \langle G, C, A \rangle$\\
+That codon isn't the same as the source (ATG/AUG/Methionine), but there's some debate concerning what it actually is called --- \textbf{Table 1} in \cite{gregory1987oxford} names codon GCA as \textbf{Arginine}, while Wikipedia\cite{wikipedia_codon_tables} names it \textbf{Alanine}.
+\end{trans}
+
+While --- \textbf{and important to note}, its complement under $\psi_{RNA}$ is [indeed] different!
+
+\begin{trans}
+\label{TRANSUAC}
+$\Theta_{met} \xrightarrow{O_{complement}(\Theta,\psi_{RNA})}  \langle U, A, C \rangle$
+\\
+and we know that codon UAC is Tyrosine\cite{wikipedia_codon_tables}\footnote{Concerning this particular codon, TAC/UAC, we find that though the Wikipedia reference tables assign it the name Tyrosine in both the DNA and RNA encodings, and yet, the physical reference we have at hand\cite{gregory1987oxford} (perhaps now out-of-date), assigns the name ``Methionine" to TAC --- Table 1 in that reference book didn't list RNA codes, but we still would expect to use TAC to look-up the correct name for UAC.}.
+\end{trans}
+
+It should perhaps be immediately noticeable that the ability to derive new/different/special sequences such as complement codons from ordinary na-Sequences might have some useful if not exciting applications as well as problems it awakens for the geneticists, molecular biologists and researchers of gene-sequencing\footnote{For those that don't know: Gene sequencing is the process of determining the exact order of nucleotides --- A, T, C and G --- in a segment of DNA that makes up a gene. It's like reading the biological ``code" that instructs cells how to build proteins and regulate functions\cite{copilot_dna_assistant}.} and analysis. For example, apart from acknowledging that na-Sequence's complements denote potentially legitimate na-helix strand partners for any two sequences (in the form $\Theta$ and $\lnot\Theta$), it would be interesting to determine what other important things might we learn, discover from exploring these kinds of sequence transforms? 
+
+It's already interesting to note that under complement transforms (which are special kinds of anagrams), the natural/universal protein synthesis START-codon AUG/ATG is equivalent to GCA (\textbf{Transformation \ref{TRANSGCA}}) or UAC (\textbf{Transformation \ref{TRANSUAC}}), but, \textbf{are those other codons also START-codons?} That said, is there a possibility that some natural process or genetic code translation or transformation might naturally produce ATG or AUG from any of those corresponding [symbolic] complement sequences? What would this teach us about natural/biological processors? What of the possibilities of using synthetic/artificial processors to render such complement operations useful?
+
+
+\section{Sequence Analysis Using The Anagram Distance and the Modal Sequence Statistic}
+\label{SEC4A}
+
+
+We are going to talk about the matter of comparing or analyzing two or more na-Sequences using especially statistical measures that have been set down by transformatics theory for especially ordered sequences. In particular, we shall be looking at na-Sequences through the lens of the following kinds of analyses:
+
+\begin{enumerate}
+\item Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, of the same length, $n$ and with similar symbol sets($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_n)$), how to quantify how similar or dissimilar they are.
+\item Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$ and with similar symbol sets($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are.
+\item Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$ and with different symbol sets($\psi_{na}(\Theta1_n) \neq \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are.
+\item Finally, how, when given a particular na-Sequence, $Q_n$, and a collection/sample of other sequences ($\Theta1_n, \Theta2_k, \Theta3_l,...$) that belong to a labeled/classified population, to determine if the query sequence, $Q_n$ belongs to the same population or not and to determine which of the candidate sequences it is closest to.
+\end{enumerate}
+
+Note that in conducting these analyses, we shall especially exploit the sequence-specific measures, $\tilde{A}(\cdot)$, the Anagram Distance Measure\cite{adtpaper}\cite{transformatics}, and $\overset{>}{\Theta}$, the Modal Sequence Statistic\cite{transformatics}, and that we shall use the following representative, even though somewhat hypothetical, na-Sequences:
 
 \begin{equation}
 {\Theta1}_{DNA} = \langle TAC GGG CAT TCC \rangle\\
@@ -515,12 +946,18 @@ Such a concept, derived from the ADM theory, can allow us to quantity by how muc
 {\Theta2}_{RNA} = \langle AUG AUG CGC GGG CAU AUC \rangle\\
 \end{equation}
 
-
 \begin{equation}
 {\Theta3}_{DNA} = \langle ATA ATGG GGG CAT TGA \rangle\\
 \end{equation}
 
 
+
+
+
+\section{The Modal Sequence Statistic as a Generic Genetic Code --- A Case of Bio-Automata}
+\label{SEC4}
+
+blah blah...
 
 
 

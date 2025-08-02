@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  1 AUG 2025 14:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  2 AUG 2025 18:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -409,6 +409,276 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip77
 \dth@everypar=\toks36
 )
+(C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks37
+\pgfutil@tempdima=\dimen185
+\pgfutil@tempdimb=\dimen186
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box65
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.
+tex
+\pgfkeys@tmptoks=\toks40
+))
+\pgf@x=\dimen187
+\pgf@y=\dimen188
+\pgf@xa=\dimen189
+\pgf@ya=\dimen190
+\pgf@xb=\dimen191
+\pgf@yb=\dimen192
+\pgf@xc=\dimen193
+\pgf@yc=\dimen194
+\pgf@xd=\dimen195
+\pgf@yd=\dimen196
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count312
+\c@pgf@countb=\count313
+\c@pgf@countc=\count314
+\c@pgf@countd=\count315
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
+\pgf@sys@id@count=\count316
+ (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count317
+\pgfsyssoftpath@bigbuffer@items=\count318
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen197
+\pgfmath@count=\count319
+\pgfmath@box=\box66
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.co
+de.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.
+tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmeti
+cs.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count320
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen198
+\pgf@picmaxx=\dimen199
+\pgf@picminy=\dimen256
+\pgf@picmaxy=\dimen257
+\pgf@pathminx=\dimen258
+\pgf@pathmaxx=\dimen259
+\pgf@pathminy=\dimen260
+\pgf@pathmaxy=\dimen261
+\pgf@xx=\dimen262
+\pgf@xy=\dimen263
+\pgf@yx=\dimen264
+\pgf@yy=\dimen265
+\pgf@zx=\dimen266
+\pgf@zy=\dimen267
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.t
+ex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen268
+\pgf@path@lasty=\dimen269
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen270
+\pgf@shorten@start@additional=\dimen271
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box67
+\pgf@hbox=\box68
+\pgf@layerbox@main=\box69
+\pgf@picture@serial@count=\count321
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.te
+x
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen272
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code
+.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen273
+\pgf@pt@y=\dimen274
+\pgf@pt@temp=\dimen275
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.
+tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen276
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen277
+\pgf@sys@shading@range@num=\count322
+\pgf@shadingcount=\count323
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box70
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.te
+x
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box71
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen278
+\pgf@nodesepend=\dimen279
+)
+(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex))
+(C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen280
+\pgffor@skip=\dimen281
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.
+tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count324
+\pgfplotmarksize=\dimen282
+)
+\tikz@lastx=\dimen283
+\tikz@lasty=\dimen284
+\tikz@lastxsaved=\dimen285
+\tikz@lastysaved=\dimen286
+\tikz@lastmovetox=\dimen287
+\tikz@lastmovetoy=\dimen288
+\tikzleveldistance=\dimen289
+\tikzsiblingdistance=\dimen290
+\tikz@figbox=\box72
+\tikz@figbox@bg=\box73
+\tikz@tempbox=\box74
+\tikz@tempbox@bg=\box75
+\tikztreelevel=\count325
+\tikznumberofchildren=\count326
+\tikznumberofcurrentchild=\count327
+\tikz@fig@count=\count328
+ (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count329
+\pgfmatrixcurrentcolumn=\count330
+\pgf@matrix@numberofcolumns=\count331
+)
+\tikz@expandcount=\count332
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
 (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/textgreek\textgreek.sty
 Package: textgreek 2011/10/09 v0.7 Greek symbols in text
 Package textgreek Info: Loading the definitions for the Greek fontencoding. on 
@@ -777,70 +1047,51 @@ File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
 Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/
 *}. on input line 69.
 )
-\c@comp=\count312
-\c@theo=\count313
-\c@defn=\count314
-\c@lem=\count315
-\c@prop=\count316
-\c@axiom=\count317
-\c@post=\count318
-\c@trans=\count319
-\c@transf=\count320
-\c@law=\count321
- (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
-
-(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 274.
-
-(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
-Package xcolor Info: Model `RGB' extended on input line 1366.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-)
-(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/soul\soul.sty
+\c@comp=\count333
+\c@theo=\count334
+\c@defn=\count335
+\c@lem=\count336
+\c@prop=\count337
+\c@axiom=\count338
+\c@post=\count339
+\c@trans=\count340
+\c@transf=\count341
+\c@law=\count342
+ (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/soul\soul.sty
 Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
 
 (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/soul\soul-ori.sty
 Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
-\SOUL@word=\toks37
-\SOUL@lasttoken=\toks38
-\SOUL@syllable=\toks39
-\SOUL@cmds=\toks40
-\SOUL@buffer=\toks41
-\SOUL@token=\toks42
-\SOUL@syllgoal=\dimen185
-\SOUL@syllwidth=\dimen186
-\SOUL@charkern=\dimen187
-\SOUL@hyphkern=\dimen188
-\SOUL@dimen=\dimen189
-\SOUL@dimeni=\dimen190
-\SOUL@minus=\count322
-\SOUL@comma=\count323
-\SOUL@apo=\count324
-\SOUL@grave=\count325
+\SOUL@word=\toks49
+\SOUL@lasttoken=\toks50
+\SOUL@syllable=\toks51
+\SOUL@cmds=\toks52
+\SOUL@buffer=\toks53
+\SOUL@token=\toks54
+\SOUL@syllgoal=\dimen291
+\SOUL@syllwidth=\dimen292
+\SOUL@charkern=\dimen293
+\SOUL@hyphkern=\dimen294
+\SOUL@dimen=\dimen295
+\SOUL@dimeni=\dimen296
+\SOUL@minus=\count343
+\SOUL@comma=\count344
+\SOUL@apo=\count345
+\SOUL@grave=\count346
 \SOUL@spaceskip=\skip78
-\SOUL@ttwidth=\dimen191
-\SOUL@uldp=\dimen192
-\SOUL@ulht=\dimen193
+\SOUL@ttwidth=\dimen297
+\SOUL@uldp=\dimen298
+\SOUL@ulht=\dimen299
 )
 (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ))
 (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/wrapfig\wrapfig.sty
-\wrapoverhang=\dimen194
-\WF@size=\dimen195
-\c@WF@wrappedlines=\count326
-\WF@box=\box65
-\WF@everypar=\toks43
+\wrapoverhang=\dimen300
+\WF@size=\dimen301
+\c@WF@wrappedlines=\count347
+\WF@box=\box76
+\WF@everypar=\toks55
 Package: wrapfig 2003/01/31  v 3.6
 )
 (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pdfpages.sty
@@ -851,76 +1102,79 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count327
-\calc@Bcount=\count328
-\calc@Adimen=\dimen196
-\calc@Bdimen=\dimen197
+\calc@Acount=\count348
+\calc@Bcount=\count349
+\calc@Adimen=\dimen302
+\calc@Bdimen=\dimen303
 \calc@Askip=\skip79
 \calc@Bskip=\skip80
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count329
+\calc@Ccount=\count350
 \calc@Cskip=\skip81
 )
 (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen198
-\ESO@tempdimb=\dimen199
+\ESO@tempdima=\dimen304
+\ESO@tempdimb=\dimen305
 )
-\AM@pagewidth=\dimen256
-\AM@pageheight=\dimen257
-\AM@fboxrule=\dimen258
+\AM@pagewidth=\dimen306
+\AM@pageheight=\dimen307
+\AM@fboxrule=\dimen308
 
 (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2024/08/20 v0.6b Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count330
-\AM@pagebox=\box66
-\AM@global@opts=\toks44
-\AM@pagecnt=\count331
-\AM@toc@title=\toks45
-\AM@lof@heading=\toks46
-\c@AM@survey=\count332
-\AM@templatesizebox=\box67
+\pdfpages@includegraphics@status=\count351
+\AM@pagebox=\box77
+\AM@global@opts=\toks56
+\AM@pagecnt=\count352
+\AM@toc@title=\toks57
+\AM@lof@heading=\toks58
+\c@AM@survey=\count353
+\AM@templatesizebox=\box78
 )
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count333
-\l__pdf_internal_box=\box68
+\l__color_backend_stack_int=\count354
+\l__pdf_internal_box=\box79
 )
 
 LaTeX Warning: Unused global option(s):
     [18pt].
 
-(TransformaticsInGENETICS---2025---JWL.aux)
+(TransformaticsInGENETICS---2025---JWL.aux
+
+LaTeX Warning: Label `SSDEC' multiply defined.
+
+)
 \openout1 = `TransformaticsInGENETICS---2025---JWL.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 94.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 98.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 9
-4.
-
-(C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
+8.
+ (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    ... okay on input line 98.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -958,17 +1212,17 @@ LaTeX Font Info:    ... okay on input line 94.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count334
-\scratchdimen=\dimen259
-\scratchbox=\box69
-\nofMPsegments=\count335
-\nofMParguments=\count336
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count337
-\MPscratchDim=\dimen260
-\MPnumerator=\count338
-\makeMPintoPDFobject=\count339
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count355
+\scratchdimen=\dimen309
+\scratchbox=\box80
+\nofMPsegments=\count356
+\nofMParguments=\count357
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count358
+\MPscratchDim=\dimen310
+\MPnumerator=\count359
+\makeMPintoPDFobject=\count360
+\everyMPtoPDFconversion=\toks60
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -988,14 +1242,14 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 94.
+Package hyperref Info: Link coloring OFF on input line 98.
 
 (TransformaticsInGENETICS---2025---JWL.out)
 (TransformaticsInGENETICS---2025---JWL.out)
-\@outlinefile=\write3
-\openout3 = `TransformaticsInGENETICS---2025---JWL.out'.
+\@outlinefile=\write4
+\openout4 = `TransformaticsInGENETICS---2025---JWL.out'.
 
-\c@lstlisting=\count340
+\c@lstlisting=\count361
 
 (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1012,11 +1266,11 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/front_cover.pdf, id=39, 596.98032pt x 844.65562pt>
+<resources/pdfs/front_cover.pdf, id=58, 596.98032pt x 844.65562pt>
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf>
-Package pdftex.def Info: resources/pdfs/front_cover.pdf  used on input line 97.
-
+Package pdftex.def Info: resources/pdfs/front_cover.pdf  used on input line 101
+.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
 
@@ -1024,8 +1278,8 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf>
-Package pdftex.def Info: resources/pdfs/front_cover.pdf  used on input line 97.
-
+Package pdftex.def Info: resources/pdfs/front_cover.pdf  used on input line 101
+.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
 
@@ -1035,130 +1289,130 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/front_cover.pdf, id=42, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/front_cover.pdf, id=61, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
-ine 97.
+ine 101.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
-ine 97.
+ine 101.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
-ine 97.
+ine 101.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
-ine 97.
+ine 101.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
-ine 97.
+ine 101.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 [1
 
 
  <./resources/pdfs/front_cover.pdf>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 100
+LaTeX Font Info:    Trying to load font information for U+msa on input line 104
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 100
+LaTeX Font Info:    Trying to load font information for U+msb on input line 104
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
 
 
 
 [2{C:/Users/AKAM/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (5.68011pt too wide) in paragraph at lines 113--115
+Overfull \hbox (5.68011pt too wide) in paragraph at lines 117--119
 []\OT1/cmtt/m/n/14.4 Sex seems to have been invented around two billion years a
 go.
  []
 
 
-Overfull \hbox (5.68011pt too wide) in paragraph at lines 113--115
+Overfull \hbox (5.68011pt too wide) in paragraph at lines 117--119
 \OT1/cmtt/m/n/14.4 Before then, new varieties of organisms could arise only fro
 m
  []
 
 
-Overfull \hbox (42.73006pt too wide) in paragraph at lines 113--115
+Overfull \hbox (42.73006pt too wide) in paragraph at lines 117--119
 \OT1/cmtt/m/n/14.4 the accumulation of random mutations --- the selection of ch
 anges,
  []
 
 
-Overfull \hbox (13.0901pt too wide) in paragraph at lines 113--115
+Overfull \hbox (13.0901pt too wide) in paragraph at lines 117--119
 \OT1/cmtt/m/n/14.4 letter by letter, in the genetic instructions. Evolution mus
 t
  []
 
 
-Overfull \hbox (64.96002pt too wide) in paragraph at lines 113--115
+Overfull \hbox (64.96002pt too wide) in paragraph at lines 117--119
 \OT1/cmtt/m/n/14.4 have been agonizingly slow. With the invention of sex, two o
 rganisms
  []
 
 
-Overfull \hbox (5.68011pt too wide) in paragraph at lines 113--115
+Overfull \hbox (5.68011pt too wide) in paragraph at lines 117--119
 \OT1/cmtt/m/n/14.4 could exchange whole paragraphs, pages and books of their DN
 A
  []
 
 
-Overfull \hbox (20.50009pt too wide) in paragraph at lines 113--115
+Overfull \hbox (20.50009pt too wide) in paragraph at lines 117--119
 \OT1/cmtt/m/n/14.4 code, producing new varieties ready for the sieve of selecti
 on.
  []
 
 
-Overfull \hbox (13.0901pt too wide) in paragraph at lines 113--115
+Overfull \hbox (13.0901pt too wide) in paragraph at lines 117--119
 \OT1/cmtt/m/n/14.4 Organisms are selected to engage in sex --- the ones that fi
 nd
  []
 
 
-Overfull \hbox (13.0901pt too wide) in paragraph at lines 113--115
+Overfull \hbox (13.0901pt too wide) in paragraph at lines 117--119
 \OT1/cmtt/m/n/14.4 it uninteresting quickly become extinct. And this is true no
 t
  []
 
 
-Overfull \hbox (20.50009pt too wide) in paragraph at lines 113--115
+Overfull \hbox (20.50009pt too wide) in paragraph at lines 117--119
 \OT1/cmtt/m/n/14.4 only for the microbes of two billion years ago. We humans ha
 ve
  []
 
 
-Overfull \hbox (5.68011pt too wide) in paragraph at lines 124--126
+Overfull \hbox (5.68011pt too wide) in paragraph at lines 128--130
 []\OT1/cmtt/m/n/14.4 The material basis of heredity is DNA, a ladder-like molec
 ule
  []
 
 
-Overfull \hbox (27.91008pt too wide) in paragraph at lines 124--126
+Overfull \hbox (27.91008pt too wide) in paragraph at lines 128--130
 \OT1/cmtt/m/n/14.4 which carries a message in the form of a `four-letter' code,
  the
  []
 
 
-Overfull \hbox (20.50009pt too wide) in paragraph at lines 124--126
+Overfull \hbox (20.50009pt too wide) in paragraph at lines 128--130
 \OT1/cmtt/m/n/14.4 letters being four chemical bases, each of which may occupy 
 any
  []
@@ -1166,13 +1420,16 @@ any
 
 
 [3]
+<resources/images/dna_diagram.jpeg, id=110, 1003.75pt x 565.11125pt>
+File: resources/images/dna_diagram.jpeg Graphic file (type jpg)
+<use resources/images/dna_diagram.jpeg>
+Package pdftex.def Info: resources/images/dna_diagram.jpeg  used on input line 
+140.
+(pdftex.def)             Requested size: 446.69328pt x 251.49527pt.
 
-LaTeX Warning: Reference `FIG1' on page 4 undefined on input line 140.
 
-
-
-[4]
-Overfull \hbox (27.3102pt too wide) in paragraph at lines 143--144
+[4 <./resources/images/dna_diagram.jpeg>]
+Overfull \hbox (27.3102pt too wide) in paragraph at lines 155--156
 []\OT1/cmr/bx/n/14.4 Letters\OT1/cmr/m/n/14.4 : Fi-nally, at the most ba-sic le
 vel of our ge-netic code/DNA-library/genome,
  []
@@ -1180,58 +1437,64 @@ vel of our ge-netic code/DNA-library/genome,
 
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--191
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 214--216
+
+ []
+
+
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--257
-
- []
-
-
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--286
 
  []
 
 
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--299
-
- []
-
-
-Overfull \hbox (7.24994pt too wide) in paragraph at lines 304--304
-[]\OT1/cmr/bx/n/12 Sequence Ab-strac-tion: From Flat-Structure Se-quences to Hi
-gher-Level Se-quences 
  []
 
 
 
 [10]
-Overfull \hbox (23.09584pt too wide) detected at line 321
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
+
+ []
+
+
+
+[11]
+Overfull \hbox (23.09584pt too wide) detected at line 350
 [][][]\OT1/cmr/m/n/14.4 ^^B[] = ^^B[](\OML/cmm/m/it/14.4 n; k\OT1/cmr/m/n/14.4 
 ) = \OMS/cmsy/m/n/14.4 h\OML/cmm/m/it/14.4 a[]; a[]; a[]; a[]; a[]; a[]; :::; a
 []; :::; a[]; a[]\OMS/cmsy/m/n/14.4 i
@@ -1239,213 +1502,145 @@ Overfull \hbox (23.09584pt too wide) detected at line 321
 
 
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 356--358
-
- []
-
-
-
 [12]
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--387
+
+ []
+
+
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
-
- []
-
-
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 458--459
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 471--472
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 473--474
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
 
  []
 
 
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 488--489
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--494
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
 
  []
 
 
-LaTeX Warning: Citation `Lutalo2025debug' on page 16 undefined on input line 50
-0.
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
+
+ []
 
 
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 527.
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 527.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 527.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 527.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 527.
-
-
-Overfull \hbox (20.50009pt too wide) in paragraph at lines 532--534
-[]\OT1/cmtt/m/n/14.4 Code: A rule for transforming a message from one symbolic 
-form
  []
 
-
-Overfull \hbox (35.32007pt too wide) in paragraph at lines 532--534
-\OT1/cmtt/m/n/14.4 (the source alphabet) into another (the target alphabet), us
-ually
- []
-
-
-Overfull \hbox (13.0901pt too wide) in paragraph at lines 532--534
-\OT1/cmtt/m/n/14.4 without loss of information. The process of transformation i
-s
- []
-
-<resources/images/protein_synthesis.png, id=312, 1045.9075pt x 747.79375pt>
-File: resources/images/protein_synthesis.png Graphic file (type png)
-<use resources/images/protein_synthesis.png>
-Package pdftex.def Info: resources/images/protein_synthesis.png  used on input 
-line 540.
-(pdftex.def)             Requested size: 446.69328pt x 319.37706pt.
 
 
 [17]
-
-[18 <./resources/images/protein_synthesis.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
-
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+[]|\OT1/cmr/m/n/14.4 Sequence
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 568--569
-
+Underfull \hbox (badness 8189) in paragraph at lines 547--548
+\OT1/cmr/m/n/14.4 as a ba-sic Se-
  []
 
 
-LaTeX Warning: Reference `SEC..' on page 19 undefined on input line 570.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--576
-
+Underfull \hbox (badness 10000) in paragraph at lines 549--550
+[]|\OT1/cmr/m/n/14.4 Sequence Con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--583
-
+Underfull \hbox (badness 10000) in paragraph at lines 549--550
+\OT1/cmr/m/n/14.4 cate-na-tion/-Mul-ti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--585
-
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
+[]|\OT1/cmr/m/n/14.4 Sequence as
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
+\OT1/cmr/m/n/14.4 Lin-ear Com-bi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
+\OT1/cmr/m/n/14.4 na-tion of other
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
+[]|\OT1/cmr/m/n/14.4 Basic Com-ple-
+ []
+
+
+
+[18]
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 589--590
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 601--602
-
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 648.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--611
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 612--613
-
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lnot' on input line 648.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 632--633
-\OT1/cmr/m/n/14.4 ini-ti-ates
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Theta' on input line 648.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 634--635
-[]|\OT1/cmr/m/n/14.4 Basic amino
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 648.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--637
-[]|\OT1/cmr/m/n/14.4 Non po-lar
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 648.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 638--639
-[]|\OT1/cmr/m/n/14.4 Terminates
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lnot' on input line 648.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\psi' on input line 648.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--659
-\OT1/cmr/m/n/14.4 ini-ti-ates
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 648.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--661
-[]|\OT1/cmr/m/n/14.4 Basic amino
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beta' on input line 648.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--663
-[]|\OT1/cmr/m/n/14.4 Non po-lar
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 664--665
-[]|\OT1/cmr/m/n/14.4 Terminates
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 648.
 
 
 
@@ -1453,81 +1648,244 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [21]
 
+[22]
+
+[23]
+
+[24]
+Overfull \hbox (11.53105pt too wide) in paragraph at lines 923--924
+\OT1/cmr/m/n/14.4 AUG/ATG is equiv-a-lent to GCA (\OT1/cmr/bx/n/14.4 Transforma
+tion []13[]\OT1/cmr/m/n/14.4 ) or UAC (\OT1/cmr/bx/n/14.4 Transformation
+ []
+
+
+
+[25]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 964.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 964.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 964.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\rightarrow' on input line 964.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 964.
+
+
+Overfull \hbox (20.50009pt too wide) in paragraph at lines 969--971
+[]\OT1/cmtt/m/n/14.4 Code: A rule for transforming a message from one symbolic 
+form
+ []
+
+
+Overfull \hbox (35.32007pt too wide) in paragraph at lines 969--971
+\OT1/cmtt/m/n/14.4 (the source alphabet) into another (the target alphabet), us
+ually
+ []
+
+
+Overfull \hbox (13.0901pt too wide) in paragraph at lines 969--971
+\OT1/cmtt/m/n/14.4 without loss of information. The process of transformation i
+s
+ []
+
+<resources/images/protein_synthesis.png, id=459, 1045.9075pt x 747.79375pt>
+File: resources/images/protein_synthesis.png Graphic file (type png)
+<use resources/images/protein_synthesis.png>
+Package pdftex.def Info: resources/images/protein_synthesis.png  used on input 
+line 977.
+(pdftex.def)             Requested size: 446.69328pt x 319.37706pt.
+
+
+[26]
+
+[27 <./resources/images/protein_synthesis.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 996--997
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1006
+
+ []
+
+
+LaTeX Warning: Reference `SEC..' on page 28 undefined on input line 1007.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1012--1013
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1019--1020
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1021--1022
+
+ []
+
+
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1027
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1038--1039
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1048
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1050
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1070
+\OT1/cmr/m/n/14.4 ini-ti-ates
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
+[]|\OT1/cmr/m/n/14.4 Basic amino
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
+[]|\OT1/cmr/m/n/14.4 Non po-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1075--1076
+[]|\OT1/cmr/m/n/14.4 Terminates
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1095--1096
+\OT1/cmr/m/n/14.4 ini-ti-ates
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1098
+[]|\OT1/cmr/m/n/14.4 Basic amino
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1099--1100
+[]|\OT1/cmr/m/n/14.4 Non po-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1102
+[]|\OT1/cmr/m/n/14.4 Terminates
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[29]
+
+[30]
+
 pdfTeX warning: pdflatex (file ./resources/pdfs/ProteinSynthesisProcessFlowChar
 t.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<resources/pdfs/ProteinSynthesisProcessFlowChart.pdf, id=371, 614.295pt x 794.9
+<resources/pdfs/ProteinSynthesisProcessFlowChart.pdf, id=517, 614.295pt x 794.9
 7pt>
 File: resources/pdfs/ProteinSynthesisProcessFlowChart.pdf Graphic file (type pd
 f)
 <use resources/pdfs/ProteinSynthesisProcessFlowChart.pdf>
 Package pdftex.def Info: resources/pdfs/ProteinSynthesisProcessFlowChart.pdf  u
-sed on input line 692.
+sed on input line 1129.
 (pdftex.def)             Requested size: 446.69328pt x 412.55904pt.
 
 
-[22]
+[31]
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/RibosomeStateMachine.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/RibosomeStateMachine.pdf, id=384, 614.295pt x 794.97pt>
+<resources/pdfs/RibosomeStateMachine.pdf, id=531, 614.295pt x 794.97pt>
 File: resources/pdfs/RibosomeStateMachine.pdf Graphic file (type pdf)
 <use resources/pdfs/RibosomeStateMachine.pdf>
 Package pdftex.def Info: resources/pdfs/RibosomeStateMachine.pdf  used on input
- line 703.
+ line 1140.
 (pdftex.def)             Requested size: 446.69328pt x 358.76486pt.
 
 
-[23 <./resources/pdfs/ProteinSynthesisProcessFlowChart.pdf>]
+[32 <./resources/pdfs/ProteinSynthesisProcessFlowChart.pdf>]
 
-[24 <./resources/pdfs/RibosomeStateMachine.pdf>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 713.
-
+[33 <./resources/pdfs/RibosomeStateMachine.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 713.
+(hyperref)                removing `math shift' on input line 1150.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 713.
+(hyperref)                removing `\rightarrow' on input line 1150.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 713.
+(hyperref)                removing `math shift' on input line 1150.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 713.
+(hyperref)                removing `math shift' on input line 1150.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 713.
+(hyperref)                removing `\rightarrow' on input line 1150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1150.
 
 
 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 728--729
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 1165--1166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
+Underfull \hbox (badness 10000) in paragraph at lines 1179--1180
 
  []
 
 
 
-[26]
+[35]
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/note_cover.pdf, id=486, 596.98032pt x 844.65562pt>
+<resources/pdfs/note_cover.pdf, id=632, 596.98032pt x 844.65562pt>
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 774.
-
+Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 1211
+.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
 
@@ -1535,8 +1893,8 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 774.
-
+Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 1211
+.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
 
@@ -1546,38 +1904,38 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/note_cover.pdf, id=489, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/note_cover.pdf, id=635, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 774.
+ne 1211.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 774.
+ne 1211.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
-[27]
+[36]
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 774.
+ne 1211.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 774.
+ne 1211.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 774.
+ne 1211.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
-[28
+[37
 
  <./resources/pdfs/note_cover.pdf>]
 (TransformaticsInGENETICS---2025---JWL.bbl
@@ -1587,163 +1945,183 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--36
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 48--54
+Underfull \hbox (badness 3098) in paragraph at lines 55--61
 []\OT1/cmr/m/n/14.4 Grady Venville and Jenny Dono-van.  Analo-gies for life: a 
 sub-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--54
+Underfull \hbox (badness 10000) in paragraph at lines 55--61
 \OT1/cmr/m/n/14.4 jec-tive view of analo-gies and metaphors used to teach about
 
  []
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 48--54
+Underfull \hbox (badness 2941) in paragraph at lines 55--61
 \OT1/cmr/m/n/14.4 genes and dna.  \OT1/cmr/m/it/14.4 Teach-ing Sci-ence\OT1/cmr
 /m/n/14.4 , 52(1):18--22, 2006.  Avail-able
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--54
+Underfull \hbox (badness 10000) in paragraph at lines 55--61
 \OT1/cmr/m/n/14.4 at: []$\OT1/cmtt/m/n/14.4 https : / / research-[]repository .
  uwa . edu . au / en / publications /
  []
 
 
-Overfull \hbox (21.16966pt too wide) in paragraph at lines 48--54
+Overfull \hbox (21.16966pt too wide) in paragraph at lines 55--61
 \OT1/cmtt/m/n/14.4 analogies-[]for-[]life-[]a-[]subjective-[]view-[]of-[]analog
 ies-[]and-[]metaphors-[]u$[]\OT1/cmr/m/n/14.4 . 
  []
 
 
-Underfull \hbox (badness 3907) in paragraph at lines 63--70
+Underfull \hbox (badness 3907) in paragraph at lines 70--77
 []\OT1/cmr/m/n/14.4 Genomics Ed-u-ca-tion Pro-gramme.  Where does our genome co
 me
  []
 
 
-Underfull \hbox (badness 7064) in paragraph at lines 63--70
+Underfull \hbox (badness 7064) in paragraph at lines 70--77
 \OT1/cmr/m/n/14.4 from?  []$\OT1/cmtt/m/n/14.4 https : / / www . genomicseducat
 ion . hee . nhs . uk / education /
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 63--70
+Underfull \hbox (badness 1394) in paragraph at lines 70--77
 \OT1/cmtt/m/n/14.4 core-[]concepts / where-[]does-[]our-[]genome-[]come-[]from/
 $[]\OT1/cmr/m/n/14.4 , 2025.  Ac-cessed
  []
 
 
-Underfull \hbox (badness 7379) in paragraph at lines 72--78
+
+[38]
+Underfull \hbox (badness 7379) in paragraph at lines 79--85
 []\OT1/cmr/m/n/14.4 OpenStax Bi-ol-ogy.  Ga-me-to-ge-n-e-sis (sper-mato-ge-n-e-
 sis and oo-ge-n-e-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--85
 \OT1/cmr/m/n/14.4 sis).  []$\OT1/cmtt/m/n/14.4 https : / / bio . libretexts . o
 rg / Bookshelves / Introductory _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--85
 \OT1/cmtt/m/n/14.4 and _ General _ Biology / General _ Biology _ 1e _ (OpenStax
  ) /43 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--85
 \OT1/cmtt/m/n/14.4 _Animal _ Reproduction _ and _ Development / 43 . 3C : _Game
 togenesis _
  []
 
 
-
-[29]
-Underfull \hbox (badness 3612) in paragraph at lines 80--86
+Underfull \hbox (badness 3612) in paragraph at lines 87--93
 []\OT1/cmr/m/n/14.4 University of Le-ices-ter.  The cell cy-cle, mi-to-sis and 
 meio-sis for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--86
+Underfull \hbox (badness 10000) in paragraph at lines 87--93
 \OT1/cmr/m/n/14.4 higher ed-u-ca-tion.  []$\OT1/cmtt/m/n/14.4 https : / / le . 
 ac . uk / vgec / topics / cell-[]cycle /
  []
 
 
-Underfull \hbox (badness 3209) in paragraph at lines 94--99
+Underfull \hbox (badness 4899) in paragraph at lines 95--102
+[]\OT1/cmr/m/n/14.4 Shinichi Mochizuki.  The ge-om-e-try of frobe-nioids i: The
+ gen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--102
+\OT1/cmr/m/n/14.4 eral the-ory.  []$\OT1/cmtt/m/n/14.4 https : / / www . kurims
+ . kyoto-[]u . ac . jp / []motizuki /
+ []
+
+
+Underfull \hbox (badness 5771) in paragraph at lines 95--102
+\OT1/cmtt/m/n/14.4 The-[]Geometry-[]of-[]Frobenioids-[]I . pdf$[]\OT1/cmr/m/n/1
+4.4 , 2008.  Ac-cessed Au-gust 2,
+ []
+
+
+Underfull \hbox (badness 3209) in paragraph at lines 117--122
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  A gen-eral the-ory of num-ber ca
 r-di-nal-ity.
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 94--99
+Underfull \hbox (badness 1072) in paragraph at lines 117--122
 \OT1/cmr/m/it/14.4 Academia.edu\OT1/cmr/m/n/14.4 , Jan 2024.  \OT1/cmr/m/it/14.
 4 Ac-ces-si-ble via []$\OT1/cmtt/m/n/14.4 https : / / www . academia . edu /
  []
 
 
-Underfull \hbox (badness 7168) in paragraph at lines 115--121
+Underfull \hbox (badness 7168) in paragraph at lines 132--138
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  Con-cern-ing a spe-cial sum-ma-t
 ion that
  []
 
 
-Underfull \hbox (badness 3977) in paragraph at lines 115--121
+Underfull \hbox (badness 3977) in paragraph at lines 132--138
 \OT1/cmr/m/n/14.4 pre-serves the base-10 or-thog-o-nal sym-bol set iden-tity in
  both ad-
  []
 
 
-Underfull \hbox (badness 4647) in paragraph at lines 115--121
+Underfull \hbox (badness 4647) in paragraph at lines 132--138
 \OT1/cmr/m/n/14.4 dends and the sum.  \OT1/cmr/m/it/14.4 Academia\OT1/cmr/m/n/1
 4.4 , 2025.  \OT1/cmr/m/it/14.4 Ac-ces-si-ble via []$\OT1/cmtt/m/n/14.4 https :
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--121
+Underfull \hbox (badness 10000) in paragraph at lines 132--138
 \OT1/cmtt/m/n/14.4 / / www . academia . edu / download / 122499576 / The _ Symb
 ol _ Set _ Identity _
  []
 
 
 
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 161--167
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 199--205
 []\OT1/cmr/m/n/14.4 GeeksforGeeks.  Di-a-gram of pro-tein syn-the-sis.  []$\OT1
 /cmtt/m/n/14.4 https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--167
+Underfull \hbox (badness 10000) in paragraph at lines 199--205
 \OT1/cmtt/m/n/14.4 geeksforgeeks . org / biology / protein-[]synthesis-[]diagra
 m/$[]\OT1/cmr/m/n/14.4 , 2024.
  []
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 178--184
+Underfull \hbox (badness 1817) in paragraph at lines 216--222
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  Soft-ware lan-guage engineering-
 text pro-cess-
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 178--184
+Underfull \hbox (badness 1102) in paragraph at lines 216--222
 \OT1/cmr/m/n/14.4 ing lan-guage de-sign, im-ple-men-ta-tion, eval-u-a-tion meth
 -ods.  \OT1/cmr/m/it/14.4 Preprints\OT1/cmr/m/n/14.4 ,
  []
 
-)
+
+
+[40])
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=561, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=722, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf>
-Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 793.
-
+Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 1230
+.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
 
@@ -1751,8 +2129,8 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf>
-Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 793.
-
+Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 1230
+.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
 
@@ -1762,38 +2140,38 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=564, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=725, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 793.
+ne 1230.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 793.
+ne 1230.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
-[31]
+[41]
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 793.
+ne 1230.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 793.
+ne 1230.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 793.
+ne 1230.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
-[32
+[42
 
  <./resources/pdfs/back_cover.pdf>]
 (TransformaticsInGENETICS---2025---JWL.aux)
@@ -1805,18 +2183,21 @@ L3 programming layer <2024-07-20>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `TransformaticsInGENETICS---2025---JWL.out' h
 as not changed.
-(rerunfilecheck)             Checksum: C61F9BD50D4D601A9E3D6AD1F96F7CFD;3326.
+(rerunfilecheck)             Checksum: AEC1D0DBB23B98DE0D9DA9E2A5EAA23C;4853.
  ) 
 Here is how much of TeX's memory you used:
- 17031 strings out of 473898
- 270581 string characters out of 5736297
- 1943960 words of memory out of 5000000
- 39515 multiletter control sequences out of 15000+600000
+ 27460 strings out of 473898
+ 497910 string characters out of 5736297
+ 1953960 words of memory out of 5000000
+ 49676 multiletter control sequences out of 15000+600000
  572516 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,20n,79p,3930b,710s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,20n,93p,3930b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\AKAM\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1
 200.pk> <C:\Users\AKAM\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm0600.pk> <C:\Users\AKAM\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
@@ -1843,10 +2224,10 @@ fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.p
 fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on TransformaticsInGENETICS---2025---JWL.pdf (32 pages, 4851810 
+Output written on TransformaticsInGENETICS---2025---JWL.pdf (42 pages, 4953909 
 bytes).
 PDF statistics:
- 743 PDF objects out of 1000 (max. 8388607)
- 152 named destinations out of 1000 (max. 500000)
- 160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 913 PDF objects out of 1000 (max. 8388607)
+ 211 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

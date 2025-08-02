@@ -44,6 +44,13 @@ Joseph~Willrich Lutalo.
 \newblock {\em Academia.edu.}, 2025.
 \newblock \url{https://doi.org/10.6084/m9.figshare.29505824.v3}.
 
+\bibitem{wikipedia_basepair}
+Wikipedia contributors.
+\newblock Base pair.
+\newblock \url{https://en.wikipedia.org/wiki/Base_pair}, 2025.
+\newblock Accessed August 2, 2025. Includes diagram of DNA double helix showing
+  A–T and C–G base pairing.
+
 \bibitem{venville2006analogies}
 Grady Venville and Jenny Donovan.
 \newblock Analogies for life: a subjective view of analogies and metaphors used
@@ -84,6 +91,22 @@ University of~Leicester.
   n.d.
 \newblock Accessed July 29, 2025.
 
+\bibitem{mochizuki_frobenioids1}
+Shinichi Mochizuki.
+\newblock The geometry of frobenioids i: The general theory.
+\newblock
+  \url{https://www.kurims.kyoto-u.ac.jp/~motizuki/The-Geometry-of-Frobenioids-I.pdf},
+  2008.
+\newblock Accessed August 2, 2025. Introduces Frobenioids as symbolic
+  categorical structures encoding arithmetic transformations.
+
+\bibitem{copilot_dna_assistant}
+Microsoft Copilot.
+\newblock Clarifying discussions on dna sequence facts and genetics in general
+  during drafting manuscript.
+\newblock AI-generated insights via Copilot discussion, 2025.
+\newblock Personal communication, July 2025.
+
 \bibitem{wikipedia_nucleic_acid}
 Wikipedia contributors.
 \newblock Nucleic acid sequence.
@@ -104,12 +127,6 @@ Nature Education.
   \url{https://www.nature.com/scitable/content/the-four-bases-atcg-6491969/},
   n.d.
 \newblock Accessed July 2025.
-
-\bibitem{copilot_dna_assistant}
-Microsoft Copilot.
-\newblock Clarifying discussions dna sequence facts and genetics in general.
-\newblock AI-generated insights via Copilot discussion, 2025.
-\newblock Personal communication, July 2025.
 
 \bibitem{ossipaper}
 Joseph~Willrich Lutalo.
@@ -156,6 +173,27 @@ Joseph~Willrich Lutalo.
 \newblock {\em Academia.edu}, 2025.
 \newblock \textit{Accessible via}
   \url{https://doi.org/10.6084/m9.figshare.29402363}.
+
+\bibitem{Lutalo2025debug}
+Joseph~Willrich Lutalo.
+\newblock Concerning debugging in tea and the tea software operating
+  environment.
+\newblock {\em Academia.edu}, 2025.
+
+\bibitem{lnspaper}
+Joseph~Willrich Lutalo.
+\newblock Philosophical and mathematical foundations of a number generating
+  system: The lu-number system.
+\newblock {\em Academia.edu}, 2025.
+\newblock \textit{Accessible via}
+  \url{https://doi.org/10.6084/m9.figshare.29262749}.
+
+\bibitem{wikipedia_codon_tables}
+Wikipedia contributors.
+\newblock Dna and rna codon tables.
+\newblock \url{https://en.wikipedia.org/wiki/DNA_and_RNA_codon_tables}, 2025.
+\newblock Accessed August 2, 2025. Provides codon-to-amino acid mappings and
+  genetic code/name tables.
 
 \bibitem{geeksforgeeks2024protein}
 GeeksforGeeks.
