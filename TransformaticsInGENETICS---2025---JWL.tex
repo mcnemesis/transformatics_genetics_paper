@@ -189,6 +189,34 @@ For all practical purposes unless where we merely wish to emphasize adherence to
 \end{minipage}}
 \\
 
+
+Now that we have $\psi_{DNA}$ and $\psi_{RNA}$ well defined, we might immediately apply them to their finest use here: defining and supporting the special symbol set, $\psi_{na}$, that would or could allow for several kinds of nucleic acid sequences --- such as DNA for code stored in chromosomes and mitochondria, various kinds of RNA (\textit{m}RNA, \textit{t}RNA,...) and even synthetic/artificial/conceptual and also \textbf{random nucleic acid sequences}, etc. using a single universal nucleic acid symbol set. Thus we define $\psi_{na}$ below:
+
+
+\begin{defn}[The \textit{\textbf{Universal Nucleic Acid Symbol Set}}, $\psi_{na}$]
+\label{DEFUNA}
+Any nucleic acid sequence, $\Theta$, obeys the following law:
+
+\begin{law}[\textbf{Nucleic Acid Identifier Set}: $\psi_{na}$]
+\label{LAWNA}
+ The universal symbol set $\psi_{na}$ spans any nucleic acid sequence $\Theta$.
+\begin{proof}
+$\psi_{an} = \psi_{DNA} \cup \psi_{RNA} = \langle A, C, G, T, U \rangle$
+\end{proof}
+\end{law}
+\end{defn}
+
+
+As with many kinds of sequences dealt with in transformatics, the possession of a particular symbol set, such as $\psi_{na}$, allows for the practical use of those sets to implement logic systems that can operate on signal based on symbolic expressions of well ordered elements in sequences or sub-sequences. For this matter then, we shall likewise want to make formal, the concept of a \textbf{na-Sequence}:
+
+\begin{defn}[The \textbf{$na-$Sequences} --- (D/R)-NA Sequences: $\Theta_{na}:\mathbb{N} \times \psi_{na}$]
+\label{DEFNASEQ}
+
+Any sequence of DNA or RNA nucleotides, expressible as some sequence of symbols from $\psi_{na}$ is a \textbf{na-Sequence} and its symbol set is a superset of both $\psi_{DNA}$ and $\psi_{RNA}$.
+
+\end{defn}
+
+
 If it is not immediately clear what the significance of \textbf{Defition \ref{DEFDNASS}} is or why it's important to unambiguously define $\psi_{DNA}$, then perhaps the mathematical discussions in later sections like \textbf{Section \ref{SEC3}} and \textbf{Section \ref{SEC4}} might this more obvious. That said, since we know that nucleic acid sequences come in two flavors\cite{wikipedia_nucleic_acid}, and since we have covered the essential ground for DNA symbol sets, we need now also consider the ordered RNA symbol set.\\
 
 
@@ -469,13 +497,31 @@ Among important consequences of \textbf{Definition \ref{DEFSTOPCOD}}, is that, i
 
 It is not immediately clear what the plausibility of such an \textit{evil gene-program} existing out there in nature might be, but given normal genes sometimes mutate\cite{gregory1987oxford}, it can't be ruled out that such awkward programs might exist. Though we won't dive into that here, who knows... from a computer security perspective, such a program might cause system errors or faults such as a System-Out-Of-Resources problem given the ribosome might attempt to produce an infinite length amino-acid, or perhaps that the cell's protein manufacturing closure might run out of space, or that the processor might end up hanging since the factory never is able to reach any of WAIT, DETACH or RESET states --- see \textbf{The Ribosome State Machine} in \textbf{Figure \ref{FIG4}} but also refer to the Protein Synthesis Process in \textbf{Figure \ref{FIG3}} to clearly, logically appreciate these kinds of problems and/or corner-case scenarios. 
 
-That said, in case a normally correct gene-program such as what we saw in $\psi_{insulin}$ (see \textbf{Equation \ref{EQINSULIN}}) is altered with --- perhaps by a natural mutation, or perhaps a virus, or even in a totally malicious feat of gene-manipulation medicine, and such a transformation results in a nucleic-acid sequence satisfying any of the above queer cases, who knows, but it might as well be the root case of some difficult flaw in the organism --- an incurable and fatal disease (if the faulty gene-program is crucial for normal life support and that it has no alternatives or simple way to be solved), and these might the kinds of hard problems that might require not just medical doctors, biologists or perhaps genetists to tackle, but also people like computer hackers, information-security experts and software debuggers!
+That said, in case a normally correct gene-program such as what we saw in $\psi_{insulin}$ (see \textbf{Equation \ref{EQINSULIN}}) is altered with --- perhaps by a natural mutation, or perhaps a virus, or even in a totally malicious feat of gene-manipulation medicine, and such a transformation results in a nucleic-acid sequence satisfying any of the above queer cases, who knows, but it might as well be the root case of some difficult flaw in the organism --- an incurable and fatal disease (if the faulty gene-program is crucial for normal life support and that it has no alternatives or simple way to be solved), and these might the kinds of hard problems that might require not just medical doctors, biologists or perhaps genetists to tackle, but also people like computer hackers, information-security experts and software debuggers\footnote{It shouldn't come as a surprise, that with a stronger marriage of computing theory and biology, or medicine, that certain problems in nature --- not just with humans or animals, but also with plants for example, and especially if they are either inheritable --- meaning genetic, or if they might somehow be remedied via clever hacking or debugging and modifying of the organism via gene programs, might call for the skills of and expertise of software engineers and program debuggers from hardcore computer science and not just the medical or biological sciences! A great background work on this subject by the author might come in handy --- refer to \cite{Lutalo2025debug}}!
 
 
 \section{The Modal Sequence Statistic as a Generic Genetic Code --- A Case of Bio-Automata}
 \label{SEC4}
 
-blah blah..
+We are going to talk about the matter of the \textbf{Genetic Anagram Distance}, $0 \geq \tilde{A}(\Theta_{na} \rightarrow \Theta_{na}^*) \leq \infty$, between any two of species, populations, individual organisms or any entity specifiable via sequences. We are to deal with nucleic acid sequences mostly. 
+
+Such a concept, derived from the ADM theory, can allow us to quantity by how much and/or if there is any significant variation between any two organisms, species or just arbitrary DNA sequences, given not just the composition of the DNA sequences themselves, but also the ordering of members within it matters in the mathematics and logic of processing, analyzing and or specifying \textbf{nucleic acid sequences} --- in which, as per . The following three hypothetical, but semantically and syntactically legitimate expressions of either DNA or mRNA nucleic acid sequences in formal sequence expressions:\\
+
+\begin{equation}
+{\Theta1}_{DNA} = \langle TAC GGG CAT TCC \rangle\\
+\end{equation}
+
+\begin{equation}
+{\Theta2}_{RNA} = \langle AUG AUG CGC GGG CAU AUC \rangle\\
+\end{equation}
+
+
+\begin{equation}
+{\Theta3}_{DNA} = \langle ATA ATGG GGG CAT TGA \rangle\\
+\end{equation}
+
+
+
 
 
 \section{Gene Expression in Living Organisms Leveraging Genetic Code (DNA $\rightarrow mRNA \rightarrow Protein \rightarrow$ Organism)}

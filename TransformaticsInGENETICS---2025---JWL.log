@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  31 JUL 2025 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  1 AUG 2025 14:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1192,44 +1192,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--191
 
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
-
- []
-
-
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 227--229
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 255--257
 
  []
 
 
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--271
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
 
-Overfull \hbox (7.24994pt too wide) in paragraph at lines 276--276
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+
+ []
+
+
+Overfull \hbox (7.24994pt too wide) in paragraph at lines 304--304
 []\OT1/cmr/bx/n/12 Sequence Ab-strac-tion: From Flat-Structure Se-quences to Hi
 gher-Level Se-quences 
  []
 
 
 
-[9]
-Overfull \hbox (23.09584pt too wide) detected at line 293
+[10]
+Overfull \hbox (23.09584pt too wide) detected at line 321
 [][][]\OT1/cmr/m/n/14.4 ^^B[] = ^^B[](\OML/cmm/m/it/14.4 n; k\OT1/cmr/m/n/14.4 
 ) = \OMS/cmsy/m/n/14.4 h\OML/cmm/m/it/14.4 a[]; a[]; a[]; a[]; a[]; a[]; :::; a
 []; :::; a[]; a[]\OMS/cmsy/m/n/14.4 i
@@ -1237,329 +1239,345 @@ Overfull \hbox (23.09584pt too wide) detected at line 293
 
 
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
-
- []
-
-
-
 [11]
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--358
+
+ []
+
+
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
-
- []
-
-
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 435--436
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 443--444
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
 
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 460--461
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 
  []
 
 
 
 [15]
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
+
+ []
+
+
+LaTeX Warning: Citation `Lutalo2025debug' on page 16 undefined on input line 50
+0.
+
+
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
+
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 481.
+(hyperref)                removing `math shift' on input line 527.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 481.
+(hyperref)                removing `\rightarrow' on input line 527.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 481.
+(hyperref)                removing `\rightarrow' on input line 527.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 481.
+(hyperref)                removing `\rightarrow' on input line 527.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 481.
+(hyperref)                removing `math shift' on input line 527.
 
 
-Overfull \hbox (20.50009pt too wide) in paragraph at lines 486--488
+Overfull \hbox (20.50009pt too wide) in paragraph at lines 532--534
 []\OT1/cmtt/m/n/14.4 Code: A rule for transforming a message from one symbolic 
 form
  []
 
 
-Overfull \hbox (35.32007pt too wide) in paragraph at lines 486--488
+Overfull \hbox (35.32007pt too wide) in paragraph at lines 532--534
 \OT1/cmtt/m/n/14.4 (the source alphabet) into another (the target alphabet), us
 ually
  []
 
 
-Overfull \hbox (13.0901pt too wide) in paragraph at lines 486--488
+Overfull \hbox (13.0901pt too wide) in paragraph at lines 532--534
 \OT1/cmtt/m/n/14.4 without loss of information. The process of transformation i
 s
  []
 
-<resources/images/protein_synthesis.png, id=304, 1045.9075pt x 747.79375pt>
+<resources/images/protein_synthesis.png, id=312, 1045.9075pt x 747.79375pt>
 File: resources/images/protein_synthesis.png Graphic file (type png)
 <use resources/images/protein_synthesis.png>
 Package pdftex.def Info: resources/images/protein_synthesis.png  used on input 
-line 494.
+line 540.
 (pdftex.def)             Requested size: 446.69328pt x 319.37706pt.
 
 
-[16 <./resources/images/protein_synthesis.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 513--514
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 522--523
-
- []
-
-
-LaTeX Warning: Reference `SEC..' on page 17 undefined on input line 524.
-
-
-
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 529--530
+
+[18 <./resources/images/protein_synthesis.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--537
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--539
+LaTeX Warning: Reference `SEC..' on page 19 undefined on input line 570.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--576
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 543--544
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 555--556
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
 
- []
-
-
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 564--565
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 566--567
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--587
-\OT1/cmr/m/n/14.4 ini-ti-ates
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 588--589
-[]|\OT1/cmr/m/n/14.4 Basic amino
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 590--591
-[]|\OT1/cmr/m/n/14.4 Non po-lar
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 592--593
-[]|\OT1/cmr/m/n/14.4 Terminates
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 612--613
-\OT1/cmr/m/n/14.4 ini-ti-ates
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
-[]|\OT1/cmr/m/n/14.4 Basic amino
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
-[]|\OT1/cmr/m/n/14.4 Non po-lar
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 618--619
-[]|\OT1/cmr/m/n/14.4 Terminates
  []
 
 
 
 [19]
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--611
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 612--613
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 632--633
+\OT1/cmr/m/n/14.4 ini-ti-ates
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
+[]|\OT1/cmr/m/n/14.4 Basic amino
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--637
+[]|\OT1/cmr/m/n/14.4 Non po-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--639
+[]|\OT1/cmr/m/n/14.4 Terminates
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
+\OT1/cmr/m/n/14.4 ini-ti-ates
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--661
+[]|\OT1/cmr/m/n/14.4 Basic amino
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 662--663
+[]|\OT1/cmr/m/n/14.4 Non po-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--665
+[]|\OT1/cmr/m/n/14.4 Terminates
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[20]
+
+[21]
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/ProteinSynthesisProcessFlowChar
 t.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<resources/pdfs/ProteinSynthesisProcessFlowChart.pdf, id=354, 614.295pt x 794.9
+<resources/pdfs/ProteinSynthesisProcessFlowChart.pdf, id=371, 614.295pt x 794.9
 7pt>
 File: resources/pdfs/ProteinSynthesisProcessFlowChart.pdf Graphic file (type pd
 f)
 <use resources/pdfs/ProteinSynthesisProcessFlowChart.pdf>
 Package pdftex.def Info: resources/pdfs/ProteinSynthesisProcessFlowChart.pdf  u
-sed on input line 646.
+sed on input line 692.
 (pdftex.def)             Requested size: 446.69328pt x 412.55904pt.
 
 
-[20]
+[22]
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/RibosomeStateMachine.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/RibosomeStateMachine.pdf, id=368, 614.295pt x 794.97pt>
+<resources/pdfs/RibosomeStateMachine.pdf, id=384, 614.295pt x 794.97pt>
 File: resources/pdfs/RibosomeStateMachine.pdf Graphic file (type pdf)
 <use resources/pdfs/RibosomeStateMachine.pdf>
 Package pdftex.def Info: resources/pdfs/RibosomeStateMachine.pdf  used on input
- line 657.
+ line 703.
 (pdftex.def)             Requested size: 446.69328pt x 358.76486pt.
 
 
-[21 <./resources/pdfs/ProteinSynthesisProcessFlowChart.pdf>]
+[23 <./resources/pdfs/ProteinSynthesisProcessFlowChart.pdf>]
 
-[22 <./resources/pdfs/RibosomeStateMachine.pdf>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 667.
-
+[24 <./resources/pdfs/RibosomeStateMachine.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 667.
+(hyperref)                removing `math shift' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 667.
+(hyperref)                removing `\rightarrow' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 667.
+(hyperref)                removing `math shift' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 667.
+(hyperref)                removing `math shift' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 667.
+(hyperref)                removing `\rightarrow' on input line 713.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 713.
 
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 682--683
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 696--697
-
- []
-
-
-
-[24]
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/note_cover.pdf, id=469, 596.98032pt x 844.65562pt>
-File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
-<use resources/pdfs/note_cover.pdf>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 728.
-
-(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
-
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
-<use resources/pdfs/note_cover.pdf>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 728.
-
-(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
-
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/note_cover.pdf, id=472, page=1, 596.98032pt x 844.65562pt>
-File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
-<use resources/pdfs/note_cover.pdf, page 1>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 728.
-(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
-File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
-<use resources/pdfs/note_cover.pdf, page 1>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 728.
-(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
 [25]
+Underfull \hbox (badness 10000) in paragraph at lines 728--729
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--743
+
+ []
+
+
+
+[26]
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<resources/pdfs/note_cover.pdf, id=486, 596.98032pt x 844.65562pt>
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 774.
+
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 774.
+
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<resources/pdfs/note_cover.pdf, id=489, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 728.
+ne 774.
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
+ne 774.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+
+
+[27]
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
+ne 774.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 728.
+ne 774.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 728.
+ne 774.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
-[26
+[28
 
  <./resources/pdfs/note_cover.pdf>]
 (TransformaticsInGENETICS---2025---JWL.bbl
@@ -1642,7 +1660,7 @@ togenesis _
 
 
 
-[27]
+[29]
 Underfull \hbox (badness 3612) in paragraph at lines 80--86
 []\OT1/cmr/m/n/14.4 University of Le-ices-ter.  The cell cy-cle, mi-to-sis and 
 meio-sis for
@@ -1693,7 +1711,7 @@ ol _ Set _ Identity _
 
 
 
-[28]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 161--167
 []\OT1/cmr/m/n/14.4 GeeksforGeeks.  Di-a-gram of pro-tein syn-the-sis.  []$\OT1
 /cmtt/m/n/14.4 https : / / www .
@@ -1721,10 +1739,10 @@ Underfull \hbox (badness 1102) in paragraph at lines 178--184
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=545, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=561, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf>
-Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 747.
+Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 793.
 
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -1733,7 +1751,7 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf>
-Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 747.
+Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 793.
 
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -1744,38 +1762,38 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=548, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=564, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 747.
+ne 793.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 747.
+ne 793.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
-[29]
+[31]
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 747.
+ne 793.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 747.
+ne 793.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 747.
+ne 793.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
-[30
+[32
 
  <./resources/pdfs/back_cover.pdf>]
 (TransformaticsInGENETICS---2025---JWL.aux)
@@ -1792,10 +1810,10 @@ as not changed.
 (rerunfilecheck)             Checksum: C61F9BD50D4D601A9E3D6AD1F96F7CFD;3326.
  ) 
 Here is how much of TeX's memory you used:
- 17019 strings out of 473898
- 270474 string characters out of 5736297
- 1942960 words of memory out of 5000000
- 39512 multiletter control sequences out of 15000+600000
+ 17031 strings out of 473898
+ 270581 string characters out of 5736297
+ 1943960 words of memory out of 5000000
+ 39515 multiletter control sequences out of 15000+600000
  572516 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,20n,79p,3930b,710s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1825,10 +1843,10 @@ fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.p
 fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on TransformaticsInGENETICS---2025---JWL.pdf (30 pages, 4844035 
+Output written on TransformaticsInGENETICS---2025---JWL.pdf (32 pages, 4851810 
 bytes).
 PDF statistics:
- 723 PDF objects out of 1000 (max. 8388607)
- 143 named destinations out of 1000 (max. 500000)
+ 743 PDF objects out of 1000 (max. 8388607)
+ 152 named destinations out of 1000 (max. 500000)
  160 words of extra memory for PDF output out of 10000 (max. 10000000)
 
