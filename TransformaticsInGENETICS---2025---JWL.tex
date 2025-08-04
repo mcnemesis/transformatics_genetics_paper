@@ -19,6 +19,10 @@
 \usepackage{caption}
 \usepackage{float}
 
+% for text-wrapping in verbatim environments
+\usepackage{fvextra}
+\RecustomVerbatimEnvironment{verbatim}{Verbatim}{breaklines, breakanywhere}
+
 % for drawing text boxes
 
 % for proper treatment of urls
@@ -28,14 +32,20 @@
 \usepackage{tabularx}
 
 % for line-breaks in table cells
-%\usepackage{makecell}
+\usepackage{makecell}
+
+% make table cells center vertically where we could have used p{1cm} -- we use m{1cm}
+%\usepackage{array}
+% alternatively, just use custom column type --- M{1cm}
+%\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
 
 % for long tables
 \usepackage{longtable}
 % for custom table col widths
-\usepackage{array}
-\newcolumntype{L}{>{\centering\arraybackslash}m{2cm}}
-\newcolumntype{M}{>{\centering\arraybackslash}m{5cm}}
+%\usepackage{array}
+%\newcolumntype{L}{>{\centering\arraybackslash}m{2cm}}
+%\newcolumntype{M}{>{\centering\arraybackslash}m{5cm}}
 
 % for json listings...
 \usepackage{listings}
@@ -927,13 +937,18 @@ It's already interesting to note that under complement transforms (which are spe
 \label{SEC4A}
 
 
-We are going to talk about the matter of comparing or analyzing two or more na-Sequences using especially statistical measures that have been set down by transformatics theory for especially ordered sequences. In particular, we shall be looking at na-Sequences through the lens of the following kinds of analyses:
+We are going to talk about the matter of comparing or analyzing two or more na-Sequences using especially statistical measures that have been set down by transformatics theory for especially ordered sequences. 
+
+\subsection{Five Sequences and Four Scenarios}
+\label{SEC4ASEQ}
+
+In particular, we shall be looking at na-Sequence analysis through lens of measures we have formalized earlier on, and shall break down our analysis into four representative scenarios:
 
 \begin{enumerate}
-\item Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, of the same length, $n$ and with similar symbol sets($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_n)$), how to quantify how similar or dissimilar they are.
-\item Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$ and with similar symbol sets($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are.
-\item Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$ and with different symbol sets($\psi_{na}(\Theta1_n) \neq \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are.
-\item Finally, how, when given a particular na-Sequence, $Q_n$, and a collection/sample of other sequences ($\Theta1_n, \Theta2_k, \Theta3_l,...$) that belong to a labeled/classified population, to determine if the query sequence, $Q_n$ belongs to the same population or not and to determine which of the candidate sequences it is closest to.
+\item \textbf{Scenario A:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, of the same length, $n$ and with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_n)$), how to quantify how similar or dissimilar they are?
+\item \textbf{Scenario B:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$ and with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
+\item \textbf{Scenario C:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$ and with different symbol sets ($\psi_{na}(\Theta1_n) \neq \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
+\item \textbf{Scenario D:} Finally, how, when given a particular na-Sequence, $Q_n$, and a collection/sample of other sequences ($\Theta1, \Theta2, \Theta3,..., \Theta n$) of potentially dissimilar lengths, and that belong to a labeled/classified population, to determine if the query sequence, $Q_k$ belongs to the same population or not and to determine which of the sequences in the collection it is closest to?
 \end{enumerate}
 
 Note that in conducting these analyses, we shall especially exploit the sequence-specific measures, $\tilde{A}(\cdot)$, the Anagram Distance Measure\cite{adtpaper}\cite{transformatics}, and $\overset{>}{\Theta}$, the Modal Sequence Statistic\cite{transformatics}, and that we shall use the following representative, even though somewhat hypothetical, na-Sequences:
@@ -943,15 +958,229 @@ Note that in conducting these analyses, we shall especially exploit the sequence
 \end{equation}
 
 \begin{equation}
-{\Theta2}_{RNA} = \langle AUG AUG CGC GGG CAU AUC \rangle\\
+{\Theta2}_{RNA} = \langle AUG AUG CGC GGG CAT AUC \rangle\\
 \end{equation}
 
 \begin{equation}
 {\Theta3}_{DNA} = \langle ATA ATGG GGG CAT TGA \rangle\\
 \end{equation}
 
+\begin{multline}
+\Theta_{insulin} =  \texttt{ATGGCCCTGTGGATGCGCCTCCTGCCCCTGCTGGCGCTGCTGGCCCTCTGGGGACC}\\
+\texttt{CCAGCCGCAGCCTTTGTGAACCAACACCTGTGCGGCTCACACCTGGTGGAAGCTCTCTAC}\\
+\texttt{CTAGTGTGCGGGGAACGAGGCTTCTTCTACACACCCAAGACCCGCCGGGAGGCAGAGGAC}\\
+\texttt{CTGCAGGTGGGGCAGGTGGAGCTGGGCGGGGGCCCTGGTGCAGGCAGCCTGCAGCCCTTG}\\
+\texttt{GCCCTGGAGGGGTCCCTGCAGAAGCGTGGCATTGTGGAACAATGCTGTACCAGCATCTGC}\\
+\texttt{TCCCTCTACCAGCTGGAGAACTACTGCAACTAG}
+\end{multline}
+
+\small
+\begin{multline}
+\Theta_{rbcl} = 
+AUGAAUUGCUUUGGAGGAGUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG\\
+UUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAG\\
+GAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUG\\
+GAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCU\\
+UUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUG\\
+GCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCU\\
+UUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUU\\
+GCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG\\
+UUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAG\\
+GAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUG\\
+GAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCU\\
+UUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUG\\
+GCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCU\\
+UUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUU\\
+GCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG\\
+UUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAG\\
+GAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUG\\
+GAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCU\\
+UUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUG\\
+GCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCU\\
+UUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUU\\
+GCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG\\
+UUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAG\\
+GAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUG\\
+GAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCU\\
+UUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUG\\
+GCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCU\\
+UUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUU\\
+GCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG\\
+UUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAG\\
+GAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUG\\
+GAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCU\\
+UUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUG\\
+GCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCU\\
+UUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUU\\
+GCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG\\
+UUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAG\\
+GAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUG\\
+GAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCU\\
+UUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUG\\
+GCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCU\\
+UUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUU\\
+GCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG\\
+UUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAG\\
+GAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUG\\
+GAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCU\\
+UUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUG\\
+GCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCU\\
+UUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUU\\
+GCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG\\
+UUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAG\\
+GAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUG\\
+GAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG
+\end{multline}
+\Large
 
 
+The first three sequences are merely hypothetical, and intentionally small/short, with $\Theta1_{DNA}$ and $\Theta3_{DNA}$ being DNA-sequences, while $\Theta2_{RNA}$ is just some RNA-sequence. $\Theta_{insulin}$ is a DNA-sequence we have already encountered in \textbf{Section \ref{SEC2}} (see \textbf{Equation \ref{EQINSULIN}}), while the most verbose sequence we shall encountered in this work is named $\Theta_{rbcl}$ and is a real-life, biologically relevant RNA-sequence from a well-known plant protein: \textbf{RbcL}\footnote{$\Theta_{rbcl}$ is actually just a sample mRNA Sequence (partial, from \textit{Arabidopsis thaliana} RbcL gene), and is excerpted from a paper that includes the \textit{Arabidopsis thaliana} chloroplast genome, which contains the rbcL gene encoding the large subunit of RuBisCO\cite{Sato1999ArabidopsisChloroplastGenome}.}, the large subunit of \textbf{RuBisCO} --- the enzyme responsible for carbon fixation in photosynthesis. It is one of the most abundant and essential proteins in plants\cite{copilot_dna_assistant}.
+
+\subsection{A First Analysis}
+
+Before we dive into the matter of solving the analytic problems under the four scenarios introduced in \textbf{Section \ref{SEC4ASEQ}} above, we shall want to begin with a background analysis that shall give us some high-level insights about any of the sequences in our problem set. In particular, we are going to start by analyzing each of those sequences, so as to know the following basic facts:
+
+\begin{enumerate}
+\item What is the sequence's symbol set: $\psi(\Theta) = ?$
+\item Which of the three nucleic acid symbol sets does the sequence belong to --- $\psi_{DNA}$, $\psi_{RNA}$ or $\psi_{na}$
+\item What is the relative frequency of each sequence's symbol-set members? $\forall \rho \in \psi(\Theta), \invpi(\rho \in \Theta) = ?$
+\item How long is the sequence as a flat-structure sequence: $\invpi(\Theta) = ?$
+\item How many codons does the sequence contain? $\Theta \rightarrow \Theta^*: \mathbb{N} \times \psi_{na}^3, \invpi(\Theta^*) = ?$
+\end{enumerate}
+
+For purposes of helping others replicate the analyses and results we shall obtain, we recommend that the following analysis method be used: We can use the TEA\footnote{Instructions for how to install and use TEA/Transforming Executable Alphabet general-purpose text-processing oriented computer programming language are offered via the project's GitHub: \url{https://github.com/mcnemesis/cli_tttt}}\cite{Lutalo2024_taz}\cite{cli_tttt} text-processing programming language --- by the author, via its \texttt{tttt} Linux/Unix package to compute some of the analyses we wish to do via the command-line.
+
+\begin{enumerate}
+\item {\textbf{To Process Sequence on Command-Line?} For example, copy-and-paste sequence $\Theta1$ into a file named \texttt{theta1\_dna.txt}}
+\item {\textbf{To compute the sequence symbol set?} For example, for $\Theta1$, run the following command against the sequence file to display the unique symbols in the sequence, in their natural order of first-occurrence within the sequence:
+
+\begin{verbatim}
+cat theta1_dna.txt | tttt -c "b:"
+TACG
+\end{verbatim}
+
+}
+\item {\textbf{To compute the modal sequence statistic?} For example, for $\Theta1$, run the following command against the sequence file to display the unique symbols in the sequence, in their order of most frequent first, and/or their natural order of first-occurrence within the sequence:
+
+\begin{verbatim}
+cat theta1_dna.txt | tttt -c "u!"":"
+CGTA
+\end{verbatim}
+Note that the actual command/TEA-code for this is just ``u!:", however, because of the way the Linux command-line treats the `!' symbol as a special character --- even inside strings, we must cleverly use it in a manner such as shown; we write ``u!"``:" to avoid the \textit{``unrecognized history modifier"} error if that code is written directly on the terminal. This shall apply to all the other cases where we must deal with the TEA command qualifier `!"\cite{Lutalo2024_taz} The other workaround is to \textbf{first turn off the BASH history expansion modifier}, this, so that we can just write clean TEA code such as ``u!:" without errors. So, to disable history expasion for the \textit{active/current session} in your terminal, just run the command:
+
+\begin{verbatim}
+set +H
+\end{verbatim}
+
+And after that, you can just write clean TEA code for the above task as such:
+\begin{verbatim}
+cat theta1_dna.txt | tttt -c u!:
+CGTA
+\end{verbatim}
+}
+\item {\textbf{To compute the distribution of symbols within a sequence?} For example, to compute how many times the symbol `T' occurs in $\Theta1$, we can merely run the code:
+
+\begin{verbatim}
+cat theta1_dna.txt | tttt -c "d!:T|g:|v:|v!:"
+3
+\end{verbatim}
+And for the symbol `C', we just modify that code to count for `C' as such:
+
+
+\begin{verbatim}
+cat theta1_dna.txt | tttt -c "d!:C|g:|v:|v!:"
+4
+\end{verbatim}
+
+But if we wish to do the same for all distinct symbols within the sequence $\Theta1$ --- \textbf{and especially without having to explicitly list which symbols we are counting within the TEA code}, we could have used ``u!:" as in the previous task, since that TEA command counts how many times each unique symbol occurs in a sequence so as to compute the modal sequence, however, currently (with TEA version \textbf{1.0.8}\cite{cli_tttt}), the actual frequencies aren't returned with the output of ``u!:", and so, we shall want to use a work-around leveraging the above method for computing the frequency of each symbol in the input sequence. We can use the following non-trivial TEA program for that then:
+
+\begin{verbatim}
+ cat theta1_dna.txt | tttt -c "v:vSEQ|v:vANA:{}|u!:|v:vMS|l:lMS|y:vMS|d!:^.|v:vSY|y:vMS|d:^.|v:vMS|y:vSEQ|d*!:vSY|g:|v:|v!:|v:vSYN|g*:{}:vSY:vSYN|x*:vANA|v:vANA|y:vMS|f:^$:lFIN|j:lMS|l:lFIN|y:vANA"
+C4G3T3A2
+\end{verbatim}
+
+The essential result from running that program against $\Theta1$ is the string \textbf{C4G3T3A2}, which tells us that `C' occurs 4 times, `G' 3 times, ... , and then `A' only 2 times. 
+}
+\item {\textbf{To compute the cardinality of a sequence?} For example, for $\Theta2$, run the following command against the sequence file to display the total number of all symbols within the sequence:
+
+\begin{verbatim}
+cat theta2_rna.txt | tttt -c "v:|v!:"
+18
+\end{verbatim}
+
+To confirm if TEA is telling us the correct thing, we can also count the characters in that sequence (assuming we pasted just the sequence symbols into the file and nothing else, and no delimiters between them), using the standard Linux/Unix command ``wc'' as such:
+
+\begin{verbatim}
+cat theta2_rna.txt | wc -c
+18
+\end{verbatim}
+
+}
+\end{enumerate}
+
+
+Such is the power of the sequence analysis we can do with the TEA language, without any sophisticated tools. Thus, shall we analyze all the other sequences in our problem set, and to simplify things, we shall merely tabulate the analysis results for all five sequences as such:
+
+
+\begin{table}[H]
+  \Large
+	\begin{tabular}[t]{|p{2cm}||p{3cm}|p{2cm}|p{4cm}|p{2cm}|p{2cm}|}
+	\hline
+	na-Seq & Sequence Symbol Set: $\psi(\Theta)$ & Parent Symbol Set & \makecell{Modal Sequence\\Statistic, $\overset{>}{\Theta}$\\ and Symbol\\ Distribution:\\ $\invpi(\rho \in \Theta)$} & $\invpi(\Theta)$ &  \makecell{Codon\\ Count:\\ $\invpi(\Theta^*)$\\ $\approx \frac{\invpi(\Theta)}{3}$}\\
+	\hline
+	\hline
+	
+	%first sequence...
+	${\Theta1}_{DNA}$ & $\langle T, A, C, G \rangle$ & $\psi_{DNA}$ &  
+	\centering
+	\begin{tabular}[t]{|c|c|c|c|}
+		C & G & T & A\\
+		\hline
+		4 & 3 & 3 & 2\\	
+		\hline
+	 \end{tabular} & 12 & 4\\
+		\hline	 
+	\hline
+	
+	%second sequence...
+	${\Theta2}_{RNA}$ & $\langle A, U, G, C, T \rangle$ & $\psi_{na}$ &  
+	\centering
+	\begin{tabular}[t]{|c|c|c|c|c|}
+		G & C & A & U & T\\
+		\hline
+		6 & 4 & 4 & 3 & 1\\	
+		\hline
+	 \end{tabular} & 18 & 6\\
+	 
+		\hline	 
+	\hline
+
+%third sequence...
+	${\Theta3}_{DNA}$ & $\langle A, T, G, C \rangle$ & $\psi_{DNA}$ &  
+	\centering
+	\begin{tabular}[t]{|c|c|c|c|}
+		G & A & T & C\\
+		\hline
+		6 & 5 & 4 & 1\\	
+		\hline
+	 \end{tabular} & 16 & $5.3\bar{3}$\\
+	\hline	 
+	\hline
+	              
+\end{tabular}
+ \caption{A First Analysis of the 5 na-Sequences from \textbf{Section \ref{SEC4ASEQ}}}
+  \label{TABFAN}
+\end{table}
+
+
+
+
+
+\subsection{SCENARIO A}
+
+So, in this scenario, we are basically given some two particular na-Sequences, of the same length, and which have similar symbol sets, and are tasked with how to quantify their similarity or dissimilarity.
+
+Looking at our example sequences above, we might pick 
 
 
 \section{The Modal Sequence Statistic as a Generic Genetic Code --- A Case of Bio-Automata}

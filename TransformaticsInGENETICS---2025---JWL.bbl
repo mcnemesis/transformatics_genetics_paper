@@ -195,6 +195,24 @@ Wikipedia contributors.
 \newblock Accessed August 2, 2025. Provides codon-to-amino acid mappings and
   genetic code/name tables.
 
+\bibitem{Sato1999ArabidopsisChloroplastGenome}
+Shusei Sato, Yasukazu Nakamura, Takakazu Kaneko, Erika Asamizu, and Satoshi
+  Tabata.
+\newblock Complete structure of the chloroplast genome of arabidopsis thaliana.
+\newblock {\em DNA Research}, 6(5):283--290, 1999.
+
+\bibitem{Lutalo2024_taz}
+Joseph~Willrich Lutalo.
+\newblock Tea taz - transforming executable alphabet a: to z: Command space
+  specification.
+\newblock \url{https://doi.org/10.6084/m9.figshare.26661328}, 2024.
+
+\bibitem{cli_tttt}
+mcnemesis.
+\newblock cli\_tttt: Command line interface for tttt.
+\newblock \url{https://github.com/mcnemesis/cli_tttt/}, 2024.
+\newblock Accessed: 4th Aug, 2025.
+
 \bibitem{geeksforgeeks2024protein}
 GeeksforGeeks.
 \newblock Diagram of protein synthesis.
