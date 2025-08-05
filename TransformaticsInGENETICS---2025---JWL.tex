@@ -79,6 +79,9 @@
 \newtheorem{trans}{Transformation}
 \newtheorem{transf}{Transformer}
 \newtheorem{law}{Law}
+\newtheorem{prob}{Problem}
+\newtheorem{soln}{Solution}
+\newtheorem{alg}{Algorithm}
 
 % for highlighting text
 \usepackage{xcolor, soul}
@@ -1181,6 +1184,267 @@ Such is the power of the sequence analysis we can do with the TEA language, with
 So, in this scenario, we are basically given some two particular na-Sequences, of the same length, and which have similar symbol sets, and are tasked with how to quantify their similarity or dissimilarity.
 
 Looking at our example sequences above, we might pick 
+
+
+\section{The Mathematics of Genome Sequencing: Sequence Alignment, The Modal Sequence, The Sequencing Machine and the Absolute Identifier Genome Sequence Law}
+
+Given what we know of genome sequencing theory and some problems we identified --- such as an overall lack of proper mathematical formalism around the issue of how sequencing --- or rather, computation of the resultant, consensus and most representative genome sequence (essentially, an identifying \textbf{na-Sequence}) of a living organism or particular aspects of it --- proteins, mutations, behavioral traits, anomalies or bases of particular or general diseases or incapacities, etc. But even with the matter of mathematically expressing anomalous entities such as viruses and such, wasn't that compelling. And thus this section.
+
+Seeing as the matter of determining the actual na-Sequence that correctly identifies a person or thing might be hinging on the case of attempting to reconstruct a book by mathematically piecing together disparate pieces of it --- some in alignment, some not, some supersets of the others, some prefixes or suffixes of others, etc.\footnote{This analogy shouldn't come as a surprise, when compared to how we found it best to describe DNA using a figurative metaphor (see \textbf{Introduction}): \textbf{Section \ref{SEC1}}), but also based on how some authorities seem to be teaching this subject to their students\cite{przytycka_wgs_lecture10}.} Also, though we might not immediately surface that philosophy here, the difficulties and problem thus raised, might likewise apply to the matter of trying to computationally ``sequence" all of reality or even peculiar small aspects of it --- sub-atomic particles that make up living things on the miniature scale, and then planets, stars and galaxies on the grand scale. Is it possible? Does it make sense? Is it necessary or even useful? These, and related problems are what we shall attempt to answer in the rest of this section.
+
+\subsection{PROBLEM G1: Computing MCS: Maximum Common Subsequence: $\Theta_1 \Diamond \Theta_2$}
+
+\begin{prob}[\textit{Computing MCS: \textbf{Maximum Common Subsequence}}]: $\Theta_1 \Diamond \Theta_2$] 
+\label{PROBMCS}
+Given sequences $\Theta_1 = \langle k, l, m, o, p, x, y, z \rangle$ and $\Theta_2 = \langle b, c, a, y, z, k, l, m, o, p \rangle$, find the longest common subsequence they share --- also to be denoted $\Theta_1 \Diamond \Theta_2$, their \textbf{M}aximum \textbf{C}ommon \textbf{S}ubsequence.
+
+\begin{soln}
+\label{SOLMCS}
+We shall specify a transformer, tMCS($\Theta_1,\Theta_2$) that produces the required solution from the input sequences as such:
+
+\begin{transf}[The \textbf{tMCS} Transformer]
+\label{TRANSFMCS}
+$\langle \Theta_1,\Theta_2 \rangle  \quad \xrightarrow{O_{tMCS}(\Theta_1,\Theta_2)} \quad \Theta_1 \Diamond \Theta_2;$\\
+$0 \leq \invpi(\Theta_1 \Diamond \Theta_2) \leq Max(\invpi(\Theta_1), \invpi(\Theta_2))$
+\end{transf}
+$\qed$
+\end{soln}
+\end{prob}
+
+\textbf{Solution \ref{SOLMCS}} is easier said than done. However, we shall attempt to formally and rigorously express it by formalizing what exactly the $tMCS(\Theta_1,\Theta_2)$ transformer does. Basically, we are to compute the MCS via \textbf{Algorithm \ref{ALGtMCS}}.
+
+
+\begin{alg}[The \textbf{tMCS} Algorithm]
+\label{ALGtMCS}
+\begin{enumerate}
+\item{Initialize the global maximum common sequence, $O^m_g$, to the empty set.} 
+\item{
+Given \textbf{a collection of $n$ sequences}, $\Theta^n = \{\Theta_1, \Theta_2,...\}$.
+}
+\item{
+Start by computing the cardinality of each sequence, $\Theta_i \in \Theta^n$, and note the \textbf{largest sequence cardinality}, $Max(\invpi(\Theta_i) \forall \Theta_i \in \Theta^n)$ = $Max(\invpi(\Theta_i))$, for the longest sequence, $\Theta_m$ such that $Max(\invpi(\Theta_i)) = \invpi(\Theta_m)$.
+}
+\item {
+Compute the cardinality of a sequence that can exactly contain the given sequences each concatenated to the other, but with the longest sequence duplicated. Essentially, compute:
+
+\begin{equation}
+\label{EQLSEQ}
+C_R = \invpi(\Theta_m) + \sum\limits_{\forall \Theta_i \in \Theta^n} \invpi(\Theta_i)
+\end{equation}
+
+}
+\item{
+Sort the collection of sequences, $\Theta^n$, in ascending order of the sequence cardinality. Let the sorted sequence collection be denoted ${\hat{\Theta}}^n$
+}
+\item {
+Start with the first two sequences from ${\hat{\Theta}}^n$, such as $\Theta_1$ and $\Theta_2$, and place them within two adjacent arrays $A_1^{C_R}$ and $A_2^{C_R}$ of equal length $C_R$ --- for simplicity, we shall just denote them as  $A_1$ and $A_2$, in such a way that $\Theta_1$ occupies in its containing array $A_1$, positions from 1 to $\invpi(\Theta_1)$, while $\Theta_2$ occupies positions in the range: $[(1 + \sum \limits_{\Theta: \invpi(\Theta) > \invpi(\Theta_2)}\invpi(\Theta)) = I(\Theta_2[1] \in A_2)$\footnote{We write $\Theta_2[1]$ to mean the first element in $\Theta_2$ --- i.e. position 1 has value 1, and the nth position has value $n$, not usual $n-1$}, $I(\Theta_2[1] \in A_2) + \invpi(\Theta_2) - 1]$, which also means, $\forall a_i \in \Theta_j$ such that $I(\Theta_j,\hat{\Theta}_n) <  I(\Theta_2, \hat{\Theta}_n)$, it implies $j < I(\Theta_2[1] \in A_2)$.
+
+And Equivalently, the range $[\invpi(\Theta_1)+1, \invpi(\Theta_1)+ 1 \invpi(\Theta_2) - 1] = [\invpi(\Theta_1)+1, \invpi(\Theta_1)+ \invpi(\Theta_2)]$. 
+
+Visually, we can express this as:\\\\
+
+\begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|}
+\hline
+$A_1$ & $a_{1,1}$ & $a_{1,2}$ & $\cdot\cdot\cdot$ & $a_{1,\invpi(\Theta_1)}$ & & & & & & \\
+\hline
+$A_2$ & & & & & $a_{2,1}$ & $a_{2,2}$ & $\cdot\cdot\cdot$ & $a_{2,\invpi(\Theta_1)}$ & & \\
+\hline
+ 
+\end{tabular}\\\\
+
+
+}
+\item{
+Update the two sequence alignment arrays as such:
+\begin{enumerate}
+\item{
+Keep the first array, $A_1$, unchanged (since it contains the longest sequence, $\Theta_1 \in \hat{\Theta}_n$).
+}
+\item Set $j = z$, where $z$ is the \textbf{shift step size} --- simplest scenario, $z = 1$.
+\item {Shift each element in the second sequence by $z$-steps to an earlier position in array $A_2$, so that the two sequences $\Theta_1$ and $\Theta_2$ have an overlap across the alignment arrays/matrix in positions spanning range: $[\invpi(\Theta_1)+1-j, \invpi(\Theta_1)]$, and so that $\Theta_2$ shall be occupying the updated range: $[\invpi(\Theta_1)+1 - j, \invpi(\Theta_1)+\invpi(\Theta_2) - j]$}
+\item {
+Scan the overlapping sections in both sequences, in positions  $[\invpi(\Theta_1)+1-j, \invpi(\Theta_1)]$, and by comparing each item in that range --- i.e. $\Theta_1[i]$ Vs $\Theta_2[i]$, determine the longest common subsequence, or rather the \textbf{MCS}, thus:\\
+
+Assume the overlap is of length $m$ such that the overlap can be visually depicted as such:\\\\
+
+\begin{tabular}[H]{|c||c|c|c|c|}
+\hline
+$\approx \Theta_1$ & $a_{1,k}$ & $a_{1,k+1}$ & $\cdot\cdot\cdot$ & $a_{1,k+m}$\\
+\hline
+$\approx \Theta_2$ & $a_{2,l}$ & $a_{2,l+1}$ & $\cdot\cdot\cdot$ & $a_{2,l+m}$\\
+\hline
+$(\Theta_1[i] == \Theta_2[i])?$ & 1 & 0 &  $\cdot\cdot\cdot$ & 1\\
+\hline
+$\approx (\Theta_1[i] == \Theta_2[i]) \approx O^m$ & $f(a_{1,k},a_{2,l})$ & 0 &  $\cdot\cdot\cdot$ & $f(a_{1,k+m},a_{2,l+m})$ \\
+\hline
+ \end{tabular}\\\\
+ 
+ for some $k \in [1,\invpi(\Theta_1)]$ and $l \in [1,\invpi(\Theta_2)]$.
+ 
+ Create another array of maximum length $m$, $O^m$, which contains at most m elements generated thus:
+ \begin{itemize}
+ \item $O^m[i]$ contains 0 if the corresponding two elements in $\Theta_1$ and $\Theta_2$ didn't match. Otherwise it contains the matching element value from the first sequence --- or rather, $f(a_{1,k},a_{2,l}) = a_{1,k}$ iff $a_{1,k} == a_{2,l}$.
+ \item truncate $O^m$ to its longest non-zero/non-empty subsequence, set that as $O^m$.
+ \item Iff $\invpi(O^m) > \invpi(O^m_g)$, then \textbf{Update} or replace $O^m_g$ with $O^m$\\ $\implies$  $O^m_g := O^m$
+ \end{itemize}
+}
+\item{
+Update $j \implies j := j + z$
+}
+\item {
+Iff $j = \invpi(\Theta_2)$, then return $O^m_g$
+}
+\item{Otherwise Iterate from \textbf{Step\#c}}
+\end{enumerate}
+}
+\end{enumerate}
+\end{alg}
+
+
+\subsection{PROBLEM G2: Computing Overlap Resultant Sequences: $\Theta_1 \ast \Theta_2$}
+
+\begin{prob}[\textit{Computing ORS: \textbf{Overlap Resultant Sequence}}]: $\Theta_1 \ast \Theta_2$] 
+\label{PROBORS}
+Given two overlapping/well-aligned sequences $\Theta_1$ and $\Theta_2$ of the same length but potentially different terms at any position in the range $[1, \invpi(\Theta_1)]$, how to compute a resultant sequence $\Theta_1 \ast \Theta_2$ that is most meaningful for DNA sequences?
+
+\begin{soln}
+\label{SOLORS}
+Assuming $\Theta_1 = \langle \prod\limits_{i=1}^n a_i, \rangle$ and $\Theta_2 = \langle \prod\limits_{i=1}^n b_i, \rangle$, construct $\Theta^*$ via the following tORS transformer:
+
+\begin{transf}[The \textbf{tMCS} Transformer]$ $\\
+\label{TRANSFMCS}
+$\langle\langle \Theta_1\langle \prod\limits_{i=1}^n a_i, \rangle, \Theta_2\langle \prod\limits_{i=1}^n b_i, \rangle \rangle  \quad \xrightarrow{O_{tORS}(\Theta_1,\Theta_2)} \quad \Theta_1 \ast \Theta_2;$\\
+$\invpi(\Theta_1 \ast \Theta_2) = \invpi(\Theta_1) = \invpi(\Theta_2) = n$\\
+$\land \quad \Theta^* = \langle \prod\limits_{i=1}^n f(a_i,b_i), \rangle$\\
+ for $f(x,y)$ \textbf{a resolver function} defined as such:
+
+\[
+f(x,y) = 
+\begin{cases}
+x, & x == y, \text{terms are the same}\\
+x, & x = \lnot(y), \text{one term is the complement of the other}\\
+y & otherwise.
+\end{cases}
+\]
+
+\end{transf}
+$\qed$
+\end{soln}
+\end{prob}
+
+\subsection{PROBLEM G3: Computing the Genome Sequence (GS): $(\Theta_1 \Diamond \Theta_2)^*$}
+
+\begin{prob}[\textit{Computing GS: \textbf{Genome Sequence}}]: $(\Theta_1 \Diamond \Theta_2)^*$] 
+\label{PROBGS}
+Given any two sequences, $\Theta_1$ and $\Theta_2$, compute their \textbf{resultant genome sequence}, denoted $(\Theta_1 \Diamond \Theta_2)^*$, that contains at core, their longest common subsequence (the MCS), $O^m = (\Theta_1 \Diamond \Theta_2)$, potentially padded either side by the specially computed prefix and suffix subsequences from either input sequence as such:\\
+
+\begin{equation}
+\label{EQGS}
+(\Theta_1 \Diamond \Theta_2)^* \quad = \quad \Theta_1^a\cdot(\Theta_1^b \ast \Theta_2^b)\cdot(\Theta_1 \Diamond \Theta_2)\cdot(\Theta_1^c \ast \Theta_2^c)\cdot\Theta_2^a\\\\
+\end{equation}
+
+And where the special terms are derived and named as such:
+
+\begin{itemize}
+\item $\Theta_1^a$ is the non-overlapping section of $\Theta_1$ before the \textbf{COS}.
+\item $(\Theta_1^b \ast \Theta_2^b)$ is the consensus sequence from $\Theta_1$ and $\Theta_2$ such that its elements are the result of applying the \textbf{resolver function} to compute $f(\Theta_1[i],\Theta_2[i])$ as specified in \textbf{Transformer \ref{TRANSFMCS}}. It occurs \textbf{before the MCS}.
+\item $(\Theta_1 \Diamond \Theta_2)$ is the \textbf{maximum common subsequence}, MCS, $O^m_g$, of $\Theta_1$ and $\Theta_2$. It is the heart of the computed genome sequence.
+\item $(\Theta_1^c \ast \Theta_2^c)$ is the consensus sequence from $\Theta_1$ and $\Theta_2$ \textbf{after the MCS}.
+\item  $\Theta_2^a$ is the non-overlapping section of $\Theta_2$ after the \textbf{COS}.
+\end{itemize}
+
+\textbf{COS}, $\overline{\Theta_1\Theta_2}$, which is the \textbf{Consensus Overlapping Sequence}, padded on either by the non-overlapping sections of either $\Theta_1$ or $\Theta_2$, has the following properties:
+
+\begin{itemize}
+\item $\overline{\Theta_1\Theta_2} = (\Theta_1^b \ast \Theta_2^b)\cdot(\Theta_1 \Diamond \Theta_2)\cdot(\Theta_1^c \ast \Theta_2^c)$
+\item $\Theta_1 \approx \Theta_1^a \cdot \overline{\Theta_1\Theta_2}$
+\item $\Theta_2 \approx \overline{\Theta_1\Theta_2} \cdot \Theta_2^a$
+\end{itemize}
+
+So that we could rewrite \textbf{Equation \ref{EQGS}} as such:
+
+\begin{equation}
+\label{EQGS2}
+(\Theta_1 \Diamond \Theta_2)^* \quad = \quad \Theta_1^a\cdot\overline{\Theta_1\Theta_2}\cdot\Theta_2^a\\\\
+\end{equation}
+
+Finally, we know that the cardinality of the genome sequence, $\invpi((\Theta_1 \Diamond \Theta_2)^*)$, is bounded thus:
+
+\begin{equation}
+\label{EQBOUNDGS}
+\invpi(\Theta_m) \leq \invpi((\Theta_1 \Diamond \Theta_2)^*) \leq \invpi(\Theta_m) + \sum\limits_{\forall \Theta_i \in \Theta^n} \invpi(\Theta_i)
+\end{equation}
+
+As per \textbf{Equation  \ref{EQLSEQ}} and the sensibilities of GTNC\cite{Lutalo2024gtnc}.
+
+\end{prob}
+
+\subsection{The Genome Sequencer}
+
+
+\fbox{\begin{minipage}{0.9\textwidth}
+\begin{defn}[A \textbf{Genome Sequencer}]
+\label{DEFGENOMESEQ} 
+A solution to \textbf{Problem \ref{PROBGS}}, is a special sequence processor, $\tilde{T}(\Theta^n)$, that can compute and return a resultant sequence, $R_{\Theta^n}$, also known as the \textbf{genome sequence}, defined as:
+
+\begin{equation}
+\label{EQGSVAL}
+R_{\Theta^n} = (\Theta_m \Diamond \Theta^n \setminus \Theta_m)^* 
+\end{equation}
+
+Such that $\Theta_m$ is the longest sequence in $\Theta^n$ --- a collection of $n$ sequences, and that $\tilde{T}(\Theta^n)$ produces/generates/computes $R_{\Theta^n}$ by iteratively computing and updating the genome sequence in n-1 iterations as such:
+
+\begin{trans}
+$R_{\Theta^n}^0 \xrightarrow{O_{tGS}(\{R_{\Theta^n}^0\} \cup\Theta^n,0)} R_{\Theta^n}^1$
+$\xrightarrow{O_{tGS}(\{R_{\Theta^n}^1\} \cup \Theta^{n-1},1)} R_{\Theta^n}^2$
+$\xrightarrow{O_{tGS}(\{R_{\Theta^n}^2\} \cup \Theta^{n-2},2)}$
+$\ldots \xrightarrow{O_{tGS}(\{R_{\Theta^n}^j\} \cup \Theta^{n-j},j)} R_{\Theta^n}^{j+1}$
+$\ldots \xrightarrow{O_{tGS}(\{R_{\Theta^n}^{n-2}\} \cup \Theta^{1},n-2)} R_{\Theta^n}^{n-1}$
+\end{trans}
+
+To produce the final genome sequence, $R_{\Theta^n}^{n-1}$ via the \textbf{tGS Transformer} defined as such:
+
+\begin{transf}[The \textbf{tGS Transformer}, $\tilde{T}(\Theta^n)$]
+$R_{\Theta^n}^{j} \xrightarrow{O_{tGS}(\{R_{\Theta^n}^j\} \cup \Theta^{n-j},j)} R_{\Theta^n}^{j+1};$
+$R_{\Theta^n}^{0} = \emptyset$\\
+and $R_{\Theta^n}^{j+1}$ is the resultant genome sequence after processing $\Theta^n$ with the first $j$ sequences removed from it, and with the previous genome sequence, $\{R_{\Theta^n}^j\}$ appended to it, so as to produce that next genome sequence $R_{\Theta^n}^{j+1}$.
+\end{transf} 
+
+\end{defn}
+\end{minipage}}
+\\
+
+That transformer, $\tilde{T}(\Theta^n)$, is a genome sequencer, and is essentially a transformer that reduces a matrix of na-Sequences to a resultant sequence, $R_{\Theta^n}$, that is the resultant genome sequence of a specie, population, or any natural entity represented by or expressed by the [potentially incomplete or approximate] genome sequences in the collection $\Theta^n$.
+
+
+\subsection{The Identity Genome Sequence (IGS) Law}
+
+\begin{law}[The \textbf{Genome Diversity Law}]
+\label{LAWGDL}
+The Identity Genome Sequence, $R_{\Theta^n}(\Omega): \mathbb{N} \times \psi_{DNA}$, derived from some collection of sequences, $\Theta^n \langle \prod\limits^n \theta_i \rangle$ such that $\theta_i \subset \Omega \lor \theta_i \approx \Omega$ are approximations of $\Omega$, the longest known genome sequence of the entity, whose exact genome sequence would be $\Omega$, and which can uniquely identify it. For sufficiently large $n$, and where the sample sequences $\theta_i$ were read or generated correctly by scanning or sequencing the entity, then 
+
+\begin{equation}
+R_{\Theta^n}(\Omega) \approx \Omega_m
+\end{equation} 
+
+Where $\Omega_m$ is the known best approximation of the genome sequence that correctly identifies any instance of a member of the kind $\Omega$.
+\end{law}
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\large
+\textbf{NOTE:}\\
+ On \textbf{Consequences of IGS} \\
+
+One potentially significant consequence of \textbf{Law \ref{LAWGDL}} is that every distinct living thing --- unique or distinct animal, plant, eukaryote or prokaryote, has a distinct identifying genome sequence, $\Omega$, that we can discover and/or approximate via significantly many readings of particular or representative [sub-]sequences of the DNA of the observable expressions of $\Omega$.
+
+However, given that in reality it might not be exactly possible to exhaustively compute the correct value of $R_{\Theta^n}$, nor tell exactly when that approximation approaches $\Omega$ exactly, it makes one wonder whether we can ever accurately know what it is that exactly underlies the expression of our reality --- living things or not\footnote{Of course, there is the queer possibility that a kind of genome sequencing might be applicable to also inanimate/non-living things! But that's a philosophical discussion for another day.}.
+
+\end{minipage}}
+\\
+\end{center}
+
+
 
 
 \section{The Modal Sequence Statistic as a Generic Genetic Code --- A Case of Bio-Automata}
