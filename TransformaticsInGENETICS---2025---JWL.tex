@@ -237,9 +237,9 @@ Any nucleic acid sequence, $\Theta$, obeys the following law:
 
 \begin{law}[\textbf{Nucleic Acid Identifier Set}: $\psi_{na}$]
 \label{LAWNA}
- The universal symbol set $\psi_{na}$ spans any nucleic acid sequence $\Theta$.
+ The universal symbol set $\psi_{na}$ spans any natural nucleic acid sequence $\Theta$.
 \begin{proof}
-$\psi_{an} = \psi_{DNA} \cup \psi_{RNA} = \langle A, C, G, T, U \rangle$
+$\psi_{na} = \psi_{DNA} \cup \psi_{RNA} = \langle A, C, G, T, U \rangle$
 \end{proof}
 \end{law}
 \end{defn}
@@ -509,12 +509,12 @@ So, that, if say a nucleic acid program for producing some protein via some gene
 
 One interesting consequence of that definition is the following law:
 
-\begin{law}[\textbf{Non-Coding Gene Programs}]
+\begin{law}[\textbf{Non-Coding Gene Programs\footnote{Also known as \textbf{Introns} in some contexts.}}]
 If any gene-program $\Theta_{na}$ is processed by a ribosome, and yet it has the property:\\
 
  $\psi_{DNA}(\Theta_na) \cap \psi_{na-START} = \emptyset \quad \lor \quad \psi_{RNA}(\Theta_na) \cap \psi_{na-START} = \emptyset$\\
  
-It implies that $\Theta_{na}$ shall never be executed by the ribosome, and neither shall it ever result in any new protein or new amino-acid product within the containing cell system\footnote{Refer to ribosome definition for details: \textbf{Definition \ref{DEFRIBOSOME}}}.
+It implies that $\Theta_{na}$ shall never be transcribed by the ribosome, and neither shall it ever result in any new protein or new amino-acid product within the containing cell system\footnote{Refer to ribosome definition for details: \textbf{Definition \ref{DEFRIBOSOME}}}.
 \end{law}
 
 
@@ -942,19 +942,19 @@ It's already interesting to note that under complement transforms (which are spe
 
 We are going to talk about the matter of comparing or analyzing two or more na-Sequences using especially statistical measures that have been set down by transformatics theory for especially ordered sequences. 
 
-\subsection{Five Sequences and Four Scenarios}
+\subsection{Six Sequences and Four Scenarios}
 \label{SEC4ASEQ}
 
 In particular, we shall be looking at na-Sequence analysis through lens of measures we have formalized earlier on, and shall break down our analysis into four representative scenarios:
 
 \begin{enumerate}
-\item \textbf{Scenario A:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, of the same length, $n$ and with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_n)$), how to quantify how similar or dissimilar they are?
-\item \textbf{Scenario B:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$ and with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
+\item \textbf{Scenario A:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, of the same length, $n$, and with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_n)$), how to quantify how similar or dissimilar they are?
+\item \textbf{Scenario B:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$, but with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
 \item \textbf{Scenario C:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$ and with different symbol sets ($\psi_{na}(\Theta1_n) \neq \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
-\item \textbf{Scenario D:} Finally, how, when given a particular na-Sequence, $Q_n$, and a collection/sample of other sequences ($\Theta1, \Theta2, \Theta3,..., \Theta n$) of potentially dissimilar lengths, and that belong to a labeled/classified population, to determine if the query sequence, $Q_k$ belongs to the same population or not and to determine which of the sequences in the collection it is closest to?
+\item \textbf{Scenario D:} Finally, how, when given a particular na-Sequence, $Q_k$, and two collections/samples of other sequences ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, and that belong to labeled or classified populations --- POPA and POPB, to determine which of the two populations the query sequence, $Q_k$ best-belongs to (so we classify it under one of the labels), as well as determine which of the sample member sequences from either collections it is closest to?
 \end{enumerate}
 
-Note that in conducting these analyses, we shall especially exploit the sequence-specific measures, $\tilde{A}(\cdot)$, the Anagram Distance Measure\cite{adtpaper}\cite{transformatics}, and $\overset{>}{\Theta}$, the Modal Sequence Statistic\cite{transformatics}, and that we shall use the following representative, even though somewhat hypothetical, na-Sequences:
+Note that in conducting these analyses, we shall especially exploit the sequence-specific measures, $\tilde{A}(\cdot)$, the Anagram Distance Measure\cite{adtpaper}\cite{transformatics}, and $\overset{>}{\Theta}$, the Modal Sequence Statistic\cite{transformatics}, and that we shall use the following representative, even though somewhat hypothetical (for the first four), na-Sequences:
 
 \begin{equation}
 {\Theta1}_{DNA} = \langle TAC GGG CAT TCC \rangle\\
@@ -966,6 +966,10 @@ Note that in conducting these analyses, we shall especially exploit the sequence
 
 \begin{equation}
 {\Theta3}_{DNA} = \langle ATA ATGG GGG CAT TGA \rangle\\
+\end{equation}
+
+\begin{equation}
+{\Theta4}_{DNA} = \langle TAC TCC GGG CAT\rangle\\
 \end{equation}
 
 \begin{multline}
@@ -1037,9 +1041,10 @@ GAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG
 \Large
 
 
-The first three sequences are merely hypothetical, and intentionally small/short, with $\Theta1_{DNA}$ and $\Theta3_{DNA}$ being DNA-sequences, while $\Theta2_{RNA}$ is just some RNA-sequence. $\Theta_{insulin}$ is a DNA-sequence we have already encountered in \textbf{Section \ref{SEC2}} (see \textbf{Equation \ref{EQINSULIN}}), while the most verbose sequence we shall encountered in this work is named $\Theta_{rbcl}$ and is a real-life, biologically relevant RNA-sequence from a well-known plant protein: \textbf{RbcL}\footnote{$\Theta_{rbcl}$ is actually just a sample mRNA Sequence (partial, from \textit{Arabidopsis thaliana} RbcL gene), and is excerpted from a paper that includes the \textit{Arabidopsis thaliana} chloroplast genome, which contains the rbcL gene encoding the large subunit of RuBisCO\cite{Sato1999ArabidopsisChloroplastGenome}.}, the large subunit of \textbf{RuBisCO} --- the enzyme responsible for carbon fixation in photosynthesis. It is one of the most abundant and essential proteins in plants\cite{copilot_dna_assistant}.
+The first four sequences are merely hypothetical, and intentionally small/short, with $\Theta1_{DNA}$, $\Theta3_{DNA}$ and $\Theta4_{DNA}$ being DNA-sequences, while $\Theta2_{RNA}$ is just some RNA-sequence. $\Theta_{insulin}$ is a DNA-sequence we have already encountered in \textbf{Section \ref{SEC2}} (see \textbf{Equation \ref{EQINSULIN}}), while the most verbose sequence we shall encountered in this work is named $\Theta_{rbcl}$ and is a real-life, biologically relevant RNA-sequence from a well-known plant protein: \textbf{RbcL}\footnote{$\Theta_{rbcl}$ is actually just a sample mRNA Sequence (partial, from \textit{Arabidopsis thaliana} RbcL gene), and is excerpted from a paper that includes the \textit{Arabidopsis thaliana} chloroplast genome, which contains the rbcL gene encoding the large subunit of RuBisCO\cite{Sato1999ArabidopsisChloroplastGenome}.}, the large subunit of \textbf{RuBisCO} --- the enzyme responsible for carbon fixation in photosynthesis. It is one of the most abundant and essential proteins in plants\cite{copilot_dna_assistant}.
 
 \subsection{A First Analysis}
+\label{SECFANAL}
 
 Before we dive into the matter of solving the analytic problems under the four scenarios introduced in \textbf{Section \ref{SEC4ASEQ}} above, we shall want to begin with a background analysis that shall give us some high-level insights about any of the sequences in our problem set. In particular, we are going to start by analyzing each of those sequences, so as to know the following basic facts:
 
@@ -1063,7 +1068,7 @@ TACG
 \end{verbatim}
 
 }
-\item {\textbf{To compute the modal sequence statistic?} For example, for $\Theta1$, run the following command against the sequence file to display the unique symbols in the sequence, in their order of most frequent first, and/or their natural order of first-occurrence within the sequence:
+\item {\textbf{To compute the modal sequence statistic?} First, note that the \textbf{modal sequence statistic} is well introduced, defined and how to use it demonstrated in \cite{transformatics}\footnote{See \textbf{Definition 1} in \cite{transformatics}}. That said, for example, for $\Theta1$, run the following command against the sequence file to display the unique symbols in the sequence, in their order of most frequent first, and/or their natural order of first-occurrence within the sequence:
 
 \begin{verbatim}
 cat theta1_dna.txt | tttt -c "u!"":"
@@ -1122,14 +1127,14 @@ cat theta2_rna.txt | wc -c
 \end{enumerate}
 
 
-Such is the power of the sequence analysis we can do with the TEA language, without any sophisticated tools. Thus, shall we analyze all the other sequences in our problem set, and to simplify things, we shall merely tabulate the analysis results for all five sequences as such:
+Such is the power of the sequence analysis we can do with the TEA language, without any sophisticated tools. Thus, shall we analyze all the other sequences in our problem set, and to simplify things, we shall merely tabulate the analysis results for all six sequences as such:
 
 
 \begin{table}[H]
   \Large
-	\begin{tabular}[t]{|p{2cm}||p{3cm}|p{2cm}|p{4cm}|p{2cm}|p{2cm}|}
+	\begin{tabular}[t]{|p{1.5cm}||p{3cm}|p{2cm}|p{6cm}|p{1.5cm}|p{1.5cm}|}
 	\hline
-	na-Seq & Sequence Symbol Set: $\psi(\Theta)$ & Parent Symbol Set & \makecell{Modal Sequence\\Statistic, $\overset{>}{\Theta}$\\ and Symbol\\ Distribution:\\ $\invpi(\rho \in \Theta)$} & $\invpi(\Theta)$ &  \makecell{Codon\\ Count:\\ $\invpi(\Theta^*)$\\ $\approx \frac{\invpi(\Theta)}{3}$}\\
+	na-Seq & Unspecific Sequence Symbol Set: $\psi(\Theta)$ & Closest Parent Symbol Set & \makecell{Modal Sequence\\Statistic, $\overset{>}{\Theta}$\\ and Symbol\\ Distribution:\\ $\invpi(\rho \in \Theta)$} & $\invpi(\Theta)$ &  \makecell{Codon\\ Count:\\ $\invpi(\Theta^*)$\\ $\approx \frac{\invpi(\Theta)}{3}$}\\
 	\hline
 	\hline
 	
@@ -1169,6 +1174,45 @@ Such is the power of the sequence analysis we can do with the TEA language, with
 	 \end{tabular} & 16 & $5.3\bar{3}$\\
 	\hline	 
 	\hline
+	
+	
+	%fourth sequence...
+	${\Theta4}_{DNA}$ & $\langle T, A, C, G \rangle$ & $\psi_{DNA}$ &  
+	\centering
+	\begin{tabular}[t]{|c|c|c|c|}
+		C & G & T & A\\
+		\hline
+		4 & 3 & 3 & 2\\	
+		\hline
+	 \end{tabular} & 12 & 4\\
+	\hline	 
+	\hline
+	
+	
+	%fourth sequence...
+	${\Theta}_{insulin}$ & $\langle A, T, G, C \rangle$ & $\psi_{DNA}$ &  
+	\centering
+	\begin{tabular}[t]{|c|c|c|c|}
+		G & C & T & A\\
+		\hline
+		108 & 105 & 60 & 56\\	
+		\hline
+	 \end{tabular} & 329 & $109.6\bar{6}$\\
+	\hline	 
+	\hline
+	
+	%fifth sequence...
+	${\Theta}_{rbcl}$ & $\langle A, U, G, C \rangle$ & $\psi_{RNA}$ &  
+	\centering
+	\begin{tabular}[t]{|c|c|c|c|}
+		U & G & A & C\\
+		\hline
+		1355 & 1207 & 305 & 301\\	
+		\hline
+	 \end{tabular} & 3168 & 1056\\
+	\hline	 
+	\hline	
+	
 	              
 \end{tabular}
  \caption{A First Analysis of the 5 na-Sequences from \textbf{Section \ref{SEC4ASEQ}}}
@@ -1180,10 +1224,217 @@ Such is the power of the sequence analysis we can do with the TEA language, with
 
 
 \subsection{SCENARIO A}
+\label{SECSCENA}
+
+\begin{quote}
+\small
+\texttt{
+Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, of the same length, $n$, and with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_n)$), how to quantify how similar or dissimilar they are?}
+\end{quote}
 
 So, in this scenario, we are basically given some two particular na-Sequences, of the same length, and which have similar symbol sets, and are tasked with how to quantify their similarity or dissimilarity.
 
-Looking at our example sequences above, we might pick 
+Looking at our example sequences above in \textbf{Table \ref{TABFAN}}, only two sequences satisfy the necessary conditions --- $\Theta1$ and $\Theta4$, which both have length \textbf{12} and which have similar symbol sets under base-na\footnote{Formally defined in \textbf{Definition \ref{DEFUNA}}} --- $\psi_{na}(\Theta1) = \psi_{na}(\Theta4) = \langle A, C, G, T \rangle$, but also their unspecific sequence symbol sets are already similar.
+
+Actually, this case is very telling concerning what might actually happen with na-Sequences --- essentially, we note that, despite the two sequences \textbf{actually being different} --- for example, $\Theta1$ ends with codon \texttt{TTC}, while $\Theta4$ ends with \texttt{CAT}, and yet, looking at their breakdown analysis via \textbf{Table \ref{TABFAN}}, we see that \textbf{they almost seem to be the same!} They have the same sequence symbol set, the same parent symbol set, the same modal sequence and symbol distribution, the same sequence length and thus same number of codons! So, how exactly can we quantifiably distinguish between such sequences in real life?
+
+At this juncture, it definitely might make sense to recall what the purpose of the \textbf{Anagram Distance Measure}\cite{adtpaper} --- it essentially is a measure that allows us to tell if any two sequences that might contain the same exact distinct symbols, but possibly in different proportions and/or order, are different or not. So, since we can't use the usually sufficient \textbf{modal sequence statistic}\cite{transformatics} to distinguish between these two actually different sequences, let us attempt to compute their anagram distance instead\footnote{It shall be \textbf{very important} to bring to mind here, the fact that, the cases where comparing sequences or datasets using the ADM might not seem obvious, but as we already saw in a detailed attempt to distinguish between actually different sequences using many various traditional statistical measures  (of variation moreover) that all failed to show a difference between some two test sequences --- see \textbf{Table 1} in \cite{transformatics}, one shouldn't take ADM any less serious even for non-numerical data such as analysis nucleic acid sequences!}. 
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\large
+\textbf{NOTE:}\\
+ A Quick Recap \textbf{Concerning Interpreting ADM, $\tilde{A}(\Theta,\Theta^*)$} \\
+
+The Anagram Distance Measure (ADM), associated testing method, background and justifications for the new statistic were first laid out in the seminal paper\cite{adtpaper} introducing that measure and its theory. That work was later advanced in the trasformatics paper\cite{transformatics}, and essentially, we can note that:
+
+\begin{itemize}
+\item{Given any two sequences, $\Theta$ and $\Theta^*$, that ideally should be of the same length, and with the same sequence symbol set, then we compute the anagram distance between them via the formula:
+
+\begin{equation}
+\label{EQADM}
+\tilde{A}(\Theta \rightarrow \Theta^*) = \frac{1}{\invpi(\Theta)} \times \sum\limits_{i=1}^{\invpi(\Theta)} |I(\omega_i,\Theta^*) - i|
+\end{equation}
+}
+\item {
+And that we can interpret the results --- which shall always be a positive real number ($\mathbb{R^+}$) as such:
+
+\begin{equation}
+\label{EQINTADM}
+\tilde{A}(\Theta \rightarrow \Theta^*) = \begin{cases}
+0, & \Theta = \Theta^*,  \text{no differences}\\
+< 1, & \Theta \approx \Theta^*, \text{different in at minimum two positions}\\
+= 1, & \Theta \neq \Theta^*, \text{all members shifted by exactly 1 position}\\
+> 1, & \Theta \ll \Theta^*, \text{potential indication there is chaos.}
+\end{cases}
+\end{equation}
+
+For a quick primer, on how this works out, assume we have $\Theta_1=\langle a, b, c\rangle$, $\Theta_2=\langle a, c, b\rangle$, $\Theta_3=\langle b, c, a\rangle$, $\Theta_4=\langle c, a, b\rangle$, $\Theta_5=\langle b, a, c\rangle$. Then we can see that:
+
+\begin{enumerate}
+\item $\tilde{A}(\Theta_1,\Theta_2) = \frac{1}{3}(|1-1|+|2-3|+|3-2|) = \frac{2}{3} < 1$
+\item $\tilde{A}(\Theta_1,\Theta_3) = \frac{1}{3}(|1-3|+|2-1|+|3-2|) = \frac{4}{3} > 1$
+\item $\tilde{A}(\Theta_1,\Theta_4) = \frac{1}{3}(|1-2|+|2-3|+|3-1|) = \frac{4}{3} > 1$
+\item $\tilde{A}(\Theta_1,\Theta_1) = \frac{1}{3}(|1-1|+|2-2|+|3-3|) = \frac{0}{3} = 0$
+\item $\tilde{A}(\Theta_1,\Theta_5) = \frac{1}{3}(|1-2|+|2-1|+|3-3|) = \frac{2}{3} < 1$
+\end{enumerate}   
+
+However, to see the case when $\tilde{A} = 1$, we can use the sequences: $\Omega_1 = \langle a, b, c, d, e, f \rangle$ and $\Omega_2 = \langle b, a, d, c, f, e \rangle$. So, that we have:
+
+ $\tilde{A}(\Omega_1,\Omega_2) = \frac{1}{6}(|1-2|+|2-1|+|3-4|+|4-3|+|5-6|+|6-5|) = \frac{6}{6} = 1$
+ 
+ Concerning this last case, it might be worth noting that the only way to have that result for a sequence, is to have each element swapped with its immediate neighbor, without wrapping-around such as we saw happen in $\Theta_1$ Vs $\Theta_3$ for example. Also, the only way this could happen, is if the sequence's cardinality is even.
+
+}
+\end{itemize}
+
+\end{minipage}}
+\\
+\end{center}
+
+So, if we return to our na-Sequence analysis, we see that for our tricky case comparing $\Theta1$ Vs $\Theta4$, that if we compute their anagram distance, then we have the results:
+
+\begin{center}
+
+\begin{table}[H]
+\centering
+\begin{tabular}[t]{|c||c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$\Theta4$ & T & A & C & T & C & C & G & G & G & C & A & T\\
+\hline
+$\omega_i \in \Theta1$ & T & A & C & G & G & G & C & A & T & T & C & C\\
+\hline
+$i$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12\\
+\hline
+$I(\omega_i,\Theta4)$ & 1 & 2 & 3 & 7 & 8 & 9 & 5 & 11 & 4 & 12 & 6 & 10\\
+\hline
+$|I(\omega_i,\Theta4) - i|$ & 0 & 0 & 0 & 3 & 3 & 3 & 2 & 3 & 5 & 2 & 5 & 2\\
+\hline
+\end{tabular}
+\caption{A Tabular Analysis of $\Theta1$ Vs $\Theta4$ so as to compute their Anagram Distance}
+\label{TABADM1}
+\end{table}
+
+\end{center}
+
+It shall be worth noting concerning how we derive the values of the updated position of $\omega_i$ in the compared/resultant sequence, $\Theta4$, via $I(\omega_i,\Theta4)$, that we are actually careful to follow the definition of that function (see \textbf{Note} on \textbf{Page 5} in \cite{transformatics}), with the useful detail that since both sequences contain repeated/duplicated symbols despite their similar length, that we assign to some symbol, such as the first `T' in $\Theta1$, the index of the first `T' in $\Theta4$, and second `T' in $\Theta1$, the index of the second `T' in $\Theta4$ --- no skipping ahead, no juggling them up\footnote{Thus, we can generally say for any two sequences, $\Theta$ and $\Theta^*$ under ADM analysis, that for computing the $I(\omega_i,\Theta^*)$ for terms from the source, $\Theta$, even where $\omega_i$ occurs multiple times in either sequence, even if at different positions, that we assign the first instance of $\omega_i$, the value of $I(\omega_i,\Theta^*)$ equal to the position of the first instance of $\omega_i$ in $\Theta^*$, the second instance of $\omega_i$, the position of the second instance of $\omega_i$ in $\Theta^*$, etc. So as to properly/correctly compute the ADM, but also for any other cases in using the \textbf{position-index function} in say logic or formulations as we do in many scenarios concerning Transformatics.}.
+
+And thus, we can see readily that:\\
+
+\begin{equation}
+\label{EQCOMPNASEQ14}
+\tilde{A}(\Theta1 \rightarrow \Theta4) = \frac{1}{12}(0 + 0 + 0 + 3 + 3 + 3 + 2 + 3 + 5 + 2 + 5 + 2) = \frac{28}{12} = 2.3\bar{3} > 1 > 0
+\end{equation}
+
+And so, despite the measures and first analysis in \textbf{Table \ref{TABFAN}} having shown that these two nucleic acid sequences didn't have any significant differences, and yet, using ADM as in \textbf{Table \ref{TABADM1}} and \textbf{Equation \ref{EQCOMPNASEQ14}}, we find that they are appreciably significantly different! Their ADM being $2.3$, it tells us the second sequence potentially has elements in the first sequence shifted to new locations in the sequence, potentially by more than just 1 position. Thus, despite all their other similarities, they do have some differences that we can measure and pin to some telling numbers.
+
+\subsection{SCENARIO B}
+\label{SECSCENB}
+
+\begin{quote}
+\small
+\texttt{
+Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$, but with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?}
+\end{quote}
+
+So, given the conditions of this scenario and our sample sequences as summarized in \textbf{Table \ref{TABFAN}}, we shall pick sequences $\Theta1$ and $\Theta3$, which both have the same sequence symbol set under base-na, and which have cardinalities 12 and 16 respectively.
+
+So, good enough, we have already worked through some of the essential details of the analysis method in \textbf{Section \ref{SECSCENA}}. However, for this scenario, we can sum up how to conduct our comparative analysis thus:
+
+\begin{enumerate}
+\item{First, conduct tabular analysis so as to see how the two sequences contrast against each other by the dimensions: 
+\begin{enumerate}
+\item Their unspecific\footnote{The \textbf{Unspecific Symbol Set} concept is first introduced in \textbf{Definition 4} of the o-SSI paper\cite{ossipaper}} sequence symbol sets.
+\item Their closest parent/containing/superset symbol set.
+\item Their modal sequence statistic.
+\item Their \textbf{sequence characteristic} --- more about this soon.
+\item Their cardinality.
+\end{enumerate}
+
+We have already seen how to do all the above analysis steps and why, in the First Analysis described in \textbf{Section \ref{SECFANAL}}.
+}
+\item So, if none of the analyses in the first step help show the \textbf{quantifiable similarities} or \textbf{quantifiable differences} between the two sequences, then proceed to using the more subtle Anagram Distance Measure on them. How to do this we have already covered well in \textbf{\hyperref[SECSCENA]{Scenario A}}.
+\item In case the ADM also can't find any differences between the two sequences, then most likely, their only differences are \textbf{cosmetic} --- such as simply naming the same sequence differently, and thus the two sequences under analysis can be considered to be \textbf{quantifiably similar}.
+\end{enumerate}
+
+So, first, note that, from \textbf{Table \ref{TABFAN}}, that even though the two sequences we are looking at, $\Theta1$ and $\Theta3$ have the same \textbf{specific sequence symbol set}\footnote{The concept of the \textbf{specific symbol set} is first introduced in \textbf{Definition 3} of \cite{ossipaper}} (under base-na or DNA): $\psi_{na}(\Theta1) = \psi_{na}(\Theta3) = \langle A, C, G, T \rangle$, and yet, their \textbf{unspecific sequence symbol sets} are different! 
+
+So, their first difference is in their unspecific sequence symbol sets: $\psi(\Theta1) = \langle T, A, C, G\rangle$ and yet $\psi(\Theta3) = \langle A, T, G, C\rangle$. So, at minimum, we know that they have quantifiable difference in the ordering of their similar symbols within either sequence just by this analysis --- especially because these symbol sets respect order of first occurrence within the sequence they summarize.
+
+If we must continue to still analyze the two sequences, we can further note that they have the same closest\footnote{We say ``closest parent symbol set" because, for several scenarios in analyzing sequences, one can find cases where two sequences have symbols that belong to more than one symbol set where that other symbol set is larger than the sequence symbol set. For example, the case of having to decide if a sequence such as ``101" belongs to base 2, base 3, base 10 or even base-36! Or if we have the sequence ``AUG" that might span the RNA-symbol set, but also $\psi_{na}$, and talking of which, we must note that in principle at least, all na-Sequences could also be classified as sequences of terms from the Latin-Alphabet --- the symbol set $\psi_{az}$!} parent symbol set, $\psi_{DNA}$. And so, that's a similarity.
+
+And then we come to the matter of their modal sequence statistics. For this case, we see that we have the values: 
+
+\begin{itemize}
+\item $\overset{>}{\Theta1} = \langle C, G, T, A \rangle$
+\item $\overset{>}{\Theta3} = \langle G, A, T, C \rangle$
+\end{itemize}
+
+So, this alone can tell us that the two sequences differ quantifiably in terms of either their relative distribution of members/symbols, or that they differ in the order of first occurrence of their symbols at worst.
+
+Also, note that, the modal sequence statistic (MSS), is definitely computed readily by considering the relative frequency of terms within the sequence under analysis, and so, when we look at the MSS column in \textbf{Table \ref{TABFAN}}, we see that below each of the terms for the MSS, we also display the associated symbol frequencies. This is important as we are to see hereafter...
+
+Talking of which, the next analysis we could conduct, but which is closely related to the previous one, is the \textbf{sequence characteristic}. Concerning this, note that, unlike \textbf{\hyperref[SECSCENA]{Scenario A}} where the two sequences we analyzed had the same exact MSS, and yet, assuming $\Theta1$ and $\Theta4$ had some difference in the frequency of their terms despite having the same MSS, the MSS-analysis alone wouldn't have identified that. And so, before we proceed, let us also introduce/define the sequence characteristic measure.
+
+\begin{defn}[The \textbf{Sequence Characteristic}, $\hbar(\overset{>}{\Theta})$]
+\label{DEFSEQCHAR}
+If a sequence $\Theta$ has the modal sequence statistic $\overset{>}{\Theta} = \langle \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i, \rangle$, so that we can express it as a string concatenation of its distinct symbols in their relative order of highest frequency and first occurrence such as $\omega_1\omega_2\omega_3\ldots\omega_k$ for some $k$ the size of $\overset{>}{\Theta}$, then, if for each $\omega_i$ we also know its corresponding frequency in $\Theta$, such as $f_i$ for $\omega_i$, then writing the frequency next to the symbol such as $\omega_if_i$ for all terms in $\overset{>}{\Theta}$ produces a string that contains both the information about the unique modal sequence of $\Theta$, but also the information about how frequent each symbol occurred. We shall call such an expression the \textbf{Sequence Characteristic}, and shall denote it as  $\hbar(\overset{>}{\Theta})$, so that we can then write for $\Theta$, its corresponding sequence characteristic as:
+
+\begin{equation}
+\label{EQSECHARDEF}
+ \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i\cdot f_i
+\end{equation}
+
+\end{defn}
+
+Closely related, and since we have already seen such a computation and its application in \textbf{Step\#4} of our \textbf{\hyperref[SECFANAL]{First Analysis}} using the TEA programming language, we might as well formally define a generic machine that can compute $\hbar(\overset{>}{\Theta})$ for any sequence.\\
+
+\begin{transf}[The \textbf{Sequence Characteristic Generator}, gSC]
+\label{TRANSFGENSEQCHAR}
+$ $\\
+$\Theta \xrightarrow{O_{gSC}(\Theta)} \Theta^*; \quad \Theta^* = \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i\cdot f_i = \prod\limits_{\rho_i \in \overset{>}{\Theta}} \rho_i\cdot \invpi(\rho_i \in \Theta)$
+\end{transf}
+
+So, we note that, like in the example we saw in generating $\hbar(\overset{>}{\Theta1})$ for $\Theta1$ in our \textbf{\hyperref[SECFANAL]{First Analysis}} --- which returned the characteristic string as \textbf{C4G3T3A2}, we can then see that, by using the information in \textbf{Table \ref{TABFAN}}, that for the two sequences we are comparing, we have their sequence characteristics as such:
+
+\begin{itemize}
+\item $\hbar(\overset{>}{\Theta1})$ = \textbf{C4G3T3A2}
+\item $\hbar(\overset{>}{\Theta3})$ = \textbf{G6A5T4C1}
+\end{itemize}
+
+And thus, since those two measures aren't the same either, again, we have yet another evidence to conclude the two sequences are quantifiably different.
+
+It should be worth noting, that in contrast to the previous scenario, the sequence characteristic\footnote{The \textbf{Sequence Characteristic} becomes yet another important contribution to the study and analysis of sequences that can serve special purposes than just the related Modal Sequence Statistic, and which, though derived from it, expresses different sequence summarizing information that is important in scenarios such as genetic sequence analysis as we have just seen. Definitely, this measure can, as with other measures we have developed in transformatics, be applied in any mathematical or scientific field and not just statistics or genetics such as in this case.} for $\Theta1$ and $\Theta4$ are equivalent (as expected?).
+
+\subsection{SCENARIO C}
+\label{SECSCENC}
+
+\begin{quote}
+\small
+\texttt{
+Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$ and with different symbol sets ($\psi_{na}(\Theta1_n) \neq \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?}
+\end{quote}
+
+Without repeating ourselves nor wasting time, note that from the cases we have in \textbf{Table \ref{TABFAN}}, such might be the case with sequences such as $\Theta1$ and $\Theta_rbcl$ for example. And, from the analysis procedure we have already encountered in \textbf{\hyperref[SECSCENB]{Scenario B}}, we can definitely use any of several available ways to quantify their similarities or differences. However, most useful perhaps, might be to just look at their sequence characteristics:
+
+\begin{itemize}
+\item $\hbar(\overset{>}{\Theta1})$ = \textbf{C4G3T3A2}
+\item $\hbar(\overset{>}{\Theta_{rbcl}})$ = \textbf{U1355G1207A305C301}
+\end{itemize}
+
+Which, automatically disqualifies any allegations that the two sequences are similar, and which, further tells us they differ in not only their symbol sets, but also in their symbol distribution.
+
+Also, and important to note, we see that, by having a sequence's \textbf{characteristic}\footnote{Yes, sometimes we might just talk of a \textbf{characteristic} when we mean a ``sequence characteristic".} computed, we can not only tell at a glance which symbols occur most frequent in a sequence, which symbols only occur once but in different order, but also, be able to readily compute the actual cardinality of the summarized sequence --- so, with $\hbar(\overset{>}{\Theta_{rbcl}})$ = \textbf{U1355G1207A305C301}, we can compute the length of the \textbf{RbcL} by just summing up the $f_i$ terms in $\hbar(\overset{>}{\Theta_{rbcl}})$: 1355 + 1207 + 305 + 301 = \textbf{3168}. Thus, the \textbf{sequence characteristic} is such a terrific measure when comparing especially large or arbitrarily sized sequences. Good enough, we have seen that there is a simple/short TEA program to automatically compute and display that measure for any input sequence, so, interested researchers and students can just adapt/build on that in the future.
+
+\subsection{SCENARIO D}
+\label{SECSCEND}
+
+\begin{quote}
+\small
+\texttt{
+Finally, how, when given a particular na-Sequence, $Q_k$, and two collections/samples of other sequences ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, and that belong to labeled or classified populations --- POPA and POPB, to determine which of the two populations the query sequence, $Q_k$ best-belongs to (so we classify it under one of the labels), as well as determine which of the sample member sequences from either collections it is closest to?}
+\end{quote}
+
 
 
 \section{The Mathematics of Genome Sequencing: Sequence Alignment, The Modal Sequence, The Sequencing Machine and the Absolute Identifier Genome Sequence Law}
@@ -1385,7 +1636,7 @@ As per \textbf{Equation  \ref{EQLSEQ}} and the sensibilities of GTNC\cite{Lutalo
 \fbox{\begin{minipage}{0.9\textwidth}
 \begin{defn}[A \textbf{Genome Sequencer}]
 \label{DEFGENOMESEQ} 
-A solution to \textbf{Problem \ref{PROBGS}}, is a special sequence processor, $\tilde{T}(\Theta^n)$, that can compute and return a resultant sequence, $R_{\Theta^n}$, also known as the \textbf{genome sequence}, defined as:
+A solution to \textbf{Problem \ref{PROBGS}}, is a special sequence processor, $\tilde{T}(\Theta^n)$, that can compute and return a resultant sequence, $R_{\Theta^n}$, also known as the \textbf{genome sequence}, defined as\footnote{Note that, even though in our formalism here we express the \textbf{relative complement set} of $\{\Theta_m\}$ in $\Theta^n$ as $\Theta^n \setminus \Theta_m$ --- especially to keep the notation simple, we actually mean $\Theta^n \setminus \{\Theta_m\}$, which means, the first set with the elements in the second set omitted.}
 
 \begin{equation}
 \label{EQGSVAL}
@@ -1419,7 +1670,7 @@ That transformer, $\tilde{T}(\Theta^n)$, is a genome sequencer, and is essential
 
 \subsection{The Identity Genome Sequence (IGS) Law}
 
-\begin{law}[The \textbf{Genome Diversity Law}]
+\begin{law}[The \textbf{Identity Genome Sequence Law}]
 \label{LAWGDL}
 The Identity Genome Sequence, $R_{\Theta^n}(\Omega): \mathbb{N} \times \psi_{DNA}$, derived from some collection of sequences, $\Theta^n \langle \prod\limits^n \theta_i \rangle$ such that $\theta_i \subset \Omega \lor \theta_i \approx \Omega$ are approximations of $\Omega$, the longest known genome sequence of the entity, whose exact genome sequence would be $\Omega$, and which can uniquely identify it. For sufficiently large $n$, and where the sample sequences $\theta_i$ were read or generated correctly by scanning or sequencing the entity, then 
 
@@ -1671,7 +1922,7 @@ And with $\Theta^*_n$ produced, we can then merely generate the corresponding or
 \label{TRANSF2}
 $\Theta^*_n \quad \xrightarrow{O_{mRNA-translate}(\cdot)} \quad [\Theta^*_n]^* \quad;$\\
 \begin{enumerate}
-\item $\invpi([\Theta^*_n]^*) < \invpi(\Theta^*_n)$ because we only count each codon in the source once, and as per in the rules of gene processing, all non-coding codons, stop codons and start codons (basically, codons not able to be translated into an amino-acid given the state of the gene processor --- see \textbf{Figure \ref{FIG3}} and \textbf{Figure \ref{FIG4}}) don't contribute to the generated resultant sequence in terms of sections it contains --- with the exception of the special ``Met" codon that might or might not be retained in the resultant sequence even though it is automatically included as the first produced amino-acid in any legitimate gene sequence.
+\item $\invpi([\Theta^*_n]^*) < \invpi(\Theta^*_n)$ because we only count each codon in the source once, and as per the rules of gene processing/transcription, all non-coding codons (introns) --- basically, codons not able to be translated into an amino-acid given the state of the gene processor\footnote{See \textbf{Figure \ref{FIG3}} and \textbf{Figure \ref{FIG4}}}, don't contribute to the generated resultant sequence in terms of sections it contains --- with the exception of the special ``Met" codon\footnote{A START-codon also counted among genuine ``exons" --- coding codons} that might or might not be retained in the resultant sequence even though it is automatically included as the first produced amino-acid in any legitimate gene sequence.
 \item The entire sequence $[\Theta^*_n]^*$ is a kind of 3-Dimension molecule based on the chain of amino-acids it contains, and is technically referred to as a protein.
 \end{enumerate}
 $\qed$
