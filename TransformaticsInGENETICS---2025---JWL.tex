@@ -1432,9 +1432,165 @@ Also, and important to note, we see that, by having a sequence's \textbf{charact
 \begin{quote}
 \small
 \texttt{
-Finally, how, when given a particular na-Sequence, $Q_k$, and two collections/samples of other sequences ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, and that belong to labeled or classified populations --- POPA and POPB, to determine which of the two populations the query sequence, $Q_k$ best-belongs to (so we classify it under one of the labels), as well as determine which of the sample member sequences from either collections it is closest to?}
+How, when given a particular na-Sequence, $Q_k$, and two collections/samples of other sequences\\
+ ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, and that belong to labeled or classified populations --- POPA and POPB, to determine which of the two populations the query sequence, $Q_k$ best-belongs to (so we classify it under one of the labels), as well as determine which of the sample member sequences from either collections it is closest to?}
 \end{quote}
 
+
+So, unlike the other scenarios we dealt with, seems like the biggest concern here is to compare a sequence not against just one other sequence, but a collection of them --- essentially, it's like having to quantify the distance between a particular sequence and some collection of other sequences. So how might we go about solving this using the tools already at our disposal?
+
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\large
+\textbf{NOTE:}\\
+  \textbf{Some Useful Ideas Concerning Classification Problems} \\
+
+Though we don't intend to borrow many or any ideas from what others would do or how existing [external and/or independent] methods might provide a solution to our classification problem, we shall call-out one useful general concept that is well placed in the Oxford Dictionary of Computing in relation to this kind of problem:
+
+\begin{quotation}
+\noindent \textbf{Decision Surface}: \texttt{A (hyper) surface in a multidimensional state space that partitions the space into different regions. Data lying on one side of a decision surface are defined as belonging to a different class from those lying on the other. Decision surfaces may be created or modified as a result of a learning process and they are frequently used in machine learning, pattern recognition, and classification systems.}\\
+\hspace*{\fill} --- \textbf{Oxford Dictionary of Computing}\cite{illingworth1996computing}
+\end{quotation}
+
+\end{minipage}}
+\\
+\end{center}
+
+
+First, let us deal with the matter of associating our query sequence, $Q_k$, one of several sequence sets or collections.
+
+\subsubsection{Measuring Proximity to a Set of Sequences, $\Omega^n$}
+
+So, if we have a set of $n$ different sequences of arbitrary composition and lengths, $\Omega^n = \langle \Omega1, \Omega2, \Omega3,..., \Omega n \rangle$, then, given some query sequence such as $Q_k$, and the consequences of \textbf{Theorem 2} in \cite{transformatics}, we can safely classify the query sequence as \textbf{belonging to} or \textbf{being appreciably close} to the given population, if we find that computing the anagram distance between the query and the population via their representative modal sequence statistics results in an ADM value of 0, or if, where there are two or more populations to compare against, that we select that population whose ADM against the query sequence's MSS is appreciably close enough to 0.
+
+With that useful theory then, and given we already know how to compute an MSS, $\overset{>}{Q_k}$, for any particular sequence\footnote{In this work, check \textbf{\hyperref[SECFANAL]{First Analysis}}, but also \textbf{Section 4.1} and especially \textbf{Definition 1} in \cite{transformatics} concerning how to compute the modal sequence statistic.} $Q_k$, we instead better start by solving the matter of how to compute an MSS for a set of sequences --- a \textbf{representative population modal sequence}.
+
+
+So, assuming we have $Q_k = \langle a, d, c \rangle$, $\Omega1 = \langle a, b, c, d, e, f \rangle$ and $\Omega2 = \langle a, b, a, d, c \rangle$, and so that $\Omega^n = \langle \Omega1, \Omega2 \rangle$, we wish to compute $\overset{>}{\Omega^n}$, a population modal sequence statistic representing or summarizing the membership and frequency distribution across the two sequences. So, should we go about [correctly] computing $\overset{>}{\Omega^n}$?
+
+\textbf{STRATEGY 1:} Since we have multiple sequences, and that they even have some uncommon terms and dissimilar lengths, a meaningful strategy might be to not attempt to compute the population MSS directly from the individual sequences, and instead use their sequence characteristics. That is, we would compute $\hbar(\overset{>}{\Omega1})$, $\hbar(\overset{>}{\Omega2})$, ... etc. and then using these, generate a combined \textbf{population characteristic}, $\hbar(\overset{>}{\Omega^n})$. The essential definition shall help make things clearer:\\
+
+
+\begin{defn}[The \textbf{Population Characteristic}]
+\label{DEFPOPCHAR}
+Given a collection, $\Theta^n$, of $n$ sequences of arbitrary length and composition. The representative \textbf{population characteristic}, that summarizes all the sequences within that population, denoted $\hbar(\overset{>}{\Theta^n})$, is derived from the sequence characteristics of the contained sequences, $\hbar(\overset{>}{\Theta_1})$, $\hbar(\overset{>}{\Theta_2})$, ... , $\hbar(\overset{>}{\Theta_n})$ as such:
+
+\begin{equation}
+\label{EQPOPCHAR}
+\hbar(\overset{>}{\Theta^n}) = \prod\limits_{\forall \omega_i \in \psi(\Theta^n)} \omega_i \cdot \invpi(\omega_i \in \Theta^n)
+\end{equation}
+
+Where $\forall \Theta_j \in \Theta^n$
+
+\begin{equation}
+\invpi(\omega_i \in \Theta^n) = \sum\limits_{\forall \hbar(\overset{>}{\Theta_j})} f_{\omega_i}
+\end{equation}
+
+And $\forall i, j \in \mathbb{N}: i < j \implies f_i \geq f_j$ for the frequency terms in $\hbar(\overset{>}{\Theta^n})$.
+\end{defn}
+
+
+Thus having computed the representative population characteristic for our sample/collection/set of sequences as $\hbar(\overset{>}{\Omega^n})$, we then proceed to extract or reduce it to just the \textbf{representative population modal sequence statistic} (RPMSS)\footnote{Any careful analyst shall realize that computing or deriving the RPMSS as in the given process, or as per \textbf{Definition \ref{EQPOPCHAR}}, shall make the most sense, because, any other way would either ignore the important per-sequence symbol distribution information, or might just not be efficient or robust/trustworthy enough, plus, where the frequencies don't matter --- such as when each symbol only appears once across all sequences, then working from the per-sequence MSS would help generate a RPMSS that is close-enough to the relative ordering of terms in each member sequence.}, $\overset{>}{\Omega^n}$.
+
+And with the RPMSS, $\overset{>}{\Omega^n}$, and having computed the MSS of the query sequence, $\overset{>}{Q_k}$, we can then proceed to compute the proximity between the query and the population via a measure such as the ADM: $\tilde{A}(\overset{>}{Q_k},\overset{>}{\Omega^n})$, and if there were more that one population to compare the query against, use the computed ADM values as a \textbf{decision surface} to help objectively decide which of the analyzed populations the query most likely belongs to.
+
+Concerning this method too, it is important to note that given there might be cases in which the query sequence and the population contain several uncommon symbols --- i.e. $\psi(Q_k) \setminus \psi(\Omega^n) \neq \emptyset$ or that $\psi(Q_k) \cap \psi(\Omega^n) = \emptyset$, we might need to adjust the modal sequences for both the query and population so that we can correctly compute their associated ADM. Thus, we might proceed by eliminating from both $\overset{>}{Q_k}$ and $\overset{>}{\Omega^n}$, those uncommon terms, so that the ADM we use as our decision surface is computed thus: $\tilde{A}(\approx\overset{>}{Q_k} \rightarrow \approx\overset{>}{\Omega^n})$.
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\large
+\textbf{EXAMPLE:}\\
+  \textbf{How to Compute $\tilde{A}(\approx\overset{>}{Q_k} \rightarrow \approx\overset{>}{\Omega^n})$} \\
+
+Assume we use the given sequences: $Q_k = \langle a, d, c \rangle$, $\Omega1 = \langle a, b, c, d, e, f \rangle$ and $\Omega2 = \langle a, b, a, d, c \rangle$, and so that $\Omega^n = \langle \Omega1, \Omega2 \rangle$, then:
+
+\begin{itemize}
+\item $\overset{>}{Q_k} = \langle a, d, c \rangle$
+\item $\hbar(\overset{>}{\Omega1}) = a1b1c1d1e1f1$
+\item $\hbar(\overset{>}{\Omega2}) = a2b1d1c1$
+\item $\hbar(\overset{>}{\Omega^n}) = a3b2c2d2e1f1 \quad \implies \quad \overset{>}{\Omega^n} = abcdef$
+\end{itemize}
+
+However, given $\overset{>}{\Omega^n} \setminus \overset{>}{Q_k} \neq \emptyset$ and/or $\overset{>}{\Omega^n} \cap \overset{>}{Q_k} = \{a, d, c \}$, then we must adjust as such:
+
+\begin{itemize}
+\item $\approx\overset{>}{\Omega^n} = acd$
+\end{itemize}
+
+And so that we can then compute $\tilde{A}(\overset{>}{Q_k} \rightarrow \approx\overset{>}{\Omega^n}) = \frac{1}{3}(|1-1| + |2-3| + |3-2|) = \frac{2}{3} < 1$.\\
+
+If there is no other population to compare the query against, we can safely conclude the query is appreciably close enough to the population, otherwise we also compute the ADM between the query and the other populations, and then pick the one with the smallest ADM.
+
+\end{minipage}}
+\\
+\end{center}
+
+\textbf{STRATEGY 2:} The process outlined in the first strategy to solving the first problem in \textbf{\hyperref[SECSCEND]{Scenario D}} might work well and be convincing enough for most practical and theoretical purposes, however, it is not the only plausible route to a good solution. Especially because we are mostly concerned with how to obtain the RPMSS for a collection of potentially widely dissimilar sequences --- a very possible case if we are for example dealing with realistic collections of DNA sequence readings/scans of say a person's genome, the genome of some newly identified species with scanty details, or even the case of attempting to obtain an RPMSS for an entire set of individual organisms --- e.g human members of a clan or particular family tree, etc. So, even though we might not delve into it here, there is a proposal to compute $\overset{>}{\Omega^n}$ from $n$ sequences via computing the population's \textbf{genome sequence}. 
+
+This process would proceed somewhat like this:
+
+\begin{itemize}
+\item Using the provided collection of sequences $\Omega^n$, and the process outlined in \textbf{Section \ref{SECCOMPGENSEQ}}, especially via processing such a collection via the \textbf{\hyperref[DEFGENOMESEQ]{Genome Sequencer}} machine/transformer, we shall obtain a representative and summary, well-aligned and potentially complete [na-]sequence $\Omega_{gs}$ that represents the entire collection/population provided.
+\item By the \textbf{\hyperref[LAWGDL]{Identity Genome Sequence Law}}, we trust that such a sequence shall be unique for any two distinct collections or populations.
+\item {And thus, having obtained $\Omega_{gs}$, we then compute the RPMSS not from the individual sequences in a population, but instead from their representative genome sequence. That is to say:
+
+\begin{trans}
+\label{RPMSSFROMGS}
+$\Omega_{gs} \rightarrow \overset{>}{\Omega_{gs}} \approx \overset{>}{\Omega^n}$
+\end{trans}
+
+And then we can use the obtained $\overset{>}{\Omega^n}$ and the query's $\overset{>}{Q_k}$ to determine how close they are via an anagram distance measure as we have already seen in earlier examples and analysis.
+}
+\end{itemize}
+
+\subsubsection{Measuring Proximity between a $Q_k$ and Members of a Sequence Population, $\Omega^n$}
+
+For answering the final aspect of \textbf{Scenario D}, we merely can proceed via the following Algorithm:
+
+\begin{alg}[The \textbf{Closest Sequence Algorithm}]
+\label{ALGCSA}
+\begin{enumerate}
+\item Compute the MSS for $Q_k$ --- i.e $\overset{>}{Q_k}$.
+\item Since we are looking for the \textbf{sequence closest} to $Q_k$, then given we know $\overset{>}{Q_k}$, we also know $\psi(Q_k)$.
+\item Initialize an empty collection Closest Sequence Tuples, \textbf{CST} := [].
+\item Initialize \textbf{ADM\_CST} := 0.
+\item Initialize  an empty collection  Aproximately Closest Sequence Tuples, \textbf{ACST} := [].
+\item Initialize \textbf{ADM\_ACST} := 0.
+\item {For each sequence, $\Omega_i$ in $\Omega^n$: 
+	\begin{enumerate}
+	\item Compute $\psi(\Omega_i)$
+	\item Initialize \textbf{ADM\_i} := 0.
+	\item{If $\psi(\Omega_i) \setminus \psi(Q_k) = \emptyset$: 
+		\begin{enumerate}
+			\item Compute $\tilde{A}(\psi(\Omega_i) \rightarrow \psi(Q_k))$ and store that in \textbf{ADM\_i}
+			\item Iff \textbf{ADM\_i} $>$ \textbf{ADM\_CST}, add tuple $[i, ADM_i]$ to \textbf{CST}.
+		\end{enumerate}			
+	}
+	\item Else/Otherwise:{
+	 \begin{enumerate}
+	 		\item Adjust $\psi(\Omega_i)$ and $\psi(Q_k)$ to eliminate uncommon terms
+			\item Compute $\tilde{A}(\approx \psi(\Omega_i) \rightarrow \approx \psi(Q_k))$ and store that in \textbf{ADM\_i}
+			\item Iff \textbf{ADM\_i} $>$ \textbf{ADM\_ACST}, add tuple $[i, ADM_i]$ to \textbf{ACST}.
+		\end{enumerate}			
+	}	
+	\end{enumerate}
+}
+\item {If \textbf{CST} is not empty:
+	\begin{enumerate}
+	\item Sort  \textbf{CST} in ascending order of the second term in each contained tuple: $[i, ADM_i]$ so that the tuple with the lowest ADM is the first in \textbf{CST}.
+	\item From  $\Omega^n$, return sequence with index in that topmost tuple as the solution.
+	\end{enumerate}
+}
+\item {Otherwise process \textbf{ACST}:
+	\begin{enumerate}
+	\item Sort  \textbf{ACST} in ascending order of the second term in each contained tuple: $[i, ADM_i]$ so that the tuple with the lowest ADM is the first in \textbf{ACST}.
+	\item From  $\Omega^n$, return sequence with index in that topmost tuple as the solution.
+	\end{enumerate}
+}
+\end{enumerate}
+$\qed$
+\end{alg}
 
 
 \section{The Mathematics of Genome Sequencing: Sequence Alignment, The Modal Sequence, The Sequencing Machine and the Absolute Identifier Genome Sequence Law}
@@ -1584,6 +1740,7 @@ $\qed$
 \end{prob}
 
 \subsection{PROBLEM G3: Computing the Genome Sequence (GS): $(\Theta_1 \Diamond \Theta_2)^*$}
+\label{SECCOMPGENSEQ}
 
 \begin{prob}[\textit{Computing GS: \textbf{Genome Sequence}}]: $(\Theta_1 \Diamond \Theta_2)^*$] 
 \label{PROBGS}
