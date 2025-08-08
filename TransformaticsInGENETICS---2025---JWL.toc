@@ -1,0 +1,31 @@
+\contentsline {section}{\numberline {0.1}Introduction}{9}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Sequence Symbol Sets and Sequence Transforms Applied to Genetic Code}{12}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Sequence Abstraction using Symbol Sets: From Flat-Structure Sequences to Higher-Level Sequences}{17}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Sequence Analysis Using Symbol Sets}{18}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Sequence Analysis Using Complement Sets}{21}{section.0.5}%
+\contentsline {subsection}{\numberline {0.5.1}Significance of Sequence Complements, $\lnot \Theta $ and Complement Symbol Sets, $\lnot \psi _\beta $}{23}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {0.5.2}Potential Applications of Sequence Complements or Inverses}{25}{subsection.0.5.2}%
+\contentsline {section}{\numberline {0.6}Sequence Analysis Using The Anagram Distance and the Modal Sequence Statistic}{27}{section.0.6}%
+\contentsline {subsection}{\numberline {0.6.1}Six Sequences and Four Scenarios}{27}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {0.6.2}A First Analysis}{30}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {0.6.3}SCENARIO A}{33}{subsection.0.6.3}%
+\contentsline {subsection}{\numberline {0.6.4}SCENARIO B}{36}{subsection.0.6.4}%
+\contentsline {subsection}{\numberline {0.6.5}SCENARIO C}{39}{subsection.0.6.5}%
+\contentsline {subsection}{\numberline {0.6.6}SCENARIO D}{40}{subsection.0.6.6}%
+\contentsline {subsubsection}{Measuring Proximity to a Set of Sequences, $\Omega ^n$}{40}{section*.10}%
+\contentsline {subsubsection}{Measuring Proximity between a $Q_k$ and Members of a Sequence Population, $\Omega ^n$}{43}{section*.11}%
+\contentsline {section}{\numberline {0.7}The Mathematics of Genome Sequencing: Sequence Alignment, The Modal Sequence, The Sequencing Machine and the Absolute Identifier Genome Sequence Law}{44}{section.0.7}%
+\contentsline {subsection}{\numberline {0.7.1}PROBLEM G1: Computing MCS: Maximum Common Subsequence: $\Theta _1 \Diamond \Theta _2$}{45}{subsection.0.7.1}%
+\contentsline {subsection}{\numberline {0.7.2}PROBLEM G2: Computing Overlap Resultant Sequences: $\Theta _1 \ast \Theta _2$}{47}{subsection.0.7.2}%
+\contentsline {subsection}{\numberline {0.7.3}PROBLEM G3: Computing the Genome Sequence (GS): $(\Theta _1 \Diamond \Theta _2)^*$}{47}{subsection.0.7.3}%
+\contentsline {subsection}{\numberline {0.7.4}The Genome Sequencer}{49}{subsection.0.7.4}%
+\contentsline {subsection}{\numberline {0.7.5}The Identity Genome Sequence (IGS) Law}{49}{subsection.0.7.5}%
+\contentsline {section}{\numberline {0.8}Gene Expression in Living Organisms Leveraging Genetic Code (DNA $\rightarrow mRNA \rightarrow Protein \rightarrow $ Organism)}{50}{section.0.8}%
+\contentsline {subsection}{\numberline {0.8.1}Protein Manufacturing Algorithm}{55}{subsection.0.8.1}%
+\contentsline {subsection}{\numberline {0.8.2}Gene Expression in Living Things and for Bio-Automata via Ribosomes}{58}{subsection.0.8.2}%
+\contentsline {section}{\numberline {0.9}Transformatics and Genome Expression in Bio-Automata}{60}{section.0.9}%
+\contentsline {subsection}{\numberline {0.9.1}The Ozin Genetic Code Cipher}{61}{subsection.0.9.1}%
+\contentsline {subsection}{\numberline {0.9.2}Genetic Code Sequences Interpreted as Modal Sequence Statistics}{65}{subsection.0.9.2}%
+\contentsline {subsubsection}{The Platonic Form Cipher and Positional-Sensitive Genetic Code Translation}{66}{section*.22}%
+\contentsline {section}{\numberline {0.10}Conclusion}{68}{section.0.10}%
+\contentsline {chapter}{Appendix \numberline {A}Origins of the OZIN Cipher}{69}{appendix.a.A}%

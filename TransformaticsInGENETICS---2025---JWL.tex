@@ -1,9 +1,13 @@
-\documentclass[a4paper, 18pt]{article} % A4 paper, readable font size
+%\documentclass[a4paper, 18pt]{article} % A4 paper, readable font size
+\documentclass[a4paper, 18pt]{book} % A4 paper, readable font size
 \usepackage{geometry} % Adjust margins
 \geometry{top=0.8in, bottom=0.8in, left=0.8in, right=0.6in} 
 
 
 % packages we'll need...
+
+% for better appendices
+\usepackage[title,titletoc]{appendix}
 
 % for controlling page numbers
 \usepackage{fancyhdr}
@@ -116,25 +120,44 @@
 \maketitle
 
 
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\newpage
+
 \Large
 
-\begin{abstract}
+%\begin{abstract}
+\section*{Abstract}
 \large
 
-Though still just a paper, this work brings to surface the importance of leveraging the mathematical statistical theory recently named ``Transformatics", that deals with the study, processing and analysis of especially ordered sequences of symbols. It has been demonstrated to be a credible theory in designing, specifying or explaining the properties of automata operating on sequences to produce other sequences --- so-called sequence transformers. So, in this particular work, we take that body of knowledge, as well as what we know about the critically important science of how biological life-forms get to be defined, transformed and expressed in nature via the special genetic code known as DNA (deoxyribonucleic acid), that is best modeled conceptually as an ordered sequence of genes or more technically, a sequence of special combinations of any of four chemical bases (amino acids) or just ``nucleobases" --- Adenine(A), Cytosine(C), Guanine(G), and Thymine(T), into a finite sequence typically expressed as a double-helix ladder structure, that can then be decoded by convenient biological mechanisms so as to express or rather, manufacture one or more essential life-building compounds such as proteins that underlie the synthesis of specialized aspects of the organism's body such as skin, bone and muscle tissue in an animals or into cell-wall tissue, photosynthesis machinery and others, for plant organisms. This work demonstrates how several ideas first compiled under the transformatics umbrella can be well applied in problems relating to general genetics; we for example see how to quantify how far apart or different any two organisms might be based on the anagram distance between their genetic codes, this likewise being applicable to also sub-sequences of DNA that might underlie the expression of  just particular biological machines or mechanisms. We also consider how to leverage the concept of the modal sequence statistic in analyzing not just how similar different DNA sequences might be in terms of their relative composition of the basic nucleobases, but also in terms of their relative composition at higher abstraction levels such as at the level of amino-acids or large n-gram subsequences. We finally consider the matter of how, by leveraging the idea that a modal sequence encodes a summary about some larger sequence or an entire population of them, that we can then approach DNA as though it were a special statistical summary just like the MSS from transformatics theory, and then like how complex sequences could be constructed from summary statistics via certain protraction and multiplication transformers in earlier work, we use a thought experiment to demonstrate how DNA would be transcribed into both an mRNA-like structure and then which can be further transcribed into actual body structures that allow the organism to occupy space and appear or behave in a particular way. Though this work is mostly theoretical, we anticipate that this discussion and exposition shall inspire actual domain experts and other researchers interested in genetics, genetic engineering and other sciences to pick up and apply our transformatics theory and ideas in both theory and practice.
+Though still just a paper, this work brings to surface the importance of leveraging the mathematical theory recently named ``Transformatics"\cite{transformatics}, that deals with the study, processing and analysis of especially ordered sequences of symbols and their transformations. It has been demonstrated to be a credible and powerful theory in designing, specifying or explaining the properties of automata operating on sequences to produce other sequences --- so-called sequence transformers. So, in this particular work, we take that body of knowledge, as well as what we know about the critically important science of how biological life-forms get to be defined, transformed and expressed in nature via the special genetic code known as DNA (deoxyribonucleic acid), that is best modeled conceptually as an ordered sequence of genes or more technically, a sequence of special combinations of any of four chemical bases (amino acids) or just ``nucleobases" --- Adenine(A), Cytosine(C), Guanine(G), and Thymine(T), into a finite sequence typically expressed as a double-helix ladder structure, that can then be decoded by convenient biological mechanisms so as to express or rather, manufacture one or more essential life-building compounds such as proteins that underlie the synthesis of specialized aspects of the organism's body such as skin, bone and muscle tissue in an animals or into cell-wall tissue, photosynthesis machinery and others, for plant organisms. This work demonstrates how several ideas first compiled under the transformatics umbrella can be well applied in problems relating to general genetics; we for example see how to quantify how far apart or different any two organisms might be based on the anagram distance between their genetic codes, this likewise being applicable to also sub-sequences of DNA that might underlie the expression of  just particular biological machines or mechanisms. We also consider how to leverage the concept of the modal sequence statistic in analyzing not just how similar different DNA sequences might be in terms of their relative composition of the basic nucleobases, but also in terms of their relative composition at higher abstraction levels such as at the level of amino-acids or large n-gram subsequences. We finally consider the matter of how, by leveraging the idea that a modal sequence encodes a summary about some larger sequence or an entire population of them, that we can then approach DNA as though it were a special statistical summary just like the MSS from transformatics theory, and then like how complex sequences could be constructed from summary statistics via certain protraction and multiplication transformers in earlier work, we use a thought experiment to demonstrate how DNA would be transcribed into both an mRNA-like structure and then which can be further translated into actual body structures that allow the organism to occupy space and appear or behave in a particular way. Though this work is significantly theoretical and mathematical, we anticipate that these discussions and the exposition shall inspire actual domain experts and other researchers interested in genetics, genetic engineering and other sciences to pick up and apply our transformatics theory and ideas in both theory and practice.
      \newline\newline
-     \textbf{Keywords}: Applied Mathematical Statistics, Transformatics, Artificial Statistical Intelligence, Information Processing, Ordered Sequences, DNA sequences, Genetic Code, Genetic Analysis
-\end{abstract}
+     \textbf{Keywords}: Applied Mathematical Statistics, Transformatics, Artificial Statistical Intelligence, Information Processing, Ordered Sequences, DNA sequences, Genetic Code, Genetic Analysis, Abstract Machines
+%\end{abstract}
+
+\newpage
+
+\section{Introduction}
+\label{SEC1}
+
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
+   \includegraphics[width=0.9\textwidth,]{resources/images/the_pineapple.jpg}\\
+   \caption{In the course of writing this work, an experiment to grow pineapples from the pineapple fruit tops of pineapples normally bought from nearby marketplace yielded results! Here we see the first successful harvest of a pineapple from our home garden. But also, this case inspired part of the discussion in \textbf{Section \ref{SEC4}} about how in real genome expression systems, the organism expressed from genetic code somewhat still includes the genetic code in the manifested organism as some kind of prefix (in leaves for example) or suffix (roots), from which the original organism can still be later reproduced!}
+  \label{FIGPINEAPPLE}
+  \end{center}
+\end{figure}
 
 \begin{quotation}
 \noindent \texttt{Sex seems to have been invented around two billion years ago. Before then, new varieties of organisms could arise only from the accumulation of random mutations --- the selection of changes, letter by letter, in the genetic instructions. Evolution must have been agonizingly slow. With the invention of sex, two organisms could exchange whole paragraphs, pages and books of their DNA code, producing new varieties ready for the sieve of selection. Organisms are selected to engage in sex --- the ones that find it uninteresting quickly become extinct. And this is true not only for the microbes of two billion years ago. We humans have a palpable devotion to exchanging segments of DNA today.}\\
 \hspace*{\fill} --- \textbf{Carl Sagan}, \textit{COSMOS}, 1981\cite{sagan1981cosmos}
 \end{quotation}
-
-
-
-\section{Introduction}
-\label{SEC1}
 
 
 \begin{quotation}
@@ -143,7 +166,7 @@ Though still just a paper, this work brings to surface the importance of leverag
 \end{quotation}
 
 
-In reality, we find that living, real organisms are influenced by genetics, their environment, bits of randomness and sometimes emergent behaviors that might not be readily captured by strict rules such as the genetic code of life. However, away from all possibilities, and focusing on what can be said of life expression via the genetic code known as DNA (the \textit{deoxyribonucleic acid}) or RNA (ribonucleic acid), especially when applied to the vast spectrum of natural organisms on earth --- from basic \textbf{prokaryotes} (single-celled organisms) such as the simple bacteria that actually have no nucleus\cite{bioexplorer2025}, to  \textbf{eukaryotes}; all the way from basic one-cell kinds such as amoeba\cite{kang2017deep} all the way to sophisticated creatures such as oak trees, vultures, dolphins and human beings! Talking of which, it might be important to set clear that though \textbf{viruses} are a kind of life-form\cite{libretexts2025viruses}, and yet, they are neither prokaryotes nor eukaryotes --- especially because, fundamentally, they are merely some genetic code (DNA or RNA) ``enclosed in a protein coat, lacking cell membranes or organelles"\cite{libretexts2025viruses} --- more technically they are \textbf{acellular entities}.
+In reality, we find that living, real organisms are influenced by genetics, their environment, bits of randomness and sometimes emergent behaviors that might not be readily captured by strict rules such as the genetic code of life. However, away from all possibilities, and focusing on what can be said of life expression via the genetic code known as DNA (the \textit{deoxyribonucleic acid}) and RNA (\textit{ribonucleic acid}), especially when applied to the vast spectrum of natural organisms on earth --- from basic \textbf{prokaryotes} (single-celled organisms) such as the simple bacteria that actually have no nucleus\cite{bioexplorer2025}, to  \textbf{eukaryotes}; all the way from basic one-cell kinds such as amoeba\cite{kang2017deep} all the way to sophisticated creatures such as oak trees, vultures, dolphins and human beings! Talking of which, it might be important to set clear that though \textbf{viruses} are a kind of life-form\cite{libretexts2025viruses}, and yet, they are neither prokaryotes nor eukaryotes --- especially because, fundamentally, they are merely some genetic code (DNA or RNA) ``enclosed in a protein coat, lacking cell membranes or organelles"\cite{libretexts2025viruses} --- more technically they are \textbf{acellular entities}.
 
 So, if we bring on-board ideas from \textbf{transformatics}\cite{transformatics} --- a new mathematical statistics theory dealing with sequences of symbols or those of named structures and their processing as well as analysis, for example, if we take the concept of leveraging statistical measures to summarize essential properties of sequences such as DNA --- say, with use of the modal sequence statistic (MSS), we find that, independently of, and without needing to first consult or worry about mainstream genetic code analysis or genetic engineering theory and mechanics, that we can say many useful things about genetic code sequences and that we might be able to break new ground or solve some otherwise still intractable problems concerning sequences of genetic code.
 
@@ -820,6 +843,7 @@ If some sequence $\Theta: \mathbb{N} \times \psi_\beta$ is an orthogonal symbol 
 \end{theo}
 
 \subsection{Potential Applications of Sequence Complements or Inverses}
+\label{SECAPPCOMPLEMENTS}
 
 First, in genetics and analysis of genetic code sequences, note that for especially sequences in say the \textit{non-native}(non-storage) form, such as the processed/derived RNA-sequences, it might sometimes be useful to determine if some two sequences are the same, equivalent or closely related, even though their apparent ordering of members, or even member composition looks unlike, \textbf{as long as their cardinalities are the same}\footnote{This requirement to have their sizes the same, is a natural consequence of how a sequence and its anagram relate --- see \cite{adtpaper}}.
 
@@ -1855,112 +1879,6 @@ However, given that in reality it might not be exactly possible to exhaustively 
 
 
 
-\section{The Modal Sequence Statistic as a Generic Genetic Code --- A Case of Genome Expression in Bio-Automata}
-\label{SEC4}
-
-\begin{quotation}
-\noindent \texttt{Genome Expression: The collective expression profile of all genes within a genome, including coding and non-coding regions, across different conditions, cell types, or developmental stages. It is a systems-level view --- measuring how the entire genome behaves dynamically. This includes: mRNA expression of all genes, non-coding RNA activity, epigenetic regulation, chromatin accessibility and transcriptional networks. In essence, gene expression is local, while genome expression is global.}\\
-\hspace*{\fill} --- \textbf{Microsoft Copilot}\cite{copilot_dna_assistant}
-\end{quotation}
-
-Away from using transformatics to make sense of the differences between organisms based on their genetic code sequences, an even more exciting application of the theory and practical methods of transformatics would be in conceptualizing, analyzing and explaining the important biological, physical, chemical, informational and mathematical concept of \textbf{genome expression}. We shall use a thought experiment and hypothetical cases leveraging exemplary genetic code modeled using special sequences that are treated as modal sequences at minimum.
-
-First, we shall define a basic cipher that can encode the basic digits (of base-10), as some unique, but non-digit forms (essentially, with non-digit \textit{glyphs}). This, so when we speak of a living organism --- for example a pine-apple or a feline, we don't expect that in nature, or rather, that by physically dissecting the organism, that one shall find trapped or stored inside it, the literal genetic code symbols (such as those in $\psi_{na}$), but rather, that they shall find natural literal expressions or instances of genetic code material basis --- such as the chemical base molecules that define nucleobases, or nucleotides, and also complex molecular structures such as transcribed amino-acids post-RNA translation of DNA expressions.
-
-So, in our hypothetical genome expression model, we are going to expect elements from our basic hypothetical DNA symbol set:
-
-\begin{equation}
-\label{EQHYPDNASS}
-\psi_{\Omega} = \langle 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \rangle \equiv \psi_{10}
-\end{equation}
-
-Which, especially for curiosity's sake, but also, for creative and expressive reasons, is meant to allow us to explore a peculiar genetics model based on not just some four base symbols as is the case in $\psi_{DNA}$, but which allows us to look at any base-10 number expression as a potential genetic code sequence with \textbf{each digit expressing a distinct hypothetical nucleic acid}. For example, we might describe some fictitious organism --- for simplicity's sake, perhaps just a virus that we shall name \textbf{the Euler Virus} or just ``veuler", as having its entire genome sequence encoded as just:
-
-\begin{equation}
-\label{EQDNAV}
-\Omega_{veuler} = 27182818
-\end{equation}
-
-
-However, that is the DNA-side of the story. As in real nature, we need a \textit{different} alphabet or symbol set for expressing genetic code in its \textit{intermediate form} --- as genome expression typically proceeds via expression of DNA into mRNA first of all, and then finally into functions such as proteins. So, in our case, the intermediate expressions shall be expressed using the \textbf{Ozin Cipher}, which we are to describe hereafter.
-
-
-\subsection{The Ozin Genetic Code Cipher}
-
-With the background we have obtained thus far, note that the special \textbf{transcription level} expression of our genetic code originally expressed via $\psi_{10}$, shall be transcribed into the intermediate \textbf{ozin genetic code} that spans the symbol set $\psi_{oz}$ that is mapped from the genetic code storage expression via a mapping as depicted in \textbf{Figure \ref{FIGOZIN}}.
-
-
-
-
-\begin{figure}[H]
-  \begin{center}
-  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
-   \includegraphics[trim=0cm 6cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER.pdf}\\
-   \caption{The OZIN Cipher mapped from Decimal Symbols.}
-  \label{FIGOZIN}
-  \end{center}
-\end{figure}
-
-
-For simplicity's sake, we might interpret or transcribe from base-$\Omega$ DNA into our base-OZ RNA expression as such:
-
-If for some organism such as that expressed via $\Omega_{veuler} = 27182818$, we wish to encode the equivalent intermediate [physical] expression, then we iterate through each symbol in the source code sequence, and re-write it as the equivalent symbolic structure in OZIN, and this, so as to center the ozin glyphs along a \textbf{backbone structure} of just a mere line that starts with a tiny dot and ends with the last ozin structure from the source sequence transcribed. Essentially, for our Euler Virus, it would render as something of the sort shown in \textbf{Figure \ref{FIGOZEVIRUS}}
-
-\begin{figure}[H]
-  \begin{center}
-  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
-   \includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf}\\
-   \caption{The equivalent OZIN expression of the hypothetical Euler Virus genome sequence.}
-  \label{FIGOZEVIRUS}
-  \end{center}
-\end{figure}
-
-
-Another organism, which we might just refer to as the \textbf{Hifinelle}, is actually based off of our favorite base-10 o-SSI --- the \textbf{Hi-Fi o-SSI}\cite{adtpaper}, and thus, its corresponding genetic code at rest is as:
-
-
-\begin{equation}
-\label{EQDNHIFI}
-\Omega_{Hifinelle} = 8649137520
-\end{equation}
-
-
-And which, after we have it transcribed into intermediate OZIN genetic expression, shall appear as shown in \textbf{Figure \ref{FIGOZHIFI}}
-
-
-\begin{figure}[H]
-  \begin{center}
-  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
-   \includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf}\\
-   \caption{The equivalent OZIN expression of the HiFinelle genome sequence.}
-  \label{FIGOZHIFI}
-  \end{center}
-\end{figure}
-
-Of course, in our simplistic genome expression system, the occurrence of that last ``0" symbol in the HiFinelle genome sequence tells us to STOP or just exclude that symbol with a GAP in case any other symbols follow thereafter. It is our STOP-codon equivalent.
-
-Another genome sequence, 
-
-\begin{equation}
-\label{EQDNEXA}
-\Omega_{3} = 0123026
-\end{equation}
-
-Might help illustrate that point --- see \textbf{Figure \ref{FIGOZEXA}}
-
-
-\begin{figure}[H]
-  \begin{center}
-  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
-   \includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
-   \caption{The equivalent OZIN expression of the $\Omega_{3}$ genome sequence.}
-  \label{FIGOZEXA}
-  \end{center}
-\end{figure}
-
-
-
-
 \section{Gene Expression in Living Organisms Leveraging Genetic Code (DNA $\rightarrow mRNA \rightarrow Protein \rightarrow$ Organism)}
 \label{SEC05}
 
@@ -1981,7 +1899,7 @@ Might help illustrate that point --- see \textbf{Figure \ref{FIGOZEXA}}
 \end{figure}
     
     
-In the previous section we have dealt with genome expression, and have especially dealt with hypothetical systems and used the conceptual modal sequence concept as the basis for exploring expression and/or manifestation of an entire organism from just its basic genetic code. In this section though, we shall focus on actual expression in real and natural biological systems, and shall focus more on expression at a molecular level --- essentially, at the level of protein manifestation via \textbf{gene expression}.
+In later section (\textbf{Section \ref{SEC4}}) we shall deal with [whole] genome expression, and shall especially deal with hypothetical systems and use the modal sequence concept as the basis for exploring expression and/or manifestation of an entire organism from just its basic genetic code. In this section though, we shall focus on actual expression in real and natural biological systems, and shall focus more on expression at a molecular level --- essentially, at the level of protein manifestation via \textbf{gene expression}.
 
 It shall be interesting to note that for genetic code in natural automata (nature-like bio-automata\footnote{My research assistant --- thanks \textbf{Microsoft Copilot}, did bring it to my attention that the term ``bio-automata" is ``usually reserved for models or conceptual representations of biological systems --- especially those designed to simulate behaviors, growth patterns, or decisions-making processes using predefined rules, like in cellular automata or agent-based modeling." And thus, much as I often find it attractive to use the term --- as an umbrella term including actual living organisms which, from the perspective of the computer scientist in me, are still correctly classifiable under the "biological automata" category in my opinion since they actually operate on some infallible inherent natural program in their DNA. But, I shall adhere to the advise of my assistant for now.} and generally living things), the most important reason the genetic coding language exists, is so that the body/host-organism system can produce required materials as and when they are needed or demanded for. This for example means producing new or extra body tissue in a still growing organism or in one with any damaged or missing tissue, and essentially, such productions are about the synthesis of particular molecules in the body's system that are basically proteins. The diagram in \textbf{Figure \ref{FIG2}} is a basic illustration of the process for living organisms --- eukaryotes especially.
 
@@ -2148,11 +2066,12 @@ That process which is depicted in \textbf{Figure \ref{FIG3}} is how the ribosome
 
 Before concluding this section on biological computing systems of the sequence generator kind\cite{lutalo2025transformatic}, it should be worthwhile noting that, as depicted in \textbf{Figure \ref{FIG4}}, the process that is naturally found in every living thing's tiniest cells (excluding viruses as already saw in \textbf{Section \ref{SEC1}}, could be, as with any legitimate state machine, be used to implement a proof-of-concept ribosome processor (or a \textit{ribosome computer} --- a way to implement bio-automatons that behave like a ribosome or which process code similar to DNA and mRNA, or which generally operate on sequences to produce other (possibly more complex) sequences. Thinking of a robotic ribosome might not be something that is immediately required in contemporary medicine or in-organism computing systems, but might be a concept worth adapting or exploring for the design and implementation of self-contained robotic factories for manufacturing and outputting complex products producible via use of a sequence-processing, assembly-line kind of method just as proteins are produced in a bio-cell by the ribosome. We might for example think of ``a sequence from which a finished particular type of car can be manufactured at will" or ``a sequence from which certain kinds of sequence-form/sequence-based\footnote{Vertebrates anyone(?)} artificial and/or organic creatures or bots might be systematically produced at will or on-demand". These kinds of printers --- which, unlike just printers of things on paper, or 3D-printers that know to only produce plastic variants of models they are fed with, but which can say \textit{print a human}\footnote{Though we might touch on it in a future paper on philosophy --- e.g in \textit{Computational Mysticism}\cite{lutalo2024mysticism}, it might be interesting to air-out the author's illuminating view that unlike most other bio-mata such as beasts in the wild or fish in the seas, and definitely not as with silicon-based automatons such as GPT-powered modern \textit{disincarnate} artificial entities --- nor the likes of the ZHA qAGI\cite{jwlzha}, that the human in particular, has this peculiar attribute to them that, apart from just their material substratum as any physical robot might possess or need --- and which is say the domain of ``material producers" such as the ribosome is, and away from their conceptual/software substratum too, they seem to, or perhaps arguably, also possess a preternatural layer of existence that perhaps is or might not have anything to do with their DNA/material-blueprint. A better or more precise classification term for such [\textit{preter-}]intelligent -mata/matter(?) might be the still underground term and concept of a \textit{Psymaton} or \textbf{Psymata} --- bits of this line of discourse have been already touched on in the Psymaz Interview\cite{lutalo2025unraveling}.}, teleport a cow or a banana, etc. might be interesting to explore, as we look into the far-future, where, with humanity's ability to travel and survive in remote and/or unnatural worlds away from their biological home environments (such as Earth's biosphere), might compel them to have to develop new kinds of machines that would not only print out ideas on paper, but also complete food ready-to-eat, medicines to particular kinds of ailments, certain kinds of companion creatures or species, etc. Means to survive on/in alien worlds by leveraging smart, general sequence processors and generators. Talking of which, the next section shall help us start to appreciate this perspective of using the case of genetic code sequences and the ribosome sequence processor into the dimension of both artificial as well as conceptual or hypothetical bio-machines that like the bio-cell can produce complex things via processing of some kinds of code sequences. Bio-automata.
 
-
-\section{Gene Expression in Bio-Automata Leveraging Genetic Modal Sub-Sequences (Numero-Gene Code $\rightarrow$ Ozin-Gene Code $\rightarrow$ Platonic-Form Organelles)}
+\subsection{Gene Expression in Living Things and for Bio-Automata via Ribosomes}
 \label{SEC5}
 
-One might begin by wondering: \textbf{using the concepts from transformatics and pure mathematics, how might we model or express a general and realistic ribosome?} A plausible and meaningful solution to this problem would be to begin by acquiring or developing \textit{a rigorous and correct working definition of what a ribosome is.} The answer would follow directly from that, thus our first definition in this section; a formal definition of a ribosome in any system natural or artificial:
+One might begin by wondering: \textbf{using the concepts from transformatics and pure mathematics, how might we model or express a general and realistic ribosome?} 
+
+A plausible and meaningful solution to this problem would be to begin by acquiring or developing \textit{a rigorous and correct working definition of what a ribosome is.} The answer would follow directly from that, thus our first definition in this section; a formal definition of a ribosome in any system natural or artificial:
 
 
 %\fbox{\begin{minipage}{0.9\textwidth}
@@ -2204,11 +2123,249 @@ And thus, we can finally merely call any machine capable of implementing the pro
 %\end{minipage}}
 %\\
 
+\section{Transformatics and Genome Expression in Bio-Automata}
+\label{SEC4}
+
+\begin{quotation}
+\noindent \texttt{Genome Expression: The collective expression profile of all genes within a genome, including coding and non-coding regions, across different conditions, cell types, or developmental stages. It is a systems-level view --- measuring how the entire genome behaves dynamically. This includes: mRNA expression of all genes, non-coding RNA activity, epigenetic regulation, chromatin accessibility and transcriptional networks. In essence, gene expression is local, while genome expression is global.}\\
+\hspace*{\fill} --- \textbf{Microsoft Copilot}\cite{copilot_dna_assistant}
+\end{quotation}
+
+Away from using transformatics to make sense of the differences between organisms based on their genetic code sequences, an even more exciting application of the theory and practical methods of transformatics would be in conceptualizing, analyzing and explaining the important biological, physical, chemical, informational and mathematical concept of \textbf{genome expression}. We shall use a thought experiment and hypothetical cases leveraging exemplary genetic code modeled using special sequences that are treated as modal sequences at minimum.
+
+First, we shall define a basic cipher that can encode the basic digits (of base-10), as some unique, but non-digit forms (essentially, with non-digit \textit{glyphs}). This, so when we speak of a living organism --- for example a pine-apple or a feline, we don't expect that in nature, or rather, that by physically dissecting the organism, that one shall find trapped or stored inside it, the literal genetic code symbols (such as those in $\psi_{na}$), but rather, that they shall find natural literal expressions or instances of genetic code material basis --- such as the chemical base molecules that define nucleobases, or nucleotides, and also complex molecular structures such as transcribed amino-acids post-RNA translation of DNA expressions.
+
+So, in our hypothetical genome expression model, we are going to expect elements from our basic hypothetical DNA symbol set:
+
+\begin{equation}
+\label{EQHYPDNASS}
+\psi_{\Omega} = \langle 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \rangle \equiv \psi_{10}
+\end{equation}
+
+Which, especially for curiosity's sake, but also, for creative and expressive reasons, is meant to allow us to explore a peculiar genetics model based on not just some four base symbols as is the case in $\psi_{DNA}$, but which allows us to look at any base-10 number expression as a potential genetic code sequence with \textbf{each digit expressing a distinct hypothetical nucleic acid}. For example, we might describe some fictitious organism --- for simplicity's sake, perhaps just a virus that we shall name \textbf{the Euler Virus}\footnote{We called it that, simply because of the fact the associated genome sequence is based on the important natural physical constant --- 2.718281828459, the \textbf{Euler number}, that is one of those irrational numbers that also happens to be the base of the natural logarithm and which arises naturally in many areas of mathematics, especially in calculus, complex analysis, and probability theory.} or just ``veuler", as having its entire genome sequence encoded as just:
+
+\begin{equation}
+\label{EQDNAV}
+\Omega_{veuler} = 27182818
+\end{equation}
+
+
+However, that is the DNA-side of the story. As in real nature, we need a \textit{different} alphabet or symbol set for expressing genetic code in its \textit{intermediate form} --- as genome expression typically proceeds via expression of DNA into mRNA first of all, and then finally into functions such as proteins. So, in our case, the intermediate expressions shall be expressed using the \textbf{Ozin Cipher}\footnote{More about this in the \textbf{\hyperref[APPOZIN]{Appendix}}.}, which we are to describe hereafter.
+
+
+\subsection{The Ozin Genetic Code Cipher}
+\label{SECOZIN}
+
+With the background we have obtained thus far, note that the special \textbf{transcription level} expression of our genetic code originally expressed via $\psi_{10}$, shall be transcribed into the intermediate \textbf{ozin genetic code} that spans the symbol set $\psi_{oz}$ that is mapped from the genetic code storage expression via a mapping as depicted in \textbf{Figure \ref{FIGOZIN}}.
+
+
+
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
+   \includegraphics[trim=0cm 6cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER.pdf}\\
+   \caption{The OZIN Cipher mapped from Decimal Symbols.}
+  \label{FIGOZIN}
+  \end{center}
+\end{figure}
+
+
+For simplicity's sake, we might interpret or transcribe from base-$\Omega$ DNA into our base-OZ RNA expression as such:
+
+If for some organism such as that expressed via $\Omega_{veuler} = 27182818$, we wish to encode the equivalent intermediate [physical] expression, then we iterate through each symbol in the source code sequence, and re-write it as the equivalent symbolic structure in OZIN, and this, so as to center the ozin glyphs along a \textbf{backbone structure} of just a mere line that starts with a tiny dot and ends with the last ozin structure from the source sequence transcribed. Essentially, for our Euler Virus, it would render as something of the sort shown in \textbf{Figure \ref{FIGOZEVIRUS}}
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
+   \includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf}\\
+   \caption{The equivalent OZIN expression of the hypothetical Euler Virus genome sequence.}
+  \label{FIGOZEVIRUS}
+  \end{center}
+\end{figure}
+
+
+Another organism, which we might just refer to as the \textbf{HiFinelle}, is actually based off of our favorite base-10 o-SSI --- the \textbf{Hi-Fi o-SSI}\cite{adtpaper}, and thus, its corresponding genetic code at rest is as:
+
+
+\begin{equation}
+\label{EQDNHIFI}
+\Omega_{HiFinelle} = 8649137520
+\end{equation}
+
+
+And which, after we have it transcribed into intermediate OZIN genetic expression, shall appear as shown in \textbf{Figure \ref{FIGOZHIFI}}
+
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
+   \includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf}\\
+   \caption{The equivalent OZIN expression of the HiFinelle genome sequence.}
+  \label{FIGOZHIFI}
+  \end{center}
+\end{figure}
+
+Of course, in our simplistic genome expression system, the occurrence of that last ``0" symbol in the HiFinelle genome sequence tells us to STOP or just exclude that symbol with a GAP in case any other symbols follow thereafter. It is our STOP-codon equivalent.
+
+Another genome sequence, 
+
+\begin{equation}
+\label{EQDNEXA}
+\Omega_{3} = 0123026
+\end{equation}
+
+Might help illustrate that point --- see \textbf{Figure \ref{FIGOZEXA}}
+
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
+   \includegraphics[trim=0cm 22cm 7cm 5cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
+   \caption{The equivalent OZIN expression of the $\Omega_{3}$ genome sequence.}
+  \label{FIGOZEXA}
+  \end{center}
+\end{figure}
+
+That aside, in \textbf{Section \ref{SEC3A}}, we have looked at not just the interesting idea of [genetic code] sequence complements, but have also explored several applications of the idea in \textbf{Section \ref{SECAPPCOMPLEMENTS}}, including the concept of the equivalence of sequences under the complement transform. Talking of which, assuming we had a special genome sequence that is made up of subsequences that are complements of each other (such as we might call \textbf{palindromic na-Sequences}) --- e.g $\Theta_{pal}$ defined below, that is actually a palindrome of the two DNA codons --- \textbf{ATG} (Methionine) and \textbf{CAA} (Glutamine) --- the complements being \textbf{GTA} (Valine) and \textbf{AAC} (Asparagine)\cite{wikipedia_codon_tables}.
+
+\begin{equation}
+\label{GENOMEPAL}
+\Theta_{pal} = \langle A, T, G, C, A, A, A, A, C, G, T, A \rangle
+\end{equation}
+
+If we express $\Theta_{pal}$ in our special numeric \textbf{base-$\Omega$}, and then into the visual \textbf{base-OZ}, we shall get something like $\Omega_{pal}$\footnote{Simplified, so we can easily visualize it in base-OZ}:
+
+\begin{equation}
+\label{GENOMEPALOMEG}
+\Omega_{pal} = \langle 1, 2, 3, 3, 2, 1 \rangle
+\end{equation}
+
+And which, if we transcribe it into the intermediate OZIN code, we get:
+
+
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
+   \includegraphics[trim=0cm 22cm 7cm 5cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP4-PAL.pdf}\\
+   \caption{The palindromic sequence $\Omega_{pal}$ transcribed into base-OZ.}
+  \label{FIGOZPAL}
+  \end{center}
+\end{figure}
+
+Now, notice something interesting here. In particular, if we compare the transcribed forms of $\Omega_{pal}$ and $\Omega_{3}$, we shall notice that even though the two sequences had some differences --- for example, $\Omega_{3}$ contains the ``0" symbol twice, including at the start, and yet, somewhat, because that STOP-codon is skipped during expression/transcription, so we note that the OZIN-expressions of the two sequences are somewhat similar --- they both share a similar prefix structure, that upon inspection of their genetic code sequences, can be attributed to the 3-gram subsequence ``123".
+
+In fact, this later case is an interesting way to appreciate that even where two organisms, genes or proteins might exhibit significant differences in their appearance or even genetic code, and yet, upon close inspection, we might find some telling signs that they share some \textbf{common-traits}. In this case, we see that the palindromic $\Omega_{pal}$ looks somewhat like the otherwise different $\Omega_{3}$ --- at least in their prefix structures after transcription (and possibly beyond!)
+
+\subsection{Genetic Code Sequences Interpreted as Modal Sequence Statistics}
+
+Now that we have finished looking at how to express genetic code from its base/storage-form (equivalent to DNA) into its intermediate-form (equivalent to RNA), we can then consider the matter of how that intermediate code eventually gets \textbf{translated} into the final organism\footnote{We say ``final organism" here, because, much as in reality, genome expression might be more complex than merely translating genetic code from DNA into RNA and then final proteins and tissue, and yet, conceptually, that is all there is to it!}.
+
+So, in further advancement our thought experiment concerning genome expression (modeled using hypothetical bio-automata), we shall again utilize the OZIN cipher introduced in \textbf{Section \ref{SECOZIN}}, but shall also introduce another formalism in the form of decoding position within a sequence (such as genetic code in this case), as information about how to express or process the associated symbols. This idea, of leveraging \textit{subtle instructions} embedded in genetic code but which might not be explicit as the actual nucleic acid combinations (such as amino-acid encoding-codons), can be justified when we consider that the genetic code processor (such as the ribosome in our major context --- see \textbf{Section \ref{SEC5}}), has a way of interpreting sequences not just by what they contain, but also based on the context within which they exist. For example, though generally the appearance of the RNA codon, \textbf{AAA} would cause the ribosome to synthesize the corresponding amino-acid Lysine (see \textbf{Table \ref{TAB1}}), and yet, if such a codon appears in a sequence where no earlier instruction compels the ribosome to START manufacturing a protein, the appearance of that codon shall be useless --- or rather, it shall be interpreted differently merely because of being in the wrong context. We saw this in \textbf{Section \ref{SEC05}}, and especially the Ribosome's protein-manufacturing process diagram (\textbf{Figure \ref{FIG3}}) as well as the State Machine (\textbf{Figure \ref{FIG4}}) help bring this out clearly. For example, if we modify the gene-program  in \textbf{Equation \ref{EQ6}} as such:
+
+
+ \begin{equation}
+\label{EQ6B}
+\Theta_4^* = \langle \langle A, A, A \rangle, \langle A, U, G \rangle, \langle U, U, A \rangle, \langle U, A, G \rangle \rangle
+\end{equation}\\
+
+
+Then, where we would have expected the ribosome to manufacture protein whose structure includes the AAA/Lysine amino-acid, the result/effect of our modified sequence shall actually be different from what the original gene-program would have produced. In particular, since the START-codon, AUG (Methionine) appears after AAA, the effective protein to be synthesized would be as equivalent to just the program:
+
+ \begin{equation}
+\label{EQ6C}
+\Theta_4^* = \langle \langle A, U, G \rangle, \langle U, U, A \rangle, \langle U, A, G \rangle \rangle
+\end{equation}\\
+
+Which would produce the protein with just \textbf{UUA}(Leucine) in it! So, position of symbols or terms within genetic code matters, and does encode some important gene or even genome expression information that we can't take for granted, thus the following suggested system for how to express post-RNA genetic code sequences.
+
+\subsubsection{The Platonic Form Cipher and Positional-Sensitive Genetic Code Translation}
+
+Just like we developed a system for how to map numbers (in base-10) to some non-trivial expressions that we equate to a kind of intermediate genetic code (the OZIN-encoded expressions), we shall similarly start by considering a way to map (still base-10) numbers to spatial-structures\footnote{Especially because, and essentially that, when compared to the code that expresses them, proteins and the organism taken as a whole, \textit{occupy more space} than does just the basic DNA code from which they are expressed.}.
+
+So, with the exception of ``0'', which again is treated as an instruction to `skip' or `stop' within our genome expression system, we shall adopt the mapping from numbers to spatial-structures as depicted in \textbf{Figure \ref{FIGPLATOCIPHER}}.
+
+
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\large
+\textbf{NOTE:}\\
+ On \textbf{Why Place-Notation Expression Systems Matter} \\
+
+As a further justification for why we chose to use a place-notation sensitive genetic code expression system in our conceptual genome expression thought experiment, consider that, just like with modern numbers --- of which the Arabic number system is considered one of the best since ancient times, the appearance of a symbol within an expression is interpreted not just by what it quantifies, but also by where in the expression it is placed. 
+
+For good measure, a few enlightening quotes from the priceless work on the evolution of number systems since ancient times, by Raymond S. Nickerson, shall help cement this:
+
+\begin{quotation}
+\noindent \texttt{Aristotle attached considerable significance to the fact that human beings can count: it is this ability, he claimed, that demonstrates our rationality.}\\\\
+
+\noindent \texttt{As Brainerd (1973) has pointed out, in most Western nations today we expect students, by the time they reach their early teens, to be much more competent with numbers than was an educated adult Greek or Roman of 2,000 years ago. This fact arises in no small measure from the elegance and power of the scheme that we now use to represent numbers.}\\\\
+
+
+\noindent \texttt{In short, a price of the increased abstractness of the Arabic system is an obscuring of some of the key principles on which numbers are based. To an ancient Egyptian, the fact that 3+4=7 was apparent from the relationship between the Egyptian number representing 7 and those representing 3 and 4. There is no hint of such a relationship, however, when this equation is expressed in Arabic notation. The price has been worth the paying, however.}\\\\
+
+
+\noindent \texttt{If you invented a unique symbol to represent each of the possible quantities of stones (including the case of no stones) up to that of your standard and decided to use the position of that symbol to indicate the pile to which it refers, you would have what we refer to today as a place-notation system for representing numbers.}\\\\
+
+\noindent \texttt{The relative ease with which one can count or compute depends to no small degree on the characteristics of the system that is used to represent number concepts.}\\
+
+\hspace*{\fill} ---\textbf{Raymond S. Nickerson}, \textit{Counting, Computing, and the Representation of Numbers}, 1988\cite{nickerson1988counting}
+\end{quotation}
+
+And finally, it shall be worth noting that this notion also underlies the present author's use of the \textbf{Position-Index measure} ($I(\omega_i, \Theta)$), first formalized in the Base-36 paper\cite{base36paper}, and which, among many important applications it has, is its use in generalizing the computation of decimal values of arbitrary number expressions in any base, its use in transformatics to express sequence summaries using modal sequences\cite{transformatics}, etc.
+
+\end{minipage}}
+\\
+\end{center}
+
 
 \section{Conclusion}
 \label{CONC}
 
 In this paper, we have advanced our knowledge concerning...
+
+\begin{appendices}
+
+\chapter{Origins of the OZIN Cipher}
+\label{APPOZIN}
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
+   \includegraphics[trim=0cm 4cm 0cm 2.8cm, clip, width=0.9\textwidth,]{resources/pdfs/ozin_gene_expressions.pdf}\\
+   \caption{An excerpt from architectural design notes by the author from early days of his home-based research laboratory. In this note, we also get to see an idea similar to how gene expressions are actually a chain of glyphs that, as in our Ozin-expressions, are depicted as structures chained to each other along a \textit{backbone structure} symbolically depicted as a line (curved lines in this case). Copyrights due to author and Nuchwezi Research Labs.}
+  \label{FIGCODEOZINART}
+  \end{center}
+\end{figure}
+
+
+For some, the \textbf{Ozin Cipher} (see \textbf{Section \ref{SECOZIN}}) might not seem that important or useful, but, perhaps because not everyone can immediately appreciate the fact that cryptography is such a dear part of expression in nature, that whoever is the Architect of Life, has applied it throughout nature in many creative ways --- camouflage in reptiles and viruses, the occult languages of birds, etc. And these phenomena have indeed inspired many observant minds throughout the ages, to pick a leaf from nature and apply these ideas (in \textit{alternative information expression}) in everything including mathematics, philosophy and yes... \textit{magick}! Talking of which, for those interested in getting a deeper idea concerning how such a beautiful numeric symbol system --- an alternative to the commonplace Arabic Numerals, came to be, one useful resource is the \textbf{CODE OGF}\cite{lutalo_2025_ogf}.
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
+   \includegraphics[trim=0cm 2cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/ozin.pdf}\\
+   \caption{The OZIN Cipher in use. An excerpt from the Church of Dance Eternal OGF}
+  \label{FIGCODEOZIN}
+  \end{center}
+\end{figure}
+
+\textbf{Figure \ref{FIGCODEOZIN}} is just an excerpt from that manuscript, perhaps not so clear because the original manuscript is handwritten, and this is just a scanned version. But hopefully it drives the point home. Also, as seen from that excerpt as well as a closely related excerpt --- see \textbf{Figure \ref{FIGCODEOZINNOTES}}, just like we might replace numbers with alternative symbols, we also see the Latin Alphabet replaced by an ``alien-looking" hand, and this might definitely have its place in transformations of $\psi_{az}$ sequences or their expression in other ways! 
+
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
+   \includegraphics[ width=0.9\textwidth,]{resources/pdfs/ozin_applied.pdf}\\
+   \caption{The OZIN Cipher in use. An excerpt from author's research notes (circa 2019) on developing a cryptographic system leveraging a dial mechanism. Copyrights due to author and Nuchwezi Research Labs.}
+  \label{FIGCODEOZINNOTES}
+  \end{center}
+\end{figure}
+
+
+\end{appendices}
 
 \includepdf[pages=1]{resources/pdfs/note_cover.pdf}
 
