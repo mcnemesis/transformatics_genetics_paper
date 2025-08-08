@@ -25,7 +25,9 @@
 \contentsline {subsection}{\numberline {0.8.2}Gene Expression in Living Things and for Bio-Automata via Ribosomes}{58}{subsection.0.8.2}%
 \contentsline {section}{\numberline {0.9}Transformatics and Genome Expression in Bio-Automata}{60}{section.0.9}%
 \contentsline {subsection}{\numberline {0.9.1}The Ozin Genetic Code Cipher}{61}{subsection.0.9.1}%
-\contentsline {subsection}{\numberline {0.9.2}Genetic Code Sequences Interpreted as Modal Sequence Statistics}{65}{subsection.0.9.2}%
-\contentsline {subsubsection}{The Platonic Form Cipher and Positional-Sensitive Genetic Code Translation}{66}{section*.22}%
-\contentsline {section}{\numberline {0.10}Conclusion}{68}{section.0.10}%
-\contentsline {chapter}{Appendix \numberline {A}Origins of the OZIN Cipher}{69}{appendix.a.A}%
+\contentsline {subsubsection}{$\Omega $-to-OZIN Genetic Code Transcription Rules}{64}{section*.21}%
+\contentsline {subsubsection}{Examples of $\Omega $-Genetic Code Transcription}{65}{section*.22}%
+\contentsline {subsection}{\numberline {0.9.2}Genetic Code Sequences Processed as Modal Sequence Statistics}{66}{subsection.0.9.2}%
+\contentsline {subsubsection}{The Platonic Form Cipher and Position-Sensitive Genetic Code Translation}{67}{section*.24}%
+\contentsline {section}{\numberline {0.10}Conclusion}{70}{section.0.10}%
+\contentsline {chapter}{Appendix \numberline {A}Origins of the OZIN Cipher}{71}{appendix.a.A}%

@@ -3,12 +3,13 @@
 \contentsline {figure}{\numberline {3}{\ignorespaces An illustration of the gene translation process in a cell via protein-factories known as ribosomes\cite {geeksforgeeks2024protein}}}{51}{figure.caption.12}%
 \contentsline {figure}{\numberline {4}{\ignorespaces \textbf {Flow-Chart summarizing the Ribosome-based Protein-Synthesis Process in a Living Cell}}}{56}{figure.caption.15}%
 \contentsline {figure}{\numberline {5}{\ignorespaces \textbf {The RIBOSOME State Machine}}}{57}{figure.caption.16}%
-\contentsline {figure}{\numberline {6}{\ignorespaces The OZIN Cipher mapped from Decimal Symbols.}}{62}{figure.caption.17}%
+\contentsline {figure}{\numberline {6}{\ignorespaces The OZIN Cipher\cite {lutalo_2025_ozin}, a mapping from Decimal Symbols (our base-$\Omega $) to Symbols for Intermediate Genetic Code.}}{62}{figure.caption.17}%
 \contentsline {figure}{\numberline {7}{\ignorespaces The equivalent OZIN expression of the hypothetical Euler Virus genome sequence.}}{63}{figure.caption.18}%
 \contentsline {figure}{\numberline {8}{\ignorespaces The equivalent OZIN expression of the HiFinelle genome sequence.}}{63}{figure.caption.19}%
 \contentsline {figure}{\numberline {9}{\ignorespaces The equivalent OZIN expression of the $\Omega _{3}$ genome sequence.}}{64}{figure.caption.20}%
-\contentsline {figure}{\numberline {10}{\ignorespaces The palindromic sequence $\Omega _{pal}$ transcribed into base-OZ.}}{64}{figure.caption.21}%
+\contentsline {figure}{\numberline {10}{\ignorespaces The palindromic sequence $\Omega _{pal}$ transcribed into base-OZ.}}{65}{figure.caption.23}%
+\contentsline {figure}{\numberline {11}{\ignorespaces The PLATONIC Cipher\cite {lutalo_2025_platonic} a mapping from Decimal Symbols (our base-$\Omega $) to Spatial-Geometric Forms.}}{68}{figure.caption.25}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces An excerpt from architectural design notes by the author from early days of his home-based research laboratory. In this note, we also get to see an idea similar to how gene expressions are actually a chain of glyphs that, as in our Ozin-expressions, are depicted as structures chained to each other along a \textit {backbone structure} symbolically depicted as a line (curved lines in this case). Copyrights due to author and Nuchwezi Research Labs.}}{70}{figure.caption.23}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces The OZIN Cipher in use. An excerpt from the Church of Dance Eternal OGF}}{72}{figure.caption.24}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces The OZIN Cipher in use. An excerpt from author's research notes (circa 2019) on developing a cryptographic system leveraging a dial mechanism. Copyrights due to author and Nuchwezi Research Labs.}}{73}{figure.caption.25}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces An excerpt from architectural design notes by the author from early days of his home-based research laboratory. In this note, we also get to see an idea similar to how gene expressions are actually a chain of glyphs that, as in our Ozin-expressions, are depicted as structures chained to each other along a \textit {backbone structure} symbolically depicted as a line (curved lines in this case). Copyrights due to author and Nuchwezi Research Labs.}}{72}{figure.caption.26}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces The OZIN Cipher in use. An excerpt from the Church of Dance Eternal OGF}}{74}{figure.caption.27}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces The OZIN Cipher in use. An excerpt from author's research notes (circa 2019) on developing a cryptographic system leveraging a dial mechanism. Copyrights due to author and Nuchwezi Research Labs.}}{75}{figure.caption.28}%

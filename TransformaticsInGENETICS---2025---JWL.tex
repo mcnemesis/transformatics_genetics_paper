@@ -2160,12 +2160,11 @@ With the background we have obtained thus far, note that the special \textbf{tra
 
 
 
-
 \begin{figure}[H]
   \begin{center}
   %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
    \includegraphics[trim=0cm 6cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER.pdf}\\
-   \caption{The OZIN Cipher mapped from Decimal Symbols.}
+   \caption{The OZIN Cipher\cite{lutalo_2025_ozin}, a mapping from Decimal Symbols (our base-$\Omega$) to Symbols for Intermediate Genetic Code.}
   \label{FIGOZIN}
   \end{center}
 \end{figure}
@@ -2227,7 +2226,57 @@ Might help illustrate that point --- see \textbf{Figure \ref{FIGOZEXA}}
   \end{center}
 \end{figure}
 
-That aside, in \textbf{Section \ref{SEC3A}}, we have looked at not just the interesting idea of [genetic code] sequence complements, but have also explored several applications of the idea in \textbf{Section \ref{SECAPPCOMPLEMENTS}}, including the concept of the equivalence of sequences under the complement transform. Talking of which, assuming we had a special genome sequence that is made up of subsequences that are complements of each other (such as we might call \textbf{palindromic na-Sequences}) --- e.g $\Theta_{pal}$ defined below, that is actually a palindrome of the two DNA codons --- \textbf{ATG} (Methionine) and \textbf{CAA} (Glutamine) --- the complements being \textbf{GTA} (Valine) and \textbf{AAC} (Asparagine)\cite{wikipedia_codon_tables}.
+
+\subsubsection{$\Omega$-to-OZIN Genetic Code Transcription Rules}
+
+So, in general, we might sum up our gene transcription rules as such:
+
+\begin{alg}[The \textbf{$\Omega$-to-OZIN Genetic Code Transcription Algorithm}]
+\label{ALGCOZIN}
+
+Assuming we have an $\Omega$-base encoded genetic code sequence $\Theta_\Omega$ of some length $n > 0$
+
+\begin{enumerate}
+\item Initialize the transcription by constructing a backbone-structure that's essentially just a line with a dot at the head/start. This is the transcribed sequence $OZ(\Theta_\Omega)$.
+\item{For each symbol $\omega_i$ in $\Theta_\Omega$: 
+\begin{enumerate}
+\item Use the transcription mapping: $\psi_\Omega \rightarrow \psi_{oz}$ as depicted in \textbf{Figure \ref{FIGOZIN}}, to encode $\omega_i$  in the equivalent form for the intermediate code.
+	\item{If $\omega_i = 0$:
+	\begin{enumerate}
+	\item{ If $OZ(\Theta_\Omega)$ was still empty:
+	\begin{enumerate}
+		\item Simply skip to the next symbol in $\Theta_\Omega$ (loop from \textbf{Step\#2)}.
+	\end{enumerate}
+		}
+		\item{ Else: 
+		\begin{enumerate}
+		\item  Append/Insert a GAP in $OZ(\Theta_\Omega)$
+		\item Proceed to the next symbol in $\Theta_\Omega$ (loop from \textbf{Step\#2)}.
+		\end{enumerate}
+		}
+	\end{enumerate}
+	}
+	\item { Else:
+	\begin{enumerate}
+	\item Place that encoded version of $\omega_i$ along the backbone structure, $OZ(\Theta_\Omega)$, at the next vacant position ($i$).
+	\item Proceed to the next symbol in $\Theta_\Omega$ (loop from \textbf{Step\#2)}.
+	\end{enumerate}
+	}
+\end{enumerate}
+}
+\item Truncate the backbone-structure at the final term in $OZ(\Theta_\Omega)$.
+\item Return $OZ(\Theta_\Omega)$ as the final transcribed version of $\Theta_\Omega$ .
+\end{enumerate}
+
+\end{alg}
+
+
+
+\subsubsection{Examples of $\Omega$-Genetic Code Transcription}
+
+So, now that we have the general transcription rules as in \textbf{Algorithm \ref{ALGCOZIN}}, we can proceed to explore how to leverage them. 
+
+First, note that in \textbf{Section \ref{SEC3A}}, we have looked at not just the interesting idea of [genetic code] sequence complements, but have also explored several applications of the idea in \textbf{Section \ref{SECAPPCOMPLEMENTS}}, including the concept of the equivalence of sequences under the complement transform. Talking of which, assuming we had a special genome sequence that is made up of subsequences that are complements of each other (such as we might call \textbf{palindromic na-Sequences}) --- e.g $\Theta_{pal}$ defined below, that is actually a palindrome of the two DNA codons --- \textbf{ATG} (Methionine) and \textbf{CAA} (Glutamine) --- the complements being \textbf{GTA} (Valine) and \textbf{AAC} (Asparagine)\cite{wikipedia_codon_tables}.
 
 \begin{equation}
 \label{GENOMEPAL}
@@ -2258,7 +2307,7 @@ Now, notice something interesting here. In particular, if we compare the transcr
 
 In fact, this later case is an interesting way to appreciate that even where two organisms, genes or proteins might exhibit significant differences in their appearance or even genetic code, and yet, upon close inspection, we might find some telling signs that they share some \textbf{common-traits}. In this case, we see that the palindromic $\Omega_{pal}$ looks somewhat like the otherwise different $\Omega_{3}$ --- at least in their prefix structures after transcription (and possibly beyond!)
 
-\subsection{Genetic Code Sequences Interpreted as Modal Sequence Statistics}
+\subsection{Genetic Code Sequences Processed as Modal Sequence Statistics}
 
 Now that we have finished looking at how to express genetic code from its base/storage-form (equivalent to DNA) into its intermediate-form (equivalent to RNA), we can then consider the matter of how that intermediate code eventually gets \textbf{translated} into the final organism\footnote{We say ``final organism" here, because, much as in reality, genome expression might be more complex than merely translating genetic code from DNA into RNA and then final proteins and tissue, and yet, conceptually, that is all there is to it!}.
 
@@ -2280,11 +2329,25 @@ Then, where we would have expected the ribosome to manufacture protein whose str
 
 Which would produce the protein with just \textbf{UUA}(Leucine) in it! So, position of symbols or terms within genetic code matters, and does encode some important gene or even genome expression information that we can't take for granted, thus the following suggested system for how to express post-RNA genetic code sequences.
 
-\subsubsection{The Platonic Form Cipher and Positional-Sensitive Genetic Code Translation}
+\subsubsection{The Platonic Form Cipher and Position-Sensitive Genetic Code Translation}
 
 Just like we developed a system for how to map numbers (in base-10) to some non-trivial expressions that we equate to a kind of intermediate genetic code (the OZIN-encoded expressions), we shall similarly start by considering a way to map (still base-10) numbers to spatial-structures\footnote{Especially because, and essentially that, when compared to the code that expresses them, proteins and the organism taken as a whole, \textit{occupy more space} than does just the basic DNA code from which they are expressed.}.
 
-So, with the exception of ``0'', which again is treated as an instruction to `skip' or `stop' within our genome expression system, we shall adopt the mapping from numbers to spatial-structures as depicted in \textbf{Figure \ref{FIGPLATOCIPHER}}.
+So, with the exception of ``0'', which again is treated as an instruction to `skip' or `stop' within our genome expression system\footnote{Perhaps, and as we shall adopt here, we shall interpret `0', especially \textit{within} and not at the start or end of a sequence, to mean not just a GAP as was the case in \textbf{Algorithm\ref{ALGCOZIN}}, but as a JOINT. It somewhat makes biological/anatomical sense.}, we shall adopt the mapping from numbers to spatial-structures as depicted in \textbf{Figure \ref{FIGPLATOCIPHER}} in what we are calling the \textbf{PLATONIC Cipher} System\cite{lutalo_2025_platonic}.
+
+
+
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
+   \includegraphics[trim=0cm 4cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/PLATOCIPHER.pdf}\\
+   \caption{The PLATONIC Cipher\cite{lutalo_2025_platonic} a mapping from Decimal Symbols (our base-$\Omega$) to Spatial-Geometric Forms.}
+  \label{FIGOZIN}
+  \end{center}
+\end{figure}
+
+
 
 
 
@@ -2341,7 +2404,7 @@ In this paper, we have advanced our knowledge concerning...
 \end{figure}
 
 
-For some, the \textbf{Ozin Cipher} (see \textbf{Section \ref{SECOZIN}}) might not seem that important or useful, but, perhaps because not everyone can immediately appreciate the fact that cryptography is such a dear part of expression in nature, that whoever is the Architect of Life, has applied it throughout nature in many creative ways --- camouflage in reptiles and viruses, the occult languages of birds, etc. And these phenomena have indeed inspired many observant minds throughout the ages, to pick a leaf from nature and apply these ideas (in \textit{alternative information expression}) in everything including mathematics, philosophy and yes... \textit{magick}! Talking of which, for those interested in getting a deeper idea concerning how such a beautiful numeric symbol system --- an alternative to the commonplace Arabic Numerals, came to be, one useful resource is the \textbf{CODE OGF}\cite{lutalo_2025_ogf}.
+For some, the \textbf{Ozin Cipher}\cite{lutalo_2025_ozin} (see \textbf{Section \ref{SECOZIN}}) might not seem that important or useful, but, perhaps because not everyone can immediately appreciate the fact that cryptography is such a dear part of expression in nature, that whoever is the Architect of Life, has applied it throughout nature in many creative ways --- camouflage in reptiles and viruses, the occult languages of birds, etc. And these phenomena have indeed inspired many observant minds throughout the ages, to pick a leaf from nature and apply these ideas (in \textit{alternative information expression}) in everything including mathematics, philosophy and yes... \textit{magick}! Talking of which, for those interested in getting a deeper idea concerning how such a beautiful numeric symbol system --- an alternative to the commonplace Arabic Numerals, came to be, one useful resource is the \textbf{CODE OGF}\cite{lutalo_2025_ogf}.
 
 \begin{figure}[H]
   \begin{center}
