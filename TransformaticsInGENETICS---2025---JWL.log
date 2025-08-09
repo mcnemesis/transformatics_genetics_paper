@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  9 AUG 2025 22:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  9 AUG 2025 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2741,11 +2741,7 @@ LaTeX Warning: Reference `FIGEXTFGEPFSUF' on page 73 undefined on input line 25
 
 
 [73]
-
-LaTeX Warning: Reference `FIGEXTFGEPFSUF' on page 74 undefined on input line 25
-40.
-
-<resources/pdfs/PLATONIC-EXA-landscape.pdf, id=1428, 1486.80469pt x 649.67719pt
+<resources/pdfs/PLATONIC-EXA-landscape.pdf, id=1431, 1486.80469pt x 649.67719pt
 >
 File: resources/pdfs/PLATONIC-EXA-landscape.pdf Graphic file (type pdf)
 <use resources/pdfs/PLATONIC-EXA-landscape.pdf>
@@ -2940,7 +2936,7 @@ Appendix A.
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/ozin_gene_expressions.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/ozin_gene_expressions.pdf, id=1467, 596.98032pt x 844.65562pt>
+<resources/pdfs/ozin_gene_expressions.pdf, id=1471, 596.98032pt x 844.65562pt>
 File: resources/pdfs/ozin_gene_expressions.pdf Graphic file (type pdf)
 <use resources/pdfs/ozin_gene_expressions.pdf>
 Package pdftex.def Info: resources/pdfs/ozin_gene_expressions.pdf  used on inpu
@@ -2957,7 +2953,7 @@ Overfull \vbox (16.67203pt too high) has occurred while \output is active []
 
 
 [80 <./resources/pdfs/ozin_gene_expressions.pdf>]
-<resources/pdfs/ozin.pdf, id=1490, 614.295pt x 794.97pt>
+<resources/pdfs/ozin.pdf, id=1494, 614.295pt x 794.97pt>
 File: resources/pdfs/ozin.pdf Graphic file (type pdf)
 <use resources/pdfs/ozin.pdf>
 Package pdftex.def Info: resources/pdfs/ozin.pdf  used on input line 2616.
@@ -2971,7 +2967,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/ozin_applied.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/ozin_applied.pdf, id=1499, 596.98032pt x 844.65562pt>
+<resources/pdfs/ozin_applied.pdf, id=1503, 596.98032pt x 844.65562pt>
 File: resources/pdfs/ozin_applied.pdf Graphic file (type pdf)
 <use resources/pdfs/ozin_applied.pdf>
 Package pdftex.def Info: resources/pdfs/ozin_applied.pdf  used on input line 26
@@ -2986,7 +2982,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/note_cover.pdf, id=1513, 596.98032pt x 844.65562pt>
+<resources/pdfs/note_cover.pdf, id=1517, 596.98032pt x 844.65562pt>
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 2637
@@ -3009,7 +3005,7 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/note_cover.pdf, id=1516, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/note_cover.pdf, id=1520, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
@@ -3056,37 +3052,37 @@ m/$[]\OT1/cmr/m/n/14.4 , 2024.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--72
+Underfull \hbox (badness 10000) in paragraph at lines 68--73
 \OT1/cmtt/m/n/14.4 org / Bookshelves / Introductory _ and _ General _ Biology /
  General _
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 74--80
+Underfull \hbox (badness 3098) in paragraph at lines 75--81
 []\OT1/cmr/m/n/14.4 Grady Venville and Jenny Dono-van.  Analo-gies for life: a 
 sub-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--80
+Underfull \hbox (badness 10000) in paragraph at lines 75--81
 \OT1/cmr/m/n/14.4 jec-tive view of analo-gies and metaphors used to teach about
 
  []
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 74--80
+Underfull \hbox (badness 2941) in paragraph at lines 75--81
 \OT1/cmr/m/n/14.4 genes and dna.  \OT1/cmr/m/it/14.4 Teach-ing Sci-ence\OT1/cmr
 /m/n/14.4 , 52(1):18--22, 2006.  Avail-able
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--80
+Underfull \hbox (badness 10000) in paragraph at lines 75--81
 \OT1/cmr/m/n/14.4 at: []$\OT1/cmtt/m/n/14.4 https : / / research-[]repository .
  uwa . edu . au / en / publications /
  []
 
 
-Overfull \hbox (21.16966pt too wide) in paragraph at lines 74--80
+Overfull \hbox (21.16966pt too wide) in paragraph at lines 75--81
 \OT1/cmtt/m/n/14.4 analogies-[]for-[]life-[]a-[]subjective-[]view-[]of-[]analog
 ies-[]and-[]metaphors-[]u$[]\OT1/cmr/m/n/14.4 . 
  []
@@ -3096,110 +3092,110 @@ ies-[]and-[]metaphors-[]u$[]\OT1/cmr/m/n/14.4 .
 [85
 
 ]
-Underfull \hbox (badness 3907) in paragraph at lines 89--96
+Underfull \hbox (badness 3907) in paragraph at lines 90--97
 []\OT1/cmr/m/n/14.4 Genomics Ed-u-ca-tion Pro-gramme.  Where does our genome co
 me
  []
 
 
-Underfull \hbox (badness 7064) in paragraph at lines 89--96
+Underfull \hbox (badness 7064) in paragraph at lines 90--97
 \OT1/cmr/m/n/14.4 from?  []$\OT1/cmtt/m/n/14.4 https : / / www . genomicseducat
 ion . hee . nhs . uk / education /
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 89--96
+Underfull \hbox (badness 1394) in paragraph at lines 90--97
 \OT1/cmtt/m/n/14.4 core-[]concepts / where-[]does-[]our-[]genome-[]come-[]from/
 $[]\OT1/cmr/m/n/14.4 , 2025.  Ac-cessed
  []
 
 
-Underfull \hbox (badness 7379) in paragraph at lines 98--104
+Underfull \hbox (badness 7379) in paragraph at lines 99--105
 []\OT1/cmr/m/n/14.4 OpenStax Bi-ol-ogy.  Ga-me-to-ge-n-e-sis (sper-mato-ge-n-e-
 sis and oo-ge-n-e-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--104
+Underfull \hbox (badness 10000) in paragraph at lines 99--105
 \OT1/cmr/m/n/14.4 sis).  []$\OT1/cmtt/m/n/14.4 https : / / bio . libretexts . o
 rg / Bookshelves / Introductory _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--104
+Underfull \hbox (badness 10000) in paragraph at lines 99--105
 \OT1/cmtt/m/n/14.4 and _ General _ Biology / General _ Biology _ 1e _ (OpenStax
  ) /43 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--104
+Underfull \hbox (badness 10000) in paragraph at lines 99--105
 \OT1/cmtt/m/n/14.4 _Animal _ Reproduction _ and _ Development / 43 . 3C : _Game
 togenesis _
  []
 
 
-Underfull \hbox (badness 3612) in paragraph at lines 106--112
+Underfull \hbox (badness 3612) in paragraph at lines 107--113
 []\OT1/cmr/m/n/14.4 University of Le-ices-ter.  The cell cy-cle, mi-to-sis and 
 meio-sis for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--112
+Underfull \hbox (badness 10000) in paragraph at lines 107--113
 \OT1/cmr/m/n/14.4 higher ed-u-ca-tion.  []$\OT1/cmtt/m/n/14.4 https : / / le . 
 ac . uk / vgec / topics / cell-[]cycle /
  []
 
 
-Underfull \hbox (badness 4899) in paragraph at lines 114--121
+Underfull \hbox (badness 4899) in paragraph at lines 115--122
 []\OT1/cmr/m/n/14.4 Shinichi Mochizuki.  The ge-om-e-try of frobe-nioids i: The
  gen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--121
+Underfull \hbox (badness 10000) in paragraph at lines 115--122
 \OT1/cmr/m/n/14.4 eral the-ory.  []$\OT1/cmtt/m/n/14.4 https : / / www . kurims
  . kyoto-[]u . ac . jp / []motizuki /
  []
 
 
-Underfull \hbox (badness 5771) in paragraph at lines 114--121
+Underfull \hbox (badness 5771) in paragraph at lines 115--122
 \OT1/cmtt/m/n/14.4 The-[]Geometry-[]of-[]Frobenioids-[]I . pdf$[]\OT1/cmr/m/n/1
 4.4 , 2008.  Ac-cessed Au-gust 2,
  []
 
 
-Underfull \hbox (badness 3209) in paragraph at lines 136--141
+Underfull \hbox (badness 3209) in paragraph at lines 137--142
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  A gen-eral the-ory of num-ber ca
 r-di-nal-ity.
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 136--141
+Underfull \hbox (badness 1072) in paragraph at lines 137--142
 \OT1/cmr/m/it/14.4 Academia.edu\OT1/cmr/m/n/14.4 , Jan 2024.  \OT1/cmr/m/it/14.
 4 Ac-ces-si-ble via []$\OT1/cmtt/m/n/14.4 https : / / www . academia . edu /
  []
 
 
-Underfull \hbox (badness 7168) in paragraph at lines 151--157
+Underfull \hbox (badness 7168) in paragraph at lines 152--158
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  Con-cern-ing a spe-cial sum-ma-t
 ion that
  []
 
 
-Underfull \hbox (badness 3977) in paragraph at lines 151--157
+Underfull \hbox (badness 3977) in paragraph at lines 152--158
 \OT1/cmr/m/n/14.4 pre-serves the base-10 or-thog-o-nal sym-bol set iden-tity in
  both ad-
  []
 
 
-Underfull \hbox (badness 4647) in paragraph at lines 151--157
+Underfull \hbox (badness 4647) in paragraph at lines 152--158
 \OT1/cmr/m/n/14.4 dends and the sum.  \OT1/cmr/m/it/14.4 Academia\OT1/cmr/m/n/1
 4.4 , 2025.  \OT1/cmr/m/it/14.4 Ac-ces-si-ble via []$\OT1/cmtt/m/n/14.4 https :
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--157
+Underfull \hbox (badness 10000) in paragraph at lines 152--158
 \OT1/cmtt/m/n/14.4 / / www . academia . edu / download / 122499576 / The _ Symb
 ol _ Set _ Identity _
  []
@@ -3209,51 +3205,75 @@ ol _ Set _ Identity _
 [86]
 
 [87]
-Underfull \hbox (badness 5592) in paragraph at lines 267--274
+Underfull \hbox (badness 5592) in paragraph at lines 268--275
 []\OT1/cmr/m/n/14.4 Teresa Przy-ty-cka.  Lec-ture 10: Whole genome se-quenc-ing
  and
  []
 
 
-Underfull \hbox (badness 4859) in paragraph at lines 267--274
+Underfull \hbox (badness 4859) in paragraph at lines 268--275
 \OT1/cmr/m/n/14.4 anal-y-sis.  []$\OT1/cmtt/m/n/14.4 https : / / www . ncbi . x
 yz / CBBresearch / Przytycka / download /
  []
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 285--291
+Underfull \hbox (badness 1817) in paragraph at lines 286--292
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  Soft-ware lan-guage engineering-
 text pro-cess-
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 285--291
+Underfull \hbox (badness 1102) in paragraph at lines 286--292
 \OT1/cmr/m/n/14.4 ing lan-guage de-sign, im-ple-men-ta-tion, eval-u-a-tion meth
 -ods.  \OT1/cmr/m/it/14.4 Preprints\OT1/cmr/m/n/14.4 ,
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 320--325
+Underfull \hbox (badness 2781) in paragraph at lines 321--327
+[]\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  Platonic-exa-landscape.pdf | a b
+a-sic ex-
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 321--327
+\OT1/cmr/m/n/14.4 am-ple of full genome ex-pres-sion in the lu-genome ex-pres-s
+ion sys-tem.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--327
+[]$\OT1/cmtt/m/n/14.4 https : / / figshare . com / articles / dataset / PLATONI
+C-[]EXA-[]landscape /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--327
+\OT1/cmtt/m/n/14.4 _pdf _ A _ Basic _ Example _ of _ Full _ Genome _ Expression
+ _ in _ the _
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 329--334
 []\OT1/cmr/m/n/14.4 Raymond S. Nick-er-son.  Count-ing, com-put-ing, and the re
 p-re-sen-ta-
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 320--325
+Underfull \hbox (badness 1694) in paragraph at lines 329--334
 \OT1/cmr/m/n/14.4 tion of num-bers.  \OT1/cmr/m/it/14.4 Hu-man Fac-tors\OT1/cmr
 /m/n/14.4 , 30(2):181--199, 1988.  Avail-able
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--333
+
+[88]
+Underfull \hbox (badness 10000) in paragraph at lines 336--342
 []$\OT1/cmtt/m/n/14.4 https : / / www . academia . edu / 123296302 / Numbers _ 
 from _ Arbitrary _ Text _
  []
 
 
-
-[88]
-Underfull \hbox (badness 10000) in paragraph at lines 335--339
+Underfull \hbox (badness 10000) in paragraph at lines 344--348
 \OT1/cmtt/m/n/14.4 / / figshare . com / articles / onlineresource / CODE _ Comp
 utational _
  []
@@ -3262,7 +3282,7 @@ utational _
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=1634, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=1640, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 2656
@@ -3285,7 +3305,7 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=1637, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=1643, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
@@ -3336,10 +3356,10 @@ as not changed.
 (rerunfilecheck)             Checksum: 82E926F7CB4FDA516003F31BAB613116;9653.
  ) 
 Here is how much of TeX's memory you used:
- 29591 strings out of 473898
- 537262 string characters out of 5736297
+ 29593 strings out of 473898
+ 537299 string characters out of 5736297
  1958960 words of memory out of 5000000
- 51497 multiletter control sequences out of 15000+600000
+ 51498 multiletter control sequences out of 15000+600000
  575360 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,21n,93p,3930b,1096s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3374,10 +3394,10 @@ c/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmtt8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><
 C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Prog
 ram Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on TransformaticsInGENETICS---2025---JWL.pdf (92 pages, 10171369
+Output written on TransformaticsInGENETICS---2025---JWL.pdf (92 pages, 10173566
  bytes).
 PDF statistics:
- 1909 PDF objects out of 2073 (max. 8388607)
- 483 named destinations out of 1000 (max. 500000)
+ 1916 PDF objects out of 2073 (max. 8388607)
+ 484 named destinations out of 1000 (max. 500000)
  451 words of extra memory for PDF output out of 10000 (max. 10000000)
 

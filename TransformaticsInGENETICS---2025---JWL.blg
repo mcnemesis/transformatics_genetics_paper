@@ -5,50 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
-You're missing a field name---line 32 of file references.bib
- : 
- : , publisher={figshare}, author={Lutalo, Joseph Willrich}, year={2025}, month={Aug} }
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You've used 46 entries,
+You've used 47 entries,
             1791 wiz_defined-function locations,
-            688 strings with 13398 characters,
-and the built_in function-call counts, 7609 in all, are:
-= -- 707
-> -- 269
+            691 strings with 13693 characters,
+and the built_in function-call counts, 7771 in all, are:
+= -- 721
+> -- 276
 < -- 1
-+ -- 117
-- -- 71
-* -- 263
-:= -- 1255
-add.period$ -- 175
-call.type$ -- 46
-change.case$ -- 44
++ -- 120
+- -- 73
+* -- 269
+:= -- 1286
+add.period$ -- 179
+call.type$ -- 47
+change.case$ -- 45
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 322
-empty$ -- 855
-format.name$ -- 71
-if$ -- 1732
+cite$ -- 47
+duplicate$ -- 327
+empty$ -- 873
+format.name$ -- 73
+if$ -- 1767
 int.to.chr$ -- 0
-int.to.str$ -- 46
+int.to.str$ -- 47
 missing$ -- 22
-newline$ -- 269
-num.names$ -- 49
-pop$ -- 190
+newline$ -- 275
+num.names$ -- 51
+pop$ -- 196
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 132
 stack$ -- 0
 substring$ -- 213
-swap$ -- 55
+swap$ -- 56
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 63
-width$ -- 48
-write$ -- 546
-(There was 1 error message)
+while$ -- 65
+width$ -- 49
+write$ -- 559
