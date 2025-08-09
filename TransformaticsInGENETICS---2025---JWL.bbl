@@ -15,6 +15,17 @@ GeeksforGeeks.
 \newblock Accessed July 29, 2025. Shows transcription, translation, and
   ribosome-mediated protein synthesis.
 
+\bibitem{lutalo_2025_ozin}
+Joseph~Willrich Lutalo.
+\newblock The ozin cipher.
+\newblock \url{https://figshare.com/articles/online
+  resource/The_OZIN_Cipher/29867474/1}, Aug 2025.
+
+\bibitem{lutalo_2025_platonic}
+The plato cipher.
+\newblock \url{https://figshare.com/articles/online
+  resource/The_PLATO_Cipher/29867843/1}.
+
 \bibitem{transformatics}
 Joseph~Willrich Lutalo.
 \newblock \textbf{The Theory of Sequence Transformers \& their Statistics}: The
@@ -227,6 +238,31 @@ Valerie Illingworth, editor.
 \newblock Oxford University Press, Oxford, UK, 4 edition, 1996.
 \newblock Available at \url{https://openlibrary.org/books/OL412451M}.
 
+\bibitem{lutalo_tea_web}
+Joseph~Willrich Lutalo.
+\newblock Tea research: Tea on the web a high-level web software operating
+  environment specification for the tea programming language: Web tea
+  architecture.
+\newblock \url{https://doi.org/10.6084/M9.FIGSHARE.29591687}, n.d.
+\newblock figshare.
+
+\bibitem{godel1931}
+Kurt Gödel.
+\newblock Über formal unentscheidbare sätze der principia mathematica und
+  verwandter systeme i.
+\newblock {\em Monatshefte für Mathematik und Physik}, 38:173--198, 1931.
+
+\bibitem{godel1931english}
+Kurt Gödel.
+\newblock On formally undecidable propositions of principia mathematica and
+  related systems i.
+\newblock In Solomon Feferman, John W.~Dawson Jr., Stephen~C. Kleene,
+  Gregory~H. Moore, Robert~M. Solovay, and Jean van Heijenoort, editors, {\em
+  Collected Works, Volume I: Publications 1929–1936}, pages 144--195. Oxford
+  University Press, 1986.
+\newblock English translation of Gödel's 1931 paper, accessible via:
+  \url{https://archive.org/details/collectedworks0001gode}.
+
 \bibitem{przytycka_wgs_lecture10}
 Teresa Przytycka.
 \newblock Lecture 10: Whole genome sequencing and analysis.
@@ -252,14 +288,6 @@ Joseph~Willrich Lutalo.
 \newblock {\em Preprints}, 2024.
 \newblock \textit{Accessible via}
   \url{https://www.preprints.org/frontend/manuscript/3903e4cd075074a7005cb705a5ef26c5/download\_pub}.
-
-\bibitem{lutalo_tea_web}
-Joseph~Willrich Lutalo.
-\newblock Tea research: Tea on the web a high-level web software operating
-  environment specification for the tea programming language: Web tea
-  architecture.
-\newblock \url{https://doi.org/10.6084/M9.FIGSHARE.29591687}, n.d.
-\newblock figshare.
 
 \bibitem{lutalo2025transformatic}
 Joseph~Willrich Lutalo.
