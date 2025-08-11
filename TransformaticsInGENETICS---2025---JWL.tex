@@ -114,11 +114,14 @@
 
 \begin{document}
 
+%---[ START BOOK CONTENT/FRONT ]
+
 % insert [front] cover --- could just be a PNG or PDF
 \includepdf[pages=1]{resources/pdfs/front_cover.pdf}
 
-\maketitle
+\frontmatter
 
+\maketitle
 
 \tableofcontents
 
@@ -130,26 +133,49 @@
 
 \Large
 
+\chapter{Preface}
+
+\begin{quotation}
+\noindent \texttt{Magic, Can bring man all these and more---It can bring the universe to man, Whether seen or unseen.}\\
+\hspace*{\fill} --- \textbf{J. Willrich Lutalo}, \textit{Shrines of The Free Men}, 2018\cite{shrinesjwl}
+\end{quotation}
+
+We are living in a world where man affects and influences nature so much, especially with his \textit{unnatural} inventions in the form of animated and inanimate intelligence, implements and reality augmentations. But also, the world around man is constantly changing, and sometimes, in ways other than man is naturally comfortable with. That said, there is this idea that a life unexplored isn't worth living, and come what may, with every passing day, it seems like the idea of humans having to leave their home environments and explore life elsewhere --- say, in foreign countries, in and on the sea, in outerspace, etc. seems so unavoidable, and inculcated into our natures so that, thinking about a future in the same exact space, with the same exact people and circumstances as we wake up to every day just doesn't make much sense. That we must prepare ourselves --- ``we", meaning \textit{humans}, to face an uncertain future, but also, to lessen such uncertainty to manageable levels where possible or necessary, is much of what justifies our investments in and explorations of science and knowledge in general. 
+
+The sacred scriptures --- I keep a copy of the \textbf{Jerusalem Bible} handy, do remind us in \textbf{Genesis 1:28}:
+
+\begin{quotation}
+\noindent \texttt{God blessed them, saying to them, \textit{Be \textbf{fruitful, multiply, fill the earth and subdue it}. Be masters of the fish of the sea, the birds of heaven and all the living creatures that move on earth.}}\\
+\end{quotation}
+
+
+Despite not having been funded by any one or any organization, the author, passionate about his pursuit of a \textbf{Doctorate in Philosophy} --- of Computer Science or Mathematics, from the \textbf{University of Oxford}\cite{lutalo_2025_sop}\cite{Lutalo2025_phd} or any other reputable institution\footnote{Refer to \textbf{ORCID:} \url{https://orcid.org/0000-0002-0002-4657}}, and especially to secure a teaching or faculty position, somewhere, embarked on this project to further his earlier work on Transformatics\cite{transformatics} as well as stable advances in his original, commercially-capable TEA programming language\cite{cli_tttt} by bringing it to a potentially more in-demand domain. 
+
+
+%---[ BEGIN BOOK CONTENT/CHAPTERS ]
+
+\mainmatter
+
 %\begin{abstract}
-\section*{Abstract}
+\chapter*{Abstract}
 \large
 
-Though still just a paper, this work brings to surface the importance of leveraging the mathematical theory recently named ``Transformatics"\cite{transformatics}, that deals with the study, processing and analysis of especially ordered sequences of symbols and their transformations. It has been demonstrated to be a credible and powerful theory in designing, specifying or explaining the properties of automata operating on sequences to produce other sequences --- so-called sequence transformers. So, in this particular work, we take that body of knowledge, as well as what we know about the critically important science of how biological life-forms get to be defined, transformed and expressed in nature via the special genetic code known as DNA (deoxyribonucleic acid), that is best modeled conceptually as an ordered sequence of genes or more technically, a sequence of special combinations of any of four chemical bases (amino acids) or just ``nucleobases" --- Adenine(A), Cytosine(C), Guanine(G), and Thymine(T), into a finite sequence typically expressed as a double-helix ladder structure, that can then be decoded by convenient biological mechanisms so as to express or rather, manufacture one or more essential life-building compounds such as proteins that underlie the synthesis of specialized aspects of the organism's body such as skin, bone and muscle tissue in an animals or into cell-wall tissue, photosynthesis machinery and others, for plant organisms. This work demonstrates how several ideas first compiled under the transformatics umbrella can be well applied in problems relating to general genetics; we for example see how to quantify how far apart or different any two organisms might be based on the anagram distance between their genetic codes, this likewise being applicable to also sub-sequences of DNA that might underlie the expression of  just particular biological machines or mechanisms. We also consider how to leverage the concept of the modal sequence statistic in analyzing not just how similar different DNA sequences might be in terms of their relative composition of the basic nucleobases, but also in terms of their relative composition at higher abstraction levels such as at the level of amino-acids or large n-gram subsequences. We finally consider the matter of how, by leveraging the idea that a modal sequence encodes a summary about some larger sequence or an entire population of them, that we can then approach DNA as though it were a special statistical summary just like the MSS from transformatics theory, and then like how complex sequences could be constructed from summary statistics via certain protraction and multiplication transformers in earlier work, we use a thought experiment to demonstrate how DNA would be transcribed into both an mRNA-like structure and then which can be further translated into actual body structures that allow the organism to occupy space and appear or behave in a particular way. Though this work is significantly theoretical and mathematical, we anticipate that these discussions and the exposition shall inspire actual domain experts and other researchers interested in genetics, genetic engineering and other sciences to pick up and apply our transformatics theory and ideas in both theory and practice.
+Though it started out as just a paper, this work (now a monograph) brings to surface the importance of leveraging the mathematical theory recently named ``Transformatics"\cite{transformatics}, that deals with the study, processing and analysis of especially ordered sequences of symbols and their transformations. It has been demonstrated to be a credible and powerful theory in designing, specifying or explaining the properties of automata operating on sequences to produce other sequences --- so-called sequence transformers. So, in this particular work, we take that body of knowledge, as well as what we know about the critically important science of how biological life-forms get to be defined, transformed and expressed in nature via the special genetic code known as DNA (deoxyribonucleic acid), that is best modeled conceptually as an ordered sequence of genes or more technically, a sequence of special combinations of any of four chemical bases (amino acids) or just ``nucleobases" --- Adenine(A), Cytosine(C), Guanine(G), and Thymine(T), into a finite sequence typically expressed as a double-helix ladder structure, that can then be decoded by convenient biological mechanisms so as to express or rather, manufacture one or more essential life-building compounds such as proteins that underlie the synthesis of specialized aspects of the organism's body such as skin, bone and muscle tissue in an animals or into cell-wall tissue, photosynthesis machinery and others, for plant organisms. This work demonstrates how several ideas first compiled under the transformatics umbrella can be well applied in problems relating to general genetics; we for example see how to quantify how far apart or different any two organisms might be based on the anagram distance between their genetic codes, this likewise being applicable to also sub-sequences of DNA that might underlie the expression of  just particular biological machines or mechanisms. We also consider how to leverage the concept of the modal sequence statistic in analyzing not just how similar different DNA sequences might be in terms of their relative composition of the basic nucleobases, but also in terms of their relative composition at higher abstraction levels such as at the level of amino-acids or large n-gram subsequences. We finally consider the matter of how, by leveraging the idea that a modal sequence encodes a summary about some larger sequence or an entire population of them, that we can then approach DNA as though it were a special statistical summary just like the MSS from transformatics theory, and then like how complex sequences could be constructed from summary statistics via certain protraction and multiplication transformers in earlier work, we use a thought experiment to demonstrate how DNA would be transcribed into both an mRNA-like structure and then which can be further translated into actual body structures that allow the organism to occupy space and appear or behave in a particular way. Though this work is significantly theoretical and mathematical, we anticipate that these discussions and the exposition shall inspire actual domain experts and other researchers interested in genetics, genetic engineering and other sciences to pick up and apply our transformatics theory and ideas in both theory and practice.
      \newline\newline
      \textbf{Keywords}: Applied Mathematical Statistics, Transformatics, Artificial Statistical Intelligence, Information Processing, Ordered Sequences, DNA sequences, Genetic Code, Genetic Analysis, Abstract Machines
 %\end{abstract}
 
 \newpage
 
-\section{Introduction}
+\chapter{Introduction}
 \label{SEC1}
 
 
 \begin{figure}[H]
   \begin{center}
   %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
-   \includegraphics[width=0.9\textwidth,]{resources/images/the_pineapple.jpg}\\
-   \caption{In the course of writing this work, an experiment to grow pineapples from the pineapple fruit tops of pineapples normally bought from nearby marketplace yielded results! Here we see the first successful harvest of a pineapple from our home garden. But also, this case inspired part of the discussion in \textbf{Section \ref{SEC4}} about how in real genome expression systems, the organism expressed from genetic code somewhat still includes the genetic code in the manifested organism as some kind of prefix (in leaves for example) or suffix (roots), from which the original organism can still be later reproduced!}
+   \includegraphics[height=0.6\textheight,]{resources/images/the_pineapple.jpg}\\
+   \caption{In the course of writing this work, an experiment to grow pineapples from the pineapple fruit tops of pineapples normally bought from nearby marketplace yielded results! Here we see the first successful harvest of a pineapple from our home garden. But also, this case inspired part of the discussion in \textbf{Chapter \ref{SEC4}} about how in real genome expression systems, the organism expressed from genetic code somewhat still includes the genetic code in the manifested organism as some kind of prefix (in leaves for example) or suffix (roots), from which the original organism can still be later reproduced!}
   \label{FIGPINEAPPLE}
   \end{center}
 \end{figure}
@@ -192,9 +218,34 @@ For example, by borrowing a useful DNA-as-library metaphor from Venville et al\c
 \end{enumerate}
 
 
-So, with that introduction clearing up much of the basic genetics nomenclature and concepts that we shall use in the rest of this work, we then dive into the meat of our undertaking as such; \textbf{Section \ref{SEC2}} shall introduce the use of terminology and notation from transformatics to describe facts about genome sequences at various levels of abstraction. We shall look at using sequence symbol sets, sequence abstraction using sub-sequence symbols that can later be re-transformed into flat sequences, the idea of sequence cardinality when applied to DNA sequences and more. Then in \textbf{Section \ref{SEC3}} we shall deepen our discussion by considering how some of the measures from transformatics might be applied in genetic sequence analysis. We shall look into the ADM and PCR especially --- the other for cases where any two sequences are of the same length and similar symbol sets, and the other for cases where these need not be the same across the sequences under analysis. Then in \textbf{Section \ref{SEC4}} we shall take on the interesting matter for how, despite being merely a sequence of symbols, genetic code sequences actually can be likened to how a MSS can be used to specify how to reconstruct some other sequence. First, in \textbf{Section \ref{SEC05}} we shall first look at an overview of how actual interpretation or execution (more conventionally just referred to as ``gene translation") results in the manufacturing of proteins, and shall likewise look at some example actual gene translation in general and with a particular case. In \textbf{Section \ref{SEC5}} we shall then dive into a more hands-on exploration of this matter, with a hypothetical genome system (the \textbf{Numero-Gene Code}) that can allow us to not only creatively explore what genetic code is about, but which can also allow us to approach the rather complex matter of how DNA gets interpreted/translated into actual living tissue as well as a complete living organism. We shall introduce some two systems for how to decode our numero-gene DNA code into a kind of mRNA via the \textbf{Ozin-Transformer} and from ozin-gene code into actual tissue/proteins via the \textbf{Plato-Form Generator} that allows us to transcribe DNA into an orgnanism that has a predictable characteristic appearance and geometry, but also which still contains its essential genetic code just like normal living organisms do. Then we shall wrap-up in \textbf{Section \ref{CONC}}, looking at what we have accomplished, what remains to be done, and what the implications of this undertaking might be.
+So, with that introduction clearing up much of the basic genetics nomenclature and concepts that we shall use in the rest of this work, we then dive into the meat of our undertaking as laid out in the next section.
 
-\section{Sequence Symbol Sets and Sequence Transforms Applied to Genetic Code}
+\subsection{How to Navigate the Monograph}
+
+The necessary foundation concepts and nomenclature have been well introduced in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}} --- the previous section.
+
+In \textbf{\hyperref[SEC2]{Chapter \ref{SEC2}}} we shall formally define the DNA and RNA symbol sets, $\psi_{DNA}$ and $\psi_{RNA}$. We shall look at the matter of the difference between the ordering of terms in these mathematically-oriented sets, relative to the common-place \textbf{A-T-C-G} ordering typical in biological and especially genetics literature. We shall define the more universal $\psi_{na}$ that would help apply logic to both DNA and RNA sequences, and shall generalize all such sequences as \textbf{na-Sequences}.
+
+In \textbf{\hyperref[SECSEQAB]{Chapter \ref{SECSEQAB}}} we shall look at the idea of using n-grams such as the meaningful na-Sequence nucleobase 3-grams (technically known as \textbf{codons}) to abstract away various nuances of the flat-structure DNA or RNA sequence whose length might sometimes shoot into the millions or billions for realistic complete genome sequences. In \textbf{\hyperref[SEC05]{Chapter \ref{SEC05}}} we shall further these ideas when looking at how to process na-Sequences at n-gram level such as in naming or identifying subsequences. We shall also see that such abstractions might help manage complexity and simplify formalisms or algorithms dealing with na-Sequences such in the formalization of protein synthesis for natural or artificial automata via codon-processing ribosomes.
+
+
+In \textbf{\hyperref[SEC3]{Chapter \ref{SEC3}}} we shall look at how we might leverage the basic concept of a symbol set to analyze arbitrary na-Sequences. We for example shall look at how to automatically generate special ordered symbol sets corresponding to individual na-Sequences under various bases --- DNA, RNA, na- or even sometimes lexically meaningful AZ($\psi_{az}$). We shall seen how to define special symbol sets based on n-gram abstractions of na-Sequences, such as might help in logic with special na-Subsequences such as START and STOP codons.
+
+
+In \textbf{\hyperref[SEC3A]{Chapter \ref{SEC3A}}} we then shall consider the interesting matter of \textbf{complement sequences} and \textbf{complement symbol sets}. We shall look at how to generate complements given a starting sequence or symbol set. We shall look into the interesting fact that complementing $\psi_{DNA}$ helps us arrive at the common \textbf{A-T-C-G} ordering of terms such as in $\dot{\psi}_{DNA}$. And though we might not use it immediately, we shall see that we might also talk of orthogonal symbol sets and orthogonal symbol set identities (o-SSI\cite{ossipaper}) in relation to na-Sequences.
+
+In \textbf{\hyperref[SEC4A]{Chapter \ref{SEC4A}}} we shall dive into how to leverage the \textbf{ADM} and \textbf{MSS} to perform non-trivial sequence analyses. We shall utilize four scenarios starting with basic scenarios between two individual sequences of potentially unequal lengths, all the way to analyzing entire collections or populations based on their representative na-Sequences. We shall look at how to leverage the \textbf{TEA}\cite{Lutalo2024_taz}\cite{cli_tttt} text-oriented GPL to conduct some of the essential analyses proposed, readily via the the command-line on any major operating system, and especially with DNA/RNA sequences of any size stored in basic text files. We shall see that using the concept of the \textbf{modal sequence statistic}, whether applied to individual na-Sequences, collections of them or just sub-sequences of a longer DNA or RNA strands, can help us leverage statistical summary information about a sequence that might otherwise not be easy to glean or leverage from trivial inspection of a sequence. In this chapter too, particularly in \textbf{\hyperref[SECPROXPOP]{Section \ref{SECPROXPOP}}}, we shall develop an algorithm that might be utilized in applying statistical artificial intelligence to the matter of sequence classification problems relating to labeled datasets. The closely related \textbf{\hyperref[SECSEQPROXSEQ]{Section \ref{SECSEQPROXSEQ}}} shall consider the matter of identifying the \textbf{closest-sequence} from a collection of na-Sequences when given a particular query na-Sequence. Finally, \textbf{\hyperref[SECSEQSTORAGE]{Section \ref{SECSEQSTORAGE}}} shall consider the important matter of \textbf{optimal database storage of na-Sequences} as is typically found in real-world systems such as those that do whole-genome sequencing or gene-banks, etc. 
+
+In \textbf{\hyperref[SECMATHSEQ]{Chapter \ref{SECMATHSEQ}}} shall get into some deep mathematics around the critical problem of genome sequencing. We shall tackle the fundamental problem in genetics engineering by breaking it down into 3 major problems. \textbf{\hyperref[PROBG1]{Problem G1}} dealing with the matter of how to compute the longest common subsequence given any two sequences. \textbf{\hyperref[PROBG2]{Problem G2}} dealing with how, as happens during conventional genome sequencing, we have sections of two or more sequences that are not exactly the same, but which must be reduced to some \textbf{consensus sequence} that is most true to all the input/available disparate identifying sequences. And then in \textbf{\hyperref[SECCOMPGENSEQ]{Problem G3}}, we shall consider how to arrive at the final best consensus sequence that also unifies all the disparate input sequences originally provided, into a single sequence that is then the consensus genome sequence of the entity under analysis.
+
+
+We shall then turn our attention to the matter of how genetic code is translated into actual living organisms in \textbf{\hyperref[SEC05]{Chapter \ref{SEC05}}}, focusing at the molecular level, and shall tackle the matter of the algorithm by which the most basic synthesis happens in a cell.
+
+
+In the final chapter, \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}}, we shall look at what results from actual processing of genome sequences or rather DNA code; the manifestation of some living thing, an organism or some aspect of it as specified in the underlying genetic code. We shall especially deal with minimal entities such as viruses and simple organelles. Most importantly though, we we shall explore \textbf{genome expression} formally and conceptually so, with the assistance of a thought-experiment. A hypothetical genome-expression system --- which we shall refer to as the \textbf{Lu-Genome Expression System} (LGES) shall be presented, and all our explorations shall be based on it. \textbf{\hyperref[SECOZIN]{Section \ref{SECOZIN}}} shall deal with a visual encoding method that leverages a digit-cipher named \textbf{OZIN}, and which is to be used to express storage-level genetic code (in decimal/numeric form), it its \textbf{intermediate form} --- equivalent to DNA-to-mRNA transcription in living organisms. We shall finally turn attention to the final expression step --- equivalent to mRNA-to-Protein/Function translation in nature, in \textbf{\hyperref[SECGENEXPRE]{Section \ref{SECGENEXPRE}}}, and shall get to see yet another innovation in the form of a genetic-code-to-spatial-form encoding based on a cipher we shall call the \textbf{Platonic Form Cipher} (\textbf{\hyperref[SECPLATONIC]{Section \ref{SECPLATONIC}}}). The essential algorithm for how to perform genome expression all the way from storage code into the final organism is depicted in \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}, and we shall close with some examples of complete, though hypothetical, fully-expressed genomes in \textbf{\hyperref[SECFULLGES]{Section \ref{SECFULLGES}}}.
+
+
+\chapter{Sequence Symbol Sets and Sequence Transforms Applied to Genetic Code}
 \label{SEC2}
 
 \begin{center}
@@ -212,7 +263,7 @@ Frobenioids\cite{mochizuki_frobenioids1}, as introduced by \textbf{Prof. Shinich
 For the purposes of appreciating transformatics from a genetics engineering or general genetics research perspective, it shall be important to note that like in the original transformatics paper\cite{transformatics}, beginning by appreciating that whatever formalisms and mechanics we might develop or talk about concerning genetic code or rather DNA, had better begin with an appreciation that we can model DNA as merely an ordered sequence of symbols.\\
 
 
-In the introduction (see \textbf{Section \ref{SEC1}}), we have already called out both the names and symbols assigned to the most basic units of any genetic code; essentially, the \textit{nucleobases} (or rather, nucleotides). For purposes of simplifying our mathematical logic later on, we shall here neatly define what roles these units play in the grand scheme concerning DNA and RNA code. Basically, we shall want to define the symbol sets for any DNA sequence and the symbol set for any RNA sequence.\\
+In the introduction (see \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}), we have already called out both the names and symbols assigned to the most basic units of any genetic code; essentially, the \textit{nucleobases} (or rather, nucleotides). For purposes of simplifying our mathematical logic later on, we shall here neatly define what roles these units play in the grand scheme concerning DNA and RNA code. Basically, we shall want to define the symbol sets for any DNA sequence and the symbol set for any RNA sequence.\\
 
 \fbox{\begin{minipage}{0.9\textwidth}
 \large
@@ -258,7 +309,7 @@ Now that we have $\psi_{DNA}$ and $\psi_{RNA}$ well defined, we might immediatel
 \label{DEFUNA}
 Any nucleic acid sequence, $\Theta$, obeys the following law:
 
-\begin{law}[\textbf{Nucleic Acid Identifier Set}: $\psi_{na}$]
+\begin{law}[\textbf{Nucleic Acid Identifier Symbol Set}: $\psi_{na}$]
 \label{LAWNA}
  The universal symbol set $\psi_{na}$ spans any natural nucleic acid sequence $\Theta$.
 \begin{proof}
@@ -282,7 +333,7 @@ Any sequence of DNA or RNA nucleotides --- basically a sequence of nucleic acids
 \end{defn}
 
 
-If it is not immediately clear what the significance of \textbf{Defition \ref{DEFDNASS}} is or why it's important to unambiguously define $\psi_{DNA}$, then perhaps the mathematical discussions in later sections like \textbf{Section \ref{SEC3}} and \textbf{Section \ref{SEC4}} might this more obvious. That said, since we know that nucleic acid sequences come in two flavors\cite{wikipedia_nucleic_acid}, and since we have covered the essential ground for DNA symbol sets, we need now also consider the ordered RNA symbol set.\\
+If it is not immediately clear what the significance of \textbf{Defition \ref{DEFDNASS}} is or why it's important to unambiguously define $\psi_{DNA}$, then perhaps the mathematical discussions in later sections like \textbf{\hyperref[SEC3]{Chapter \ref{SEC3}}} and \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}} might this more obvious. That said, since we know that nucleic acid sequences come in two flavors\cite{wikipedia_nucleic_acid}, and since we have covered the essential ground for DNA symbol sets, we need now also consider the ordered RNA symbol set.\\
 
 
 \fbox{\begin{minipage}{0.9\textwidth}
@@ -366,7 +417,8 @@ And which sequence\footnote{$\Theta_{insulin}$ is the short coding DNA sequence 
 
 We might for example start to wonder, how might we go about determining if some two DNA sequences, $\Theta_1$ and $\Theta_2$ are the same or perhaps if they share parts of each other, and by how much? We might wonder if they are the same sequence merely shuffled/anagrammatized --- since we saw that this can occur during natural processes such as meiosis\cite{genomics2025origin}. In case they are different, we might want to for example quantify the relative frequency of their distinct members, e.g mapping $\psi_{DNA}$ or $\psi_{RNA}$ to a sequence of relative frequencies, etc. These are all things we shall soon look into and know very well how to do or talk about, using genetics terms and the mathematical language and techniques from transformatics.
 
-\section{Sequence Abstraction using Symbol Sets: From Flat-Structure Sequences to Higher-Level Sequences}
+\chapter{Sequence Abstraction using Symbol Sets: From Flat-Structure Sequences to Higher-Level Sequences}
+\label{SECSEQAB}
 
 Especially for nucleic acid sequences, but also for any other kind of sequence $\Theta$, there might be legitimate situations in which looking at or dealing with the flat-structure sequence --- such as for the actually modest\footnote{`Modest' because, genomes and realistic genome sequences can typically span millions of genes or billions of nucleotides. We for example know that for a typical human cell's DNA there are $\approx$3.2 billion base pairs\cite{Venter2001}, and yet we know each base pair consists of two nucleotides, one for each strand of the double-helix (so that's $\approx$6.4 billion), plus a few more ($\approx$16,569 base pairs) from mitochondrial DNA\cite{Anderson1981}} $\Theta_{insulin}$, might be cumbersome. And so, we are going to briefly look at ways that we might re-write verbose flat-sequences in more terse or higher-level abstract ways so as to focus on details that the flat-structure perhaps doesn't clearly express. This for example is naturally relevant in nucleic acid sequences since they are for example useful in scenarios where their processing is done in n-tuples/n-grams --- such as with codons (nucleotide 3-grams) or as gene programs (self-contained sequences of codons), etc.
 
@@ -405,7 +457,7 @@ For some $n, k \in \mathbb{N}$, and that $\invpi(\Theta^*) = \frac{n}{k} = $ num
 \end{transf}
 
 
-Thus, we see that the sequence depicted in \textbf{Equation \ref{EQSEQ3}} with $k=4$ could as well be produced by the generator defined in \textbf{Transformer \ref{TRANSFBUND}}. But not just that, if we applied that transformer to the DNA sequence $\Theta_{insulin}$ first presented in \textbf{Section \ref{SEC2}} --- see \textbf{Equation \ref{EQINSULIN}}, we can then produce a proper standard codon/3-gram mapping of that DNA sequence that would look something like:\\
+Thus, we see that the sequence depicted in \textbf{\hyperref[EQSEQ3]{Equation \ref{EQSEQ3}}} with $k=4$ could as well be produced by the generator defined in \textbf{\hyperref[TRANSFBUND]{Transformer \ref{TRANSFBUND}}}. But not just that, if we applied that transformer to the DNA sequence $\Theta_{insulin}$ first presented in \textbf{\hyperref[SEC2]{Chapter \ref{SEC2}}} --- see \textbf{\hyperref[EQINSULIN]{Equation \ref{EQINSULIN}}}, we can then produce a proper standard codon/3-gram mapping of that DNA sequence that would look something like:\\
 
 
 \fbox{\begin{minipage}{0.9\textwidth}
@@ -426,7 +478,7 @@ And the way we have bundled up the nucleotides in \textbf{Equation \ref{EQINSUL2
 Of course, though we might not delve into it here or at the moment, we know that by chaining several sequence transformers --- such that one operates on the output of the previous one to produce the next sequence (see \textbf{Transformer \ref{TRANS1}} as an example), we can arrive at even higher abstraction sequences that might render certain sequence processing programs easier to write, analyze or define. For example, we know that, much as a Ribosome Processor operates on a sequence of codons, and yet, any legitimate protein synthesis and genetic code sequence processing program will require some sort of necessary delimiters (such as the START and STOP codons --- refer to the Protein Synthesis Flow Chart in \textbf{Figure \ref{FIG3}}), and so that, we might (if we could), abstract away codons and instead generate from a flat-structure DNA or perhaps mRNA sequence, a higher-level n-gram sequence of genes or \textbf{gene-program sequences}.
 
 
-\section{Sequence Analysis Using Symbol Sets}
+\chapter{Sequence Analysis Using Symbol Sets}
 \label{SEC3}
 
 We now turn our attention to the matter of using ideas from transformatics to help analyze or understand genetic code sequences. For starters, we shall want to consider the matter of how to tell how far apart or dissimilar any two nucleic acid sequences might be. Of course, consequently, that would also translate into meaningful way to tell how far apart not just low-level genetic-creations such as tissue, cell-types, proteins, etc might be based on the genetic code that produces them, but also how different entire organisms (within the same species or not) might be.
@@ -533,6 +585,7 @@ So, that, if say a nucleic acid program for producing some protein via some gene
 One interesting consequence of that definition is the following law:
 
 \begin{law}[\textbf{Non-Coding Gene Programs\footnote{Also known as \textbf{Introns} in some contexts.}}]
+\label{LAW2}
 If any gene-program $\Theta_{na}$ is processed by a ribosome, and yet it has the property:\\
 
  $\psi_{DNA}(\Theta_na) \cap \psi_{na-START} = \emptyset \quad \lor \quad \psi_{RNA}(\Theta_na) \cap \psi_{na-START} = \emptyset$\\
@@ -564,10 +617,10 @@ It is not immediately clear what the plausibility of such an \textit{evil gene-p
 
 That said, in case a normally correct gene-program such as what we saw in $\psi_{insulin}$ (see \textbf{Equation \ref{EQINSULIN}}) is altered with --- perhaps by a natural mutation, or perhaps a virus, or even in a totally malicious feat of gene-manipulation medicine, and such a transformation results in a nucleic-acid sequence satisfying any of the above queer cases, who knows, but it might as well be the root case of some difficult flaw in the organism --- an incurable and fatal disease (if the faulty gene-program is crucial for normal life support and that it has no alternatives or simple way to be solved), and these might the kinds of hard problems that might require not just medical doctors, biologists or perhaps genetists to tackle, but also people like computer hackers, information-security experts and software debuggers\footnote{It shouldn't come as a surprise, that with a stronger marriage of computing theory and biology, or medicine, that certain problems in nature --- not just with humans or animals, but also with plants for example, and especially if they are either inheritable --- meaning genetic, or if they might somehow be remedied via clever hacking or debugging and modifying of the organism via gene programs, might call for the skills of and expertise of software engineers and program debuggers from hardcore computer science and not just the medical or biological sciences! A great background work on this subject by the author might come in handy --- refer to \cite{Lutalo2025debug}}!
 
-\section{Sequence Analysis Using Complement Sets}
+\chapter{Sequence Analysis Using Complement Sets}
 \label{SEC3A}
 
-The idea of complements when applied to na-Sequences has already been introduced in \textbf{Section \ref{SEC1}}, and we get to see it depicted in an exemplary typical diagrammatic depiction of the DNA structure in \textbf{Figure \ref{FIG1}}. However, apart from having talked about the fact that nucleic acids typically or naturally occur together in base-pairs depicting pairwise complements, we might want to leverage transformatics to study this idea at a more general level --- say, to explore the matter of \textbf{na-Sequence} (as well as \textit{any sequence}) complements, and thus this section.
+The idea of complements when applied to na-Sequences has already been introduced in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}, and we get to see it depicted in an exemplary typical diagrammatic depiction of the DNA structure in \textbf{Figure \ref{FIG1}}. However, apart from having talked about the fact that nucleic acids typically or naturally occur together in base-pairs depicting pairwise complements, we might want to leverage transformatics to study this idea at a more general level --- say, to explore the matter of \textbf{na-Sequence} (as well as \textit{any sequence}) complements, and thus this section.
 
 Assume we start by exploring simple binary sequences --- especially because bits help generalize many ideas in theory and practice. We can for example start by noticing that, like in the case of the interesting \textbf{Lu-Number System}\cite{lnspaper} --- in which any kind of \textit{basic information} can be abstracted by mapping it to either signal (>) or anti-signal (<), and that \textit{complex information} can then be generated from that using transforms on basic LNS sequences or expressions, etc. We can start by looking at what can be said of the transforms on the binary sequence symbol set, $\psi_{bin}$ --- or better, $\psi_{01}$. In our formulations, we shall denote the complement of a symbol $\rho$ by $\lnot\rho$, and for a sequence $\Theta$, with $\lnot\Theta$.
 
@@ -681,7 +734,7 @@ $\Theta \xrightarrow{O_{complement}(\Theta)} \Theta^*; \quad \Theta^* = \lnot\Th
 \end{transf}
 
 
-\subsection{Significance of Sequence Complements, $\lnot\Theta$ and Complement Symbol Sets, $\lnot\psi_\beta$}
+\section{Significance of Sequence Complements, $\lnot\Theta$ and Complement Symbol Sets, $\lnot\psi_\beta$}
 \label{SECSIGCOMPLE}
 
 First, we shall momentarily return to binary sequences. 
@@ -843,7 +896,7 @@ Which, given how that special sequence was derived/discovered(see \textbf{Sectio
 If some sequence $\Theta: \mathbb{N} \times \psi_\beta$ is an orthogonal symbol set identity for the base $\beta$, then its complement, $\lnot\Theta$ is also an orthogonal symbol set identity for $\beta$.
 \end{theo}
 
-\subsection{Potential Applications of Sequence Complements or Inverses}
+\section{Potential Applications of Sequence Complements or Inverses}
 \label{SECAPPCOMPLEMENTS}
 
 First, in genetics and analysis of genetic code sequences, note that for especially sequences in say the \textit{non-native}(non-storage) form, such as the processed/derived RNA-sequences, it might sometimes be useful to determine if some two sequences are the same, equivalent or closely related, even though their apparent ordering of members, or even member composition looks unlike, \textbf{as long as their cardinalities are the same}\footnote{This requirement to have their sizes the same, is a natural consequence of how a sequence and its anagram relate --- see \cite{adtpaper}}.
@@ -961,13 +1014,13 @@ It should perhaps be immediately noticeable that the ability to derive new/diffe
 It's already interesting to note that under complement transforms (which are special kinds of anagrams), the natural/universal protein synthesis START-codon AUG/ATG is equivalent to GCA (\textbf{Transformation \ref{TRANSGCA}}) or UAC (\textbf{Transformation \ref{TRANSUAC}}), but, \textbf{are those other codons also START-codons?} That said, is there a possibility that some natural process or genetic code translation or transformation might naturally produce ATG or AUG from any of those corresponding [symbolic] complement sequences? What would this teach us about natural/biological processors? What of the possibilities of using synthetic/artificial processors to render such complement operations useful?
 
 
-\section{Sequence Analysis Using The Anagram Distance and the Modal Sequence Statistic}
+\chapter{Sequence Analysis Using The Anagram Distance and the Modal Sequence Statistic}
 \label{SEC4A}
 
 
 We are going to talk about the matter of comparing or analyzing two or more na-Sequences using especially statistical measures that have been set down by transformatics theory for especially ordered sequences. 
 
-\subsection{Six Sequences and Four Scenarios}
+\section{Six Sequences and Four Scenarios}
 \label{SEC4ASEQ}
 
 In particular, we shall be looking at na-Sequence analysis through lens of measures we have formalized earlier on, and shall break down our analysis into four representative scenarios:
@@ -1066,12 +1119,12 @@ GAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG
 \Large
 
 
-The first four sequences are merely hypothetical, and intentionally small/short, with $\Theta1_{DNA}$, $\Theta3_{DNA}$ and $\Theta4_{DNA}$ being DNA-sequences, while $\Theta2_{RNA}$ is just some RNA-sequence. $\Theta_{insulin}$ is a DNA-sequence we have already encountered in \textbf{Section \ref{SEC2}} (see \textbf{Equation \ref{EQINSULIN}}), while the most verbose sequence we shall encountered in this work is named $\Theta_{rbcl}$ and is a real-life, biologically relevant RNA-sequence from a well-known plant protein: \textbf{RbcL}\footnote{$\Theta_{rbcl}$ is actually just a sample mRNA Sequence (partial, from \textit{Arabidopsis thaliana} RbcL gene), and is excerpted from a paper that includes the \textit{Arabidopsis thaliana} chloroplast genome, which contains the rbcL gene encoding the large subunit of RuBisCO\cite{Sato1999ArabidopsisChloroplastGenome}.}, the large subunit of \textbf{RuBisCO} --- the enzyme responsible for carbon fixation in photosynthesis. It is one of the most abundant and essential proteins in plants\cite{copilot_dna_assistant}.
+The first four sequences are merely hypothetical, and intentionally small/short, with $\Theta1_{DNA}$, $\Theta3_{DNA}$ and $\Theta4_{DNA}$ being DNA-sequences, while $\Theta2_{RNA}$ is just some RNA-sequence. $\Theta_{insulin}$ is a DNA-sequence we have already encountered in \textbf{\hyperref[SEC2]{Chapter \ref{SEC2}}} (see \textbf{Equation \ref{EQINSULIN}}), while the most verbose sequence we shall encountered in this work is named $\Theta_{rbcl}$ and is a real-life, biologically relevant RNA-sequence from a well-known plant protein: \textbf{RbcL}\footnote{$\Theta_{rbcl}$ is actually just a sample mRNA Sequence (partial, from \textit{Arabidopsis thaliana} RbcL gene), and is excerpted from a paper that includes the \textit{Arabidopsis thaliana} chloroplast genome, which contains the rbcL gene encoding the large subunit of RuBisCO\cite{Sato1999ArabidopsisChloroplastGenome}.}, the large subunit of \textbf{RuBisCO} --- the enzyme responsible for carbon fixation in photosynthesis. It is one of the most abundant and essential proteins in plants\cite{copilot_dna_assistant}.
 
-\subsection{A First Analysis}
+\section{A First Analysis}
 \label{SECFANAL}
 
-Before we dive into the matter of solving the analytic problems under the four scenarios introduced in \textbf{Section \ref{SEC4ASEQ}} above, we shall want to begin with a background analysis that shall give us some high-level insights about any of the sequences in our problem set. In particular, we are going to start by analyzing each of those sequences, so as to know the following basic facts:
+Before we dive into the matter of solving the analytic problems under the four scenarios introduced in \textbf{\hyperref[SEC4ASEQ]{Section \ref{SEC4ASEQ}}} above, we shall want to begin with a background analysis that shall give us some high-level insights about any of the sequences in our problem set. In particular, we are going to start by analyzing each of those sequences, so as to know the following basic facts:
 
 \begin{enumerate}
 \item What is the sequence's symbol set: $\psi(\Theta) = ?$
@@ -1240,7 +1293,7 @@ Such is the power of the sequence analysis we can do with the TEA language, with
 	
 	              
 \end{tabular}
- \caption{A First Analysis of the 5 na-Sequences from \textbf{Section \ref{SEC4ASEQ}}}
+ \caption{A First Analysis of the 5 na-Sequences from \textbf{\hyperref[SEC4ASEQ]{Section \ref{SEC4ASEQ}}}}
   \label{TABFAN}
 \end{table}
 
@@ -1248,7 +1301,7 @@ Such is the power of the sequence analysis we can do with the TEA language, with
 
 
 
-\subsection{SCENARIO A}
+\section{SCENARIO A}
 \label{SECSCENA}
 
 \begin{quote}
@@ -1353,7 +1406,7 @@ And thus, we can see readily that:\\
 
 And so, despite the measures and first analysis in \textbf{Table \ref{TABFAN}} having shown that these two nucleic acid sequences didn't have any significant differences, and yet, using ADM as in \textbf{Table \ref{TABADM1}} and \textbf{Equation \ref{EQCOMPNASEQ14}}, we find that they are appreciably significantly different! Their ADM being $2.3$, it tells us the second sequence potentially has elements in the first sequence shifted to new locations in the sequence, potentially by more than just 1 position. Thus, despite all their other similarities, they do have some differences that we can measure and pin to some telling numbers.
 
-\subsection{SCENARIO B}
+\section{SCENARIO B}
 \label{SECSCENB}
 
 \begin{quote}
@@ -1364,7 +1417,7 @@ Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$
 
 So, given the conditions of this scenario and our sample sequences as summarized in \textbf{Table \ref{TABFAN}}, we shall pick sequences $\Theta1$ and $\Theta3$, which both have the same sequence symbol set under base-na, and which have cardinalities 12 and 16 respectively.
 
-So, good enough, we have already worked through some of the essential details of the analysis method in \textbf{Section \ref{SECSCENA}}. However, for this scenario, we can sum up how to conduct our comparative analysis thus:
+So, good enough, we have already worked through some of the essential details of the analysis method in \textbf{\hyperref[SECSCENA]{Section \ref{SECSCENA}}}. However, for this scenario, we can sum up how to conduct our comparative analysis thus:
 
 \begin{enumerate}
 \item{First, conduct tabular analysis so as to see how the two sequences contrast against each other by the dimensions: 
@@ -1376,7 +1429,7 @@ So, good enough, we have already worked through some of the essential details of
 \item Their cardinality.
 \end{enumerate}
 
-We have already seen how to do all the above analysis steps and why, in the First Analysis described in \textbf{Section \ref{SECFANAL}}.
+We have already seen how to do all the above analysis steps and why, in the First Analysis described in \textbf{\hyperref[SECFANAL]{Section \ref{SECFANAL}}}.
 }
 \item So, if none of the analyses in the first step help show the \textbf{quantifiable similarities} or \textbf{quantifiable differences} between the two sequences, then proceed to using the more subtle Anagram Distance Measure on them. How to do this we have already covered well in \textbf{\hyperref[SECSCENA]{Scenario A}}.
 \item In case the ADM also can't find any differences between the two sequences, then most likely, their only differences are \textbf{cosmetic} --- such as simply naming the same sequence differently, and thus the two sequences under analysis can be considered to be \textbf{quantifiably similar}.
@@ -1431,7 +1484,7 @@ And thus, since those two measures aren't the same either, again, we have yet an
 
 It should be worth noting, that in contrast to the previous scenario, the sequence characteristic\footnote{The \textbf{Sequence Characteristic} becomes yet another important contribution to the study and analysis of sequences that can serve special purposes than just the related Modal Sequence Statistic, and which, though derived from it, expresses different sequence summarizing information that is important in scenarios such as genetic sequence analysis as we have just seen. Definitely, this measure can, as with other measures we have developed in transformatics, be applied in any mathematical or scientific field and not just statistics or genetics such as in this case.} for $\Theta1$ and $\Theta4$ are equivalent (as expected?).
 
-\subsection{SCENARIO C}
+\section{SCENARIO C}
 \label{SECSCENC}
 
 \begin{quote}
@@ -1466,7 +1519,7 @@ The special summary statistic for any sequence $\Theta$, is the subsequence \tex
 
 Which is such a terrific measure when comparing especially large or arbitrarily sized sequences. Good enough, we have seen that there is a simple/short TEA program to automatically compute and display that measure for any input sequence, so, interested researchers and students can just adapt/build on that in the future.
 
-\subsection{SCENARIO D --- the population characteric measure}
+\section{SCENARIO D --- the population characteric measure}
 \label{SECSCEND}
 
 \begin{quote}
@@ -1500,7 +1553,8 @@ Though we don't intend to borrow many or any ideas from what others would do or 
 
 First, let us deal with the matter of associating our query sequence, $Q_k$, one of several sequence sets or collections.
 
-\subsubsection{Measuring Proximity to a Set of Sequences, $\Omega^n$}
+\subsection{Measuring Proximity to a Set of Sequences, $\Omega^n$}
+\label{SECPROXPOP}
 
 So, if we have a set of $n$ different sequences of arbitrary composition and lengths, $\Omega^n = \langle \Omega1, \Omega2, \Omega3,..., \Omega n \rangle$, then, given some query sequence such as $Q_k$, and the consequences of \textbf{Theorem 2} in \cite{transformatics}, we can safely classify the query sequence as \textbf{belonging to} or \textbf{being appreciably close} to the given population, if we find that computing the anagram distance between the query and the population via their representative modal sequence statistics results in an ADM value of 0, or if, where there are two or more populations to compare against, that we select that population whose ADM against the query sequence's MSS is appreciably close enough to 0.
 
@@ -1571,7 +1625,7 @@ If there is no other population to compare the query against, we can safely conc
 This process would proceed somewhat like this:
 
 \begin{itemize}
-\item Using the provided collection of sequences $\Omega^n$, and the process outlined in \textbf{Section \ref{SECCOMPGENSEQ}}, especially via processing such a collection via the \textbf{\hyperref[DEFGENOMESEQ]{Genome Sequencer}} machine/transformer, we shall obtain a representative and summary, well-aligned and potentially complete [na-]sequence $\Omega_{gs}$ that represents the entire collection/population provided.
+\item Using the provided collection of sequences $\Omega^n$, and the process outlined in \textbf{\hyperref[SECCOMPGENSEQ]{Section \ref{SECCOMPGENSEQ}}}, especially via processing such a collection via the \textbf{\hyperref[DEFGENOMESEQ]{Genome Sequencer}} machine/transformer, we shall obtain a representative and summary, well-aligned and potentially complete [na-]sequence $\Omega_{gs}$ that represents the entire collection/population provided.
 \item By the \textbf{\hyperref[LAWGDL]{Identity Genome Sequence Law}}, we trust that such a sequence shall be unique for any two distinct collections or populations.
 \item {And thus, having obtained $\Omega_{gs}$, we then compute the RPMSS not from the individual sequences in a population, but instead from their representative genome sequence. That is to say:
 
@@ -1584,7 +1638,8 @@ And then we can use the obtained $\overset{>}{\Omega^n}$ and the query's $\overs
 }
 \end{itemize}
 
-\subsubsection{Measuring Proximity between a $Q_k$ and Members of a Sequence Population, $\Omega^n$}
+\subsection{Measuring Proximity between a $Q_k$ and Members of a Sequence Population, $\Omega^n$}
+\label{SECSEQPROXSEQ}
 
 For answering the final aspect of \textbf{Scenario D}, we merely can proceed via the following Algorithm:
 
@@ -1632,7 +1687,8 @@ For answering the final aspect of \textbf{Scenario D}, we merely can proceed via
 $\qed$
 \end{alg}
 
-\subsection{Concerning Optimal Symbolic Storage of na-Sequences in Databases - Computing the G$\ddot{o}$del Number for a Sequence $\Theta_n$ based on its Characteristic $\hbar(\overset{>}{\Theta_n})$ }
+\section{Concerning Optimal Symbolic Storage of na-Sequences in Databases - Computing the G$\ddot{o}$del Number for a Sequence $\Theta_n$ based on its Characteristic $\hbar(\overset{>}{\Theta_n})$ }
+\label{SECSEQSTORAGE}
 
 
 \begin{figure}[H]
@@ -1645,9 +1701,9 @@ $\qed$
 \end{figure}
 
 
-$na$-Sequences, for which we might have a collection of them, $\Theta^n$, could have applied to them, a system of optimal or optimizable storage in practice, especially via electronic formats and protocols such as with flat text files, relative database systems and any well structured \textbf{operating memory space structures} --- vaults in TEA\cite{Lutalo2024_taz}, JSON-dictionaries on the Web\cite{lutalo_tea_web}, YAML files on local file-systems, etc. In this section, we could explore with the same na-Sequences introduced in \textbf{Section \ref{SEC4ASEQ}}, for ways how their corresponding optimal hash keys might be computed as part of an optimal-sequence lookup mechanism in bio-automata or not.
+$na$-Sequences, for which we might have a collection of them, $\Theta^n$, could have applied to them, a system of optimal or optimizable storage in practice, especially via electronic formats and protocols such as with flat text files, relative database systems and any well structured \textbf{operating memory space structures} --- vaults in TEA\cite{Lutalo2024_taz}, JSON-dictionaries on the Web\cite{lutalo_tea_web}, YAML files on local file-systems, etc. In this section, we could explore with the same na-Sequences introduced in \textbf{\hyperref[SEC4ASEQ]{Section \ref{SEC4ASEQ}}}, for ways how their corresponding optimal hash keys might be computed as part of an optimal-sequence lookup mechanism in bio-automata or not.
 
-Concerning Storage of an na-Sequence $\theta_n \in \Theta^n_k$ such that  $\Theta$ has $n$ sequences partitioned into $k$ subsequences\footnote{This is just the proposed concept of the storage representation for an individual entire genome sequence,  just one of many possibilities. Particular implementations might vary in actual sequence expression (in storage). For nucleic acid operating systems, we know that na-Sequences are in natural storage, when expressed as DNA (with partitions into nucleic acids, codons, genes, chromosomes, double-helixes of chromosomes, etc), however, while in use for processes such as RNA-oriented sequence processing (see \textbf{Section \ref{SECPROT}}), are operated on, not in bulk or whole-at-once, but in subsequences of some finite length --- such as $k$ in this formal specification, and $k=3$ for typical, natural protein synthesis in ribosomes as an example.}.
+Concerning Storage of an na-Sequence $\theta_n \in \Theta^n_k$ such that  $\Theta$ has $n$ sequences partitioned into $k$ subsequences\footnote{This is just the proposed concept of the storage representation for an individual entire genome sequence,  just one of many possibilities. Particular implementations might vary in actual sequence expression (in storage). For nucleic acid operating systems, we know that na-Sequences are in natural storage, when expressed as DNA (with partitions into nucleic acids, codons, genes, chromosomes, double-helixes of chromosomes, etc), however, while in use for processes such as RNA-oriented sequence processing (see \textbf{\hyperref[SECPROT]{Section \ref{SECPROT}}}, are operated on, not in bulk or whole-at-once, but in subsequences of some finite length --- such as $k$ in this formal specification, and $k=3$ for typical, natural protein synthesis in ribosomes as an example.}.
 
 We then might wish to have some mechanism --- such as the following generator:\\
 
@@ -1677,13 +1733,15 @@ Thus, for optimal lookup mechanisms --- concerns about space and [polynomial] ti
  Computing a hashkey based on a G$\ddot{o}$del number is just one approach to the optimal way to implement a sequence lookup mechanism with \textbf{Transformer \ref{TRANSFSEQLOOKUP}}. However, even that method utilizes the transformatics concept of summarizing arbitrary sequences by their [proposed] \textbf{sequence characteristic} and consequently, their \textbf{modal sequence statistic}. However, as we see in the constraints and specification of that generator-transformer, the other option is to compute the solution using keys based on just the modal sequence statistics of the query and the target sequences in $\Theta^n$.
 
 
-\section{The Mathematics of Genome Sequencing: Sequence Alignment, The Modal Sequence, The Sequencing Machine and the Absolute Identifier Genome Sequence Law}
+\chapter{The Mathematics of Genome Sequencing: Sequence Alignment, The Modal Sequence, The Sequencing Machine and the Absolute Identifier Genome Sequence Law}
+\label{SECMATHSEQ}
 
 Given what we know of genome sequencing theory and some problems we identified --- such as an overall lack of proper mathematical formalism around the issue of how sequencing --- or rather, computation of the resultant, consensus and most representative genome sequence (essentially, an identifying \textbf{na-Sequence}) of a living organism or particular aspects of it --- proteins, mutations, behavioral traits, anomalies or bases of particular or general diseases or incapacities, etc. But even with the matter of mathematically expressing anomalous entities such as viruses and such, wasn't that compelling. And thus this section.
 
-Seeing as the matter of determining the actual na-Sequence that correctly identifies a person or thing might be hinging on the case of attempting to reconstruct a book by mathematically piecing together disparate pieces of it --- some in alignment, some not, some supersets of the others, some prefixes or suffixes of others, etc.\footnote{This analogy shouldn't come as a surprise, when compared to how we found it best to describe DNA using a figurative metaphor (see \textbf{Introduction}): \textbf{Section \ref{SEC1}}), but also based on how some authorities seem to be teaching this subject to their students\cite{przytycka_wgs_lecture10}.} Also, though we might not immediately surface that philosophy here, the difficulties and problem thus raised, might likewise apply to the matter of trying to computationally ``sequence" all of reality or even peculiar small aspects of it --- sub-atomic particles that make up living things on the miniature scale, and then planets, stars and galaxies on the grand scale. Is it possible? Does it make sense? Is it necessary or even useful? These, and related problems are what we shall attempt to answer in the rest of this section.
+Seeing as the matter of determining the actual na-Sequence that correctly identifies a person or thing might be hinging on the case of attempting to reconstruct a book by mathematically piecing together disparate pieces of it --- some in alignment, some not, some supersets of the others, some prefixes or suffixes of others, etc.\footnote{This analogy shouldn't come as a surprise, when compared to how we found it best to describe DNA using a figurative metaphor (see \textbf{\hyperref[SEC1]{Introduction}}), but also based on how some authorities seem to be teaching this subject to their students\cite{przytycka_wgs_lecture10}.} Also, though we might not immediately surface that philosophy here, the difficulties and problem thus raised, might likewise apply to the matter of trying to computationally ``sequence" all of reality or even peculiar small aspects of it --- sub-atomic particles that make up living things on the miniature scale, and then planets, stars and galaxies on the grand scale. Is it possible? Does it make sense? Is it necessary or even useful? These, and related problems are what we shall attempt to answer in the rest of this section.
 
-\subsection{PROBLEM G1: Computing MCS: Maximum Common Subsequence: $\Theta_1 \Diamond \Theta_2$}
+\section{PROBLEM G1: Computing MCS: Maximum Common Subsequence: $\Theta_1 \Diamond \Theta_2$}
+\label{PROBG1}
 
 \begin{prob}[\textit{Computing MCS: \textbf{Maximum Common Subsequence}}]: $\Theta_1 \Diamond \Theta_2$] 
 \label{PROBMCS}
@@ -1792,7 +1850,8 @@ Iff $j = \invpi(\Theta_2)$, then return $O^m_g$
 \end{alg}
 
 
-\subsection{PROBLEM G2: Computing Overlap Resultant Sequences: $\Theta_1 \ast \Theta_2$}
+\section{PROBLEM G2: Computing Overlap Resultant Sequences: $\Theta_1 \ast \Theta_2$}
+\label{PROBG2}
 
 \begin{prob}[\textit{Computing ORS: \textbf{Overlap Resultant Sequence}}]: $\Theta_1 \ast \Theta_2$] 
 \label{PROBORS}
@@ -1823,7 +1882,7 @@ $\qed$
 \end{soln}
 \end{prob}
 
-\subsection{PROBLEM G3: Computing the Genome Sequence (GS): $(\Theta_1 \Diamond \Theta_2)^*$}
+\section{PROBLEM G3: Computing the Genome Sequence (GS): $(\Theta_1 \Diamond \Theta_2)^*$}
 \label{SECCOMPGENSEQ}
 
 \begin{prob}[\textit{Computing GS: \textbf{Genome Sequence}}]: $(\Theta_1 \Diamond \Theta_2)^*$] 
@@ -1871,8 +1930,8 @@ As per \textbf{Equation  \ref{EQLSEQ}} and the sensibilities of GTNC\cite{Lutalo
 
 \end{prob}
 
-\subsection{The Genome Sequencer}
-
+\section{The Genome Sequencer}
+\label{SECGENSEQ}
 
 \fbox{\begin{minipage}{0.9\textwidth}
 \begin{defn}[A \textbf{Genome Sequencer}]
@@ -1909,7 +1968,8 @@ and $R_{\Theta^n}^{j+1}$ is the resultant genome sequence after processing $\The
 That transformer, $\tilde{T}(\Theta^n)$, is a genome sequencer, and is essentially a transformer that reduces a matrix of na-Sequences to a resultant sequence, $R_{\Theta^n}$, that is the resultant genome sequence of a specie, population, or any natural entity represented by or expressed by the [potentially incomplete or approximate] genome sequences in the collection $\Theta^n$.
 
 
-\subsection{The Identity Genome Sequence (IGS) Law}
+\section{The Identity Genome Sequence (IGS) Law}
+\label{SECIGSL}
 
 \begin{law}[The \textbf{Identity Genome Sequence Law}]
 \label{LAWGDL}
@@ -1940,7 +2000,7 @@ However, given that in reality it might not be exactly possible to exhaustively 
 
 
 
-\section{Gene Expression in Living Organisms Leveraging Genetic Code (DNA $\rightarrow mRNA \rightarrow Protein \rightarrow$ Organism)}
+\chapter{Gene Expression in Living Organisms Leveraging Genetic Code (DNA $\rightarrow mRNA \rightarrow Protein \rightarrow$ Organism)}
 \label{SEC05}
 
 
@@ -1960,7 +2020,50 @@ However, given that in reality it might not be exactly possible to exhaustively 
 \end{figure}
     
     
-In later section (\textbf{Section \ref{SEC4}}) we shall deal with [whole] genome expression, and shall especially deal with hypothetical systems and use the modal sequence concept as the basis for exploring expression and/or manifestation of an entire organism from just its basic genetic code. In this section though, we shall focus on actual expression in real and natural biological systems, and shall focus more on expression at a molecular level --- essentially, at the level of protein manifestation via \textbf{gene expression}.
+In later section (\textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}}) we shall deal with [whole] genome expression, and shall especially deal with hypothetical systems and use the modal sequence concept as the basis for exploring expression and/or manifestation of an entire organism from just its basic genetic code. In this section though, we shall focus on actual expression in real and natural biological systems, and shall focus more on expression at a molecular level --- essentially, at the level of protein manifestation via \textbf{gene expression}.\\
+
+
+\fbox{\begin{minipage}{0.9\textwidth}
+\large
+
+\begin{defn}[The \textbf{DNA and RNA Codon Symbol Sets}, $\psi_{DNA}^*$ and $\psi_{RNA}^*$]
+\label{DEFNDNACODONSS}
+If $\Theta_n$ is a DNA sequence of length $n$ --- meaning, it contains $n$ nucleotides or $n$ symbols from $\psi_{DNA}$, then, if each triplet of symbols in $\Theta_n$ is replaced by its corresponding 3-gram/CODON, then, we can re-write $\Theta_n$ as a sequence of terms from a special symbol set $\psi_{DNA}^*$:
+
+\begin{equation}
+\label{EQSSDNACoDONS}
+\psi_{DNA}^* = \langle \alpha_1, \alpha_2, \cdots , \alpha_{64} \rangle
+\end{equation}
+
+Such that:
+
+\begin{equation}
+\label{EQDNACODCARD}
+ \invpi(\psi_{DNA}^*) = \invpi(\psi_{DNA})^3 = 4^3 = 64
+\end{equation}
+
+And that each distinct codon has a corresponding standard name associated with either its corresponding amino-acid or whether it is a STOP-codon\cite{gregory1987oxford}\cite{wikipedia_codon_tables}. We shall refer to $\psi_{DNA}^*$ as the \textbf{DNA Codon Symbol Set}.
+
+
+Further, since RNA sequences are similar to DNA sequences with just the symbols `T' swapped with `U' (see \textbf{\hyperref[DEFRNASS]{Definition \ref{DEFRNASS}}} and \textbf{\hyperref[TRANSF1]{Transformer \ref{TRANSF1}}}), we can also expect that for RNA sequences, there would be an equivalent symbol set for RNA-codons as such:
+
+\begin{equation}
+\label{EQSSRNACoDONS}
+\psi_{RNA}^* = \langle \beta_1, \beta_2, \cdots , \beta_{64} \rangle
+\end{equation}
+
+And the names of the codons in $\psi_{RNA}^*$ are similar to those in $\psi_{DNA}^*$ by the following rule:
+
+\begin{equation}
+\label{EQNAMINGRNACodons}
+name(\beta_i) = name(\alpha_i) \quad \forall \beta_i \in \psi_{RNA}^*: \beta_i = O_{mRNA-encode}(\alpha_i)
+\end{equation}
+
+
+\end{defn}
+\end{minipage}}
+\\
+
 
 It shall be interesting to note that for genetic code in natural automata (nature-like bio-automata\footnote{My research assistant --- thanks \textbf{Microsoft Copilot}, did bring it to my attention that the term ``bio-automata" is ``usually reserved for models or conceptual representations of biological systems --- especially those designed to simulate behaviors, growth patterns, or decisions-making processes using predefined rules, like in cellular automata or agent-based modeling." And thus, much as I often find it attractive to use the term --- as an umbrella term including actual living organisms which, from the perspective of the computer scientist in me, are still correctly classifiable under the "biological automata" category in my opinion since they actually operate on some infallible inherent natural program in their DNA. But, I shall adhere to the advise of my assistant for now.} and generally living things), the most important reason the genetic coding language exists, is so that the body/host-organism system can produce required materials as and when they are needed or demanded for. This for example means producing new or extra body tissue in a still growing organism or in one with any damaged or missing tissue, and essentially, such productions are about the synthesis of particular molecules in the body's system that are basically proteins. The diagram in \textbf{Figure \ref{FIG2}} is a basic illustration of the process for living organisms --- eukaryotes especially.
 
@@ -1972,8 +2075,8 @@ And so, given that these proteins are actually nearly direct/1-to-1 mappings fro
 
 \begin{equation}
 \label{EQ1}
-\Theta_n = \langle a_{ij}, \rangle ;
-a_{ij} \in \psi_{DNA^*} \quad \forall j \in [1,n],  i \in [1,64] \quad \land \quad n \in \mathbb{N}
+\Theta_n = \langle \alpha_{ij}, \rangle ;
+\alpha_{ij} \in \psi_{DNA}^* \quad \forall j \in [1,n],  i \in [1,64] \quad \land \quad n \in \mathbb{N}
 \end{equation}\\
 
 \textbf{Equation \ref{EQ1}} being just a sometimes preferable way to write the same exact sequence as:
@@ -1982,10 +2085,10 @@ a_{ij} \in \psi_{DNA^*} \quad \forall j \in [1,n],  i \in [1,64] \quad \land \qu
  \begin{equation}
 \label{EQ2}
 \Theta_n = \langle a_1,a_2,a_3,...,a_i,...,a_{n-1},a_n \rangle ;
-\forall i \quad \exists a_i \in \psi_{DNA^*} \quad \land \quad n \in \mathbb{N}
+\forall i \quad \exists a_i \in \psi_{DNA}^* \quad \land \quad n \in \mathbb{N}
 \end{equation}\\
 
-We have defined the special symbol sets $\psi_{DNA^*}$ in \textbf{Section \ref{SEC..}} and  $\psi_{DNA}$ in \textbf{Definition \ref{DEFDNASS}}, and as for $\psi_{DNA^*}$, we know that it essentially is the set of the distinct 64 codons (see \textbf{Table 1} in \cite{gregory1987oxford}) that \textit{especially} encode amino acids, and which were first introduced in \textbf{Section \ref{SEC1}}. Another way to expound on this is by saying that:
+We have defined the special symbol sets $\psi_{DNA}^*$ in \textbf{\hyperref[DEFNDNACODONSS]{Definition \ref{DEFNDNACODONSS}}} and  $\psi_{DNA}$ in \textbf{Definition \ref{DEFDNASS}}, and as for $\psi_{DNA}^*$, we of course know that it essentially is the set of the distinct 64 codons (see \textbf{Table 1} in \cite{gregory1987oxford}) that \textit{especially} encode amino acids, and which were first introduced in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}. Another way to expound on this is by saying that:
 
  \begin{equation}
 \label{EQ3}
@@ -2098,7 +2201,7 @@ That said, further note that, after processing the gene, and/or after encounteri
 
 And then, further note that, in case any codons were encountered before the AUG (or rather \textit{start-codon}), these shall then be merely be skipped --- they aren't processed or won't translate into any product such as the usual case of producing an amino-acid (this, even if they would normally have triggered the production of some amino acid). 
 
-\subsection{Protein Manufacturing Algorithm}
+\section{Protein Manufacturing Algorithm}
 \label{SECPROT}
 
 So, overall, we might sum up this critically important protein generation process with a convenient formalism such as with a protein-production algorithm expressed as in the flow-chart depicted in \textbf{Figure \ref{FIG3}}.
@@ -2125,9 +2228,9 @@ That process which is depicted in \textbf{Figure \ref{FIG3}} is how the ribosome
 \end{figure}
 
 
-Before concluding this section on biological computing systems of the sequence generator kind\cite{lutalo2025transformatic}, it should be worthwhile noting that, as depicted in \textbf{Figure \ref{FIG4}}, the process that is naturally found in every living thing's tiniest cells (excluding viruses as already saw in \textbf{Section \ref{SEC1}}, could be, as with any legitimate state machine, be used to implement a proof-of-concept ribosome processor (or a \textit{ribosome computer} --- a way to implement bio-automatons that behave like a ribosome or which process code similar to DNA and mRNA, or which generally operate on sequences to produce other (possibly more complex) sequences. Thinking of a robotic ribosome might not be something that is immediately required in contemporary medicine or in-organism computing systems, but might be a concept worth adapting or exploring for the design and implementation of self-contained robotic factories for manufacturing and outputting complex products producible via use of a sequence-processing, assembly-line kind of method just as proteins are produced in a bio-cell by the ribosome. We might for example think of ``a sequence from which a finished particular type of car can be manufactured at will" or ``a sequence from which certain kinds of sequence-form/sequence-based\footnote{Vertebrates anyone(?)} artificial and/or organic creatures or bots might be systematically produced at will or on-demand". These kinds of printers --- which, unlike just printers of things on paper, or 3D-printers that know to only produce plastic variants of models they are fed with, but which can say \textit{print a human}\footnote{Though we might touch on it in a future paper on philosophy --- e.g in \textit{Computational Mysticism}\cite{lutalo2024mysticism}, it might be interesting to air-out the author's illuminating view that unlike most other bio-mata such as beasts in the wild or fish in the seas, and definitely not as with silicon-based automatons such as GPT-powered modern \textit{disincarnate} artificial entities --- nor the likes of the ZHA qAGI\cite{jwlzha}, that the human in particular, has this peculiar attribute to them that, apart from just their material substratum as any physical robot might possess or need --- and which is say the domain of ``material producers" such as the ribosome is, and away from their conceptual/software substratum too, they seem to, or perhaps arguably, also possess a preternatural layer of existence that perhaps is or might not have anything to do with their DNA/material-blueprint. A better or more precise classification term for such [\textit{preter-}]intelligent -mata/matter(?) might be the still underground term and concept of a \textit{Psymaton} or \textbf{Psymata} --- bits of this line of discourse have been already touched on in the Psymaz Interview\cite{lutalo2025unraveling}.}, teleport a cow or a banana, etc. might be interesting to explore, as we look into the far-future, where, with humanity's ability to travel and survive in remote and/or unnatural worlds away from their biological home environments (such as Earth's biosphere), might compel them to have to develop new kinds of machines that would not only print out ideas on paper, but also complete food ready-to-eat, medicines to particular kinds of ailments, certain kinds of companion creatures or species, etc. Means to survive on/in alien worlds by leveraging smart, general sequence processors and generators. Talking of which, the next section shall help us start to appreciate this perspective of using the case of genetic code sequences and the ribosome sequence processor into the dimension of both artificial as well as conceptual or hypothetical bio-machines that like the bio-cell can produce complex things via processing of some kinds of code sequences. Bio-automata.
+Before concluding this section on biological computing systems of the sequence generator kind\cite{lutalo2025transformatic}, it should be worthwhile noting that, as depicted in \textbf{Figure \ref{FIG4}}, the process that is naturally found in every living thing's tiniest cells (excluding viruses as already saw in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}, could be, as with any legitimate state machine, be used to implement a proof-of-concept ribosome processor (or a \textit{ribosome computer} --- a way to implement bio-automatons that behave like a ribosome or which process code similar to DNA and mRNA, or which generally operate on sequences to produce other (possibly more complex) sequences. Thinking of a robotic ribosome might not be something that is immediately required in contemporary medicine or in-organism computing systems, but might be a concept worth adapting or exploring for the design and implementation of self-contained robotic factories for manufacturing and outputting complex products producible via use of a sequence-processing, assembly-line kind of method just as proteins are produced in a bio-cell by the ribosome. We might for example think of ``a sequence from which a finished particular type of car can be manufactured at will" or ``a sequence from which certain kinds of sequence-form/sequence-based\footnote{Vertebrates anyone(?)} artificial and/or organic creatures or bots might be systematically produced at will or on-demand". These kinds of printers --- which, unlike just printers of things on paper, or 3D-printers that know to only produce plastic variants of models they are fed with, but which can say \textit{print a human}\footnote{Though we might touch on it in a future paper on philosophy --- e.g in \textit{Computational Mysticism}\cite{lutalo2024mysticism}, it might be interesting to air-out the author's illuminating view that unlike most other bio-mata such as beasts in the wild or fish in the seas, and definitely not as with silicon-based automatons such as GPT-powered modern \textit{disincarnate} artificial entities --- nor the likes of the ZHA qAGI\cite{jwlzha}, that the human in particular, has this peculiar attribute to them that, apart from just their material substratum as any physical robot might possess or need --- and which is say the domain of ``material producers" such as the ribosome is, and away from their conceptual/software substratum too, they seem to, or perhaps arguably, also possess a preternatural layer of existence that perhaps is or might not have anything to do with their DNA/material-blueprint. A better or more precise classification term for such [\textit{preter-}]intelligent -mata/matter(?) might be the still underground term and concept of a \textit{Psymaton} or \textbf{Psymata} --- bits of this line of discourse have been already touched on in the Psymaz Interview\cite{lutalo2025unraveling}.}, teleport a cow or a banana, etc. might be interesting to explore, as we look into the far-future, where, with humanity's ability to travel and survive in remote and/or unnatural worlds away from their biological home environments (such as Earth's biosphere), might compel them to have to develop new kinds of machines that would not only print out ideas on paper, but also complete food ready-to-eat, medicines to particular kinds of ailments, certain kinds of companion creatures or species, etc. Means to survive on/in alien worlds by leveraging smart, general sequence processors and generators. Talking of which, the next section shall help us start to appreciate this perspective of using the case of genetic code sequences and the ribosome sequence processor into the dimension of both artificial as well as conceptual or hypothetical bio-machines that like the bio-cell can produce complex things via processing of some kinds of code sequences. Bio-automata.
 
-\subsection{Gene Expression in Living Things and for Bio-Automata via Ribosomes}
+\section{Gene Expression in Living Things and for Bio-Automata via Ribosomes}
 \label{SEC5}
 
 One might begin by wondering: \textbf{using the concepts from transformatics and pure mathematics, how might we model or express a general and realistic ribosome?} 
@@ -2184,7 +2287,7 @@ And thus, we can finally merely call any machine capable of implementing the pro
 %\end{minipage}}
 %\\
 
-\section{Transformatics and Lu-Genome Expression System in Bio-Automata}
+\chapter{Transformatics and Lu-Genome Expression System in Bio-Automata}
 \label{SEC4}
 
 \begin{quotation}
@@ -2214,7 +2317,7 @@ Which, especially for curiosity's sake, but also, for creative and expressive re
 However, that is the DNA-side of the story. As in real nature, we need a \textit{different} alphabet or symbol set for expressing genetic code in its \textit{intermediate form} --- as genome expression typically proceeds via expression of DNA into mRNA first of all, and then finally into functions such as proteins. So, in our case, the intermediate expressions shall be expressed using the \textbf{Ozin Cipher}\footnote{More about this in the \textbf{\hyperref[APPOZIN]{Appendix}}.}, which we are to describe hereafter.
 
 
-\subsection{The Ozin Genetic Code Cipher}
+\section{The Ozin Genetic Code Cipher}
 \label{SECOZIN}
 
 With the background we have obtained thus far, note that the special \textbf{transcription level} expression of our genetic code originally expressed via $\psi_{10}$, shall be transcribed into the intermediate \textbf{ozin genetic code} that spans the symbol set $\psi_{oz}$ that is mapped from the genetic code storage expression via a mapping as depicted in \textbf{Figure \ref{FIGOZIN}}.
@@ -2288,7 +2391,7 @@ Might help illustrate that point --- see \textbf{Figure \ref{FIGOZEXA}}
 \end{figure}
 
 
-\subsubsection{$\Omega$-to-OZIN Genetic Code Transcription Rules}
+\subsection{$\Omega$-to-OZIN Genetic Code Transcription Rules}
 
 So, in general, we might sum up our gene transcription rules as such:
 
@@ -2333,11 +2436,12 @@ Assuming we have an $\Omega$-base encoded genetic code sequence $\Theta_\Omega$ 
 
 
 
-\subsubsection{Examples of $\Omega$-Genetic Code Transcription}
+\subsection{Examples of $\Omega$-Genetic Code Transcription}
+\label{SECEXAMTRANSC}
 
 So, now that we have the general transcription rules as in \textbf{Algorithm \ref{ALGCOZIN}}, we can proceed to explore how to leverage them. 
 
-First, note that in \textbf{Section \ref{SEC3A}}, we have looked at not just the interesting idea of [genetic code] sequence complements, but have also explored several applications of the idea in \textbf{Section \ref{SECAPPCOMPLEMENTS}}, including the concept of the equivalence of sequences under the complement transform. Talking of which, assuming we had a special genome sequence that is made up of subsequences that are complements of each other (such as we might call \textbf{palindromic na-Sequences}) --- e.g $\Theta_{pal}$ defined below, that is actually a palindrome of the two DNA codons --- \textbf{ATG} (Methionine) and \textbf{CAA} (Glutamine) --- the complements being \textbf{GTA} (Valine) and \textbf{AAC} (Asparagine)\cite{wikipedia_codon_tables}.
+First, note that in \textbf{\hyperref[SEC3A]{Chapter \ref{SEC3A}}}, we have looked at not just the interesting idea of [genetic code] sequence complements, but have also explored several applications of the idea in \textbf{Section \ref{SECAPPCOMPLEMENTS}}, including the concept of the equivalence of sequences under the complement transform. Talking of which, assuming we had a special genome sequence that is made up of subsequences that are complements of each other (such as we might call \textbf{palindromic na-Sequences}) --- e.g $\Theta_{pal}$ defined below, that is actually a palindrome of the two DNA codons --- \textbf{ATG} (Methionine) and \textbf{CAA} (Glutamine) --- the complements being \textbf{GTA} (Valine) and \textbf{AAC} (Asparagine)\cite{wikipedia_codon_tables}.
 
 \begin{equation}
 \label{GENOMEPAL}
@@ -2368,11 +2472,12 @@ Now, notice something interesting here. In particular, if we compare the transcr
 
 In fact, this later case is an interesting way to appreciate that even where two organisms, genes or proteins might exhibit significant differences in their appearance or even genetic code, and yet, upon close inspection, we might find some telling signs that they share some \textbf{common-traits}. In this case, we see that the palindromic $\Omega_{pal}$ looks somewhat like the otherwise different $\Omega_{3}$ --- at least in their prefix structures after transcription (and possibly beyond!)
 
-\subsection{Genetic Code Sequences Processed as Modal Sequence Statistics}
+\section{Genetic Code Sequences Processed as Modal Sequence Statistics}
+\label{SECGENEXPRE}
 
 Now that we have finished looking at how to express genetic code from its base/storage-form (equivalent to DNA) into its intermediate-form (equivalent to RNA), we can then consider the matter of how that intermediate code eventually gets \textbf{translated} into the final organism\footnote{We say ``final organism" here, because, much as in reality, genome expression might be more complex than merely translating genetic code from DNA into RNA and then final proteins and tissue, and yet, conceptually, that is all there is to it!}.
 
-So, in further advancement our thought experiment concerning genome expression (modeled using hypothetical bio-automata), we shall again utilize the OZIN cipher introduced in \textbf{Section \ref{SECOZIN}}, but shall also introduce another formalism in the form of decoding position within a sequence (such as genetic code in this case), as information about how to express or process the associated symbols. This idea, of leveraging \textit{subtle instructions} embedded in genetic code but which might not be explicit as the actual nucleic acid combinations (such as amino-acid encoding-codons), can be justified when we consider that the genetic code processor (such as the ribosome in our major context --- see \textbf{Section \ref{SEC5}}), has a way of interpreting sequences not just by what they contain, but also based on the context within which they exist. For example, though generally the appearance of the RNA codon, \textbf{AAA} would cause the ribosome to synthesize the corresponding amino-acid Lysine (see \textbf{Table \ref{TAB1}}), and yet, if such a codon appears in a sequence where no earlier instruction compels the ribosome to START manufacturing a protein, the appearance of that codon shall be useless --- or rather, it shall be interpreted differently merely because of being in the wrong context. We saw this in \textbf{Section \ref{SEC05}}, and especially the Ribosome's protein-manufacturing process diagram (\textbf{Figure \ref{FIG3}}) as well as the State Machine (\textbf{Figure \ref{FIG4}}) help bring this out clearly. For example, if we modify the gene-program  in \textbf{Equation \ref{EQ6}} as such:
+So, in further advancement our thought experiment concerning genome expression (modeled using hypothetical bio-automata), we shall again utilize the OZIN cipher introduced in \textbf{\hyperref[SECOZIN]{Section \ref{SECOZIN}}}, but shall also introduce another formalism in the form of decoding position within a sequence (such as genetic code in this case), as information about how to express or process the associated symbols. This idea, of leveraging \textit{subtle instructions} embedded in genetic code but which might not be explicit as the actual nucleic acid combinations (such as amino-acid encoding-codons), can be justified when we consider that the genetic code processor (such as the ribosome in our major context --- see \textbf{Section \ref{SEC5}}), has a way of interpreting sequences not just by what they contain, but also based on the context within which they exist. For example, though generally the appearance of the RNA codon, \textbf{AAA} would cause the ribosome to synthesize the corresponding amino-acid Lysine (see \textbf{\hyperref[TAB1]{Table \ref{TAB1}}}), and yet, if such a codon appears in a sequence where no earlier instruction compels the ribosome to START manufacturing a protein, the appearance of that codon shall be useless --- or rather, it shall be interpreted differently merely because of being in the wrong context. We saw this in \textbf{Section \ref{SEC05}}, and especially the Ribosome's protein-manufacturing process diagram (\textbf{Figure \ref{FIG3}}) as well as the State Machine (\textbf{Figure \ref{FIG4}}) help bring this out clearly. For example, if we modify the gene-program  in \textbf{Equation \ref{EQ6}} as such:
 
 
  \begin{equation}
@@ -2390,7 +2495,8 @@ Then, where we would have expected the ribosome to manufacture protein whose str
 
 Which would produce the protein with just \textbf{UUA}(Leucine) in it! So, position of symbols or terms within genetic code matters, and does encode some important gene or even genome expression information that we can't take for granted, thus the following suggested system for how to express post-RNA genetic code sequences.
 
-\subsubsection{The Platonic Form Cipher and Position-Sensitive Genetic Code Translation}
+\subsection{The Platonic Form Cipher and Position-Sensitive Genetic Code Translation}
+\label{SECPLATONIC}
 
 Just like we developed a system for how to map numbers (in base-10) to some non-trivial expressions that we equate to a kind of intermediate genetic code (the OZIN-encoded expressions), we shall similarly start by considering a way to map (still base-10) numbers to spatial-structures\footnote{Especially because, and essentially that, when compared to the code that expresses them, proteins and the organism taken as a whole, \textit{occupy more space} than does just the basic DNA code from which they are expressed.}.
 
@@ -2409,7 +2515,8 @@ So, with the exception of ``0'', which again is treated as an instruction to `sk
 
 How does it work?
 
-\subsubsection{$\psi_{\Omega}$-to-$\psi_{pf}$: PLATONIC Form Genetic Code Transcription Rules}
+\subsection{$\psi_{\Omega}$-to-$\psi_{pf}$: PLATONIC Form Genetic Code Transcription Rules}
+\label{SECGENSEQEXPRES}
 
 
 So, in general, we might sum up our start to finish gene (and/or genome) expression with the post-transcription rules and process as such:
@@ -2420,14 +2527,14 @@ So, in general, we might sum up our start to finish gene (and/or genome) express
 Assuming we have an $\Omega$-base encoded genetic code sequence $\Theta_\Omega$ of some length $n > 0$.
 
 \begin{enumerate}
-\item{Initialize the expression with a transcription, by Using \textbf{Algorithm \ref{ALGCOZIN}} to construct the \textbf{Intermediate Form Affix} (IFA) of $\Theta_\Omega$ --- essentially return $OZ(\Theta_\Omega)$ as the start of the Final Genome Expression (FGE) $\boxed{OZ(\Theta_\Omega)}^*$ --- so that the final complete expressed(transcribed+translated ) sequence shall be as:
+\item{Initialize the expression with a transcription, by Using \textbf{Algorithm \ref{ALGCOZIN}} to construct the \textbf{Intermediate Form Affix} (IFA) of $\Theta_\Omega$ --- essentially return $OZ(\Theta_\Omega)$ as the start of the \textbf{Final Genome Expression} (FGE) $\boxed{OZ(\Theta_\Omega)}^*$ --- so that the final complete expressed(transcribed+translated ) sequence shall be as:
 
 \begin{equation}
 \label{EQTRANSLGENSEQ}
 \boxed{OZ(\Theta_\Omega)}^* = OZ(\Theta_\Omega)\cdot\boxed{OZ(\Theta_\Omega)}
 \end{equation}
 
-$\boxed{OZ(\Theta_\Omega)}: \mathbb{N} \times \psi_{pf}$ is the suffix of expressed na-Sequence $\Theta_\Omega$, and is expressed in our genome expression system, as PLATONIC-Form encoded \textbf{modal sequence statistic} of $OZ(\Theta_\Omega)$\footnote{We render the \textbf{suffix of FGE} as $\overset{>}{OZ(\Theta_\Omega)}$ because it allows us to not express $\Theta_\Omega$ naively at the genome or gene level, but also, so that, from an information-theoretic perspective, the complete genome expression is somewhat a statistical summary of what the genome sequence contains --- the appearance of an animal or a plant or virus, depicting or expressing the summary of its DNA code. We do this then, by not merely doing a 1-to-1 translation of the intermediate Ozin-code expression $OZ(\Theta_\Omega)$, but instead computing its summary in form of $\overset{>}{OZ(\Theta_\Omega)}$, and then instead translating that into the final spatial/geometric forms as per $\psi_{pf}$. This is shall complete the entire processing/synthesis of sequence $\Theta_\Omega$, or rather our genome expression.}: $\overset{>}{OZ(\Theta_\Omega)}$.
+$\boxed{OZ(\Theta_\Omega)}: \mathbb{N} \times \psi_{pf}$ is the suffix of expressed na-Sequence $\Theta_\Omega$, and is expressed in our genome expression system, as PLATONIC-Form encoded \textbf{modal sequence statistic} of $OZ(\Theta_\Omega)$\footnote{We render the \textbf{suffix of FGE} as $\overset{>}{OZ(\Theta_\Omega)}$ because it allows us to not express $\Theta_\Omega$ naively at the genome or gene level, but also, so that, from an information-theoretic perspective, the complete genome expression is somewhat a statistical summary of what the genome sequence contains --- the appearance of an animal or a plant or virus, depicting or expressing the summary of its DNA code. We do this then, by not merely doing a 1-to-1 translation of the intermediate Ozin-code expression $OZ(\Theta_\Omega)$, but instead computing its summary in form of $\overset{>}{OZ(\Theta_\Omega)}$, and then instead translating that into the final spatial/geometric forms as per $\psi_{pf}$. This is shall complete the entire processing/synthesis of sequence $\Theta_\Omega$, or rather our genome expression.} --- the \textbf{PFA}\footnote{Platonic Form Affix} $\overset{>}{OZ(\Theta_\Omega)}$.
 }
 \item{ So once we have the \textbf{IFA}, $OZ(\Theta_\Omega)$, proceed to use it to generate the rest of the sequence expression as follows: 
 \begin{enumerate}
@@ -2537,6 +2644,9 @@ $\qed$
 
 After looking at some examples of actual genome expressions, perhaps most reviewers of \textbf{Algorithm \ref{ALGCOZINPLATO}} shall come to appreciate that it is not only non-trivial, but is likewise true to the sensibilities of how actual expression occurs in nature/reality --- see a natural expression as in \textbf{Figure \ref{FIGPINEAPPLE}}.
 
+\subsection{Examples of Completed Lu-Genome Sequence Expressions}
+\label{SECFULLGES}
+
 We get to see the first example of the output of processing some na-Sequence expressed originally in base-$\Omega$ such as for $\Omega_{3}$ from \textbf{Equation \ref{EQDNEXA}}, in its final expression form as in \textbf{Figure \ref{FIGPLATONICEXA}}\cite{lutalo_2025_exa} --- more importantly, since we have already seen its \textbf{IFA} (the \textbf{FGE} prefix) in \textbf{Figure \ref{FIGOZEXA}}, we note that we essentially see the update as the result of expressing the entire \textbf{FGE} via the \textbf{IFA MSS} equivalent to:
 
 \begin{equation}
@@ -2553,6 +2663,60 @@ We get to see the first example of the output of processing some na-Sequence exp
   \end{center}
 \end{figure}
 
+
+Though we won't delve into exploring all kinds of possible \textit{interesting} scenarios with regards to the \textbf{LGES}, we can look at one other example and then move on. From the example hypothetical genome sequences we have encountered, perhaps let us revisit \textbf{\hyperref[EQDNAV]{Equation \ref{EQDNAV}}} and see what the \textbf{Euler Virus} might look like when fully expressed in our system.
+
+So, first of all, note that we already did the first-leg of \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}, and we have seen what the \textbf{FGE} prefix --- the \textbf{IFA}, would look like in \textbf{Figure \ref{FIGOZEVIRUS}}\footnote{Talking of which, for the well-read reader, and especially students and explorers of not just esoteric languages but especially occult languages and systems --- perhaps better we talk of \textbf{Occult Philosophy}\cite{agrippa2014occult}, not only the coincidence that our OZIN-expressions look indeed \textit{occult} --- such as one might find utilized in occult systems such as John Dee's Enochian\cite{lutalo2025unraveling}, but also that both the \textbf{IFA} and \textbf{PFA} --- the later, expressed in a somewhat more familiar (because the polygons at the core of the PF-cipher are indeed commonplace in both mathematics and mysticism) language, but ultimately, the experienced observer might appreciate that complete \textbf{LGES} expressions/figures such as \textbf{Figure \ref{FIGPLATONICEXA}} look much like the traditional/ancient mystical glyphs known as \textbf{Mandalas} to modern scholars such as Carl G. Jung that enjoyed these subjects\cite{jung1964symbols} and perhaps, and as the author himself has explored in works such as the novel ``Rock `N' Draw"\cite{lutalo2025rock}, these figures so much remind one of \textbf{Voodoo Veves}! Perhaps, in a later work on either philosophy or mysticism by the author --- see earlier works of this kind in \cite{lutalo2025concerning_trans}, we shall want to take time off and properly explore this exciting dimension of human expression and culture, especially since, unlike what might have ever come before, our symbolic programs, unlike voodoo veves or chaos magick sigils, are rooted in two objective fields of inquiry --- mathematics and biology. And no, though the acronym \textbf{IFA} reminds one of the \textit{Ifa} esotericism of  Western Africa, and yet, the author didn't have that in mind while working on the LGES at first.}. So, like we did for $\Omega_{3}$ in the last exploration, let us start by looking at what the numeral-equivalence of the processed $\Omega_{veuler}$ would be like. For brevity, we can sum up the entire production/transformation that leads to the complete \textbf{FGE} with correct prefix and suffix, and thus $\boxed{OZ(\Omega_{veuler})}^*$ as:
+
+\begin{center}
+\fbox{
+\begin{minipage}{\textwidth}
+
+\begin{trans}
+\label{TRANSGENSEQEVIRUS}
+$\Omega_{veuler} = \langle 2,7,1,8,2,8,1,8 \rangle \rightarrow \hbar(\overset{>}{\Omega_{veuler}}) = \text{\textbf{8}3\textbf{2}2\textbf{1}2\textbf{7}1} \rightarrow \overset{>}{\Omega_{veuler}} = \langle 8, 2, 1, 7 \rangle \implies \boxed{OZ(\Omega_{veuler})} \approx \lnot{\langle 8, 2, 1, 7  \rangle_{pf}} \implies \boxed{OZ(\Omega_{veuler})}^* =  \langle 2,7,1,8,2,8,1,8 \rangle_{oz}\cdot\boxed{\langle 1, 7, 8, 2 \rangle}_{pf}$\\
+\end{trans}
+
+\end{minipage}}
+\\
+\end{center}
+
+
+Note that in that derivation depicted in \textbf{\hyperref[TRANSGENSEQEVIRUS]{Transformation \ref{TRANSGENSEQEVIRUS}}}, one of the most tricky parts is computing that FGE suffix, $\boxed{OZ(\Omega_{veuler})}$, the \textbf{PFA} --- which is formalized/defined by \textit{especially}\footnote{\textbf{\hyperref[EQEXTFGEJOINTSUF]{Equation \ref{EQEXTFGEJOINTSUF}}} is what covers the special symbol `0', that is treated as a JOINT/GAP in the \textbf{PFA} and as STOP/GAP in \textbf{IFA}.} \textbf{\hyperref[EQFBOXED]{Equation \ref{EQFBOXED}}}. So, once that is done, and we have our final numeral-\textbf{FGE} as such:
+
+\begin{equation}
+\label{EQGFEEVIRUS}
+\boxed{OZ(\Omega_{veuler})}^* =  \langle 2,7,1,8,2,8,1,8 \rangle_{oz}\cdot\boxed{\langle 1, 7, 8, 2 \rangle}_{pf}
+\end{equation}
+
+Of course, concerning \textbf{\hyperref[EQGFEEVIRUS]{Equation \ref{EQGFEEVIRUS}}}, note that, or rather, keep in mind that concerning the \textbf{PFA} component, $\boxed{OZ(\Omega_{veuler})}$, the corresponding associated sequence in numeral form is the \textbf{IFA MSS}, $OZ(\Omega_{veuler}) = \overset{>}{\Omega_{veuler}} = \langle 8, 2, 1, 7 \rangle$. And thus, using necessary transcription and translation ciphers as well as the multiplication rules required by \textbf{\hyperref[EQFBOXED]{Equation \ref{EQFBOXED}}} when treating of the \textbf{PFA}, we then generate the final genome expression for the \textbf{Euler Virus} under the \textbf{LGES} that looks as in \textbf{Figure \ref{FIGLGESEULERVIRUS}}.
+
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
+   \includegraphics[trim=0cm 0cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf}\\
+   \caption{The equivalent LGES complete genome expression of the $\Omega_{veuler}$ (Euler Virus) genome sequence (from \textbf{Equation \ref{EQGFEEVIRUS}})}
+  \label{FIGLGESEULERVIRUS}
+  \end{center}
+\end{figure}
+
+
+Now, concerning that rendering of the genome sequence expressed in \textbf{Equation \ref{EQGFEEVIRUS}}, it might be worth noting that unlike the earlier examples of \textbf{LGES} expressions, we have taken the liberty to exploit that special joint that kick-starts the \textbf{PFA}, or rather, which separates the \textbf{IFA} from the \textbf{PFA} in a \textbf{FGE} expression. So, just like an organism with a physical joint might sometimes appear as angled or curved, so we have chosen to depict the $\Omega_{veuler}$ with its one joint\footnote{Definitely, and interesting to explore, a genome sequence with multiple JOINT points in it might be how an organism with say appendages such as legs, hands and a head that can move independently of the core/thorax of the body is possibly arrived at. The interested student should go ahead and explore more non-trivial $\Omega$-base sequences just to see what's possible.} well utilized. However, and important to note; it is not just joints that might appear different across different renderings of the same basis genome sequence. So, in \textbf{Figure \ref{FIGLGESEULERVIRUSv2}}, we see another variation of the same sequence, with readily noticeable differences being the IFA-PFA joint in its neutral position, and then the second node in the PFA (corresponding to \textbf{$7_{pf}-2_{oz}$}) with the $2_{oz}$ appendages depicted mostly aligned horizontally.
+
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
+   \includegraphics[trim=0cm 0cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape.pdf}\\
+   \caption{The \textbf{alternative rendering}  of the same sequence as $\Omega_{veuler}$.}
+  \label{FIGLGESEULERVIRUSv2}
+  \end{center}
+\end{figure}
+
+Concerning \textbf{Figure \ref{FIGLGESEULERVIRUSv2}}, the alternative rendering  of the same sequence as $\Omega_{veuler}$ first depicted in \textbf{Figure \ref{FIGLGESEULERVIRUS}}, we see that underlying the variations is how the \textit{degrees of freedom} in rendering the genome have somewhat been exploited. Notice how the joint and appendages are placed or oriented about the platonic forms that mostly remain unchanged across the two renderings --- except perhaps in scale. And talking of scaling nodes, in the future, we might want to explore whether in such a system as \textbf{LGES} in which the expression is sensitive to measures such as the \textbf{IFA MSS}, whether it might make sense to scale each subsequent pf-node in the \textbf{PFA} based on its position within the sequence? Though we didn't have such a rule included in \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}, and yet, our example renderings here have somewhat taken advantage of that plausible logic.
+
+That said, note that we started this work with a photograph of a pineapple ready to harvest (see \textbf{Figure \ref{FIGPINEAPPLE}}), and though the associated discussion\footnote{Checkout video/mini-lecture on the matter at author's YouTube: \url{https://youtube.com/shorts/yTJzBEpw7Z4}} by the author did bring up the matter of how it might inspire a genome expression system in which the prefix is the actual DNA that renders the rest of the organism (fruit, plant-base and roots in this case of the pineapple), it is left as an exercise to the reader to decide whether example genome sequence expressions/renderings such as in \textbf{Figure \ref{FIGLGESEULERVIRUS}} depict this pineapple-inspired philosophy.
 
 
 \begin{center}
@@ -2588,11 +2752,71 @@ And finally, it shall be worth noting that this notion also underlies the presen
 \end{center}
 
 
-\section{Conclusion}
+\chapter{Conclusion}
 \label{CONC}
 
-In this paper, we have advanced our knowledge concerning...
+In this work, we have advanced our knowledge concerning the important and fundamental subject of genetics with new theory and practical ideas previously only held informally or totally unknown. We have explored several interesting ways by which the newly proposed mathematical field of inquiry, known as \textbf{TRANSFORMATICS}, might be applied in the sub-field of the biological sciences known as \textbf{GENETICS}. 
 
+Though much of the work was mathematical in nature, we have also had lots of useful theory proposed in the form of conceptual and especially philosophical ideas relating to how to understand or leverage genetics through the lens of a sequence analyst and/or a computer scientist. 
+
+In terms of \textbf{Key Metrics and Contributions} this single work has brought to surface:
+\begin{enumerate}
+\item \textbf{12 Working Definitions} were developed in relation to various concepts in analytical genetics, sequence analysis and sequence processing in general.
+\item \textbf{4 Theorems} were developed and presented for the first time, spanning genetic sequences and then sequence complements in general.
+\item {\textbf{3 Laws} were distilled and presented for the first time:
+	\begin{enumerate}
+	\item \textbf{\hyperref[LAWNA]{Law 1}}: Concerning the nucleic acid identifier symbol set, $\psi_{na}$. 
+	\item \textbf{\hyperref[LAW2]{Law 2}}: Concerning Introns: Non-coding gene-programs.
+	\item \textbf{\hyperref[LAWGDL]{Law 3}}: The \textbf{Identity Genome Sequence} Law.
+	\end{enumerate}
+}
+\item \textbf{12 Transformers} were developed and presented for the first time, including the formal definition of the \textbf{Ribosome} as a \textbf{Protein Generator}.
+\item \textbf{18 Transformations} were presented to help advance generic as well as particular computational solutions to many kinds of basic problems in sequence analysis, processing and one concerning gene/genome expression.
+\item{\textbf{4 Algorithms} were developed and presented for the first time, including:
+	\begin{enumerate}
+	\item \textbf{\hyperref[ALGCSA]{Algorithm 1}}: The \textbf{Closest Sequence Algorithm}.
+	\item \textbf{\hyperref[ALGtMCS]{Algorithm 2}}: The \textbf{tMCS} Algorithm for computing the Maximum Common Subsequence.
+	\item \textbf{\hyperref[ALGCOZIN]{Algorithm 3}}: The \textbf{$\Omega$-to-OZIN Genetic Code Transcription Algorithm}.
+	\item \textbf{\hyperref[ALGCOZINPLATO]{Algorithm 4}}: The \textbf{$\Omega$-to-PLATONIC Form Genetic Code Expression Algorithm}.
+	\end{enumerate}
+}
+\item \textbf{3 Tabular Analyses} were presented, including \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}} that depicts how to perform comparative statistical analysis of DNA, RNA or any na-Sequence using some measures and methods from transformatics.
+\item \textbf{2 Original Ciphers} --- very rare and universally usable cryptographic keys were presented as part of the \textbf{Lu-Genome Sequence Expression System}, as well as proper justification for their practical relevance and sufficient historical background and example applications of both.
+\item \textbf{3 Core Problems} in the matter/domain of \textbf{Genome Sequencing} were formally defined and their theoretical solutions also presented.
+\item And many other quantifiable and unquantifiable major and minor contributions to genetics, mathematics, computer science, philosophy and more.
+\end{enumerate}
+
+
+In \textbf{\hyperref[SEC2]{Chapter \ref{SEC2}}} we have formally defined the DNA and RNA symbol sets, $\psi_{DNA}$ and $\psi_{RNA}$. We have looked at the matter of the difference between the ordering of terms in these mathematically-oriented sets, relative to the common-place \textbf{A-T-C-G} ordering typical in biological and especially genetics literature. We have defined the more universal $\psi_{na}$ that would help apply logic to both DNA and RNA sequences, and have generalized all such sequences as \textbf{na-Sequences}.
+
+In \textbf{\hyperref[SECSEQAB]{Chapter \ref{SECSEQAB}}} we have looked at the idea of using n-grams such as the meaningful na-Sequence nucleobase 3-grams (technically known as \textbf{codons}) to abstract away various nuances of the flat-structure DNA or RNA sequence whose length might sometimes shoot into the millions or billions for realistic complete genome sequences. In \textbf{\hyperref[SEC05]{Chapter \ref{SEC05}}} we further these ideas to look at how to process na-Sequences at n-gram level such as in naming or identifying subsequences. We have also seen that such abstractions might help manage complexity and simplify formalisms or algorithms dealing with na-Sequences such in the formalization of protein synthesis for natural or artificial automata via codon-processing ribosomes.
+
+
+In \textbf{\hyperref[SEC3]{Chapter \ref{SEC3}}} we look at how we might leverage the basic concept of a symbol set to analyze arbitrary na-Sequences. We for example look at how to automatically generate special ordered symbol sets corresponding to individual na-Sequences under various bases --- DNA, RNA, na- or even sometimes lexically meaningful AZ($\psi_{az}$). We have seen how to define special symbol sets based on n-gram abstractions of na-Sequences, such as might help in logic with special na-Subsequences such as START and STOP codons.
+
+
+In \textbf{\hyperref[SEC3A]{Chapter \ref{SEC3A}}} we then consider the interesting matter of \textbf{complement sequences} and \textbf{complement symbol sets}. We look at how to generate complements given a starting sequence or symbol set. We look into the interesting fact that complementing $\psi_{DNA}$ helps us arrive at the common \textbf{A-T-C-G} ordering of terms such as in $\dot{\psi}_{DNA}$. Though we don't use it immediately, we see that we might also talk of orthogonal symbol sets and orthogonal symbol set identities relation to na-Sequences.
+
+In \textbf{\hyperref[SEC4A]{Chapter \ref{SEC4A}}} we dive into how to leverage the \textbf{ADM} and \textbf{MSS} to perform non-trivial sequence analyses. We utilize four scenarios starting with basic scenarios between two individual sequences of potentially unequal lengths, all the way to analyzing entire collections or populations based on their representative na-Sequences. We look at how to leverage the \textbf{TEA} text-oriented GPL to conduct some of the essential analyses proposed, readily via the the commandline, and with sequences of any size stored in basic text files. We see that using the concept of the \textbf{modal sequence statistic}, whether applied to individual na-Sequences, collections of them or just sub-sequences of a longer DNA or RNA strand, could help us leverage statistical summary information about a sequence that might otherwise not be easily to glean or leverage. Especially, with previous work having shown us that traditional statistical measures and tests might sometimes fail to capture differences between actually different sequences, we further explore this idea as part of a detailed analysis of several DNA and RNA sequences across the major four different scenarios. We also learn that, where some obvious measures and techniques might fail to perform well or as expected, the careful use of the ADM, MSS and also newly defined \textbf{sequence characteristic} as well as \textbf{population characteristic} measures can offer the analyst new, better and indispensable information about one or more sequences while making comparisons or designing computational logic around the properties of sequences easier and repeatable. In this chapter too, particularly in \textbf{\hyperref[SECPROXPOP]{Section \ref{SECPROXPOP}}}, we develop an algorithm that might be utilized in bringing statistical artificial intelligence to the matter of sequence classification problems relating to labeled datasets. The closely related \textbf{\hyperref[SECSEQPROXSEQ]{Section \ref{SECSEQPROXSEQ}}} considers the matter of identifying the \textbf{closest-sequence} from a collection of na-Sequences when given a particular query na-Sequence. Finally, \textbf{\hyperref[SECSEQSTORAGE]{Section \ref{SECSEQSTORAGE}}} considers the important matter of \textbf{optimal database storage of na-Sequences} as is typically found in real-world systems such as those that do whole-genome sequencing or gene-banks, etc. In particular, we develop a special sequencing index or identifier based on \textbf{G$\ddot{o}$del Numbers} and our newly proposed sequence characteristic measure --- this, so storage and sequence search and look-up problems can be conducted efficiently using information already in the sequences.
+
+In \textbf{\hyperref[SECMATHSEQ]{Chapter \ref{SECMATHSEQ}}} we get into some deep mathematics around the critical problem of genome sequencing. We attack the matter by breaking it down into 3 major problems. \textbf{\hyperref[PROBG1]{Problem G1}} deals with the matter of how to compute the longest common subsequence given any two sequences. \textbf{\hyperref[PROBG2]{Problem G2}} deals with how, as happens during conventional genome sequencing, we have sections of two or more sequences that not exactly the same, but which must be reduced to some \textbf{consensus sequence} that is most true to all of them. And then in \textbf{\hyperref[SECCOMPGENSEQ]{Problem G3}}, we consider how to arrive at the final best consensus sequence that also unifies all the disparate input sequences originally provided, into a single sequence that is then the genome sequence of the entity under analysis. We then formally define an abstract genome sequencing machine in \textbf{\hyperref[SECGENSEQ]{Section \ref{SECGENSEQ}}}, and culminate in an important result, the \textbf{Identity Genome Sequence Law} in \textbf{\hyperref[SECIGSL]{Section \ref{SECIGSL}}}.
+
+
+We then turn our attention to the matter of how genetic code is translated into actual living organisms in \textbf{\hyperref[SEC05]{Chapter \ref{SEC05}}}. Focusing at the molecular level, we tackle the matter of the algorithm by which the most basic synthesis happens in a cell. Thus, \textbf{\hyperref[SECPROT]{Section \ref{SECPROT}}} presents the \textbf{protein synthesis  algorithm}, and among important contributions of this work are the two diagrams --- \textbf{Figure \ref{FIG3}} and \textbf{Figure \ref{FIG4}}, one a flow-chart for the algorithm, the other a \textbf{State Machine} for the Ribosome, the later also highlighting our concept of what the \textbf{Instruction Set} for a Ribosome could be --- a useful concept for those planning on designing or implementing artificial ribosomes or bio-automata in simulation or kind.
+
+
+Our final chapter, \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}}, looks at what results from actual processing of genome sequences or rather DNA code; the manifestation of some living thing, organism or some aspect of it as specified in the underlying genetic code. Thus, we explore \textbf{genome expression} formally. Via a thought-experiment, we propose a hypothetical genome-expression system --- the \textbf{Lu-Genome Expression System} (LGES), and do break down the expression process into meaningful bits; \textbf{\hyperref[SECOZIN]{Section \ref{SECOZIN}}} deals with a visual encoding method that leverages a digit-cipher named \textbf{OZIN}, and this is used to express storage-level genetic code (in decimal/numeric form), it its \textbf{intermediate form} --- equivalent to DNA-to-mRNA transcription in living organisms. The essential transcription rules are captured in \textbf{\hyperref[ALGCOZIN]{Algorithm \ref{ALGCOZIN}}}. Some examples of such transcription in LGES are shown in \textbf{\hyperref[SECEXAMTRANSC]{Section \ref{SECEXAMTRANSC}}}. We finally turn attention to the final expression step --- equivalent to mRNA-to-Protein/Function translation in nature, in \textbf{\hyperref[SECGENEXPRE]{Section \ref{SECGENEXPRE}}}, and also get to see yet another innovation in the form of a genetic-code-to-spatial-form encoding based on a cipher we call \textbf{Platonic Form Cipher} (\textbf{\hyperref[SECPLATONIC]{Section \ref{SECPLATONIC}}}). The essential algorithm for how to perform genome expression all the way from storage code into the final organism is depicted in \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}, and we close with some examples of complete, though hypothetical, fully-expressed genomes in \textbf{\hyperref[SECFULLGES]{Section \ref{SECFULLGES}}}.
+
+
+
+
+
+So, with that introduction clearing up much of the basic genetics nomenclature and concepts that we shall use in the rest of this work, we then dive into the meat of our undertaking as such; \textbf{\hyperref[SEC2]{Chapter \ref{SEC2}}} shall introduce the use of terminology and notation from transformatics to describe facts about genome sequences at various levels of abstraction. We shall look at using sequence symbol sets, sequence abstraction using sub-sequence symbols that can later be re-transformed into flat sequences, the idea of sequence cardinality when applied to DNA sequences and more. Then in \textbf{\hyperref[SEC3]{Chapter \ref{SEC3}}} we shall deepen our discussion by considering how some of the measures from transformatics might be applied in genetic sequence analysis. We shall look into the ADM and PCR especially --- the other for cases where any two sequences are of the same length and similar symbol sets, and the other for cases where these need not be the same across the sequences under analysis. Then in \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}} we shall take on the interesting matter for how, despite being merely a sequence of symbols, genetic code sequences actually can be likened to how a MSS can be used to specify how to reconstruct some other sequence. First, in \textbf{\hyperref[SEC05]{Chapter \ref{SEC05}}} we shall first look at an overview of how actual interpretation or execution (more conventionally just referred to as ``gene translation") results in the manufacturing of proteins, and shall likewise look at some example actual gene translation in general and with a particular case. In \textbf{Section \ref{SEC5}} we shall then dive into a more hands-on exploration of this matter, with a hypothetical genome system (the \textbf{Numeral-Gene Code}) that can allow us to not only creatively explore what genetic code is about, but which can also allow us to approach the rather complex matter of how DNA gets interpreted/translated into actual living tissue as well as a complete living organism. We shall introduce some two systems for how to decode our numero-gene DNA code into a kind of mRNA via the \textbf{Ozin-Transformer} and from ozin-gene code into actual tissue/proteins via the \textbf{Plato-Form Generator} that allows us to transcribe DNA into an orgnanism that has a predictable characteristic appearance and geometry, but also which still contains its essential genetic code just like normal living organisms do. Then we shall wrap-up in the \textbf{\hyperref[CONC]{Conclusion}}, looking at what we have accomplished, what remains to be done, and what the implications of this undertaking might be.
+
+
+%---[ END BOOK CONTENT/CHAPTERS ]
+
+%---[ BEGIN BOOK END/APPENDICES]
 \begin{appendices}
 
 \chapter{Origins of the OZIN Cipher}
@@ -2640,6 +2864,9 @@ For some, the \textbf{Ozin Cipher}\cite{lutalo_2025_ozin} (see \textbf{Section \
 \bibliography{references}
 
 \comment{
+
+%\newpage
+
 \vspace{5cm}
 \fbox{
 \begin{minipage}{0.9\textwidth}
@@ -2651,6 +2878,8 @@ Lutalo, Joseph Willrich (2025). \textbf{The Theory of Sequence Transformers \& t
 \\
 }
 
+
+%---[ END BOOK END/BACKCOVER]
 
 % insert [back] cover --- could just be a PNG or PDF
 \includepdf[pages=1]{resources/pdfs/back_cover.pdf}
