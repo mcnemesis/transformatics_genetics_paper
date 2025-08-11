@@ -27,6 +27,28 @@ Joseph~Willrich Lutalo.
 \newblock \url{https://figshare.com/articles/online
   resource/The\_PLATO\_Cipher/29867843/1}, Aug 2025.
 
+\bibitem{shrinesjwl}
+Joseph~Willrich Lutalo.
+\newblock {\em SECTION 5: THE AFTERMATH: THE NEW CHWEZI}.
+\newblock I*POW, 2023.
+\newblock The official, free-access electronic edition is accessible via:
+  \url{https://t.me/ipowriters/26}.
+
+\bibitem{lutalo_2025_sop}
+Joseph~Willrich Lutalo.
+\newblock Statement of purpose (university of oxford).
+\newblock \url{https://figshare.com/articles/online
+  resource/Statement_of_Purpose_University_of_Oxford_/29885561/1}, Aug 2025.
+
+\bibitem{Lutalo2025_phd}
+Joseph~Willrich Lutalo.
+\newblock {PROPOSED DOCTORAL THESIS: A Theory of Entropy Sources \& Random
+  Number Generators: DPhil Computer Science, Oxford University, Joseph Willrich
+  Lutalo MSc. BSc. alumni Makerere University}.
+\newblock 6 2025.
+\newblock Accessible via
+  \url{https://figshare.com/articles/online_resource/PROPOSED_DOCTORAL_THESIS_A_Theory_of_Entropy_Sources_Random_Number_Generators_DPhil_Computer_Science_Oxford_University_Joseph_Willrich_Lutalo_MSc_BSc_alumni_Makerere_University/29209706}.
+
 \bibitem{transformatics}
 Joseph~Willrich Lutalo.
 \newblock \textbf{The Theory of Sequence Transformers \& their Statistics}: The
@@ -36,6 +58,12 @@ Joseph~Willrich Lutalo.
   and piecemeal compression ratio.
 \newblock {\em Academia.edu.}, 2025.
 \newblock \url{https://doi.org/10.6084/m9.figshare.29505824.v3}.
+
+\bibitem{cli_tttt}
+mcnemesis.
+\newblock cli\_tttt: Command line interface for tttt.
+\newblock \url{https://github.com/mcnemesis/cli_tttt/}, 2024.
+\newblock Accessed: 4th Aug, 2025.
 
 \bibitem{sagan1981cosmos}
 Carl Sagan.
@@ -111,6 +139,20 @@ University of~Leicester.
   n.d.
 \newblock Accessed July 29, 2025.
 
+\bibitem{ossipaper}
+Joseph~Willrich Lutalo.
+\newblock Concerning a special summation that preserves the base-10 orthogonal
+  symbol set identity in both addends and the sum.
+\newblock {\em Academia}, 2025.
+\newblock \textit{Accessible via}
+  \url{https://www.academia.edu/download/122499576/The_Symbol_Set_Identity_paper_Joseph_Willrich_Lutalo_25APR2025.pdf}.
+
+\bibitem{Lutalo2024_taz}
+Joseph~Willrich Lutalo.
+\newblock Tea taz - transforming executable alphabet a: to z: Command space
+  specification.
+\newblock \url{https://doi.org/10.6084/m9.figshare.26661328}, 2024.
+
 \bibitem{mochizuki_frobenioids1}
 Shinichi Mochizuki.
 \newblock The geometry of frobenioids i: The general theory.
@@ -147,14 +189,6 @@ Nature Education.
   \url{https://www.nature.com/scitable/content/the-four-bases-atcg-6491969/},
   n.d.
 \newblock Accessed July 2025.
-
-\bibitem{ossipaper}
-Joseph~Willrich Lutalo.
-\newblock Concerning a special summation that preserves the base-10 orthogonal
-  symbol set identity in both addends and the sum.
-\newblock {\em Academia}, 2025.
-\newblock \textit{Accessible via}
-  \url{https://www.academia.edu/download/122499576/The_Symbol_Set_Identity_paper_Joseph_Willrich_Lutalo_25APR2025.pdf}.
 
 \bibitem{thoughtco_geneticcode}
 Regina Bailey.
@@ -220,18 +254,6 @@ Shusei Sato, Yasukazu Nakamura, Takakazu Kaneko, Erika Asamizu, and Satoshi
   Tabata.
 \newblock Complete structure of the chloroplast genome of arabidopsis thaliana.
 \newblock {\em DNA Research}, 6(5):283--290, 1999.
-
-\bibitem{Lutalo2024_taz}
-Joseph~Willrich Lutalo.
-\newblock Tea taz - transforming executable alphabet a: to z: Command space
-  specification.
-\newblock \url{https://doi.org/10.6084/m9.figshare.26661328}, 2024.
-
-\bibitem{cli_tttt}
-mcnemesis.
-\newblock cli\_tttt: Command line interface for tttt.
-\newblock \url{https://github.com/mcnemesis/cli_tttt/}, 2024.
-\newblock Accessed: 4th Aug, 2025.
 
 \bibitem{illingworth1996computing}
 Valerie Illingworth, editor.
