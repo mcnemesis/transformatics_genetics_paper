@@ -5,7 +5,7 @@
 \contentsline {chapter}{\numberline {3}Sequence Abstraction using Symbol Sets: From Flat-Structure Sequences to Higher-Level Sequences}{13}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Sequence Analysis Using Symbol Sets}{15}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Sequence Analysis Using Complement Sets}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Significance of Sequence Complements, $\lnot \Theta $ and Complement Symbol Sets, $\lnot \psi _\beta $}{21}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Significance of Sequence Complements, $\lnot \Theta $, and Complement Symbol Sets, $\lnot \psi _\beta $}{21}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Potential Applications of Sequence Complements or Inverses}{23}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Sequence Analysis Using The Anagram Distance and the Modal Sequence Statistic}{27}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Six Sequences and Four Scenarios}{27}{section.6.1}%
@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {6.6.1}Measuring Proximity to a Set of Sequences, $\Omega ^n$}{40}{subsection.6.6.1}%
 \contentsline {subsection}{\numberline {6.6.2}Measuring Proximity between a $Q_k$ and Members of a Sequence Population, $\Omega ^n$}{43}{subsection.6.6.2}%
 \contentsline {section}{\numberline {6.7}Concerning Optimal Symbolic Storage of na-Sequences in Databases - Computing the G$\ddot {o}$del Number for a Sequence $\Theta _n$ based on its Characteristic $\hbar (\overset {>}{\Theta _n})$ }{45}{section.6.7}%
-\contentsline {chapter}{\numberline {7}The Mathematics of Genome Sequencing: Sequence Alignment, The Modal Sequence, The Sequencing Machine and the Absolute Identifier Genome Sequence Law}{49}{chapter.7}%
+\contentsline {chapter}{\numberline {7}The Mathematics of Genome Sequencing: Sequence Alignment, The Modal Sequence, The Sequencing Machine and the Identifier Genome Sequence Law}{49}{chapter.7}%
 \contentsline {section}{\numberline {7.1}PROBLEM G1: Computing MCS: Maximum Common Subsequence: $\Theta _1 \Diamond \Theta _2$}{50}{section.7.1}%
 \contentsline {section}{\numberline {7.2}PROBLEM G2: Computing Overlap Resultant Sequences: $\Theta _1 \ast \Theta _2$}{52}{section.7.2}%
 \contentsline {section}{\numberline {7.3}PROBLEM G3: Computing the Genome Sequence (GS): $(\Theta _1 \Diamond \Theta _2)^*$}{52}{section.7.3}%
@@ -32,7 +32,10 @@
 \contentsline {subsection}{\numberline {9.1.2}Examples of $\Omega $-Genetic Code Transcription}{74}{subsection.9.1.2}%
 \contentsline {section}{\numberline {9.2}Genetic Code Sequences Processed as Modal Sequence Statistics}{75}{section.9.2}%
 \contentsline {subsection}{\numberline {9.2.1}The Platonic Form Cipher and Position-Sensitive Genetic Code Translation}{76}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}$\psi _{\Omega }$-to-$\psi _{pf}$: PLATONIC Form Genetic Code Transcription Rules}{77}{subsection.9.2.2}%
-\contentsline {subsection}{\numberline {9.2.3}Examples of Completed Lu-Genome Sequence Expressions}{80}{subsection.9.2.3}%
-\contentsline {chapter}{\numberline {10}Conclusion}{85}{chapter.10}%
-\contentsline {chapter}{Appendix \numberline {A}Origins of the OZIN Cipher}{91}{appendix.a.A}%
+\contentsline {subsection}{\numberline {9.2.2}$\psi _{\Omega }$-to-$\psi _{pf}$: PLATONIC Form Genetic Code Translation Rules}{77}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Examples of Complete Lu-Genome Expressions}{81}{subsection.9.2.3}%
+\contentsline {section}{\numberline {9.3}The Extended Lu-Genome Expression System (x-LGES)}{86}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}$\psi _{\Omega }$-to-($\psi _{oz}$-$\psi _{pf}$-$\psi _{oz}$): The x-LGES Algorithm}{87}{subsection.9.3.1}%
+\contentsline {section}{\numberline {9.4}Actual DNA Sequences Expressed in the Extended Lu-Genome Expression System}{89}{section.9.4}%
+\contentsline {chapter}{\numberline {10}Conclusion}{95}{chapter.10}%
+\contentsline {chapter}{Appendix \numberline {A}Origins of the OZIN Cipher}{101}{appendix.a.A}%
