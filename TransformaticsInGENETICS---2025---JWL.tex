@@ -2586,6 +2586,8 @@ This ensures, we have the prefix affix, \textbf{IFA}, as the contents of the seq
 	}
 	\item { Else: \textbf{resolve} the correct  $\boxed{\omega_i^*}$  for  $\omega_i^*$  by using the relation:\\
 
+\hl{ TODO: should we derive the PF-segments as such? Cross-check and then review all LGES and x-LGES diagrams as per highlighted tricky step in algorithm to ensure they are consistent with rules. }
+
 \begin{equation}
 \label{EQFBOXED}
  \boxed{\omega_i^*} = \rho_j \in \lnot(\psi_{pl}) +  j \times \omega_i^* : j = I(\omega_i^*,\overset{>}{OZ(\Theta_\Omega)})
@@ -2642,6 +2644,7 @@ $\qed$
 
 \textbf{IMPORTANT NOTE:} Realize that \textbf{Step\#2(b)iii(A)} of \textbf{Algorithm \ref{ALGCOZINPLATO}} processes/operates on the \textbf{IFA MSS}, $\overset{>}{OZ(\Theta_\Omega)}$, and not the \textbf{IFA} directly. This, so that, if a symbol $\omega_i$ appears at position $i$ in \textbf{IFA MSS}, then it shall be replicated/multiplied/cloned $j$ times\footnote{That $j = \invpi(\psi_{pf})-i = I(\omega_i^*,\overset{>}{OZ(\Theta_\Omega)})$ means, the first element in \textbf{IFA MSS} gets cloned/multiplied more times than a later term, since it also corresponds to the platonic form in $\psi_{pf}$ with more appendage points.} when expressing the corresponding $\psi_{pf}$ term in $\boxed{OZ(\Theta_\Omega)}$. Good enough, we have already treated of sequence complements and inverted look-ups in \textbf{Section \ref{SECSIGCOMPLE}}, for this case, the corresponding mapping from indices in $\overset{>}{OZ(\Theta_\Omega)}$ to indices in  $\psi_{pf}$ is as below --- with necessary adjustment such that $ 0 \leq i < \invpi(\psi_{pf})$.
 
+\hl{ TODO: should we derive the PF-segments as such? Cross-check and then review all LGES and x-LGES diagrams as per highlighted tricky step in algorithm to ensure they are consistent with rules. }
 
 \[
 \begin{tikzpicture}[baseline=(current bounding box.center)]
@@ -2869,7 +2872,7 @@ We shall come to appreciate this updated protocol in \textbf{\hyperref[ALGCOZINP
   \end{center}
 \end{figure}
 
-The first example is with the notorious \textbf{Euler Virus} originally defined in \textbf{\hyperref[EQDNAV]{Equation \ref{EQDNAV}}}, and this rendering shown in \textbf{Figure \ref{FIGLGESEULERVIRUSv2EXT}} shall start to paint the new picture for you, if you compare it to the original OZIN-expression of its equivalent \textbf{mRNA} as shown in \textbf{Figure \ref{FIGOZEVIRUS}}, and then later as the basic \textbf{LGES}-form in \textbf{Figure \ref{FIGLGESEULERVIRUSv2}} which shows the full genome expression minus the extension \textbf{GES} SUFFIX/ROOT.
+The first example is with the notorious \textbf{Euler Virus} originally defined in \textbf{\hyperref[EQDNAV]{Equation \ref{EQDNAV}}}, and this rendering shown in \textbf{Figure \ref{FIGLGESEULERVIRUSv2EXT}} shall start to paint the new picture for you, if you compare it to the original OZIN-expression of its equivalent \textbf{mRNA} as shown in \textbf{Figure \ref{FIGOZEVIRUS}}, and then that same organism as the basic \textbf{LGES}-form in \textbf{Figure \ref{FIGLGESEULERVIRUSv2}} which shows the full genome expression minus the extension \textbf{GES} SUFFIX/ROOT.
 
 
 \section{Actual DNA Sequences Expressed in the Extended Lu-Genome Expression System}
@@ -2881,11 +2884,13 @@ Concerning working with the LGES or x-LGES as it is at the moment, the entry poi
 Good enough, we have had extensive background concerning transformation of sequences across symbol sets in earlier chapters, and so, we can just re-iterate some points here.
 
 \begin{itemize}
-\item We know that any na-Sequence shall span $\psi_{na}$, which has cardinality 5 (refer to \textbf{\hyperref[LAWNA]{Law \ref{LAWNA}}}, and yet, $\invpi(\psi_{10}) = 10 > \invpi(\psi_{na})$.
+\item We know that any na-Sequence shall span $\psi_{na}$, which has cardinality 5 (refer to \textbf{\hyperref[LAWNA]{Law \ref{LAWNA}}}), and yet, $\invpi(\psi_{10}) = 10 > \invpi(\psi_{na})$.
 \item For either DNA ($\psi_{DNA}$) or RNA ($\psi_{RNA}$), their corresponding symbol set cardinalities are just \textbf{4} and \textbf{4} respectively, which still doesn't map well to the base-10 or rather $\psi_{10}$ symbol set that the Lu-Genome Expression System requires.
 \end{itemize}
 
 So, using sequences we have already encountered, such as $\Theta_4^*$ in \textbf{\hyperref[EQ6B]{Equation \ref{EQ6B}}} --- an RNA sequence, or its original DNA form (as in \textbf{\hyperref[EQ5]{Equation \ref{EQ5}}}) how, should we go about expressing it in equivalent or sufficient $\Omega$-form?
+
+\subsection{Converting Between Nucleic Acid Code and Numeric Codes}
 
 First, given the constraints we have seen above, one plausible solution might be to start with a naive\footnote{We think it is naive, because, using the position-index operator $I(\omega,\Theta)$ in the encoding definition, it isn't clear how we shall ever resolve for the digit `0' given DNA has only 4 distinct symbols.} encoding that merely maps every element in $\psi_{DNA}$ to a corresponding term in $\psi_{10}$ \textbf{based not on the quantity of the symbol --- since na-Sequences aren't made of `literal numbers', but rather, based on the position of the symbol within the DNA symbol set}. So that, we have the following basic encoding-transformer:
 
@@ -2921,6 +2926,7 @@ And so, using that \textbf{\hyperref[TRANSFDNADECEN]{Transformer \ref{TRANSFDNAD
 With that basic mapping, and our example DNA sequence from \textbf{\hyperref[EQ5]{Equation \ref{EQ5}}}) we see that the corresponding decimal-encoded DNA sequence shall merely be as in the following transformation:
 
 \begin{trans}
+\label{TRANSSEQATG}
 $\Theta = \langle  A, T, G, A, A, A, T, T, A, T, A, G \rangle$\\
 $ \xrightarrow{O_{dna-dec-encode}(\cdot)} \langle  1, 4, 3, 1, 1, 1, 4, 4, 1, 4, 1, 3 \rangle$
 \end{trans}
@@ -2945,6 +2951,7 @@ $ $\\
 $\Theta \xrightarrow{O_{na-dec-decode}(\cdot)} \Theta^*;$\\
 $\forall \omega_i \in \psi_{na}: I(\omega_i,\psi_{na}) = i \implies \exists d_j \in \psi_{10}: I(d_j,\psi_{10}) = j = i \quad \lor \quad I(d_j,\psi_{10}) = \invpi(\psi_{na}) + i \quad \implies \omega_i \leftrightarrow d_j $\\
 $\land \quad \forall \alpha_k \in \Theta \quad \exists d_k \in \Theta^*: I(\alpha_k,\Theta) = I(d_k,\Theta^*) = k \quad \land \quad I(d_k,\psi_{10}) = I(\alpha_k,\psi_{na}) \lor I(d_k,\psi_{10}) = \invpi(\psi_{na}) + I(\alpha_k,\psi_{na}) \quad \implies \alpha_k \leftrightarrow d_k $
+$\qed$
 \end{transf}
 
 So that, by \textbf{\hyperref[TRANSFDECTONASEQ]{Transformer \ref{TRANSFDECTONASEQ}}}, we arrive at complete decimal-to-DNA and decimal-to-RNA or generally decimal-to-na-Sequence symbol encoding-decoding is as shown in the following diagram:
@@ -2979,10 +2986,30 @@ So that, by \textbf{\hyperref[TRANSFDECTONASEQ]{Transformer \ref{TRANSFDECTONASE
 
 Of course, the necessary tweak here, especially for sequences target sequences specific to either DNA or RNA and not both, the trick terms `T' and `U' need to be dealt with as necessary --- possibly with a basic swapping of all `U' with `T' for an na-Sequence targeting a DNA processor, and vice-versa for those targeting strict RNA processors. 
 
+Also, that mapping offers us a basic protraction na-Sequence that is a basic multiplication of the $psi_{na}$ symbol set by 1. Because it maps nicely to terms in $\psi_{10}$, both sequences having equal length, we could use it in various problems such as in generating random na-Sequences or mapping random base-10 o-SSI sequences to corresponding na-Sequences. We set that sequence aside for later use in the following equation:
+
+
+\begin{equation}
+\label{EQDUPLNASEQ}
+\Theta_{2na} =  = \psi_{na} \cdot \psi_{na} = \langle A , C , G , T , U , A , C , G , T , U \rangle
+\end{equation}\\
+
+However, and also related, we might, also come to appreciate a related sequence, $\Theta_{palna}$ that is a palindrome of formed out of $\psi_{na}$, but still, with the same length as $\psi_{10}$.
+
+
+\begin{equation}
+\label{EQPALNASEQ}
+\Theta_{palna} = \psi_{na} \cdot \lnot(\psi_{na}) =  \langle A , C , G , T , U , U , T , G , C , A \rangle
+\end{equation}\\
+
 
 That said, and back to our \textbf{x-LGES} problem...
 
-So, for $\Omega_{HiFinelle} = 8649137520$, we would obtain the equivalent na-Sequence as shown:
+\subsection{Revisiting Numeric Sequences}
+
+Before we proceed with actual na-Sequences, we shall first revisit hypothetical genome sequences expressed in numeric form, and then shall use the experience we garner to handle processing of actual na-Sequences later.
+
+So, returning to that interesting \textbf{Hi-Fi o-SSI} sequence --- $\Omega_{HiFinelle} = 8649137520$, if we are to convert it to an equivalent na-Sequence, we would obtain the results:
 
 \begin{trans}
 $\Omega_{HiFinelle} = 8649137520 \xrightarrow{O_{na-dec-decode}(\cdot)} TCUUCTGAGA$
@@ -3029,6 +3056,57 @@ $ \implies \boxed{OZ(\Omega_{HiFinelle})}^* =  \langle 8649137520 \rangle_{oz}\c
 Without actually wasting time and space rendering the visual equivalence of that organism, among interesting things to note from \textbf{Transformation \ref{TRANSGENSEQHiFinelle}} is that unlike in \textbf{\hyperref[TRANSGENSEQEVIRUS]{Transformation \ref{TRANSGENSEQEVIRUS}}}, we have applied the extended LGES algorithm --- \textbf{\hyperref[ALGCOZINPLATOEXT]{Algorithm \ref{ALGCOZINPLATOEXT}}}, so that the final expression in that transformation contains the HEAD, BODY and ROOT of the organism. Also, and interesting to note, that despite this particular sequence having no exciting \textbf{IFA MSS} --- since all the symbols in the original sequence have frequency 1 (which is why we see the organism's HEAD and ROOT looking exactly the same\footnote{We won't show many pictures here except perhaps \textbf{Figure \ref{FIGEARTHWORM}}, but some kinds of \textbf{millipedes} and \textbf{centipedes} have this strange symmetrical anatomy that makes it difficult to distinguish its head from the tail. Earthworms too! Someone suggested the concept of the \textit{Ouroboros} from esoteric folklore, that exhibits a kind of self-referential form, however, in my local folklores and vocabulary, we have a peculiar snake-like creature known as \textit{namunungu} that exhibits this peculiar form too.} \textit{in numeric form}), though, because of the consequences of how the BODY component is generated, we see a potential mid-BODY-JOINT, that would definitely make the corresponding \textbf{FGE} interesting to look at.
 
 
+
+\subsection{x-LGES applied to named DNA Sequences}
+
+Now that we have attained sufficient experience with expressing pure numeric sequences, we can return to actual na-Sequences, and checkout some potentially enlightening scenarios.
+
+First, we shall want to have a way to assign meaningful names to our sequences. For example, the sequence from \textbf{\hyperref[TRANSSEQATG]{Transformation \ref{TRANSSEQATG}}}. Instead of just calling it $\Theta$, we could adapt a name from its corresponding na-Sequence, and then use that to distinguish it from other na-Sequences we shall want to compare it against.
+
+Without caring whether it actually has a standard or conventional name based on its actual composition as depicted, we could adopt the system such as picking the first letters of its contained codons in the order they appear in the sequence, and then assign it a name based on the resulting acronym. So, we for example know from \textbf{\hyperref[TAB1]{Table \ref{TAB1}}} originally associated with that sequence, that the corresponding codons (also see \textbf{\hyperref[EQ4]{Equation \ref{EQ4}}}) are as follows:
+
+\begin{equation}
+\Theta = \langle Met, Lys, Leu, Amber \rangle
+\end{equation}
+
+So that we can just obtain a name for the sequence using the above suggested strategy as such:
+
+\begin{trans}
+$\langle Met, Lys, Leu, Amber \rangle \rightarrow \langle M, L, L, A \rangle \rightarrow MLLA$
+\end{trans}
+
+Thus, we might formally refer to our gene-program with a proper name as $\Theta_{MLLA}$ or just the \textbf{MLLA}-gene program --- where no confusion might arise, we shall just refer to it as $\Theta_{ml}$. 
+
+So, how would this program's corresponding sequence appear if it were expressed in the x-LGES?
+
+We have its corresponding $\Omega$-form expression in \textbf{\hyperref[TRANSSEQATG]{Transformation \ref{TRANSSEQATG}}}, so that:
+
+\begin{equation}
+\label{EQSEQMLLA}
+\Theta_{ml} = \langle  1, 4, 3, 1, 1, 1, 4, 4, 1, 4, 1, 3 \rangle
+\end{equation}
+
+From that, we can leverage the pre-rendering calculus we have already encountered in \textbf{\hyperref[TRANSGENSEQHiFinelle]{Transformation \ref{TRANSGENSEQHiFinelle}}}, and so that we apply \textbf{\hyperref[ALGCOZINPLATOEXT]{Algorithm \ref{ALGCOZINPLATOEXT}}} to $\Theta_{ml}$ as such: 
+
+
+\begin{center}
+\fbox{
+\begin{minipage}{\textwidth}
+
+\hl{ TODO: fix the following derivation, also review all previous LGES and x-LGES diagrams as per highlighted tricky step in algorithm }
+
+\begin{trans}
+\label{TRANSGENSEQMLLA}
+$\Theta_{ml} = \langle 1, 4, 3, 1, 1, 1, 4, 4, 1, 4, 1, 3 \rangle \rightarrow \hbar(\overset{>}{\Theta_{ml}}) = \text{\textbf{1}6\textbf{4}4\textbf{3}2} \rightarrow \overset{>}{\Theta_{ml}} = \langle 1,4,3 \rangle \implies \boxed{OZ(\Theta_{ml})} \approx \lnot{\langle 1,4,3 \rangle_{pf}} \implies \boxed{OZ(\Theta_{ml})}^* =  \langle 1, 4, 3, 1, 1, 1, 4, 4, 1, 4, 1, 3 \rangle_{oz}\cdot\boxed{\langle 9,  \rangle}_{pf}\cdot\langle 1,4,3 \rangle_{oz}$\\
+\end{trans}
+
+
+\end{minipage}}
+\\
+\end{center}
+
+
+
 \chapter{Conclusion}
 \label{CONC}
 
@@ -3047,8 +3125,8 @@ In terms of \textbf{Key Metrics and Contributions} this single work has brought 
 	\item \textbf{\hyperref[LAWGDL]{Law 3}}: The \textbf{Identity Genome Sequence} Law.
 	\end{enumerate}
 }
-\item \textbf{13 Transformers} were developed and presented for the first time, including the formal definition of the \textbf{Ribosome} as a \textbf{Protein Generator}.
-\item \textbf{19 Transformations} were presented to help advance generic as well as particular computational solutions to many kinds of basic problems in sequence analysis, processing and one concerning gene/genome expression.
+\item \textbf{14 Transformers} were developed and presented for the first time, including the formal definition of the \textbf{Ribosome} as a \textbf{Protein Generator}.
+\item \textbf{24 Transformations} were presented to help advance generic as well as particular computational solutions to many kinds of basic problems in sequence analysis, processing and one concerning gene/genome expression.
 \item{\textbf{5 Algorithms} were developed and presented for the first time, including:
 	\begin{enumerate}
 	\item \textbf{\hyperref[ALGCSA]{Algorithm 1}}: The \textbf{Closest Sequence Algorithm}.
@@ -3056,13 +3134,17 @@ In terms of \textbf{Key Metrics and Contributions} this single work has brought 
 	\item \textbf{\hyperref[ALGCOZIN]{Algorithm 3}}: The \textbf{$\Omega$-to-OZIN Genetic Code Transcription Algorithm}.
 	\item \textbf{\hyperref[ALGCOZINPLATO]{Algorithm 4}}: The \textbf{$\Omega$-to-PLATONIC Form Genetic Code Expression Algorithm}.
 	\item \textbf{\hyperref[ALGCOZINPLATOEXT]{Algorithm 5}}: The \textbf{x-LGES Algorithm}.
+	\item \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm 6}}: The \textbf{First Lu-Shuffle Algorithm}: $\text{lu\_shuffler\_a}(\Theta, k)$.
+	\item \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm 7}}: The \textbf{Second Lu-Shuffle Algorithm}: $\text{lu\_shuffler\_b}(\Theta, k)$.
 	\end{enumerate}
 }
 \item \textbf{3 Tabular Analyses} were presented, including \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}} that depicts how to perform comparative statistical analysis of DNA, RNA or any na-Sequence using some measures and methods from transformatics.
 \item \textbf{2 Original Ciphers} --- very rare and universally usable cryptographic keys were presented as part of the \textbf{Lu-Genome Sequence Expression System}, as well as proper justification for their practical relevance and sufficient historical background and example applications of both.
 \item \textbf{3 Core Problems} in the matter/domain of \textbf{Genome Sequencing} were formally defined and their theoretical solutions also presented.
+\item \textbf{More than 3 Source Code Examples}, some in the TEA language, and relating to conducting quick analyses of arbitrary na-Sequences via the commandline, and two (in \textbf{\hyperref[SECRSG]{Appendix \ref{SECRSG}}}), concerning how to randomize arbitrary sequences using Python.
 \item And many other quantifiable and unquantifiable major and minor contributions to genetics, mathematics, computer science, philosophy and more.
 \end{enumerate}
+
 
 
 In \textbf{\hyperref[SEC2]{Chapter \ref{SEC2}}} we have formally defined the DNA and RNA symbol sets, $\psi_{DNA}$ and $\psi_{RNA}$. We have looked at the matter of the difference between the ordering of terms in these mathematically-oriented sets, relative to the common-place \textbf{A-T-C-G} ordering typical in biological and especially genetics literature. We have defined the more universal $\psi_{na}$ that would help apply logic to both DNA and RNA sequences, and have generalized all such sequences as \textbf{na-Sequences}.
@@ -3132,6 +3214,354 @@ For some, the \textbf{Ozin Cipher}\cite{lutalo_2025_ozin} (see \textbf{Section \
   \label{FIGCODEOZINNOTES}
   \end{center}
 \end{figure}
+
+
+\chapter{Random Sequence Generators (RSGs)}
+\label{SECRSG}
+
+
+In many problems involving intelligent or non-linear processing of sequences, we might come across the need for either a random number, a random symbol or a random sequence of these, spanning some known/particular symbol set. This for example could be how we solve the problem: \textbf{Given the DNA symbol set $\psi_{DNA}$, how to generate a random DNA sequence of length n?}.
+
+So, to help solve such critical and fundamental problems once and for all, and in a generic, transformatic-way, we shall specify some fundamental stochastic generator machines and algorithms, and these can then be used to solve any specific problem of generating a random sequence of a specific length given some finite symbol set.
+
+\section{The First Lu-Shuffle Algorithm (FLSA)}
+
+For this algorithm, for which we shall start by specifying its signature, the most important property it has is that it merely take a sequence $\Theta$ as input and some parameter $k$.
+
+\subsubsection{The FLSA Algorithm in Mathematics}
+
+\begin{alg}[The \textbf{First Lu-Shuffle Algorithm}: $\text{lu\_shuffler\_a}(\Theta, k)$]
+\label{ALGLUSHUFFLEA}
+\begin{enumerate}
+\item \textbf{GIVEN} source sequence $\Theta$ of length $n = \invpi(\Theta)$.
+\item  \textbf{GIVEN} input parameter $k$ that is \textbf{Initial Partition Index}.
+\item{  \textbf{INITIALIZE} the shuffled sequence, $\Theta^*$ with $\Theta$.
+
+		\begin{equation}
+		\Theta^* = \Theta_{input} = \Theta
+		\end{equation}
+}
+\item { \textbf{WHILE} \textbf{TRUE}:
+\begin{enumerate}
+	\item \textbf{BREAK IF} $2k > n$
+	\item \textbf{SET} partition index, $p_{index} = k \mod n$
+	\item \textbf{SET} partition start, $p_{start} = 0$
+	\item \textbf{SET} partition end, $p_{end} = p_{index} \times 2$
+	\item \textbf{SET} sub-partition end, $sp_{end} = \text{\textbf{CEIL}}(\frac{p_{end}}{2})$
+	\item \textbf{SET} left sub-partition, $\Theta_{l} = \{\omega_i | \omega_i \in \Theta^* \quad \land \quad i \in [p_{start},sp_{end}]\}$
+	\item \textbf{SET} right sub-partition, $\Theta_{r} = \{\omega_i | \omega_i \in \Theta^* \quad \land \quad i \in [sp_{end},p_{end}]\}$
+	\item \textbf{SET} unpartitioned sequence, $\Theta_{rest} = \{\omega_i | \omega_i \in \Theta^* \quad \land \quad i \in [2k,n]\}$
+	\item \textbf{SET} swapped sequence, $\Theta_{swap} = \Theta_{r} \cdot \Theta_{l}$
+	\item \textbf{UPDATE} resultant sequence, $\Theta^* = \Theta_{swap} \cdot \Theta_{rest}$
+	\item \textbf{INCREMENT} $k$: $k = k + 1$
+\end{enumerate}
+}
+\item \textbf{RETURN} resultant sequence, $\Theta^*$.
+\end{enumerate}
+$\qed$
+\end{alg}
+
+
+\subsubsection{Examples of Applying FLSA}
+\label{SECAPPLYFLSA}
+
+Using the basic, yet important sequence, $\psi_{10}$ (refer to \textbf{\hyperref[EQHYPDNASS]{Equation \ref{EQHYPDNASS}}}) as the input, especially given we leverage such in many aspects of applied transformatics and genetics engineering in this work, we see below, a trace of the accurate variants of that set, when it is shuffled using \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} and various meaningful values of the \textbf{initial partition index} starting from 0 and up to $n-1$.
+
+\begin{figure}[H]
+  \begin{center}
+\Large
+\begin{verbatim}
+k=0 | s=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+k=1 | s=[4, 5, 2, 8, 9, 3, 1, 6, 7, 0]
+k=2 | s=[9, 3, 2, 7, 0, 8, 5, 1, 6, 4]
+k=3 | s=[0, 8, 2, 6, 4, 7, 9, 5, 1, 3]
+k=4 | s=[4, 7, 0, 1, 3, 8, 2, 9, 5, 6]
+k=5 | s=[7, 0, 1, 5, 6, 3, 8, 2, 9, 4]
+k=6 | s=[3, 8, 2, 9, 4, 7, 0, 1, 5, 6]
+k=7 | s=[3, 8, 2, 9, 4, 7, 0, 1, 5, 6]
+k=8 | s=[3, 8, 2, 9, 4, 7, 0, 1, 5, 6]
+k=9 | s=[3, 8, 2, 9, 4, 7, 0, 1, 5, 6]
+\end{verbatim}
+
+   \caption{A Tabulation Trace of Shuffling the Base-10 n-SSI Sequence with increasing values of $k$, the \textbf{Initial Partitioning Index} for \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}}, the \textbf{First Lu-Shuffle Algorithm}.}
+  \label{FIGTRACEFLSA}
+  \end{center}
+\end{figure}
+
+We might also want to look at cases of generating shuffled or randomized na-Sequences based on well-known, useful starter sequences (not necessarily symbol sets, or deduplicated sequences, but still useful). For example, $\Theta_{2na}$ from \textbf{\hyperref[EQDUPLNASEQ]{Equation \ref{EQDUPLNASEQ}}}
+
+\begin{figure}[H]
+  \begin{center}
+\Large
+\begin{verbatim}
+k=0 | s=['A', 'C', 'G', 'T', 'U', 'A', 'C', 'G', 'T', 'U']
+k=1 | s=['U', 'A', 'G', 'T', 'U', 'T', 'C', 'C', 'G', 'A']
+k=2 | s=['U', 'T', 'G', 'G', 'A', 'T', 'A', 'C', 'C', 'U']
+k=3 | s=['A', 'T', 'G', 'C', 'U', 'G', 'U', 'A', 'C', 'T']
+k=4 | s=['U', 'G', 'A', 'C', 'T', 'T', 'G', 'U', 'A', 'C']
+k=5 | s=['G', 'A', 'C', 'A', 'C', 'T', 'T', 'G', 'U', 'U']
+k=6 | s=['T', 'T', 'G', 'U', 'U', 'G', 'A', 'C', 'A', 'C']
+k=7 | s=['T', 'T', 'G', 'U', 'U', 'G', 'A', 'C', 'A', 'C']
+k=8 | s=['T', 'T', 'G', 'U', 'U', 'G', 'A', 'C', 'A', 'C']
+k=9 | s=['T', 'T', 'G', 'U', 'U', 'G', 'A', 'C', 'A', 'C']
+\end{verbatim}
+
+   \caption{A Tabulation Trace of Shuffling the na-Sequence $\Theta_{2na}$ from \textbf{\hyperref[EQDUPLNASEQ]{Equation \ref{EQDUPLNASEQ}}} with \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}}.}
+  \label{FIGTRACEFLSA2NA}
+  \end{center}
+\end{figure}
+
+A closely related set of random na-Sequences would be that generated with \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} from the palindrome sequence $\Theta_{palna}$ from \textbf{\hyperref[EQPALNASEQ]{Equation \ref{EQPALNASEQ}}}:
+
+
+\begin{figure}[H]
+  \begin{center}
+\Large
+\begin{verbatim}
+k=0 | s=['A', 'C', 'G', 'T', 'U', 'U', 'T', 'G', 'C', 'A']
+k=1 | s=['U', 'U', 'G', 'C', 'A', 'T', 'C', 'T', 'G', 'A']
+k=2 | s=['A', 'T', 'G', 'G', 'A', 'C', 'U', 'C', 'T', 'U']
+k=3 | s=['A', 'C', 'G', 'T', 'U', 'G', 'A', 'U', 'C', 'T']
+k=4 | s=['U', 'G', 'A', 'C', 'T', 'C', 'G', 'A', 'U', 'T']
+k=5 | s=['G', 'A', 'C', 'U', 'T', 'T', 'C', 'G', 'A', 'U']
+k=6 | s=['T', 'C', 'G', 'A', 'U', 'G', 'A', 'C', 'U', 'T']
+k=7 | s=['T', 'C', 'G', 'A', 'U', 'G', 'A', 'C', 'U', 'T']
+k=8 | s=['T', 'C', 'G', 'A', 'U', 'G', 'A', 'C', 'U', 'T']
+k=9 | s=['T', 'C', 'G', 'A', 'U', 'G', 'A', 'C', 'U', 'T']
+\end{verbatim}
+
+   \caption{A Tabulation Trace of Shuffling the na-Sequence $\Theta_{palna}$ from \textbf{\hyperref[EQPALNASEQ]{Equation \ref{EQPALNASEQ}}} with \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}}.}
+  \label{FIGTRACEFLSAPALNA}
+  \end{center}
+\end{figure}
+
+\subsection{The Source Code for FLSA}
+
+And the essential source code --- compartible with \textbf{Python 3}, is as provided in \textbf{\hyperref[LST_FLSA]{Listing \ref{LST_FLSA}}}
+
+
+\begin{figure}[H]
+  \begin{center}
+  \begin{lstlisting}[caption={The First Lu-Shuffle Algorithm in Python}, label={LST_FLSA}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}]
+#!/usr/bin/env python3
+import math
+
+def lu_shuffler_a(s, k):
+    #print(f"k={k} | s={s}")
+    n = len(s)
+    new_s = s
+    while True:
+        if (k * 2) > n:
+            break
+        p_index = k % n
+        p_start = 0
+        p_end = p_index * 2
+        sub_p_end = math.ceil(p_end * 0.5)
+        sub_p_l = new_s[p_start:sub_p_end]
+        sub_p_r = new_s[sub_p_end:p_end]
+        rest_p = new_s[k*2:n]
+        swapped = sub_p_r + sub_p_l
+        new_s = swapped + rest_p
+        k += 1
+    return new_s,k
+
+
+#---[ Uncomment Lines Below to Run Example ]
+#import random as rng
+#s = [0,1,2,3,4,5,6,7,8,9] # base-10 n-SSI
+#N = len(s)
+#k = 20 #rng.randint(0,N)
+
+#s_k = 0
+#while s_k < N:
+#    new_s_b,last_k_b = lu_shuffler_a(s,s_k)
+#    s = new_s_b
+#    s_k += 1
+\end{lstlisting}
+  \end{center}
+\end{figure}
+
+
+
+\section{The Second Lu-Shuffle Algorithm (SLSA)}
+
+This second algorithm, is a variation of the first (\textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}}), with the enhancement that where the partitions used to shuffle the items in the \textbf{FLSA} can only grow to a size of \textbf{k-grams} for $k \leq \frac{n}{2}$, while \textbf{SLSA} can use partitions that grow up to $n$. Also, and \textbf{IMPORTANT to NOTE}, this second algorithm combines with the first algorithm at each invocation, so that it takes the output of \textbf{FLSA} and further transforms it to produce the resultant sequence as we see in the following algorithm specification:
+
+\subsubsection{The SLSA Algorithm in Mathematics}
+
+\begin{alg}[The \textbf{Second Lu-Shuffle Algorithm}: $\text{lu\_shuffler\_b}(\Theta, k)$]
+\label{ALGLUSHUFFLEB}
+\begin{enumerate}
+\item \textbf{GIVEN} source sequence $\Theta$ of length $n = \invpi(\Theta)$.
+\item  \textbf{GIVEN} input parameter $k$ that is \textbf{Initial Partition Index}.
+\item{  \textbf{INITIALIZE} the shuffled sequence, $\Theta^*$ with the output of invoking \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} using the given parameters as such:
+
+		\begin{equation}
+		\label{EQIPI}
+		\Theta^*,k^* = \text{lu\_shuffler\_a}(\Theta, n - k)
+		\end{equation}
+		
+		$k^*$ becomes the \textbf{initial partitioning index} for the rest of this algorithm, while proceed to use the updated $\Theta^*$ as shown too.
+}
+\item \textbf{UPDATE} initial partitioning index, $k = k^*$
+\item { \textbf{WHILE} \textbf{TRUE}:
+\begin{enumerate}
+	\item \textbf{BREAK IF} $k == n$
+	\item \textbf{SET} partition index, $p_{index} = k \mod n$
+	\item \textbf{SET} partition start, $p_{start} = 0$
+	\item \textbf{SET} partition end, $p_{end} = p_{index} \times 2$
+	\item \textbf{SET} sub-partition end, $sp_{end} = \text{\textbf{CEIL}}(\frac{p_{end}}{2})$
+	\item \textbf{SET} left sub-partition, $\Theta_{l} = \{\omega_i | \omega_i \in \Theta^* \quad \land \quad i \in [p_{start},sp_{end}]\}$
+	\item \textbf{SET} right sub-partition, $\Theta_{r} = \{\omega_i | \omega_i \in \Theta^* \quad \land \quad i \in [sp_{end},p_{end}]\}$
+	\item \textbf{SET} unpartitioned sequence, $\Theta_{rest} = \{\omega_i | \omega_i \in \Theta^* \quad \land \quad i \in [2k,n]\}$
+	\item \textbf{SET} swapped sequence, $\Theta_{swap} = \Theta_{r} \cdot \Theta_{l}$
+	\item \textbf{UPDATE} resultant sequence, $\Theta^* = \Theta_{swap} \cdot \Theta_{rest}$
+	\item \textbf{INCREMENT} $k$: $k = k + 1$
+\end{enumerate}
+}
+\item \textbf{RETURN} resultant sequence, $\Theta^*$.
+\end{enumerate}
+$\qed$
+\end{alg}
+
+
+So, important to note that \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLUSHUFFLEB}}} invokes \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} with the \textbf{decreasing initial partitioning index} $n-k$ as shown in \textbf{\hyperref[EQIPI]{Equation \ref{EQIPI}}}
+
+
+
+\subsubsection{Examples of Applying SLSA}
+\label{SECAPPLYSLSA}
+
+
+
+Using the same exact sequences, and in the same order as we utilized in \textbf{\hyperref[SECAPPLYFLSA]{Section \ref{SECAPPLYFLSA}}}, we shall come to appreciate readily, not just that the two algorithms, though they perform similar functions, produce different results for the same exact sequence and same exact partitioning index parameter --- \textbf{IMPORTANT:} apart from the case of $k=0$ where the input sequence remains unchanged post-transform.
+
+Note that \textbf{\hyperref[FIGTRACESLSA]{Figure \ref{FIGTRACESLSA}}} corresponds to the earlier table in \textbf{\hyperref[FIGTRACEFLSA]{Figure \ref{FIGTRACEFLSA}}}.
+
+\begin{figure}[H]
+  \begin{center}
+\Large
+\begin{verbatim}
+k=0 | s=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+k=1 | s=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+k=2 | s=[9, 0, 1, 2, 3, 4, 5, 6, 7, 8]
+k=3 | s=[6, 7, 8, 9, 0, 1, 2, 3, 4, 5]
+k=4 | s=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+k=5 | s=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+k=6 | s=[5, 6, 7, 8, 9, 0, 1, 2, 3, 4]
+k=7 | s=[6, 7, 8, 3, 4, 9, 0, 1, 2, 5]
+k=8 | s=[4, 9, 6, 2, 5, 7, 8, 0, 1, 3]
+k=9 | s=[5, 7, 6, 1, 3, 2, 4, 8, 0, 9]
+\end{verbatim}
+
+   \caption{A Tabulation Trace of Shuffling the Base-10 n-SSI Sequence with increasing values of $k$, using \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLUSHUFFLEB}}}, the \textbf{Second Lu-Shuffle Algorithm}.}
+  \label{FIGTRACESLSA}
+  \end{center}
+\end{figure}
+
+
+Note that \textbf{\hyperref[FIGTRACESLSA2NA]{Figure \ref{FIGTRACESLSA2NA}}} corresponds to the earlier table in \textbf{\hyperref[FIGTRACEFLSA2NA]{Figure \ref{FIGTRACEFLSA2NA}}}.
+
+
+\begin{figure}[H]
+  \begin{center}
+\Large
+\begin{verbatim}
+k=0 | s=['A', 'C', 'G', 'T', 'U', 'A', 'C', 'G', 'T', 'U']
+k=1 | s=['A', 'C', 'G', 'T', 'U', 'A', 'C', 'G', 'T', 'U']
+k=2 | s=['U', 'A', 'C', 'G', 'T', 'U', 'A', 'C', 'G', 'T']
+k=3 | s=['C', 'G', 'T', 'U', 'A', 'C', 'G', 'T', 'U', 'A']
+k=4 | s=['A', 'C', 'G', 'T', 'U', 'A', 'C', 'G', 'T', 'U']
+k=5 | s=['A', 'C', 'G', 'T', 'U', 'A', 'C', 'G', 'T', 'U']
+k=6 | s=['A', 'C', 'G', 'T', 'U', 'A', 'C', 'G', 'T', 'U']
+k=7 | s=['C', 'G', 'T', 'T', 'U', 'U', 'A', 'C', 'G', 'A']
+k=8 | s=['U', 'U', 'C', 'G', 'A', 'G', 'T', 'A', 'C', 'T']
+k=9 | s=['A', 'G', 'C', 'C', 'T', 'G', 'U', 'T', 'A', 'U']
+\end{verbatim}
+
+   \caption{A Tabulation Trace of Shuffling the na-Sequence $\Theta_{2na}$ from \textbf{\hyperref[EQDUPLNASEQ]{Equation \ref{EQDUPLNASEQ}}} with \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLUSHUFFLEB}}}.}
+  \label{FIGTRACESLSA2NA}
+  \end{center}
+\end{figure}
+
+
+Note that \textbf{\hyperref[FIGTRACESLSAPALNA]{Figure \ref{FIGTRACESLSAPALNA}}} corresponds to the earlier table in \textbf{\hyperref[FIGTRACEFLSAPALNA]{Figure \ref{FIGTRACEFLSAPALNA}}}.
+
+
+
+\begin{figure}[H]
+  \begin{center}
+\Large
+\begin{verbatim}
+k=0 | s=['A', 'C', 'G', 'T', 'U', 'U', 'T', 'G', 'C', 'A']
+k=1 | s=['A', 'C', 'G', 'T', 'U', 'U', 'T', 'G', 'C', 'A']
+k=2 | s=['A', 'A', 'C', 'G', 'T', 'U', 'U', 'T', 'G', 'C']
+k=3 | s=['T', 'G', 'C', 'A', 'A', 'C', 'G', 'T', 'U', 'U']
+k=4 | s=['A', 'C', 'G', 'T', 'U', 'U', 'T', 'G', 'C', 'A']
+k=5 | s=['A', 'C', 'G', 'T', 'U', 'U', 'T', 'G', 'C', 'A']
+k=6 | s=['U', 'T', 'G', 'C', 'A', 'A', 'C', 'G', 'T', 'U']
+k=7 | s=['T', 'G', 'C', 'T', 'U', 'A', 'A', 'C', 'G', 'U']
+k=8 | s=['U', 'A', 'T', 'G', 'U', 'G', 'C', 'A', 'C', 'T']
+k=9 | s=['U', 'G', 'T', 'C', 'T', 'G', 'U', 'C', 'A', 'A']
+\end{verbatim}
+
+   \caption{A Tabulation Trace of Shuffling the na-Sequence $\Theta_{palna}$ from \textbf{\hyperref[EQPALNASEQ]{Equation \ref{EQPALNASEQ}}} with \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLUSHUFFLEB}}}.}
+  \label{FIGTRACESLSAPALNA}
+  \end{center}
+\end{figure}
+
+\subsection{The Source Code for SLSA}
+
+And the essential source code --- compartible with \textbf{Python 3}, is as provided in  \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}}
+
+
+\begin{figure}[H]
+  \begin{center}
+  \begin{lstlisting}[caption={The Second Lu-Shuffle Algorithm in Python}, label={LST_SLSA}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}]
+#!/usr/bin/env python3
+import math
+
+def lu_shuffler_b(s, k):
+    #print(f"k={k} | s={s}")
+    n = len(s)
+    new_s_a,last_k_a = lu_shuffler_a(s,n-k)
+    s = new_s_a
+    k = last_k_a
+    new_s = s
+    while True:
+        if k == n:
+            break
+        p_index = k % n
+        p_start = 0
+        p_end = p_index * 2
+        sub_p_end = math.ceil(p_end * 0.5)
+        sub_p_l = new_s[p_start:sub_p_end]
+        sub_p_r = new_s[sub_p_end:p_end]
+        rest_p = new_s[k*2:n]
+        swapped = sub_p_r + sub_p_l
+        new_s = swapped + rest_p
+        k += 1
+    return new_s,k
+
+#---[ Uncomment Lines Below to Run Example ]
+#import random as rng
+#s = [0,1,2,3,4,5,6,7,8,9] # base-10 n-SSI
+#s = ['A','C','G','T','U','U','T','G','C','A'] #na-SS+complement(na-SS)
+#N = len(s)
+#k = 20 #rng.randint(0,N)
+
+#s_k = 0
+#while s_k < N:
+#    new_s_b,last_k_b = lu_shuffler_b(s,s_k)
+#    s = new_s_b
+#    s_k += 1
+\end{lstlisting}
+  \end{center}
+\end{figure}
+
+
+
+%-------[ END CONTENT ]
 
 
 \end{appendices}

@@ -37,5 +37,17 @@
 \contentsline {section}{\numberline {9.3}The Extended Lu-Genome Expression System (x-LGES)}{86}{section.9.3}%
 \contentsline {subsection}{\numberline {9.3.1}$\psi _{\Omega }$-to-($\psi _{oz}$-$\psi _{pf}$-$\psi _{oz}$): The x-LGES Algorithm}{87}{subsection.9.3.1}%
 \contentsline {section}{\numberline {9.4}Actual DNA Sequences Expressed in the Extended Lu-Genome Expression System}{89}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Converting Between Nucleic Acid Code and Numeric Codes}{89}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}Revisiting Numeric Sequences}{92}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.3}x-LGES applied to named DNA Sequences}{93}{subsection.9.4.3}%
 \contentsline {chapter}{\numberline {10}Conclusion}{95}{chapter.10}%
 \contentsline {chapter}{Appendix \numberline {A}Origins of the OZIN Cipher}{101}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}Random Sequence Generators (RSGs)}{107}{appendix.a.B}%
+\contentsline {section}{\numberline {B.1}The First Lu-Shuffle Algorithm (FLSA)}{107}{section.a.B.1}%
+\contentsline {subsubsection}{The FLSA Algorithm in Mathematics}{107}{section*.32}%
+\contentsline {subsubsection}{Examples of Applying FLSA}{108}{section*.33}%
+\contentsline {subsection}{\numberline {B.1.1}The Source Code for FLSA}{109}{subsection.a.B.1.1}%
+\contentsline {section}{\numberline {B.2}The Second Lu-Shuffle Algorithm (SLSA)}{110}{section.a.B.2}%
+\contentsline {subsubsection}{The SLSA Algorithm in Mathematics}{110}{section*.38}%
+\contentsline {subsubsection}{Examples of Applying SLSA}{111}{section*.39}%
+\contentsline {subsection}{\numberline {B.2.1}The Source Code for SLSA}{113}{subsection.a.B.2.1}%

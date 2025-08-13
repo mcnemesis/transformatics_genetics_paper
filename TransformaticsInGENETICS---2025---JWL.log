@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  12 AUG 2025 18:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  13 AUG 2025 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1364,7 +1364,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/front_cover.pdf, id=170, 596.98032pt x 844.65562pt>
+<resources/pdfs/front_cover.pdf, id=202, 596.98032pt x 844.65562pt>
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf>
 Package pdftex.def Info: resources/pdfs/front_cover.pdf  used on input line 121
@@ -1387,7 +1387,7 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/front_cover.pdf, id=173, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/front_cover.pdf, id=205, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
@@ -1461,25 +1461,25 @@ l.127 \tableofcontents
 
 
 
-[4] (TransformaticsInGENETICS---2025---JWL.lof)
+[4] (TransformaticsInGENETICS---2025---JWL.lof
+
+[5
+
+])
 \tf@lof=\write7
 \openout7 = `TransformaticsInGENETICS---2025---JWL.lof'.
 
 
 
-[5
-
-]
-
-[6
-
-] (TransformaticsInGENETICS---2025---JWL.lot)
+[6] (TransformaticsInGENETICS---2025---JWL.lot)
 \tf@lot=\write8
 \openout8 = `TransformaticsInGENETICS---2025---JWL.lot'.
 
 
 
-[7]
+[7
+
+]
 
 [8
 
@@ -1540,7 +1540,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--168
 
 ]
 Chapter 1.
-<resources/images/the_pineapple.jpg, id=424, 752.8125pt x 1003.75pt>
+<resources/images/the_pineapple.jpg, id=502, 752.8125pt x 1003.75pt>
 File: resources/images/the_pineapple.jpg Graphic file (type jpg)
 <use resources/images/the_pineapple.jpg>
 Package pdftex.def Info: resources/images/the_pineapple.jpg  used on input line
@@ -1608,7 +1608,7 @@ Overfull \hbox (35.32106pt too wide) in paragraph at lines 191--193
 ng four chemical
  []
 
-<resources/images/dna_diagram.jpeg, id=438, 1003.75pt x 565.11125pt>
+<resources/images/dna_diagram.jpeg, id=516, 1003.75pt x 565.11125pt>
 File: resources/images/dna_diagram.jpeg Graphic file (type jpg)
 <use resources/images/dna_diagram.jpeg>
 Package pdftex.def Info: resources/images/dna_diagram.jpeg  used on input line 
@@ -2302,7 +2302,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1692.
 
-<resources/images/further_analysis.jpg, id=1040, 1027.84pt x 1027.84pt>
+<resources/images/further_analysis.jpg, id=1118, 1027.84pt x 1027.84pt>
 File: resources/images/further_analysis.jpg Graphic file (type jpg)
 <use resources/images/further_analysis.jpg>
 Package pdftex.def Info: resources/images/further_analysis.jpg  used on input l
@@ -2570,7 +2570,7 @@ Overfull \hbox (13.0901pt too wide) in paragraph at lines 2010--2012
 s
  []
 
-<resources/images/protein_synthesis.png, id=1188, 1045.9075pt x 747.79375pt>
+<resources/images/protein_synthesis.png, id=1266, 1045.9075pt x 747.79375pt>
 File: resources/images/protein_synthesis.png Graphic file (type png)
 <use resources/images/protein_synthesis.png>
 Package pdftex.def Info: resources/images/protein_synthesis.png  used on input 
@@ -2692,7 +2692,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 pdfTeX warning: pdflatex (file ./resources/pdfs/ProteinSynthesisProcessFlowChar
 t.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<resources/pdfs/ProteinSynthesisProcessFlowChart.pdf, id=1253, 614.295pt x 794.
+<resources/pdfs/ProteinSynthesisProcessFlowChart.pdf, id=1331, 614.295pt x 794.
 97pt>
 File: resources/pdfs/ProteinSynthesisProcessFlowChart.pdf Graphic file (type pd
 f)
@@ -2709,7 +2709,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/RibosomeStateMachine.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/RibosomeStateMachine.pdf, id=1266, 614.295pt x 794.97pt>
+<resources/pdfs/RibosomeStateMachine.pdf, id=1344, 614.295pt x 794.97pt>
 File: resources/pdfs/RibosomeStateMachine.pdf Graphic file (type pdf)
 <use resources/pdfs/RibosomeStateMachine.pdf>
 Package pdftex.def Info: resources/pdfs/RibosomeStateMachine.pdf  used on input
@@ -2789,7 +2789,7 @@ al,
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/OZINCIPHER.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/OZINCIPHER.pdf, id=1389, 614.295pt x 794.97pt>
+<resources/pdfs/OZINCIPHER.pdf, id=1467, 614.295pt x 794.97pt>
 File: resources/pdfs/OZINCIPHER.pdf Graphic file (type pdf)
 <use resources/pdfs/OZINCIPHER.pdf>
 Package pdftex.def Info: resources/pdfs/OZINCIPHER.pdf  used on input line 2332
@@ -2804,7 +2804,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf, id=1402, 597.19106pt x 845.07718pt>
+<resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf, id=1480, 597.19106pt x 845.07718pt>
 
 File: resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf Graphic file (type pdf)
 <use resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf>
@@ -2820,7 +2820,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf, id=1432, 597.19106pt x 845.07718
+<resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf, id=1510, 597.19106pt x 845.07718
 pt>
 File: resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf Graphic file (type pdf)
 <use resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf>
@@ -2834,7 +2834,7 @@ APP2-HIFINELLE.pdf>]
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/OZINCIPHER-APP3-EXA.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/OZINCIPHER-APP3-EXA.pdf, id=1494, 597.19106pt x 845.07718pt>
+<resources/pdfs/OZINCIPHER-APP3-EXA.pdf, id=1572, 597.19106pt x 845.07718pt>
 File: resources/pdfs/OZINCIPHER-APP3-EXA.pdf Graphic file (type pdf)
 <use resources/pdfs/OZINCIPHER-APP3-EXA.pdf>
 Package pdftex.def Info: resources/pdfs/OZINCIPHER-APP3-EXA.pdf  used on input 
@@ -2870,7 +2870,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/OZINCIPHER-APP4-PAL.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/OZINCIPHER-APP4-PAL.pdf, id=1546, 597.19106pt x 845.07718pt>
+<resources/pdfs/OZINCIPHER-APP4-PAL.pdf, id=1624, 597.19106pt x 845.07718pt>
 File: resources/pdfs/OZINCIPHER-APP4-PAL.pdf Graphic file (type pdf)
 <use resources/pdfs/OZINCIPHER-APP4-PAL.pdf>
 Package pdftex.def Info: resources/pdfs/OZINCIPHER-APP4-PAL.pdf  used on input 
@@ -2894,7 +2894,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2496--2497
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/PLATOCIPHER.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/PLATOCIPHER.pdf, id=1583, 614.295pt x 794.97pt>
+<resources/pdfs/PLATOCIPHER.pdf, id=1661, 614.295pt x 794.97pt>
 File: resources/pdfs/PLATOCIPHER.pdf Graphic file (type pdf)
 <use resources/pdfs/PLATOCIPHER.pdf>
 Package pdftex.def Info: resources/pdfs/PLATOCIPHER.pdf  used on input line 251
@@ -2957,17 +2957,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 2587--2588
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2592--2593
+Underfull \hbox (badness 10000) in paragraph at lines 2594--2595
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2609--2610
+Underfull \hbox (badness 10000) in paragraph at lines 2611--2612
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2613--2614
+Underfull \hbox (badness 10000) in paragraph at lines 2615--2616
 
  []
 
@@ -2977,216 +2977,218 @@ Underfull \hbox (badness 10000) in paragraph at lines 2613--2614
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/EXAPLATONICFORM-PFA.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/EXAPLATONICFORM-PFA.pdf, id=1661, 597.19106pt x 845.07718pt>
+<resources/pdfs/EXAPLATONICFORM-PFA.pdf, id=1737, 597.19106pt x 845.07718pt>
 File: resources/pdfs/EXAPLATONICFORM-PFA.pdf Graphic file (type pdf)
 <use resources/pdfs/EXAPLATONICFORM-PFA.pdf>
 Package pdftex.def Info: resources/pdfs/EXAPLATONICFORM-PFA.pdf  used on input 
-line 2636.
+line 2638.
 (pdftex.def)             Requested size: 446.69328pt x 389.13423pt.
 
 
 [80 <./resources/pdfs/EXAPLATONICFORM-PFA.pdf>]
-<resources/pdfs/PLATONIC-EXA-landscape.pdf, id=1684, 1486.80469pt x 649.67719pt
+<resources/pdfs/PLATONIC-EXA-landscape.pdf, id=1762, 1486.80469pt x 649.67719pt
 >
 File: resources/pdfs/PLATONIC-EXA-landscape.pdf Graphic file (type pdf)
 <use resources/pdfs/PLATONIC-EXA-landscape.pdf>
 Package pdftex.def Info: resources/pdfs/PLATONIC-EXA-landscape.pdf  used on inp
-ut line 2679.
+ut line 2682.
 (pdftex.def)             Requested size: 446.69328pt x 195.18222pt.
-
-
-[81 <./resources/pdfs/PLATONIC-EXA-landscape.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2699--2699
-
- []
-
-
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 2699--2700
- [] 
- []
-
-<resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf, id=1725, 1576.38937pt x 362.
-85562pt>
-File: resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf Graphic file (type pdf)
-<use resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf>
-Package pdftex.def Info: resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf  used
- on input line 2717.
-(pdftex.def)             Requested size: 446.69328pt x 102.81696pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[82]
-<resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape.pdf, id=1743, 1633.60312pt x 3
+[81]
+Underfull \hbox (badness 10000) in paragraph at lines 2702--2702
+
+ []
+
+
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 2702--2703
+ [] 
+ []
+
+
+
+[82 <./resources/pdfs/PLATONIC-EXA-landscape.pdf>]
+<resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf, id=1813, 1576.38937pt x 362.
+85562pt>
+File: resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf Graphic file (type pdf)
+<use resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf>
+Package pdftex.def Info: resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf  used
+ on input line 2720.
+(pdftex.def)             Requested size: 446.69328pt x 102.81696pt.
+<resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape.pdf, id=1820, 1633.60312pt x 3
 53.82187pt>
 File: resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape.pdf Graphic file (type pd
 f)
 <use resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape.pdf>
 Package pdftex.def Info: resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape.pdf  u
-sed on input line 2730.
+sed on input line 2733.
 (pdftex.def)             Requested size: 446.69328pt x 96.74792pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[83 <./resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf> <./resources/pdfs/v2-P
-LATONIC-EULERVIRUS-landscape.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+
+
+[83 <./resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 []\OT1/cmtt/m/n/12 Aristotle attached considerable significance to the fact tha
 t
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 human beings can count: it is this ability, he claimed, that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 As Brainerd (1973) has pointed out, in most Western nations
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 today we expect students, by the time they reach their early
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 teens, to be much more competent with numbers than was an
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 educated adult Greek or Roman of 2,000 years ago. This fact
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 arises in no small measure from the elegance and power of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 In short, a price of the increased abstractness of the Arabic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 system is an obscuring of some of the key principles on which
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 numbers are based. To an ancient Egyptian, the fact that 3+4=7
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 was apparent from the relationship between the Egyptian number
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 representing 7 and those representing 3 and 4. There is no
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 hint of such a relationship, however, when this equation is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 expressed in Arabic notation. The price has been worth the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 If you invented a unique symbol to represent each of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 possible quantities of stones (including the case of no stones
 )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 up to that of your standard and decided to use the position
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 of that symbol to indicate the pile to which it refers, you
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 would have what we refer to today as a place-notation system f
 or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 The relative ease with which one can count or compute depends
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 \OT1/cmtt/m/n/12 to no small degree on the characteristics of the system that i
 s
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2769
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2772
 
  []
 
@@ -3195,7 +3197,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[84]
+[84 <./resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape.pdf>]
 Overfull \vbox (23.6189pt too high) has occurred while \output is active []
 
 
@@ -3205,82 +3207,82 @@ Overfull \vbox (23.6189pt too high) has occurred while \output is active []
 [86]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2791.
+(hyperref)                removing `math shift' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\psi' on input line 2791.
+(hyperref)                removing `\psi' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 2791.
+(hyperref)                removing `subscript' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Omega' on input line 2791.
+(hyperref)                removing `\Omega' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2791.
+(hyperref)                removing `math shift' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2791.
+(hyperref)                removing `math shift' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\psi' on input line 2791.
+(hyperref)                removing `\psi' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 2791.
+(hyperref)                removing `subscript' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2791.
+(hyperref)                removing `math shift' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2791.
+(hyperref)                removing `math shift' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\psi' on input line 2791.
+(hyperref)                removing `\psi' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 2791.
+(hyperref)                removing `subscript' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2791.
+(hyperref)                removing `math shift' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2791.
+(hyperref)                removing `math shift' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\psi' on input line 2791.
+(hyperref)                removing `\psi' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 2791.
+(hyperref)                removing `subscript' on input line 2794.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2791.
+(hyperref)                removing `math shift' on input line 2794.
 
 
 
 [87]
-<resources/pdfs/EXT-v2-PLATONIC-EULERVIRUS-landscape.pdf, id=1824, 1794.705pt x
+<resources/pdfs/EXT-v2-PLATONIC-EULERVIRUS-landscape.pdf, id=1902, 1794.705pt x
  776.14969pt>
 File: resources/pdfs/EXT-v2-PLATONIC-EULERVIRUS-landscape.pdf Graphic file (typ
 e pdf)
 <use resources/pdfs/EXT-v2-PLATONIC-EULERVIRUS-landscape.pdf>
 Package pdftex.def Info: resources/pdfs/EXT-v2-PLATONIC-EULERVIRUS-landscape.pd
-f  used on input line 2866.
+f  used on input line 2869.
 (pdftex.def)             Requested size: 446.69328pt x 193.1724pt.
 
 
@@ -3289,7 +3291,26 @@ f  used on input line 2866.
 [89]
 
 [90]
-Underfull \hbox (badness 2707) in paragraph at lines 3016--3016
+Underfull \hbox (badness 10000) in paragraph at lines 2995--2996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3003--3004
+
+ []
+
+
+
+[91]
+Overfull \hbox (19.10762pt too wide) in paragraph at lines 3012--3013
+[]\OT1/cmr/m/n/14.4 So, re-turn-ing to that in-ter-est-ing \OT1/cmr/bx/n/14.4 H
+i-Fi o-SSI \OT1/cmr/m/n/14.4 se-quence --- $
+[] = 8649137520$,
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 3043--3043
 [] \OMS/cmsy/m/n/14.4 ! [] \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 h\OT1/cmr/m/n
 /14.4 8\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 6\OML/cmm/m/it/14.4 ; \OT1/cmr/m/
 n/14.4 4\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 9\OML/cmm/m/it/14.4 ; \OT1/cmr/m
@@ -3300,37 +3321,59 @@ mr/m/n/14.4 =[]\OMS/cmsy/m/n/14.4 )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3016--3016
+Underfull \hbox (badness 10000) in paragraph at lines 3043--3043
 
  []
 
 
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 3016--3017
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 3043--3044
+ [] 
+ []
+
+<resources/images/Earthworm.jpg, id=1970, 963.6pt x 642.4pt>
+File: resources/images/Earthworm.jpg Graphic file (type jpg)
+<use resources/images/Earthworm.jpg>
+Package pdftex.def Info: resources/images/Earthworm.jpg  used on input line 305
+0.
+(pdftex.def)             Requested size: 446.69328pt x 297.7915pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[92]
+
+[93 <./resources/images/Earthworm.jpg>]
+Underfull \hbox (badness 2495) in paragraph at lines 3104--3104
+[][]\OT1/cmr/bx/n/14.4 Transformation 24. []$\OT1/cmr/m/n/14.4 ^^B[] = \OMS/cms
+y/m/n/14.4 h\OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 4\OML/cmm
+/m/it/14.4 ; \OT1/cmr/m/n/14.4 3\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 1\OML/cm
+m/m/it/14.4 ; \OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 1\OML/c
+mm/m/it/14.4 ; \OT1/cmr/m/n/14.4 4\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 4\OML/
+cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 4\OML
+/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 3\OM
+S/cmsy/m/n/14.4 i ! \U/msb/m/n/14.4 ~\OT1/cmr/m/n/14.4 ([]) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3104--3104
+
+ []
+
+
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 3104--3105
  [] 
  []
 
 
 
-[91]
-<resources/images/Earthworm.jpg, id=1894, 963.6pt x 642.4pt>
-File: resources/images/Earthworm.jpg Graphic file (type jpg)
-<use resources/images/Earthworm.jpg>
-Package pdftex.def Info: resources/images/Earthworm.jpg  used on input line 302
-3.
-(pdftex.def)             Requested size: 446.69328pt x 297.7915pt.
-
-
-[92 <./resources/images/Earthworm.jpg>]
-
-[93]
-
-[94
-
-]
+[94]
 Chapter 10.
 
 
-[95]
+[95
+
+]
 
 [96]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3354,11 +3397,11 @@ Appendix A.
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/ozin_gene_expressions.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/ozin_gene_expressions.pdf, id=2032, 596.98032pt x 844.65562pt>
+<resources/pdfs/ozin_gene_expressions.pdf, id=2133, 596.98032pt x 844.65562pt>
 File: resources/pdfs/ozin_gene_expressions.pdf Graphic file (type pdf)
 <use resources/pdfs/ozin_gene_expressions.pdf>
 Package pdftex.def Info: resources/pdfs/ozin_gene_expressions.pdf  used on inpu
-t line 3106.
+t line 3188.
 (pdftex.def)             Requested size: 446.69328pt x 487.2487pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3371,10 +3414,10 @@ Overfull \vbox (16.67203pt too high) has occurred while \output is active []
 
 
 [102 <./resources/pdfs/ozin_gene_expressions.pdf>]
-<resources/pdfs/ozin.pdf, id=2055, 614.295pt x 794.97pt>
+<resources/pdfs/ozin.pdf, id=2156, 614.295pt x 794.97pt>
 File: resources/pdfs/ozin.pdf Graphic file (type pdf)
 <use resources/pdfs/ozin.pdf>
-Package pdftex.def Info: resources/pdfs/ozin.pdf  used on input line 3118.
+Package pdftex.def Info: resources/pdfs/ozin.pdf  used on input line 3200.
 (pdftex.def)             Requested size: 446.69328pt x 536.69916pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3385,11 +3428,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/ozin_applied.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/ozin_applied.pdf, id=2065, 596.98032pt x 844.65562pt>
+<resources/pdfs/ozin_applied.pdf, id=2166, 596.98032pt x 844.65562pt>
 File: resources/pdfs/ozin_applied.pdf Graphic file (type pdf)
 <use resources/pdfs/ozin_applied.pdf>
-Package pdftex.def Info: resources/pdfs/ozin_applied.pdf  used on input line 31
-30.
+Package pdftex.def Info: resources/pdfs/ozin_applied.pdf  used on input line 32
+12.
 (pdftex.def)             Requested size: 446.69328pt x 632.02089pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3398,66 +3441,127 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [104 <./resources/pdfs/ozin.pdf>]
 
-pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/note_cover.pdf, id=2079, 596.98032pt x 844.65562pt>
-File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
-<use resources/pdfs/note_cover.pdf>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 3139
-.
-(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
-
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
-<use resources/pdfs/note_cover.pdf>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 3139
-.
-(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
-
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/note_cover.pdf, id=2082, page=1, 596.98032pt x 844.65562pt>
-File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
-<use resources/pdfs/note_cover.pdf, page 1>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 3139.
-(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
-File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
-<use resources/pdfs/note_cover.pdf, page 1>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 3139.
-(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
-
-
 [105 <./resources/pdfs/ozin_applied.pdf>]
-File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
-<use resources/pdfs/note_cover.pdf, page 1>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 3139.
-(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
-File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
-<use resources/pdfs/note_cover.pdf, page 1>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 3139.
-(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
-
-File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
-<use resources/pdfs/note_cover.pdf, page 1>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 3139.
-(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 [106
+
+]
+Appendix B.
+
+Overfull \hbox (34.5695pt too wide) in paragraph at lines 3236--3237
+[][]\OT1/cmr/bx/it/14.4 GIVEN
+ []
+
+
+
+[107]
+Underfull \vbox (badness 1769) has occurred while \output is active []
+
+
+
+[108] (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/05/25 1.10b listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 3345.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 3347.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[109]
+Overfull \hbox (51.05446pt too wide) in paragraph at lines 3395--3396
+[][]\OT1/cmr/bx/it/14.4 GIVEN
+ []
+
+
+
+[110]
+
+[111]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[112]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+3549.
+ (C:\Program Files\MiKTeX\tex/latex/base\ts1cmtt.fd
+File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[113]
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<resources/pdfs/note_cover.pdf, id=2385, 596.98032pt x 844.65562pt>
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 3569
+.
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 3569
+.
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<resources/pdfs/note_cover.pdf, id=2388, page=1, 596.98032pt x 844.65562pt>
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
+ne 3569.
+(pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
+ne 3569.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+
+
+[114]
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
+ne 3569.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
+ne 3569.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+
+
+File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
+<use resources/pdfs/note_cover.pdf, page 1>
+Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
+ne 3569.
+(pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
+[115
 
  <./resources/pdfs/note_cover.pdf>]
 (TransformaticsInGENETICS---2025---JWL.bbl
+
+[116
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 11--17
 []\OT1/cmr/m/n/14.4 GeeksforGeeks.  Di-a-gram of pro-tein syn-the-sis.  []$\OT1
 /cmtt/m/n/14.4 https : / / www .
@@ -3518,9 +3622,7 @@ y _ Joseph _
 
 
 
-[107
-
-]
+[117]
 Underfull \hbox (badness 10000) in paragraph at lines 102--107
 \OT1/cmtt/m/n/14.4 org / Bookshelves / Introductory _ and _ General _ Biology /
  General _
@@ -3612,7 +3714,7 @@ ac . uk / vgec / topics / cell-[]cycle /
 
 
 
-[108]
+[118]
 Underfull \hbox (badness 7168) in paragraph at lines 149--155
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  Con-cern-ing a spe-cial sum-ma-t
 ion that
@@ -3669,7 +3771,7 @@ Underfull \hbox (badness 1072) in paragraph at lines 185--190
 
 
 
-[109]
+[119]
 Underfull \hbox (badness 5592) in paragraph at lines 296--303
 []\OT1/cmr/m/n/14.4 Teresa Przy-ty-cka.  Lec-ture 10: Whole genome se-quenc-ing
  and
@@ -3695,7 +3797,7 @@ Underfull \hbox (badness 1102) in paragraph at lines 314--320
 
 
 
-[110]
+[120]
 Underfull \hbox (badness 2781) in paragraph at lines 349--355
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  Platonic-exa-landscape.pdf | a b
 a-sic ex-
@@ -3757,7 +3859,7 @@ from _ Arbitrary _ Text _
 
 
 
-[111]
+[121]
 Underfull \hbox (badness 10000) in paragraph at lines 403--407
 \OT1/cmtt/m/n/14.4 / / figshare . com / articles / onlineresource / CODE _ Comp
 utational _
@@ -3767,10 +3869,10 @@ utational _
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=2221, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=2562, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf>
-Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 3163
+Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 3593
 .
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -3779,7 +3881,7 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf>
-Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 3163
+Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 3593
 .
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -3790,38 +3892,38 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=2224, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=2565, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 3163.
+ne 3593.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 3163.
+ne 3593.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
-[112]
+[122]
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 3163.
+ne 3593.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 3163.
+ne 3593.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 3163.
+ne 3593.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
-[113
+[123
 
  <./resources/pdfs/back_cover.pdf>]
 (TransformaticsInGENETICS---2025---JWL.aux)
@@ -3835,52 +3937,54 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `TransformaticsInGENETICS---2025---JWL.out' h
 as not changed.
-(rerunfilecheck)             Checksum: 9AC356A4A63AC0A59F112FA59CC4B5CD;13167.
+(rerunfilecheck)             Checksum: D6CFDC666895750094FAABFA1CD81AE5;15192.
  ) 
 Here is how much of TeX's memory you used:
- 29953 strings out of 473898
- 543978 string characters out of 5736297
- 1960960 words of memory out of 5000000
- 51742 multiletter control sequences out of 15000+600000
- 579987 words of font info for 119 fonts, out of 8000000 for 9000
+ 30581 strings out of 473898
+ 551038 string characters out of 5736297
+ 1986960 words of memory out of 5000000
+ 52213 multiletter control sequences out of 15000+600000
+ 580452 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,21n,93p,3947b,1092s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\AKAM\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1
-440.pk> <C:\Users\AKAM\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
-tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program 
-Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmitt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-mi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:
-/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program File
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmmi9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
-:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
-es/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/P
-rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:
-/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fil
-es/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb
-><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program 
-Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/M
-iKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on TransformaticsInGENETICS---2025---JWL.pdf (125 pages, 1072883
-7 bytes).
+ 84i,21n,93p,3947b,1684s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\AKAM\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt1
+000.pk> <C:\Users\AKAM\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm1440.pk> <C:\Users\AKAM\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
+i600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pro
+gram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmitt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pf
+b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program
+ Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pf
+b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt
+12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/M
+iKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/f
+onts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on TransformaticsInGENETICS---2025---JWL.pdf (135 pages, 1083026
+2 bytes).
 PDF statistics:
- 2522 PDF objects out of 2984 (max. 8388607)
- 599 named destinations out of 1000 (max. 500000)
- 602 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2901 PDF objects out of 2984 (max. 8388607)
+ 748 named destinations out of 1000 (max. 500000)
+ 666 words of extra memory for PDF output out of 10000 (max. 10000000)
 
