@@ -42,19 +42,21 @@
 \contentsline {subsection}{\numberline {9.4.3}x-LGES applied to named DNA Sequences}{93}{subsection.9.4.3}%
 \contentsline {chapter}{\numberline {10}Conclusion}{95}{chapter.10}%
 \contentsline {chapter}{Appendix \numberline {A}Origins of the OZIN Cipher}{101}{appendix.a.A}%
-\contentsline {chapter}{Appendix \numberline {B}Random Sequence Generators (RSGs)}{107}{appendix.a.B}%
-\contentsline {section}{\numberline {B.1}The First Lu-Shuffle Algorithm (FLSA)}{107}{section.a.B.1}%
-\contentsline {subsubsection}{The FLSA Algorithm in Mathematics}{107}{section*.32}%
-\contentsline {subsubsection}{Examples of Applying FLSA}{108}{section*.33}%
-\contentsline {subsection}{\numberline {B.1.1}The Source Code for FLSA}{109}{subsection.a.B.1.1}%
-\contentsline {section}{\numberline {B.2}The Second Lu-Shuffle Algorithm (SLSA)}{110}{section.a.B.2}%
-\contentsline {subsubsection}{The SLSA Algorithm in Mathematics}{111}{section*.38}%
-\contentsline {subsubsection}{Examples of Applying SLSA}{111}{section*.39}%
-\contentsline {subsection}{\numberline {B.2.1}The Source Code for SLSA}{113}{subsection.a.B.2.1}%
-\contentsline {section}{\numberline {B.3}Generating Realistic Random na-Sequences}{114}{section.a.B.3}%
-\contentsline {subsubsection}{How to Generate a Random Nucleotide \& The Random Symbol Generator}{115}{section*.44}%
-\contentsline {subsubsection}{The USYMBOLSET Function}{116}{section*.45}%
-\contentsline {subsubsection}{The PROTRACT Function}{116}{section*.47}%
-\contentsline {subsubsection}{The SHUFFLE Function}{117}{section*.49}%
-\contentsline {subsubsection}{The SELECT Function}{118}{section*.51}%
-\contentsline {subsubsection}{The RSG Function}{119}{section*.53}%
+\contentsline {chapter}{Appendix \numberline {B}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{107}{appendix.a.B}%
+\contentsline {chapter}{Appendix \numberline {C}Random Sequence Generators (RSGs)}{111}{appendix.a.C}%
+\contentsline {section}{\numberline {C.1}The First Lu-Shuffle Algorithm (FLSA)}{111}{section.a.C.1}%
+\contentsline {subsubsection}{The FLSA Algorithm Using Mathematics}{111}{section*.32}%
+\contentsline {subsubsection}{Examples of Applying FLSA}{112}{section*.33}%
+\contentsline {subsection}{\numberline {C.1.1}The Source Code for FLSA}{113}{subsection.a.C.1.1}%
+\contentsline {section}{\numberline {C.2}The Second Lu-Shuffle Algorithm (SLSA)}{114}{section.a.C.2}%
+\contentsline {subsubsection}{The SLSA Algorithm Using Mathematics}{115}{section*.38}%
+\contentsline {subsubsection}{Examples of Applying SLSA}{115}{section*.39}%
+\contentsline {subsection}{\numberline {C.2.1}The Source Code for SLSA}{117}{subsection.a.C.2.1}%
+\contentsline {section}{\numberline {C.3}Generating Realistic Random na-Sequences}{118}{section.a.C.3}%
+\contentsline {subsubsection}{How to Generate a Random Nucleotide \& The Random Symbol Generator}{119}{section*.44}%
+\contentsline {subsubsection}{The USYMBOLSET Function}{120}{section*.45}%
+\contentsline {subsubsection}{The PROTRACT Function}{120}{section*.47}%
+\contentsline {subsubsection}{The Random Number Generator, RNG Function}{121}{section*.49}%
+\contentsline {subsubsection}{The SHUFFLE Function}{123}{section*.52}%
+\contentsline {subsubsection}{The SELECT Function}{124}{section*.54}%
+\contentsline {subsubsection}{The RSG Function}{125}{section*.56}%

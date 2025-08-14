@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-import random as rng
 import math
+import time
 
 def lu_shuffler_a(s, k):
     n = len(s)
@@ -26,9 +26,9 @@ def lu_shuffler_a(s, k):
 def lu_shuffler_b(s, k):
     n = len(s)
     k = k % n
-    #print(f"k={k} | s={s}")
     new_s_a,last_k_a = lu_shuffler_a(s,n-k)
     s = new_s_a
+    #print(f"k={k} | s={s}")
     k = last_k_a
     new_s = s
     while True:
@@ -97,7 +97,7 @@ def protract(s,n):
 #s = ['A' , 'C' , 'G' , 'T' , 'U' , 'A' , 'C' , 'G' , 'T' , 'U'] #na-SS+na-SS
 #s = ['A' , 'C' , 'G' , 'T' , 'U' , 'U' , 'T' , 'G' , 'C' , 'A'] #na-SS+complement(na-SS)
 #N = len(s)
-#k = 20 #rng.randint(0,N)
+#k = 20 #random_ng(0,N)
 #result,k = lu_shuffler_b(s,k)
 
 #---[ TEST PROTRACT ]
@@ -108,14 +108,30 @@ def protract(s,n):
 #print(result)
 
 
+#---[ RNG(ll,ul) ]
+def random_ng(l,u):
+    lu = max(l,u)
+    ll = min(l,u)
+    lu = lu + 1 if ll == lu else lu
+    part_k = 1
+    candidates = lu_shuffler_a(list(range(ll,lu+1)),part_k)[0]
+    n = len(candidates)
+    pick = int(time.time())%n
+    return candidates[pick]
+
+#---[ TEST RNG ]
+#for r in [[0,10],[0,1],[0,100],[1900,1999]]:
+#    print(f"RNG From {r[0]}-{r[1]} -> {random_ng(r[0],r[1])}")
+
+
 #---[ SHUFFLE(s) ]
 def shuffle(s):
     n_s = len(s)
     if n_s < 2:
         return s
-    random_k = rng.randint(1,n_s)
+    random_k = random_ng(1,n_s)
     shuffled_s,k = lu_shuffler_b(s,random_k)
-    random_k2 = rng.randint(1,n_s)
+    random_k2 = random_ng(1,n_s)
     shuffled_s,k = lu_shuffler_b(shuffled_s,random_k2)
     return shuffled_s
 
@@ -177,5 +193,22 @@ s = [0,1,2,3,4,5,6,7,8,9]
 #result = str(select(8,s))
 #result = ''.join(str(c) for c in rsg(150,['A','T','C','G']))
 #result = rsg(10,['CAT','DOG','PEN','ACE','SKY','EYE','IS','THAT','NO','YOU'])
+#result = random_ng(200,200)
+#result = rsg(10,s)
 #print(result)
 N=3*200; print(''.join(str(c) for c in rsg(N,['A','T','C','G'])));
+
+#---[Some Further Experiments]
+#s = [0,1,2,3,4,5,6,7,8,9]
+#s = ['A' , 'C' , 'G' , 'T' , 'U' , 'A' , 'C' , 'G' , 'T' , 'U'] #na-SS+na-SS
+#s = ['A' , 'C' , 'G' , 'T' , 'U' , 'U' , 'T' , 'G' , 'C' , 'A'] #na-SS+complement(na-SS)
+
+#---[Generate Lu-Shuffle Look-Up Tables]
+#k = 10
+#s_k = 0
+#while s_k < k:
+#    new_s_b,last_k_b = lu_shuffler_b(s,s_k)
+#    s = new_s_b
+#    k = last_k_b
+#    s_k += 1
+#    #print(new_s_b)
