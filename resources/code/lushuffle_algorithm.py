@@ -3,8 +3,9 @@ import random as rng
 import math
 
 def lu_shuffler_a(s, k):
-    #print(f"k={k} | s={s}")
     n = len(s)
+    k = k % n
+    #print(f"k={k} | s={s}")
     new_s = s
     while True:
         if (k * 2) > n:
@@ -23,8 +24,9 @@ def lu_shuffler_a(s, k):
 
 
 def lu_shuffler_b(s, k):
-    print(f"k={k} | s={s}")
     n = len(s)
+    k = k % n
+    print(f"k={k} | s={s}")
     new_s_a,last_k_a = lu_shuffler_a(s,n-k)
     s = new_s_a
     k = last_k_a
