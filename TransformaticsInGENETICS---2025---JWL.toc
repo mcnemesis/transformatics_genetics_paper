@@ -10,8 +10,8 @@
 \contentsline {chapter}{\numberline {6}Sequence Analysis Using The Anagram Distance and the Modal Sequence Statistic}{27}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Six Sequences and Four Scenarios}{27}{section.6.1}%
 \contentsline {section}{\numberline {6.2}A First Analysis}{30}{section.6.2}%
-\contentsline {section}{\numberline {6.3}SCENARIO A}{33}{section.6.3}%
-\contentsline {section}{\numberline {6.4}SCENARIO B}{36}{section.6.4}%
+\contentsline {section}{\numberline {6.3}SCENARIO A --- the anagram distance measure}{33}{section.6.3}%
+\contentsline {section}{\numberline {6.4}SCENARIO B --- the sequence characteric [statistic]}{36}{section.6.4}%
 \contentsline {section}{\numberline {6.5}SCENARIO C}{39}{section.6.5}%
 \contentsline {section}{\numberline {6.6}SCENARIO D --- the population characteric measure}{40}{section.6.6}%
 \contentsline {subsection}{\numberline {6.6.1}Measuring Proximity to a Set of Sequences, $\Omega ^n$}{40}{subsection.6.6.1}%
@@ -23,40 +23,42 @@
 \contentsline {section}{\numberline {7.3}PROBLEM G3: Computing the Genome Sequence (GS): $(\Theta _1 \Diamond \Theta _2)^*$}{52}{section.7.3}%
 \contentsline {section}{\numberline {7.4}The Genome Sequencer}{54}{section.7.4}%
 \contentsline {section}{\numberline {7.5}The Identity Genome Sequence (IGS) Law}{54}{section.7.5}%
-\contentsline {chapter}{\numberline {8}Gene Expression in Living Organisms Leveraging Genetic Code (DNA $\rightarrow mRNA \rightarrow Protein \rightarrow $ Organism)}{57}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Protein Manufacturing Algorithm}{62}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Gene Expression in Living Things and for Bio-Automata via Ribosomes}{65}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Transformatics and Lu-Genome Expression System in Bio-Automata}{69}{chapter.9}%
-\contentsline {section}{\numberline {9.1}The Ozin Genetic Code Cipher}{70}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}$\Omega $-to-OZIN Genetic Code Transcription Rules}{73}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Examples of $\Omega $-Genetic Code Transcription}{74}{subsection.9.1.2}%
-\contentsline {section}{\numberline {9.2}Genetic Code Sequences Processed as Modal Sequence Statistics}{75}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}The Platonic Form Cipher and Position-Sensitive Genetic Code Translation}{76}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}$\psi _{\Omega }$-to-$\psi _{pf}$: PLATONIC Form Genetic Code Translation Rules}{77}{subsection.9.2.2}%
-\contentsline {subsection}{\numberline {9.2.3}Examples of Complete Lu-Genome Expressions}{81}{subsection.9.2.3}%
-\contentsline {section}{\numberline {9.3}The Extended Lu-Genome Expression System (x-LGES)}{86}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}$\psi _{\Omega }$-to-($\psi _{oz}$-$\psi _{pf}$-$\psi _{oz}$): The x-LGES Algorithm}{87}{subsection.9.3.1}%
-\contentsline {section}{\numberline {9.4}Actual DNA Sequences Expressed in the Extended Lu-Genome Expression System}{89}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Converting Between Nucleic Acid Code and Numeric Codes}{89}{subsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.4.2}Revisiting Numeric Sequences}{92}{subsection.9.4.2}%
-\contentsline {subsection}{\numberline {9.4.3}x-LGES applied to named DNA Sequences}{93}{subsection.9.4.3}%
-\contentsline {chapter}{\numberline {10}Conclusion}{95}{chapter.10}%
-\contentsline {chapter}{Appendix \numberline {A}Origins of the OZIN Cipher}{101}{appendix.a.A}%
-\contentsline {chapter}{Appendix \numberline {B}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{107}{appendix.a.B}%
-\contentsline {chapter}{Appendix \numberline {C}Random Sequence Generators (RSGs)}{111}{appendix.a.C}%
-\contentsline {section}{\numberline {C.1}The First Lu-Shuffle Algorithm (FLSA)}{111}{section.a.C.1}%
-\contentsline {subsubsection}{The FLSA Algorithm Using Mathematics}{111}{section*.32}%
-\contentsline {subsubsection}{Examples of Applying FLSA}{112}{section*.33}%
-\contentsline {subsection}{\numberline {C.1.1}The Source Code for FLSA}{113}{subsection.a.C.1.1}%
-\contentsline {section}{\numberline {C.2}The Second Lu-Shuffle Algorithm (SLSA)}{114}{section.a.C.2}%
-\contentsline {subsubsection}{The SLSA Algorithm Using Mathematics}{115}{section*.38}%
-\contentsline {subsubsection}{Examples of Applying SLSA}{115}{section*.39}%
-\contentsline {subsection}{\numberline {C.2.1}The Source Code for SLSA}{117}{subsection.a.C.2.1}%
-\contentsline {section}{\numberline {C.3}Generating Realistic Random na-Sequences}{118}{section.a.C.3}%
-\contentsline {subsubsection}{How to Generate a Random Nucleotide \& The Random Symbol Generator}{119}{section*.44}%
-\contentsline {subsubsection}{The USYMBOLSET Function}{120}{section*.45}%
-\contentsline {subsubsection}{The PROTRACT Function}{120}{section*.47}%
-\contentsline {subsubsection}{The Random Number Generator, RNG Function}{121}{section*.49}%
-\contentsline {subsubsection}{The SHUFFLE Function}{123}{section*.52}%
-\contentsline {subsubsection}{The SELECT Function}{124}{section*.54}%
-\contentsline {subsubsection}{The RSG Function}{125}{section*.56}%
+\contentsline {chapter}{\numberline {8}Random Sequence Generators (RSGs)}{57}{chapter.8}%
+\contentsline {section}{\numberline {8.1}The First Lu-Shuffle Algorithm (FLSA)}{57}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}The FLSA Algorithm Using Mathematics}{57}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Examples of Applying FLSA}{58}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}The Source Code for FLSA}{60}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}The Second Lu-Shuffle Algorithm (SLSA)}{62}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}The SLSA Algorithm Using Mathematics}{62}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Examples of Applying SLSA}{63}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}The Source Code for SLSA}{65}{subsection.8.2.3}%
+\contentsline {section}{\numberline {8.3}Generating Realistic Random na-Sequences}{66}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}How to Generate a Random Nucleotide \& The Random Symbol Generator}{66}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}The USYMBOLSET Function}{68}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}The PROTRACT Function}{68}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}The Random Number Generator, RNG Function}{69}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.3.5}The SHUFFLE Function}{71}{subsection.8.3.5}%
+\contentsline {subsection}{\numberline {8.3.6}The SELECT Function}{72}{subsection.8.3.6}%
+\contentsline {subsection}{\numberline {8.3.7}The RSG Function}{73}{subsection.8.3.7}%
+\contentsline {chapter}{\numberline {9}Gene Expression in Living Organisms Leveraging Genetic Code (DNA $\rightarrow mRNA \rightarrow Protein \rightarrow $ Organism)}{77}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Protein Manufacturing Algorithm}{82}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Gene Expression in Living Things and for Bio-Automata via Ribosomes}{85}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Transformatics and Lu-Genome Expression System in Bio-Automata}{89}{chapter.10}%
+\contentsline {section}{\numberline {10.1}The Ozin Genetic Code Cipher}{90}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}$\Omega $-to-OZIN Genetic Code Transcription Rules}{93}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Examples of $\Omega $-Genetic Code Transcription}{94}{subsection.10.1.2}%
+\contentsline {section}{\numberline {10.2}Genetic Code Sequences Processed as Modal Sequence Statistics}{95}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}The Platonic Form Cipher and Position-Sensitive Genetic Code Translation}{96}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}$\psi _{\Omega }$-to-$\psi _{pf}$: PLATONIC Form Genetic Code Translation Rules}{97}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}Examples of Complete Lu-Genome Expressions}{101}{subsection.10.2.3}%
+\contentsline {section}{\numberline {10.3}The Extended Lu-Genome Expression System (x-LGES)}{106}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}$\psi _{\Omega }$-to-($\psi _{oz}$-$\psi _{pf}$-$\psi _{oz}$): The x-LGES Algorithm}{107}{subsection.10.3.1}%
+\contentsline {section}{\numberline {10.4}Actual DNA Sequences Expressed in the Extended Lu-Genome Expression System}{109}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Converting Between Nucleic Acid Code and Numeric Codes}{109}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Revisiting Numeric Sequences}{112}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}x-LGES applied to named DNA Sequences}{113}{subsection.10.4.3}%
+\contentsline {chapter}{\numberline {11}Conclusion}{115}{chapter.11}%
+\contentsline {chapter}{Appendix \numberline {A}Origins of the OZIN Cipher}{121}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}Computing $\boxed {\psi _\Omega }_m$ for a Particular na-Sequence $\Theta $}{127}{appendix.a.B}%
+\contentsline {chapter}{Appendix \numberline {C}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{129}{appendix.a.C}%
+\contentsline {subsection}{\numberline {C.0.1}Examples of Complete Lu-Genome Expressions}{132}{subsection.a.C.0.1}%
