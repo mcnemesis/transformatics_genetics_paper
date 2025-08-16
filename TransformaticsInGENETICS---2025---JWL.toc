@@ -59,6 +59,7 @@
 \contentsline {subsection}{\numberline {10.4.3}x-LGES applied to named DNA Sequences}{113}{subsection.10.4.3}%
 \contentsline {chapter}{\numberline {11}Conclusion}{115}{chapter.11}%
 \contentsline {chapter}{Appendix \numberline {A}Origins of the OZIN Cipher}{121}{appendix.a.A}%
-\contentsline {chapter}{Appendix \numberline {B}Computing $\boxed {\psi _\Omega }_m$ for a Particular na-Sequence $\Theta $}{127}{appendix.a.B}%
-\contentsline {chapter}{Appendix \numberline {C}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{129}{appendix.a.C}%
-\contentsline {subsection}{\numberline {C.0.1}Examples of Complete Lu-Genome Expressions}{132}{subsection.a.C.0.1}%
+\contentsline {chapter}{Appendix \numberline {B}Computing Platonic-Form Encoding Keys (PFEKs), $\boxed {\psi _\Omega }_m$ for a Particular na-Sequence $\Theta $ or $m$}{127}{appendix.a.B}%
+\contentsline {subsection}{\numberline {B.0.1}Example of Resolving PFA Components, $\boxed {\omega _i^*}$}{129}{subsection.a.B.0.1}%
+\contentsline {chapter}{Appendix \numberline {C}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{131}{appendix.a.C}%
+\contentsline {subsection}{\numberline {C.0.1}Examples of Complete Lu-Genome Expressions}{135}{subsection.a.C.0.1}%

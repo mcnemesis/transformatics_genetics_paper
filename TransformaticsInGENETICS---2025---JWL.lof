@@ -39,7 +39,7 @@
 \contentsline {figure}{\numberline {10.4}{\ignorespaces The equivalent OZIN expression of the $\Omega _{3}$ genome sequence.}}{93}{figure.caption.38}%
 \contentsline {figure}{\numberline {10.5}{\ignorespaces The palindromic sequence $\Omega _{pal}$ transcribed into base-OZ.}}{94}{figure.caption.39}%
 \contentsline {figure}{\numberline {10.6}{\ignorespaces The PLATONIC Cipher\cite {lutalo_2025_platonic} a mapping from Decimal Symbols (our base-$\Omega $) to Spatial-Geometric Forms ($\psi _{pf}$).}}{97}{figure.caption.40}%
-\contentsline {figure}{\numberline {10.7}{\ignorespaces An example of a single \textbf {amino-acid}-equivalent segment in the \textbf {LGES} system's \textbf {PFA} component, this one corresponding to a rendering of the configuration \textbf {$4_{pf} \otimes 6_{oz}$} = \textbf {$4_{pf} + 4 \times 6_{oz}$}.}}{100}{figure.caption.41}%
+\contentsline {figure}{\numberline {10.7}{\ignorespaces An example of a single \textbf {amino-acid} or rather, the \textbf {PFA} component of a \textbf {FGE} equivalent to one \textbf {amino-acid} segment expressed using the \textbf {LGES} system. This particular expression corresponding to a rendering of the configuration \textbf {$4_{pf} \otimes 6_{oz}$} = \textbf {$4_{pf} + 4 \times 6_{oz}$}.}}{101}{figure.caption.41}%
 \contentsline {figure}{\numberline {10.8}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{3}$ genome sequence (from \textbf {Equation \ref {EQDNEXA}})}}{102}{figure.caption.42}%
 \contentsline {figure}{\numberline {10.9}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{veuler}$ (Euler Virus) genome sequence (from \textbf {Equation \ref {EQGFEEVIRUS}})}}{103}{figure.caption.43}%
 \contentsline {figure}{\numberline {10.10}{\ignorespaces The \textbf {alternative rendering} of the same sequence as $\Omega _{veuler}$.}}{104}{figure.caption.44}%
@@ -52,6 +52,6 @@
 \contentsline {figure}{\numberline {A.3}{\ignorespaces The OZIN Cipher in use. An excerpt from author's research notes (circa 2019) on developing a cryptographic system leveraging a dial mechanism. Copyrights due to author and Nuchwezi Research Labs.}}{125}{figure.caption.49}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{3}$ genome sequence (from \textbf {Equation \ref {EQDNEXA}})}}{133}{figure.caption.50}%
-\contentsline {figure}{\numberline {C.2}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{veuler}$ (Euler Virus) genome sequence (from \textbf {Equation \ref {EQGFEEVIRUS_ORIG}})}}{134}{figure.caption.51}%
-\contentsline {figure}{\numberline {C.3}{\ignorespaces The \textbf {alternative rendering} of the same sequence as $\Omega _{veuler}$.}}{134}{figure.caption.52}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{3}$ genome sequence (from \textbf {Equation \ref {EQDNEXA}})}}{135}{figure.caption.52}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{veuler}$ (Euler Virus) genome sequence (from \textbf {Equation \ref {EQGFEEVIRUS_ORIG}})}}{136}{figure.caption.53}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces The \textbf {alternative rendering} of the same sequence as $\Omega _{veuler}$.}}{137}{figure.caption.54}%
