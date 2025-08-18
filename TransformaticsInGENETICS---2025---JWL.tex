@@ -4157,13 +4157,75 @@ And if one wishes to render their \textbf{PFA} --- the platonic form aspect, of 
 We shall not attempt to render a complete \textbf{FGE} here since that matter is already well catered for in the associated chapter and section --- see \textbf{\hyperref[SECFULLGES]{Section \ref{SECFULLGES}}}, however, we shall attempt to set straight, the necessary procedure for:
 
 \begin{enumerate}
-\item Computing $m$ for a given $\Omega$-encoded sequence $\Theta$.
-\item Picking the correct \textbf{PFEK} for that $m$ --- i.e. $\boxed{\psi_{pf}}_m$.
-\item Resolving the correct component from $\boxed{\psi_{pf}}_m$ corresponding to a particular element $\omega_i$ in the corresponding \textbf{IFA MSS}, $\overset{>}{\Theta}$.
-\item How to render the final pf-encoded version of $\omega_i^*$, i.e. $\boxed{\omega_i^*}$.
+\item{Computing $m$ for a given $\Omega$-encoded sequence $\Theta$:
+
+\begin{enumerate}
+\item Compute the \textbf{modal sequence statistic}, $\overset{>}{\Theta}$ --- see \textbf{Definition 1} in \cite{transformatics}.
+\item Compute $m$ from the cardinality of the modal sequence as: $m = \invpi(\overset{>}{\Theta})$.
+\end{enumerate}
+}
+\item {Picking the correct \textbf{PFEK} for that $m$ --- i.e. $\boxed{\psi_{pf}}_m$:
+	\begin{enumerate}
+	\item If using \textbf{FLSA}, refer to \textbf{\hyperref[TABFSLAPERK]{Table \ref{TABFSLAPERK}}}, and for any $m = k$, pick the row for which the first column has the value $k$.
+	\item Of course, for any $m = k$, the only useful values on that row for doing the \textbf{PFEK} operations are the \textbf{first $k$ emboldened} values on the row corresponding to $m$. E.g. for $m=2$ the necessary key is just $\langle 9, 7 \rangle$, not the entire row.
+	\item If using \textbf{SLSA}, lookup the \textbf{PFEK} using \textbf{\hyperref[TABSSLAPERK]{Table \ref{TABSSLAPERK}}}, so that, for $m = 2$, we have $\boxed{\psi_{pf}}_2 = \langle 4, 2 \rangle $
+	\end{enumerate}
+}
+\item{ Resolving the correct component from $\boxed{\psi_{pf}}_m$ corresponding to a particular element $\omega_i$ in the corresponding \textbf{IFA MSS}, $\overset{>}{\Theta}$.
+\begin{enumerate}
+\item So, if our \textbf{IFA MSS} was just $\langle 0, 2, 1, 3, 6 \rangle$ such as for $\Omega_{3}$ from \textbf{Equation \ref{EQDNEXA}}, then taking note of the special case for any $\omega_i^* = 0$ --- such as the first term in this case (see \textbf{Step\#2(e)ii} in \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}), we merely map values of `0' in the \textbf{MSS} to just the \textbf{JOINT/GAP} element in \textbf{Figure \ref{FIGPLATONICCIPH}}), for the other terms, such as $\omega_3^* = 3$, since the corresponding \textbf{PFEK} for $m=5$ is $\boxed{\psi_{pf}}_5 = \langle 2, 1, 0, 6, 8 \rangle $, then $\boxed{\omega_3^*} = 0$ as per the corresponding look-up mapping we see for such an \textbf{MSS}:
+
+
+\[
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+  % Matrix A
+  \matrix (A) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em] {
+    0 & 2 & 1 & 3 & 6 \\
+  };
+
+  % Matrix B
+  \matrix (B) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em, below=3em of A] {
+    2 & 1 & 0 & 6 & 8\\
+  };
+
+  % Draw arrows from A_i to B_i
+  \foreach \i in {1,2,3,4,5}
+    \draw[->] (A-1-\i) -- (B-1-\i);
+\end{tikzpicture}
+\]
+
+And so, for the last term in that \textbf{MSS}, $\boxed{\omega_5^*} = 8$
+
+\end{enumerate}
+}
+
+\item{How to render the final pf-encoded version of $\omega_i^*$, i.e. $\boxed{\omega_i^*}$.
+\begin{enumerate}
+\item So, now that you know the \textbf{PFEK} for your $m$, such as $\boxed{\psi_{pf}}_5 = \langle 2, 1, 0, 6, 8 \rangle $ from above, and have the correct pf-term for a particular term in the \textbf{MSS} such as $\boxed{\omega_5^*} = 8$ in the example above, the corresponding pf-term is the platonic structure from \textbf{\hyperref[FIGPLATONICCIPH]{Figure \ref{FIGPLATONICCIPH}}} that corresponds to the index $8$ --- so that would be the \textbf{octagon} or rather \textbf{octa-gram} with nothing at the center. But also, given the term we are decoding is $\omega_5^*$ = 6, then the overall structure would be as per configuration \textbf{$8_{pf} + 8 \times 6_{oz}$}: That is to say:
+
+\begin{equation}
+\boxed{\omega_5^*}_{pf} = 8_{pf} \otimes 6_{oz} = 8_{pf} + 8 \times 6_{oz}
+\end{equation}
+
+So that the final rendered term for this element alone would be as shown:
+
+
+\begin{figure}[H]
+  \begin{center}
+   %\includegraphics[trim=LEFT BOTTOM RIGHT TOP, clip, width=0.9\textwidth,]{resources/pdfs/EXAPLATONICFORM-PFA.pdf}\\
+   \includegraphics[ width=0.9\textwidth,]{resources/pdfs/EXAPLATONICFORMPFA_OCT.pdf}\\
+   \caption{An example of a single \textbf{PFA} component equivalent to the configuration \textbf{$8_{pf} \otimes 6_{oz}$}.}
+  \label{FIGEXAPLATONICFORMPFA_OCT}
+  \end{center}
+\end{figure}
+
+
+
+\end{enumerate}
+}
 \end{enumerate}
 
-Of course, once one has the correct $\boxed{\omega_i^*}$, they can just attach it to the existing \textbf{FGE} as is so as to construct the \textbf{BODY} aspect of a full genome expression of $\Theta$.
+Of course, once one has the correct $\boxed{\omega_i^*}$, they can just attach it to the existing \textbf{FGE} chain-structure so as to construct the  complete \textbf{BODY} aspect of a full genome expression for $\Theta$.
 
 
 

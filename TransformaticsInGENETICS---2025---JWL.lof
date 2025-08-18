@@ -51,7 +51,8 @@
 \contentsline {figure}{\numberline {A.2}{\ignorespaces The OZIN Cipher in use. An excerpt from the Church of Dance Eternal OGF}}{124}{figure.caption.48}%
 \contentsline {figure}{\numberline {A.3}{\ignorespaces The OZIN Cipher in use. An excerpt from author's research notes (circa 2019) on developing a cryptographic system leveraging a dial mechanism. Copyrights due to author and Nuchwezi Research Labs.}}{125}{figure.caption.49}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces An example of a single \textbf {PFA} component equivalent to the configuration \textbf {$8_{pf} \otimes 6_{oz}$}.}}{131}{figure.caption.52}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{3}$ genome sequence (from \textbf {Equation \ref {EQDNEXA}})}}{135}{figure.caption.52}%
-\contentsline {figure}{\numberline {C.2}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{veuler}$ (Euler Virus) genome sequence (from \textbf {Equation \ref {EQGFEEVIRUS_ORIG}})}}{136}{figure.caption.53}%
-\contentsline {figure}{\numberline {C.3}{\ignorespaces The \textbf {alternative rendering} of the same sequence as $\Omega _{veuler}$.}}{137}{figure.caption.54}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{3}$ genome sequence (from \textbf {Equation \ref {EQDNEXA}})}}{137}{figure.caption.53}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{veuler}$ (Euler Virus) genome sequence (from \textbf {Equation \ref {EQGFEEVIRUS_ORIG}})}}{138}{figure.caption.54}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces The \textbf {alternative rendering} of the same sequence as $\Omega _{veuler}$.}}{139}{figure.caption.55}%
