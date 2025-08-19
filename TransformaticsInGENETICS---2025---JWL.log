@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  19 AUG 2025 16:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  19 AUG 2025 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5410,12 +5410,22 @@ utational _
  []
 
 )
+Underfull \hbox (badness 10000) in paragraph at lines 4618--4618
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4618--4621
+
+ []
+
+
 
 [152]
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=3505, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=3507, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 4644
@@ -5438,7 +5448,7 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=3508, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=3510, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
@@ -5529,10 +5539,10 @@ onts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt
 ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on TransformaticsInGENETICS---2025---JWL.pdf (174 pages, 1187278
-3 bytes).
+Output written on TransformaticsInGENETICS---2025---JWL.pdf (174 pages, 1187345
+2 bytes).
 PDF statistics:
- 3919 PDF objects out of 4296 (max. 8388607)
+ 3921 PDF objects out of 4296 (max. 8388607)
  1131 named destinations out of 1200 (max. 500000)
  901 words of extra memory for PDF output out of 10000 (max. 10000000)
 
