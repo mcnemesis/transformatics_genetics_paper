@@ -1,4 +1,4 @@
-\contentsline {chapter}{Preface}{ix}{chapter*.4}%
+\contentsline {chapter}{Preface}{xi}{chapter*.6}%
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
 \contentsline {subsection}{\numberline {1.0.1}How to Navigate the Monograph}{6}{subsection.1.0.1}%
 \contentsline {chapter}{\numberline {2}Sequence Symbol Sets and Sequence Transforms Applied to Genetic Code}{9}{chapter.2}%
@@ -63,3 +63,4 @@
 \contentsline {subsection}{\numberline {B.0.1}Example of Resolving PFA Components, $\boxed {\omega _i^*}$}{133}{subsection.a.B.0.1}%
 \contentsline {chapter}{Appendix \numberline {C}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{137}{appendix.a.C}%
 \contentsline {subsection}{\numberline {C.0.1}Examples of Complete Lu-Genome Expressions}{141}{subsection.a.C.0.1}%
+\contentsline {chapter}{Colophon}{153}{appendix*.60}%

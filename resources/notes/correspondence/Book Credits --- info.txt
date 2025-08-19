@@ -1,0 +1,55 @@
+### Dedication Page Note:
+
+Without having to print their actual DNA sequences here... This work is especially dedicated to those blessed 3 souls that keep their father's genuine genetic code alive...  Arora J. Muntu, the jolly observant fellow, Theo R. Willrich, the one that knows to bring true numbers to life, and our only daughter, Shona K. Marlyn, the loyal keeper of all our special sequences. Without them, I trust that this book would not have advanced past the front cover.
+
+
+# Applying TRANSFORMATICS in GENETICS --- Joseph Willrich Lutalo, 2025.
+
+
+> Jung restored the colour in science, and made me cherish the mind in new ways...
+
+And that in exercising our will we might become aware of the divine in us and thus make glory manifest. God is not asleep in us!
+
+---- JWL, Shrines
+#CREATED:Aug 19, 2025 06:41:01
+
+use that 👆🏼😁 quote as the opening in the preface
+
+Also change the citation bit in the bibtex to not use the section title but instead the book title, perhaps also mention the page numbers (109,222-223) on which the quotes are picked.
+
+
+Add credits page just before back cover/after bibliography.. as unnumbered chapte \chapter*{Colophon}
+
+\chapter*{Colophon}
+\addcontentsline{toc}{chapter}{Colophon}
+
+the Contents:
+
+Colophon
+
+Cover designs by author, using electronic art generated using Microsoft Bing Image Creator, powered by DALL·E, based on prompts by the author.
+
+
+Graphics software used: Adobe Express on Android.
+
+
+Book typeset using LaTeX on Microsoft Windows, via the TexMate LaTeX Editor.
+
+
+Electronic Edition to first be published in Uganda by I*POW (https://t.me/ipowriters)
+
+
+Font: Computer Modern.
+
+
+Add this line somewhere in your document:
+```latex
+\showthe\font
+```
+Then compile with `latex` or `pdfLaTeX` (not XeLaTeX). It will output the font info to the **log file**, not the PDF.
+
+You’ll see something like:
+```
+> \font=cmr10 at 10.0pt.
+```
+Which means you're using **Computer Modern Roman 10pt**.

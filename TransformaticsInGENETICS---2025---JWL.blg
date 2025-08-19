@@ -10,7 +10,7 @@ Warning--entry type for "earthwormImage" isn't style-file defined
 Warning--empty journal in Lutalo2025_phd
 You've used 55 entries,
             1791 wiz_defined-function locations,
-            732 strings with 15772 characters,
+            731 strings with 15750 characters,
 and the built_in function-call counts, 8991 in all, are:
 = -- 826
 > -- 321

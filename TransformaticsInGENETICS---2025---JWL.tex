@@ -128,8 +128,26 @@
 \includepdf[pages=1]{resources/pdfs/front_cover.pdf}
 
 
+% insert I*POW frontmatter
+\includepdf[pages=-]{resources/pdfs/FrontisMatter.pdf}
+
+
 
 \maketitle
+
+\chapter*{Dedication}
+
+
+\begin{table}[H]
+  \centering
+  \Huge
+	\begin{tabular}[t]{|p{0.6\textwidth}}
+$   ``$ \textbf{With}\textit{out having to print their actual DNA sequences here...    \Large This work is especially dedicated to those blessed 3 souls that keep their father's genuine genetic code alive...  \textbf{Arora J. Muntu}, the jolly observant fellow, \textbf{Theo R. Willrich}, the one that knows to bring true numbers to life, and our only daughter, \textbf{Shona K. Marlyn}, the loyal keeper of all our special sequences.} Without them, I trust that this \textbf{book would not have advanced past the front cover.}\\
+	\hline
+	              
+\end{tabular}
+  \label{TABDEDC}
+\end{table}
 
 \tableofcontents
 
@@ -141,10 +159,12 @@
 
 \Large
 
+
 \chapter{Preface}
 
 \begin{quotation}
-\noindent \texttt{Magic, Can bring man all these and more---It can bring the universe to man, Whether seen or unseen.}\\
+\noindent \texttt{Jung restored the colour in science, and made me cherish the mind in new ways...}\\
+\texttt{And that in exercising our will we might become aware of the divine in us and thus make glory manifest. God is not asleep in us!}\\
 \hspace*{\fill} --- \textbf{J. Willrich Lutalo}, \textit{Shrines of The Free Men}, 2018\cite{shrinesjwl}
 \end{quotation}
 
@@ -168,9 +188,9 @@ Despite not having been funded by any one or any particular organization, the au
 \chapter*{Abstract}
 \large
 
-Though it started out as just a paper, this work (now a monograph) brings to surface the importance of leveraging the mathematical theory recently named ``Transformatics"\cite{transformatics}, that deals with the study, processing and analysis of especially ordered sequences of symbols and their transformations. It has been demonstrated to be a credible and powerful theory in designing, specifying or explaining the properties of automata operating on sequences to produce other sequences --- so-called \textbf{sequence transformers}. So, in this particular work, we take that body of knowledge, as well as what we know about the critically important science of how biological life-forms get to be defined, transformed and expressed in nature via the special genetic code known as DNA (deoxyribonucleic acid), that is best modeled conceptually as an ordered sequence of genes or more technically, a sequence of special combinations of any of four chemical bases (nucleic acids) or just ``nucleobases" --- Adenine(A), Cytosine(C), Guanine(G), and Thymine(T), into a finite sequence typically expressed as a double-helix ladder structure, that can then be decoded by convenient biological mechanisms so as to express or rather, manufacture one or more essential life-building compounds such as proteins that underlie the synthesis of specialized aspects of the organism's body such as skin, bone and muscle tissue in an animals or into cell-wall tissue, photosynthesis machinery and others, for plant organisms. This work demonstrates how several ideas first compiled under the transformatics umbrella can be well applied in problems relating to general genetics; we for example see how to quantify how far apart or different any two organisms might be based on the anagram distance between their genetic codes, this likewise being applicable to also sub-sequences of DNA that might underlie the expression of specific biological machines, certain traits or particular functions. I also consider how to leverage the concept of the modal sequence statistic in analyzing not just how similar different DNA sequences might be in terms of their relative composition of the basic nucleobases, but also in terms of their relative composition at higher abstraction levels such as at the level of amino-acids or large n-gram subsequences. I finally consider the matter of how, by leveraging the idea that a modal sequence encodes a summary about some larger sequence or an entire population of them, that we can then approach DNA as though it were a special statistical summary just like the MSS from transformatics theory, and just like how complex sequences could be constructed from summary statistics via certain protraction and multiplication transformers as we have encountered in earlier work on transformatics, we use a thought experiment to demonstrate how DNA would be transcribed into both an mRNA-like structure and then which can be further translated into actual body structures that allow the organism to occupy space and appear or behave in a particular way. Though this work is significantly theoretical and mathematical, we anticipate that these discussions and the exposition shall inspire actual domain experts and other researchers interested in genetics, genetic engineering and related sciences to pick up and apply our transformatics theory and ideas in both theory and practice.
+It started out as just a paper but is now a monograph. \textbf{Applying TRANSFORMATICS in GENETICS} brings to surface the importance of leveraging the mathematical theory recently named ``Transformatics", that deals with the study, processing and analysis of especially ordered sequences of symbols and their transformations via symbolic machines known as sequence transformers. In earlier and recent work by the author, it has been demonstrated to be a credible and powerful theory in designing, specifying and/or explaining the properties of automata operating on sequences to produce other sequences. So, in this particular work, we take that body of knowledge, as well as what we know about the important science of how natural/biological life-forms are defined, transformed and expressed in nature based on genetic code sequences known as DNA (deoxyribonucleic acid), and use that to revisit old and new problems in the field of GENETICS, developing many new, and previously unpresented solutions based on the theories, calculus and mechanics of sequence transformers (aka, "transformatics"). We have used transformatics to develop, but also distill many useful general results in the form of theorems as well as 3 laws concerning na-Sequences. We have demonstrated how sequence transformers can be leveraged to solve specific or particular practical problems in genetics via numerous well-structured sequence transformations. We have invented and presented several new algorithms that would allow the concepts and solutions we developed in transformatics theory for various general problems to be readily turned into computable solutions using any programming language, for scenarios in genetics, leveraging TEA and Python mostly. We have demonstrated how to leverage statistical analysis to make understand quantifiable differences and similarities between two or more na-Sequences and/or entire populations of them. Leveraging transformatics, we have developed a new theory and systematic framework, the Lu-Genome Expression System, with which, via explorations by eye and hand, but also via the use of computers, the matter of how individual DNA sequences, and generally, any sequence that can be transformed into a numeric/decimal sequence, can be used to explore the natural concept of gene and genome expression, in both a visual, but also mathematical/symbolic way. We have tackled the fundamentally critical problem of genome sequencing, and have managed to not only cast it rigorously using the language and notions of transformatics, but have also managed to define an abstract machine that can take a set of DNA sequences out of alignment, and then derive from them, via systematic and meaningful alignment procedures, a final, representative consensus genome sequence. Though this work is significantly theoretical and mathematical, we anticipate that the discussions, notes, formulations, solutions and overall expository treatment of the subject that it brings forth, shall help inspire actual domain experts and other researchers interested in genetics, genetic engineering and related sciences to pick up and apply our transformatics theory and ideas in both theory and practice.
      \newline\newline
-     \textbf{Keywords}: Applied Mathematical Statistics, Transformatics, Artificial Statistical Intelligence, Information Processing, Ordered Sequences, DNA sequences, Genetic Code, Genetic Analysis, Abstract Machines. Genome Sequencing, Genome Expression
+     \textbf{Keywords}: Mathematical Statistics, Linear Algebra, Transformatics, Artificial Intelligence, Sequence Processors, Sequence Analysis, DNA, Genetic Code, Genetic Analysis, Abstract Machines, Genome Sequencing, Genome Expression, Sequence Programming, Transformers
 %\end{abstract}
 
 \newpage
@@ -901,6 +921,7 @@ Which, given how that special sequence was derived/discovered(see \textbf{Sectio
 
 
 \begin{theo}[\textbf{Complement of an o-SSI is an o-SSI}]
+\label{THEOCOMPLOSSI}
 If some sequence $\Theta: \mathbb{N} \times \psi_\beta$ is an orthogonal symbol set identity for the base $\beta$, then its complement, $\lnot\Theta$ is also an orthogonal symbol set identity for $\beta$.
 \end{theo}
 
@@ -1952,6 +1973,7 @@ R_{\Theta^n} = (\Theta_m \Diamond \Theta^n \setminus \Theta_m)^*
 Such that $\Theta_m$ is the longest sequence in $\Theta^n$ --- a collection of $n$ sequences, and that $\tilde{T}(\Theta^n)$ produces/generates/computes $R_{\Theta^n}$ by iteratively computing and updating the genome sequence in n-1 iterations as such:
 
 \begin{trans}
+\label{TRANSGENSEQ}
 $R_{\Theta^n}^0 \xrightarrow{O_{tGS}(\{R_{\Theta^n}^0\} \cup\Theta^n,0)} R_{\Theta^n}^1$
 $\xrightarrow{O_{tGS}(\{R_{\Theta^n}^1\} \cup \Theta^{n-1},1)} R_{\Theta^n}^2$
 $\xrightarrow{O_{tGS}(\{R_{\Theta^n}^2\} \cup \Theta^{n-2},2)}$
@@ -3999,22 +4021,38 @@ Thus we conclude our treatment of TRANSFORMATICS in GENETICS.
 \chapter{Conclusion}
 \label{CONC}
 
-In this work, we have advanced our knowledge concerning the important and fundamental subject of genetics with new theory and practical ideas previously only held informally or totally unknown. We have explored several interesting ways by which the newly proposed mathematical field of inquiry, known as \textbf{TRANSFORMATICS}, might be applied in the sub-field of the biological sciences known as \textbf{GENETICS}. 
+In this work, we have advanced our knowledge concerning the important and fundamental subject of genetics with new theory and practical ideas previously only held informally or totally unknown. We have explored several interesting ways by which the newly proposed mathematical field of inquiry, known as \textbf{TRANSFORMATICS} --- potentially a sub-field of/fusion of mathematical statistics and linear algebra\footnote{As in the conclusion of the original transformatics paper\cite{transformatics}, the author strongly feels that in the future, and with further investments in research, development of theory and applications, transformatics might become its own sub-field of mathematics, distinct from both statistics and linear algebra.}, might be applied in the sub-field of the biological sciences known as \textbf{GENETICS}. 
 
 Though much of the work was mathematical in nature, we have also had lots of useful theory proposed in the form of conceptual and especially philosophical ideas relating to how to understand or leverage genetics through the lens of a sequence analyst and/or a computer scientist. 
 
-\hl{TODO: complete the conclusion... add/mention/link to some of the definitions, the theorems too. }
-
-In terms of \textbf{Key Metrics and Contributions} this single work has brought to surface:
+In terms of concrete \textbf{Key Metrics and Contributions} this single work has brought to surface:
 \begin{enumerate}
-\item{ \textbf{11 Working Definitions} were developed in relation to various concepts in analytical genetics, sequence analysis and sequence processing in general.
+\item{ \textbf{11 Working Definitions} were developed in relation to various concepts in analytical genetics, sequence analysis and sequence processing in general, and these include:
+
+	\begin{enumerate}
+	\item The \textbf{na-Sequences} --- see  \textbf{\hyperref[DEFNASEQ]{Definition \ref{DEFNASEQ}}}
+	\item The \textbf{START-Codons} --- see \textbf{\hyperref[DEFSTARTCOD]{Definition \ref{DEFSTARTCOD}}}
+		\item The \textbf{STOP-Codons} --- see \textbf{\hyperref[DEFSTOPCOD]{Definition \ref{DEFSTOPCOD}}}
+	\item The \textbf{Sequence Characteristic} --- see  \textbf{\hyperref[DEFSEQCHAR]{Definition \ref{DEFSEQCHAR}}}
+	\item The \textbf{Population Characteristic} --- see  \textbf{\hyperref[DEFPOPCHAR]{Definition \ref{DEFPOPCHAR}}}
+	\item The \textbf{Genome Sequencer} --- see  \textbf{\hyperref[DEFGENOMESEQ]{Definition \ref{DEFGENOMESEQ}}}
+	\item The \textbf{Ribosome} --- see  \textbf{\hyperref[DEFRIBOSOME]{Definition \ref{DEFRIBOSOME}}}
+	\end{enumerate}
+
 }
-\item \textbf{4 Theorems} were developed and presented for the first time, spanning genetic sequences and then sequence complements in general.
+\item{ \textbf{4 Theorems} were developed and presented for the first time, spanning genetic sequences and then sequence complements in general. These include...
+
+	\begin{enumerate}
+	\item \textbf{Complement Sequences} --- see  \textbf{\hyperref[THEOCOMPLEMENTS]{Theorem \ref{THEOCOMPLEMENTS}}}
+	\item \textbf{Complement of an o-SSI is an o-SSI} --- see  \textbf{\hyperref[THEOCOMPLOSSI]{Theorem \ref{THEOCOMPLOSSI}}} 
+	\item \textbf{Equivalence of Sequences} under the Complement Transform  --- see  \textbf{\hyperref[THEOCOMPEQUIV]{Theorem \ref{THEOCOMPEQUIV}}} 
+	\end{enumerate}
+}
 \item {\textbf{3 Laws} were distilled and presented for the first time:
 	\begin{enumerate}
-	\item \textbf{\hyperref[LAWNA]{Law 1}}: Concerning the nucleic acid identifier symbol set, $\psi_{na}$. 
-	\item \textbf{\hyperref[LAW2]{Law 2}}: Concerning Introns: Non-coding gene-programs.
-	\item \textbf{\hyperref[LAWGDL]{Law 3}}: The \textbf{Identity Genome Sequence} Law.
+	\item \textbf{\hyperref[LAWNA]{Law \ref{LAWNA}}}: Concerning the nucleic acid identifier symbol set, $\psi_{na}$. 
+	\item \textbf{\hyperref[LAW2]{Law \ref{LAW2}}}: Concerning Introns: Non-coding gene-programs.
+	\item \textbf{\hyperref[LAWGDL]{Law \ref{LAWGDL}}}: The \textbf{Identity Genome Sequence} Law.
 	\end{enumerate}
 }
 \item{ \textbf{15 Transformers} were developed and presented for the first time, including...
@@ -4023,14 +4061,22 @@ In terms of \textbf{Key Metrics and Contributions} this single work has brought 
 	\item The formal definition of the \textbf{Ribosome} as a \textbf{Protein Generator}(\textbf{\hyperref[TRANSF3]{Transformer \ref{TRANSF3}}})
 	\item The \textbf{n-Gram Generator} (\textbf{\hyperref[TRANSFBUND]{Transformer \ref{TRANSFBUND}}})
 	\item The \textbf{Sequence Look-up System} that leverages G$\ddot{o}$del numbers for efficient DNA-database queries (\textbf{\hyperref[TRANSFSEQLOOKUP]{Transformer \ref{TRANSFSEQLOOKUP}}})
-	\item The \textbf{Random Sequence/Symbol Generator} that can construct random DNA/RNA sequences (\textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}})
+	\item The \textbf{Random Sequence/Symbol Generator} that can construct random DNA/RNA sequences, but also any arbitrary random\footnote{We could have wanted to generalize this generator so that it can also handle the case of non-random sequence generation --- especially since it already bases its generated sequence on the properties of some input sequence, so that for example we can generate sequences that reflect the symbol distribution within the input/sample sequence (something akin to how a ChatGPT model can generate new text based on/related to some samples with say non-uniform symbol distributions), but we chose to not do that within the context of this present work, and shall leave that for a future publication and treatment.} sequence (\textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}})
 	\item A transformer for converting between pure numbers (in base-10) into DNA/RNA code, and vice-versa --- the $\psi_{na}$ to $\psi_{10}$ \textbf{na-to-Decimal Decoder} (\textbf{\hyperref[TRANSFDECTONASEQ]{Transformer \ref{TRANSFDECTONASEQ}}})
 	\end{enumerate}
 	
-	and many more large and tiny but essential transformer utilities and specifications.
+	and many more big and/or small, but essential transformer utilities and specifications.
 
 }
-\item \textbf{26 Transformations} were presented to help advance generic as well as particular computational solutions to many kinds of basic problems in sequence analysis, processing and several concerning gene/genome expression problems.
+\item{ \textbf{26 Transformations} were presented to help advance generic as well as particular computational solutions to many kinds of basic problems in sequence analysis, processing and several concerning gene/genome expression problems, including some special ones such as:
+
+	\begin{itemize}
+	\item \textbf{\hyperref[TRANSGENSEQ]{Transformation \ref{TRANSGENSEQ}}} that generalizes the intricate process of generating a correct \textbf{consensus genome sequence} via \textbf{genome sequencing}.
+	\item \textbf{\hyperref[TRANSGENSEQHiFinelle]{Transformation \ref{TRANSGENSEQHiFinelle}}} that serves as a good template for the intricate process underlying the \textbf{derivation of a Full Genome Expression} from a plain sequence using the \textbf{x-LGES}.
+	\end{itemize}
+
+ 
+ }
 \item{\textbf{8 Algorithms} were developed and presented for the first time, including:
 	\begin{enumerate}
 	\item \textbf{\hyperref[ALGCSA]{Algorithm \ref{ALGCSA}}}: The \textbf{Closest Sequence Algorithm}.
@@ -4046,7 +4092,7 @@ In terms of \textbf{Key Metrics and Contributions} this single work has brought 
 }
 \item \textbf{3 Tabular Analyses} were presented, including \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}} that depicts how to perform comparative statistical analysis of DNA, RNA or any na-Sequence using some measures and methods from transformatics.
 \item \textbf{Overall, a total of 7 Tables} were presented, including the two critically important \textbf{PFEK} tables \textbf{\hyperref[TABSSLAPERK]{Table \ref{TABSSLAPERK}}} and \textbf{\hyperref[TABFSLAPERK]{Table \ref{TABFSLAPERK}}} for helping in computing predictable shuffles/anagrams of the base-10 n-SSI using the \textbf{SLSA} and \textbf{FLSA} algorithms respectively.
-\item{ \textbf{2 Original Ciphers} --- very rare and universally usable cryptographic keys were presented as part of the \textbf{Lu-Genome Sequence Expression System}, as well as proper justification for their practical relevance and sufficient historical background and example applications of both.
+\item{ \textbf{2 Original Ciphers} --- very rare and universally usable cryptographic keys were presented as part of the \textbf{Lu-Genome Expression System}, as well as proper justification for their practical relevance and sufficient historical background and example applications of both.
 
 \begin{enumerate}
 \item The \textbf{OZIN Cipher} key depicted in \textbf{\hyperref[FIGOZIN]{Figure \ref{FIGOZIN}}}
@@ -4054,15 +4100,15 @@ In terms of \textbf{Key Metrics and Contributions} this single work has brought 
 \end{enumerate}
 
 }
-\item \textbf{3 Core Problems} in the matter/domain of \textbf{Genome Sequencing} were formally defined and their theoretical solutions also presented. Refer to \textbf{\hyperref[SECMATHSEQ]{Section \ref{SECMATHSEQ}}}.
+\item \textbf{3 Core Problems} in the matter/domain of \textbf{Genome Sequencing} were formally defined and their theoretical solutions also presented\footnote{We could have delved into actually demonstrating how to use the proposed theory and solutions to conduct actual genome sequencing, especially by hand, however, I have decided to postpone that to a later publication or edition of this book.}. Refer to \textbf{\hyperref[SECMATHSEQ]{Section \ref{SECMATHSEQ}}}.
 
-\item{ \textbf{More than 10 Source Code Examples}, some in the TEA language, and relating to conducting quick analyses of arbitrary na-Sequences via the commandline (refer to \textbf{\hyperref[SECFANAL]{Section \ref{SECFANAL}}}), and 8 (in \textbf{\hyperref[SECRSG]{Chapter \ref{SECRSG}}}), relating how to generate  arbitrary random sequences using Python:
+\item{ \textbf{More than 10 Source Code Examples}, some in the TEA language (by the author\cite{cli_tttt}), and relating to conducting quick analyses of arbitrary na-Sequences via the commandline (refer to \textbf{\hyperref[SECFANAL]{Section \ref{SECFANAL}}}), and 8 (in \textbf{\hyperref[SECRSG]{Chapter \ref{SECRSG}}}), related to how to generate arbitrary random sequences using Python and the proposed \textbf{RSG} Transformer Machine:
 
 \begin{enumerate}
 \item \textbf{\hyperref[LST_FLSA]{Listing \ref{LST_FLSA}}} --- The First Lu-Shuffle Algorithm.
 \item \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}} --- The Second  Lu-Shuffle Algorithm.
 \item \textbf{\hyperref[LST_USYMBOLSET]{Listing \ref{LST_USYMBOLSET}}} --- Generate Unspecific Symbol Set for Any Sequence.
-\item \textbf{\hyperref[LST_PROTRACT]{Listing \ref{LST_PROTRACT}}} --- Multiply and Sequence by a given factor.
+\item \textbf{\hyperref[LST_PROTRACT]{Listing \ref{LST_PROTRACT}}} --- Multiply any Sequence by a given factor.
 \item \textbf{\hyperref[LST_RNG]{Listing \ref{LST_RNG}}} --- Generate a Random Number within a specified range.
 \item \textbf{\hyperref[LST_SHUFFLE]{Listing \ref{LST_SHUFFLE}}} --- Shuffle/Anagrammatize a sequence using no other parameters.
 \item \textbf{\hyperref[LST_SELECT]{Listing \ref{LST_SELECT}}} --- Select a specific number of items from some sequence.
@@ -4073,35 +4119,14 @@ In terms of \textbf{Key Metrics and Contributions} this single work has brought 
 \item And many other quantifiable and unquantifiable major and minor contributions to genetics, mathematics, computer science, philosophy and more.
 \end{enumerate}
 
+\vspace{1em}
 
-Overall, we set out to explore ways to leverage the newly proposed sub-discipline of \textbf{Transformatics} in explaining problems in \textbf{Genetics}, but also so as to be able to use it to derive or develop solutions to any such problems. We have formalized working definitions of important fundamental concepts (from a transformatic analytical point-of-view) spanning symbol sets
+Thus, we set out to explore ways to leverage as well as further the newly proposed discipline of \textbf{Transformatics}, by using it to explain problems in \textbf{Genetics}\footnote{Which happens to be one of the major, fundamental sciences that hinges much on the concept of sequences, their processing and analysis.}, but also, so as to be able to use it to derive or develop solutions to any such problems we identify and find tractable under the theory and mechanics of sequence transformers. In this regard, as highlighted in the enumerations above, we have formalized many working definitions of important fundamental concepts (from a transformatic-analytical point-of-view) spanning symbol sets, various statistical measures applicable to sequences, several abstract machines applicable to specific and general problems in genetics and more. We have distilled some useful general results in the form of theorems, have immortalized some critical and relevant laws relating to genetic code sequences, have extensively demonstrated how the concept of modeling general solutions to various problems can be accomplished using the notion of [re-usable] transformers --- defined not in programming code as some might think, but as mathematical operators usable with or without computers. We have demonstrated how such transformers can be leveraged to solve specific or particular practical problems via numerous well-structured transformations. We have invented and presented some new algorithms that would allow the concepts and solutions we developed in transformatics theory for various problems be readily turned into computable solutions using any programming language. And in this regard, have also gone ahead to demonstrate the implementation of some practical solutions or fundamental aspects of them using source-code implementations in both TEA and Python that anyone can merely copy from the text and apply to their specific problems or which one could adapt so as to build more elaborate computational solutions to problems not just in genetics, but also for general sequence analysis and process problems. We have demonstrated ways to leverage statistical analysis so as to make sense of differences in and quantifiable similarities between two or more sequences --- DNA related or not. We have also presented some reference tables that would help anyone attempting to leverage the proposed theory and algorithms of the \textbf{Lu-Genome Expression System} to be able to readily do so without having to guess or dive into the daunting process of generating \textbf{Platonic Form Encoding Keys} by hand. Related to the \textbf{LGES}, we have also presented and demonstrated for the first time, two very interesting and universally usable [originally esoteric] ciphers that would help not in genetics-related cryptography problems, but in helping both students and researchers of genetics to readily explore and communicate otherwise difficult to express concepts relating to genetic diversity, genetic similarity, the consequences of genetic mutations --- additions, subtractions or alterations to genetic sequences, etc. using a visual language that is reminiscent of actual molecular-level expressions resulting from the natural processing of DNA and mRNA code, all the way up to the expression of entire organisms from mere genetic code. With regards to understanding or explaining how a full genome might be derived from bits of DNA sequence read from or known, concerning an individual organism, an individual species, a genus, an entire family or populations of organisms, we have advanced the literature by developing rigorous mathematical concepts and solutions to the matter of genome sequencing whether performed by hand as in the classical context of Fred Sanger, or with advanced computation such as in modern genome banks and DNA processors. 
 
+Overall, this monograph, though it originally started out as just a paper, and though some would envision it to have been a longer treatise than it actually is, it surely has helped lay the ground for any future work in genetics, the mathematical sciences as well as in transformatics itself, so they take advantage of and leverage the methods, theory and mechanics/calculus of transformatics as presented in this work, so as to define new problems, design solutions to existing as well as new problems, but also, so that it is possible to readily take many ideas previously either intractable or only appreciable in theory, into the practical domain --- especially via computational methods leveraging transformers.
 
-In \textbf{\hyperref[SEC2]{Chapter \ref{SEC2}}} we have formally defined the DNA and RNA symbol sets, $\psi_{DNA}$ and $\psi_{RNA}$. We have looked at the matter of the difference between the ordering of terms in these mathematically-oriented sets, relative to the common-place \textbf{A-T-C-G} ordering typical in biological and especially genetics literature. We have defined the more universal $\psi_{na}$ that would help apply logic to both DNA and RNA sequences, and have generalized all such sequences as \textbf{na-Sequences}.
+It is in the dreams and hopes of the author, that the work that started with the treatment of basic sequences in the form of pure number expressions --- see \textbf{GTNC}\footnote{The original paper actually first got written circa 2020: \url{https://scholar.archive.org/work/apn4f26kdzatfodrap7avqafce}}\cite{Lutalo2024gtnc}, circa 2020, while only getting started with their MSc and at that time\footnote{Joseph, despite having been very active in the contemporary scientific and mathematical research community (see ORCID: \url{https://orcid.org/0000-0002-0002-4657}), still hasn't been generally well appreciated --- they are still not affiliated with any academic institution or faculty, have not managed to secure a teaching position despite much of their work contributing to global open-learning via the Internet (see \url{https://t.me/bclectures} and \url{https://www.youtube.com/playlist?list=PL9nqA7nxEPgv_CqHOxIDj2Jf1gHAEV-B-}), and despite having expressed interest in pursuing their PhD in either Computer Science or Mathematics at Oxford\cite{lutalo_2025_sop}, haven't yet secured a PhD position nor scholarship.}, only looking at sequences as though they were a concept native to only \textbf{number theory}, does not stop with recent advances such as the \textbf{LNS}\cite{lnspaper} that started to explore these ideas in the context of physics and computer science, and then \textbf{ADT} that ushered in the sensibilities of mathematical statistics, but that transformatics and the collective mathematical theories of treating of sequences of symbols via transformers and analytical specifications, gets its own wings and finally flies off the ground into any and all fields of inquiry with useful results and advancements of human understanding and knowledge. 
 
-In \textbf{\hyperref[SECSEQAB]{Chapter \ref{SECSEQAB}}} we have looked at the idea of using n-grams such as the meaningful na-Sequence nucleobase 3-grams (technically known as \textbf{codons}) to abstract away various nuances of the flat-structure DNA or RNA sequence whose length might sometimes shoot into the millions or billions for realistic complete genome sequences. In \textbf{\hyperref[SEC05]{Chapter \ref{SEC05}}} we further these ideas to look at how to process na-Sequences at n-gram level such as in naming or identifying subsequences. We have also seen that such abstractions might help manage complexity and simplify formalisms or algorithms dealing with na-Sequences such in the formalization of protein synthesis for natural or artificial automata via codon-processing ribosomes.
-
-
-In \textbf{\hyperref[SEC3]{Chapter \ref{SEC3}}} we look at how we might leverage the basic concept of a symbol set to analyze arbitrary na-Sequences. We for example look at how to automatically generate special ordered symbol sets corresponding to individual na-Sequences under various bases --- DNA, RNA, na- or even sometimes lexically meaningful AZ($\psi_{az}$). We have seen how to define special symbol sets based on n-gram abstractions of na-Sequences, such as might help in logic with special na-Subsequences such as START and STOP codons.
-
-
-In \textbf{\hyperref[SEC3A]{Chapter \ref{SEC3A}}} we then consider the interesting matter of \textbf{complement sequences} and \textbf{complement symbol sets}. We look at how to generate complements given a starting sequence or symbol set. We look into the interesting fact that complementing $\psi_{DNA}$ helps us arrive at the common \textbf{A-T-C-G} ordering of terms such as in $\dot{\psi}_{DNA}$. Though we don't use it immediately, we see that we might also talk of orthogonal symbol sets and orthogonal symbol set identities relation to na-Sequences.
-
-In \textbf{\hyperref[SEC4A]{Chapter \ref{SEC4A}}} we dive into how to leverage the \textbf{ADM} and \textbf{MSS} to perform non-trivial sequence analyses. We utilize four scenarios starting with basic scenarios between two individual sequences of potentially unequal lengths, all the way to analyzing entire collections or populations based on their representative na-Sequences. We look at how to leverage the \textbf{TEA} text-oriented GPL to conduct some of the essential analyses proposed, readily via the the commandline, and with sequences of any size stored in basic text files. We see that using the concept of the \textbf{modal sequence statistic}, whether applied to individual na-Sequences, collections of them or just sub-sequences of a longer DNA or RNA strand, could help us leverage statistical summary information about a sequence that might otherwise not be easily to glean or leverage. Especially, with previous work having shown us that traditional statistical measures and tests might sometimes fail to capture differences between actually different sequences, we further explore this idea as part of a detailed analysis of several DNA and RNA sequences across the major four different scenarios. We also learn that, where some obvious measures and techniques might fail to perform well or as expected, the careful use of the ADM, MSS and also newly defined \textbf{sequence characteristic} as well as \textbf{population characteristic} measures can offer the analyst new, better and indispensable information about one or more sequences while making comparisons or designing computational logic around the properties of sequences easier and repeatable. In this chapter too, particularly in \textbf{\hyperref[SECPROXPOP]{Section \ref{SECPROXPOP}}}, we develop an algorithm that might be utilized in bringing statistical artificial intelligence to the matter of sequence classification problems relating to labeled datasets. The closely related \textbf{\hyperref[SECSEQPROXSEQ]{Section \ref{SECSEQPROXSEQ}}} considers the matter of identifying the \textbf{closest-sequence} from a collection of na-Sequences when given a particular query na-Sequence. Finally, \textbf{\hyperref[SECSEQSTORAGE]{Section \ref{SECSEQSTORAGE}}} considers the important matter of \textbf{optimal database storage of na-Sequences} as is typically found in real-world systems such as those that do whole-genome sequencing or gene-banks, etc. In particular, we develop a special sequencing index or identifier based on \textbf{G$\ddot{o}$del Numbers} and our newly proposed sequence characteristic measure --- this, so storage and sequence search and look-up problems can be conducted efficiently using information already in the sequences.
-
-In \textbf{\hyperref[SECMATHSEQ]{Chapter \ref{SECMATHSEQ}}} we get into some deep mathematics around the critical problem of genome sequencing. We attack the matter by breaking it down into 3 major problems. \textbf{\hyperref[PROBG1]{Problem G1}} deals with the matter of how to compute the longest common subsequence given any two sequences. \textbf{\hyperref[PROBG2]{Problem G2}} deals with how, as happens during conventional genome sequencing, we have sections of two or more sequences that not exactly the same, but which must be reduced to some \textbf{consensus sequence} that is most true to all of them. And then in \textbf{\hyperref[SECCOMPGENSEQ]{Problem G3}}, we consider how to arrive at the final best consensus sequence that also unifies all the disparate input sequences originally provided, into a single sequence that is then the genome sequence of the entity under analysis. We then formally define an abstract genome sequencing machine in \textbf{\hyperref[SECGENSEQ]{Section \ref{SECGENSEQ}}}, and culminate in an important result, the \textbf{Identity Genome Sequence Law} in \textbf{\hyperref[SECIGSL]{Section \ref{SECIGSL}}}.
-
-
-We then turn our attention to the matter of how genetic code is translated into actual living organisms in \textbf{\hyperref[SEC05]{Chapter \ref{SEC05}}}. Focusing at the molecular level, we tackle the matter of the algorithm by which the most basic synthesis happens in a cell. Thus, \textbf{\hyperref[SECPROT]{Section \ref{SECPROT}}} presents the \textbf{protein synthesis  algorithm}, and among important contributions of this work are the two diagrams --- \textbf{Figure \ref{FIG3}} and \textbf{Figure \ref{FIG4}}, one a flow-chart for the algorithm, the other a \textbf{State Machine} for the Ribosome, the later also highlighting our concept of what the \textbf{Instruction Set} for a Ribosome could be --- a useful concept for those planning on designing or implementing artificial ribosomes or bio-automata in simulation or kind.
-
-
-Our final chapter, \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}}, looks at what results from actual processing of genome sequences or rather DNA code; the manifestation of some living thing, organism or some aspect of it as specified in the underlying genetic code. Thus, we explore \textbf{genome expression} formally. Via a thought-experiment, we propose a hypothetical genome-expression system --- the \textbf{Lu-Genome Expression System} (LGES), and do break down the expression process into meaningful bits; \textbf{\hyperref[SECOZIN]{Section \ref{SECOZIN}}} deals with a visual encoding method that leverages a digit-cipher named \textbf{OZIN}, and this is used to express storage-level genetic code (in decimal/numeric form), it its \textbf{intermediate form} --- equivalent to DNA-to-mRNA transcription in living organisms. The essential transcription rules are captured in \textbf{\hyperref[ALGCOZIN]{Algorithm \ref{ALGCOZIN}}}. Some examples of such transcription in LGES are shown in \textbf{\hyperref[SECEXAMTRANSC]{Section \ref{SECEXAMTRANSC}}}. We finally turn attention to the final expression step --- equivalent to mRNA-to-Protein/Function translation in nature, in \textbf{\hyperref[SECGENEXPRE]{Section \ref{SECGENEXPRE}}}, and also get to see yet another innovation in the form of a genetic-code-to-spatial-form encoding based on a cipher we call \textbf{Platonic Form Cipher} (\textbf{\hyperref[SECPLATONIC]{Section \ref{SECPLATONIC}}}). The essential algorithm for how to perform genome expression all the way from storage code into the final organism is depicted in \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}, and we close with some examples of complete, though hypothetical, fully-expressed genomes in \textbf{\hyperref[SECFULLGES]{Section \ref{SECFULLGES}}}.
-
-
-
-
-
-So, with that introduction clearing up much of the basic genetics nomenclature and concepts that we shall use in the rest of this work, we then dive into the meat of our undertaking as such; \textbf{\hyperref[SEC2]{Chapter \ref{SEC2}}} shall introduce the use of terminology and notation from transformatics to describe facts about genome sequences at various levels of abstraction. We shall look at using sequence symbol sets, sequence abstraction using sub-sequence symbols that can later be re-transformed into flat sequences, the idea of sequence cardinality when applied to DNA sequences and more. Then in \textbf{\hyperref[SEC3]{Chapter \ref{SEC3}}} we shall deepen our discussion by considering how some of the measures from transformatics might be applied in genetic sequence analysis. We shall look into the ADM and PCR especially --- the other for cases where any two sequences are of the same length and similar symbol sets, and the other for cases where these need not be the same across the sequences under analysis. Then in \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}} we shall take on the interesting matter for how, despite being merely a sequence of symbols, genetic code sequences actually can be likened to how a MSS can be used to specify how to reconstruct some other sequence. First, in \textbf{\hyperref[SEC05]{Chapter \ref{SEC05}}} we shall first look at an overview of how actual interpretation or execution (more conventionally just referred to as ``gene translation") results in the manufacturing of proteins, and shall likewise look at some example actual gene translation in general and with a particular case. In \textbf{Section \ref{SEC5}} we shall then dive into a more hands-on exploration of this matter, with a hypothetical genome system (the \textbf{Numeral-Gene Code}) that can allow us to not only creatively explore what genetic code is about, but which can also allow us to approach the rather complex matter of how DNA gets interpreted/translated into actual living tissue as well as a complete living organism. We shall introduce some two systems for how to decode our numero-gene DNA code into a kind of mRNA via the \textbf{Ozin-Transformer} and from ozin-gene code into actual tissue/proteins via the \textbf{Plato-Form Generator} that allows us to transcribe DNA into an orgnanism that has a predictable characteristic appearance and geometry, but also which still contains its essential genetic code just like normal living organisms do. Then we shall wrap-up in the \textbf{\hyperref[CONC]{Conclusion}}, looking at what we have accomplished, what remains to be done, and what the implications of this undertaking might be.
 
 
 %---[ END BOOK CONTENT/CHAPTERS ]
@@ -4594,6 +4619,24 @@ Lutalo, Joseph Willrich (2025). \textbf{The Theory of Sequence Transformers \& t
 
 
 %---[ END BOOK END/BACKCOVER]
+
+\chapter*{Colophon}
+\addcontentsline{toc}{chapter}{Colophon}
+
+
+\texttt{COVER-ART:} \textbf{J. Willrich Lutalo}, as prompt engineer, using \textbf{Microsoft Bing Image Creator}, powered by DALL$-$E.
+
+
+\texttt{GRAPHICS:} \textbf{Adobe Express} on Android.
+
+
+\texttt{EDITOR:} \textbf{TexMaker} using LaTeX on Microsoft Windows.
+
+
+\texttt{PUBLISHER:} \textbf{I*POW} \url{https://t.me/ipowriters}
+
+
+\texttt{FONT:} \textbf{Computer Modern Roman}
 
 % insert [back] cover --- could just be a PNG or PDF
 \includepdf[pages=1]{resources/pdfs/back_cover.pdf}
