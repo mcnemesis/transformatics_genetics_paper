@@ -50,8 +50,7 @@ Joseph~Willrich Lutalo.
 Joseph~Willrich Lutalo.
 \newblock {PROPOSED DOCTORAL THESIS: A Theory of Entropy Sources \& Random
   Number Generators: DPhil Computer Science, Oxford University, Joseph Willrich
-  Lutalo MSc. BSc. alumni Makerere University}.
-\newblock 6 2025.
+  Lutalo MSc. BSc. alumni Makerere University}, 6 2025.
 \newblock Accessible via
   \url{https://figshare.com/articles/online_resource/PROPOSED_DOCTORAL_THESIS_A_Theory_of_Entropy_Sources_Random_Number_Generators_DPhil_Computer_Science_Oxford_University_Joseph_Willrich_Lutalo_MSc_BSc_alumni_Makerere_University/29209706}.
 
@@ -62,12 +61,13 @@ Joseph~Willrich Lutalo.
   compressors) and 4 new and relevant statistical measures applicable to them:
   Anagram distance, modal sequence statistic, transformation compression ratio
   and piecemeal compression ratio.
-\newblock {\em Academia.edu.}, 2025.
+\newblock {\em Academia}, 2025.
 \newblock \url{https://doi.org/10.6084/m9.figshare.29505824.v3}.
 
 \bibitem{cli_tttt}
-mcnemesis.
-\newblock cli\_tttt: Command line interface for tttt.
+Joseph~Willrich Lutalo.
+\newblock Tea github project | the reference implementation of tea
+  (transforming executable alphabet) computer programming language.
 \newblock \url{https://github.com/mcnemesis/cli_tttt/}, 2024.
 \newblock Accessed: 4th Aug, 2025.
 

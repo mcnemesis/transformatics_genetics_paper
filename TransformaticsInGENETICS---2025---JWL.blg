@@ -5,48 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
-Warning--entry type for "earthwormImage" isn't style-file defined
---line 3 of file references.bib
-Warning--empty journal in Lutalo2025_phd
 You've used 55 entries,
             1791 wiz_defined-function locations,
-            731 strings with 15750 characters,
-and the built_in function-call counts, 8991 in all, are:
-= -- 826
+            729 strings with 15807 characters,
+and the built_in function-call counts, 8981 in all, are:
+= -- 824
 > -- 321
 < -- 1
 + -- 140
 - -- 85
-* -- 304
-:= -- 1490
-add.period$ -- 209
+* -- 302
+:= -- 1484
+add.period$ -- 208
 call.type$ -- 55
 change.case$ -- 49
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 393
-empty$ -- 1013
+cite$ -- 55
+duplicate$ -- 390
+empty$ -- 1017
 format.name$ -- 85
-if$ -- 2047
+if$ -- 2048
 int.to.chr$ -- 0
 int.to.str$ -- 55
-missing$ -- 32
-newline$ -- 321
+missing$ -- 31
+newline$ -- 320
 num.names$ -- 59
-pop$ -- 237
+pop$ -- 240
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 152
 stack$ -- 0
 substring$ -- 213
-swap$ -- 63
+swap$ -- 64
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
+warning$ -- 0
 while$ -- 73
 width$ -- 57
-write$ -- 652
-(There were 2 warnings)
+write$ -- 651

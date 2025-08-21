@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  19 AUG 2025 17:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  21 AUG 2025 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1268,9 +1268,6 @@ LaTeX Warning: Unused global option(s):
 LaTeX Warning: Label `SSDEC' multiply defined.
 
 
-LaTeX Warning: Label `TRANSFMCS' multiply defined.
-
-
 LaTeX Warning: Label `LST_RNG' multiply defined.
 
 
@@ -1279,31 +1276,31 @@ LaTeX Warning: Label `EQTRANSLGENSEQEXT' multiply defined.
 )
 \openout1 = `TransformaticsInGENETICS---2025---JWL.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 124.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 128.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 1
-24.
+28.
  (C:\Users\AKAM\AppData\Roaming\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    ... okay on input line 128.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1371,7 +1368,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 124.
+Package hyperref Info: Link coloring OFF on input line 128.
 
 (TransformaticsInGENETICS---2025---JWL.out)
 (TransformaticsInGENETICS---2025---JWL.out)
@@ -1399,10 +1396,10 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/front_cover.pdf, id=270, 596.98032pt x 844.65562pt>
+<resources/pdfs/front_cover.pdf, id=274, 596.98032pt x 844.65562pt>
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf>
-Package pdftex.def Info: resources/pdfs/front_cover.pdf  used on input line 130
+Package pdftex.def Info: resources/pdfs/front_cover.pdf  used on input line 134
 .
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -1411,7 +1408,7 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf>
-Package pdftex.def Info: resources/pdfs/front_cover.pdf  used on input line 130
+Package pdftex.def Info: resources/pdfs/front_cover.pdf  used on input line 134
 .
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -1422,247 +1419,214 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/front_cover.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/front_cover.pdf, id=273, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/front_cover.pdf, id=277, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
-ine 130.
+ine 134.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
-ine 130.
+ine 134.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
-ine 130.
+ine 134.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
-ine 130.
+ine 134.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
 File: resources/pdfs/front_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/front_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/front_cover.pdf , page1 used on input l
-ine 130.
+ine 134.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 [1
 
 
 
  <./resources/pdfs/front_cover.pdf>]
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/FrontisMatter.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/FrontisMatter.pdf, id=288, 614.295pt x 794.97pt>
+<resources/pdfs/FrontisMatter.pdf, id=292, 614.295pt x 794.97pt>
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf  used on input line 1
-34.
+38.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/FrontisMatter.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf  used on input line 1
-34.
+38.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/FrontisMatter.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/FrontisMatter.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/FrontisMatter.pdf, id=291, page=1, 614.295pt x 794.97pt>
+<resources/pdfs/FrontisMatter.pdf, id=295, page=1, 614.295pt x 794.97pt>
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page1 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page1 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page1 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page1 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page1 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [2
 
  <./resources/pdfs/FrontisMatter.pdf>]
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/FrontisMatter.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/FrontisMatter.pdf, id=329, page=2, 614.295pt x 794.97pt>
+<resources/pdfs/FrontisMatter.pdf, id=320, page=2, 614.295pt x 794.97pt>
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 2>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page2 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 2>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page2 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 2>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page2 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [3
 
  <./resources/pdfs/FrontisMatter.pdf>]
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/FrontisMatter.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/FrontisMatter.pdf, id=334, page=3, 614.295pt x 794.97pt>
+<resources/pdfs/FrontisMatter.pdf, id=326, page=3, 614.295pt x 794.97pt>
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 3>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page3 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 3>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page3 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 3>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page3 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [4
 
  <./resources/pdfs/FrontisMatter.pdf>]
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/FrontisMatter.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/FrontisMatter.pdf, id=347, page=4, 614.295pt x 794.97pt>
+<resources/pdfs/FrontisMatter.pdf, id=354, page=4, 614.295pt x 794.97pt>
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 4>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page4 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 4>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page4 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 4>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page4 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [5
 
  <./resources/pdfs/FrontisMatter.pdf>]
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/FrontisMatter.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/FrontisMatter.pdf, id=352, page=5, 614.295pt x 794.97pt>
+<resources/pdfs/FrontisMatter.pdf, id=360, page=5, 614.295pt x 794.97pt>
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 5>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page5 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 5>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page5 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 5>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page5 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [6
 
  <./resources/pdfs/FrontisMatter.pdf>]
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/FrontisMatter.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/FrontisMatter.pdf, id=357, page=6, 614.295pt x 794.97pt>
+<resources/pdfs/FrontisMatter.pdf, id=366, page=6, 614.295pt x 794.97pt>
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 6>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page6 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 6>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page6 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 6>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page6 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [7
 
  <./resources/pdfs/FrontisMatter.pdf>]
-
-pdfTeX warning: pdflatex (file ./resources/pdfs/FrontisMatter.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/FrontisMatter.pdf, id=371, page=7, 614.295pt x 794.97pt>
+<resources/pdfs/FrontisMatter.pdf, id=381, page=7, 614.295pt x 794.97pt>
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 7>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page7 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 7>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page7 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
 File: resources/pdfs/FrontisMatter.pdf Graphic file (type pdf)
 <use resources/pdfs/FrontisMatter.pdf, page 7>
 Package pdftex.def Info: resources/pdfs/FrontisMatter.pdf , page7 used on input
- line 134.
+ line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [8
 
  <./resources/pdfs/FrontisMatter.pdf>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 139
+LaTeX Font Info:    Trying to load font information for U+msa on input line 143
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 139
+LaTeX Font Info:    Trying to load font information for U+msb on input line 143
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1674,7 +1638,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.139 
+l.143 
        [1
 
 {C:/Users/AKAM/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
@@ -1684,7 +1648,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \chapter
+l.144 \chapter
               *{Dedication} [2
 
 ]
@@ -1694,7 +1658,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 \tableofcontents
+l.158 \tableofcontents
                        [3]
 
 
@@ -1702,7 +1666,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 \tableofcontents
+l.158 \tableofcontents
                        [4
 
 ] (TransformaticsInGENETICS---2025---JWL.toc
@@ -1712,7 +1676,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.v}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 ...The SELECT Function}{72}{subsection.8.3.6}
+l.40 ...rator, RNG Function}{69}{subsection.8.3.4}
                                                   % [5])
 \tf@toc=\write6
 \openout6 = `TransformaticsInGENETICS---2025---JWL.toc'.
@@ -1724,7 +1688,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.vi}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.156 \listoffigures
+l.160 \listoffigures
                      [6] (TransformaticsInGENETICS---2025---JWL.lof
 
 
@@ -1732,7 +1696,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.vii}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 ...s ($\psi _{pf}$).}}{97}{figure.caption.42}
+l.41 ...s ($\psi _{pf}$).}}{97}{figure.caption.43}
                                                   % [7
 
 ])
@@ -1746,7 +1710,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.viii}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 \listoftables
+l.162 \listoftables
                     [8] (TransformaticsInGENETICS---2025---JWL.lot)
 \tf@lot=\write8
 \openout8 = `TransformaticsInGENETICS---2025---JWL.lot'.
@@ -1760,51 +1724,46 @@ l.158 \listoftables
 [10
 
 ]
-Overfull \hbox (35.32007pt too wide) in paragraph at lines 168--171
+Overfull \hbox (35.32007pt too wide) in paragraph at lines 172--175
 []\OT1/cmtt/m/n/14.4 Jung restored the colour in science, and made me cherish t
 he mind
  []
 
 
-Overfull \hbox (50.14005pt too wide) in paragraph at lines 168--171
+Overfull \hbox (50.14005pt too wide) in paragraph at lines 172--175
 \OT1/cmtt/m/n/14.4 And that in exercising our will we might become aware of the
  divine
  []
 
 
-Overfull \hbox (5.68011pt too wide) in paragraph at lines 168--171
+Overfull \hbox (5.68011pt too wide) in paragraph at lines 172--175
 \OT1/cmtt/m/n/14.4 in us and thus make glory manifest. God is not asleep in us!
  
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
-
- []
-
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/it' in size <14.4> not available
-(Font)              Font shape `OT1/cmtt/m/it' tried instead on input line 178.
+(Font)              Font shape `OT1/cmtt/m/it' tried instead on input line 182.
 
 
-Overfull \hbox (9.7283pt too wide) in paragraph at lines 178--179
+Overfull \hbox (9.7283pt too wide) in paragraph at lines 182--183
 []\OT1/cmtt/m/n/14.4 God blessed them, saying to them, \OT1/cmtt/m/it/14.4 Be f
 ruitful, multiply, fill
  []
 
 
-Overfull \hbox (7.2661pt too wide) in paragraph at lines 178--179
+Overfull \hbox (7.2661pt too wide) in paragraph at lines 182--183
 \OT1/cmtt/m/it/14.4 the earth and subdue it. Be masters of the fish of the sea,
 
  []
 
 
-Overfull \hbox (14.82602pt too wide) in paragraph at lines 178--179
+Overfull \hbox (14.82602pt too wide) in paragraph at lines 182--183
 \OT1/cmtt/m/it/14.4 the birds of heaven and all the living creatures that move 
 on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
@@ -1813,7 +1772,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--179
 [11]
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 193--197
+
+[13
+
+]
+
+[14
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 248--252
 
  []
 
@@ -1821,63 +1788,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--197
 
 [1
 
-
 ]
 
 [2
 
 ]
 Chapter 1.
-<resources/images/the_pineapple.jpg, id=744, 752.8125pt x 1003.75pt>
+<resources/images/the_pineapple.jpg, id=762, 752.8125pt x 1003.75pt>
 File: resources/images/the_pineapple.jpg Graphic file (type jpg)
 <use resources/images/the_pineapple.jpg>
 Package pdftex.def Info: resources/images/the_pineapple.jpg  used on input line
- 207.
+ 262.
 (pdftex.def)             Requested size: 328.24042pt x 437.6531pt.
 
-Overfull \hbox (16.79605pt too wide) in paragraph at lines 214--216
+Overfull \hbox (16.79605pt too wide) in paragraph at lines 269--271
 []\OT1/cmtt/m/n/12 Sex seems to have been invented around two billion years ago
 . Before then,
  []
 
 
-Overfull \hbox (16.79605pt too wide) in paragraph at lines 214--216
+Overfull \hbox (16.79605pt too wide) in paragraph at lines 269--271
 \OT1/cmtt/m/n/12 new varieties of organisms could arise only from the accumulat
 ion of random
  []
 
 
-Overfull \hbox (84.72108pt too wide) in paragraph at lines 214--216
+Overfull \hbox (84.72108pt too wide) in paragraph at lines 269--271
 \OT1/cmtt/m/n/12 mutations --- the selection of changes, letter by letter, in t
 he genetic instructions.
  []
 
 
-Overfull \hbox (10.62105pt too wide) in paragraph at lines 214--216
+Overfull \hbox (10.62105pt too wide) in paragraph at lines 269--271
 \OT1/cmtt/m/n/12 Evolution must have been agonizingly slow. With the invention 
 of sex, two
  []
 
 
-Overfull \hbox (29.14606pt too wide) in paragraph at lines 214--216
+Overfull \hbox (29.14606pt too wide) in paragraph at lines 269--271
 \OT1/cmtt/m/n/12 organisms could exchange whole paragraphs, pages and books of 
 their DNA code,
  []
 
 
-Overfull \hbox (53.84607pt too wide) in paragraph at lines 214--216
+Overfull \hbox (53.84607pt too wide) in paragraph at lines 269--271
 \OT1/cmtt/m/n/12 producing new varieties ready for the sieve of selection. Orga
 nisms are selected
  []
 
 
-Overfull \hbox (47.67107pt too wide) in paragraph at lines 214--216
+Overfull \hbox (47.67107pt too wide) in paragraph at lines 269--271
 \OT1/cmtt/m/n/12 to engage in sex --- the ones that find it uninteresting quick
 ly become extinct.
  []
 
 
-Overfull \hbox (41.49606pt too wide) in paragraph at lines 214--216
+Overfull \hbox (41.49606pt too wide) in paragraph at lines 269--271
 \OT1/cmtt/m/n/12 And this is true not only for the microbes of two billion year
 s ago. We humans
  []
@@ -1885,23 +1851,23 @@ s ago. We humans
 
 
 [3 <./resources/images/the_pineapple.jpg>]
-Overfull \hbox (16.79605pt too wide) in paragraph at lines 220--222
+Overfull \hbox (16.79605pt too wide) in paragraph at lines 275--277
 []\OT1/cmtt/m/n/12 The material basis of heredity is DNA, a ladder-like molecul
 e which carries
  []
 
 
-Overfull \hbox (35.32106pt too wide) in paragraph at lines 220--222
+Overfull \hbox (35.32106pt too wide) in paragraph at lines 275--277
 \OT1/cmtt/m/n/12 a message in the form of a `four-letter' code, the letters bei
 ng four chemical
  []
 
-<resources/images/dna_diagram.jpeg, id=758, 1003.75pt x 565.11125pt>
-File: resources/images/dna_diagram.jpeg Graphic file (type jpg)
-<use resources/images/dna_diagram.jpeg>
-Package pdftex.def Info: resources/images/dna_diagram.jpeg  used on input line 
-232.
-(pdftex.def)             Requested size: 446.69328pt x 251.49527pt.
+<resources/images/dna_diagram.jpg, id=779, 1927.2pt x 1084.05pt>
+File: resources/images/dna_diagram.jpg Graphic file (type jpg)
+<use resources/images/dna_diagram.jpg>
+Package pdftex.def Info: resources/images/dna_diagram.jpg  used on input line 2
+87.
+(pdftex.def)             Requested size: 446.69328pt x 251.26158pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1909,10 +1875,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [4]
 
-[5 <./resources/images/dna_diagram.jpeg>]
+[5 <./resources/images/dna_diagram.jpg>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 253.
+(hyperref)                than one, level fixed on input line 308.
 
 
 
@@ -1925,22 +1891,22 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 ]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
+Underfull \hbox (badness 10000) in paragraph at lines 346--346
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--333
+Underfull \hbox (badness 10000) in paragraph at lines 388--390
 
  []
 
@@ -1955,29 +1921,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--403
+Underfull \hbox (badness 10000) in paragraph at lines 458--460
 
  []
 
 
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--445
+Underfull \hbox (badness 10000) in paragraph at lines 500--502
 
  []
 
@@ -1990,12 +1956,12 @@ Chapter 3.
 [13
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
+Underfull \hbox (badness 10000) in paragraph at lines 547--548
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--505
+Underfull \hbox (badness 10000) in paragraph at lines 560--562
 
  []
 
@@ -2008,39 +1974,39 @@ Chapter 4.
 [15
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 551--552
+Underfull \hbox (badness 10000) in paragraph at lines 608--609
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 605--606
+Underfull \hbox (badness 10000) in paragraph at lines 662--663
 
  []
 
 
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 610--611
+Underfull \hbox (badness 10000) in paragraph at lines 667--668
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 619--620
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 621--622
+Underfull \hbox (badness 10000) in paragraph at lines 678--679
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--637
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 641--642
+Underfull \hbox (badness 10000) in paragraph at lines 698--699
 
  []
 
@@ -2051,42 +2017,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 641--642
 [18]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 663--663
+Underfull \hbox (badness 10000) in paragraph at lines 720--720
 []|\OT1/cmr/m/n/14.4 Sequence
  []
 
 
-Underfull \hbox (badness 8189) in paragraph at lines 666--667
+Underfull \hbox (badness 8189) in paragraph at lines 723--724
 \OT1/cmr/m/n/14.4 as a ba-sic Se-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
+Underfull \hbox (badness 10000) in paragraph at lines 725--726
 []|\OT1/cmr/m/n/14.4 Sequence Con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
+Underfull \hbox (badness 10000) in paragraph at lines 725--726
 \OT1/cmr/m/n/14.4 cate-na-tion/-Mul-ti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 670--671
+Underfull \hbox (badness 10000) in paragraph at lines 727--728
 []|\OT1/cmr/m/n/14.4 Sequence as
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 670--671
+Underfull \hbox (badness 10000) in paragraph at lines 727--728
 \OT1/cmr/m/n/14.4 Lin-ear Com-bi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 670--671
+Underfull \hbox (badness 10000) in paragraph at lines 727--728
 \OT1/cmr/m/n/14.4 na-tion of other
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 672--673
+Underfull \hbox (badness 10000) in paragraph at lines 729--730
 []|\OT1/cmr/m/n/14.4 Basic Com-ple-
  []
 
@@ -2100,50 +2066,50 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 
 [20]
-Overfull \hbox (5.38005pt too wide) in paragraph at lines 767--767
+Overfull \hbox (5.38005pt too wide) in paragraph at lines 824--824
 []\OT1/cmr/bx/n/14.4 Significance of Se-quence Com-ple-ments, $\OMS/cmsy/m/n/14
 .4 :\OT1/cmr/m/n/14.4 ^^B$\OT1/cmr/bx/n/14.4 , and Com-ple-ment Sym-
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 767.
+(hyperref)                removing `math shift' on input line 824.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lnot' on input line 767.
+(hyperref)                removing `\lnot' on input line 824.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Theta' on input line 767.
+(hyperref)                removing `\Theta' on input line 824.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 767.
+(hyperref)                removing `math shift' on input line 824.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 767.
+(hyperref)                removing `math shift' on input line 824.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lnot' on input line 767.
+(hyperref)                removing `\lnot' on input line 824.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\psi' on input line 767.
+(hyperref)                removing `\psi' on input line 824.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 767.
+(hyperref)                removing `subscript' on input line 824.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 767.
+(hyperref)                removing `\beta' on input line 824.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 767.
+(hyperref)                removing `math shift' on input line 824.
 
 
 
@@ -2178,53 +2144,53 @@ Overfull \vbox (11.8856pt too high) has occurred while \output is active []
 [30]
 
 [31]
-Underfull \hbox (badness 2662) in paragraph at lines 1247--1247
+Underfull \hbox (badness 2662) in paragraph at lines 1304--1304
 \OT1/cmr/m/n/14.4 quence Sym-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1247--1247
+Underfull \hbox (badness 10000) in paragraph at lines 1304--1304
 []|\OT1/cmr/m/n/14.4 Closest
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1247--1247
+Underfull \hbox (badness 10000) in paragraph at lines 1304--1304
 \OT1/cmr/m/n/14.4 Par-ent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1247--1247
+Underfull \hbox (badness 10000) in paragraph at lines 1304--1304
 \OT1/cmr/m/n/14.4 Sym-bol
  []
 
 
-Overfull \hbox (1.01926pt too wide) in paragraph at lines 1252--1252
+Overfull \hbox (1.01926pt too wide) in paragraph at lines 1309--1309
 []|$[][]$| 
  []
 
 
-Overfull \hbox (2.87434pt too wide) in paragraph at lines 1264--1264
+Overfull \hbox (2.87434pt too wide) in paragraph at lines 1321--1321
 []|$\OMS/cmsy/m/n/14.4 h\OML/cmm/m/it/14.4 A; U; G; C; T\OMS/cmsy/m/n/14.4 i$| 
 
  []
 
 
-Overfull \hbox (1.01926pt too wide) in paragraph at lines 1277--1277
+Overfull \hbox (1.01926pt too wide) in paragraph at lines 1334--1334
 []|$[][]$| 
  []
 
 
-Overfull \hbox (1.01926pt too wide) in paragraph at lines 1290--1290
+Overfull \hbox (1.01926pt too wide) in paragraph at lines 1347--1347
 []|$[][]$| 
  []
 
 
-Overfull \hbox (1.27502pt too wide) in paragraph at lines 1303--1303
+Overfull \hbox (1.27502pt too wide) in paragraph at lines 1360--1360
 []|$\OT1/cmr/m/n/14.4 ^^B[]$| 
  []
 
 
-Overfull \hbox (21.88837pt too wide) in paragraph at lines 1245--1328
+Overfull \hbox (21.88837pt too wide) in paragraph at lines 1302--1385
 [][] 
  []
 
@@ -2234,7 +2200,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [32]
-Overfull \hbox (23.09544pt too wide) in paragraph at lines 1342--1343
+Overfull \hbox (23.09544pt too wide) in paragraph at lines 1399--1400
 [] \OT1/cmtt/m/n/9 Given some two particular instances of na-Sequences, $\OT1/c
 mr/m/n/9 ^^B1[]$ \OT1/cmtt/m/n/9 and $\OT1/cmr/m/n/9 ^^B2[]$\OT1/cmtt/m/n/9 , o
 f the same length, $\OML/cmm/m/it/9 n$\OT1/cmtt/m/n/9 , and with
@@ -2243,7 +2209,7 @@ f the same length, $\OML/cmm/m/it/9 n$\OT1/cmtt/m/n/9 , and with
 
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1401--1401
+Underfull \hbox (badness 10000) in paragraph at lines 1458--1458
 
  []
 
@@ -2255,19 +2221,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [34]
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 1432--1433
+Underfull \hbox (badness 10000) in paragraph at lines 1489--1490
 
  []
 
 
-Overfull \hbox (3.66788pt too wide) in paragraph at lines 1447--1448
+Overfull \hbox (3.66788pt too wide) in paragraph at lines 1504--1505
 [] \OT1/cmtt/m/n/9 Given some two particular instances of na-Sequences, $\OT1/c
 mr/m/n/9 ^^B1[]$ \OT1/cmtt/m/n/9 and $\OT1/cmr/m/n/9 ^^B2[]$\OT1/cmtt/m/n/9 , o
 f different lengths, $\OML/cmm/m/it/9 n$ \OT1/cmtt/m/n/9 and
  []
 
 
-Overfull \hbox (8.31955pt too wide) in paragraph at lines 1447--1448
+Overfull \hbox (8.31955pt too wide) in paragraph at lines 1504--1505
 \OML/cmm/m/it/9 k$\OT1/cmtt/m/n/9 , but with similar symbol sets ($\OML/cmm/m/i
 t/9  []\OT1/cmr/m/n/9 (^^B1[]) = \OML/cmm/m/it/9  []\OT1/cmr/m/n/9 (^^B2[])$\OT
 1/cmtt/m/n/9 ), how to quantify how similar or dissimilar
@@ -2278,21 +2244,21 @@ t/9  []\OT1/cmr/m/n/9 (^^B1[]) = \OML/cmm/m/it/9  []\OT1/cmr/m/n/9 (^^B2[])$\OT
 [36]
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1512--1513
+Underfull \hbox (badness 10000) in paragraph at lines 1569--1570
 
  []
 
 
 
 [38]
-Overfull \hbox (3.66788pt too wide) in paragraph at lines 1537--1538
+Overfull \hbox (3.66788pt too wide) in paragraph at lines 1594--1595
 [] \OT1/cmtt/m/n/9 Given some two particular instances of na-Sequences, $\OT1/c
 mr/m/n/9 ^^B1[]$ \OT1/cmtt/m/n/9 and $\OT1/cmr/m/n/9 ^^B2[]$\OT1/cmtt/m/n/9 , o
 f different lengths, $\OML/cmm/m/it/9 n$ \OT1/cmtt/m/n/9 and
  []
 
 
-Overfull \hbox (13.0445pt too wide) in paragraph at lines 1537--1538
+Overfull \hbox (13.0445pt too wide) in paragraph at lines 1594--1595
 \OML/cmm/m/it/9 k$ \OT1/cmtt/m/n/9 and with different symbol sets ($\OML/cmm/m/
 it/9  []\OT1/cmr/m/n/9 (^^B1[]) \OMS/cmsy/m/n/9 6\OT1/cmr/m/n/9 = \OML/cmm/m/it
 /9  []\OT1/cmr/m/n/9 (^^B2[])$\OT1/cmtt/m/n/9 ), how to quantify how similar or
@@ -2302,7 +2268,7 @@ it/9  []\OT1/cmr/m/n/9 (^^B1[]) \OMS/cmsy/m/n/9 6\OT1/cmr/m/n/9 = \OML/cmm/m/it
 
 
 [39]
-Overfull \hbox (34.4257pt too wide) in paragraph at lines 1558--1559
+Overfull \hbox (34.4257pt too wide) in paragraph at lines 1615--1616
 \OT1/cmtt/m/n/9 ($\OT1/cmr/m/n/9 ^^B1\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 ^^B2\OML/
 cmm/m/it/9 ; \OT1/cmr/m/n/9 ^^B3\OML/cmm/m/it/9 ; :::; \OT1/cmr/m/n/9 ^^B\OML/c
 mm/m/it/9 m$\OT1/cmtt/m/n/9 ) and ($\OT1/cmr/m/n/9 
@@ -2314,80 +2280,80 @@ mm/m/it/9 m$\OT1/cmtt/m/n/9 ) and ($\OT1/cmr/m/n/9
  []
 
 
-Overfull \hbox (7.26555pt too wide) in paragraph at lines 1558--1559
+Overfull \hbox (7.26555pt too wide) in paragraph at lines 1615--1616
 \OT1/cmtt/m/n/9 or classified populations --- POPA and POPB, to determine which
  of the two populations the query
  []
 
 
-Overfull \hbox (0.25151pt too wide) in paragraph at lines 1558--1559
+Overfull \hbox (0.25151pt too wide) in paragraph at lines 1615--1616
 \OT1/cmtt/m/n/9 sequence, $\OML/cmm/m/it/9 Q[]$ \OT1/cmtt/m/n/9 best-belongs to
  (so we classify it under one of the labels), as well as determine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1578--1578
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1635
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1578--1578
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1635
 \OT1/cmtt/m/n/12 space that partitions the space into different regions. Data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1578--1578
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1635
 \OT1/cmtt/m/n/12 lying on one side of a decision surface are defined as belongi
 ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1578--1578
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1635
 \OT1/cmtt/m/n/12 to a different class from those lying on the other. Decision
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1578--1578
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1635
 \OT1/cmtt/m/n/12 surfaces may be created or modified as a result of a learning
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1578--1578
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1635
 \OT1/cmtt/m/n/12 process and they are frequently used in machine learning,
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1585.
+(hyperref)                removing `math shift' on input line 1642.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Omega' on input line 1585.
+(hyperref)                removing `\Omega' on input line 1642.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1585.
+(hyperref)                removing `superscript' on input line 1642.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1585.
+(hyperref)                removing `math shift' on input line 1642.
 
 
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 1595--1596
+Underfull \hbox (badness 10000) in paragraph at lines 1652--1653
 
  []
 
 
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 1648--1648
+Underfull \hbox (badness 10000) in paragraph at lines 1705--1705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1648--1648
+Underfull \hbox (badness 10000) in paragraph at lines 1705--1705
 
  []
 
@@ -2396,205 +2362,205 @@ Underfull \hbox (badness 10000) in paragraph at lines 1648--1648
 [42]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1670.
+(hyperref)                removing `math shift' on input line 1727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1670.
+(hyperref)                removing `subscript' on input line 1727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1670.
+(hyperref)                removing `math shift' on input line 1727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1670.
+(hyperref)                removing `math shift' on input line 1727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Omega' on input line 1670.
+(hyperref)                removing `\Omega' on input line 1727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1670.
+(hyperref)                removing `superscript' on input line 1727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1670.
+(hyperref)                removing `math shift' on input line 1727.
 
 
 
 [43]
-Overfull \hbox (13.60684pt too wide) in paragraph at lines 1719--1719
+Overfull \hbox (13.60684pt too wide) in paragraph at lines 1776--1776
 []\OT1/cmr/bx/n/14.4 Concerning Op-ti-mal Sym-bolic Stor-age of na-Sequences in
  Databases
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1719.
+(hyperref)                removing `math shift' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1719.
+(hyperref)                removing `math shift' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1719.
+(hyperref)                removing `math shift' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Theta' on input line 1719.
+(hyperref)                removing `\Theta' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1719.
+(hyperref)                removing `subscript' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1719.
+(hyperref)                removing `math shift' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1719.
+(hyperref)                removing `math shift' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbar' on input line 1719.
+(hyperref)                removing `\hbar' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 1719.
+(hyperref)                removing `\begingroup' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 1719.
+(hyperref)                removing `\setbox' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1719.
+(hyperref)                removing `\z@' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 1719.
+(hyperref)                removing `\hbox' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\thinmuskip' on input line 1719.
+(hyperref)                removing `\thinmuskip' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\medmuskip' on input line 1719.
+(hyperref)                removing `\medmuskip' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\m@ne' on input line 1719.
+(hyperref)                removing `\m@ne' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\thickmuskip' on input line 1719.
+(hyperref)                removing `\thickmuskip' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ne' on input line 1719.
+(hyperref)                removing `\@ne' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 1719.
+(hyperref)                removing `\setbox' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\tw@' on input line 1719.
+(hyperref)                removing `\tw@' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 1719.
+(hyperref)                removing `\hbox' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1719.
+(hyperref)                removing `math shift' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Theta' on input line 1719.
+(hyperref)                removing `\Theta' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1719.
+(hyperref)                removing `subscript' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 1719.
+(hyperref)                removing `\mathsurround' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1719.
+(hyperref)                removing `\z@' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1719.
+(hyperref)                removing `math shift' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1719.
+(hyperref)                removing `math shift' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Theta' on input line 1719.
+(hyperref)                removing `\Theta' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1719.
+(hyperref)                removing `subscript' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 1719.
+(hyperref)                removing `\mathsurround' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1719.
+(hyperref)                removing `\z@' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1719.
+(hyperref)                removing `math shift' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1719.
+(hyperref)                removing `\<def>-command' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempa' on input line 1719.
+(hyperref)                removing `\@tempa' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathop' on input line 1719.
+(hyperref)                removing `\mathop' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Theta' on input line 1719.
+(hyperref)                removing `\Theta' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1719.
+(hyperref)                removing `subscript' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\limits' on input line 1719.
+(hyperref)                removing `\limits' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1719.
+(hyperref)                removing `superscript' on input line 1776.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1719.
+(hyperref)                removing `math shift' on input line 1776.
 
-<resources/images/further_analysis.jpg, id=1363, 1027.84pt x 1027.84pt>
+<resources/images/further_analysis.jpg, id=1383, 1027.84pt x 1027.84pt>
 File: resources/images/further_analysis.jpg Graphic file (type jpg)
 <use resources/images/further_analysis.jpg>
 Package pdftex.def Info: resources/images/further_analysis.jpg  used on input l
-ine 1726.
+ine 1783.
 (pdftex.def)             Requested size: 446.69328pt x 446.69902pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2604,17 +2570,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [44]
 
 [45 <./resources/images/further_analysis.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1737--1738
+Underfull \hbox (badness 10000) in paragraph at lines 1794--1795
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1751--1752
+Underfull \hbox (badness 10000) in paragraph at lines 1808--1809
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1756--1757
+Underfull \hbox (badness 10000) in paragraph at lines 1813--1814
 
  []
 
@@ -2630,38 +2596,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 1756--1757
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1772.
+(hyperref)                removing `math shift' on input line 1829.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Theta' on input line 1772.
+(hyperref)                removing `\Theta' on input line 1829.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1772.
+(hyperref)                removing `subscript' on input line 1829.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Diamond' on input line 1772.
+(hyperref)                removing `\Diamond' on input line 1829.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Theta' on input line 1772.
+(hyperref)                removing `\Theta' on input line 1829.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1772.
+(hyperref)                removing `subscript' on input line 1829.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1772.
+(hyperref)                removing `math shift' on input line 1829.
 
 
-Overfull \hbox (1.08655pt too wide) in paragraph at lines 1775--1778
+Overfull \hbox (18.6865pt too wide) in paragraph at lines 1832--1835
 [][]\OT1/cmr/bx/n/14.4 Problem 1 \OT1/cmr/m/n/14.4 (\OT1/cmr/m/it/14.4 Com-put-
-ing MCS: \OT1/cmr/bx/it/14.4 Max-i-mum Com-mon Sub-se-quence\OT1/cmr/m/n/14.4 )
-\OT1/cmr/bx/n/14.4 . []\OT1/cmr/m/it/14.4 : $\OT1/cmr/m/n/14.4 ^^B[]\U/msa/m/n/
-14.4 ^^F\OT1/cmr/m/n/14.4 ^^B[]$\OT1/cmr/m/it/14.4 ]
+ing MCS:\OT1/cmr/m/n/14.4 )\OT1/cmr/bx/n/14.4 . []\OT1/cmr/m/it/14.4 : $\OT1/cm
+r/m/n/14.4 ^^B[]\U/msa/m/n/14.4 ^^F\OT1/cmr/m/n/14.4 ^^B[]$\OT1/cmr/m/it/14.4 ]
+ []Given se-quences $\OT1/cmr/m/n/14.4 ^^B[] = \OMS/cmsy/m/n/14.4 h\OML/cmm/m/i
+t/14.4 k; l; m; o; p; x; y; z\OMS/cmsy/m/n/14.4 i$
  []
 
 
@@ -2670,49 +2637,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [49]
+Underfull \hbox (badness 10000) in paragraph at lines 1879--1880
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1879--1880
+
+ []
+
+
 
 [50]
-Underfull \hbox (badness 10000) in paragraph at lines 1822--1823
+Underfull \hbox (badness 10000) in paragraph at lines 1881--1889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1822--1823
+Underfull \hbox (badness 10000) in paragraph at lines 1881--1889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1824--1832
+Underfull \hbox (badness 10000) in paragraph at lines 1901--1902
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1824--1832
+Underfull \hbox (badness 10000) in paragraph at lines 1903--1904
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1844--1845
+Underfull \hbox (badness 10000) in paragraph at lines 1903--1904
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1846--1847
+Underfull \hbox (badness 10000) in paragraph at lines 1905--1916
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1846--1847
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1848--1859
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1848--1859
+Underfull \hbox (badness 10000) in paragraph at lines 1905--1916
 
  []
 
@@ -2721,79 +2688,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 1848--1859
 [51]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1882.
+(hyperref)                removing `math shift' on input line 1939.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Theta' on input line 1882.
+(hyperref)                removing `\Theta' on input line 1939.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1882.
+(hyperref)                removing `subscript' on input line 1939.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 1882.
+(hyperref)                removing `\ast' on input line 1939.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Theta' on input line 1882.
+(hyperref)                removing `\Theta' on input line 1939.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1882.
+(hyperref)                removing `subscript' on input line 1939.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1882.
+(hyperref)                removing `math shift' on input line 1939.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1914.
+(hyperref)                removing `math shift' on input line 1971.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Theta' on input line 1914.
+(hyperref)                removing `\Theta' on input line 1971.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1914.
+(hyperref)                removing `subscript' on input line 1971.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Diamond' on input line 1914.
+(hyperref)                removing `\Diamond' on input line 1971.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Theta' on input line 1914.
+(hyperref)                removing `\Theta' on input line 1971.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1914.
+(hyperref)                removing `subscript' on input line 1971.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1914.
+(hyperref)                removing `superscript' on input line 1971.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1914.
+(hyperref)                removing `math shift' on input line 1971.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1917--1920
+Underfull \hbox (badness 10000) in paragraph at lines 1974--1977
 
  []
 
 
 
 [52]
-Underfull \hbox (badness 10000) in paragraph at lines 1995--1995
+Underfull \hbox (badness 10000) in paragraph at lines 2052--2052
 [][]\OT1/cmr/bx/n/14.4 Transformer 9 \OT1/cmr/m/n/14.4 (The \OT1/cmr/bx/n/14.4 
 tGS Trans-former\OT1/cmr/m/n/14.4 , $[](^^B[])$)\OT1/cmr/bx/n/14.4 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1995--1997
+Underfull \hbox (badness 10000) in paragraph at lines 2052--2054
 
  []
 
@@ -2808,7 +2775,7 @@ Underfull \vbox (badness 1127) has occurred while \output is active []
 
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 2026--2026
+Underfull \hbox (badness 10000) in paragraph at lines 2083--2083
 
  []
 
@@ -2821,7 +2788,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2026--2026
 ]
 Chapter 8.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2049--2050
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2107
 
  []
 
@@ -2835,12 +2802,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 2049--2050
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 2213.
+nput line 2270.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2215.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2272.
 
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-2224.
+2281.
 
 (C:\Program Files\MiKTeX\tex/latex/base\ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
@@ -2855,7 +2822,7 @@ Underfull \vbox (badness 2894) has occurred while \output is active []
 
 
 [61]
-Underfull \hbox (badness 10000) in paragraph at lines 2284--2285
+Underfull \hbox (badness 10000) in paragraph at lines 2341--2342
 
  []
 
@@ -2874,46 +2841,46 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [65]
-Underfull \hbox (badness 10000) in paragraph at lines 2502--2503
+Underfull \hbox (badness 10000) in paragraph at lines 2559--2560
 
  []
 
 
 
 [66]
-Underfull \hbox (badness 2680) in paragraph at lines 2534--2534
+Underfull \hbox (badness 2680) in paragraph at lines 2591--2591
 [][]\OT1/cmr/bx/n/14.4 Transformer 10 \OT1/cmr/m/n/14.4 (The \OT1/cmr/bx/n/14.4
  Ran-dom Sym-bol Gen-er-a-tor (RSG)\OT1/cmr/m/n/14.4 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2534--2534
+Underfull \hbox (badness 10000) in paragraph at lines 2591--2591
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2534--2534
+Underfull \hbox (badness 10000) in paragraph at lines 2591--2591
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2534--2534
+Underfull \hbox (badness 10000) in paragraph at lines 2591--2591
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2534--2534
+Underfull \hbox (badness 10000) in paragraph at lines 2591--2591
 
  []
 
 
-Underfull \hbox (badness 7064) in paragraph at lines 2534--2534
+Underfull \hbox (badness 7064) in paragraph at lines 2591--2591
 []\OT1/cmr/bx/it/14.4 SHUFFLE$\OT1/cmr/m/n/14.4 (^^B)$ \OT1/cmr/m/it/14.4 is a 
 func-tion such as a gen-er-al-iza-tion of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2534--2536
+Underfull \hbox (badness 10000) in paragraph at lines 2591--2593
 
  []
 
@@ -2923,7 +2890,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [67]
-Overfull \hbox (1.3698pt too wide) in paragraph at lines 2574--2575
+Overfull \hbox (1.3698pt too wide) in paragraph at lines 2631--2632
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -2957,17 +2924,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [73]
-Underfull \hbox (badness 10000) in paragraph at lines 2827--2828
+Underfull \hbox (badness 10000) in paragraph at lines 2884--2885
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2836--2836
+Underfull \hbox (badness 10000) in paragraph at lines 2893--2893
 [] \OT1/cmtt/m/n/14.4 N=3*200; print(`'.join(str(c) for c in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2836--2838
+Underfull \hbox (badness 10000) in paragraph at lines 2893--2895
 
  []
 
@@ -2983,126 +2950,126 @@ Underfull \hbox (badness 10000) in paragraph at lines 2836--2838
 Chapter 9.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2866.
+(hyperref)                removing `math shift' on input line 2923.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 2866.
+(hyperref)                removing `\rightarrow' on input line 2923.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 2866.
+(hyperref)                removing `\rightarrow' on input line 2923.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 2866.
+(hyperref)                removing `\rightarrow' on input line 2923.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2866.
+(hyperref)                removing `math shift' on input line 2923.
 
 
-Overfull \hbox (20.50009pt too wide) in paragraph at lines 2871--2873
+Overfull \hbox (20.50009pt too wide) in paragraph at lines 2928--2930
 []\OT1/cmtt/m/n/14.4 Code: A rule for transforming a message from one symbolic 
 form
  []
 
 
-Overfull \hbox (35.32007pt too wide) in paragraph at lines 2871--2873
+Overfull \hbox (35.32007pt too wide) in paragraph at lines 2928--2930
 \OT1/cmtt/m/n/14.4 (the source alphabet) into another (the target alphabet), us
 ually
  []
 
 
-Overfull \hbox (13.0901pt too wide) in paragraph at lines 2871--2873
+Overfull \hbox (13.0901pt too wide) in paragraph at lines 2928--2930
 \OT1/cmtt/m/n/14.4 without loss of information. The process of transformation i
 s
  []
 
-<resources/images/protein_synthesis.png, id=2054, 1045.9075pt x 747.79375pt>
+<resources/images/protein_synthesis.png, id=2077, 1045.9075pt x 747.79375pt>
 File: resources/images/protein_synthesis.png Graphic file (type png)
 <use resources/images/protein_synthesis.png>
 Package pdftex.def Info: resources/images/protein_synthesis.png  used on input 
-line 2879.
+line 2936.
 (pdftex.def)             Requested size: 446.69328pt x 319.37706pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2886--2887
+Underfull \hbox (badness 10000) in paragraph at lines 2943--2944
 
  []
 
 
 
 [77 <./resources/images/protein_synthesis.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2927--2929
+Underfull \hbox (badness 10000) in paragraph at lines 2984--2986
 
  []
 
 
 
 [78]
-Underfull \hbox (badness 10000) in paragraph at lines 2943--2944
+Underfull \hbox (badness 10000) in paragraph at lines 3000--3001
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2952--2953
+Underfull \hbox (badness 10000) in paragraph at lines 3009--3010
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2959--2960
+Underfull \hbox (badness 10000) in paragraph at lines 3016--3017
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2966--2967
+Underfull \hbox (badness 10000) in paragraph at lines 3023--3024
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2968--2969
+Underfull \hbox (badness 10000) in paragraph at lines 3025--3026
 
  []
 
 
 
 [79]
-Underfull \hbox (badness 10000) in paragraph at lines 2973--2974
+Underfull \hbox (badness 10000) in paragraph at lines 3030--3031
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2985--2986
+Underfull \hbox (badness 10000) in paragraph at lines 3042--3043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2994--2995
+Underfull \hbox (badness 10000) in paragraph at lines 3051--3052
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2996--2997
+Underfull \hbox (badness 10000) in paragraph at lines 3053--3054
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3016--3017
+Underfull \hbox (badness 10000) in paragraph at lines 3073--3074
 \OT1/cmr/m/n/14.4 ini-ti-ates
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3018--3019
+Underfull \hbox (badness 10000) in paragraph at lines 3075--3076
 []|\OT1/cmr/m/n/14.4 Basic amino
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3020--3021
+Underfull \hbox (badness 10000) in paragraph at lines 3077--3078
 []|\OT1/cmr/m/n/14.4 Non po-lar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3022--3023
+Underfull \hbox (badness 10000) in paragraph at lines 3079--3080
 []|\OT1/cmr/m/n/14.4 Terminates
  []
 
@@ -3110,22 +3077,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 3022--3023
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3042--3043
+Underfull \hbox (badness 10000) in paragraph at lines 3099--3100
 \OT1/cmr/m/n/14.4 ini-ti-ates
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3044--3045
+Underfull \hbox (badness 10000) in paragraph at lines 3101--3102
 []|\OT1/cmr/m/n/14.4 Basic amino
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3046--3047
+Underfull \hbox (badness 10000) in paragraph at lines 3103--3104
 []|\OT1/cmr/m/n/14.4 Non po-lar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3048--3049
+Underfull \hbox (badness 10000) in paragraph at lines 3105--3106
 []|\OT1/cmr/m/n/14.4 Terminates
  []
 
@@ -3141,13 +3108,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 pdfTeX warning: pdflatex (file ./resources/pdfs/ProteinSynthesisProcessFlowChar
 t.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<resources/pdfs/ProteinSynthesisProcessFlowChart.pdf, id=2119, 614.295pt x 794.
+<resources/pdfs/ProteinSynthesisProcessFlowChart.pdf, id=2142, 614.295pt x 794.
 97pt>
 File: resources/pdfs/ProteinSynthesisProcessFlowChart.pdf Graphic file (type pd
 f)
 <use resources/pdfs/ProteinSynthesisProcessFlowChart.pdf>
 Package pdftex.def Info: resources/pdfs/ProteinSynthesisProcessFlowChart.pdf  u
-sed on input line 3076.
+sed on input line 3133.
 (pdftex.def)             Requested size: 446.69328pt x 412.55904pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3158,11 +3125,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/RibosomeStateMachine.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/RibosomeStateMachine.pdf, id=2132, 614.295pt x 794.97pt>
+<resources/pdfs/RibosomeStateMachine.pdf, id=2155, 614.295pt x 794.97pt>
 File: resources/pdfs/RibosomeStateMachine.pdf Graphic file (type pdf)
 <use resources/pdfs/RibosomeStateMachine.pdf>
 Package pdftex.def Info: resources/pdfs/RibosomeStateMachine.pdf  used on input
- line 3087.
+ line 3144.
 (pdftex.def)             Requested size: 446.69328pt x 358.76486pt.
 
 
@@ -3171,12 +3138,12 @@ Package pdftex.def Info: resources/pdfs/RibosomeStateMachine.pdf  used on input
 [84 <./resources/pdfs/RibosomeStateMachine.pdf>]
 
 [85]
-Underfull \hbox (badness 10000) in paragraph at lines 3113--3114
+Underfull \hbox (badness 10000) in paragraph at lines 3170--3171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3127--3128
+Underfull \hbox (badness 10000) in paragraph at lines 3184--3185
 
  []
 
@@ -3191,43 +3158,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 3127--3128
 ]
 Chapter 10.
 
-Overfull \hbox (42.73006pt too wide) in paragraph at lines 3157--3159
+Overfull \hbox (42.73006pt too wide) in paragraph at lines 3214--3216
 []\OT1/cmtt/m/n/14.4 Genome Expression: The collective expression profile of al
 l genes
  []
 
 
-Overfull \hbox (27.91008pt too wide) in paragraph at lines 3157--3159
+Overfull \hbox (27.91008pt too wide) in paragraph at lines 3214--3216
 \OT1/cmtt/m/n/14.4 within a genome, including coding and non-coding regions, ac
 ross
  []
 
 
-Overfull \hbox (13.0901pt too wide) in paragraph at lines 3157--3159
+Overfull \hbox (13.0901pt too wide) in paragraph at lines 3214--3216
 \OT1/cmtt/m/n/14.4 different conditions, cell types, or developmental stages. I
 t
  []
 
 
-Overfull \hbox (35.32007pt too wide) in paragraph at lines 3157--3159
+Overfull \hbox (35.32007pt too wide) in paragraph at lines 3214--3216
 \OT1/cmtt/m/n/14.4 is a systems-level view - measuring how the entire genome be
 haves
  []
 
 
-Overfull \hbox (64.96002pt too wide) in paragraph at lines 3157--3159
+Overfull \hbox (64.96002pt too wide) in paragraph at lines 3214--3216
 \OT1/cmtt/m/n/14.4 dynamically. This includes: mRNA expression of all genes, no
 ncoding
  []
 
 
-Overfull \hbox (27.91008pt too wide) in paragraph at lines 3157--3159
+Overfull \hbox (27.91008pt too wide) in paragraph at lines 3214--3216
 \OT1/cmtt/m/n/14.4 RNA activity, epigenetic regulation, chromatin accessibility
  and
  []
 
 
-Overfull \hbox (27.91008pt too wide) in paragraph at lines 3157--3159
+Overfull \hbox (27.91008pt too wide) in paragraph at lines 3214--3216
 \OT1/cmtt/m/n/14.4 transcriptional networks. In essence, gene expression is loc
 al,
  []
@@ -3238,10 +3205,10 @@ al,
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/OZINCIPHER.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/OZINCIPHER.pdf, id=2256, 614.295pt x 794.97pt>
+<resources/pdfs/OZINCIPHER.pdf, id=2278, 614.295pt x 794.97pt>
 File: resources/pdfs/OZINCIPHER.pdf Graphic file (type pdf)
 <use resources/pdfs/OZINCIPHER.pdf>
-Package pdftex.def Info: resources/pdfs/OZINCIPHER.pdf  used on input line 3193
+Package pdftex.def Info: resources/pdfs/OZINCIPHER.pdf  used on input line 3250
 .
 (pdftex.def)             Requested size: 446.69328pt x 453.93907pt.
 
@@ -3253,12 +3220,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf, id=2268, 597.19106pt x 845.07718pt>
+<resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf, id=2290, 597.19106pt x 845.07718pt>
 
 File: resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf Graphic file (type pdf)
 <use resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf>
 Package pdftex.def Info: resources/pdfs/OZINCIPHER-APP1-EVIRUS.pdf  used on inp
-ut line 3207.
+ut line 3264.
 (pdftex.def)             Requested size: 446.69328pt x 206.46008pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3269,12 +3236,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf, id=2298, 597.19106pt x 845.07718
+<resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf, id=2320, 597.19106pt x 845.07718
 pt>
 File: resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf Graphic file (type pdf)
 <use resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf>
 Package pdftex.def Info: resources/pdfs/OZINCIPHER-APP2-HIFINELLE.pdf  used on 
-input line 3229.
+input line 3286.
 (pdftex.def)             Requested size: 446.69328pt x 206.46008pt.
 
 
@@ -3283,35 +3250,35 @@ APP2-HIFINELLE.pdf>]
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/OZINCIPHER-APP3-EXA.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/OZINCIPHER-APP3-EXA.pdf, id=2360, 597.19106pt x 845.07718pt>
+<resources/pdfs/OZINCIPHER-APP3-EXA.pdf, id=2382, 597.19106pt x 845.07718pt>
 File: resources/pdfs/OZINCIPHER-APP3-EXA.pdf Graphic file (type pdf)
 <use resources/pdfs/OZINCIPHER-APP3-EXA.pdf>
 Package pdftex.def Info: resources/pdfs/OZINCIPHER-APP3-EXA.pdf  used on input 
-line 3250.
+line 3307.
 (pdftex.def)             Requested size: 446.69328pt x 86.25397pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3257.
+(hyperref)                removing `math shift' on input line 3314.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Omega' on input line 3257.
+(hyperref)                removing `\Omega' on input line 3314.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3257.
+(hyperref)                removing `math shift' on input line 3314.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3302.
+(hyperref)                removing `math shift' on input line 3359.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Omega' on input line 3302.
+(hyperref)                removing `\Omega' on input line 3359.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3302.
+(hyperref)                removing `math shift' on input line 3359.
 
 
 
@@ -3319,23 +3286,23 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/OZINCIPHER-APP4-PAL.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/OZINCIPHER-APP4-PAL.pdf, id=2411, 597.19106pt x 845.07718pt>
+<resources/pdfs/OZINCIPHER-APP4-PAL.pdf, id=2434, 597.19106pt x 845.07718pt>
 File: resources/pdfs/OZINCIPHER-APP4-PAL.pdf Graphic file (type pdf)
 <use resources/pdfs/OZINCIPHER-APP4-PAL.pdf>
 Package pdftex.def Info: resources/pdfs/OZINCIPHER-APP4-PAL.pdf  used on input 
-line 3328.
+line 3385.
 (pdftex.def)             Requested size: 446.69328pt x 86.25397pt.
 
 
 [94 <./resources/pdfs/OZINCIPHER-APP4-PAL.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3349--3350
+Underfull \hbox (badness 10000) in paragraph at lines 3406--3407
 
  []
 
 
 
 [95]
-Underfull \hbox (badness 10000) in paragraph at lines 3357--3358
+Underfull \hbox (badness 10000) in paragraph at lines 3414--3415
 
  []
 
@@ -3343,11 +3310,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 3357--3358
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/PLATOCIPHER.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/PLATOCIPHER.pdf, id=2449, 614.295pt x 794.97pt>
+<resources/pdfs/PLATOCIPHER.pdf, id=2471, 614.295pt x 794.97pt>
 File: resources/pdfs/PLATOCIPHER.pdf Graphic file (type pdf)
 <use resources/pdfs/PLATOCIPHER.pdf>
-Package pdftex.def Info: resources/pdfs/PLATOCIPHER.pdf  used on input line 337
-2.
+Package pdftex.def Info: resources/pdfs/PLATOCIPHER.pdf  used on input line 342
+9.
 (pdftex.def)             Requested size: 446.69328pt x 495.3191pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3357,101 +3324,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [96]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3381.
+(hyperref)                removing `math shift' on input line 3438.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\psi' on input line 3381.
+(hyperref)                removing `\psi' on input line 3438.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 3381.
+(hyperref)                removing `subscript' on input line 3438.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Omega' on input line 3381.
+(hyperref)                removing `\Omega' on input line 3438.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3381.
+(hyperref)                removing `math shift' on input line 3438.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3381.
+(hyperref)                removing `math shift' on input line 3438.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\psi' on input line 3381.
+(hyperref)                removing `\psi' on input line 3438.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 3381.
+(hyperref)                removing `subscript' on input line 3438.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3381.
+(hyperref)                removing `math shift' on input line 3438.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3393--3394
+Underfull \hbox (badness 10000) in paragraph at lines 3450--3451
 
  []
 
 
 
 [97 <./resources/pdfs/PLATOCIPHER.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3398--3399
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3400--3401
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3404--3405
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3410--3411
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3415--3416
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3417--3418
-
- []
-
-
-
-[98]
-Underfull \hbox (badness 10000) in paragraph at lines 3422--3423
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3439--3440
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3444--3445
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3446--3447
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3451--3452
+Underfull \hbox (badness 10000) in paragraph at lines 3455--3456
 
  []
 
@@ -3461,17 +3376,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 3457--3458
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3468--3468
+Underfull \hbox (badness 10000) in paragraph at lines 3461--3462
 
  []
 
 
-Overfull \hbox (27.90407pt too wide) in paragraph at lines 3468--3470
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 3467--3468
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3468--3470
+Underfull \hbox (badness 10000) in paragraph at lines 3472--3473
 
  []
 
@@ -3482,18 +3397,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 3474--3475
 
 
 
-[99]
+[98]
 Underfull \hbox (badness 10000) in paragraph at lines 3479--3480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3481--3482
+Underfull \hbox (badness 10000) in paragraph at lines 3496--3497
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3486--3487
+Underfull \hbox (badness 10000) in paragraph at lines 3501--3502
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3503--3504
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3508--3509
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3514--3515
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3525--3525
+
+ []
+
+
+Overfull \hbox (27.90407pt too wide) in paragraph at lines 3525--3527
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3525--3527
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3531--3532
+
+ []
+
+
+
+[99]
+Underfull \hbox (badness 10000) in paragraph at lines 3536--3537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3538--3539
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3543--3544
 
  []
 
@@ -3501,11 +3468,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 3486--3487
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/EXAPLATONICFORM-PFA.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/EXAPLATONICFORM-PFA.pdf, id=2536, 597.19106pt x 845.07718pt>
+<resources/pdfs/EXAPLATONICFORM-PFA.pdf, id=2559, 597.19106pt x 845.07718pt>
 File: resources/pdfs/EXAPLATONICFORM-PFA.pdf Graphic file (type pdf)
 <use resources/pdfs/EXAPLATONICFORM-PFA.pdf>
 Package pdftex.def Info: resources/pdfs/EXAPLATONICFORM-PFA.pdf  used on input 
-line 3508.
+line 3565.
 (pdftex.def)             Requested size: 446.69328pt x 389.13423pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3515,17 +3482,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [100]
 
 [101 <./resources/pdfs/EXAPLATONICFORM-PFA.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3539--3539
+Underfull \hbox (badness 10000) in paragraph at lines 3596--3596
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3539--3539
+Underfull \hbox (badness 10000) in paragraph at lines 3596--3596
 
  []
 
 
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 3539--3540
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 3596--3597
  [] 
  []
 
@@ -3533,32 +3500,32 @@ Overfull \hbox (11.49992pt too wide) in paragraph at lines 3539--3540
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/PLATONIC-EXA-landscape.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/PLATONIC-EXA-landscape.pdf, id=2571, 1460.57669pt x 595.26389pt
+<resources/pdfs/PLATONIC-EXA-landscape.pdf, id=2593, 1460.57669pt x 595.26389pt
 >
 File: resources/pdfs/PLATONIC-EXA-landscape.pdf Graphic file (type pdf)
 <use resources/pdfs/PLATONIC-EXA-landscape.pdf>
 Package pdftex.def Info: resources/pdfs/PLATONIC-EXA-landscape.pdf  used on inp
-ut line 3551.
+ut line 3608.
 (pdftex.def)             Requested size: 446.69328pt x 182.05025pt.
 
 
 [102 <./resources/pdfs/PLATONIC-EXA-landscape.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3578--3578
+Underfull \hbox (badness 10000) in paragraph at lines 3635--3635
 
  []
 
 
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 3578--3579
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 3635--3636
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3583--3584
+Underfull \hbox (badness 10000) in paragraph at lines 3640--3641
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3588--3589
+Underfull \hbox (badness 10000) in paragraph at lines 3645--3646
 
  []
 
@@ -3566,12 +3533,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3588--3589
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/PLATONIC-EULERVIRUS-landscape.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf, id=2627, 1792.77776pt x 554.
+<resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf, id=2649, 1792.77776pt x 554.
 07pt>
 File: resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf Graphic file (type pdf)
 <use resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf>
 Package pdftex.def Info: resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf  used
- on input line 3596.
+ on input line 3653.
 (pdftex.def)             Requested size: 446.69328pt x 138.05215pt.
 
 
@@ -3580,13 +3547,13 @@ Package pdftex.def Info: resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf  used
 pdfTeX warning: pdflatex (file ./resources/pdfs/v2-PLATONIC-EULERVIRUS-landscap
 e.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape.pdf, id=2646, 1906.00081pt x 3
+<resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape.pdf, id=2668, 1906.00081pt x 3
 76.52669pt>
 File: resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape.pdf Graphic file (type pd
 f)
 <use resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape.pdf>
 Package pdftex.def Info: resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape.pdf  u
-sed on input line 3609.
+sed on input line 3666.
 (pdftex.def)             Requested size: 446.69328pt x 88.24248pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3594,163 +3561,163 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [104 <./resources/pdfs/PLATONIC-EULERVIRUS-landscape.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 []\OT1/cmtt/m/n/12 Aristotle attached considerable significance to the fact tha
 t
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 human beings can count: it is this ability, he claimed, that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 As Brainerd (1973) has pointed out, in most Western nations
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 today we expect students, by the time they reach their early
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 teens, to be much more competent with numbers than was an
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 educated adult Greek or Roman of 2,000 years ago. This fact
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 arises in no small measure from the elegance and power of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 In short, a price of the increased abstractness of the Arabic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 system is an obscuring of some of the key principles on which
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 numbers are based. To an ancient Egyptian, the fact that 3+4=7
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 was apparent from the relationship between the Egyptian number
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 representing 7 and those representing 3 and 4. There is no
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 hint of such a relationship, however, when this equation is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 expressed in Arabic notation. The price has been worth the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 If you invented a unique symbol to represent each of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 possible quantities of stones (including the case of no stones
 )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 up to that of your standard and decided to use the position
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 of that symbol to indicate the pile to which it refers, you
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 would have what we refer to today as a place-notation system f
 or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 The relative ease with which one can count or compute depends
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 \OT1/cmtt/m/n/12 to no small degree on the characteristics of the system that i
 s
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3648--3648
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3705
 
  []
 
@@ -3769,86 +3736,86 @@ Overfull \vbox (23.6189pt too high) has occurred while \output is active []
 [107]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3670.
+(hyperref)                removing `math shift' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\psi' on input line 3670.
+(hyperref)                removing `\psi' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 3670.
+(hyperref)                removing `subscript' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Omega' on input line 3670.
+(hyperref)                removing `\Omega' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3670.
+(hyperref)                removing `math shift' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3670.
+(hyperref)                removing `math shift' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\psi' on input line 3670.
+(hyperref)                removing `\psi' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 3670.
+(hyperref)                removing `subscript' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3670.
+(hyperref)                removing `math shift' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3670.
+(hyperref)                removing `math shift' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\psi' on input line 3670.
+(hyperref)                removing `\psi' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 3670.
+(hyperref)                removing `subscript' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3670.
+(hyperref)                removing `math shift' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3670.
+(hyperref)                removing `math shift' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\psi' on input line 3670.
+(hyperref)                removing `\psi' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 3670.
+(hyperref)                removing `subscript' on input line 3727.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3670.
+(hyperref)                removing `math shift' on input line 3727.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3682--3683
+Underfull \hbox (badness 10000) in paragraph at lines 3739--3740
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3687--3688
+Underfull \hbox (badness 10000) in paragraph at lines 3744--3745
 
  []
 
 
 
 [108]
-Underfull \hbox (badness 10000) in paragraph at lines 3713--3714
+Underfull \hbox (badness 10000) in paragraph at lines 3770--3771
 
  []
 
@@ -3857,13 +3824,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 3713--3714
 pdfTeX warning: pdflatex (file ./resources/pdfs/EXT-v2-PLATONIC-EULERVIRUS-land
 scape.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
-<resources/pdfs/EXT-v2-PLATONIC-EULERVIRUS-landscape.pdf, id=2741, 2049.57712pt
+<resources/pdfs/EXT-v2-PLATONIC-EULERVIRUS-landscape.pdf, id=2763, 2049.57712pt
  x 728.7225pt>
 File: resources/pdfs/EXT-v2-PLATONIC-EULERVIRUS-landscape.pdf Graphic file (typ
 e pdf)
 <use resources/pdfs/EXT-v2-PLATONIC-EULERVIRUS-landscape.pdf>
 Package pdftex.def Info: resources/pdfs/EXT-v2-PLATONIC-EULERVIRUS-landscape.pd
-f  used on input line 3745.
+f  used on input line 3802.
 (pdftex.def)             Requested size: 446.69328pt x 158.81833pt.
 
 Underfull \vbox (badness 4120) has occurred while \output is active []
@@ -3873,14 +3840,14 @@ Underfull \vbox (badness 4120) has occurred while \output is active []
 [109]
 
 [110 <./resources/pdfs/EXT-v2-PLATONIC-EULERVIRUS-landscape.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3819--3820
+Underfull \hbox (badness 10000) in paragraph at lines 3876--3877
 
  []
 
 
 
 [111]
-Overfull \hbox (28.63718pt too wide) in paragraph at lines 3824--3825
+Overfull \hbox (28.63718pt too wide) in paragraph at lines 3881--3882
 [][]\OT1/cmr/bx/n/14.4 Transformation 21. []$\OT1/cmr/m/n/14.4 
 [] = \OMS/cmsy/m/n/14.4 h\OT1/cmr/m/n/14.4 8\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/1
 4.4 6\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 4\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/
@@ -3894,53 +3861,53 @@ mr/m/n/14.4 6\OML/cmm/m/it/14.4 ; T; \OT1/cmr/m/n/14.4 9\OML/cmm/m/it/14.4 ; A;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3824--3825
+Underfull \hbox (badness 10000) in paragraph at lines 3881--3882
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3846--3846
+Underfull \hbox (badness 10000) in paragraph at lines 3903--3903
 
  []
 
 
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 3846--3847
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 3903--3904
  [] 
  []
 
 
 
 [112]
-Underfull \hbox (badness 10000) in paragraph at lines 3892--3893
+Underfull \hbox (badness 10000) in paragraph at lines 3949--3950
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3900--3901
+Underfull \hbox (badness 10000) in paragraph at lines 3957--3958
 
  []
 
 
-Overfull \hbox (19.10762pt too wide) in paragraph at lines 3909--3910
+Overfull \hbox (19.10762pt too wide) in paragraph at lines 3966--3967
 []\OT1/cmr/m/n/14.4 So, re-turn-ing to that in-ter-est-ing \OT1/cmr/bx/n/14.4 H
 i-Fi o-SSI \OT1/cmr/m/n/14.4 se-quence --- $
 [] = 8649137520$,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3913--3915
+Underfull \hbox (badness 10000) in paragraph at lines 3970--3972
 
  []
 
 
 
 [113]
-Underfull \hbox (badness 10000) in paragraph at lines 3929--3930
+Underfull \hbox (badness 10000) in paragraph at lines 3986--3987
 
  []
 
 
-Overfull \hbox (54.64629pt too wide) in paragraph at lines 3934--3939
+Overfull \hbox (54.64629pt too wide) in paragraph at lines 3991--3996
 \OT1/cmr/m/n/14.4 4[]\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 2[] \OMS/cmsy/m/n/1
 4.4 
  \OT1/cmr/m/n/14.4 9[]\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 1[] \OMS/cmsy/m/n/
@@ -3963,33 +3930,33 @@ m/it/14.4 ; \OT1/cmr/m/n/14.4 5\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 2\OML/cmm
 /m/it/14.4 ; \OT1/cmr/m/n/14.4 0\OMS/cmsy/m/n/14.4 i[]$ 
  []
 
-<resources/images/Earthworm.jpg, id=2834, 963.6pt x 642.4pt>
+<resources/images/Earthworm.jpg, id=2856, 963.6pt x 642.4pt>
 File: resources/images/Earthworm.jpg Graphic file (type jpg)
 <use resources/images/Earthworm.jpg>
-Package pdftex.def Info: resources/images/Earthworm.jpg  used on input line 394
-9.
+Package pdftex.def Info: resources/images/Earthworm.jpg  used on input line 400
+6.
 (pdftex.def)             Requested size: 446.69328pt x 297.7915pt.
 
 
 [114]
-Underfull \hbox (badness 10000) in paragraph at lines 3969--3970
+Underfull \hbox (badness 10000) in paragraph at lines 4026--4027
 
  []
 
 
 
 [115 <./resources/images/Earthworm.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 3981--3982
+Underfull \hbox (badness 10000) in paragraph at lines 4038--4039
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3986--3987
+Underfull \hbox (badness 10000) in paragraph at lines 4043--4044
 
  []
 
 
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 4004--4005
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 4061--4062
  [] 
  []
 
@@ -3997,12 +3964,12 @@ Overfull \hbox (11.49992pt too wide) in paragraph at lines 4004--4005
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/xLGES-PLATONIC-MLLA-landscape.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/xLGES-PLATONIC-MLLA-landscape.pdf, id=2863, 500.83109pt x 1703.
+<resources/pdfs/xLGES-PLATONIC-MLLA-landscape.pdf, id=2885, 500.83109pt x 1703.
 40382pt>
 File: resources/pdfs/xLGES-PLATONIC-MLLA-landscape.pdf Graphic file (type pdf)
 <use resources/pdfs/xLGES-PLATONIC-MLLA-landscape.pdf>
 Package pdftex.def Info: resources/pdfs/xLGES-PLATONIC-MLLA-landscape.pdf  used
- on input line 4013.
+ on input line 4070.
 (pdftex.def)             Requested size: 193.01543pt x 656.46852pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4020,23 +3987,23 @@ Chapter 11.
 
 
 [119]
-Overfull \hbox (38.71805pt too wide) in paragraph at lines 4063--4064
+Overfull \hbox (41.85135pt too wide) in paragraph at lines 4120--4121
 []\OT1/cmr/m/n/14.4 The for-mal def-i-ni-tion of the \OT1/cmr/bx/n/14.4 Ri-bo-s
-ome \OT1/cmr/m/n/14.4 as a \OT1/cmr/bx/n/14.4 Pro-tein Gen-er-a-tor\OT1/cmr/m/n
-/14.4 ([]\OT1/cmr/bx/n/14.4 Transformer
+ome \OT1/cmr/m/n/14.4 as a \OT1/cmr/bx/n/14.4 Pro-tein Gen-er-a-tor \OT1/cmr/m/
+n/14.4 ([]\OT1/cmr/bx/n/14.4 Transformer
  []
 
 
 
 [120]
-Overfull \hbox (28.48662pt too wide) in paragraph at lines 4086--4087
+Overfull \hbox (28.48662pt too wide) in paragraph at lines 4143--4144
 [][]\OT1/cmr/bx/n/14.4 Algorithm []3[][]\OT1/cmr/m/n/14.4 : The \OT1/cmr/bx/n/1
 4.4 First Lu-Shuffle Al-go-rithm \OT1/cmr/m/n/14.4 (FLSA): $[](^^B\OML/cmm/m/it
 /14.4 ; k\OT1/cmr/m/n/14.4 )$. 
  []
 
 
-Overfull \hbox (43.60324pt too wide) in paragraph at lines 4087--4088
+Overfull \hbox (43.60324pt too wide) in paragraph at lines 4144--4145
 [][]\OT1/cmr/bx/n/14.4 Algorithm []4[][]\OT1/cmr/m/n/14.4 : The \OT1/cmr/bx/n/1
 4.4 Sec-ond Lu-Shuffle Al-go-rithm \OT1/cmr/m/n/14.4 (SLSA): $[](^^B\OML/cmm/m/
 it/14.4 ; k\OT1/cmr/m/n/14.4 )$. 
@@ -4059,11 +4026,11 @@ Appendix A.
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/ozin_gene_expressions.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/ozin_gene_expressions.pdf, id=3073, 596.98032pt x 844.65562pt>
+<resources/pdfs/ozin_gene_expressions.pdf, id=3096, 596.98032pt x 844.65562pt>
 File: resources/pdfs/ozin_gene_expressions.pdf Graphic file (type pdf)
 <use resources/pdfs/ozin_gene_expressions.pdf>
 Package pdftex.def Info: resources/pdfs/ozin_gene_expressions.pdf  used on inpu
-t line 4145.
+t line 4202.
 (pdftex.def)             Requested size: 446.69328pt x 487.2487pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4078,10 +4045,10 @@ Overfull \vbox (16.67203pt too high) has occurred while \output is active []
 
 
 [126 <./resources/pdfs/ozin_gene_expressions.pdf>]
-<resources/pdfs/ozin.pdf, id=3097, 614.295pt x 794.97pt>
+<resources/pdfs/ozin.pdf, id=3119, 614.295pt x 794.97pt>
 File: resources/pdfs/ozin.pdf Graphic file (type pdf)
 <use resources/pdfs/ozin.pdf>
-Package pdftex.def Info: resources/pdfs/ozin.pdf  used on input line 4157.
+Package pdftex.def Info: resources/pdfs/ozin.pdf  used on input line 4214.
 (pdftex.def)             Requested size: 446.69328pt x 536.69916pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4092,11 +4059,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/ozin_applied.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/ozin_applied.pdf, id=3106, 596.98032pt x 844.65562pt>
+<resources/pdfs/ozin_applied.pdf, id=3128, 596.98032pt x 844.65562pt>
 File: resources/pdfs/ozin_applied.pdf Graphic file (type pdf)
 <use resources/pdfs/ozin_applied.pdf>
-Package pdftex.def Info: resources/pdfs/ozin_applied.pdf  used on input line 41
-69.
+Package pdftex.def Info: resources/pdfs/ozin_applied.pdf  used on input line 42
+26.
 (pdftex.def)             Requested size: 446.69328pt x 632.02089pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4113,404 +4080,404 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Appendix B.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4175.
+(hyperref)                removing `math shift' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 4175.
+(hyperref)                removing `\setbox' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempboxa' on input line 4175.
+(hyperref)                removing `\@tempboxa' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4175.
+(hyperref)                removing `\hbox' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\color@begingroup' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\displaystyle' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\psi' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Omega' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4175.
+(hyperref)                removing `\color@begingroup' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 4175.
+(hyperref)                removed on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgraf' on input line 4175.
+(hyperref)                removing `\mathsurround' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 4175.
+(hyperref)                removing `\z@' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4175.
+(hyperref)                removing `math shift' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4175.
+(hyperref)                removing `\displaystyle' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4175.
+(hyperref)                removing `\psi' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 4175.
+(hyperref)                removing `subscript' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4175.
+(hyperref)                removing `\Omega' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxsep' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dp' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempboxa' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempboxa' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lower' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vbox' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vbox' on input line 4175.
+(hyperref)                removing `math shift' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 4175.
+(hyperref)                removed on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\box' on input line 4175.
+(hyperref)                removing `\endgraf' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempboxa' on input line 4175.
+(hyperref)                removing `\endgroup' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempdima' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\fboxrule' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\advance' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempdima' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\fboxsep' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\advance' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempdima' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\dp' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempboxa' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\setbox' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempboxa' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lower' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempdima' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\vbox' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 0.4pt
+(hyperref)                removed on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 0.4pt
+(hyperref)                removed on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\vbox' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 4175.
+(hyperref)                removed on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\box' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempboxa' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 3.0pt
+(hyperref)                removed on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 4175.
+(hyperref)                removed on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 4175.
+(hyperref)                removed on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4175.
+(hyperref)                removing `\@tempdima' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\wd' on input line 4175.
+(hyperref)                removing `\wd' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempboxa' on input line 4175.
+(hyperref)                removing `\@tempboxa' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 4175.
+(hyperref)                removing `\<def>-command' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempa' on input line 4175.
+(hyperref)                removing `\@tempa' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\box' on input line 4175.
+(hyperref)                removing `\box' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempboxa' on input line 4175.
+(hyperref)                removing `\@tempboxa' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -12.0pt
-(hyperref)                removed on input line 4175.
+(hyperref)                removed on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4175.
+(hyperref)                removing `\hbox' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 4175.
+(hyperref)                removing `\dimen@' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 4175.
+(hyperref)                removing `\advance' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 4175.
+(hyperref)                removing `\dimen@' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lower' on input line 4175.
+(hyperref)                removing `\lower' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vbox' on input line 4175.
+(hyperref)                removing `\vbox' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hrule' on input line 4175.
+(hyperref)                removing `\hrule' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4175.
+(hyperref)                removing `\fboxrule' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4175.
+(hyperref)                removing `\@tempdima' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 12.0pt
-(hyperref)                replaced by space on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vrule' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\tw@' on input line 4175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4175.
+(hyperref)                removing `\fboxrule' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 12.0pt
-(hyperref)                replaced by space on input line 4175.
+(hyperref)                replaced by space on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vrule' on input line 4175.
+(hyperref)                removing `\hbox' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4175.
+(hyperref)                removing `\advance' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 4175.
+(hyperref)                removing `\dimen@' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4175.
+(hyperref)                removing `\fboxrule' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\vrule' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\fboxrule' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\dimen@' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempdima' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\advance' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempdima' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tw@' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\fboxrule' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 12.0pt
+(hyperref)                replaced by space on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\vrule' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\fboxrule' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\dimen@' on input line 4232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -0.2pt
-(hyperref)                removed on input line 4175.
+(hyperref)                removed on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hrule' on input line 4175.
+(hyperref)                removing `\hrule' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4175.
+(hyperref)                removing `\fboxrule' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4175.
+(hyperref)                removing `subscript' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4175.
+(hyperref)                removing `math shift' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4175.
+(hyperref)                removing `math shift' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Theta' on input line 4175.
+(hyperref)                removing `\Theta' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4175.
+(hyperref)                removing `math shift' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4175.
+(hyperref)                removing `math shift' on input line 4232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4175.
+(hyperref)                removing `math shift' on input line 4232.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4186--4187
+Underfull \hbox (badness 10000) in paragraph at lines 4243--4244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4188--4189
+Underfull \hbox (badness 10000) in paragraph at lines 4245--4246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4192--4194
+Underfull \hbox (badness 10000) in paragraph at lines 4249--4251
 
  []
 
 
 
 [131]
-Underfull \hbox (badness 10000) in paragraph at lines 4201--4202
+Underfull \hbox (badness 10000) in paragraph at lines 4258--4259
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4242--4243
+Underfull \hbox (badness 10000) in paragraph at lines 4299--4300
 
  []
 
@@ -4522,364 +4489,364 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [132]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 4282.
+(hyperref)                than one, level fixed on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4282.
+(hyperref)                removing `math shift' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 4282.
+(hyperref)                removing `\setbox' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempboxa' on input line 4282.
+(hyperref)                removing `\@tempboxa' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4282.
+(hyperref)                removing `\hbox' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\color@begingroup' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\displaystyle' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\omega' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4282.
+(hyperref)                removing `\color@begingroup' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 4282.
+(hyperref)                removed on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgraf' on input line 4282.
+(hyperref)                removing `\mathsurround' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 4282.
+(hyperref)                removing `\z@' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4282.
+(hyperref)                removing `math shift' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4282.
+(hyperref)                removing `\displaystyle' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4282.
+(hyperref)                removing `\omega' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 4282.
+(hyperref)                removing `subscript' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4282.
+(hyperref)                removing `superscript' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxsep' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dp' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempboxa' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempboxa' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lower' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vbox' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vbox' on input line 4282.
+(hyperref)                removing `math shift' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 4282.
+(hyperref)                removed on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\box' on input line 4282.
+(hyperref)                removing `\endgraf' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempboxa' on input line 4282.
+(hyperref)                removing `\endgroup' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempdima' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\fboxrule' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\advance' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempdima' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\fboxsep' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\advance' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempdima' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\dp' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempboxa' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\setbox' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempboxa' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lower' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempdima' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\vbox' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 0.4pt
+(hyperref)                removed on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 0.4pt
+(hyperref)                removed on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\vbox' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 3.0pt
-(hyperref)                removed on input line 4282.
+(hyperref)                removed on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\box' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempboxa' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 3.0pt
+(hyperref)                removed on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 4282.
+(hyperref)                removed on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 0.4pt
-(hyperref)                removed on input line 4282.
+(hyperref)                removed on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4282.
+(hyperref)                removing `\@tempdima' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\wd' on input line 4282.
+(hyperref)                removing `\wd' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempboxa' on input line 4282.
+(hyperref)                removing `\@tempboxa' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 4282.
+(hyperref)                removing `\<def>-command' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempa' on input line 4282.
+(hyperref)                removing `\@tempa' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\box' on input line 4282.
+(hyperref)                removing `\box' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempboxa' on input line 4282.
+(hyperref)                removing `\@tempboxa' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -12.0pt
-(hyperref)                removed on input line 4282.
+(hyperref)                removed on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4282.
+(hyperref)                removing `\hbox' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 4282.
+(hyperref)                removing `\dimen@' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 4282.
+(hyperref)                removing `\advance' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 4282.
+(hyperref)                removing `\dimen@' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lower' on input line 4282.
+(hyperref)                removing `\lower' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vbox' on input line 4282.
+(hyperref)                removing `\vbox' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hrule' on input line 4282.
+(hyperref)                removing `\hrule' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4282.
+(hyperref)                removing `\fboxrule' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4282.
+(hyperref)                removing `\@tempdima' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 12.0pt
-(hyperref)                replaced by space on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vrule' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempdima' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\tw@' on input line 4282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4282.
+(hyperref)                removing `\fboxrule' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 12.0pt
-(hyperref)                replaced by space on input line 4282.
+(hyperref)                replaced by space on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\vrule' on input line 4282.
+(hyperref)                removing `\hbox' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4282.
+(hyperref)                removing `\advance' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 4282.
+(hyperref)                removing `\dimen@' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4282.
+(hyperref)                removing `\fboxrule' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\vrule' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\fboxrule' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\dimen@' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempdima' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\advance' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@tempdima' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tw@' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\fboxrule' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 12.0pt
+(hyperref)                replaced by space on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\vrule' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\fboxrule' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\dimen@' on input line 4339.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -0.2pt
-(hyperref)                removed on input line 4282.
+(hyperref)                removed on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hrule' on input line 4282.
+(hyperref)                removing `\hrule' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\fboxrule' on input line 4282.
+(hyperref)                removing `\fboxrule' on input line 4339.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4282.
+(hyperref)                removing `math shift' on input line 4339.
 
 
 
 [133]
-Overfull \hbox (0.29314pt too wide) in paragraph at lines 4331--4332
+Overfull \hbox (0.29314pt too wide) in paragraph at lines 4388--4389
 []\OT1/cmr/m/n/14.4 So, now that you know the \OT1/cmr/bx/n/14.4 PFEK \OT1/cmr/
 m/n/14.4 for your $\OML/cmm/m/it/14.4 m$\OT1/cmr/m/n/14.4 , such as $[][] = \OM
 S/cmsy/m/n/14.4 h\OT1/cmr/m/n/14.4 2\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 1\OM
@@ -4891,11 +4858,11 @@ ML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 8\OMS/cmsy/m/n/14.4 i$
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/EXAPLATONICFORMPFA_OCT.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/EXAPLATONICFORMPFA_OCT.pdf, id=3186, 358.4592pt x 346.4142pt>
+<resources/pdfs/EXAPLATONICFORMPFA_OCT.pdf, id=3208, 358.4592pt x 346.4142pt>
 File: resources/pdfs/EXAPLATONICFORMPFA_OCT.pdf Graphic file (type pdf)
 <use resources/pdfs/EXAPLATONICFORMPFA_OCT.pdf>
 Package pdftex.def Info: resources/pdfs/EXAPLATONICFORMPFA_OCT.pdf  used on inp
-ut line 4343.
+ut line 4400.
 (pdftex.def)             Requested size: 446.69328pt x 431.70578pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4912,84 +4879,84 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Appendix C.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4360.
+(hyperref)                removing `math shift' on input line 4417.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Omega' on input line 4360.
+(hyperref)                removing `\Omega' on input line 4417.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4360.
+(hyperref)                removing `math shift' on input line 4417.
 
 
 
 [137]
-Underfull \hbox (badness 10000) in paragraph at lines 4375--4376
+Underfull \hbox (badness 10000) in paragraph at lines 4432--4433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4380--4381
+Underfull \hbox (badness 10000) in paragraph at lines 4437--4438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4382--4383
+Underfull \hbox (badness 10000) in paragraph at lines 4439--4440
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4386--4387
+Underfull \hbox (badness 10000) in paragraph at lines 4443--4444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4392--4393
+Underfull \hbox (badness 10000) in paragraph at lines 4449--4450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4397--4398
+Underfull \hbox (badness 10000) in paragraph at lines 4454--4455
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4399--4400
+Underfull \hbox (badness 10000) in paragraph at lines 4456--4457
 
  []
 
 
 
 [138]
-Underfull \hbox (badness 10000) in paragraph at lines 4404--4405
+Underfull \hbox (badness 10000) in paragraph at lines 4461--4462
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4433--4434
+Underfull \hbox (badness 10000) in paragraph at lines 4490--4491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4438--4439
+Underfull \hbox (badness 10000) in paragraph at lines 4495--4496
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4455--4456
+Underfull \hbox (badness 10000) in paragraph at lines 4512--4513
 
  []
 
 
 
 [139]
-Underfull \hbox (badness 10000) in paragraph at lines 4459--4460
+Underfull \hbox (badness 10000) in paragraph at lines 4516--4517
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4486--4486
+Underfull \hbox (badness 10000) in paragraph at lines 4543--4543
 
  []
 
@@ -4998,54 +4965,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 4486--4486
 [140]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 4518.
+(hyperref)                than one, level fixed on input line 4575.
 
-<resources/pdfs/PLATONIC-EXA-landscape_ORIG.pdf, id=3290, 1486.80469pt x 649.67
+<resources/pdfs/PLATONIC-EXA-landscape_ORIG.pdf, id=3312, 1486.80469pt x 649.67
 719pt>
 File: resources/pdfs/PLATONIC-EXA-landscape_ORIG.pdf Graphic file (type pdf)
 <use resources/pdfs/PLATONIC-EXA-landscape_ORIG.pdf>
 Package pdftex.def Info: resources/pdfs/PLATONIC-EXA-landscape_ORIG.pdf  used o
-n input line 4531.
+n input line 4588.
 (pdftex.def)             Requested size: 446.69328pt x 195.18222pt.
 
 
 [141 <./resources/pdfs/PLATONIC-EXA-landscape_ORIG.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4551--4551
+Underfull \hbox (badness 10000) in paragraph at lines 4608--4608
 
  []
 
 
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 4551--4552
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 4608--4609
  [] 
  []
 
-<resources/pdfs/PLATONIC-EULERVIRUS-landscape_ORIG.pdf, id=3323, 1576.38937pt x
+<resources/pdfs/PLATONIC-EULERVIRUS-landscape_ORIG.pdf, id=3346, 1576.38937pt x
  362.85562pt>
 File: resources/pdfs/PLATONIC-EULERVIRUS-landscape_ORIG.pdf Graphic file (type 
 pdf)
 <use resources/pdfs/PLATONIC-EULERVIRUS-landscape_ORIG.pdf>
 Package pdftex.def Info: resources/pdfs/PLATONIC-EULERVIRUS-landscape_ORIG.pdf 
- used on input line 4569.
+ used on input line 4626.
 (pdftex.def)             Requested size: 446.69328pt x 102.81696pt.
 
 
 [142 <./resources/pdfs/PLATONIC-EULERVIRUS-landscape_ORIG.pdf>]
-<resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape_ORIG.pdf, id=3339, 1633.60312p
+<resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape_ORIG.pdf, id=3362, 1633.60312p
 t x 353.82187pt>
 File: resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape_ORIG.pdf Graphic file (ty
 pe pdf)
 <use resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape_ORIG.pdf>
 Package pdftex.def Info: resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape_ORIG.p
-df  used on input line 4582.
+df  used on input line 4639.
 (pdftex.def)             Requested size: 446.69328pt x 96.74792pt.
 
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/note_cover.pdf, id=3349, 596.98032pt x 844.65562pt>
+<resources/pdfs/note_cover.pdf, id=3372, 596.98032pt x 844.65562pt>
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 4602
+Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 4659
 .
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -5054,7 +5021,7 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 4602
+Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 4659
 .
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -5065,16 +5032,16 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/note_cover.pdf, id=3352, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/note_cover.pdf, id=3375, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 4602.
+ne 4659.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 4602.
+ne 4659.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
@@ -5084,19 +5051,19 @@ ne 4602.
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 4602.
+ne 4659.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 4602.
+ne 4659.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 4602.
+ne 4659.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 [145
 
@@ -5124,42 +5091,42 @@ sity of ox-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--57
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  PRO-POSED DOC-TORAL THE-SIS:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--57
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
 \OT1/cmr/m/n/14.4 A The-ory of En-tropy Sources & Ran-dom Num-ber Gen-er-a-tors
 :
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 50--57
+Underfull \hbox (badness 5878) in paragraph at lines 50--56
 \OT1/cmr/m/n/14.4 DPhil Com-puter Sci-ence, Ox-ford Uni-ver-sity, Joseph Will-r
 ich Lu-
  []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 50--57
-\OT1/cmr/m/n/14.4 talo MSc. BSc. alumni Mak-erere Uni-ver-sity.  6 2025.  Ac-ce
-s-si-ble
+Underfull \hbox (badness 3849) in paragraph at lines 50--56
+\OT1/cmr/m/n/14.4 talo MSc. BSc. alumni Mak-erere Uni-ver-sity, 6 2025.  Ac-ces
+-si-ble
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--57
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
 \OT1/cmr/m/n/14.4 via []$\OT1/cmtt/m/n/14.4 https : / / figshare . com / articl
 es / online _ resource / PROPOSED _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--57
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
 \OT1/cmtt/m/n/14.4 DOCTORAL _ THESIS _ A _ Theory _ of _ Entropy _ Sources _ Ra
 ndom _ Number _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--57
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
 \OT1/cmtt/m/n/14.4 Generators _ DPhil _ Computer _ Science _ Oxford _ Universit
 y _ Joseph _
  []
@@ -5245,6 +5212,8 @@ togenesis _
  []
 
 
+
+[148]
 Underfull \hbox (badness 3612) in paragraph at lines 141--147
 []\OT1/cmr/m/n/14.4 University of Le-ices-ter.  The cell cy-cle, mi-to-sis and 
 meio-sis for
@@ -5257,8 +5226,6 @@ ac . uk / vgec / topics / cell-[]cycle /
  []
 
 
-
-[148]
 Underfull \hbox (badness 7168) in paragraph at lines 149--155
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  Con-cern-ing a spe-cial sum-ma-t
 ion that
@@ -5328,6 +5295,8 @@ yz / CBBresearch / Przytycka / download /
  []
 
 
+
+[150]
 Underfull \hbox (badness 1817) in paragraph at lines 314--320
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  Soft-ware lan-guage engineering-
 text pro-cess-
@@ -5340,8 +5309,6 @@ Underfull \hbox (badness 1102) in paragraph at lines 314--320
  []
 
 
-
-[150]
 Underfull \hbox (badness 2781) in paragraph at lines 349--355
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  Platonic-exa-landscape.pdf | a b
 a-sic ex-
@@ -5396,26 +5363,26 @@ Underfull \hbox (badness 1694) in paragraph at lines 388--393
  []
 
 
+
+[151]
 Underfull \hbox (badness 10000) in paragraph at lines 395--401
 []$\OT1/cmtt/m/n/14.4 https : / / www . academia . edu / 123296302 / Numbers _ 
 from _ Arbitrary _ Text _
  []
 
 
-
-[151]
 Underfull \hbox (badness 10000) in paragraph at lines 403--407
 \OT1/cmtt/m/n/14.4 / / figshare . com / articles / onlineresource / CODE _ Comp
 utational _
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 4618--4618
+Underfull \hbox (badness 10000) in paragraph at lines 4675--4675
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4618--4621
+Underfull \hbox (badness 10000) in paragraph at lines 4675--4678
 
  []
 
@@ -5425,10 +5392,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 4618--4621
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=3507, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=3533, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf>
-Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 4644
+Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 4707
 .
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -5437,7 +5404,7 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf>
-Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 4644
+Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 4707
 .
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -5448,16 +5415,16 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=3510, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=3536, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 4644.
+ne 4707.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 4644.
+ne 4707.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
@@ -5467,19 +5434,19 @@ ne 4644.
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 4644.
+ne 4707.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 4644.
+ne 4707.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 4644.
+ne 4707.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 [154
 
@@ -5495,13 +5462,13 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `TransformaticsInGENETICS---2025---JWL.out' h
 as not changed.
-(rerunfilecheck)             Checksum: 810B6D2E7D3275A0B806C4D67706F027;20518.
+(rerunfilecheck)             Checksum: 0CEFAF1A8C255A077BBB92157784C0FF;20646.
  ) 
 Here is how much of TeX's memory you used:
- 31416 strings out of 473898
- 566290 string characters out of 5736297
+ 31425 strings out of 473898
+ 566409 string characters out of 5736297
  2321960 words of memory out of 5000000
- 52652 multiletter control sequences out of 15000+600000
+ 52657 multiletter control sequences out of 15000+600000
  581158 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,21n,93p,3947b,1736s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -5539,10 +5506,10 @@ onts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt
 ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on TransformaticsInGENETICS---2025---JWL.pdf (174 pages, 1187345
-2 bytes).
+Output written on TransformaticsInGENETICS---2025---JWL.pdf (176 pages, 1224011
+5 bytes).
 PDF statistics:
- 3921 PDF objects out of 4296 (max. 8388607)
- 1131 named destinations out of 1200 (max. 500000)
- 901 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3949 PDF objects out of 4296 (max. 8388607)
+ 1135 named destinations out of 1200 (max. 500000)
+ 909 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,5 @@
 \contentsline {chapter}{Preface}{xi}{chapter*.6}%
+\contentsline {chapter}{List of Abbreviations}{xiii}{chapter*.7}%
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
 \contentsline {subsection}{\numberline {1.0.1}How to Navigate the Monograph}{6}{subsection.1.0.1}%
 \contentsline {chapter}{\numberline {2}Sequence Symbol Sets and Sequence Transforms Applied to Genetic Code}{9}{chapter.2}%
@@ -18,7 +19,7 @@
 \contentsline {subsection}{\numberline {6.6.2}Measuring Proximity between a $Q_k$ and Members of a Sequence Population, $\Omega ^n$}{43}{subsection.6.6.2}%
 \contentsline {section}{\numberline {6.7}Concerning Optimal Symbolic Storage of na-Sequences in Databases - Computing the G$\ddot {o}$del Number for a Sequence $\Theta _n$ based on its Characteristic $\hbar (\overset {>}{\Theta _n})$ }{45}{section.6.7}%
 \contentsline {chapter}{\numberline {7}The Mathematics of Genome Sequencing: Sequence Alignment, The Modal Sequence, The Sequencing Machine and the Identifier Genome Sequence Law}{49}{chapter.7}%
-\contentsline {section}{\numberline {7.1}PROBLEM G1: Computing MCS: Maximum Common Subsequence: $\Theta _1 \Diamond \Theta _2$}{50}{section.7.1}%
+\contentsline {section}{\numberline {7.1}PROBLEM G1: Computing Maximum Common Subsequence: $\Theta _1 \Diamond \Theta _2$}{50}{section.7.1}%
 \contentsline {section}{\numberline {7.2}PROBLEM G2: Computing Overlap Resultant Sequences: $\Theta _1 \ast \Theta _2$}{52}{section.7.2}%
 \contentsline {section}{\numberline {7.3}PROBLEM G3: Computing the Genome Sequence (GS): $(\Theta _1 \Diamond \Theta _2)^*$}{52}{section.7.3}%
 \contentsline {section}{\numberline {7.4}The Genome Sequencer}{54}{section.7.4}%
@@ -63,4 +64,4 @@
 \contentsline {subsection}{\numberline {B.0.1}Example of Resolving PFA Components, $\boxed {\omega _i^*}$}{133}{subsection.a.B.0.1}%
 \contentsline {chapter}{Appendix \numberline {C}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{137}{appendix.a.C}%
 \contentsline {subsection}{\numberline {C.0.1}Examples of Complete Lu-Genome Expressions}{141}{subsection.a.C.0.1}%
-\contentsline {chapter}{Colophon}{153}{appendix*.60}%
+\contentsline {chapter}{Colophon}{153}{appendix*.61}%
