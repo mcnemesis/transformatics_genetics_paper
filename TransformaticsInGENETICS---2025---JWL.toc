@@ -64,4 +64,5 @@
 \contentsline {subsection}{\numberline {B.0.1}Example of Resolving PFA Components, $\boxed {\omega _i^*}$}{133}{subsection.a.B.0.1}%
 \contentsline {chapter}{Appendix \numberline {C}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{137}{appendix.a.C}%
 \contentsline {subsection}{\numberline {C.0.1}Examples of Complete Lu-Genome Expressions}{141}{subsection.a.C.0.1}%
-\contentsline {chapter}{Colophon}{153}{appendix*.61}%
+\contentsline {chapter}{Appendix \numberline {D}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{145}{appendix.a.D}%
+\contentsline {chapter}{Colophon}{155}{appendix*.62}%
