@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  22 AUG 2025 11:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.26)  23 AUG 2025 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5009,163 +5009,171 @@ df  used on input line 4639.
 [144]
 Appendix D.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4654--4654
+
+[145
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{defn.13}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.4662 $
+        P^{n} \rightarrow P^* ;$\\]
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 [][][]\OT1/cmr/m/n/8 Image credit from au-thor's Art Port-fo-lio: []$\OT1/cmtt/
 m/n/8 https : / / www . deviantart . com / nemesisfixx / art /
  []
 
 
-Underfull \hbox (badness 5388) in paragraph at lines 4654--4654
+Underfull \hbox (badness 5388) in paragraph at lines 4686--4686
 \OT1/cmtt/m/n/8 nemesisfixx / art / The-[]Zermelo-[]Frankael-[]Dream-[]Collecti
 on-[]II-[]942887985$[] \OT1/cmr/m/n/8 and []$\OT1/cmtt/m/n/8 https : / / www . 
 deviantart . com / nemesisfixx / art /
  []
 
-<resources/images/annunaki.jpg, id=3411, 3011.25pt x 4015.0pt>
+<resources/images/annunaki.jpg, id=3421, 3011.25pt x 4015.0pt>
 File: resources/images/annunaki.jpg Graphic file (type jpg)
 <use resources/images/annunaki.jpg>
-Package pdftex.def Info: resources/images/annunaki.jpg  used on input line 4660
+Package pdftex.def Info: resources/images/annunaki.jpg  used on input line 4692
 .
 (pdftex.def)             Requested size: 446.69328pt x 595.54626pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1902) has occurred while \output is active []
 
 
 
-[145
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+[146]
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 []\OT1/cmtt/m/n/14.4 In a dream, I have seen that I was somewhere in a laborato
 ry with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 some very intelligent fellows and that we were exploring pot
 ential
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 applications of TRANSFORMATICS in PHYSICS by conducting simu
 lation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 experiments using a large hologram machine that looked like 
 a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 []\OT1/cmtt/m/n/14.4 I saw that among interesting analyses we conducted was the
  matter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 of trying to understand ``The Bermuda Triangle Problem". In
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 particular, we were simulating a strong magnetic field situa
 ted
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 at the center of some location upon earth, and that if any
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 flying object --- such as Flying Saucers (UFOs) attempted to
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 fly close enough to this gravitating point, it would cause t
 heir
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 trajectories to somewhat get warped towards the center, and 
 so
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 that, no matter how strong the tangential velocity of the cr
 aft
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 was relative to the center of attraction at some moment with
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 time T=tn, at any other later moment such that T=t(n+1), the
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 centripetal force on the craft would be even stronger, and t
 hat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 the distance from the point of the center of attraction woul
 d be
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 lesser at t(n+1) than at tn, and so that, eventually the cra
 ft
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 would spiral down into the point and somewhat crash or (like
  for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 the case of the whirlpool-like Bermuda Triangle), get swallo
 wed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 []\OT1/cmtt/m/n/14.4 The simulations looked so realistic despite being generate
 d by a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 super computer, and it felt like we were performing reconnai
 ssance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4682--4682
+Underfull \hbox (badness 10000) in paragraph at lines 4714--4714
 \OT1/cmtt/m/n/14.4 studies about aliens visiting Earth at say... Area 51! Then 
 I
  []
 
 
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 4682--4683
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 4714--4715
  [] 
  []
 
@@ -5174,8 +5182,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[146 <./resources/images/annunaki.jpg>]
-Overfull \hbox (15.64761pt too wide) in paragraph at lines 4695--4696
+[147 <./resources/images/annunaki.jpg>]
+Overfull \hbox (15.64761pt too wide) in paragraph at lines 4727--4728
 []\OT1/cmr/m/it/12 #dream #di-ary #ad-vanced #physics #trans-for-mat-ics #jwl #
 re-flec-tions #fu-turedi-rec-tions #CRE-
  []
@@ -5184,10 +5192,10 @@ re-flec-tions #fu-turedi-rec-tions #CRE-
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/note_cover.pdf, id=3427, 596.98032pt x 844.65562pt>
+<resources/pdfs/note_cover.pdf, id=3440, 596.98032pt x 844.65562pt>
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 4704
+Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 4736
 .
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -5196,7 +5204,7 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf>
-Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 4704
+Package pdftex.def Info: resources/pdfs/note_cover.pdf  used on input line 4736
 .
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -5207,41 +5215,45 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/note_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/note_cover.pdf, id=3430, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/note_cover.pdf, id=3443, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 4704.
+ne 4736.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 4704.
+ne 4736.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
-[147]
+[148]
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 4704.
+ne 4736.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 4704.
+ne 4736.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
 File: resources/pdfs/note_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/note_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/note_cover.pdf , page1 used on input li
-ne 4704.
+ne 4736.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
-[148
+[149
 
  <./resources/pdfs/note_cover.pdf>]
 (TransformaticsInGENETICS---2025---JWL.bbl
+
+[150
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 11--17
 []\OT1/cmr/m/n/14.4 GeeksforGeeks.  Di-a-gram of pro-tein syn-the-sis.  []$\OT1
 /cmtt/m/n/14.4 https : / / www .
@@ -5302,9 +5314,7 @@ y _ Joseph _
 
 
 
-[149
-
-]
+[151]
 Underfull \hbox (badness 10000) in paragraph at lines 102--107
 \OT1/cmtt/m/n/14.4 org / Bookshelves / Introductory _ and _ General _ Biology /
  General _
@@ -5384,7 +5394,7 @@ togenesis _
 
 
 
-[150]
+[152]
 Underfull \hbox (badness 3612) in paragraph at lines 141--147
 []\OT1/cmr/m/n/14.4 University of Le-ices-ter.  The cell cy-cle, mi-to-sis and 
 meio-sis for
@@ -5453,7 +5463,7 @@ Underfull \hbox (badness 1072) in paragraph at lines 185--190
 
 
 
-[151]
+[153]
 Underfull \hbox (badness 5592) in paragraph at lines 296--303
 []\OT1/cmr/m/n/14.4 Teresa Przy-ty-cka.  Lec-ture 10: Whole genome se-quenc-ing
  and
@@ -5467,7 +5477,7 @@ yz / CBBresearch / Przytycka / download /
 
 
 
-[152]
+[154]
 Underfull \hbox (badness 1817) in paragraph at lines 314--320
 []\OT1/cmr/m/n/14.4 Joseph Will-rich Lu-talo.  Soft-ware lan-guage engineering-
 text pro-cess-
@@ -5535,7 +5545,7 @@ Underfull \hbox (badness 1694) in paragraph at lines 388--393
 
 
 
-[153]
+[155]
 Underfull \hbox (badness 10000) in paragraph at lines 395--401
 []$\OT1/cmtt/m/n/14.4 https : / / www . academia . edu / 123296302 / Numbers _ 
 from _ Arbitrary _ Text _
@@ -5548,25 +5558,25 @@ utational _
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 4720--4720
+Underfull \hbox (badness 10000) in paragraph at lines 4752--4752
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4720--4723
+Underfull \hbox (badness 10000) in paragraph at lines 4752--4755
 
  []
 
 
 
-[154]
+[156]
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=3576, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=3592, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf>
-Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 4752
+Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 4784
 .
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -5575,7 +5585,7 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf>
-Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 4752
+Package pdftex.def Info: resources/pdfs/back_cover.pdf  used on input line 4784
 .
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 
@@ -5586,40 +5596,40 @@ pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./resources/pdfs/back_cover.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<resources/pdfs/back_cover.pdf, id=3579, page=1, 596.98032pt x 844.65562pt>
+<resources/pdfs/back_cover.pdf, id=3595, page=1, 596.98032pt x 844.65562pt>
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 4752.
+ne 4784.
 (pdftex.def)             Requested size: 596.97885pt x 844.65356pt.
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 4752.
+ne 4784.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
-[155
+[157
 
 ]
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 4752.
+ne 4784.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 4752.
+ne 4784.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
 
 
 File: resources/pdfs/back_cover.pdf Graphic file (type pdf)
 <use resources/pdfs/back_cover.pdf, page 1>
 Package pdftex.def Info: resources/pdfs/back_cover.pdf , page1 used on input li
-ne 4752.
+ne 4784.
 (pdftex.def)             Requested size: 597.71669pt x 845.69751pt.
-[156
+[158
 
  <./resources/pdfs/back_cover.pdf>]
 (TransformaticsInGENETICS---2025---JWL.aux)
@@ -5636,10 +5646,10 @@ as not changed.
 (rerunfilecheck)             Checksum: 27F48D9EE245DFF674CA776BCD81A280;21181.
  ) 
 Here is how much of TeX's memory you used:
- 31441 strings out of 473898
- 566768 string characters out of 5736297
+ 31449 strings out of 473898
+ 566848 string characters out of 5736297
  2322960 words of memory out of 5000000
- 52666 multiletter control sequences out of 15000+600000
+ 52667 multiletter control sequences out of 15000+600000
  581158 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,21n,93p,3947b,1736s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -5677,10 +5687,10 @@ onts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt
 ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on TransformaticsInGENETICS---2025---JWL.pdf (178 pages, 1524798
-1 bytes).
+Output written on TransformaticsInGENETICS---2025---JWL.pdf (180 pages, 1525803
+9 bytes).
 PDF statistics:
- 3992 PDF objects out of 4296 (max. 8388607)
- 1142 named destinations out of 1200 (max. 500000)
+ 4009 PDF objects out of 4296 (max. 8388607)
+ 1149 named destinations out of 1200 (max. 500000)
  928 words of extra memory for PDF output out of 10000 (max. 10000000)
 
