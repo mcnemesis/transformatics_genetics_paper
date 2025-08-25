@@ -434,8 +434,11 @@ The \textbf{Universal Nucleic Acid Symbol Set}, $\psi_{na}$, is the set combinin
 \end{defn}
 
 
-We shall appreciate how relevant and important \textbf{\hyperref[DEFUNA]{Definition \ref{DEFUNA}}} is, by realizing that any nucleic acid sequence, $\Theta$, obeys the following law:
+We shall appreciate how relevant and important \textbf{\hyperref[DEFUNA]{Definition \ref{DEFUNA}}} is, by realizing that any nucleic acid sequence, $\Theta$, obeys the following law:\\
 
+
+\fbox{\begin{minipage}{0.9\textwidth}
+\large
 
 \begin{law}[1 Universal \textbf{Nucleic Acid Identifier Symbol Set}: $\psi_{na}$]
 \label{LAWNA}
@@ -444,6 +447,9 @@ We shall appreciate how relevant and important \textbf{\hyperref[DEFUNA]{Definit
 $\psi_{na} = \psi_{DNA} \cup \psi_{RNA} = \langle A, C, G, T, U \rangle \quad \land \quad \forall \omega \in \Theta, \omega \in \psi_{DNA} \lor \omega \in \psi_{RNA}$.
 \end{proof}
 \end{law}
+
+\end{minipage}}
+\\\\
 
 
 As with many kinds of sequences dealt with in transformatics, the possession of a particular symbol set, such as $\psi_{na}$, allows for the practical use of such a set to implement logic in systems that can operate on signal based on symbolic expressions of well ordered elements in sequences or sub-sequences. For this matter then, we shall likewise want to make formal, the concept of a \textbf{na-Sequence}:
@@ -522,7 +528,7 @@ $\qed$
 
 \begin{trans}
 \label{TRANSTOENASEQ}
-$\mathbb{G}_{p}  \quad \xrightarrow{O_{process}} \quad \text{Effect}_{i \in \mathbb{N}}  \quad \xrightarrow{O_{compose}}  \quad \text{Existence}$
+$\mathbb{G}_{p}  \quad \xrightarrow{O_{process}} \quad \prod \text{Effect}_{i \in \mathbb{N}}  \quad \xrightarrow{O_{compose}}  \quad \text{Existence}$
 \end{trans}
 
 }, etc.
@@ -542,12 +548,12 @@ If we wish to re-write the same sequence such that every $k$ terms are grouped i
 \Theta_2 = \Theta_2(n,k) = \langle a_{11}, a_{12}, a_{13}, a_{1k}, a_{21}, a_{22},...,a_{(i)(k)},...,a_{(\frac{n}{k})(k-1)},a_{(\frac{n}{k})(k)}\rangle
 \end{equation}\\
 
-Of course, in \textbf{\hyperref[EQSEQ2]{Equation \ref{EQSEQ2}}} we have somewhat wanted to extrapolate well and illustratively, what would happen in an informative case such as when $k = 4$ and $n$ is not only significantly larger than $k$, but is also its perfect multiple. Otherwise, we might more concisely write that same sequence as:\\
+Of course, in \textbf{\hyperref[EQSEQ2]{Equation \ref{EQSEQ2}}} we have somewhat wanted to extrapolate well and illustratively, what would happen in an informative case such as when $k = 4$ and $n$ is not only significantly larger than $k$, but is also its perfect multiple. Otherwise, we might more concisely write that same sequence generalization as:\\
 
 
 \begin{equation}
 \label{EQSEQ3}
-\Theta_2(n,k) = \langle \langle a_1, a_2, a_3, a_4 \rangle_1, \langle a_5, a_6,...,a_8 \rangle_2,... , \langle a_{(n-k)},...,a_{(n-k+k-1)},a_{(n-k+k)}\rangle_{\frac{n}{k}} \rangle
+\Theta(n,k) = \langle \langle a_1, a_2, a_3, a_4 \rangle_1, \langle a_5, a_6,...,a_8 \rangle_2,... , \langle a_{(n-k)},...,a_{(n-k+k-1)},a_{(n-k+k)}\rangle_{\frac{n}{k}} \rangle
 \end{equation}\\
 
 So, this expression in \textbf{\hyperref[EQSEQ3]{Equation \ref{EQSEQ3}}} is our first proper appreciation of what higher-order sequences might be like when they are an abstraction of normal flat-structure sequences. We see for example here, that the $k=4$ \textbf{bundling-parameter} means, we shall process the original flat sequence $k$ items at a time, and so, each subsequence in $\Theta_2(n,4)$ then contains exactly (or at most) 4 items --- we are assuming 4 is a factor of n to keep things simple. And so, we expect that, in total, we should have $\frac{n}{k}$ subsequences after applying the bundling transform:\\
@@ -585,13 +591,17 @@ Of course, though we might not delve into it here or at the moment, we know that
 \chapter{Sequence Analysis Using Symbol Sets}
 \label{SEC3}
 
-\hl{--- FINISHED PROOF-READING UP TO HERE}
 
-We now turn our attention to the matter of using ideas from transformatics to help analyze or understand genetic code sequences. For starters, we shall want to consider the matter of how to tell how far apart or dissimilar any two nucleic acid sequences might be. Of course, consequently, that would also translate into meaningful way to tell how far apart not just low-level genetic-creations such as tissue, cell-types, proteins, etc might be based on the genetic code that produces them, but also how different entire organisms (within the same species or not) might be.
+We now turn our attention to the matter of using ideas from transformatics to help analyze or understand genetic code sequences. For starters, we shall want to consider the matter of how to tell how far apart or dissimilar any two nucleic acid sequences might be. Of course, consequently, that would also translate into meaningful ways to tell how far apart not just low-level genetic-creations such as tissue, various cell-types, proteins, etc. might be based on the genetic code that specifies them, but also how different entire organisms --- made up of all these things, and within the same species or not, might be.
 
-Because we can learn much about an organism based on its characteristic genome, and since that can be mapped to a flat-structure sequence of symbols such as we have already encountered in earlier sections, it might start to make sense to leverage the similarity/distance measures we have already developed so as to apply them to quantifying the distance between say species. In an earlier paper\cite{adtpaper}, we have introduced and also demonstrated how a sequence-analysis measure called the \textbf{Anagram Distance Measure}, $\tilde{A}(\Theta,\Theta^*)$, might be used to quantify how far apart some two sequences $\Theta$ and $\Theta^*$, that for the simplest scenarios better be of the same length, can be compared based on their common membership and the relative lexical ordering of the members in either sequence.
+Because we can learn much about an organism based on its characteristic genome, and since that can be mapped to a flat-structure sequence of symbols such as we have already encountered in earlier sections, it might start to make sense to leverage the similarity/distance measures we have already developed so as to apply them to quantifying the \textit{formal distance} between say actually different species. 
 
-In the simple analysis we shall use to illustrate or develop our concepts, we shall deal with hypothetical nucleic acid sequences mostly --- especially DNA sequences, and their lengths shall be kept short to keep our analyzes simple, but also, their membership --- in terms of nucleotides, might have nothing to do with actual/natural sequences. The concepts and ideas we shall develop though, should be readily applicable to any or most nucleic acid sequences if not any sequences in general.
+In an earlier paper\cite{adtpaper}, we have introduced and also demonstrated how a sequence-analysis measure called the \textbf{Anagram Distance Measure}, $\tilde{A}(\Theta,\Theta^*)$, might be used to quantify how far apart some two sequences $\Theta$ and $\Theta^*$, that for the simplest scenarios better be of the same length, can be compared based on their common membership and the relative lexical ordering of the members in either sequence.
+
+In the basic analysis we shall use to illustrate or develop our analytic concepts, we shall deal with hypothetical nucleic acid sequences mostly --- especially DNA sequences, and their lengths shall be kept short to keep our analyses simple. Moreover, their membership and/or composition --- in terms of nucleotides, might have nothing to do with actual/natural na-Sequences out there in the wild. The concepts and ideas we shall develop though, despite how we are going to develop them, should still be readily applicable to any or most nucleic acid sequences if not any kind of sequences in general.
+
+
+\section{Testing Sequences for Membership in a Base}
 
 First, assume we have the following three sequences:
 
@@ -603,48 +613,48 @@ First, assume we have the following three sequences:
 
 We can start by attempting to answer the question: \textbf{Which of these sequences are DNA and which are RNA?}
 
-So, to answer that question, we can start by reducing each of those sequences to their respective [ordered] sequence symbol sets. In fact, if we first relax the assumption that they are either DNA or RNA sequences, and merely look at them as though they were any kind of sequence (for which we don't know the base or base-symbol set), then we can merely use the definition of an \textbf{Unspecific Symbol Set of $\Theta$ in Any Base} --- see \textbf{Definition 4} in \cite{ossipaper}. The algorithm for how to do that is simple and is well presented in that definition --- we basically create another sequence, in which we insert each distinct symbol from $\Theta$ that we encounter while processing the sequence from Left-to-Right\footnote{Such that the leftmost term is the first to be processed.}. Thus, we might construct the relevant transformer for this as such:
+So, to answer that question properly --- \textit{provably} so, we can start by reducing each of those sequences to their respective [ordered] sequence symbol sets. In fact, if we first relax the assumption that they are either DNA or RNA sequences, and merely look at them as though they were any kind of sequence (for which we don't know the base or base-symbol set yet), then we can merely use the definition of an \textbf{Unspecific Symbol Set of $\Theta$ in Any Base} --- see \textbf{Definition 4} in \cite{ossipaper}. The algorithm for how to do that is simple and is well presented in that definition --- we basically create another sequence, in which we insert each distinct symbol from $\Theta$ that we encounter while processing the sequence from Left-to-Right\footnote{Such that the leftmost term is the first to be processed.}. Thus, we might construct the relevant transformer for this as such:\\
 
 \begin{transf}[\textbf{Sequence Unspecified Symbol Set Generator}]
 \label{TRANSSSGEN}$ $\\
-$\Theta \xrightarrow{O_{suss-gen}(\cdot)} \Theta^* \quad;\quad \invpi(\Theta^*) \leq \invpi(\Theta) \quad \land \quad \Theta^* = \hat{\psi}(\Theta)$
+$\Theta \xrightarrow{O_{suss-gen}(\cdot)} \Theta^* \quad;\quad \invpi(\Theta^*) \leq \invpi(\Theta) \quad \land \quad \Theta^* = \hat{\psi}(\Theta)$\\
 \end{transf}
 
-And thus, applying that transformer to the three sequences we have, we shall obtain the following results:
+And thus, applying that transformer\footnote{Please, be careful with \textbf{\hyperref[TRANSSSGEN]{Transformer \ref{TRANSSSGEN}}} --- in particular, note that the special notation employed for the unspecific symbol set, $\hat{\psi}(\Theta)$, shouldn't be confused with that of the somewhat related, though entirely different notation and notion of an unspecific symbol-set's modal sequence, $\overset{>}{\hat{\psi}(\Theta)}$ or the modal sequence statistic of a sequence's symbol set,  $\overset{>}{\psi(\Theta)}$.} to the three sequences we have, we shall obtain the following results:\\
 
 \begin{trans}
-$\Theta_1 \xrightarrow{O_{suss-gen}(\cdot)} \langle C, A, T, G \rangle$
+$\Theta_1 \xrightarrow{O_{suss-gen}(\cdot)} \langle C, A, T, G \rangle = \hat{\psi}(\Theta_1)$
 \end{trans}
 
 \begin{trans}
-$\Theta_2 \xrightarrow{O_{suss-gen}(\cdot)} \langle A, T, G, C \rangle$
+$\Theta_2 \xrightarrow{O_{suss-gen}(\cdot)} \langle A, T, G, C \rangle = \hat{\psi}(\Theta_2)$
 \end{trans}
 
 \begin{trans}
-$\Theta_3 \xrightarrow{O_{suss-gen}(\cdot)} \langle A, U, G, C \rangle$
+$\Theta_3 \xrightarrow{O_{suss-gen}(\cdot)} \langle A, U, G, C \rangle = \hat{\psi}(\Theta_3)$\\
 \end{trans}
 
-At this juncture, we can then closely inspect the resultant sequences --- each of them a kind of symbol set, and then judge which of $\psi_{DNA}$ or $\psi_{RNA}$ they are associated with. To proceed in a rigorous manner, we might also want to compute the \textbf{Natural Symbol Set of $\Theta$ in some Base-$\beta$} --- see \textbf{Definition 5} in \cite{ossipaper}. A suitable transformer to compute such a symbol-set (for which, unlike the unspecific symbol set, orders the terms in the resultant sequence by their natural order of occurrence in the base's ordered symbol set) would as as such:\\
+At this juncture, we then can more closely inspect the original/source sequences via these special resultant sequences --- each of them a kind of symbol set, and then judge which of $\psi_{DNA}$ or $\psi_{RNA}$ they are best associated with. To proceed in a rigorous manner, we might also want to compute the \textbf{Natural Symbol Set of $\Theta$ in some Base-$\beta$} --- see \textbf{Definition 5} in \cite{ossipaper}. A suitable transformer to compute such a symbol-set (for which, unlike the unspecific symbol set, orders the terms in the resultant sequence by their natural order of occurrence in the base's ordered symbol set) would be as such:\\
 
 
 \begin{transf}[\textbf{Sequence $\beta$-Natural Symbol Set Generator}]
 \label{TRANSNSGEN}$ $\\
-$\Theta \xrightarrow{O_{snss-gen-\beta}(\cdot)} \Theta^* \quad;\quad \invpi(\Theta^*) \leq \invpi(\Theta) \quad \land \quad \Theta^* = \psi_\beta(\Theta)$
+$\Theta \xrightarrow{O_{snss-gen-\beta}(\cdot)} \Theta^* \quad;\quad \invpi(\Theta^*) \leq \invpi(\Theta) \quad \land \quad \Theta^* = \psi_\beta(\Theta)$\\
 \end{transf}
 
 And, since we already have an idea what the symbol sets for each of the three sequences are --- from which we can guess and/or disqualify some candidate bases --- e.g, since $\hat{\psi}(\Theta_3) \setminus \psi_{DNA} = \{U\}$, then $\Theta_3$ can't be a DNA sequence. However, to complete our analysis, note that:
 
 
 \begin{trans}
-$\Theta_1 \xrightarrow{O_{snss-gen-DNA}(\cdot)} \langle A, C, G, T \rangle$
+$\Theta_1 \xrightarrow{O_{snss-gen-DNA}(\cdot)} \langle A, C, G, T \rangle = \psi_{DNA}(\Theta_1)$
 \end{trans}
 
 \begin{trans}
-$\Theta_2 \xrightarrow{O_{suss-gen}(\cdot)} \langle A, C, G, T \rangle$
+$\Theta_2 \xrightarrow{O_{snss-gen-DNA}(\cdot)} \langle A, C, G, T \rangle = \psi_{DNA}(\Theta_2)$
 \end{trans}
 
 \begin{trans}
-$\Theta_3 \xrightarrow{O_{suss-gen}(\cdot)} \langle A, C, G, U \rangle$
+$\Theta_3 \xrightarrow{O_{snss-gen-RNA}(\cdot)} \langle A, C, G, U \rangle = \psi_{RNA}(\Theta_3)$\\
 \end{trans}
 
 So, we can safely conclude that:
@@ -674,7 +684,16 @@ But also that:
 $\Theta_4 \xrightarrow{O_{snss-gen-RNA}(\cdot)} \langle A, C, G \rangle \subset \psi_{RNA}$
 \end{trans}
 
-And thus, we have the peculiar case in which a nucleic acid sequence can both be a legitimate DNA or RNA sequence! However, such a truly peculiar sequence it is! Because, given the START-codon symbol set, $\psi_{na-START}$, a sequence of all the ``start" kind codons whether of DNA or RNA type, is defined as such from all we currently know:
+And thus, we have the peculiar case in which a nucleic acid sequence can both be a legitimate DNA or RNA sequence! 
+
+
+\section{Symbol Sets of n-GRAMS and Testing Sequences for n-GRAM-based Properties}
+
+
+Next, we are going to consider the matter of whether some sequence conforms to some desired sequence characteristic or not based on some aspect of either its symbol set or its composition despite the symbol set. In particular, we shall consider the matter of processing na-Sequences at 3-gram level as codons, and consider the special matter of START and STOP codons in relation to protein synthesis gene programs\footnote{Note that \textbf{gene programs} were formally introduced in \textbf{\hyperref[DEFGENPROG]{Definition \ref{DEFGENPROG}}}.} for example.
+
+
+First, given the START-codon symbol set, $\psi_{na-START}$, a sequence of all the ``start" kind codons whether of DNA or RNA type, is defined as such from all we currently know:
 
 \begin{defn}[The \textbf{Nucleic Acid START-codons}]
 \label{DEFSTARTCOD}
@@ -685,24 +704,32 @@ For any known organism, prokaryote or eukaryote, the only legitimate and known c
 \psi_{na-START} = \{ATG,AUG,GTG,GUG,TTG,UUG\}
 \end{equation}\\
 
-So, that, if say a nucleic acid program for producing some protein via some gene program $\Theta_{na}$ were to be processed by an ideal ribosome (see \textbf{Definition \ref{DEFRIBOSOME}}), the ribosome would never produce anything --- or, equivalently, there is no guarantee that any protein would be produced no matter what or any instructions the gene program contains, as long as it doesn't contain any one of the members of $\psi_{na-START}$.
+So that, if say a nucleic acid program for producing some protein via some gene program $\Theta_{na}$ were to be processed by an ideal ribosome (see \textbf{Definition \ref{DEFRIBOSOME}}), the ribosome would never produce anything --- or, equivalently, there is no guarantee that any protein would be produced no matter what or any instructions the gene program contains, as long as it doesn't contain any one of the members of $\psi_{na-START}$.
 \end{defn} 
 
-One interesting consequence of that definition is the following law:
+One interesting consequence of that definition is the following law:\\
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\large
 
 \begin{law}[\textbf{Non-Coding Gene Programs\footnote{Also known as \textbf{Introns} in some contexts.}}]
 \label{LAW2}
 If any gene-program $\Theta_{na}$ is processed by a ribosome, and yet it has the property:\\
 
- $\psi_{DNA}(\Theta_na) \cap \psi_{na-START} = \emptyset \quad \lor \quad \psi_{RNA}(\Theta_na) \cap \psi_{na-START} = \emptyset$\\
+ $\psi_{DNA}(\Theta_{na}) \cap \psi_{na-START} = \emptyset \quad \lor \quad \psi_{RNA}(\Theta_{na}) \cap \psi_{na-START} = \emptyset$\\
  
-It implies that $\Theta_{na}$ shall never be transcribed by the ribosome, and neither shall it ever result in any new protein or new amino-acid product within the containing cell system\footnote{Refer to ribosome definition for details: \textbf{Definition \ref{DEFRIBOSOME}}}.
+It implies that $\Theta_{na}$ shall never be transcribed by the ribosome, and neither shall it ever result in any new protein or new amino-acid product within the containing cell system\footnote{Refer to ribosome definition for details: \textbf{\hyperref[DEFRIBOSOME]{Definition \ref{DEFRIBOSOME}}}.}.
 \end{law}
 
+\end{minipage}}
+\\
+\end{center}
 
-So, that, if say a nucleic acid program for producing some protein via some gene program $\Theta_{na}$ were to be processed by an ideal ribosome processor (see \textbf{Definition \ref{DEFRIBOSOME}}), the ribosome would never return --- or, equivalently, there is no guarantee that any products --- neither amino-acid, nor completed/new protein, shall be synthesized by the ribosome.
 
-Of course, it's very likely that such gene sequences exist, and there might be nothing wrong with them being natural too. However, we shall want to learn more about this from the domain experts in the future.
+So, that, if say a [potentially infinitely long] nucleic acid program for producing some protein via some gene program $\Theta_{na}$ were to be processed by an ideal ribosome processor (see \textbf{\hyperref[DEFRIBOSOME]{Definition \ref{DEFRIBOSOME}}}), the ribosome would \textbf{never start production} --- or, equivalently, there is no guarantee that any products --- neither amino-acid, nor completed/new protein, shall be synthesized by the ribosome if the gene program it processed didn't contain the necessary START-codon anywhere within it.
+
+Of course, though it might not be entirely unlikely that such \textit{weird} non-coding gene program sequences exist --- and there might be nothing wrong with them being natural too, however, we shall want to learn more about this from the domain experts in the future\footnote{\textbf{FUTURE WORK:} We for example might wish to know: do such malicious (because they might merely waste the body's processing resources or even space) gene programs naturally exist? Are they the result of some disease/genetic anomaly or are they merely accidents when they occur? Could they have some useful properties or consequences too? Etc.}.
 
 That said, another, closely related case is that of the consequences of the STOP-codons or rather, the STOP-codon symbol set, $\psi_{na-STOP}$ defined as such:
 
@@ -717,14 +744,22 @@ For any known organism, prokaryote or eukaryote, the only legitimate and known c
 \end{equation}\\
 \end{defn} 
 
-Among important consequences of \textbf{Definition \ref{DEFSTOPCOD}}, is that, if say a nucleic acid program for producing some protein via some gene program $\Theta_{na}$ were to ever be processed by an ideal ribosome (see \textbf{Definition \ref{DEFRIBOSOME}}), the ribosome might produce something --- some amino-acids for example, but would never return --- equivalently, there is no guarantee that any protein would be released by the protein manufacturing process/ribosome, no matter what or how many any amino-acid productions and translate instructions the gene program contains and which have been executed by the ribosome. As long as the gene-program doesn't contain any one of the members of $\psi_{na-STOP}$ that is.
+Among important consequences of \textbf{\hyperref[DEFSTOPCOD]{Definition \ref{DEFSTOPCOD}}}, is that, if say a \textit{non-STOPPING} nucleic acid program for producing some protein via some gene program $\Theta_{na}$ were to ever be processed by an ideal ribosome (see \textbf{\hyperref[DEFRIBOSOME]{Definition \ref{DEFRIBOSOME}}}), the ribosome might [start to] produce something --- some amino-acids for example, but \textbf{would never return} --- equivalently, there is no guarantee that any protein would be released by the protein manufacturing process/ribosome, no matter what or how many amino-acid productions and translate instructions the gene program contains and which have been executed by the ribosome. As long as the gene-program doesn't contain any one of the members of $\psi_{na-STOP}$ that is.
 
-It is not immediately clear what the plausibility of such an \textit{evil gene-program} existing out there in nature might be, but given normal genes sometimes mutate\cite{gregory1987oxford}, it can't be ruled out that such awkward programs might exist. Though we won't dive into that here, who knows... from a computer security perspective, such a program might cause system errors or faults such as a System-Out-Of-Resources problem given the ribosome might attempt to produce an infinite length amino-acid, or perhaps that the cell's protein manufacturing closure might run out of space, or that the processor might end up hanging since the factory never is able to reach any of WAIT, DETACH or RESET states --- see \textbf{The Ribosome State Machine} in \textbf{Figure \ref{FIG4}} but also refer to the Protein Synthesis Process in \textbf{Figure \ref{FIG3}} to clearly, logically appreciate these kinds of problems and/or corner-case scenarios. 
+It is not immediately clear what the plausibility of such an \textit{evil gene-program} existing out there in nature might be, but given normal genes sometimes mutate\cite{gregory1987oxford}, it can't be ruled out that such awkward gene programs might exist. Though we won't dive into that here, who knows... from a computer security perspective, such a program might cause system errors or faults such as a System-Out-Of-Resources problem given the ribosome might attempt to produce an infinite length amino-acid chain\footnote{\textbf{FUTURE WORK:} It might be worth exploring if in fact nature or for particular natural, biological systems, there is some hard limit that would rule-out the possibility of a ribosome attempting to manufacture an infinite-length amino-acid chain for example. Or are such pathologies [im-]possible? What are they, and are they the result of such gene-program anomalies as we talk of here or not?}, or perhaps that the cell's protein manufacturing closure might run out of space, or that the processor might end up hanging since the factory never is able to reach any of WAIT, DETACH or RESET states --- see \textbf{The Ribosome State Machine} in \textbf{\hyperref[FIG4]{Figure \ref{FIG4}}} but also refer to the Protein Synthesis Process in \textbf{\hyperref[FIG3]{Figure \ref{FIG3}}} to clearly, logically appreciate these kinds of problems and/or corner-case scenarios. 
 
-That said, in case a normally correct gene-program such as what we saw in $\psi_{insulin}$ (see \textbf{Equation \ref{EQINSULIN}}) is altered with --- perhaps by a natural mutation, or perhaps a virus, or even in a totally malicious feat of gene-manipulation medicine, and such a transformation results in a nucleic-acid sequence satisfying any of the above queer cases, who knows, but it might as well be the root case of some difficult flaw in the organism --- an incurable and fatal disease (if the faulty gene-program is crucial for normal life support and that it has no alternatives or simple way to be solved), and these might the kinds of hard problems that might require not just medical doctors, biologists or perhaps genetists to tackle, but also people like computer hackers, information-security experts and software debuggers\footnote{It shouldn't come as a surprise, that with a stronger marriage of computing theory and biology, or medicine, that certain problems in nature --- not just with humans or animals, but also with plants for example, and especially if they are either inheritable --- meaning genetic, or if they might somehow be remedied via clever hacking or debugging and modifying of the organism via gene programs, might call for the skills of and expertise of software engineers and program debuggers from hardcore computer science and not just the medical or biological sciences! A great background work on this subject by the author might come in handy --- refer to \cite{Lutalo2025debug}}!
+\section{Concerning Genetic Pathologies based on Faulty Gene-Programs}
+
+With the two major problematic gene-program scenarios we have explored in the preceding section, note that, in case a normally correct gene-program such as what we saw in $\psi_{insulin}$ (see \textbf{\hyperref[EQINSULIN]{Equation \ref{EQINSULIN}}}) is altered --- perhaps by a natural mutation, or perhaps by a virus, or even in a totally malicious feat of gene-manipulation medicine or bio-engineering/bio-hacking, and such that a genetic code transformation occurs within the body's system that results in a nucleic-acid sequence satisfying any of the above queer cases, who knows, but it might as well be the root case of some difficult flaw in the organism --- could be an incurable and fatal [albeit hereditary] disease (especially if the faulty gene-program is inculcated into the basic genetic code at storage or during reproduction). Such might also be fatal, even when nonhereditary, in case it impacts some crucial or normal life support systems, and that the problem thus manifested has no workarounds nor simple way to be remedied, and that such might be the kinds of \textbf{hard problems for geneticists}, that might require not just medical doctors, biologists or perhaps pure-genetists to tackle, but also people like computer hackers, information-security experts and software debuggers\footnote{It shouldn't come as a surprise, that with a stronger marriage of computing theory and biology --- or rather medicine in this case, that certain problems in nature --- not just with humans or animals, but also with plants for example, and especially if they are either inheritable --- meaning genetic, or if they might somehow be remedied via clever hacking or debugging and modifying of the organism via \textit{special} [perhaps, \textit{artificially introduced}] gene programs, might call for the skills of and expertise of software engineers and program debuggers from hardcore computer science and not just the medical or biological sciences! A great background work on this subject by the author might come in handy --- refer to \cite{Lutalo2025debug}} to tackle and resolve them well!
+
+
 
 \chapter{Sequence Analysis Using Complement Sets}
 \label{SEC3A}
+
+
+\hl{--- FINISHED PROOF-READING UP TO HERE}
+
 
 The idea of complements when applied to na-Sequences has already been introduced in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}, and we get to see it depicted in an exemplary typical diagrammatic depiction of the DNA structure in \textbf{Figure \ref{FIG1}}. However, apart from having talked about the fact that nucleic acids typically or naturally occur together in base-pairs depicting pairwise complements, we might want to leverage transformatics to study this idea at a more general level --- say, to explore the matter of \textbf{na-Sequence} (as well as \textit{any sequence}) complements, and thus this section.
 
