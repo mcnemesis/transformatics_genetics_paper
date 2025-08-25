@@ -333,7 +333,6 @@ And then shall wrap up our core explorations in \textbf{\hyperref[SEC4]{Chapter 
 \chapter{Sequence Symbol Sets and Sequence Transforms Applied to Genetic Code}
 \label{SEC2}
 
-\hl{--- FINISHED PROOF-READING UP TO HERE}
 
 \begin{center}
 \fbox{\begin{minipage}{0.9\textwidth}
@@ -358,7 +357,7 @@ In the introduction (see \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}), I have a
 \begin{defn}[The \textbf{DNA Symbol Set}, $\psi_{DNA}$]
 \label{DEFDNASS}
 
-For any possible sequence of standard \textit{deoxyribonucleic acid} (\textbf{DNA}) for any possible living organism, the distinct nucleic acid base units are known as nucleotides\cite{wikipedia_nucleic_acid}, and these are essentially and exactly only four\footnote{Actually, or rather, in general, for nucleic acid sequences, the bases are four for either DNA or RNA, but, there are also conventions that extend this set to 17 or more to cater for cases like where there might be ambiguity about what the exact nucleotide in a particular position might be\cite{wikipedia_nucleic_acid}.};
+For any possible sequence of standard \textit{deoxyribonucleic acid} (\textbf{DNA}) for any possible living organism, the distinct nucleic acid base units are known as nucleotides\cite{wikipedia_nucleic_acid}, and these are essentially and exactly only four\footnote{Actually, or rather, in general, for nucleic acid sequences, the bases are four for either DNA or RNA, but, there are also conventions that extend this set to 17 or more to cater for cases like where there might be ambiguity about what the exact nucleotide in a particular position might be\cite{wikipedia_nucleic_acid} --- possibly during automated inference or sequencing of DNA sequences.};
 \begin{itemize}
 \item Adenine(A)
 \item Cytosine(C)
@@ -372,16 +371,53 @@ And these are mapped to their representative, distinct single-letter symbols as 
 \psi(DNA) = \{A, T, C, G\}
 \end{equation}
 
-\textbf{Equation \ref{EQSSDNA}} helps to appreciate the extra non-intuitive fact that the special ordering of DNA base symbols in the order A-T-C-G is what is conventionally accepted\cite{nature_atcg}\cite{wikipedia_nucleic_acid} or commonly found in most genetics literature\footnote{It shall be important to bring it out at this point, that, especially for non-domain experts --- people not trained in or normally practicing in genetics or related fields, that the common ordering of the nucleotides in the A-T-C-G ordering might seem unconventional or peculiar! For example, one might wonder, why are they not listed in their alphabetical order? So, for purposes of settings things clear for everyone, the author consulted a reliable research assistant on this matter\cite{copilot_dna_assistant}, and it was made clear that: ``The order **A, T, C, G** isn't alphabetical, and yet it's the most commonly used sequence when referring to DNA bases." We further learn that, the order A-T-G-C reflects a mix of historical usage and bio-chemical structure; \textbf{base-pairing logic}: that the DNA's double-helix is stabilized by ``complementary base pairing" in which A pairs with T (via 2 hydrogen bonds), and C pairs with G (via 3 hydrogen bonds), so that listing A with its partner T and then C with G emphasizes this pairing symmetry\cite{copilot_dna_assistant}. Further, we learn that early molecular biology texts and sequencing protocols (especially post-Watson \& Crick, 1953) adopted this order to reflect the ``functional relationships" between bases. It became entrenched in educational materials, sequencing software, and databases. And lastly, that in visual and structural conventions --- such as in diagrams (see \textbf{Figure \ref{FIG1}}) and models, A–T and C–G are often shown side-by-side. Listing them in this order reinforces the \textbf{duality} of the DNA ladder's rungs\cite{copilot_dna_assistant}. Lastly, that though there is no single documented moment when this convention begun, that the A-T-C-G order likely solidified in the \textbf{1970s - 1980s} during the rise of \textbf{Sanger sequencing} (developed in the 1970s), GenBank and EMBL databases, and overall in textbooks and molecular biology curricula.}.
+\textbf{Equation \ref{EQSSDNA}} helps to appreciate the extra non-intuitive fact that the special ordering of DNA base symbols in the order A-T-C-G is what is conventionally accepted\cite{nature_atcg}\cite{wikipedia_nucleic_acid} or commonly found in most genetics literature\footnote{It shall be important to bring it out at this point, that, especially for non-domain experts --- people not trained in or normally practicing in genetics or related fields, that the common ordering of the nucleotides in the A-T-C-G ordering might seem unconventional or peculiar! For example, one might wonder, why are they not listed in their alphabetical order? So, for purposes of settings things clear for everyone, the author established\cite{copilot_dna_assistant}, concerning this matter, that: ``The order A, T, C, G isn't alphabetical, and yet it's the most commonly used sequence when referring to DNA bases." We further learn that, the order A-T-G-C reflects a mix of historical usage and bio-chemical structure; \textbf{base-pairing logic}: that the DNA's double-helix is stabilized by ``complementary base pairing" in which A pairs with T (via 2 hydrogen bonds), and C pairs with G (via 3 hydrogen bonds), so that listing A with its partner T and then C with G emphasizes this pairing symmetry\cite{copilot_dna_assistant}. Further, we learn that early molecular biology texts and sequencing protocols (especially post-Watson \& Crick, 1953) adopted this order to reflect the ``functional relationships" between bases. It became entrenched in educational materials, sequencing software, and databases. And lastly, that in visual and structural conventions --- such as in diagrams (see \textbf{Figure \ref{FIG1}}) and models, A–T and C–G are often shown side-by-side. Listing them in this order reinforces the \textbf{duality} of the DNA ladder's rungs\cite{copilot_dna_assistant}. Lastly, that though there is no single documented moment when this convention begun, that the A-T-C-G order likely solidified in the \textbf{1970s - 1980s} during the rise of \textbf{Sanger sequencing} (developed in the 1970s), GenBank and EMBL databases, and overall in textbooks and molecular biology curricula.}.
 
 However, and especially because, for transformatics, we wish to work with an \textbf{ordered symbol set}\cite{ossipaper} and not just \textit{any possible symbol set} so that we can apply mathematical logic that respects the ordering of terms in any ordered sequence\cite{transformatics}, we shall then assume a convention similar to how we might derive an ordered symbol set for a sequence of numbers in some base (the concept $\psi_\beta(\Theta)$ --- see \textbf{Definition 5} in \cite{ossipaper}), and given we are using Latin-Alphabet symbols (from $\psi_{az}$\cite{transformatics}) for $\psi_{DNA}$, we might as well better define the \textbf{Lexically Ordered DNA Symbol Set}, $\psi_{DNA}$ as such:
 
 \begin{equation}
 \label{EQDNASS}
-\psi_{DNA} = \psi_{az}(DNA) = \langle A, C, G, T\rangle
+\psi_{DNA} = \psi_{az}(\psi(DNA)) = \langle A, C, G, T\rangle
 \end{equation}
 
-For all practical purposes unless where we merely wish to emphasize adherence to the tradition of ordering the nucleotides by their pairing order, we shall essentially imply $\psi_{az}(DNA)$ or rather $\psi_{DNA}$ when we talk of the \textbf{DNA Symbol Set}.
+For all practical purposes unless where we merely wish to emphasize adherence to the tradition of ordering the nucleotides by their pairing order, we shall essentially imply $\psi_{az}(\psi(DNA))$ or rather $\psi_{DNA}$ when we talk of the \textbf{DNA Symbol Set}.
+
+\end{defn}
+
+\end{minipage}}
+\\
+
+
+
+\fbox{\begin{minipage}{0.9\textwidth}
+\large
+
+\begin{defn}[The \textbf{RNA Symbol Set}, $\psi_{RNA}$]
+\label{DEFRNASS}
+
+For any possible sequence of standard \textit{ribonucleic acid} (\textbf{RNA}) for any possible living organism, the distinct nucleic acid base units are known as nucleotides, and these are essentially and exactly only four;
+\begin{itemize}
+\item Adenine(A)
+\item Cytosine(C)
+\item Guanine(G)
+\item Uracil(U)
+\end{itemize}
+And these are mapped to their representative, distinct single-letter symbols as shown. Thus, any possible RNA sequence must always consist of only one or more of those elements and nothing else. Thus, we might sum this up, using the symbol set concept as applied to sequences as such:
+
+\begin{equation}
+\label{EQSSRNA}
+\psi(RNA) = \{A, U, C, G\}
+\end{equation}
+
+\textbf{Equation \ref{EQSSRNA}} helps to appreciate the traditional ordering of RNA base symbols in the order A-U-C-G reminiscent of the natural base-pairing order of DNA after it is translated into RNA (U merely replacing T)\cite{thoughtco_geneticcode}. And as with DNA, we shall want to have a proper, meaningful 
+\textbf{ordered symbol set} for the RNA base symbols that we can later use in mathematical logic. Thus we shall equivalently define one for any standard RNA sequences as: 
+
+\begin{equation}
+\label{EQRNASS}
+\psi_{RNA} = \psi_{az}(\psi(RNA)) = \langle A, C, G, U\rangle
+\end{equation}
+
+And for all practical purposes in this work as well as after, we shall essentially imply $\psi_{az}(\psi(RNA))$ or rather $\psi_{RNA}$ when we talk of the \textbf{RNA Symbol Set} or the \textbf{Lexically Ordered RNA Symbol Set}.
 
 \end{defn}
 
@@ -394,24 +430,28 @@ Now that we have $\psi_{DNA}$ and $\psi_{RNA}$ well defined, we might immediatel
 
 \begin{defn}[The \textit{\textbf{Universal Nucleic Acid Symbol Set}}, $\psi_{na}$]
 \label{DEFUNA}
-Any nucleic acid sequence, $\Theta$, obeys the following law:
-
-\begin{law}[\textbf{Nucleic Acid Identifier Symbol Set}: $\psi_{na}$]
-\label{LAWNA}
- The universal symbol set $\psi_{na}$ spans any natural nucleic acid sequence $\Theta$.
-\begin{proof}
-$\psi_{na} = \psi_{DNA} \cup \psi_{RNA} = \langle A, C, G, T, U \rangle$
-\end{proof}
-\end{law}
+The \textbf{Universal Nucleic Acid Symbol Set}, $\psi_{na}$, is the set combining the ordered symbol sets for DNA and RNA sequences, and thus is comprised of the symbolic elements $\{A, C, G, T, U \}$.
 \end{defn}
 
 
-As with many kinds of sequences dealt with in transformatics, the possession of a particular symbol set, such as $\psi_{na}$, allows for the practical use of those sets to implement logic systems that can operate on signal based on symbolic expressions of well ordered elements in sequences or sub-sequences. For this matter then, we shall likewise want to make formal, the concept of a \textbf{na-Sequence}:
+We shall appreciate how relevant and important \textbf{\hyperref[DEFUNA]{Definition \ref{DEFUNA}}} is, by realizing that any nucleic acid sequence, $\Theta$, obeys the following law:
+
+
+\begin{law}[1 Universal \textbf{Nucleic Acid Identifier Symbol Set}: $\psi_{na}$]
+\label{LAWNA}
+ The \textit{universal} symbol set $\psi_{na}$ is spanned by any natural nucleic acid sequence $\Theta$.
+\begin{proof}
+$\psi_{na} = \psi_{DNA} \cup \psi_{RNA} = \langle A, C, G, T, U \rangle \quad \land \quad \forall \omega \in \Theta, \omega \in \psi_{DNA} \lor \omega \in \psi_{RNA}$.
+\end{proof}
+\end{law}
+
+
+As with many kinds of sequences dealt with in transformatics, the possession of a particular symbol set, such as $\psi_{na}$, allows for the practical use of such a set to implement logic in systems that can operate on signal based on symbolic expressions of well ordered elements in sequences or sub-sequences. For this matter then, we shall likewise want to make formal, the concept of a \textbf{na-Sequence}:
 
 \begin{defn}[The \textbf{$na-$Sequences} --- (D/R)-NA Sequences: $\Theta_{na}:\mathbb{N} \times \psi_{na}$]
 \label{DEFNASEQ}
 
-Any sequence of DNA or RNA nucleotides --- basically a sequence of nucleic acids, expressible as some sequence of symbols from $\psi_{na}$ is a \textbf{na-Sequence} and its symbol set is a superset of both $\psi_{DNA}$ and $\psi_{RNA}$. Equivalently:
+Any sequence of either DNA or RNA nucleotides, or both --- basically a sequence of nucleic acids, expressible as some sequence of symbols from $\psi_{na}$ is a \textbf{na-Sequence} and its symbol set is potentially a superset of both $\psi_{DNA}$ and $\psi_{RNA}$. Equivalently:
 
 \begin{equation}
 \forall \Theta_{na} = \langle a_i, \rangle, \quad a_i \in \psi_{na} \implies a_i \in \psi_{DNA} \lor a_i \in \psi_{RNA}
@@ -420,44 +460,7 @@ Any sequence of DNA or RNA nucleotides --- basically a sequence of nucleic acids
 \end{defn}
 
 
-If it is not immediately clear what the significance of \textbf{Defition \ref{DEFDNASS}} is or why it's important to unambiguously define $\psi_{DNA}$, then perhaps the mathematical discussions in later sections like \textbf{\hyperref[SEC3]{Chapter \ref{SEC3}}} and \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}} might this more obvious. That said, since we know that nucleic acid sequences come in two flavors\cite{wikipedia_nucleic_acid}, and since we have covered the essential ground for DNA symbol sets, we need now also consider the ordered RNA symbol set.\\
-
-
-\fbox{\begin{minipage}{0.9\textwidth}
-\large
-
-\begin{defn}[The \textbf{RNA Symbol Set}, $\psi_{RNA}$]
-\label{DEFRNASS}
-
-For any possible sequence of standard \textit{ribonucleic acid} (\textbf{RNA}) for any possible living organism, the distinct nucleic acid base units are known as nucleotides\cite{wikipedia_nucleic_acid}, and these are essentially and exactly only four;
-\begin{itemize}
-\item Adenine(A)
-\item Cytosine(C)
-\item Guanine(G)
-\item Uracil(U)
-\end{itemize}
-And these are mapped to their representative, distinct single-letter symbols as shown. Thus, any possible RNA sequence must always consist of only one or more of those elements and nothing else. Thus, we might sum this up, using the symbol set concept\cite{Lutalo2024gtnc} as applied to sequences\cite{transformatics} as such:
-
-\begin{equation}
-\label{EQSSRNA}
-\psi(RNA) = \{A, U, C, G\}
-\end{equation}
-
-\textbf{Equation \ref{EQSSRNA}} helps to appreciate the traditional ordering of RNA base symbols in the order A-U-C-G reminiscent of the natural base-pairing order of DNA after it is translated into RNA (U merely replacing T)\cite{thoughtco_geneticcode}. And as with DNA, we shall want to have a proper, meaningful 
-\textbf{ordered symbol set}\cite{ossipaper} for the RNA base symbols that we can later use in mathematical logic. Thus we shall equivalently define one for any standard RNA sequences as: 
-
-\begin{equation}
-\label{EQRNASS}
-\psi_{RNA} = \psi_{az}(RNA) = \langle A, C, G, U\rangle
-\end{equation}
-
-And for all practical purposes in this work as well as after, we shall essentially imply $\psi_{az}(RNA)$ or rather $\psi_{RNA}$ when we talk of the \textbf{RNA Symbol Set} or the \textbf{Lexically Ordered RNA Symbol Set}.
-
-\end{defn}
-
-\end{minipage}}
-\\
-
+If it is not immediately clear what the significance of \textbf{Defition \ref{DEFDNASS}} is or why it's important to unambiguously define $\psi_{DNA}$ as well as the other basic formal symbol sets we have just formalized, then perhaps the mathematical discussions in later sections like \textbf{\hyperref[SEC3]{Chapter \ref{SEC3}}} and \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}} might help make this more obvious.
 
 So, with those very essential definitions out of the way, we can begin to think of how we might appreciate and apply concepts from transformatics in genetics, in a clearer, straight forward manner.
 
@@ -465,7 +468,7 @@ For starters, we can certainly say that irrespective of how long or from where a
 
 \begin{theo}[$\psi_{DNA}$ is the alphabet of any DNA sequence]
 \label{THEODNA}
-For any sequence of DNA, $\Theta_{DNA}$, produced from some or any other source $\Theta$, irrespective of whether that source is itself a DNA sequence or not, we know that such an encoding or mapping, if it results in a valid DNA sequence $\Theta_{DNA}$, obeys the following general transformation:\\
+For any sequence of DNA, $\Theta_{DNA}$, produced from some source sequence $\Theta$, irrespective of whether that source is itself a DNA sequence or not, we know that such an encoding or mapping, if it results in a valid DNA sequence $\Theta_{DNA}$, obeys the following general transformation:\\
 
 \begin{trans}
 \label{TRANSmDNA}
@@ -474,7 +477,7 @@ $\forall a_{i \in [1,\invpi(\Theta_{DNA})]} \in \Theta_{DNA} \quad \exists \rho 
 \end{trans}
 
 \begin{proof}
-Assume $\Theta_{DNA}$ contains some symbol $\alpha$ such that $\alpha \not\in \psi_{DNA}$, it would contradict \textbf{Definition \ref{DEFDNASS}} which clearly states the legitimate membership of any DNA sequence.
+Assume $\Theta_{DNA}$ contains some symbol $\alpha$ such that $\alpha \not\in \psi_{DNA}$, it would contradict \textbf{Definition \ref{DEFDNASS}} which clearly dictates the legitimate membership of any DNA sequence.
 \end{proof}
 
 \end{theo}
@@ -500,14 +503,29 @@ And definitely, the equivalent truth for RNA sequences would likewise follow fro
 \end{minipage}}
 \\
 
-And which sequence\footnote{$\Theta_{insulin}$ is the short coding DNA sequence (CDS) for the human \textbf{INS} gene --- the part that gets transcribed into mRNA and translated by ribosomes into the insulin protein\cite{copilot_dna_assistant}}, despite having been obtained from an authority --- the \textbf{Leiden Open Variation Database (LOVD)}, which is based on NCBI's RefSeq data\cite{RefSeq}, might need to be verified by hand or with a critical eye, and that's where a law such as \textbf{Theorem \ref{THEODNA}} would come in handy. Also, note that, unlike common sequence notations we might see in this work or that we have encountered before, we wrote $\Theta_{insulin}$ in a manner somewhat more convenient for the kind of verbose sequence that DNA code generally is. The notation --- without opening or closing brackets around the sequence terms and neither commas in them might be reminiscent of the \textit{String [Chart] Sequence} notation we developed recently (see \textbf{Transformation 15} in \cite{transformatics}).
+And which sequence\footnote{$\Theta_{insulin}$ is the short coding DNA sequence (CDS) for the human \textbf{INS} gene --- the part that gets transcribed into mRNA and translated by ribosomes into the insulin protein\cite{copilot_dna_assistant}}, despite having been obtained from an authority --- the \textbf{Leiden Open Variation Database (LOVD)}, which is based on NCBI's RefSeq data\cite{RefSeq}, might need to be verified by hand or with a critical eye, and that's where a law such as \textbf{Theorem \ref{THEODNA}} would come in handy. Also, note that, unlike common sequence notations we might see in this work or that we have encountered before, we wrote $\Theta_{insulin}$ in a manner somewhat more convenient for the kind of verbose sequence that any actual na-Sequence code generally is. The notation --- without opening or closing brackets around the sequence terms and neither commas betwixt them might be reminiscent of the \textit{String [Chart] Sequence} notation we developed recently (see \textbf{Transformation 15} in \cite{transformatics}).
 
 We might for example start to wonder, how might we go about determining if some two DNA sequences, $\Theta_1$ and $\Theta_2$ are the same or perhaps if they share parts of each other, and by how much? We might wonder if they are the same sequence merely shuffled/anagrammatized --- since we saw that this can occur during natural processes such as meiosis\cite{genomics2025origin}. In case they are different, we might want to for example quantify the relative frequency of their distinct members, e.g mapping $\psi_{DNA}$ or $\psi_{RNA}$ to a sequence of relative frequencies, etc. These are all things we shall soon look into and know very well how to do or talk about, using genetics terms and the mathematical language and techniques from transformatics.
 
-\chapter{Sequence Abstraction using Symbol Sets: From Flat-Structure Sequences to Higher-Level Sequences}
+\chapter{Sequence Abstraction using Symbol Sets: From Flat-Structure Sequences to Higher-Order Sequences}
 \label{SECSEQAB}
 
-Especially for nucleic acid sequences, but also for any other kind of sequence $\Theta$, there might be legitimate situations in which looking at or dealing with the flat-structure sequence --- such as for the actually modest\footnote{`Modest' because, genomes and realistic genome sequences can typically span millions of genes or billions of nucleotides. We for example know that for a typical human cell's DNA there are $\approx$3.2 billion base pairs\cite{Venter2001}, and yet we know each base pair consists of two nucleotides, one for each strand of the double-helix (so that's $\approx$6.4 billion), plus a few more ($\approx$16,569 base pairs) from mitochondrial DNA\cite{Anderson1981}} $\Theta_{insulin}$, might be cumbersome. And so, we are going to briefly look at ways that we might re-write verbose flat-sequences in more terse or higher-level abstract ways so as to focus on details that the flat-structure perhaps doesn't clearly express. This for example is naturally relevant in nucleic acid sequences since they are for example useful in scenarios where their processing is done in n-tuples/n-grams --- such as with codons (nucleotide 3-grams) or as gene programs (self-contained sequences of codons), etc.
+
+Especially for nucleic acid sequences, but also for any other kind of sequence $\Theta$, there might be legitimate situations in which looking at or dealing with the flat-structure sequence --- such as for the actually modest\footnote{`Modest' because, genomes and realistic genome sequences can typically span millions of genes or billions of nucleotides. We for example know that for a typical human cell's DNA there are $\approx$3.2 billion base pairs\cite{Venter2001}, and yet we know each base pair consists of two nucleotides, one for each strand of the double-helix (so that's $\approx$6.4 billion), plus a few more ($\approx$16,569 base pairs) from mitochondrial DNA\cite{Anderson1981}} $\Theta_{insulin}$ (refer to \textbf{\hyperref[EQINSULIN]{Equation \ref{EQINSULIN}}}), might be cumbersome, ineffective or unnecessary. And so, we are going to briefly look at ways that we might re-write verbose flat-sequences in more terse and/or higher-order \textbf{abstract ways} so as to focus on details that the flat-structure perhaps doesn't clearly express. This for example is naturally relevant in the processing of say nucleic acid sequences --- since such is useful in scenarios where the processing of any such sequence is done in \textit{non-unity} \textbf{n-tuples} or \textbf{n-grams} --- such as with codons (nucleotide 3-grams) or as gene programs (self-contained protein synthesis or function-gene-program sequences composed using codons)\footnote{
+For purposes of re-using this relevant concept, we shall here define: 
+
+\begin{defn}[A \textbf{gene program}]
+\label{DEFGENPROG}
+ In the domain of NA-processors, a \textbf{gene program}, $\mathbb{G}_{p}$ is any sequence of na-Sequence symbols, such that the sequence expresses or contains some sufficient instructions in form of genetic code, that specify what to do, and nothing else --- this might for example be what protein or material to produce, or what DNA-driven function to perform --- the protein is basically an effect, based on just the contents of the sequence --- and nothing more, such that for any such sequence, its basic signature is $\mathbb{G}_{p}: \mathbb{N} \times \psi_{na}:p=\invpi(\mathbb{G}_{p})$.
+$\qed$
+\end{defn} We shall find ways to leverage this definition to express formalisms about how living things and their properties or traits are driven by such computable, affectant and well-ordered sequences in the future. For example, a philosophy that all existence is but a composition of effects resulting from the processing of a basic genetic code:
+
+\begin{trans}
+\label{TRANSTOENASEQ}
+$\mathbb{G}_{p}  \quad \xrightarrow{O_{process}} \quad \text{Effect}_{i \in \mathbb{N}}  \quad \xrightarrow{O_{compose}}  \quad \text{Existence}$
+\end{trans}
+
+}, etc.
 
 So, assuming we have some sequence of symbols $\Theta_1$ defined as such:
 
@@ -516,31 +534,30 @@ So, assuming we have some sequence of symbols $\Theta_1$ defined as such:
 \Theta_1 = \langle a_1, a_2,...,a_n\rangle
 \end{equation}
 
-If we wish to re-write the same sequence such that every $k$ terms are grouped in the same subsequence, we can then re-write $\Theta_1$ differently as such:
+If we wish to re-write the same sequence such that every $k$ terms are grouped in the same subsequence, we can then re-write $\Theta_1$ differently as such:\\
 
 
 \begin{equation}
 \label{EQSEQ2}
-\Theta_2 = \Theta_2(n,k) = \langle a_{11}, a_{22}, a_{33}, a_{4k}, a_{51}, a_{62},...,a_{(n-k+1)(1)},...,a_{(n-k+k-1)(k-1)},a_{(n-k+k)(k)}\rangle
-\end{equation}
+\Theta_2 = \Theta_2(n,k) = \langle a_{11}, a_{12}, a_{13}, a_{1k}, a_{21}, a_{22},...,a_{(i)(k)},...,a_{(\frac{n}{k})(k-1)},a_{(\frac{n}{k})(k)}\rangle
+\end{equation}\\
 
-Of course, in \textbf{Equation \ref{EQSEQ2}} we have somewhat wanted to extrapolate well and illustrate what would happen in an informative case such as when $k = 4$ and $n$ is not only significantly larger than $k$, but is also its perfect multiple. Otherwise, we might more concisely write that same sequence as:
-
+Of course, in \textbf{\hyperref[EQSEQ2]{Equation \ref{EQSEQ2}}} we have somewhat wanted to extrapolate well and illustratively, what would happen in an informative case such as when $k = 4$ and $n$ is not only significantly larger than $k$, but is also its perfect multiple. Otherwise, we might more concisely write that same sequence as:\\
 
 
 \begin{equation}
 \label{EQSEQ3}
-\Theta_2(n,k) = \langle \langle a_1, a_2, a_3, a_4 \rangle_1, \langle a_5, a_6,...,a_8 \rangle_2,... , \langle a_{(n-k+1)},...,a_{(n-k+k-1)},a_{(n-k+k)}\rangle_{\frac{n}{k}} \rangle
-\end{equation}
+\Theta_2(n,k) = \langle \langle a_1, a_2, a_3, a_4 \rangle_1, \langle a_5, a_6,...,a_8 \rangle_2,... , \langle a_{(n-k)},...,a_{(n-k+k-1)},a_{(n-k+k)}\rangle_{\frac{n}{k}} \rangle
+\end{equation}\\
 
-So, this expression in \textbf{Equation \ref{EQSEQ3}} is our first proper appreciation of what higher-level sequences might be like when they are an abstraction of normal flat-structure sequences. We see for example here, that the $k=4$ \textbf{bundling-parameter} means, we shall process the original flat sequence $k$ items at a time, and so, each subsequence in $\Theta_2(n,4)$ then contains exactly (or at most) 4 items --- we are assuming 4 is a factor of n to keep things simple. And so, we expect that, in total, we should have $\frac{n}{k}$ subsequences after applying the bundling transform:
+So, this expression in \textbf{\hyperref[EQSEQ3]{Equation \ref{EQSEQ3}}} is our first proper appreciation of what higher-order sequences might be like when they are an abstraction of normal flat-structure sequences. We see for example here, that the $k=4$ \textbf{bundling-parameter} means, we shall process the original flat sequence $k$ items at a time, and so, each subsequence in $\Theta_2(n,4)$ then contains exactly (or at most) 4 items --- we are assuming 4 is a factor of n to keep things simple. And so, we expect that, in total, we should have $\frac{n}{k}$ subsequences after applying the bundling transform:\\
 
 \begin{transf}[The \textbf{k-GRAM Generator}]
 \label{TRANSFBUND}
 $\Theta = \langle a_1, a_2,...,a_n\rangle \quad \xrightarrow{O_{bundle-k}(\cdot)} \quad \Theta^* \quad;$\\
 $\Theta^* = \langle \langle a_1, a_2,..., a_k \rangle_1, \langle a_{k+1},...,a_{2k} \rangle_2,... , \langle a_{(n-k+1)},...,a_{(n-k+k-1)},a_{(n-k+k)}\rangle_{\frac{n}{k}} \rangle$\\
 $\forall a_i \in \Theta \quad \exists a_{ij} \in \Theta^*: a_i = a_{ij} \quad \land \quad j \in [1,k]$\\
-For some $n, k \in \mathbb{N}$, and that $\invpi(\Theta^*) = \frac{n}{k} = $ number of k-gram subsequences generated from $\Theta$. $\qed$
+For some $n, k \in \mathbb{N}$, and that $\invpi(\Theta^*) = \frac{n}{k} = $ number of k-gram subsequences generated from $\Theta$. $\qed$\\
 \end{transf}
 
 
@@ -558,15 +575,17 @@ Thus, we see that the sequence depicted in \textbf{\hyperref[EQSEQ3]{Equation \r
 \end{multline}
 %\end{equation}
 \end{minipage}}
-\\
+\\\\
 
-And the way we have bundled up the nucleotides in \textbf{Equation \ref{EQINSUL2}} is exactly how a natural sequence processor such as a Ribosome (see details in \textbf{Definition \ref{DEFRIBOSOME}}) would process it so as to produce say a corresponding protein.
+And the way we have bundled up the nucleotides in \textbf{\hyperref[DEFRIBOSOME]{Definition \ref{DEFRIBOSOME}}}, \textbf{\hyperref[EQ7]{Equation \ref{EQ7}}} is exactly how a natural sequence processor such as a Ribosome (see details in \textbf{\hyperref[TRANSF3]{Transformer \ref{TRANSF3}}}) would process it so as to produce say the corresponding protein.
 
-Of course, though we might not delve into it here or at the moment, we know that by chaining several sequence transformers --- such that one operates on the output of the previous one to produce the next sequence (see \textbf{Transformer \ref{TRANS1}} as an example), we can arrive at even higher abstraction sequences that might render certain sequence processing programs easier to write, analyze or define. For example, we know that, much as a Ribosome Processor operates on a sequence of codons, and yet, any legitimate protein synthesis and genetic code sequence processing program will require some sort of necessary delimiters (such as the START and STOP codons --- refer to the Protein Synthesis Flow Chart in \textbf{Figure \ref{FIG3}}), and so that, we might (if we could), abstract away codons and instead generate from a flat-structure DNA or perhaps mRNA sequence, a higher-level n-gram sequence of genes or \textbf{gene-program sequences}.
+Of course, though we might not delve into it here or at the moment, we know that by chaining several sequence transformers --- such that one operates on the output of the previous one to produce the next sequence (see \textbf{\hyperref[TRANSTOENASEQ]{Transformer \ref{TRANSTOENASEQ}}} as an example), we can arrive at even higher abstraction sequences that might render certain sequence processing programs easier to write, analyze or define. For example, we know that, much as a Ribosome Processor operates on a sequence of codons, and yet, any legitimate protein synthesis and genetic code sequence processing program will require some sort of necessary delimiters (such as the START and STOP codons --- refer to the Protein Synthesis Flow Chart in \textbf{\hyperref[FIG3]{Figure \ref{FIG3}}}), and so that, we might (if we could), abstract away codons and instead generate from a flat-structure DNA or perhaps mRNA sequence, a higher-order n-gram sequence of genes or \textbf{gene-program sequences}\footnote{We have defined gene programs in \textbf{\hyperref[DEFGENPROG]{Definition \ref{DEFGENPROG}}}.}.
 
 
 \chapter{Sequence Analysis Using Symbol Sets}
 \label{SEC3}
+
+\hl{--- FINISHED PROOF-READING UP TO HERE}
 
 We now turn our attention to the matter of using ideas from transformatics to help analyze or understand genetic code sequences. For starters, we shall want to consider the matter of how to tell how far apart or dissimilar any two nucleic acid sequences might be. Of course, consequently, that would also translate into meaningful way to tell how far apart not just low-level genetic-creations such as tissue, cell-types, proteins, etc might be based on the genetic code that produces them, but also how different entire organisms (within the same species or not) might be.
 
