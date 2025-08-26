@@ -147,8 +147,8 @@
 \begin{table}[H]
   \centering
   \Huge
-	\begin{tabular}[t]{|p{0.6\textwidth}}
-$   ``$ \textbf{With}\textit{out having to print their actual DNA sequences here...    \Large This work is especially dedicated to those blessed 3 souls that keep their father's genuine genetic code alive...  \textbf{Arora J. Muntu}, the jolly observant fellow, \textbf{Theo R. Willrich}, the one that knows to bring true numbers to life, and our only daughter, \textbf{Shona K. Marlyn}, the loyal keeper of all our special sequences.} Without them, I trust that this \textbf{book would not have advanced past the front cover.}\\
+	\begin{tabular}[t]{|p{0.8\textwidth}}
+The friendly, 20th century philosopher, \textbf{Alan Watts}, \small such a fatherly, enlightening voice I keep hearing in my thoughts every once in a while; for I enjoy listening to his rants, once said \Huge \textit{``You are the universe experiencing itself."} \Large I always wished to be a father to someone... \textbf{a real boy or a girl out there... a soul... my own genetic code alive and existing independently of me}. To experience and enjoy the expressions of my own genetic code remains among my greatest dreams. But, in case I don't see my own child in this lifetime, at least, this message should inspire those that read it, who come after, to know and trust that when we express ourselves, we in a way express those that brought us into the world. Personally, I would cherish it! I surely dedicate this work to you, my father and mother. \Large I can't express enough how grateful I am, that you enabled me to be... You gave me a distinctive identity and a voice. \Huge \textbf{May this work help further your expressions in this world... and beyond.}\\
 	\hline
 	              
 \end{tabular}
@@ -758,12 +758,11 @@ With the two major problematic gene-program scenarios we have explored in the pr
 \label{SEC3A}
 
 
-\hl{--- FINISHED PROOF-READING UP TO HERE}
 
 
-The idea of complements when applied to na-Sequences has already been introduced in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}, and we get to see it depicted in an exemplary typical diagrammatic depiction of the DNA structure in \textbf{Figure \ref{FIG1}}. However, apart from having talked about the fact that nucleic acids typically or naturally occur together in base-pairs depicting pairwise complements, we might want to leverage transformatics to study this idea at a more general level --- say, to explore the matter of \textbf{na-Sequence} (as well as \textit{any sequence}) complements, and thus this section.
+The idea of complements when applied to na-Sequences was first brought up in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}, and we get to see it depicted in an exemplary typical diagrammatic depiction of the DNA structure in \textbf{\hyperref[FIG1]{Figure \ref{FIG1}}}. However, apart from having talked about the fact that nucleic acids typically or naturally occur together in base-pairs depicting pairwise complements, we might wish to explore how to leverage transformatics to study this idea at a more general level, as well as from several different and overall useful perspectives. For example, we might wish to explore the matter of \textbf{na-Sequence} (as well as \textit{any sequence}) complements --- how they come up, how different kinds of sequence complements could be arrived at algorithmically, how they could be expoited,... and thus this section.
 
-Assume we start by exploring simple binary sequences --- especially because bits help generalize many ideas in theory and practice. We can for example start by noticing that, like in the case of the interesting \textbf{Lu-Number System}\cite{lnspaper} --- in which any kind of \textit{basic information} can be abstracted by mapping it to either signal ($>$) or anti-signal ($<$), and that \textit{complex information} can then be generated from that using transforms on basic LNS sequences or expressions, etc. We can start by looking at what can be said of the transforms on the binary sequence symbol set, $\psi_{bin}$ --- or better, $\psi_{01}$. In our formulations, we shall denote the complement of a symbol $\rho$ by $\lnot\rho$, and for a sequence $\Theta$, with $\lnot\Theta$.
+Assume we start by exploring simple binary sequences --- especially because bits help generalize many ideas in theory and practice. We can for example start by noticing that, like in the case of the interesting \textbf{Lu-Number System}\cite{lnspaper} --- in which any kind of \textit{basic information} can be abstracted by mapping it to either signal ($>$) or anti-signal ($<$), and that \textit{complex information} can then be generated from that using transforms on basic LNS sequences or expressions, etc. We can start by looking at what could be said of the transforms on the binary sequence symbol set, $\psi_{bin}$ --- or better, $\psi_{01}$. In our formulations, we shall denote the complement of a symbol $\rho$ by $\lnot\rho$, and for a sequence $\Theta$, with $\lnot\Theta$.
 
 
 \begin{table}[H]
@@ -788,7 +787,7 @@ Assume we start by exploring simple binary sequences --- especially because bits
   \label{TABCOMPLEMENTS}
 \end{table}
 
-So, we can begin by noting that, if some sequence $\Theta$ spans some symbol set $\psi_\beta$ --- such as how all the sequences in \textbf{Table \ref{TABCOMPLEMENTS}} span $\psi_{01}$, then we can say that the complement sequence, $\lnot\Theta$ spans the complement symbol set $\lnot\psi_\beta$. But not just that. You can readily tell from studying that table, that actually, if sequence $\Theta$ spans $\psi_\beta$, then it also spans $\lnot\psi_\beta$ --- meaning, its members essentially are one of the distinct elements from either symbol set even though the two sets might not necessarily have the same ordering of their members.
+So, we can begin by noting that, if some sequence $\Theta$ spans some symbol set $\psi_\beta$ --- such as how all the sequences in \textbf{\hyperref[TABCOMPLEMENTS]{Table \ref{TABCOMPLEMENTS}}} span $\psi_{01}$, then we can say that the complement sequence, $\lnot\Theta$, spans the complement symbol set $\lnot\psi_\beta$. But not just that. You can readily tell from studying that table, that actually, if sequence $\Theta$ spans $\psi_\beta$, then it also spans $\lnot\psi_\beta$ --- meaning, its members essentially are one of the distinct elements from either symbol set even though the two sets might not necessarily have the same ordering of their members.
 
 Further, note that, if $\psi_\beta$ is the symbol set of some sequence $\Theta$, and that the \textbf{complement symbol set} it is equivalent to is $\lnot\psi_\beta$, then we can comfortably say that $\lnot\Theta$ spans $\lnot\psi_\beta$ as well. This is true, because, for any sequence $\Theta$, its complement, $\lnot\Theta$ is the sequence of the memberwise complements of $\Theta$. That is to say:
 
@@ -806,10 +805,10 @@ So that, if
 
 \begin{equation}
 \label{EQCOMPSETS}
-\psi_\beta = \langle \prod\limits_{i=1}^{n} a_i \rangle \quad \implies \quad \lnot\psi_\beta = \langle \prod\limits_{i=1}^{n} a_{n-i} \rangle
+\psi_\beta = \langle \prod\limits_{i=1}^{n} a_i \rangle \quad \implies \quad \lnot\psi_\beta = \langle \prod\limits_{i=1}^{n} a_{n-(i-1)} \rangle
 \end{equation}
 
-And for any $\Theta: \mathbb{N} \times \psi_\beta$ we know that:
+Note that \textbf{\hyperref[EQCOMPSETS]{Equation \ref{EQCOMPSETS}}} casts complementing some sequence $\Theta\langle\theta_1,\theta_2,...,\theta_n \rangle$ as $\lnot\Theta\langle\theta_n,\theta_{n-1},...,\theta_1 \rangle$.  And for any $\Theta: \mathbb{N} \times \psi_\beta$ we know that:
 
 \begin{equation}
 \lnot\Theta = \prod\limits_{i=1}^{n} \lnot(a_i)
@@ -823,7 +822,7 @@ for $n = \invpi(\Theta)$ and that $\forall a_i \in \psi_\beta$,
 \end{equation}
 
 
-So, one way to appreciate \textbf{Equation \ref{EQCOMPLEMENTS}}, is by realizing that by knowing the members and their order in $\psi_\beta$, we can then systematically determine the members and ordering of $\lnot\psi_\beta$ via \textbf{Equation \ref{EQCOMPSETS}}, and so that, for some $a_i$ in $\psi_\beta$, its complement in $\lnot\psi_\beta$ is the term at position index $n-1$ in $\psi_\beta$. Thus, as we saw in \textbf{Table \ref{TABCOMPLEMENTS}}, for $a_0 = 0$ in $\psi_{01}$, the complement, $\lnot a_0 = a_{\invpi(\psi_{01})-0} = a_2 = 1$. This mechanics can be extended or applied to sequences of arbitrary length and composition as necessary. For purposes of future use, we shall generalize this with a useful theorem as such:
+So, one way to appreciate \textbf{\hyperref[EQCOMPLEMENTS]{Equation \ref{EQCOMPLEMENTS}}}, is by realizing that by knowing the members and their order in $\psi_\beta$, we can then systematically determine the members and ordering of $\lnot\psi_\beta$ via \textbf{\hyperref[EQCOMPSETS]{Equation \ref{EQCOMPSETS}}}, and so that, for some $a_i$ in $\psi_\beta$, its complement in $\lnot\psi_\beta$ is the term at position index $n-i$ in $\psi_\beta$. Thus, as we saw in \textbf{\hyperref[TABCOMPLEMENTS]{Table \ref{TABCOMPLEMENTS}}}, for $a_0 = 0$ in $\psi_{01}$, the complement, $\lnot a_0 = a_{\invpi(\psi_{01})-0} = a_2 = 1$. This mechanics can be extended or applied to sequences of arbitrary length and composition as necessary. For purposes of future use, we shall generalize this with a useful theorem as such:
 
 
 %\fbox{\begin{minipage}{0.9\textwidth}
@@ -832,25 +831,25 @@ So, one way to appreciate \textbf{Equation \ref{EQCOMPLEMENTS}}, is by realizing
 \begin{theo}[\textbf{Complement Sequences}]
 \label{THEOCOMPLEMENTS}
 
-For any ordered sequence $\Theta_n\langle \prod\limits_{i=1}^{n} a_i \rangle$, its equivalent \textbf{complement sequence}, also denoted $\lnot\Theta_n$, is the sequence with the signature $\Omega_n\langle \prod\limits_{i=1}^{n} \rho_i \rangle$ such that $\rho_i = a_{n-1} \quad \forall a_i \in \Theta_n$. We shall also write $\Omega_n$ as $\lnot\Theta_n$ where necessary.
+For any ordered sequence $\Theta_n\langle \prod\limits_{i=1}^{n} a_i \rangle$, its equivalent \textbf{complement sequence}, simply denoted $\lnot\Theta_n$, is the sequence with the signature $\Omega_n\langle \prod\limits_{i=1}^{n} \rho_i \rangle$ such that $\rho_i = a_{n-i} \quad \forall a_i \in \Theta_n$. We shall also write $\Omega_n$ as $\lnot\Theta_n$ where necessary.
 
 \begin{proof}
-By \textbf{Equation \ref{EQCOMPSETS}}, we see that if $\Theta_n = \langle a_1, a_2, a_3,...,a_{n-1}, a_n \rangle$, then we can derive its complement $\lnot\Theta_n$ via the mapping of its members to corresponding members in its lateral inverse as such:
+By \textbf{\hyperref[EQCOMPSETS]{Equation \ref{EQCOMPSETS}}}, we see that if $\Theta_n = \langle a_1, a_2, a_3,...,a_{n-1}, a_n \rangle$, then we can derive its complement $\lnot\Theta_n$ via the mapping of its members to corresponding members in its exact lateral inverse as such:
 
 \[
 \begin{tikzpicture}[baseline=(current bounding box.center)]
   % Matrix A
   \matrix (A) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em] {
-    a_1 & a_2 & a_3 & \cdots & a_{n-1} & a_n \\
+    a_1 & a_2 & a_3 & \cdots & a_i & \cdots & a_{n-1} & a_n \\
   };
 
   % Matrix B
   \matrix (B) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em, below=3em of A] {
-    a_n & a_{n-1} & a_{n-2} & \cdots & a_2 & a_1 \\
+    a_n & a_{n-1} & a_{n-2} & \cdots & a_{n-(i-1)} & \cdots & a_2 & a_1 \\
   };
 
   % Draw arrows from A_i to B_i
-  \foreach \i in {1,2,3}
+  \foreach \i in {1,2,3,4,5}
     \draw[->] (A-1-\i) -- (B-1-\i);
 
   % Optional: arrows for ellipsis and final element
@@ -866,12 +865,12 @@ By \textbf{Equation \ref{EQCOMPSETS}}, we see that if $\Theta_n = \langle a_1, a
 %\end{minipage}}
 %\\
 
-And since we are dealing with sequence transformations in this work, we might as well define the necessary transformer:
+And since we are dealing with sequence transformations in this work, we might as well define the necessary transformer:\\
 
 \begin{transf}[The \textbf{Complement Transformer}]
 \label{TRANSCOMPL}
 $ $\\
-$\Theta \xrightarrow{O_{complement}(\Theta)} \Theta^*; \quad \Theta^* = \lnot\Theta$
+$\Theta \xrightarrow{O_{complement}(\Theta)} \Theta^*; \quad \Theta^* = \lnot\Theta$\\
 \end{transf}
 
 
@@ -886,7 +885,7 @@ We note that, for some binary sequence $\Theta: \mathbb{N} \times \psi_{01}$, th
 $\Theta \xrightarrow{O_{complement}(\cdot)} \Theta^*; \Theta^* = \lnot\Theta$
 \end{trans}
 
-which applies \textbf{Transformer \ref{TRANSCOMPL}}, produces the same sequence as $\Theta$ but with all bits swapped by their complements, which, as per usual nomenclature in computer science for example, means the resultant sequence is produced from the source via a \textbf{bitwise NOT operation}, and which, for binary sequences, is as simple as merely flipping the bits individually.
+which applies \textbf{\hyperref[TRANSCOMPL]{Transformer \ref{TRANSCOMPL}}}, produces the same sequence as $\Theta$ but with all bits swapped by their complements, which, as per usual nomenclature in computer science for example, means the resultant sequence is produced from the source via a \textbf{bitwise NOT operation}, and which, for binary sequences, is as simple as merely flipping the bits individually.
 
 Thus, if our source sequence was 
 
@@ -909,7 +908,7 @@ And then, returning to nucleic acid sequences, we note that if we for example ha
 
 \textbf{That we wish to treat as a DNA-sequence}, then its \textit{na-Complement} sequence would be derivable from $\psi_{DNA}$ as such:
 
-Since $\psi_{DNA} = \langle A, C, G, T \rangle$, then by \textbf{Equation \ref{EQCOMPSETS}}, we know that:
+Since $\psi_{DNA} = \langle A, C, G, T \rangle$, then by \textbf{\hyperref[EQCOMPSETS]{Equation \ref{EQCOMPSETS}}}, we know that:
 
 \begin{equation}
 \lnot(\psi_{DNA}) = \lnot\psi_{DNA}) = \langle T, G, C, A \rangle
@@ -935,7 +934,7 @@ So that, $\forall \rho \in \psi_{DNA}$, the equivalent complement is via the map
 \end{tikzpicture}
 \]
 
-Which is also the consequence of \textbf{Theorem \ref{THEOCOMPLEMENTS}}. Thus, for the sequence in \textbf{Equation \ref{SEQATC}}, the corresponding complement DNA sequence is:
+Which is also the consequence of \textbf{\hyperref[THEOCOMPLEMENTS]{Theorem \ref{THEOCOMPLEMENTS}}}. Thus, for the sequence in \textbf{\hyperref[SEQATC]{Equation \ref{SEQATC}}}, the corresponding complement DNA sequence is:
 
 \begin{equation}
 \label{SEQATCCOMP}
@@ -971,7 +970,7 @@ We should come to appreciate this special symbol set, or even justify it --- for
 \]
 
 
-Because, from \textbf{Equation \ref{SSDNAT}}, we can tell that:
+Because, from \textbf{\hyperref[SSDNAT]{Equation \ref{SSDNAT}}}, we can tell that:
 
 \begin{equation}
 \label{SSDNATCOMP}
@@ -988,7 +987,7 @@ First, note that since $\psi_{10}$ --- our choice of symbol for the decimal symb
 \psi_{10}= \langle 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \rangle
 \end{equation}
 
-Then, by \textbf{Theorem \ref{THEOCOMPLEMENTS}}, its complement is:
+Then, by \textbf{\hyperref[THEOCOMPLEMENTS]{Theorem \ref{THEOCOMPLEMENTS}}}, its complement is:
 
 
 \begin{equation}
@@ -1030,18 +1029,20 @@ Has the complement:
 \lnot\Theta_{HiFi} = 1 3 5 0 8 6 2 4 7 9
 \end{equation}
 
-Which, given how that special sequence was derived/discovered(see \textbf{Section 5.1} in \cite{ossipaper} or \textbf{Equation 19} in the same paper), it is interesting to note that its complement under $\psi_{10}$ is also an \textit{orthogonal symbol set identity}! For those who have studied the o-SSI paper\cite{ossipaper}, this can really be exciting for the study of symbol sets and sequences in general --- yes, even for nucleic acid sequences! But, that said, of course, it shouldn't come as a surprise, since, in simple terms, a sequence's complement is just one very special kind anagram among the set of all potential anagrams it can have, and so, before we leave the base-10 case, we can note that if some sequence $\Theta_{10}: \mathbb{N} \times \psi_{10}$ is a base-10 o-SSI, then its complement is also a base-10 o-SSI, and in fact, in general --- even for non-numeric symbol sets such as $\psi_{na}, \psi_{DNA}$ or special $\psi_{RNA}$, that:
+Which, given how that special sequence was derived/discovered(see \textbf{Section 5.1} in \cite{ossipaper} or \textbf{Equation 19} in the same paper), it is interesting to note that its complement under $\psi_{10}$ is also an \textit{orthogonal symbol set identity}! For those who have studied the o-SSI paper\cite{ossipaper}, this can really be exciting for the study of symbol sets and sequences in general --- yes, even for nucleic acid sequences! But, that said, of course, it shouldn't come as a surprise, since, in simple terms, a sequence's complement is just one very special kind anagram among the set of all potential anagrams it can have, and so, before we leave the base-10 case, we can note that if some sequence $\Theta_{10}: \mathbb{N} \times \psi_{10}$ is a base-10 o-SSI, then its complement is also a base-10 o-SSI, and in fact, in general --- even for non-numeric symbol sets such as $\psi_{na}, \psi_{DNA}$ or special $\psi_{RNA}$, that:\\
 
 
 \begin{theo}[\textbf{Complement of an o-SSI is an o-SSI}]
 \label{THEOCOMPLOSSI}
-If some sequence $\Theta: \mathbb{N} \times \psi_\beta$ is an orthogonal symbol set identity for the base $\beta$, then its complement, $\lnot\Theta$ is also an orthogonal symbol set identity for $\beta$.
+If some sequence $\Theta: \mathbb{N} \times \psi_\beta$ is an orthogonal symbol set identity for the base $\beta$, then its complement, $\lnot\Theta$ is also an orthogonal symbol set identity for $\beta$.\\
 \end{theo}
+
+We shall see how \textbf{\hyperref[THEOCOMPLOSSI]{Theorem  \ref{THEOCOMPLOSSI}}} might be applied, when dealing with algorithmic anagrammatization of sequences such as $\psi_{10}$ in \textbf{\hyperref[SECRSG]{Chapter \ref{SECRSG}}}.
 
 \section{Potential Applications of Sequence Complements or Inverses}
 \label{SECAPPCOMPLEMENTS}
 
-First, in genetics and analysis of genetic code sequences, note that for especially sequences in say the \textit{non-native}(non-storage) form, such as the processed/derived RNA-sequences, it might sometimes be useful to determine if some two sequences are the same, equivalent or closely related, even though their apparent ordering of members, or even member composition looks unlike, \textbf{as long as their cardinalities are the same}\footnote{This requirement to have their sizes the same, is a natural consequence of how a sequence and its anagram relate --- see \cite{adtpaper}}.
+First, in genetics and analysis of genetic code sequences, note that for especially na-Sequences in say the \textit{non-native}(non-storage) form, such as the processed/derivative RNA-sequences, it might sometimes be useful to determine if some two sequences are the same, equivalent or closely related, even though their apparent ordering of members, or even member composition looks unlike, \textbf{as long as their cardinalities are the same}\footnote{This requirement to have their sizes the same, is a natural consequence of how a sequence and its anagrams relate --- see \cite{adtpaper}}.
 
 We should note, and interestingly so, that the complement of any sequence $\Theta$, which is $\lnot\Theta$, is just an anagram of $\Theta$, and that in general, we can comfortably say:
 
@@ -1053,16 +1054,16 @@ If two sequences $\Theta$ and $\Omega$ that are \textbf{not equal}, but which do
 \begin{proof}
 The proofs are several:
 \begin{enumerate}
-\item Since $\invpi(\Theta) = \invpi(\Omega)$ and $\forall \alpha \in \Theta \quad \exists \rho \in \Omega: \alpha = \rho$ or equivalently, that $\forall a_i \in \Theta, \invpi(a_i \in \Theta) = \invpi(a_i \in \Omega)$, then there exists some anagram of $\Theta$, denoted $\Theta^*$ such that $\Theta^* \xrightarrow{O_{complement}(\cdot)} \Omega$, which is possible by \textbf{Theorem \ref{THEOCOMPLEMENTS}}.
-\item Because sequence complements are anagrams of each other, then if the two sequences are complements of each other, we expect that by the definition of the complement transformer (see \textbf{Transformer \ref{TRANSCOMPL}}), $\Omega = \lnot\Theta$ or that $\Theta = \lnot\Omega$.
-\item We might also proceed by use of \textbf{modal sequences}(see \textbf{Definition 1} in \cite{transformatics}): Given the conditions on the two sequences, we then expect that if $\Theta$ is a sequence complement of $\Omega$ or vice-versa, then, computing their corresponding modal sequence statistic should result in the following result: $\overset{>}{\Theta} = \lnot(\overset{>}{\lnot\Omega})$ or equivalently, $\overset{>}{\Omega} = \lnot(\overset{>}{\lnot\Theta})$
+\item Since $\invpi(\Theta) = \invpi(\Omega)$ and $\forall \alpha \in \Theta \quad \exists \rho \in \Omega: \alpha = \rho$ or equivalently, that $\forall a_i \in \Theta, \invpi(a_i \in \Theta) = \invpi(a_i \in \Omega)$, then there exists some anagram of $\Theta$, denoted $\Theta^*$ such that $\Theta^* \xrightarrow{O_{complement}(\cdot)} \Omega$, which is possible by \textbf{\hyperref[THEOCOMPLEMENTS]{Theorem \ref{THEOCOMPLEMENTS}}}.
+\item Because sequence complements are anagrams of each other, then if the two sequences are complements of each other, we expect that by the definition of the complement transformer (see \textbf{\hyperref[TRANSCOMPL]{Transformer \ref{TRANSCOMPL}}}), $\Omega = \lnot\Theta$ or that $\Theta = \lnot\Omega$.
+\item We might also proceed by use of \textbf{modal sequences} (see \textbf{Definition 1} in \cite{transformatics}): Given the conditions on the two sequences, we then expect that if $\Theta$ is a sequence complement of $\Omega$ or vice-versa, then, computing their corresponding modal sequence statistic should result in the following result: $\overset{>}{\Theta} = \lnot(\overset{>}{\lnot\Omega})$ or equivalently, $\overset{>}{\Omega} = \lnot(\overset{>}{\lnot\Theta})$
 \end{enumerate}
 \end{proof}
 
 \end{theo}
 
 
-Note that, for RNA, since $\psi_{RNA} = \langle A, C, G, U \rangle$ (\textbf{Equation \ref{EQRNASS}}), then: 
+Note that, for RNA, since $\psi_{RNA} = \langle A, C, G, U \rangle$ (\textbf{\hyperref[EQRNASS]{Equation \ref{EQRNASS}}}), then: 
 
 \begin{equation}
 \label{EQRNACOMP}
@@ -1135,7 +1136,7 @@ So, that, for some RNA-sequence such as $\Theta_{met}$:
 \end{equation}
 
 
-Which is the famous START-codon \textbf{Methionine} (see \textbf{Table \ref{TAB2}}), has as its corresponding nucleic acid sequence complement under $\dot{\psi}_{RNA}$:
+Which is the famous START-codon \textbf{Methionine} (see \textbf{\hyperref[TAB2]{Table \ref{TAB2}}}), has as its corresponding nucleic acid sequence complement under $\dot{\psi}_{RNA}$:
 
 \begin{trans}
 \label{TRANSGCA}
@@ -1149,17 +1150,20 @@ While --- \textbf{and important to note}, its complement under $\psi_{RNA}$ is [
 \label{TRANSUAC}
 $\Theta_{met} \xrightarrow{O_{complement}(\Theta,\psi_{RNA})}  \langle U, A, C \rangle$
 \\
-and we know that codon UAC is Tyrosine\cite{wikipedia_codon_tables}\footnote{Concerning this particular codon, TAC/UAC, we find that though the Wikipedia reference tables assign it the name Tyrosine in both the DNA and RNA encodings, and yet, the physical reference we have at hand\cite{gregory1987oxford} (perhaps now out-of-date), assigns the name ``Methionine" to TAC --- Table 1 in that reference book didn't list RNA codes, but we still would expect to use TAC to look-up the correct name for UAC.}.
+and we know that codon UAC is Tyrosine\cite{wikipedia_codon_tables}\footnote{Concerning this particular codon, TAC/UAC, we find that though the Wikipedia reference tables assign it the name Tyrosine in both the DNA and RNA encodings, and yet, the physical reference we have at hand\cite{gregory1987oxford} (perhaps now out-of-date), assigns the name ``Methionine" to TAC --- Table 1 in that reference book did not list RNA codes, but we still would expect to use TAC to look-up the correct name for UAC.}.
 \end{trans}
 
-It should perhaps be immediately noticeable that the ability to derive new/different/special sequences such as complement codons from ordinary na-Sequences might have some useful if not exciting applications as well as problems it awakens for the geneticists, molecular biologists and researchers of gene-sequencing\footnote{For those that don't know: Gene sequencing is the process of determining the exact order of nucleotides --- A, T, C and G --- in a segment of DNA that makes up a gene. It's like reading the biological ``code" that instructs cells how to build proteins and regulate functions\cite{copilot_dna_assistant}.} and analysis. For example, apart from acknowledging that na-Sequence's complements denote potentially legitimate na-helix strand partners for any two sequences (in the form $\Theta$ and $\lnot\Theta$), it would be interesting to determine what other important things might we learn, discover from exploring these kinds of sequence transforms? 
+It should perhaps be immediately noticeable that the ability to derive new/different/special sequences such as complement codons from ordinary na-Sequences might have some useful if not exciting applications as well as problems it awakens for the geneticists, molecular biologists and researchers of gene-sequencing\footnote{For those that do not know: Gene sequencing is the process of determining the exact order of nucleotides --- A, T, C and G --- in a segment of DNA that makes up a gene. It is like reading the biological ``code" that instructs cells how to build proteins and regulate functions\cite{copilot_dna_assistant}.} and analysis. For example, apart from acknowledging that na-Sequence's complements denote potentially legitimate na-helix strand partners for any two sequences (in the form $\Theta$ and $\lnot\Theta$), it would be further rewarding, to determine what other important things we might learn about how important sequences such as na-Sequences, especially relative to how they are utilized in nature, behave or alter their usual function, if replaced by their complements either partially or wholly. Definitely, even for any ordered sequences in general... it must be exhilirating to discover what other things we can learn with or from them, via these kinds of sequence transforms. 
 
-It's already interesting to note that under complement transforms (which are special kinds of anagrams), the natural/universal protein synthesis START-codon AUG/ATG is equivalent to GCA (\textbf{Transformation \ref{TRANSGCA}}) or UAC (\textbf{Transformation \ref{TRANSUAC}}), but, \textbf{are those other codons also START-codons?} That said, is there a possibility that some natural process or genetic code translation or transformation might naturally produce ATG or AUG from any of those corresponding [symbolic] complement sequences? What would this teach us about natural/biological processors? What of the possibilities of using synthetic/artificial processors to render such complement operations useful?
+It is already interesting to note that under complement transforms (which are special kinds of anagrams), the natural/universal protein synthesis START-codon AUG/ATG is equivalent to GCA (\textbf{\hyperref[TRANSGCA]{Transformation \ref{TRANSGCA}}}) or UAC (\textbf{\hyperref[TRANSUAC]{Transformation \ref{TRANSUAC}}}), but, \textbf{are those other codons also START-codons?} That said, is there a possibility that some natural process or genetic code translation or transformation might naturally produce ATG or AUG from any of those corresponding [symbolic] complement sequences? What would this teach us about natural/biological processors? What of the possibilities of using synthetic/artificial processors to render such complement operations useful? And is it actually possible to \textit{transmute} one set of nucleic acid sequences into another, with entirely different functions and identity via leveraging na-complements or complement transforms?
+
+
 
 
 \chapter{Sequence Analysis Using The Anagram Distance and the Modal Sequence Statistic}
 \label{SEC4A}
 
+\hl{--- FINISHED PROOF-READING UP TO HERE}
 
 We are going to talk about the matter of comparing or analyzing two or more na-Sequences using especially statistical measures that have been set down by transformatics theory for especially ordered sequences. 
 
@@ -1169,10 +1173,10 @@ We are going to talk about the matter of comparing or analyzing two or more na-S
 In particular, we shall be looking at na-Sequence analysis through lens of measures we have formalized earlier on, and shall break down our analysis into four representative scenarios:
 
 \begin{enumerate}
-\item \textbf{Scenario A:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, of the same length, $n$, and with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_n)$), how to quantify how similar or dissimilar they are?
+\item \textbf{Scenario A:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, of the same length, $n$, and with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_n)$), \textbf{how to quantify how similar or dissimilar} they are?
 \item \textbf{Scenario B:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$, but with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
-\item \textbf{Scenario C:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$ and with different symbol sets ($\psi_{na}(\Theta1_n) \neq \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
-\item \textbf{Scenario D:} Finally, how, when given a particular na-Sequence, $Q_k$, and two collections/samples of other sequences ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, and that belong to labeled or classified populations --- POPA and POPB, to determine which of the two populations the query sequence, $Q_k$ best-belongs to (so we classify it under one of the labels), as well as determine which of the sample member sequences from either collections it is closest to?
+\item \textbf{Scenario C:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of \textbf{different lengths}, $n$ and $k$ and with different symbol sets ($\psi_{na}(\Theta1_n) \neq \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
+\item \textbf{Scenario D:} Finally, how, when given a particular na-Sequence, $Q_k$, and two collections/samples of other sequences ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, and that belong to \textbf{labeled or classified populations} --- POPA and POPB, to determine which of the two populations the query sequence, $Q_k$, best-belongs to (so we classify it under one of those labels), as well as determine which of the \textbf{particular} sample member sequences from either collections it is closest to?
 \end{enumerate}
 
 Note that in conducting these analyses, we shall especially exploit the sequence-specific measures, $\tilde{A}(\cdot)$, the Anagram Distance Measure\cite{adtpaper}\cite{transformatics}, and $\overset{>}{\Theta}$, the Modal Sequence Statistic\cite{transformatics}, and that we shall use the following representative, even though somewhat hypothetical (for the first four), na-Sequences:
@@ -1262,7 +1266,7 @@ GAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG
 \Large
 
 
-The first four sequences are merely hypothetical, and intentionally small/short, with $\Theta1_{DNA}$, $\Theta3_{DNA}$ and $\Theta4_{DNA}$ being DNA-sequences, while $\Theta2_{RNA}$ is just some RNA-sequence. $\Theta_{insulin}$ is a DNA-sequence we have already encountered in \textbf{\hyperref[SEC2]{Chapter \ref{SEC2}}} (see \textbf{Equation \ref{EQINSULIN}}), while the most verbose sequence we shall encountered in this work is named $\Theta_{rbcl}$ and is a real-life, biologically relevant RNA-sequence from a well-known plant protein: \textbf{RbcL}\footnote{$\Theta_{rbcl}$ is actually just a sample mRNA Sequence (partial, from \textit{Arabidopsis thaliana} RbcL gene), and is excerpted from a paper that includes the \textit{Arabidopsis thaliana} chloroplast genome, which contains the rbcL gene encoding the large subunit of RuBisCO\cite{Sato1999ArabidopsisChloroplastGenome}.}, the large subunit of \textbf{RuBisCO} --- the enzyme responsible for carbon fixation in photosynthesis. It is one of the most abundant and essential proteins in plants\cite{copilot_dna_assistant}.
+%The first four sequences are merely hypothetical, and intentionally small/short, with $\Theta1_{DNA}$, $\Theta3_{DNA}$ and $\Theta4_{DNA}$ being DNA-sequences, while $\Theta2_{RNA}$ is just some RNA-sequence. $\Theta_{insulin}$ is a DNA-sequence we have already encountered in \textbf{\hyperref[SEC2]{Chapter \ref{SEC2}}} (see \textbf{\hyperref[EQINSULIN]{Equation \ref{EQINSULIN}}}), while the most verbose sequence we shall encountered in this work is named $\Theta_{rbcl}$ and is a real-life, biologically relevant RNA-sequence from a well-known plant protein: \textbf{RbcL}\footnote{$\Theta_{rbcl}$ is actually just a sample mRNA Sequence (partial, from \textit{Arabidopsis thaliana} RbcL gene), and is excerpted from a paper that includes the \textit{Arabidopsis thaliana} chloroplast genome, which contains the rbcL gene encoding the large subunit of RuBisCO\cite{Sato1999ArabidopsisChloroplastGenome}.}, the large subunit of \textbf{RuBisCO} --- the enzyme responsible for carbon fixation in photosynthesis. It is one of the most abundant and essential proteins in plants\cite{copilot_dna_assistant}.
 
 \section{A First Analysis}
 \label{SECFANAL}
@@ -1455,9 +1459,9 @@ Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$
 
 So, in this scenario, we are basically given some two particular na-Sequences, of the same length, and which have similar symbol sets, and are tasked with how to quantify their similarity or dissimilarity.
 
-Looking at our example sequences above in \textbf{Table \ref{TABFAN}}, only two sequences satisfy the necessary conditions --- $\Theta1$ and $\Theta4$, which both have length \textbf{12} and which have similar symbol sets under base-na\footnote{Formally defined in \textbf{Definition \ref{DEFUNA}}} --- $\psi_{na}(\Theta1) = \psi_{na}(\Theta4) = \langle A, C, G, T \rangle$, but also their unspecific sequence symbol sets are already similar.
+Looking at our example sequences above in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, only two sequences satisfy the necessary conditions --- $\Theta1$ and $\Theta4$, which both have length \textbf{12} and which have similar symbol sets under base-na\footnote{Formally defined in \textbf{\hyperref[DEFUNA]{Definition \ref{DEFUNA}}}} --- $\psi_{na}(\Theta1) = \psi_{na}(\Theta4) = \langle A, C, G, T \rangle$, but also their unspecific sequence symbol sets are already similar.
 
-Actually, this case is very telling concerning what might actually happen with na-Sequences --- essentially, we note that, despite the two sequences \textbf{actually being different} --- for example, $\Theta1$ ends with codon \texttt{TTC}, while $\Theta4$ ends with \texttt{CAT}, and yet, looking at their breakdown analysis via \textbf{Table \ref{TABFAN}}, we see that \textbf{they almost seem to be the same!} They have the same sequence symbol set, the same parent symbol set, the same modal sequence and symbol distribution, the same sequence length and thus same number of codons! So, how exactly can we quantifiably distinguish between such sequences in real life?
+Actually, this case is very telling concerning what might actually happen with na-Sequences --- essentially, we note that, despite the two sequences \textbf{actually being different} --- for example, $\Theta1$ ends with codon \texttt{TTC}, while $\Theta4$ ends with \texttt{CAT}, and yet, looking at their breakdown analysis via \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, we see that \textbf{they almost seem to be the same!} They have the same sequence symbol set, the same parent symbol set, the same modal sequence and symbol distribution, the same sequence length and thus same number of codons! So, how exactly can we quantifiably distinguish between such sequences in real life?
 
 At this juncture, it definitely might make sense to recall what the purpose of the \textbf{Anagram Distance Measure}\cite{adtpaper} --- it essentially is a measure that allows us to tell if any two sequences that might contain the same exact distinct symbols, but possibly in different proportions and/or order, are different or not. So, since we can't use the usually sufficient \textbf{modal sequence statistic}\cite{transformatics} to distinguish between these two actually different sequences, let us attempt to compute their anagram distance instead\footnote{It shall be \textbf{very important} to bring to mind here, the fact that, the cases where comparing sequences or datasets using the ADM might not seem obvious, but as we already saw in a detailed attempt to distinguish between actually different sequences using many various traditional statistical measures  (of variation moreover) that all failed to show a difference between some two test sequences --- see \textbf{Table 1} in \cite{transformatics}, one shouldn't take ADM any less serious even for non-numerical data such as analysis nucleic acid sequences!}. 
 
@@ -1467,7 +1471,7 @@ At this juncture, it definitely might make sense to recall what the purpose of t
 \textbf{NOTE:}\\
  A Quick Recap \textbf{Concerning Interpreting ADM, $\tilde{A}(\Theta,\Theta^*)$} \\
 
-The Anagram Distance Measure (ADM), associated testing method, background and justifications for the new statistic were first laid out in the seminal paper\cite{adtpaper} introducing that measure and its theory. That work was later advanced in the trasformatics paper\cite{transformatics}, and essentially, we can note that:
+The Anagram Distance Measure (ADM), associated testing method, background and justifications for the new statistic were first laid out in the seminal paper\cite{adtpaper} introducing that measure and its theory. That work was later advanced in the transformatics paper\cite{transformatics}, and essentially, we can note that:
 
 \begin{itemize}
 \item{Given any two sequences, $\Theta$ and $\Theta^*$, that ideally should be of the same length, and with the same sequence symbol set, then we compute the anagram distance between them via the formula:
@@ -1547,7 +1551,7 @@ And thus, we can see readily that:\\
 \tilde{A}(\Theta1 \rightarrow \Theta4) = \frac{1}{12}(0 + 0 + 0 + 3 + 3 + 3 + 2 + 3 + 5 + 2 + 5 + 2) = \frac{28}{12} = 2.3\bar{3} > 1 > 0
 \end{equation}
 
-And so, despite the measures and first analysis in \textbf{Table \ref{TABFAN}} having shown that these two nucleic acid sequences didn't have any significant differences, and yet, using ADM as in \textbf{Table \ref{TABADM1}} and \textbf{Equation \ref{EQCOMPNASEQ14}}, we find that they are appreciably significantly different! Their ADM being $2.3$, it tells us the second sequence potentially has elements in the first sequence shifted to new locations in the sequence, potentially by more than just 1 position. Thus, despite all their other similarities, they do have some differences that we can measure and pin to some telling numbers.
+And so, despite the measures and first analysis in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}} having shown that these two nucleic acid sequences didn't have any significant differences, and yet, using ADM as in \textbf{\hyperref[TABADM1]{Table \ref{TABADM1}}} and \textbf{\hyperref[EQCOMPNASEQ14]{Equation \ref{EQCOMPNASEQ14}}}, we find that they are appreciably significantly different! Their ADM being $2.3$, it tells us the second sequence potentially has elements in the first sequence shifted to new locations in the sequence, potentially by more than just 1 position. Thus, despite all their other similarities, they do have some differences that we can measure and pin to some telling numbers.
 
 \section{SCENARIO B --- the sequence characteric [statistic]}
 \label{SECSCENB}
@@ -1558,7 +1562,7 @@ And so, despite the measures and first analysis in \textbf{Table \ref{TABFAN}} h
 Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$, but with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?}
 \end{quote}
 
-So, given the conditions of this scenario and our sample sequences as summarized in \textbf{Table \ref{TABFAN}}, we shall pick sequences $\Theta1$ and $\Theta3$, which both have the same sequence symbol set under base-na, and which have cardinalities 12 and 16 respectively.
+So, given the conditions of this scenario and our sample sequences as summarized in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, we shall pick sequences $\Theta1$ and $\Theta3$, which both have the same sequence symbol set under base-na, and which have cardinalities 12 and 16 respectively.
 
 So, good enough, we have already worked through some of the essential details of the analysis method in \textbf{\hyperref[SECSCENA]{Section \ref{SECSCENA}}}. However, for this scenario, we can sum up how to conduct our comparative analysis thus:
 
@@ -1578,7 +1582,7 @@ We have already seen how to do all the above analysis steps and why, in the Firs
 \item In case the ADM also can't find any differences between the two sequences, then most likely, their only differences are \textbf{cosmetic} --- such as simply naming the same sequence differently, and thus the two sequences under analysis can be considered to be \textbf{quantifiably similar}.
 \end{enumerate}
 
-So, first, note that, from \textbf{Table \ref{TABFAN}}, that even though the two sequences we are looking at, $\Theta1$ and $\Theta3$ have the same \textbf{specific sequence symbol set}\footnote{The concept of the \textbf{specific symbol set} is first introduced in \textbf{Definition 3} of \cite{ossipaper}} (under base-na or DNA): $\psi_{na}(\Theta1) = \psi_{na}(\Theta3) = \langle A, C, G, T \rangle$, and yet, their \textbf{unspecific sequence symbol sets} are different! 
+So, first, note that, from \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, that even though the two sequences we are looking at, $\Theta1$ and $\Theta3$ have the same \textbf{specific sequence symbol set}\footnote{The concept of the \textbf{specific symbol set} is first introduced in \textbf{Definition 3} of \cite{ossipaper}} (under base-na or DNA): $\psi_{na}(\Theta1) = \psi_{na}(\Theta3) = \langle A, C, G, T \rangle$, and yet, their \textbf{unspecific sequence symbol sets} are different! 
 
 So, their first difference is in their unspecific sequence symbol sets: $\psi(\Theta1) = \langle T, A, C, G\rangle$ and yet $\psi(\Theta3) = \langle A, T, G, C\rangle$. So, at minimum, we know that they have quantifiable difference in the ordering of their similar symbols within either sequence just by this analysis --- especially because these symbol sets respect order of first occurrence within the sequence they summarize.
 
@@ -1593,7 +1597,7 @@ And then we come to the matter of their modal sequence statistics. For this case
 
 So, this alone can tell us that the two sequences differ quantifiably in terms of either their relative distribution of members/symbols, or that they differ in the order of first occurrence of their symbols at worst.
 
-Also, note that, the modal sequence statistic (MSS), is definitely computed readily by considering the relative frequency of terms within the sequence under analysis, and so, when we look at the MSS column in \textbf{Table \ref{TABFAN}}, we see that below each of the terms for the MSS, we also display the associated symbol frequencies. This is important as we are to see hereafter...
+Also, note that, the modal sequence statistic (MSS), is definitely computed readily by considering the relative frequency of terms within the sequence under analysis, and so, when we look at the MSS column in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, we see that below each of the terms for the MSS, we also display the associated symbol frequencies. This is important as we are to see hereafter...
 
 Talking of which, the next analysis we could conduct, but which is closely related to the previous one, is the \textbf{sequence characteristic}. Concerning this, note that, unlike \textbf{\hyperref[SECSCENA]{Scenario A}} where the two sequences we analyzed had the same exact MSS, and yet, assuming $\Theta1$ and $\Theta4$ had some difference in the frequency of their terms despite having the same MSS, the MSS-analysis alone wouldn't have identified that. And so, before we proceed, let us also introduce/define the sequence characteristic measure.
 
@@ -1628,7 +1632,7 @@ $ $\\
 $\Theta \xrightarrow{O_{gSC}(\Theta)} \Theta^*; \quad \Theta^* = \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i\cdot f_i = \prod\limits_{\rho_i \in \overset{>}{\Theta}} \rho_i\cdot \invpi(\rho_i \in \Theta)$
 \end{transf}
 
-So, we note that, like in the example we saw in generating $\hbar(\overset{>}{\Theta1})$ for $\Theta1$ in our \textbf{\hyperref[SECFANAL]{First Analysis}} --- which returned the characteristic string as \textbf{C4G3T3A2}, we can then see that, by using the information in \textbf{Table \ref{TABFAN}}, that for the two sequences we are comparing, we have their sequence characteristics as such:
+So, we note that, like in the example we saw in generating $\hbar(\overset{>}{\Theta1})$ for $\Theta1$ in our \textbf{\hyperref[SECFANAL]{First Analysis}} --- which returned the characteristic string as \textbf{C4G3T3A2}, we can then see that, by using the information in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, that for the two sequences we are comparing, we have their sequence characteristics as such:
 
 \begin{itemize}
 \item $\hbar(\overset{>}{\Theta1})$ = \textbf{C4G3T3A2}
@@ -1648,7 +1652,7 @@ It should be worth noting, that in contrast to the previous scenario, the sequen
 Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$ and with different symbol sets ($\psi_{na}(\Theta1_n) \neq \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?}
 \end{quote}
 
-Without repeating ourselves nor wasting time, note that from the cases we have in \textbf{Table \ref{TABFAN}}, such might be the case with sequences such as $\Theta1$ and $\Theta_{rbcl}$ for example. And, from the analysis procedure we have already encountered in \textbf{\hyperref[SECSCENB]{Scenario B}}, we can definitely use any of several available ways to quantify their similarities or differences. However, most useful perhaps, might be to just look at their sequence characteristics:
+Without repeating ourselves nor wasting time, note that from the cases we have in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, such might be the case with sequences such as $\Theta1$ and $\Theta_{rbcl}$ for example. And, from the analysis procedure we have already encountered in \textbf{\hyperref[SECSCENB]{Scenario B}}, we can definitely use any of several available ways to quantify their similarities or differences. However, most useful perhaps, might be to just look at their sequence characteristics:
 
 \begin{itemize}
 \item $\hbar(\overset{>}{\Theta1})$ = \textbf{C4G3T3A2}
@@ -1725,7 +1729,7 @@ And $\forall i, j \in \mathbb{N}: i < j \implies f_i \geq f_j$ for the frequency
 \end{defn}
 
 
-Thus having computed the representative population characteristic for our sample/collection/set of sequences as $\hbar(\overset{>}{\Omega^n})$, we then proceed to extract or reduce it to just the \textbf{representative population modal sequence statistic} (RPMSS)\footnote{Any careful analyst shall realize that computing or deriving the RPMSS as in the given process, or as per \textbf{Definition \ref{EQPOPCHAR}}, shall make the most sense, because, any other way would either ignore the important per-sequence symbol distribution information, or might just not be efficient or robust/trustworthy enough, plus, where the frequencies don't matter --- such as when each symbol only appears once across all sequences, then working from the per-sequence MSS would help generate a RPMSS that is close-enough to the relative ordering of terms in each member sequence.}, $\overset{>}{\Omega^n}$.
+Thus having computed the representative population characteristic for our sample/collection/set of sequences as $\hbar(\overset{>}{\Omega^n})$, we then proceed to extract or reduce it to just the \textbf{representative population modal sequence statistic} (RPMSS)\footnote{Any careful analyst shall realize that computing or deriving the RPMSS as in the given process, or as per \textbf{\hyperref[EQPOPCHAR]{Definition \ref{EQPOPCHAR}}}, shall make the most sense, because, any other way would either ignore the important per-sequence symbol distribution information, or might just not be efficient or robust/trustworthy enough, plus, where the frequencies don't matter --- such as when each symbol only appears once across all sequences, then working from the per-sequence MSS would help generate a RPMSS that is close-enough to the relative ordering of terms in each member sequence.}, $\overset{>}{\Omega^n}$.
 
 And with the RPMSS, $\overset{>}{\Omega^n}$, and having computed the MSS of the query sequence, $\overset{>}{Q_k}$, we can then proceed to compute the proximity between the query and the population via a measure such as the ADM: $\tilde{A}(\overset{>}{Q_k},\overset{>}{\Omega^n})$, and if there were more that one population to compare the query against, use the computed ADM values as a \textbf{decision surface} to help objectively decide which of the analyzed populations the query most likely belongs to.
 
@@ -1857,7 +1861,7 @@ $\qed$
 \end{transf}
 
 
-By \textbf{Transformer \ref{TRANSFSEQLOOKUP}}, we can search for and express or return, a complete na-Sequence $\theta_i \in \Theta^n$, when presented with some query na-sequence $Q_m$ of length $m$.
+By \textbf{\hyperref[TRANSFSEQLOOKUP]{Transformer \ref{TRANSFSEQLOOKUP}}}, we can search for and express or return, a complete na-Sequence $\theta_i \in \Theta^n$, when presented with some query na-sequence $Q_m$ of length $m$.
 
 Thus, for optimal lookup mechanisms --- concerns about space and [polynomial] time for looking up and returning $\theta_{na}$ from some \textbf{na-database}, $D\langle {\theta i}_{key}, {\theta i}_{val} \rangle^*$, such that, instead of directly searching the collection for the sequence with value $\theta_i = {\theta i}_{val} \approx Q_m$, directly/naively using $Q_m$ --- the \textbf{user provided query}, we use the provably shorter --- in terms of storage space, but also [\textit{more intelligent-friendly} --- in terms of sequence-expressing-information] higher \textbf{entropy encoding} structure, such as with a \textbf{hash key} for each $\theta_i$ as well as any $Q_k$, computed as:\\
 
@@ -1870,8 +1874,10 @@ Thus, for optimal lookup mechanisms --- concerns about space and [polynomial] ti
 
  --- see definition of $R_{\Theta^n_k} \approx \Theta_n$ in \textbf{\hyperref[LAWGDL]{IGS Law}}, while the special sequence operator $\ddot{o}(\Theta_n)$ computes and returns a \textbf{G$\ddot{o}$del Number}\cite{illingworth1996computing}\footnote{Based on the concept of \textbf{G$\ddot{o}$del numbering} --- ``A one-to-one mapping (i.e. an injection) of the symbols, formulas, and finite sequences of formulas of the formal system onto some subset of the natural numbers. The mapping must be such that there is an algorithm that, for any symbol, formula, or finite sequence of formulas, identifies the corresponding natural number; this is the \textit{G$\ddot{o}$del number} of that object."\cite{illingworth1996computing}. G$\ddot{o}$del numbers are a method developed by Kurt G$\ddot{o}$del in 1931\cite{godel1931} to encode symbols, formulas, and entire proofs from formal mathematical systems as unique natural numbers. This encoding allows syntactic objects to be treated arithmetically\cite{godel1931english}.}, $\ddot{o}(\Theta_n): \psi_{\Theta_n}^k \times\mathbb{N}^k \rightarrow \mathbb{N}$ that is derived optimally using the characteristic, $\hbar(\overset{>}{\Theta_n})$, for $\Theta$ a sequence of length $n$, and the first $k$ prime numbers such that $k = \invpi(\overset{>}{\Theta_n}) \quad \land \quad \forall \omega_i \in \hbar(\overset{>}{\Theta_n}): \ddot{o}(\omega_i) : \ddot{o}(i) = f_i \times p_i \in \mathbb{P}$ --- $p_i$ is the $i$-th prime\footnote{$\mathbb{P}$ is the set of all prime numbers.} starting from 2 and spanning $\mathbb{N}$.
  
- Computing a hashkey based on a G$\ddot{o}$del number is just one approach to the optimal way to implement a sequence lookup mechanism with \textbf{Transformer \ref{TRANSFSEQLOOKUP}}. However, even that method utilizes the transformatics concept of summarizing arbitrary sequences by their [proposed] \textbf{sequence characteristic} and consequently, their \textbf{modal sequence statistic}. However, as we see in the constraints and specification of that generator-transformer, the other option is to compute the solution using keys based on just the modal sequence statistics of the query and the target sequences in $\Theta^n$.
+ Computing a hashkey based on a G$\ddot{o}$del number is just one approach to the optimal way to implement a sequence lookup mechanism with \textbf{\hyperref[TRANSFSEQLOOKUP]{Transformer \ref{TRANSFSEQLOOKUP}}}. However, even that method utilizes the transformatics concept of summarizing arbitrary sequences by their [proposed] \textbf{sequence characteristic} and consequently, their \textbf{modal sequence statistic}. However, as we see in the constraints and specification of that generator-transformer, the other option is to compute the solution using keys based on just the modal sequence statistics of the query and the target sequences in $\Theta^n$.
 
+
+%---refs fixed up to this point...
 
 \chapter{The Mathematics of Genome Sequencing: Sequence Alignment, The Modal Sequence, The Sequencing Machine and the Identifier Genome Sequence Law}
 \label{SECMATHSEQ}
