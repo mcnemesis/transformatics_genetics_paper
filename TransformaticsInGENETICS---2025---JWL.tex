@@ -100,7 +100,8 @@
 
 % for highlighting text
 \usepackage{xcolor, soul}
-\definecolor{highcolor}{rgb}{0,255,255} %a color for background, that is friendly on black text foreground
+%\definecolor{highcolor}{rgb}{0,255,255} % our default hl color for background, friendly on black text foreground
+\definecolor{highcolor}{rgb}{255,0,255} %a accent background color, must be friendly on black text foreground
 \sethlcolor{highcolor}
 
 
@@ -167,9 +168,10 @@ The friendly, 20th century philosopher, \textbf{Alan Watts}, \small such a fathe
 
 
 \chapter{Preface}
+\label{SECPREFACE}
 
 \begin{quotation}
-\noindent \texttt{Jung restored the colour in science, and made me cherish the mind in new ways...}\\
+\noindent \texttt{Jung restored the \hl{colour} in science, and made me cherish the mind in new ways...}\\
 \texttt{And that in exercising our will we might become aware of the divine in us and thus make glory manifest. God is not asleep in us!}\\
 \hspace*{\fill} --- \textbf{J. Willrich Lutalo}, \textit{Shrines of The Free Men}, 2018\cite{shrinesjwl}
 \end{quotation}
@@ -188,8 +190,9 @@ Despite not having been funded by any one or any particular organization, the au
 
 
 % Title for the section
-\chapter*{List of Abbreviations}
+\chapter*{List of ACRONYMS}
 \addcontentsline{toc}{chapter}{List of Abbreviations}
+\label{CHAPACRONYMNS}
 
 % Longtable for abbreviation list
 \begin{longtable}{p{3cm} p{12cm}}
@@ -320,6 +323,18 @@ For example, by borrowing a useful DNA-as-library metaphor from Venville et al\c
 So, with that introduction clearing up much of the basic genetics nomenclature and concepts that I shall use in the rest of this work, we then dive into the meat of our undertaking as laid out in the next section.
 
 \subsection{How to Navigate the Monograph}
+\label{SECHOWTONAV}
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\LARGE
+\textbf{This Book is \hyperref[SECHOWTONAV]{Navigable}:}\\
+
+To ease and leverage meaningful cross-referencing across the chapters --- including extension materials in the appendix chapters, there is substantial employment of \textbf{emboldened}, typed, named, numbered and interactive\footnote{Every such link, when encountered in the electronic or digital edition of this book, is \hyperref[SECHOWTONAV]{clickable}, and when clicked, shall automatically jump to the location in the book where that reference points. For paper-printed or non-interactive reading experiences, the type (in form of a guiding concept name: \textbf{Definition}, \textbf{Transformer}, \textbf{Theorem}, \textbf{Chapter},...) and a reference number (\textbf{1.2}, \textbf{B.3}, \textbf{8},...) can be combined to determine where it is in the book the referenced item is. Unfortunately, but not in future editions, this edition has no index yet.} references across the book. Where they occur in the text, such shall appear and behave as either this link to \textbf{\hyperref[CHAPACRONYMNS]{List of Acronymns}} or \textbf{\hyperref[TRANSFTELEP]{Transformer \ref{TRANSFTELEP}}}.
+
+\end{minipage}}
+\\
+\end{center}
 
 The necessary foundation concepts and nomenclature have been well introduced in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}} --- the previous section.
 
@@ -2296,10 +2311,6 @@ However, given that in reality it might not be exactly possible to exhaustively 
 \\
 \end{center}
 
-%---refs fixed up to this point...
-\hl{--- FINISHED PROOF-READING UP TO HERE}
-
-
 
 \chapter{Random Sequence Generators (RSGs)}
 \label{SECRSG}
@@ -2307,7 +2318,22 @@ However, given that in reality it might not be exactly possible to exhaustively 
 
 In many problems involving intelligent or non-linear processing of sequences, we might come across the need for either a random number, a random symbol or a random sequence of these, spanning some known/particular symbol set. This for example could be how we solve the problem: \textbf{Given the DNA symbol set $\psi_{DNA}$, how to generate a random DNA sequence of length n?}.
 
-So, to help solve such critical and fundamental problems once and for all, and in a generic, transformatic-way, we shall specify some fundamental stochastic generator machines and algorithms, and these can then be used to solve any specific problem of generating a random sequence of a specific length given some finite symbol set.
+So, to help solve such critical and fundamental problems once and for all, and in a generic, transformatic-way, we shall specify some \textbf{fundamental abstract machines} --- entropy sources being first and core, especially for the derivation of or construction of stochastic generator machines and/or algorithms. These can then be used to solve any specific problem of generating a random sequence of a specific length given some finite symbol set, and we can thus apply this to the generation of random na-Sequences.
+
+
+
+
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\textbf{Abstract Sequence Generation:}\\
+
+The ultimate purpose of this chapter though, is to give us both a mathematical formalism, but also a computational and ideological one, underlying the notion of abstract sequence generation --- especially where the purpose is to arrive at either truly random, or otherwise Gaussian sequences. 
+
+\end{minipage}}
+\\
+
+
+In the following sections then, starting with consideration of how to re-organize a room without taking anything out --- essentially, shuffling sequences; we shall construct and formalise a theoretical and computation implementation of  the \textbf{First Lu-Shuffle Algorithm}, but also other \textbf{abstract computing systems} --- sequence transformers all of them, that culminate in the specification of a \textbf{Random Sequence Generator}, \textbf{RSG}, as specified and implemented in \textbf{\hyperref[SECRSGFUNC]{Section \ref{SECRSGFUNC}}}.
 
 \section{The First Lu-Shuffle Algorithm (FLSA)}
 
@@ -2368,11 +2394,11 @@ $\qed$
 \subsection{Examples of Applying FLSA}
 \label{SECAPPLYFLSA}
 
-Using the basic, yet important sequence, $\psi_{10}$ (refer to \textbf{\hyperref[EQHYPDNASS]{Equation \ref{EQHYPDNASS}}}) as the input, especially given we leverage such in many aspects of applied transformatics and genetics engineering in this work, we see hereafter, a trace of the accurate \textbf{invariant}\footnote{Basically, for a given particular input sequence such as $\psi_{10}$, we shall \textbf{always} get the same exact resultant sequence for a particular $k$, so that, it feels as though the algorithm randomizes the input sequence, but in a predictable/derivable manner, and this has its relevance in many problems as we shall come to appreciate.} variants (actually, computed and predictable anagrams) of that set --- all of them \textbf{base-10 o-SSIs}\cite{ossipaper}, when it is shuffled using \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} and various \textbf{meaningful values}\footnote{I say ``meaningful" because, given how the algorithm works --- shuffling the input sequence by partitioning it up into chunks and then swapping their order, the partitioning index, which determines where the swapping starts, \textbf{would not make much sense} for values greater than $\frac{\invpi(\Theta)}{2}$, and for values less than $1$. Also, the algorithm doesn't make sense for any value of $k$ when $\invpi(\Theta) \leq 1$. Luckily, the algorithm as specified in \hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}} is designed so that it checks and applies the necessary remedies for meaningless values of $k$ --- such as setting $k = k \mod n$ for $k > n$ and $k=1$ for $k < 1$. It returns $\Theta$ unmodified for cases where $\invpi(\Theta) \leq 1$.} of the \textbf{initial partition index} $k$, starting from 1 and \textit{preferably} up to $\frac{n}{2} = 5$ --- we have also included values up to $n-1$, just to drive the point home, that the algorithm shall return a result with some \textbf{k-grams}\footnote{The more common term is usually ``n-grams"} of up to $k = \frac{n}{2}$ in the result for any $k > \frac{n}{2}$ --- those large unshuffled subsequences might spoil the randomness of the resultant as you shall see when inspecting the examples we present. 
+Using the basic, yet important sequence, $\psi_{10}$ (refer to \textbf{\hyperref[EQHYPDNASS]{Equation \ref{EQHYPDNASS}}}) as the input, especially given we leverage such in many aspects of applied transformatics and genetics engineering in this work, we see hereafter, a trace of the accurate \textbf{invariant}\footnote{Basically, for a given particular input sequence such as $\psi_{10}$, we shall \textbf{always} get the same exact resultant sequence for a particular $k$, so that, it feels as though the algorithm randomizes the input sequence, but in a predictable/derivable manner, and this has its relevance in many problems as we shall come to appreciate.} variants (actually, computed and predictable anagrams) of that set --- all of them \textbf{base-10 o-SSIs}\cite{ossipaper}, when it is shuffled using \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} and various \textbf{meaningful values}\footnote{I say ``meaningful" because, given how the algorithm works --- shuffling the input sequence by partitioning it up into chunks and then swapping their order, the partitioning index, which determines where the swapping starts, \textbf{would not make much sense} for values greater than $\frac{\invpi(\Theta)}{2}$, and for values less than $1$. Also, the algorithm doesn't make sense for any value of $k$ when $\invpi(\Theta) \leq 1$. Luckily, the algorithm as specified in \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} is designed so that it checks and applies the necessary remedies for meaningless values of $k$ --- such as setting $k = k \mod n$ for $k > n$ and $k=1$ for $k < 1$. It returns $\Theta$ unmodified for cases where $\invpi(\Theta) \leq 1$.} of the \textbf{initial partition index} $k$, starting from 1 and \textit{preferably} up to $\frac{n}{2} = 5$ --- we have also included values up to $n-1$, just to drive the point home, that the algorithm shall return a result with some \textbf{k-grams}\footnote{The more common term is usually ``n-grams"} of up to $k = \frac{n}{2}$ in the result for any $k > \frac{n}{2}$ --- those large unshuffled subsequences might spoil the randomness of the resultant as you shall see when inspecting the examples we present. 
 
 \begin{figure}[H]
   \begin{center}
-\Large
+\LARGE
 \begin{verbatim}
 GIVEN s=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 k=0 | s=[9, 7, 4, 0, 5, 3, 8, 2, 1, 6]
@@ -2395,7 +2421,7 @@ k=9 | s=[9, 5, 6, 7, 8, 0, 1, 2, 3, 4]
 
 \begin{figure}[H]
   \begin{center}
-\Large
+\LARGE
 \begin{verbatim}
 
 GIVEN s=[1, 2]
@@ -2567,7 +2593,7 @@ k = k_0 \mod n
 
 		\begin{equation}
 		\label{EQIPI}
-		\Theta^*,k^* = \text{lu\_shuffler\_a}(\Theta, n - k)
+		\Theta^*,k^* = \text{flsa}(\Theta, n - k)
 		\end{equation}
 		
 		\textbf{IGNORE} $k^*$, while $\Theta^*$ becomes the \textbf{initial shuffled resultant sequence} for the rest of this algorithm.
@@ -2611,13 +2637,28 @@ So, important to note that \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLU
 
 
 
-Using the same exact sequences, and in the same order as we utilized in \textbf{\hyperref[SECAPPLYFLSA]{Section \ref{SECAPPLYFLSA}}}, we shall come to appreciate readily, not just that the two algorithms, though they perform similar functions, produce \textbf{different} results for the same exact sequence and same exact partitioning index parameter --- \textbf{IMPORTANT:} However, they are both \textbf{consistent} --- the same input sequence with a particular $k$ shall always produce the expected shuffled sequence post-transform.
+Using the same exact sequences, and in the same order as we utilized in \textbf{\hyperref[SECAPPLYFLSA]{Section \ref{SECAPPLYFLSA}}}, we shall come to appreciate readily, not just that the two algorithms, though they perform similar functions, produce \textbf{different} results for the same exact sequence and same exact partitioning index parameter.
+
+
+\vspace{1em}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\textbf{IMPORTANT: The Consistency of FLSA and SLSA}\\
+
+Note that, though both the \textbf{\hyperref[ALGLUSHUFFLEA]{FLSA}} and \textbf{\hyperref[ALGLUSHUFFLEB]{SLSA}}  randomize any sequence they are given in their respective results/outputs, and yet they are both \textbf{consistent} --- the same input sequence with a particular $k$ shall always produce the same exact expected shuffled sequence post-transform. 
+
+\end{minipage}}
+\\
+
+
+
+
 
 Note that \textbf{\hyperref[FIGTRACESLSA]{Figure \ref{FIGTRACESLSA}}} corresponds to the earlier table in \textbf{\hyperref[FIGTRACEFLSA]{Figure \ref{FIGTRACEFLSA}}}.
 
 \begin{figure}[H]
   \begin{center}
-\Large
+\LARGE
 \begin{verbatim}
 GIVEN s=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 k=0 | s=[4, 2, 8, 9, 0, 7, 3, 6, 5, 1]
@@ -2640,7 +2681,7 @@ k=9 | s=[6, 3, 8, 2, 1, 9, 7, 4, 0, 5]
 
 \begin{figure}[H]
   \begin{center}
-\Large
+\LARGE
 \begin{verbatim}
 
 GIVEN s=[1, 2]
@@ -2773,7 +2814,7 @@ In the previous sections we have considered the matter of taking a particular sy
 Given that we already have the necessary source symbol sets, the matter for how to generate a single \textbf{random letter} from a particular symbol set shall be as follows --- first, we shall merely define an abstract machine using the notation and semantics of transformatics.\\
 
 
-%\vspace{5cm}
+
 \fbox{
 \begin{minipage}{0.9\textwidth}
 
@@ -2797,7 +2838,7 @@ but in a more robust case, we can also randomize the symbol set to be used in ge
 }
 \item \textbf{USYMBOLSET}$(\Omega)$ is a function that reduces the input argument $\Omega$, which is expected to be a sequence of some symbols --- unique or not, to its \textbf{unspecific symbol set} --- $\psi(\Omega)$\footnote{See \textbf{Definition 4} in \cite{ossipaper}}.
 \item \textbf{PROTRACT}$(\Theta, n)$ is a transformation of the sequence of [possibly] distinct $n$ symbols from the source sequence $\Theta$ such that the resultant sequence is of length\footnote{But just like the first parameter might be any sequence of symbols, also, the second parameter could be any positive number, and by which, the function shall \textbf{either shrink/truncate or grow/multiply} the input sequence to the required \textbf{multiplier} size} $k \times 2 \times \invpi(\psi_y)$ and spans the source sequence symbol set\footnote{As you shall see in the sample outputs and as well as the actual implementation source code for our \textbf{RSG}, the choice of the protraction parameter $k \times 2 \times \invpi(\psi_y)$, is both to be sensitive to the length of the input sequence's unique symbol set, but also the size of final output required --- both factors influence the quality of the result in terms of randomness/entropy.}.
-\item  \textbf{SHUFFLE}$(\Theta)$ is a function such as a generalization of \textbf{lu\_shuffler\_b($\cdot$)} from \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLUSHUFFLEB}}} that returns a shuffled/randomized instance of any input sequence such as $\Theta$ that it is given.
+\item  \textbf{SHUFFLE}$(\Theta)$ is a function such as a generalization of \textbf{slsa($\cdot$)} from \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLUSHUFFLEB}}} that returns a shuffled/randomized instance of any input sequence such as $\Theta$ that it is given.
 \item \textbf{SELECT}$(x, \Theta)$ is a function that can return the first $x$ terms from $\Theta$ as the result of its invocation for some $x \leq \invpi(\Theta)$.
 \end{itemize}
 $\qed$
@@ -2809,7 +2850,7 @@ So, with the essential mathematics out of the way as depicted in \textbf{\hyperr
 
 \subsection{The USYMBOLSET Function}
 
-We shall go bit by bit. So first, here is what the \textbf{USYMBOLSET} function looks like in Python:
+We shall go bit by bit. So, first, here is what the \textbf{USYMBOLSET} function looks like in Python:
 
 \begin{figure}[H]
   \begin{center}
@@ -2854,7 +2895,7 @@ def usymbolset(s):
 
 \subsection{The PROTRACT Function}
 
-We shall go bit by bit. So first, here is what the \textbf{PROTRACT} function looks like in Python:
+We shall go bit by bit. Let's begin by looking at what the \textbf{PROTRACT} function looks like in Python:
 
 \begin{figure}[H]
   \begin{center}
@@ -2878,7 +2919,7 @@ def protract(s,n):
     while i < target_n:
         resultant = resultant + s
         i += 1
-    return resultant[:n]
+    return resultant[:n] # could potentially, also compress
 
 #---[ TEST PROTRACT ]
 # s = [0,1,2,3,4,5,6,7,8,9], n = 3 --> [0,1,2]
@@ -2888,7 +2929,7 @@ def protract(s,n):
 #print(result)
 \end{lstlisting}
   \end{center}
-  \caption{The \textbf{PROTRACT}$(\psi_y, 2x)$ sequence generator-transformer implemented using Python}
+  \caption{The \textbf{PROTRACT}$(\Theta, n)$ sequence generator-transformer implemented using Python}
 \end{figure}
 
 
@@ -2902,9 +2943,9 @@ The critically important function is \textbf{RNG}$(ll,ul)$ that essentially take
 ll \leq n \leq ul
 \end{equation}
 
-It is such a CRITICALLY important routine(see author's earlier work on the matter\cite{lnspaper}), however, for the interests of keeping things simple, for now, we shall settle with a basic implementation that only relies on the \textbf{System Time} functions as our \textbf{source of entropy}\footnote{While, and perhaps in the near future, we continue to seek for theory and practical ways to generate entropy algorithmically --- which might be \textit{futile}, or perhaps implement our own entropy generators interfacing with entropy sources in nature?}.
+It is such a CRITICALLY important routine(see author's earlier work on the matter\cite{lnspaper}), however, for the interests of keeping things simple, for now, we shall settle with a basic implementation that only relies on the \textbf{System Time} functions as our \textbf{source of entropy}\footnote{\textbf{FUTURE WORK}: While, and perhaps in the near future, we continue to seek for theory and practical ways to generate entropy algorithmically --- which might be \textit{futile}, or perhaps implement our own entropy generators interfacing with entropy sources in nature?}.
 
-So, without delving into formally specifying our \textbf{Random Number Generator}, \textbf{RNG} here, the associated definition of this utility as implemented using Python is as follows:
+So, without delving into formally specifying our \textbf{Random Number Generator}, \textbf{RNG}, here, the associated definition of this utility as implemented using Python is as follows:
 
 \begin{figure}[H]
   \begin{center}
@@ -3004,7 +3045,9 @@ def shuffle(s):
   \caption{The \textbf{SHUFFLE}$(\Theta)$ sequence randomizer implemented using Python}
 \end{figure}
 
-Definitely, just like we didn't want to implement our own basic random number generator (see \textbf{Line\#10} and \textbf{Line\#12} in \textbf{\hyperref[LST_SHUFFLE]{Listing \ref{LST_SHUFFLE}}}), we could also have used an external shuffle algorithm --- such as with the standard python random utility in \texttt{s=[1,2,3];rng.shuffle(s);s} that might return \texttt{[3,1,2]} for example, but we chose to use our own shuffle algorithm as developed in the previous sections (see \textbf{Line\#11} and \textbf{Line\#13} that invoke the \textbf{SLSA}, \textbf{lu\_shuffler\_b($\cdot$)}, defined in \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}}), so those who need to cut dependencies might pick a leaf from our solution, or perhaps port our algorithms to any programming language. Also, unlike invoking  \textbf{lu\_shuffler\_b($\Theta, k$)} directly, the provided sequence randomizer utility function takes care of generating random parameters to the \textbf{Lu Shuffle Algorithm}, by randomly picking legitimate values of $k$ from 1 to $\invpi(\Theta)$, so that the \textbf{SHUFFLE} function can be invoked without having to explicitly pass any arguments other than just the sequence one wishes to have shuffled.
+Definitely, just like we didn't \textit{originally} want to implement our own basic random number generator (see \textbf{Line\#8} and \textbf{Line\#10} in \textbf{\hyperref[LST_SHUFFLE]{Listing \ref{LST_SHUFFLE}}}), we could also have used an external shuffle algorithm --- such as with the standard python random utility in \texttt{s=[1,2,3];rng.shuffle(s);s} that might return \texttt{[3,1,2]} for example, but we chose to use our own shuffle algorithms as developed in the previous sections (see \textbf{Line\#9} and \textbf{Line\#11} that invoke , first, the \textbf{FLSA}, and then the \textbf{SLSA}, \textbf{lu\_shuffler\_b($\cdot$)}, defined in \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}}), so those who need to cut dependencies might pick a leaf from our solution, or perhaps port our algorithms to any programming language as is. 
+
+Also, unlike invoking  \textbf{lu\_shuffler\_b($\Theta, k$)} directly, the provided sequence randomizer utility function takes care of generating random parameters to the \textbf{Lu Shuffle Algorithm}, by randomly picking legitimate values of $k$ from 1 to $\invpi(\Theta)$, so that the \textbf{SHUFFLE} function can be invoked without having to explicitly pass any arguments other than just the sequence one wishes to have shuffled.
 
 Also, note that \textbf{\hyperref[LST_SHUFFLE]{Listing \ref{LST_SHUFFLE}}}, like the ones we have looked at before, provides some (commented out) code that might give one an idea how to use the function, or how the potential results of invoking it with certain sequences might look like.
 
@@ -3045,8 +3088,11 @@ def select(n,s):
 
 
 \subsection{The RSG Function}
+\label{SECRSGFUNC}
 
-Having seen how to implement the individual essential components that make the \textbf{Random Symbol Generator (RSG)}, $RSG(k,\Theta_n)$ defined in \textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}}, we can then go ahead and actually implement a re-usable, and genetic random sequence or even random symbol generator. As with the sample codes offered in this section, we shall merely default to implementing a Python-compliant function, but the semantics and code could of course be adapted for other programming languages by interested engineers, students and researchers.
+Having seen how to implement the individual essential components that make the \textbf{Random Symbol Generator (RSG)}, $RSG(k,\Theta_n)$, defined in \textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}}, we can then go ahead and actually implement a re-usable, and generic random sequence  generator or even a random symbol generator. 
+
+As with the sample codes offered in earlier sections of thic chapter, we shall merely default to implementing a Python-compliant function, but the semantics and code could of course be adapted for other programming languages by interested engineers, students and researchers.
 
 \begin{figure}[H]
   \begin{center}
@@ -3093,7 +3139,9 @@ def rsg(n,s):
   \caption{The \textbf{RSG}$(n,\Theta)$ random sequence generator function implemented using Python}
 \end{figure}
 
-Of course, as shown in the final comments in the \textbf{RSG} code listing in \textbf{\hyperref[LST_RSG]{Listing \ref{LST_RSG}}}, we can use that basic function to \textbf{generate random ANYTHING!} It could be used to generate random numbers --- whether individual digits such as 1, 5 or 0,.. but also sequences or n-grams of them --- just depending on what kind of sequence we pass in as the source, how long we wish the output to be and what we do with the result. 
+Of course, as shown in the final comments in the \textbf{RSG} code listing in \textbf{\hyperref[LST_RSG]{Listing \ref{LST_RSG}}}, we can use that basic function to \textbf{generate random ANYTHING!} 
+
+It could be used to generate random numbers --- whether individual digits such as 1, 5 or 0,.. but also sequences or n-grams of them --- just depending on what kind of sequence we pass in as the source, how long we wish the output to be and what we do with the result. 
 
 The \textbf{RSG} could be used to compute long DNA sequences using a clever invocation such as:\\
 
@@ -3107,7 +3155,7 @@ N=3*200; print(`'.join(str(c) for c in rsg(N,[`A',`T',`C',`G'])));
 \end{minipage}}
 \\
 
-As shown in the following listing, does indeed perform impressively!
+As shown in the following listing, that little code-golf snippet does indeed perform impressively well!
 
 \begin{figure}[H]
   \begin{center}
@@ -3132,6 +3180,9 @@ GTGACCACTGCTTACATCCTCGATTCTATGTTCGCTACACGCATCATAACT
 
 The sheer significance of having a properly working generator-transformer such as the \textbf{RSG} is difficult --- almost impossible, to explain. 
 
+
+%---refs fixed up to this point...
+\hl{--- FINISHED PROOF-READING UP TO HERE}
 
 
 \chapter{Gene Expression in Living Organisms Leveraging Genetic Code (DNA $\rightarrow mRNA \rightarrow Protein \rightarrow$ Organism)}
@@ -3440,7 +3491,7 @@ And thus, we can finally merely call any machine capable of implementing the pro
     \begin{figure}[H]
       \centering
       \includegraphics[width=0.9\textwidth]{resources/images/lugenome_expression.jpg}\\
-      \caption{A blackboard snapshot from the author's \textbf{Blackboard Adventures} (\url{https://t.me/bclectures}) series on Telegram, on \textbf{20$^{th}$ AUG, 2025}, and featuring two \textbf{LGES} example genome expressions, one for $218$, the other for $4_{pf}\otimes6_{oz}$}
+      \caption{A blackboard snapshot from the author's \textbf{Blackboard Adventures} (\url{https://t.me/bclectures}) series on Telegram, on \textbf{20$^{th}$ AUG, 2025}, depicting two \textbf{LGES} example genome expressions, one for $\langle 218 \rangle$, the other for $4_{pf}\otimes6_{oz}$}
       \label{FIGBCLECTURE}
     \end{figure} \\
     \cline{1-1} % Bottom border only
@@ -4285,7 +4336,6 @@ We have its corresponding $\Omega$-form expression in \textbf{\hyperref[TRANSSEQ
 
 From that, we can leverage the pre-rendering calculus we have already encountered, well-applied in \textbf{\hyperref[TRANSGENSEQHiFinelle]{Transformation \ref{TRANSGENSEQHiFinelle}}}, and so that we can then readily apply \textbf{\hyperref[ALGCOZINPLATOEXT]{Algorithm \ref{ALGCOZINPLATOEXT}}} to $\Theta_{ml}$. The necessary derivation of the corresponding genome expression shall be as in: 
 
-
 \begin{center}
 \fbox{
 \begin{minipage}{\textwidth}
@@ -4889,6 +4939,7 @@ That said, note that we started this work with a photograph of a pineapple ready
 
 
 \chapter{Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}
+\label{SECFUTDIRECT}
 
 
 \begin{defn}[The Transformatics of \textbf{Teleportation}]
@@ -4922,7 +4973,7 @@ $\qed$
 \end{defn}
 
 
-Because this volume is about how we might apply transformatics in GENETICS, and yet the underlying \textit{original} intent was to also explore how to further transformatics as its own line of inquiry, not just in Genetics, but also in other sciences and perhaps even the arts(?), it shall make sense to add to what has already been discussed and shared in the rest of this book, with a sharing of a recent excerpt from the author's psychoanalytic notes --- because, like we mentioned in the preface of this work, Carl Jung's ideas\cite{jung1964symbols} on leveraging dream-analysis to further not just our understanding of ourselves but also of the world, did have such a great impact on the author over the years, it wouldn't make sense closing this book without sharing an aspect about how dreaming and Jung's methods have helped in making much of this work possible, as well as how it might help define the future directions of our further research and studies in relation to the current subject. 
+Because this volume is about how we might apply transformatics in GENETICS, and yet the underlying \textit{original} intent was to also explore how to further transformatics as its own line of inquiry, not just in Genetics, but also in other sciences and perhaps even the arts(?), it shall make sense to add to what has already been discussed and shared in the rest of this book, with a sharing of a recent excerpt from the author's psychoanalytic notes --- because, like we mentioned in the \textbf{\hyperref[SECPREFACE]{Preface}} of this work, Carl Jung's ideas\cite{jung1964symbols} on leveraging \hl{dream-analysis} to further not just our understanding of ourselves but also of the world, did have such a great impact on the author over the years, it wouldn't make sense closing this book without sharing an aspect about how dreaming and Jung's methods have helped in making much of this work possible, as well as how it might help define the future directions of our further research and studies in relation to the current subject. 
 
 Talking of which, the following is a verbatim excerpt, and is accompanied by a painting --- ``Arrival of the Anunnaki"\footnote{Image credit from author's Art Portfolio: \url{https://www.deviantart.com/nemesisfixx/art/Arrival-of-the-Anunnaki-inverted-942888530}}, also by the author, and part of their \textbf{Zermelo Frankael Dream Collection}\footnote{To get an idea what was in the other paintings in that collection from 2022, checkout \url{https://www.deviantart.com/nemesisfixx/art/The-Zermelo-Frankael-Dream-Collection-II-942887985} and \url{https://www.deviantart.com/nemesisfixx/art/Best-of-JWL-Art-from-2022-940119085}} most of whose art pieces have since been either sold or given out as souvenirs to friends and family.
 
