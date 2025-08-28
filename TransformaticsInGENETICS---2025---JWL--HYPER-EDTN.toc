@@ -65,7 +65,7 @@
 \contentsline {chapter}{\numberline {11}Conclusion}{129}{chapter.11}%
 \contentsline {chapter}{Appendix \numberline {A}Other Functions of DNA Beyond Protein Synthesis}{135}{appendix.a.A}%
 \contentsline {chapter}{Appendix \numberline {B}Origins of the OZIN Cipher}{137}{appendix.a.B}%
-\contentsline {chapter}{Appendix \numberline {C}Computing Platonic-Form Encoding Keys (PFEKs), $\boxed {\psi _\Omega }_m$ for a Particular na-Sequence $\Theta $ or $m$}{143}{appendix.a.C}%
+\contentsline {chapter}{Appendix \numberline {C}Computing Platonic-Form Encoding Keys (PFEKs), $\boxed {\psi _\Omega }_m$ for a Particular na-Sequence $\Theta $ and some $m$}{143}{appendix.a.C}%
 \contentsline {subsection}{\numberline {C.0.1}Example of Resolving PFA Components, $\boxed {\omega _i^*}$}{145}{subsection.a.C.0.1}%
 \contentsline {chapter}{Appendix \numberline {D}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{149}{appendix.a.D}%
 \contentsline {subsection}{\numberline {D.0.1}Examples of Complete Lu-Genome Expressions}{153}{subsection.a.D.0.1}%
