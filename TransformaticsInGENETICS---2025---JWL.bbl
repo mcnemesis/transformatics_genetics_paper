@@ -255,12 +255,6 @@ Wikipedia contributors.
 \newblock Accessed August 2, 2025. Provides codon-to-amino acid mappings and
   genetic code/name tables.
 
-\bibitem{Sato1999ArabidopsisChloroplastGenome}
-Shusei Sato, Yasukazu Nakamura, Takakazu Kaneko, Erika Asamizu, and Satoshi
-  Tabata.
-\newblock Complete structure of the chloroplast genome of arabidopsis thaliana.
-\newblock {\em DNA Research}, 6(5):283--290, 1999.
-
 \bibitem{illingworth1996computing}
 Valerie Illingworth, editor.
 \newblock {\em Oxford Dictionary of Computing}.
@@ -398,6 +392,47 @@ Joseph~Willrich Lutalo.
 \newblock {\em Academia.edu}, 2024.
 \newblock \textit{Accessible via}
   \url{https://www.academia.edu/123296302/Numbers\_from\_Arbitrary\_Text\_Mapping\_Human\_Readable\_Text\_to\_Numbers\_in\_Base\_36}.
+
+\bibitem{alberts2002molecular}
+Bruce Alberts, Alexander Johnson, Julian Lewis, Martin Raff, Keith Roberts, and
+  Peter Walter.
+\newblock {\em Molecular Biology of the Cell}.
+\newblock Garland Science, 2002.
+\newblock Accessible via
+  \url{https://archive.org/details/molecularbiology0004albe}.
+
+\bibitem{bird2007perceptions}
+Adrian Bird.
+\newblock Perceptions of epigenetics.
+\newblock {\em Nature}, 447(7143):396--398, 2007.
+\newblock Accessible via \url{https://www.nature.com/articles/nature05913.pdf}.
+
+\bibitem{friedberg2006dna}
+Errol~C Friedberg, Graham~C Walker, Wolfram Siede, Richard~D Wood, Roger~A
+  Schultz, and Tom Ellenberger.
+\newblock {\em DNA Repair and Mutagenesis}.
+\newblock ASM Press, 2006.
+\newblock Accessible via
+  \url{https://archive.org/details/dnarepairmutagen0000unse}.
+
+\bibitem{gilbert2010developmental}
+Scott~F Gilbert.
+\newblock {\em Developmental Biology}.
+\newblock Sinauer Associates, 2010.
+\newblock Accessible via \url{https://archive.org/details/isbn_9780878935581}.
+
+\bibitem{king1975noncoding}
+Mary-Claire King and Allan~C Wilson.
+\newblock Evolution at two levels in humans and chimpanzees.
+\newblock {\em Science}, 188(4184):107--116, 1975.
+\newblock Accessible via \url{https://www.jstor.org/stable/pdf/1739875.pdf}.
+
+\bibitem{jacob1977evolution}
+François Jacob.
+\newblock Evolution and tinkering.
+\newblock {\em Science}, 196(4295):1161--1166, 1977.
+\newblock Accessible via
+  \url{https://williams.chemistry.gatech.edu/course_Information/6572/papers/jacob_evolution_tinkering_1977.pdf}.
 
 \bibitem{lutalo_2025_ogf}
 Joseph~Willrich Lutalo.

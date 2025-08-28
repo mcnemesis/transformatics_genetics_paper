@@ -1,7 +1,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces In the course of writing this work, an experiment to grow pineapples from the pineapple fruit tops of pineapples normally bought from nearby marketplace (\textbf {Garuga/Bugabo-Bukaaya}) yielded results! Here we see the first successful harvest of a pineapple from our home garden (at \textbf {Nuchwezi Research}). But also, this case inspired part of the discussion in \textbf {\hyperref [SEC4]{Chapter \ref {SEC4}}} about how in real genome expression systems, the organism expressed from genetic code somewhat still includes the genetic code in the manifested organism as some kind of affix --- a prefix (in leaves for example) or suffix (roots), from which the original organism (or the same exact genome) might be later reproduced!}}{4}{figure.caption.10}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces A basic diagram of the chemical structure of DNA base-pairs from \cite {wikipedia_basepair}}}{6}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces A basic diagram of the chemical structure of DNA base-pairs, sourced from \cite {wikipedia_basepair}}}{6}{figure.caption.12}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -29,11 +29,11 @@
 \contentsline {figure}{\numberline {8.17}{\ignorespaces The \textbf {RSG}$(n,\Theta )$ random sequence generator function implemented using Python}}{82}{figure.caption.34}%
 \contentsline {figure}{\numberline {8.18}{\ignorespaces A Random DNA Sequence of exactly 200 random codons as generated using our \textbf {RSG}$(n,\Theta )$ random sequence generator algorithm.}}{83}{figure.caption.35}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces An illustration of the gene translation process in a cell via protein-factories known as ribosomes\cite {geeksforgeeks2024protein}}}{85}{figure.caption.37}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces An illustration of the gene translation process in a cell via protein-factories known as ribosomes, and which was sourced from \cite {geeksforgeeks2024protein}}}{85}{figure.caption.37}%
 \contentsline {figure}{\numberline {9.2}{\ignorespaces \textbf {Flow-Chart summarizing the Ribosome-based Protein-Synthesis Process in a Living Cell}}}{91}{figure.caption.40}%
 \contentsline {figure}{\numberline {9.3}{\ignorespaces \textbf {The RIBOSOME State Machine}}}{92}{figure.caption.41}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces A blackboard snapshot from the author's \textbf {Blackboard Adventures} (\url {https://t.me/bclectures}) series on Telegram, on \textbf {20$^{th}$ AUG, 2025}, depicting two \textbf {LGES} example genome expressions, one for $\langle 218 \rangle $, the other for $4_{pf}\otimes 6_{oz}$}}{97}{figure.caption.43}%
+\contentsline {figure}{\numberline {10.1}{\ignorespaces A blackboard snapshot from the author's \textbf {Blackboard Adventures} (\url {https://t.me/bclectures}) series on Telegram, on \textbf {20$^{th}$ AUG, 2025}, depicting two \textbf {LGES} example genome expressions, one for $\overset {>}{\Theta } = \langle 218 \rangle $, the other for $4_{pf}\otimes 6_{oz}$}}{97}{figure.caption.43}%
 \contentsline {figure}{\numberline {10.2}{\ignorespaces The OZIN Cipher\cite {lutalo_2025_ozin}, a mapping from Decimal Symbols (our base-$\Omega $) to Symbols for Intermediate Genetic Code.}}{99}{figure.caption.44}%
 \contentsline {figure}{\numberline {10.3}{\ignorespaces The equivalent OZIN expression of the hypothetical Euler Virus genome sequence.}}{100}{figure.caption.45}%
 \contentsline {figure}{\numberline {10.4}{\ignorespaces The equivalent OZIN expression of the HiFinelle genome sequence.}}{100}{figure.caption.46}%
@@ -49,14 +49,15 @@
 \contentsline {figure}{\numberline {10.14}{\ignorespaces The \textbf {x-LGES form rendering} of the sequence $\Theta _{mlla}$, depicting its complete \textbf {FGE} with HEAD, BODY and ROOT segments.}}{125}{figure.caption.56}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces An excerpt from architectural design notes by the author from early days of his home-based research laboratory. In this note, we also get to see an idea similar to how gene expressions are actually a chain of glyphs that, as in our \textbf {LGES} protocols, are depicted as structures chained to each other along a \textit {backbone structure} symbolically depicted as a line (curved lines in this case). Copyrights due to author and Nuchwezi Research Labs.}}{134}{figure.caption.57}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces The OZIN Cipher in use. An excerpt from the Church of Dance Eternal OGF}}{136}{figure.caption.58}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces The OZIN Cipher in use. An excerpt from author's research notes (circa 2019) on developing a cryptographic system leveraging a dial mechanism. Copyrights due to author and Nuchwezi Research Labs.}}{137}{figure.caption.59}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces An example of a single \textbf {PFA} component equivalent to the configuration \textbf {$8_{pf} \otimes 6_{oz}$}.}}{143}{figure.caption.62}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces An excerpt from architectural design notes by the author from early days of his home-based research laboratory. In this note, we also get to see an idea similar to how gene expressions are actually a chain of glyphs that, as in our \textbf {LGES} protocols, are depicted as structures chained to each other along a \textit {backbone structure} symbolically depicted as a line (curved lines in this case). Copyrights due to author and Nuchwezi Research Labs.}}{136}{figure.caption.57}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces The OZIN Cipher in use. An excerpt from the Church of Dance Eternal OGF}}{138}{figure.caption.58}%
+\contentsline {figure}{\numberline {B.3}{\ignorespaces The OZIN Cipher in use. An excerpt from author's research notes (circa 2019) on developing a cryptographic system leveraging a dial mechanism. Copyrights due to author and Nuchwezi Research Labs.}}{139}{figure.caption.59}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{3}$ genome sequence (from \textbf {Equation \ref {EQDNEXA}})}}{149}{figure.caption.63}%
-\contentsline {figure}{\numberline {C.2}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{veuler}$ (Euler Virus) genome sequence (from \textbf {Equation \ref {EQGFEEVIRUS_ORIG}})}}{150}{figure.caption.64}%
-\contentsline {figure}{\numberline {C.3}{\ignorespaces The \textbf {alternative rendering} of the same sequence as $\Omega _{veuler}$.}}{151}{figure.caption.65}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces An example of a single \textbf {PFA} component equivalent to the configuration \textbf {$8_{pf} \otimes 6_{oz}$}.}}{145}{figure.caption.62}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces The surreal painting, ``Arrival of the Anunnaki", by Joseph W. Lutalo, as part of their 2022 \textbf {The Zermelo Frankael Dream Collection} that was first exhibited at Ndugu Art Gallery then in Entebbe Town.}}{155}{figure.caption.66}%
+\contentsline {figure}{\numberline {D.1}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{3}$ genome sequence (from \textbf {Equation \ref {EQDNEXA}})}}{151}{figure.caption.63}%
+\contentsline {figure}{\numberline {D.2}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{veuler}$ (Euler Virus) genome sequence (from \textbf {Equation \ref {EQGFEEVIRUS_ORIG}})}}{152}{figure.caption.64}%
+\contentsline {figure}{\numberline {D.3}{\ignorespaces The \textbf {alternative rendering} of the same sequence as $\Omega _{veuler}$.}}{153}{figure.caption.65}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces The surreal painting, ``Arrival of the Anunnaki", by Joseph W. Lutalo, as part of their 2022 \textbf {The Zermelo Frankael Dream Collection} that was first exhibited at Ndugu Art Gallery then in Entebbe Town.}}{157}{figure.caption.66}%

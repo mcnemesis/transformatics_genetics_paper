@@ -47,7 +47,7 @@
 \contentsline {subsection}{\numberline {8.3.7}The RSG Function}{81}{subsection.8.3.7}%
 \contentsline {chapter}{\numberline {9}Gene Expression in Living Organisms Leveraging Genetic Code (DNA $\rightarrow mRNA \rightarrow Protein \rightarrow $ Organism)}{85}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Protein Manufacturing Algorithm}{90}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Gene Expression in Living Things and for Bio-Automata via Ribosomes}{93}{section.9.2}%
+\contentsline {section}{\numberline {9.2}Gene Expression in Living Things and for Bio-Automata via Ribosomes}{94}{section.9.2}%
 \contentsline {chapter}{\numberline {10}Transformatics and Lu-Genome Expression System in Bio-Automata}{97}{chapter.10}%
 \contentsline {section}{\numberline {10.1}The Ozin Genetic Code Cipher}{99}{section.10.1}%
 \contentsline {subsection}{\numberline {10.1.1}$\Omega $-to-OZIN Genetic Code Transcription Rules}{101}{subsection.10.1.1}%
@@ -63,10 +63,11 @@
 \contentsline {subsection}{\numberline {10.4.2}Revisiting Numeric Sequences}{121}{subsection.10.4.2}%
 \contentsline {subsection}{\numberline {10.4.3}x-LGES applied to named DNA Sequences}{123}{subsection.10.4.3}%
 \contentsline {chapter}{\numberline {11}Conclusion}{127}{chapter.11}%
-\contentsline {chapter}{Appendix \numberline {A}Origins of the OZIN Cipher}{133}{appendix.a.A}%
-\contentsline {chapter}{Appendix \numberline {B}Computing Platonic-Form Encoding Keys (PFEKs), $\boxed {\psi _\Omega }_m$ for a Particular na-Sequence $\Theta $ or $m$}{139}{appendix.a.B}%
-\contentsline {subsection}{\numberline {B.0.1}Example of Resolving PFA Components, $\boxed {\omega _i^*}$}{141}{subsection.a.B.0.1}%
-\contentsline {chapter}{Appendix \numberline {C}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{145}{appendix.a.C}%
-\contentsline {subsection}{\numberline {C.0.1}Examples of Complete Lu-Genome Expressions}{149}{subsection.a.C.0.1}%
-\contentsline {chapter}{Appendix \numberline {D}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{153}{appendix.a.D}%
-\contentsline {chapter}{Colophon}{167}{appendix*.70}%
+\contentsline {chapter}{Appendix \numberline {A}Other Functions of DNA Beyond Protein Synthesis}{133}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}Origins of the OZIN Cipher}{135}{appendix.a.B}%
+\contentsline {chapter}{Appendix \numberline {C}Computing Platonic-Form Encoding Keys (PFEKs), $\boxed {\psi _\Omega }_m$ for a Particular na-Sequence $\Theta $ or $m$}{141}{appendix.a.C}%
+\contentsline {subsection}{\numberline {C.0.1}Example of Resolving PFA Components, $\boxed {\omega _i^*}$}{143}{subsection.a.C.0.1}%
+\contentsline {chapter}{Appendix \numberline {D}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{147}{appendix.a.D}%
+\contentsline {subsection}{\numberline {D.0.1}Examples of Complete Lu-Genome Expressions}{151}{subsection.a.D.0.1}%
+\contentsline {chapter}{Appendix \numberline {E}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{155}{appendix.a.E}%
+\contentsline {chapter}{Colophon}{171}{appendix*.70}%
