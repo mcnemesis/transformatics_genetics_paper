@@ -71,4 +71,6 @@
 \contentsline {chapter}{Appendix \numberline {D}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{155}{appendix.a.D}%
 \contentsline {subsection}{\numberline {D.0.1}Examples of Complete Lu-Genome Expressions}{159}{subsection.a.D.0.1}%
 \contentsline {chapter}{Appendix \numberline {E}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{163}{appendix.a.E}%
-\contentsline {chapter}{Colophon}{179}{appendix*.70}%
+\contentsline {chapter}{Final Dedication}{177}{appendix*.68}%
+\contentsline {chapter}{About the Author}{180}{appendix*.70}%
+\contentsline {chapter}{Colophon}{183}{appendix*.72}%

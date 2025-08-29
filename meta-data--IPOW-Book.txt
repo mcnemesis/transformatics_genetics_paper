@@ -1,0 +1,25 @@
+[I*POW FIRST EDITION]
+
+---[TITLE]: Applying Transformatics in GENETICS
+
+---[AUTHOR]: Joseph Willrich Lutalo
+
+---[BOOK SYNOPSIS]: A mini-treatise on the mathematics, philosophy and practice of Transformatics for Geneticists.
+
+---[TO-CITE]:
+
+Lutalo, J. W. (2025). Applying TRANSFORMATICS in GENETICS. I*POW, 1(1), 206. https://doi.org/10.6084/m9.figshare.29941127
+
+---[BIBTEX]:
+
+@misc{lutalo_2025, title={Applying TRANSFORMATICS in GENETICS}, url={https://figshare.com/articles/preprint/Applying_TRANSFORMATICS_in_GENETICS/29941127/1}, DOI={10.6084/m9.figshare.29941127}, note={A mini-treatise on the mathematics, philosophy and practice of Transformatics for Geneticists.}, publisher={I*POW}, author={Lutalo, Joseph Willrich}, pages={206}, year={2025}, month={Aug}}
+
+---[TAGS]: #books #monographs #mathematics #genetics #transformatics #nuchweziresearch #profjwl #ipow #preprints
+
+---[UPDATE]: 29 AUG, 2025
+
+---[ABSTRACT]:
+
+It started out as just a paper but is now a treatise. Applying TRANSFORMATICS in GENETICS brings to surface the importance of leveraging the mathematical theory recently named "Transformatics", that deals with the study, processing and analysis of especially ordered sequences of symbols and their alteration via symbolic machines known as sequence transformers. In earlier and recent work by the author, it has been demonstrated to be a credible and powerful theory in designing, specifying and explaining the properties of automata operating on sequences to produce other sequences. In this particular work, we take that body of knowledge, as well as what we know about the important science of how biological life-forms are defined, transformed and expressed in nature based on genetic code sequences known as DNA (deoxyribonucleic acid), and use that to revisit old and new problems in the field of GENETICS, developing many new, and previously unpresented solutions based on the theories, calculus and mechanics of sequence transformers (aka, "transformatics"). We have used transformatics to develop, but also distill many useful general results in the form of theorems as well as 3 laws concerning na-Sequences. We have demonstrated how sequence transformers can be leveraged to solve specific practical problems in genetics via numerous well-structured sequence transformations. We have invented and presented several new algorithms that would allow the concepts and solutions we developed in transformatics theory for various general problems to be readily turned into computable solutions using any programming language, for scenarios in genetics, leveraging TEA and Python mostly. We have demonstrated how to leverage statistical analysis to make quantifiable differences and similarities between two or more na-Sequences (including entire populations of them) readily discernible. Leveraging transformatics, we have developed a new theory and systematic framework, the Lu-Genome Expression System, with which, via explorations by eye and hand, but also via the use of computers, the matter of how individual DNA sequences, and generally, any sequence that can be transformed into a numeric/decimal sequence, can be used to explore the natural concept of gene and genome expression, in both a visual-spatial, but also mathematical-symbolic way. We have tackled the fundamentally critical problem of genome sequencing, and have managed to not only cast it rigorously using the language and notions of transformatics, but have also managed to define an abstract machine that can take a set of DNA sequences potentially out of alignment, and then derive from them, via systematic and meaningful alignment procedures, a final, representative consensus genome sequence. Though this work is significantly theoretical and mathematical, we anticipate that the discussions, notes, formulations, solutions and overall expository treatment of the subject that it brings forth, shall help inspire actual domain experts and other researchers interested in genetics, genetic engineering and related sciences to pick up and apply our transformatics theory and ideas in both theory and practice.
+
+---[KEYWORDS]: Mathematical Statistics, Linear Algebra, Transformatics, Artificial Intelligence, Sequence Processors, Sequence Analysis, DNA, Genetic Code, Genetic Analysis, Abstract Machines, Genome Sequencing, Genome Expression, Gene Programs, Transformers.
