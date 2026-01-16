@@ -29,9 +29,9 @@
 \contentsline {figure}{\numberline {8.17}{\ignorespaces The \textbf {RSG}$(n,\Theta )$ random sequence generator function implemented using Python}}{83}{figure.caption.34}%
 \contentsline {figure}{\numberline {8.18}{\ignorespaces A Random DNA Sequence of exactly 200 random codons as generated using our \textbf {RSG}$(n,\Theta )$ random sequence generator algorithm.}}{84}{figure.caption.35}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces An illustration of the gene translation process in a cell via protein-factories known as ribosomes, and which was sourced from \cite {geeksforgeeks2024protein}}}{85}{figure.caption.37}%
-\contentsline {figure}{\numberline {9.2}{\ignorespaces \textbf {Flow-Chart summarizing the Ribosome-based Protein-Synthesis Process in a Living Cell}}}{91}{figure.caption.40}%
-\contentsline {figure}{\numberline {9.3}{\ignorespaces \textbf {The RIBOSOME State Machine}}}{92}{figure.caption.41}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces An illustration of the gene translation process in a cell via protein-factories known as ribosomes, and which was sourced from \cite {geeksforgeeks2024protein}}}{86}{figure.caption.37}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces \textbf {Flow-Chart summarizing the Ribosome-based Protein-Synthesis Process in a Living Cell}}}{92}{figure.caption.40}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces \textbf {The RIBOSOME State Machine}}}{93}{figure.caption.41}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {10.1}{\ignorespaces A blackboard snapshot from the author's \textbf {Blackboard Adventures} (\url {https://t.me/bclectures}) series on Telegram, on \textbf {20$^{th}$ AUG, 2025}, depicting two \textbf {LGES} example genome expressions, one for $\overset {>}{\Theta } = \langle 218 \rangle $, the other for the \textbf {PFA} segment configuration $4_{pf}\otimes 6_{oz}$}}{97}{figure.caption.43}%
 \contentsline {figure}{\numberline {10.2}{\ignorespaces The OZIN Cipher\cite {lutalo_2025_ozin}, a mapping from Decimal Symbols (our base-$\Omega $) to Symbols for Intermediate Genetic Code.}}{100}{figure.caption.44}%

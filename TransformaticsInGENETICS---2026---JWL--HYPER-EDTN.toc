@@ -46,8 +46,8 @@
 \contentsline {subsection}{\numberline {8.3.6}The SELECT Function}{81}{subsection.8.3.6}%
 \contentsline {subsection}{\numberline {8.3.7}The RSG Function}{82}{subsection.8.3.7}%
 \contentsline {chapter}{\numberline {9}Gene Expression in Living Organisms Leveraging Genetic Code (DNA $\rightarrow mRNA \rightarrow Protein \rightarrow $ Organism)}{85}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Protein Manufacturing Algorithm}{90}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Gene Expression in Living Things and for Bio-Automata via Ribosomes}{94}{section.9.2}%
+\contentsline {section}{\numberline {9.1}Protein Manufacturing Algorithm}{91}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Gene Expression in Living Things and for Bio-Automata via Ribosomes}{95}{section.9.2}%
 \contentsline {chapter}{\numberline {10}Transformatics and Lu-Genome Expression System in Bio-Automata}{97}{chapter.10}%
 \contentsline {section}{\numberline {10.1}The Ozin Genetic Code Cipher}{99}{section.10.1}%
 \contentsline {subsection}{\numberline {10.1.1}$\Omega $-to-OZIN Genetic Code Transcription Rules}{102}{subsection.10.1.1}%
