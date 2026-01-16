@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: TransformaticsInGENETICS---2026---JWL--HYPER-EDTN.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: references.bib
+You've used 80 entries,
+            1791 wiz_defined-function locations,
+            859 strings with 19990 characters,
+and the built_in function-call counts, 13372 in all, are:
+= -- 1229
+> -- 460
+< -- 3
++ -- 201
+- -- 121
+* -- 481
+:= -- 2193
+add.period$ -- 299
+call.type$ -- 80
+change.case$ -- 63
+chr.to.int$ -- 0
+cite$ -- 80
+duplicate$ -- 630
+empty$ -- 1497
+format.name$ -- 121
+if$ -- 3058
+int.to.chr$ -- 0
+int.to.str$ -- 80
+missing$ -- 69
+newline$ -- 461
+num.names$ -- 84
+pop$ -- 348
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 230
+stack$ -- 0
+substring$ -- 347
+swap$ -- 99
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 108
+width$ -- 82
+write$ -- 944

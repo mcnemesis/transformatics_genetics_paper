@@ -1,5 +1,78 @@
 \begin{thebibliography}{10}
 
+\bibitem{lnspaper}
+Joseph~Willrich Lutalo.
+\newblock \textbf{Philosophical and Mathematical Foundations of A Number
+  Generating System: The Lu-Number System}.
+\newblock {\em PrePrints}, 2025.
+\newblock
+  \url{https://www.preprints.org/frontend/manuscript/65675cdcfc92eaced19494771ba02fbd/download_pub}.
+
+\bibitem{Lutalo2024gtnc}
+Joseph~Willrich Lutalo.
+\newblock \textbf{A general theory of number cardinality}.
+\newblock {\em Academia.edu}, Jan 2024.
+\newblock \textit{Accessible via}
+  \url{https://www.academia.edu/43197243/A\_General\_Theory\_of\_Number\_Cardinality}.
+
+\bibitem{adtpaper}
+Joseph~Willrich Lutalo.
+\newblock \textbf{Introducing The Anagram Distance Statistic, Ã, A Quantifier
+  of Lexical Proximity For Base-10 o-SSI And Any Arbitrary Length Ordered
+  Sequences, Its Relevance And Proposed Applications in Computer Science,
+  Engineering And Mathematical Statistics}.
+\newblock {\em Academia.edu}, 2025.
+\newblock
+  \url{https://www.academia.edu/download/123454710/arxiv_version_ADT_Anagram_Distance_Theory_paper_25JUNE2025_JWL.pdf}.
+
+\bibitem{ossipaper}
+Joseph~Willrich Lutalo.
+\newblock \textbf{Concerning A Special Summation That Preserves The Base-10
+  Orthogonal Symbol Set Identity In Both Addends And The Sum}.
+\newblock {\em Academia}, 2025.
+\newblock \textit{Accessible via}
+  \url{https://www.academia.edu/download/122499576/The_Symbol_Set_Identity_paper_Joseph_Willrich_Lutalo_25APR2025.pdf}.
+
+\bibitem{transformatics}
+Joseph~Willrich Lutalo.
+\newblock \textbf{The Theory of Sequence Transformers \& their Statistics}: The
+  3 information sequence transformer families (anagrammatizers, protractors,
+  compressors) and 4 new and relevant statistical measures applicable to them:
+  Anagram distance, modal sequence statistic, transformation compression ratio
+  and piecemeal compression ratio.
+\newblock {\em Academia}, 2025.
+\newblock
+  \url{https://www.academia.edu/download/123730923/TRANSFORMATICS_Theory_Of_Sequence_Transformers_10JUL2025_JWL_NuchweziResearch_v3.pdf}.
+
+\bibitem{Lutalo2025transpsy}
+Joseph~Willrich Lutalo.
+\newblock \textbf{Transformatics for PSYCHOLOGY}.
+\newblock {\em PrePrints}, 9 2025.
+\newblock \textit{Presented at the 13th International East African Psychology
+  Conference, a copy is accessible via:}
+  \url{https://www.preprints.org/frontend/manuscript/bd2e5e192c083fae8ba6ed371c18f044/download_pub}.
+
+\bibitem{lutalo2025transformatic}
+Joseph~Willrich Lutalo.
+\newblock \textbf{Applying TRANSFORMATICS: Sequence Generators}.
+\newblock
+  \url{https://www.academia.edu/143116027/Applying_TRANSFORMATICS_Sequence_Generators},
+  2025.
+
+\bibitem{lutalo_2025_trans_genetics}
+Joseph~Willrich Lutalo.
+\newblock \textbf{Applying TRANSFORMATICS in GENETICS}.
+\newblock {\em I*POW}, pages 1--206, Aug 2025.
+\newblock \url{https://www.academia.edu/143516392/}.
+
+\bibitem{cli_tttt}
+Joseph~Willrich Lutalo.
+\newblock \textbf{TEA GitHub Project | The Reference Implementation of TEA
+  (Transforming Executable Alphabet) computer programming language}.
+\newblock \url{https://github.com/mcnemesis/cli_tttt/}, 2024.
+\newblock \textit{Single Source of Truth concerning the reference standards of
+  TEA on the web and native operating systems.}
+
 \bibitem{wikipedia_basepair}
 Wikipedia contributors.
 \newblock Base pair.
@@ -18,14 +91,12 @@ GeeksforGeeks.
 \bibitem{lutalo_2025_ozin}
 Joseph~Willrich Lutalo.
 \newblock \textbf{The OZIN Cipher}.
-\newblock \url{https://figshare.com/articles/online
-  resource/The_OZIN_Cipher/29867474/1}, Aug 2025.
+\newblock \url{https://www.academia.edu/145919940/The_OZIN_CIPHER}, Jan 2026.
 
 \bibitem{lutalo_2025_platonic}
 Joseph~Willrich Lutalo.
 \newblock \textbf{The PLATO Cipher}.
-\newblock \url{https://figshare.com/articles/online
-  resource/The\_PLATO\_Cipher/29867843/1}, Aug 2025.
+\newblock \url{https://www.academia.edu/145920076/The_PLATO_CIPHER}, Jan 2026.
 
 \bibitem{earthwormImage}
 Fir0002~/ Flagstaffotos.
@@ -43,33 +114,17 @@ Joseph~Willrich Lutalo.
 \bibitem{lutalo_2025_sop}
 Joseph~Willrich Lutalo.
 \newblock \textbf{Statement of Purpose (University of Oxford)}.
-\newblock \url{https://figshare.com/articles/online
-  resource/Statement_of_Purpose_University_of_Oxford_/29885561/1}, Aug 2025.
+\newblock
+  \url{https://www.academia.edu/145809741/Statement_of_Purpose_University_of_Oxford_},
+  Aug 2025.
 
 \bibitem{Lutalo2025_phd}
 Joseph~Willrich Lutalo.
 \newblock {\textbf{PROPOSED DOCTORAL THESIS: A Theory of Entropy Sources \&
   Random Number Generators: DPhil Computer Science, Oxford University, Joseph
   Willrich Lutalo MSc. BSc. alumni Makerere University}}, 6 2025.
-\newblock Accessible via
-  \url{https://figshare.com/articles/online_resource/PROPOSED_DOCTORAL_THESIS_A_Theory_of_Entropy_Sources_Random_Number_Generators_DPhil_Computer_Science_Oxford_University_Joseph_Willrich_Lutalo_MSc_BSc_alumni_Makerere_University/29209706}.
-
-\bibitem{transformatics}
-Joseph~Willrich Lutalo.
-\newblock \textbf{The Theory of Sequence Transformers \& their Statistics}: The
-  3 information sequence transformer families (anagrammatizers, protractors,
-  compressors) and 4 new and relevant statistical measures applicable to them:
-  Anagram distance, modal sequence statistic, transformation compression ratio
-  and piecemeal compression ratio.
-\newblock {\em Academia}, 2025.
-\newblock \url{https://doi.org/10.6084/m9.figshare.29505824.v3}.
-
-\bibitem{cli_tttt}
-Joseph~Willrich Lutalo.
-\newblock \textbf{TEA GitHub Project | The Reference Implementation of TEA
-  (Transforming Executable Alphabet) computer programming language}.
-\newblock \url{https://github.com/mcnemesis/cli_tttt/}, 2024.
-\newblock Accessed: 4th Aug, 2025.
+\newblock Available at:
+  \url{https://www.academia.edu/145809448/PROPOSED_DOCTORAL_THESIS_A_Theory_of_Entropy_Sources_and_Random_Number_Generators_DPhil_Computer_Science_Oxford_University_Joseph_Willrich_Lutalo_MSc_BSc_alumni_Makerere_University_1}.
 
 \bibitem{sagan1981cosmos}
 Carl Sagan.
@@ -104,6 +159,12 @@ OpenStax Biology.
 \newblock
   \url{https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/General_Biology_1e_(OpenStax)/5:_Biological_Diversity/21:_Viruses},
   2025.
+
+\bibitem{Lutalo2025_transformatics_thesis}
+Joseph~Willrich Lutalo.
+\newblock \textbf{TRANSFORMATICS 101 - explained}.
+\newblock {\em Thesis}, page~20, October 2025.
+\newblock \url{https://www.academia.edu/144344109/}.
 
 \bibitem{venville2006analogies}
 Grady Venville and Jenny Donovan.
@@ -145,19 +206,12 @@ University of~Leicester.
   n.d.
 \newblock Accessed July 29, 2025.
 
-\bibitem{ossipaper}
-Joseph~Willrich Lutalo.
-\newblock \textbf{Concerning A Special Summation That Preserves The Base-10
-  Orthogonal Symbol Set Identity In Both Addends And The Sum}.
-\newblock {\em Academia}, 2025.
-\newblock \textit{Accessible via}
-  \url{https://www.academia.edu/download/122499576/The_Symbol_Set_Identity_paper_Joseph_Willrich_Lutalo_25APR2025.pdf}.
-
 \bibitem{Lutalo2024_taz}
 Joseph~Willrich Lutalo.
 \newblock \textbf{TEA TAZ - Transforming Executable Alphabet A: to Z: COMMAND
   SPACE SPECIFICATION}.
-\newblock \url{https://doi.org/10.6084/m9.figshare.26661328}, 2024.
+\newblock {\em Academia.edu}, 2024.
+\newblock \url{https://www.academia.edu/122871672/}.
 
 \bibitem{mochizuki_frobenioids1}
 Shinichi Mochizuki.
@@ -172,21 +226,15 @@ Shinichi Mochizuki.
 Microsoft Copilot.
 \newblock Clarifying discussions on dna sequence facts and genetics in general
   during drafting manuscript.
-\newblock AI-generated insights via Copilot discussion, 2025.
-\newblock Personal communication, July 2025.
+\newblock AI-generated insights via Copilot discussion, 2026.
+\newblock Personal communication throughout preparation and revision of the
+  manuscript.
 
 \bibitem{wikipedia_nucleic_acid}
 Wikipedia contributors.
 \newblock Nucleic acid sequence.
 \newblock \url{https://en.wikipedia.org/wiki/Nucleic_acid_sequence}, 2025.
 \newblock Accessed July 2025.
-
-\bibitem{Lutalo2024gtnc}
-Joseph~Willrich Lutalo.
-\newblock \textbf{A general theory of number cardinality}.
-\newblock {\em Academia.edu}, Jan 2024.
-\newblock \textit{Accessible via}
-  \url{https://www.academia.edu/43197243/A\_General\_Theory\_of\_Number\_Cardinality}.
 
 \bibitem{nature_atcg}
 Nature Education.
@@ -224,29 +272,11 @@ S.~Anderson, A.~T. Bankier, B.~G. Barrell, et~al.
 \newblock {\em Nature}, 290:457--465, 1981.
 \newblock Available at: \url{https://www.nature.com/articles/290457a0.pdf}.
 
-\bibitem{adtpaper}
-Joseph~Willrich Lutalo.
-\newblock \textbf{Introducing The Anagram Distance Statistic, Ã, A Quantifier
-  of Lexical Proximity For Base-10 o-SSI And Any Arbitrary Length Ordered
-  Sequences, Its Relevance And Proposed Applications in Computer Science,
-  Engineering And Mathematical Statistics}.
-\newblock {\em Academia.edu}, 2025.
-\newblock \textit{Accessible via}
-  \url{https://doi.org/10.6084/m9.figshare.29402363}.
-
 \bibitem{Lutalo2025debug}
 Joseph~Willrich Lutalo.
 \newblock \textbf{Concerning Debugging in TEA and the TEA Software Operating
   Environment}.
 \newblock {\em Academia.edu}, 2025.
-
-\bibitem{lnspaper}
-Joseph~Willrich Lutalo.
-\newblock \textbf{Philosophical and Mathematical Foundations of A Number
-  Generating System: The Lu-Number System}.
-\newblock {\em Academia.edu}, 2025.
-\newblock \textit{Accessible via}
-  \url{https://doi.org/10.6084/m9.figshare.29262749}.
 
 \bibitem{wikipedia_codon_tables}
 Wikipedia contributors.
@@ -266,8 +296,8 @@ Joseph~Willrich Lutalo.
 \newblock \textbf{TEA RESEARCH: TEA ON THE WEB A High-Level Web Software
   Operating Environment Specification For The TEA Programming Language: Web TEA
   Architecture}.
-\newblock \url{https://doi.org/10.6084/M9.FIGSHARE.29591687}, n.d.
-\newblock figshare.
+\newblock \url{https://www.academia.edu/142944443/}, 2025.
+\newblock Academia.
 
 \bibitem{godel1931}
 Kurt Gödel.
@@ -312,40 +342,34 @@ Joseph~Willrich Lutalo.
 \newblock \textit{Accessible via}
   \url{https://www.preprints.org/frontend/manuscript/3903e4cd075074a7005cb705a5ef26c5/download\_pub}.
 
-\bibitem{lutalo2025transformatic}
-Joseph~Willrich Lutalo.
-\newblock \textbf{Applying TRANSFORMATICS: Sequence Generators}.
-\newblock \url{https://doi.org/10.6084/M9.FIGSHARE.29654645}, 2025.
-\newblock FigShare.
-
 \bibitem{lutalo2024mysticism}
 Joseph~Willrich Lutalo.
 \newblock \textbf{Pragmatic Computational Mysticism}.
-\newblock \url{https://doi.org/10.6084/M9.FIGSHARE.27187071}, 2024.
-\newblock figshare.
+\newblock
+  \url{https://www.academia.edu/124536103/Pragmatic_Computational_Mysticism},
+  2024.
+\newblock Academia.
 
 \bibitem{jwlzha}
 Joseph~Willrich Lutalo.
 \newblock \textbf{Introducing ZHA, a Real q-AGI}.
-\newblock {\em FigShare}, 2025.
-\newblock \textit{Accessible via}
-  \url{https://doi.org/10.6084/M9.FIGSHARE.29049794}.
+\newblock {\em Academia}, 2025.
+\newblock Available at:
+  \url{https://www.academia.edu/129344807/Introducing_ZHA_a_real_q_AGI}.
 
 \bibitem{lutalo2025unraveling}
 Joseph~Willrich Lutalo.
 \newblock \textbf{Unraveling Mysteries of The ZHA q-AGI Chatbot: an Interview
   by ICC, of Fut. Prof. JWL and M*A*P Ade. Psymaz of Nuchwezi}.
-\newblock {\em FigShare}, 2025.
-\newblock \textit{Accessible via}
-  \url{https://doi.org/10.6084/M9.FIGSHARE.29064671}.
+\newblock {\em Academia}, 2025.
+\newblock Available at:
+  \url{https://www.academia.edu/download/122791984/ZHA_Interview_paper_JWL_14MAY2025.pdf}.
 
 \bibitem{lutalo_2025_exa}
 Joseph~Willrich Lutalo.
-\newblock \textbf{PLATONIC-EXA-landscape.pdf | A Basic Example of Full Genome
-  Expression in the Lu-Genome Expression System}.
-\newblock \url{https://figshare.com/articles/dataset/PLATONIC-EXA-landscape/
-  \_pdf\_A\_Basic\_Example\_of\_Full\_Genome\_Expression\_in\_the\_Lu-Genome\_Expression\_System/29876024/1},
-  Aug 2025.
+\newblock \textbf{Complete Genome Expression Example in the Lu-Genome
+  Expression System}.
+\newblock \url{https://www.academia.edu/145920344/}, Jan 2026.
 
 \bibitem{agrippa2014occult}
 Henry~Cornelius Agrippa.
@@ -368,7 +392,7 @@ Joseph~Willrich Lutalo.
 \newblock \textit{\textbf{ISBN} 978-9913-624-71-8 (First Edition). A physical
   copy might be accessed via the National Library of Uganda (NLU), but also, an
   education-purposes-only edition is accessible freely via Academia at}
-  \url{https://www.academia.edu/128601975/ROCK_N_DRAW_2025_}.
+  \url{https://t.me/ipowriters/237}.
 
 \bibitem{lutalo2025concerning_trans}
 Joseph Lutalo.
@@ -444,7 +468,101 @@ François Jacob.
 \bibitem{lutalo_2025_ogf}
 Joseph~Willrich Lutalo.
 \newblock \textbf{CODE: Computational Mysticism OGF}.
-\newblock \url{https://figshare.com/articles/online
-  resource/CODE_Computational_Mysticism_OGF/29858738/1}, Aug 2025.
+\newblock \url{https://t.me/wwwrite/93}, Aug 2025.
+
+\bibitem{lutalo_2025_trans101_1page}
+Joseph~Willrich Lutalo.
+\newblock \textbf{Transformatics 101 (1-Page Executive Summary)}, Oct 2025.
+\newblock \textit{The 1-pager PDF is available at:}
+  \url{https://www.academia.edu/145185478/TRANSFORMATICS_101_On_1_Page_}.
+
+\bibitem{treealgebras_review}
+Joseph~Willrich Lutalo.
+\newblock {\textbf{A Comparative Review and Critique of Tree Algebras:
+  Revisiting Gibbons (1991) Thesis in Light of Contemporary Modern
+  Transformatics}}.
+\newblock {\em Academia}, 10 2025.
+\newblock \url{https://www.academia.edu/144711639/}.
+
+\bibitem{lutalo2025rng}
+Joseph~Willrich Lutalo.
+\newblock \textbf{A Mini-Review of RNG Theory}, 2025.
+\newblock \url{https://www.academia.edu/143901839/A_Mini_Review_of_RNG_Theory}.
+
+\bibitem{Lutalo2024TEATAZ}
+Joseph~Willrich Lutalo.
+\newblock \textbf{TEA TAZ - Transforming Executable Alphabet A: to Z: COMMAND
+  SPACE SPECIFICATION}.
+\newblock {\em Academia.edu}, 2024.
+\newblock Accessed on 14 May, 2025, via
+  \url{https://www.academia.edu/122871672/TEA_TAZ_Transforming_Executable_Alphabet_A_to_Z_COMMAND_SPACE_SPECIFICATION}.
+
+\bibitem{shannon1948mathematical}
+Claude~E. Shannon.
+\newblock A mathematical theory of communication.
+\newblock {\em Bell System Technical Journal}, 27:379--423, 623--656, 1948.
+\newblock \textit{A copy of which is accessible via:}
+  \url{https://ia803209.us.archive.org/27/items/bstj27-3-379/bstj27-3-379_text.pdf}.
+
+\bibitem{axler2015linear}
+Sheldon Axler.
+\newblock {\em Linear Algebra Done Right}.
+\newblock Springer, 3 edition, 2015.
+
+\bibitem{rudin1976principles}
+Walter Rudin.
+\newblock {\em Principles of Mathematical Analysis}.
+\newblock McGraw-Hill, 3 edition, 1976.
+
+\bibitem{halmos1960naive}
+Paul~R. Halmos.
+\newblock {\em Naive Set Theory}.
+\newblock Van Nostrand, 1960.
+
+\bibitem{fitzpatrick1995advanced}
+Patrick~M. Fitzpatrick.
+\newblock {\em Advanced Calculus: A Course in Mathematical Analysis}.
+\newblock PWS Publishing Company, Boston, 1995.
+\newblock Online edition available at
+  \url{https://archive.org/details/advancedcalculus0000fitz}.
+
+\bibitem{nef1967linear}
+Walter Nef.
+\newblock {\em Linear Algebra}.
+\newblock McGraw-Hill, New York, 1967.
+\newblock Translated from the German: Lehrbuch der linearen Algebra. Digital
+  edition available at \url{https://archive.org/details/linearalgebra0000nefw}.
+
+\bibitem{ronlarsoncalculus}
+Ron Larson and Bruce~H. Edwards.
+\newblock {\em Calculus}.
+\newblock W. H. Freeman and Company, New York, 2012.
+
+\bibitem{knopp1990theory}
+Konrad Knopp.
+\newblock {\em Theory and Application of Infinite Series}.
+\newblock Dover Publications, 1990.
+
+\bibitem{strang2016introduction}
+Gilbert Strang.
+\newblock {\em Introduction to Linear Algebra}.
+\newblock Wellesley-Cambridge Press, 5 edition, 2016.
+
+\bibitem{kolmogorov1970introductory}
+A.~N. Kolmogorov and S.~V. Fomin.
+\newblock {\em Introductory Real Analysis}.
+\newblock Dover Publications, 1970.
+
+\bibitem{lutalo_2025_grimlumtauto}
+Joseph~Willrich Lutalo.
+\newblock {\em \footnotesize \textbf{NOVUS MODERNUS GRIMOIRE LUMTAUTO MAGIA} -
+  \textit{A Modern Grimoire of 5 Eternal Magickal Languages}}.
+\newblock I*POW, November 2025.
+\newblock \url{https://www.academia.edu/resource/work/145086513}.
+
+\bibitem{clarke1992basic}
+Geoffrey~Mallin Clarke and Dennis Cooke.
+\newblock {\em A Basic Course in Statistics---3rd Ed.}
+\newblock Edward Arnold, 1992.
 
 \end{thebibliography}

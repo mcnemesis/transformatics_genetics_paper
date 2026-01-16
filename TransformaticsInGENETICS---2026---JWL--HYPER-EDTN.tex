@@ -116,11 +116,126 @@
 % to include pdf pages
 \usepackage{pdfpages}
 
+% Define inverted Delta symbol...
+\newcommand{\invdel}[1]{\mathop{\rotatebox[origin=c]{180}{$\Delta$}}#1}
+
 % for multiline comments...
 \newcommand{\comment}[1]{}
 
 % for the cardinality symbol
 \newcommand{\invpi}{\rotatebox[origin=c]{180}{$\pi$}}
+
+%%%%%%[ Extra Preamble for Transformatics 101 extension chapter ]
+
+
+%for multi-figure figures?
+\usepackage{subcaption}
+
+% for highlighting text
+\usepackage{xcolor, soul}
+% then define colors we shall use:
+\definecolor{myteal}{RGB}{0, 128, 128}
+\definecolor{lightgray}{HTML}{CCCCCC}
+\definecolor{myorange}{HTML}{FFD7B3}
+
+% for table with alternating row bg colors 
+\usepackage[table]{xcolor}
+\definecolor{lightgray}{gray}{0.9}  % or use HTML/RGB if preferred
+
+
+%\definecolor{highcolor}{rgb}{0,255,255} % our default hl color for background, friendly on black text foreground
+\definecolor{highcolor}{rgb}{0,255,255} %a accent background color, must be friendly on black text foreground
+\sethlcolor{highcolor}
+
+%for regular expression and TEA code presentation in console-like text-boxes
+\usepackage{tcolorbox}
+\tcbuselibrary{listings,skins,breakable}
+\usepackage{listings}
+
+% style for general terminal-like listings
+\tcbset{
+  myterminalstyle/.style={
+    colback=black,       % background color
+    coltext=white,       % text color
+    fontupper=\ttfamily, % typewriter font
+    boxrule=0pt,         % no border
+    arc=0pt,             % square corners
+    outer arc=0pt,
+    left=2mm, right=2mm, top=1mm, bottom=1mm,
+    enhanced,
+    sharp corners,
+  }
+}
+
+% define listings config for TEA language
+\lstdefinelanguage{TEA}{
+  morecomment=[l]{\#},
+  sensitive=true,
+  alsoletter={:*!},
+  %morekeywords=[1]{i:, u!:, g:, l:, f:, x:, j:, q!:},
+  morekeywords=[1]{%
+a:, a.:, a*:, a!:, a.*:, a.!:, a*!:, b:, b.:, b*:, b!:, b.*:, b.!:, b*!:, c:, c.:, c*:, c!:, c.*:, c.!:, c*!:, d:, d.:, d*:, d!:, d.*:, d.!:, d*!:, e:, e.:, e*:, e!:, e.*:, e.!:, e*!:, f:, f.:, f*:, f!:, f.*:, f.!:, f*!:, g:, g.:, g*:, g!:, g.*:, g.!:, g*!:, h:, h.:, h*:, h!:, h.*:, h.!:, h*!:, i:, i.:, i*:, i!:, i.*:, i.!:, i*!:, j:, j.:, j*:, j!:, j.*:, j.!:, j*!:, k:, k.:, k*:, k!:, k.*:, k.!:, k*!:, l:, l.:, l*:, l!:, l.*:, l.!:, l*!:, m:, m.:, m*:, m!:, m.*:, m.!:, m*!:, n:, n.:, n*:, n!:, n.*:, n.!:, n*!:, o:, o.:, o*:, o!:, o.*:, o.!:, o*!:, p:, p.:, p*:, p!:, p.*:, p.!:, p*!:, q:, q.:, q*:, q!:, q.*:, q.!:, q*!:, r:, r.:, r*:, r!:, r.*:, r.!:, r*!:, s:, s.:, s*:, s!:, s.*:, s.!:, s*!:, t:, t.:, t*:, t!:, t.*:, t.!:, t*!:, u:, u.:, u*:, u!:, u.*:, u.!:, u*!:, v:, v.:, v*:, v!:, v.*:, v.!:, v*!:, w:, w.:, w*:, w!:, w.*:, w.!:, w*!:, x:, x.:, x*:, x!:, x.*:, x.!:, x*!:, y:, y.:, y*:, y!:, y.*:, y.!:, y*!:, z:, z.:, z*:, z!:, z.*:, z.!:, z*!:,%
+A:, A.:, A*:, A!:, A.*:, A.!:, A*!:, B:, B.:, B*:, B!:, B.*:, B.!:, B*!:, C:, C.:, C*:, C!:, C.*:, C.!:, C*!:, D:, D.:, D*:, D!:, D.*:, D.!:, D*!:, E:, E.:, E*:, E!:, E.*:, E.!:, E*!:, F:, F.:, F*:, F!:, F.*:, F.!:, F*!:, G:, G.:, G*:, G!:, G.*:, G.!:, G*!:, H:, H.:, H*:, H!:, H.*:, H.!:, H*!:, I:, I.:, I*:, I!:, I.*:, I.!:, I*!:, J:, J.:, J*:, J!:, J.*:, J.!:, J*!:, K:, K.:, K*:, K!:, K.*:, K.!:, K*!:, L:, L.:, L*:, L!:, L.*:, L.!:, L*!:, M:, M.:, M*:, M!:, M.*:, M.!:, M*!:, N:, N.:, N*:, N!:, N.*:, N.!:, N*!:, O:, O.:, O*:, O!:, O.*:, O.!:, O*!:, P:, P.:, P*:, P!:, P.*:, P.!:, P*!:, Q:, Q.:, Q*:, Q!:, Q.*:, Q.!:, Q*!:, R:, R.:, R*:, R!:, R.*:, R.!:, R*!:, S:, S.:, S*:, S!:, S.*:, S.!:, S*!:, T:, T.:, T*:, T!:, T.*:, T.!:, T*!:, U:, U.:, U*:, U!:, U.*:, U.!:, U*!:, V:, V.:, V*:, V!:, V.*:, V.!:, V*!:, W:, W.:, W*:, W!:, W.*:, W.!:, W*!:, X:, X.:, X*:, X!:, X.*:, X.!:, X*!:, Y:, Y.:, Y*:, Y!:, Y.*:, Y.!:, Y*!:, Z:, Z.:, Z*:, Z!:, Z.*:, Z.!:, Z*!:%
+},
+  keywordstyle=[1]\color{green},
+  commentstyle=\color{lightgray},
+  morestring=[b]",
+stringstyle=\color{myorange},
+moredelim=[s][\color{myorange}]{\{}{\}},
+}
+
+
+% define custom terminal for TEA language snippets
+
+\tcbset{
+  teaterminalstyle/.style={
+    enhanced,
+    colback=myteal,
+    coltext=white,
+    fontupper=\ttfamily,
+    boxrule=0pt,
+    arc=0pt,
+    outer arc=0pt,
+    left=2mm, right=2mm, top=1mm, bottom=1mm,
+    sharp corners,
+    listing only,
+    listing options={
+      language=TEA,
+     basicstyle=\ttfamily,
+%keywordstyle=\color{cyan}\bfseries,
+%commentstyle=\color{green}\itshape,
+%stringstyle=\color{yellow}
+    }
+  }
+}
+
+
+
+% for maths
+\usepackage{amsmath}
+% for number sets symbols
+\usepackage{amssymb}
+%\usepackage{ntheorem}
+\usepackage{amsthm}
+
+
+% for writing our theorems and defs...
+%\newtheorem{comp}{Computation}
+%\newtheorem{theo}{Theorem}
+%\newtheorem{defn}{Definition}
+%\newtheorem{lem}{Lemma}
+%\newtheorem{prop}{Proposition}
+%\newtheorem{axiom}{Axiom}
+%\newtheorem{post}{Postulate}
+%\newtheorem{trans}{Transformation}
+%\newtheorem{transf}{Transformer}
+%\newtheorem{law}{Law}
+%\newtheorem{prob}{Problem}
+%\newtheorem{soln}{Solution}
+%\newtheorem{alg}{Algorithm}
+
+
+%%%%%%[ End Extra Preamble ]
 
 \title{Applying \textbf{TRANSFORMATICS} in GENETICS}
 
@@ -128,8 +243,8 @@
 \author{Willrich J. Lutalo\thanks{Currently a volunteering \& Independent Principal Investigator at Nuchwezi Research --- \url{https://nuchwezi.com}}\\
 \texttt{joewillrich@gmail.com, jwl@nuchwezi.com}}
 
-\date{21$^{st}$ August, 2025}
-
+%\date{21$^{st}$ August, 2025}
+\date{\today}
 
 \begin{document}
 
@@ -253,7 +368,7 @@ Despite not having been funded by any one or any particular organization, the au
 \chapter*{Abstract}
 \large
 
-It started out as just a paper but is now a treatise. \textbf{Applying TRANSFORMATICS in GENETICS} brings to surface the importance of leveraging the mathematical theory recently named ``Transformatics", that deals with the study, processing and analysis of especially ordered sequences of symbols and their alteration via symbolic machines known as sequence transformers. In earlier and recent work by the author, it has been demonstrated to be a credible and powerful theory in designing, specifying and explaining the properties of automata operating on sequences to produce other sequences. In this particular work, we take that body of knowledge, as well as what we know about the important science of how biological life-forms are defined, transformed and expressed in nature based on genetic code sequences known as DNA (deoxyribonucleic acid), and use that to revisit old and new problems in the field of GENETICS, developing many new, and previously unpresented solutions based on the theories, calculus and mechanics of sequence transformers (aka, ``transformatics"). We have used transformatics to develop, but also distill many useful general results in the form of theorems as well as 3 laws concerning na-Sequences. We have demonstrated how sequence transformers can be leveraged to solve specific practical problems in genetics via numerous well-structured sequence transformations. We have invented and presented several new algorithms that would allow the concepts and solutions we developed in transformatics theory for various general problems to be readily turned into computable solutions using any programming language, for scenarios in genetics, leveraging TEA and Python mostly. We have demonstrated how to leverage statistical analysis to make quantifiable differences and similarities between two or more na-Sequences (including entire populations of them) readily discernible. Leveraging transformatics, we have developed a new theory and systematic framework, the Lu-Genome Expression System, with which, via explorations by eye and hand, but also via the use of computers, the matter of how individual DNA sequences, and generally, any sequence that can be transformed into a numeric/decimal sequence, can be used to explore the natural concept of gene and genome expression, in both a visual-spatial, but also mathematical-symbolic way. We have tackled the fundamentally critical problem of genome sequencing, and have managed to not only cast it rigorously using the language and notions of transformatics, but have also managed to define an abstract machine that can take a set of DNA sequences potentially out of alignment, and then derive from them, via systematic and meaningful alignment procedures, a final, representative consensus genome sequence. Though this work is significantly theoretical and mathematical, we anticipate that the discussions, notes, formulations, solutions and overall expository treatment of the subject that it brings forth, shall help inspire actual domain experts and other researchers interested in genetics, genetic engineering and related sciences to pick up and apply our transformatics theory and ideas in both theory and practice.
+It started out as just a paper but is now a treatise. \textbf{Applying TRANSFORMATICS in GENETICS} brings to surface the importance of leveraging the mathematical theory recently named ``Transformatics", that deals with the study, processing and analysis of especially ordered sequences of symbols and their alteration via symbolic machines known as sequence transformers. In earlier and recent work by the author, it has been demonstrated to be a credible and powerful theory in designing, specifying and explaining the properties of automata operating on sequences to produce other sequences. In this particular work, we take that body of knowledge, as well as what we know about the important science of how biological life-forms are defined, transformed and expressed in nature based on genetic code sequences known as DNA (deoxyribonucleic acid), and use that to treat of old and new problems in the field of GENETICS, developing many new, and previously unpresented solutions based on the theories, calculus and mechanics of sequence transformers. We have used transformatics to develop, but also distill many useful general results in the form of theorems as well as 3 laws concerning na-Sequences. We have demonstrated how sequence transformers can be leveraged to solve specific practical problems in genetics via numerous well-structured sequence transformations. We have invented and presented several new algorithms that would allow the concepts and solutions we developed in transformatics theory for various general problems to be readily turned into computable solutions using any programming language, for scenarios in genetics, but especially via leveraging TEA and Python. We have demonstrated how to leverage statistical analysis to make quantifiable differences and similarities between two or more na-Sequences (including entire populations of them) readily discernible. Leveraging transformatics, we have developed a new theory and systematic framework, the Lu-Genome Expression System, with which, via explorations by eye and hand, but also via the use of computers, the matter of how individual DNA sequences, and generally, any sequence that can be transformed into a numeric/decimal sequence, can be used to explore the natural concept of gene and genome expression, in both a visual-spatial, but also mathematical-symbolic way. We have tackled the fundamentally critical problem of genome sequencing, and have managed to not only cast it rigorously using the language and formalisms of transformatics, but have also managed to define an abstract machine that can take a set of DNA sequences potentially out of alignment, and then derive from them, via systematic and meaningful alignment procedures, a final, representative consensus genome sequence. Though this work is significantly theoretical and mathematical, we anticipate that the discussions, notes, formulations, solutions and overall expository treatment of the subject that it brings forth, shall help inspire actual domain experts and other researchers interested in genetics, genetic engineering, and related sciences, to pick up and apply our transformatics theory and ideas in both theory and practice.
      \newline\newline
      \textbf{Keywords}: Mathematical Statistics, Linear Algebra, Transformatics, Artificial Intelligence, Sequence Processors, Sequence Analysis, DNA, Genetic Code, Genetic Analysis, Abstract Machines, Genome Sequencing, Genome Expression, Gene Programs, Transformers.
 %\end{abstract}
@@ -294,7 +409,7 @@ It started out as just a paper but is now a treatise. \textbf{Applying TRANSFORM
 
 In reality, we find that living, real organisms are influenced by genetics, their environment, bits of randomness and sometimes emergent behaviors that might not be readily captured by strict rules such as the genetic code of life. However, away from all possibilities, and focusing on what can be said of life expression via the genetic code known as DNA (the \textit{deoxyribonucleic acid}) and RNA (\textit{ribonucleic acid}), especially when applied to the vast spectrum of natural organisms on earth --- from basic \textbf{prokaryotes} (single-celled organisms) such as the simple bacteria that actually have no nucleus\cite{bioexplorer2025}, to  \textbf{eukaryotes}; all the way from basic one-cell kinds such as amoeba\cite{kang2017deep} all the way to sophisticated creatures such as oak trees, vultures, dolphins and human beings! Talking of which, it might be important to set clear that though \textbf{viruses} are a kind of life-form\cite{libretexts2025viruses}, and yet, they are neither prokaryotes nor eukaryotes --- especially because, fundamentally, they are merely some genetic code (DNA or RNA) ``enclosed in a protein coat, lacking cell membranes or organelles"\cite{libretexts2025viruses} --- more technically they are \textbf{acellular entities}.
 
-So, if we bring on-board ideas from \textbf{transformatics}\cite{transformatics} --- a new mathematical statistics theory dealing with sequences of symbols or those of named structures and their processing as well as analysis; for example, if we take the concept of leveraging statistical measures to summarize essential properties of sequences such as DNA --- say, with use of the modal sequence statistic (MSS), we find that, independently of, and without needing to first consult or worry about mainstream genetic code analysis or genetic engineering theory and mechanics, that we can say many useful things about genetic code sequences and that we might be able to break new ground or solve some otherwise still intractable problems concerning sequences of genetic code.
+So, if we bring on-board ideas from \textbf{transformatics}\cite{transformatics}\cite{Lutalo2025_transformatics_thesis} --- a new mathematical theory\footnote{Also, refer to the \textbf{appendix} --- particularly \textbf{\hyperref[CHAPTRANS]{Chapter \ref{CHAPTRANS}}}, which reproduces verbatim, the ``Transformatics 101" manuscript --- a \textit{mini-thesis} --- that serves as the authoritative introduction to and baseline justification for this new theory.} dealing with sequences of symbols or those of named structures and their processing as well as analysis; for example, if we take the transformatics theory concepts such as comparing sequences using new measures such as the Anagram Distance Measure (ADM), or perhaps leveraging the sequence summary measure known as the modal sequence statistic (MSS), and these then being applied to sequences such as DNA, we find that, independently of, and without needing to first consult or worry about mainstream genetic code analysis or genetic engineering theory and mechanics, that we can say many useful things about such genetic code sequences and that we might be able to break new ground or solve some otherwise still intractable problems concerning sequences of genetic code in general.
 
 
 
@@ -335,7 +450,7 @@ So, with that introduction clearing up much of the basic genetics nomenclature a
 \LARGE
 \textbf{This Book is \hyperref[SECHOWTONAV]{Navigable}:}\\
 
-To ease and leverage meaningful cross-referencing across the chapters --- including extension materials in the \hyperref[APPOTHERFUNC]{appendix chapters}, there is substantial employment of \textbf{emboldened}, typed, named, numbered and \hyperref[SECHOWTONAV]{interactive}\footnote{Every such link, when encountered in the electronic or digital edition of this book, is \hyperref[SECHOWTONAV]{clickable}, and when clicked, shall automatically jump to the location in the book where that reference points. For paper-printed or non-interactive reading experiences, the type (in form of a guiding concept name: \textbf{Definition}, \textbf{Transformer}, \textbf{Theorem}, \textbf{Chapter},...) and a reference number (\textbf{1.2}, \textbf{B.3}, \textbf{8},...) can be combined to determine where it is in the book the referenced item is. Unfortunately, but not in future editions, this edition has no index yet.} references across the book. For consistency and ease of navigation, note that where they occur in the text, such shall appear and behave as either this link to \textbf{\hyperref[CHAPACRONYMNS]{List of Acronymns}} or \textbf{\hyperref[TRANSFTELEP]{Transformer \ref{TRANSFTELEP}}}.
+To ease and leverage meaningful cross-referencing across the chapters --- including extension materials in the \hyperref[APPOTHERFUNC]{appendix chapters}, there is substantial employment of \textbf{emboldened}, typed, named, numbered and \hyperref[SECHOWTONAV]{interactive}\footnote{Every such link, when encountered in the electronic or digital edition of this book, is \hyperref[SECHOWTONAV]{clickable}, and when clicked, shall automatically jump to the location in the book where that reference points. For paper-printed or non-interactive reading experiences, the type (in form of a guiding concept name: \textbf{Definition}, \textbf{Transformer}, \textbf{Theorem}, \textbf{Chapter},...) and a reference number (\textbf{1.2}, \textbf{B.3}, \textbf{8},...) can be combined to determine where it is in the book the referenced item is. \hl{Unfortunately, but not in future editions, this edition has no index yet} --- \hl{TODO: add an index to this book and then revise this statement here}.} references across the book. For consistency and ease of navigation, note that where they occur in the text, such shall appear and behave as either this link to \textbf{\hyperref[CHAPACRONYMNS]{List of Acronymns}} or \textbf{\hyperref[TRANSFTELEP]{Transformer \ref{TRANSFTELEP}}}.
 
 \end{minipage}}
 \\
@@ -353,7 +468,7 @@ In \textbf{\hyperref[SEC3]{Chapter \ref{SEC3}}} we shall look at how we might le
 
 In \textbf{\hyperref[SEC3A]{Chapter \ref{SEC3A}}} we then shall consider the interesting matter of \textbf{complement sequences} and \textbf{complement symbol sets}. We shall look at how to generate complements given a starting sequence or symbol set. We shall look into the interesting fact that complementing $\psi_{DNA}$ helps us arrive at the common \textbf{A-T-C-G} ordering of terms such as in $\dot{\psi}_{DNA}$. And though we might not use it immediately, we shall see that we might also talk of orthogonal symbol sets and orthogonal symbol set identities (o-SSI\cite{ossipaper}) in relation to na-Sequences and their complements.
 
-In \textbf{\hyperref[SEC4A]{Chapter \ref{SEC4A}}} we shall dive into how to leverage the \textbf{ADM} and \textbf{MSS} to perform non-trivial sequence analyses. We shall utilize four scenarios starting with basic scenarios between two individual sequences of potentially unequal lengths, all the way to analyzing entire collections or populations based on their representative na-Sequences. We shall look at how to leverage the \textbf{TEA}\cite{Lutalo2024_taz}\cite{cli_tttt} text-oriented GPL to conduct some of the essential analyses proposed, readily via the the command-line on any major operating system, and especially with DNA/RNA sequences of any size stored in basic text files. We shall see that using the concept of the \textbf{modal sequence statistic}, whether applied to individual na-Sequences, collections of them or just sub-sequences of a longer DNA or RNA strands, can help us leverage statistical summary information about a sequence that might otherwise not be easy to glean or leverage from trivial inspection of a sequence. In this chapter too, particularly in \textbf{\hyperref[SECPROXPOP]{Section \ref{SECPROXPOP}}}, we shall develop an algorithm that might be utilized in applying artificial statistical intelligence to the matter of sequence classification problems relating to labeled datasets. The closely related \textbf{\hyperref[SECSEQPROXSEQ]{Section \ref{SECSEQPROXSEQ}}} shall consider the matter of identifying the \textbf{closest-sequence} from a collection of na-Sequences when given a particular query na-Sequence. Finally, \textbf{\hyperref[SECSEQSTORAGE]{Section \ref{SECSEQSTORAGE}}} shall consider the important matter of \textbf{optimal database storage of na-Sequences} as is typically found in real-world systems such as those that do whole-genome sequencing or in gene-banks, etc. 
+In \textbf{\hyperref[SEC4A]{Chapter \ref{SEC4A}}} we shall dive into how to leverage the \textbf{ADM} and \textbf{MSS} to perform non-trivial sequence analyses. We shall utilize four scenarios starting with basic cases between two individual sequences of potentially unequal lengths, all the way to analyzing entire collections or populations based on their representative na-Sequences. We shall look at how to leverage the \textbf{TEA}\cite{Lutalo2024_taz}\cite{cli_tttt} text-oriented, sequence-transformer chaining paradigm GPL to conduct some of the essential analyses proposed, readily via the command-line but also via any web browser on any major operating system, and especially with DNA/RNA sequences of any size stored in basic text files or merely held in strings. We shall see that using the concept of the \textbf{modal sequence statistic}, whether applied to individual na-Sequences, collections of them or just sub-sequences of longer DNA or RNA strands, can help us leverage statistical summary information about a sequence that might otherwise not be easy to glean or leverage from trivial inspection of a sequence. In this chapter too, particularly in \textbf{\hyperref[SECPROXPOP]{Section \ref{SECPROXPOP}}}, we shall develop an algorithm that might be utilized in applying artificial statistical intelligence to the matter of sequence classification problems relating to labeled datasets. The closely related \textbf{\hyperref[SECSEQPROXSEQ]{Section \ref{SECSEQPROXSEQ}}} shall consider the matter of identifying the \textbf{closest-sequence} from a collection of na-Sequences when given a particular query na-Sequence. Finally, \textbf{\hyperref[SECSEQSTORAGE]{Section \ref{SECSEQSTORAGE}}} shall consider the important matter of \textbf{optimal database storage of na-Sequences} as is typically found in real-world systems such as those that do whole-genome sequencing or in gene-banks, etc. 
 
 In \textbf{\hyperref[SECMATHSEQ]{Chapter \ref{SECMATHSEQ}}} we shall get into some deep mathematics around the critical problem of genome sequencing. We shall tackle the fundamental problem in genetics engineering by breaking it down into 3 major problems. \textbf{\hyperref[PROBG1]{Problem G1}} dealing with the matter of how to compute the longest common subsequence given any two sequences. \textbf{\hyperref[PROBG2]{Problem G2}} dealing with how, as happens during conventional genome sequencing, we have sections of two or more sequences that are not exactly the same, but which must be reduced to some \textbf{consensus sequence} that is most true to all the input/available disparate identifying sequences. And then in \textbf{\hyperref[SECCOMPGENSEQ]{Problem G3}}, we shall consider how to arrive at the final best consensus sequence that also unifies all the disparate input sequences originally provided, into a single sequence that is then the consensus genome sequence of the entity under analysis.
 
@@ -361,7 +476,7 @@ In \textbf{\hyperref[SECMATHSEQ]{Chapter \ref{SECMATHSEQ}}} we shall get into so
 We shall then turn our attention to the matter of how genetic code is translated into actual living organisms in \textbf{\hyperref[SEC05]{Chapter \ref{SEC05}}}, focusing at the molecular level, and shall tackle the matter of the algorithm by which the most basic synthesis happens in a cell.
 
 
-And then shall wrap up our core explorations in \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}}, from where we shall look at what results from actual processing of genome sequences or rather DNA code; the manifestation of some living thing, an organism or some aspect of it as specified in the underlying genetic code. We shall especially deal with minimal entities such as viruses and simple organelles. Most importantly though, we shall explore \textbf{genome expression} formally and conceptually so, with the assistance of a thought-experiment. A hypothetical genome-expression system --- which we shall refer to as the \textbf{Lu-Genome Expression System} (LGES) shall be presented, and all our explorations shall be based on it. \textbf{\hyperref[SECOZIN]{Section \ref{SECOZIN}}} shall deal with a visual encoding method that leverages a digit-cipher named \textbf{OZIN}, and which is to be used to express storage-level genetic code (in decimal/numeric form), it its \textbf{intermediate form} --- equivalent to DNA-to-mRNA transcription in living organisms. We shall finally turn attention to the final expression step --- equivalent to mRNA-to-Protein/Function translation in nature, in \textbf{\hyperref[SECGENEXPRE]{Section \ref{SECGENEXPRE}}}, and shall get to see yet another innovation in the form of a genetic-code-to-spatial-form encoding based on a cipher we shall call the \textbf{Platonic Form Cipher} (\textbf{\hyperref[SECPLATONIC]{Section \ref{SECPLATONIC}}}). The essential algorithm for how to perform genome expression all the way from storage code into the final organism is depicted in \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}, and we shall close with some examples of complete, though hypothetical, fully-expressed genomes in \textbf{\hyperref[SECFULLGES]{Section \ref{SECFULLGES}}}.
+And then shall wrap up our core explorations in \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}}, from where we shall look at what results from actual processing of genome sequences or rather DNA code; the manifestation of some living thing, an organism or some aspect of it as specified in the underlying genetic code. We shall especially deal with minimal entities such as viruses and simple organelles. Most importantly though, we shall explore \textbf{genome expression} formally and conceptually so, with the assistance of a thought-experiment. A hypothetical genome-expression system --- which we shall refer to as the \textbf{Lu-Genome Expression System} (LGES) shall be presented, and all our explorations shall be based on it. \textbf{\hyperref[SECOZIN]{Section \ref{SECOZIN}}} shall deal with a visual encoding method that leverages a digit-cipher named \textbf{OZIN}\cite{lutalo_2025_grimlumtauto}, and which is to be used to express storage-level genetic code (in decimal/numeric form), it its \textbf{intermediate form} --- equivalent to DNA-to-mRNA transcription in living organisms. We shall finally turn attention to the final expression step --- equivalent to mRNA-to-Protein/Function translation in nature, in \textbf{\hyperref[SECGENEXPRE]{Section \ref{SECGENEXPRE}}}, and shall get to see yet another innovation in the form of a genetic-code-to-spatial-form encoding based on a cipher we shall call the \textbf{Platonic Form Cipher} (\textbf{\hyperref[SECPLATONIC]{Section \ref{SECPLATONIC}}}). The essential algorithm for how to perform genome expression all the way from storage code into the final organism is depicted in \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}, and we shall close with some examples of complete, though hypothetical, fully-expressed genomes in \textbf{\hyperref[SECFULLGES]{Section \ref{SECFULLGES}}}.
 
 The overall conclusion of the book is presented in \textbf{\hyperref[CONC]{Chapter \ref{CONC}}}, where we shall especially find properly distilled \textbf{KPIs} --- metrics concerning what the major contributions of this work are --- in literature, in mathematics, in genetics, in computer science, in philosophy, the humanities and arts. That chapter too, in \textbf{\hyperref[SECFUTUREDIRECT]{Section \ref{SECFUTUREDIRECT}}}, also clearly outlines the major problems, concerns, issues and areas of future exploration and research that this book proposes or could not immediately resolve in the present edition, and which are then left as \textbf{future directions} or \textbf{future work} for the reader, the student, the author, as well as any other interested or concerned researcher.
 
@@ -375,6 +490,10 @@ Finally, there are a few extra materials that have been set aside in the appendi
 \item \textbf{\hyperref[SECIFAMSSPFMAPS]{Chapter \ref{SECIFAMSSPFMAPS}}} that covers the matter of how to compute \textbf{PFA}s for particular na-Sequences.
 
 \item \textbf{\hyperref[SECALTPFGESA]{Chapter \ref{SECALTPFGESA}}} that preserves the original \textbf{PFA} construction algorithm as part of the \textbf{LGES} theory.
+
+\item \textbf{\hyperref[CHAPTRANS]{Chapter \ref{CHAPTRANS}}} that presents the formal distillation of all the essential foundational results (10)  and proposed general [theoretical] applications (10) of transformatics, these being presented in this book for the first time, as a verbatim reprint of the material originally presented in the \textbf{``Transformatics 101 explained"} mini-thesis\cite{Lutalo2025_transformatics_thesis}.
+
+\item \textbf{\hyperref[CHAPSITTRANS]{Chapter \ref{CHAPSITTRANS}}}, comprising of material and theorizing that comes a little later than the material originally in \cite{Lutalo2025_transformatics_thesis}, and which attempts, for the first time ever, to rigorously situate the newly proposed sub-field and theory of transformatics, in the grand spectrum of most of mathematics as well as applied mathematics.
 
 \item \textbf{\hyperref[SECFUTDIRECT]{Chapter \ref{SECFUTDIRECT}}} that deviates from mere genetics, and demonstrates how Transformatics might be applied in any other mathematical science, with a focus on Physics and just one interesting problem - \textbf{teleportation} and \textbf{time travel}.
 
@@ -513,6 +632,7 @@ As with many kinds of sequences dealt with in transformatics, the possession of 
 Any sequence of either DNA or RNA nucleotides, or both --- basically a sequence of nucleic acids, expressible as some sequence of symbols from $\psi_{na}$ is a \textbf{na-Sequence} and its symbol set is potentially a superset of both $\psi_{DNA}$ and $\psi_{RNA}$. Equivalently:
 
 \begin{equation}
+\label{EQNASEQ}
 \forall \Theta_{na} = \langle a_i, \rangle, \quad a_i \in \psi_{na} \implies a_i \in \psi_{DNA} \lor a_i \in \psi_{RNA}
 \end{equation}
 
@@ -5141,6 +5261,1212 @@ Now, concerning that rendering of the genome sequence expressed in \textbf{\hype
 Concerning \textbf{\hyperref[FIGLGESEULERVIRUSv2_ORIG]{Figure \ref{FIGLGESEULERVIRUSv2_ORIG}}}, the alternative rendering  of the same sequence as $\Omega_{veuler}$ first depicted in \textbf{\hyperref[FIGLGESEULERVIRUS_ORIG]{Figure \ref{FIGLGESEULERVIRUS_ORIG}}}, we see that underlying the variations is how the \textit{degrees of freedom} in rendering the genome have somewhat been exploited. Notice how the joint and appendages are placed or oriented about the platonic forms that mostly remain unchanged across the two renderings --- except perhaps in scale. And talking of scaling nodes, in the future, we might want to explore whether in such a system as \textbf{LGES} in which the expression is sensitive to measures such as the \textbf{IFA MSS}, whether it might make sense to scale each subsequent pf-node in the \textbf{PFA} based on its position within the sequence? Though we didn't have such a rule included in \textbf{\hyperref[ALGCOZINPLATO_ORIG]{Algorithm \ref{ALGCOZINPLATO_ORIG}}}, and yet, our example renderings here have somewhat taken advantage of that plausible logic.
 
 That said, note that, we started this work with a photograph of a pineapple ready to harvest (see \textbf{\hyperref[FIGPINEAPPLE]{Figure \ref{FIGPINEAPPLE}}}), and though the associated discussion\footnote{Checkout video/mini-lecture on the matter at author's YouTube: \url{https://youtube.com/shorts/yTJzBEpw7Z4}} by the author did bring up the matter of how it might inspire a genome expression system in which the prefix is the actual DNA that renders the rest of the organism (fruit, plant-base and roots in this case of the pineapple), it is left as an exercise to the reader, to decide whether example genome sequence expressions/renderings such as in \textbf{\hyperref[FIGLGESEULERVIRUS_ORIG]{Figure \ref{FIGLGESEULERVIRUS_ORIG}}} depict this pineapple-inspired philosophy or not.
+
+
+%%%%%%%%%%%%%%%| TRANSFORMATICS 101 - explained mini-booklet as an appendix chapter |%%%%%%%%%
+
+
+% insert [front] cover --- could just be a PNG or PDF
+\includepdf[pages=1]{resources/pdfs/trans_front_cover.pdf}
+
+\chapter{TRANSFORMATICS 101 - explained:\\\small{A rigorous, succinct introduction to all the essential foundations and proposed theory of Transformatics}}
+\label{CHAPTRANS}
+
+\section*{ABSTRACT\footnote{Note that this chapter attempts to present \cite{Lutalo2025_transformatics_thesis} verbatim, with the only major difference being the numbering of citations and references, which are co-shared with the main manuscript.}:}
+%\Large
+In only \textbf{10 general foundational results}\cite{lutalo_2025_trans101_1page} --- all \textbf{based on earlier mathematical research} by the author, as well as \textbf{10 extra abstractions} spanning \textbf{how transformatics might be leveraged} as \textbf{a basis mathematics} \texttt{for problems} in; \texttt{number theory} and \texttt{cryptography} (o-SSIs); \texttt{mathematical statistics} (ADM, TCR, PCR, MSS, SC, PC); \texttt{linear algebra} (super sequences); \texttt{computer science} (TEA language, transformer-chains/sequence-transformers) and \texttt{information theory} (entropy of a sequence) among others, we distill and establish, in a summarized form, the \textbf{core foundations of Transformatics}\cite{transformatics} as its own mathematical theory, branch, or \textbf{discipline}. In this \textbf{mini-thesis}. Each foundational result presented is likewise accompanied by one or \textbf{more references} to some earlier work where the idea or presented concept was first developed, presented, or applied by the author during their research. \textbf{Useful notes and commentary} are also included where necessary, and in the extension decade of \textbf{proposed abstractions}, also commentary about how the proposals relate to the decade of foundational results likewise is catered for.
+ \newline\newline
+     \textbf{Keywords}: Foundations, Transformatics, Sequence Analysis,  Sequence Transformers, Thesis
+%\end{abstract}
+
+\section{Foundations of a New Mathematics of Sequences}
+\label{SECFOUND}
+
+\subsection{Result 1: The Empty Sequence\cite{lnspaper}}
+
+$\Theta = \langle \rangle \implies |\Theta| = 0 \quad \land \quad \Theta \equiv \emptyset$
+
+\subsection{Result 2: A Symbol Set\cite{Lutalo2024gtnc}}
+
+$\psi_\beta^n = \langle \beta_{i \in [1,n]} \rangle : n \in \mathbb{N} : \invpi(\beta_i \in \psi_\beta) = 1 \quad \forall \beta_i \in \psi_\beta$
+
+\subsection{Result 3: A Sequence\cite{lnspaper}}
+\label{RES3}
+
+$\Theta^n = \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_\beta : n \geq 1$
+
+\subsection{Result 4: Sequence Cardinality\cite{adtpaper}\cite{Lutalo2024gtnc}}
+\label{RES4}
+
+$\forall \Theta^n = \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_\beta \quad \implies \quad \invpi(\Theta^n) = |\Theta^n| = n \in \mathbb{N}$ 
+
+
+
+\subsection{Result 5: A Sequence Symbol Set\cite{ossipaper}\cite{Lutalo2024gtnc}}
+\label{RES5}
+
+$\psi(\Theta^n) = \langle \theta_{i \in [1,k]} \rangle : k,n \in \mathbb{N} \land k \geq 1 : \invpi(\theta_i \in \psi(\Theta^n)) = 1 \quad \forall \theta_i \in \Theta^n : k \leq n : \invpi(\psi(\Theta^n)) = k$
+
+
+\subsection{Result 6: A Sequence Transformation\cite{transformatics}\cite{lnspaper}}
+
+$\Theta^n = \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_\beta \rightarrow \Theta^* = \langle \theta^*_{i \in [1,k]} \rangle : \mathbb{N} \times \psi_* : \psi_\beta \neq \psi_{*} \lor \psi(\Theta^n) \neq \psi(\Theta^*) \lor \overset{>}{\psi}(\Theta^n) \neq \overset{>}{\psi}(\Theta^*)$
+
+
+\subsection{Result 7: A Sequence Transformer\cite{Lutalo2025transpsy}\cite{transformatics}}
+\label{RES7}
+
+$\Theta^n = \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_\beta \xrightarrow{f(\Theta)=\Theta^*} \Theta^* = \langle \theta^*_{i \in [1,k]} \rangle: \mathbb{N} \times \psi_* 
+; \quad \psi_\beta \neq \psi_{*} \lor \psi(\Theta^n) \neq \psi(\Theta^*) \lor \overset{>}{\psi_\beta} \neq \overset{>}{\psi_*}$
+
+\subsection{Result 8: A Sequence Filter\cite{transformatics}}
+\label{RES8}
+
+$\Theta^n = \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_\beta \xrightarrow{f(\Theta,\psi_{\beta^*})=\Theta^*} \Theta^* = \langle \theta^*_{i \in [1,k]} \rangle : \mathbb{N} \times \psi_{\beta^*} ;\\ k \in \mathbb{N} : \psi_{\beta^*} \subseteq \psi_\beta \implies \invpi(\psi_{\beta^*}) = k \leq \invpi(\psi_\beta) \implies \invpi(\Theta^*) \leq \invpi(\Theta^n) $
+
+\subsection{Result 9: A Sequence Generator\cite{transformatics}\cite{lutalo2025transformatic}}
+\label{RES9}
+
+$\Theta^n | \emptyset \xrightarrow{f(\psi_\beta,k))=\Theta^*} \Theta^k = \langle \beta^*_{i \in [1,k]} \rangle : \mathbb{N} \times \psi_{\beta} : k \in \mathbb{N} : \forall \beta_i \in \Theta^k \implies  k \geq 1 \quad \land \quad \beta_i \in \psi_\beta = \Psi^\infty \cup \Theta^n$
+
+\subsection{Result 10: A Sequence Sampler\cite{lutalo_2025_trans_genetics}}
+
+$\Theta^n \xrightarrow{f(\Theta^n,k))=\Theta^k} \Theta^k = \langle \theta_{i \in [1,k]} \rangle : \mathbb{N} \times \psi(\Theta^n) : k,n \in \mathbb{N} \land k \geq 1$
+
+
+%%%---------[ EXTENSION ]-----------%%%
+
+{
+\noindent\rule{\linewidth}{0.4pt}
+
+\textbf{NOTES:}
+
+\begin{enumerate}
+\item \textbf{Result 1}: Apart from the concept of the set, that of the \textbf{empty set} underlies all of transformatics --- it is the ideological basis of all kinds of sequence generation, in particular, when projected unto the \textbf{empty sequence}. It allows us to codify states such as emptiness, non-emptiness, equality, identity, \textbf{zero} etc. 
+\item \textbf{Result 2}: The \textbf{symbol set} underlies of all formulations in need of a way to speak of or quantify the \textbf{identity composition} of any sequence.
+\item \textbf{Result 3}: The \textbf{sequence} is the basis concept in transformatics when applied to sequences, or rather, the \textbf{algebra of sequences}\cite{treealgebras_review}.
+\item \textbf{Result 4}: \textbf{Sequence cardinality} allows us to quantify various measures about a sequence relative to the size of its membership at rest. These might for example be measures such as the entropy of the sequence (\textbf{\hyperref[PROPTOE]{Proposal 10}}).
+\item \textbf{Result 5}: The \textbf{sequence symbol set} is an application of the symbol set concept to any particular sequence as opposed to say, talking of the symbol set of a language --- an alphabet like $\psi_{az}$ or $\psi_{0-9}$ for example Also, when applied to a particular sequence, such a ordered set might also reflect the order of members in the concerned sequence --- somewhat similar to the MSS (\textbf{\hyperref[PROP5]{Proposal 5}}) then, but not the same.
+\item \textbf{Result 6}: Underlying all notions of one sequence being \textit{different} from any other sequence is that of \textbf{sequence transformations}. Any operation that can alter either the composition or member-ordering of a sequence is essentially a sequence transformer. And when we talk of any two or more sequences in terms of how they differ from each other irrespective of the process or operation that maps them between each other, we then speak of a \textbf{sequence transformation}. In the latest (1$^{st}$ November 2025) update to these foundations, we have also introduced use of the concept of the \textbf{modal sequence statistic} in some of the specifications such as for the definition of sequence transformation as a concept. This, especially so we can enhance or make more robust, the foundational result. Otherwise, we formally [re-]introduce the concept of the MSS in \textbf{\hyperref[PROP5]{Proposal 5}}.
+\item \textbf{Result 7}: The \textbf{sequence transformer} concept concretizes the notion of a transformer operation underlying or betwixt any two sequences involved in a sequence transformation. Such transformers might be operations such as those specified on structures such as matrices in linear algebra, or might be as the structure-preserving sequence altering functions as the catamorphisms that Gibbons mentions in relation to transformations on trees\cite{treealgebras_review}. Also realize that in the current formulation of \textbf{Result 7}, we employ the concept of the MSS in specifying the final potential kind of sequence transformation possible --- where the composition and cardinality of a sequence pre and post transform might stay preserved, but not the relative order of terms within the sequence --- a concept also precisely analyzable using mathematics and measures such as the \textbf{anagram distance measure} (\textbf{\hyperref[PROP2]{Proposal 2}}).
+\item \textbf{Result 8}: \textbf{Sequence filters} allow us to specify or treat of scenarios in which one sequence is reduced to a smaller, perhaps more useful sequence --- such as the generation of an MSS or any symbol set for that matter, from any arbitrary sequence. Note that since the 8$^{th}$ October first edition of these foundations, \textbf{Result 8} has since been fixed/corrected, so that the current transformer specification for a generic sequence filter is the correct one --- also more specific than originally.
+\item \textbf{Result 9}: Underlying any concept of \textit{creation} is that of bringing things to life.. (\textit{ex nihilo or not}) especially relative to some pattern or specification (such as the generation of words in some specified language or number system or alphabet, etc.), but also, generation of structures or objects of a particular kind or type. Concerning the current general specification of a [sequence] generator, note that first of all, any sequence generator is essentially a sequence transformer to begin with. Moreover, for the fact that the generated sequence might sometimes span an alphabet, type or symbol-set different or larger than that of the source or original reference sequence --- such as a seed-symbol-set $\psi_\beta$ in the presented general case --- we also could have expressed the final specification as either $\beta_i \in \psi(\Theta^n) \cup \psi^\infty$ or perhaps $\psi_\beta := \psi_\beta | \psi_\beta \cup \psi(\Theta^n) \cup \psi^\infty | \psi^\infty$ and where we know that $\psi(\Theta^n) \subseteq \Theta^n$.
+\item \textbf{Result 10}: Being able to \textbf{choose} is a fundamental concept in mathematics such as probability theory but also much of statistical experiments\cite{lutalo2025rng} or intelligent behavior\cite{Lutalo2025transpsy} for example. We might liken a \textbf{sequence sampler} to a sequence filter (\textbf{Result 8}), but they are not the same thing; they approach the same concept differently; a filter  might be the source sequence minus everything not matching a pattern, while the sampler could be modeled as the source sequence minus everything matching a pattern or vice-versa.
+
+\end{enumerate} 
+
+}
+\noindent\rule{\linewidth}{0.4pt}
+
+
+\section{Proposed Abstractions Leveraging Transformatics}
+\label{SECPROP}
+
+Before we kick-off, note that, as in many previous works on transformatics since \cite{transformatics}, when we have any sequence $\Theta^n : \forall i \in [1,n] : \exists \theta_i \in \Theta^n$, then, when we wish to talk of the \textbf{position index} of some member element or symbol $\theta_i$ in $\Theta^n$, such that we mean the member in that sequence that is located or positioned at exactly index $i$ in the range $[1,n]$, then we shall, as introduced and elaborated upon in the introduction section of \cite{transformatics}, merely use the notation:\\
+
+
+\begin{equation}
+I(\theta_i, \Theta^n) = i \quad \forall \theta_i \in \Theta^n
+\end{equation}
+
+Further, if we have any two elements from the sequence (whether or not they are equal: $\theta_i = \theta_j$ or not: $\theta_i \neq \theta_j$), and yet, if $i \neq j$, then $I(\theta_i, \Theta^n) \neq I(\theta_j, \Theta^n)$, and if $i \leq j$, then $I(\theta_i, \Theta^n) \leq I(\theta_j, \Theta^n)$. 
+
+As you shall come to appreciate when studying formulations and expressions in transformatics, the position operator or measure, $I(\cdot, \cdot)$ is very fundamental, useful and indispensable especially when treating of \textbf{ordered sequences} or of order in any sequence.
+
+\subsection{Proposal 1: The o-SSI Sequence from any Sequence\cite{ossipaper}}
+
+Assume we consider the sequence $\Theta: \mathbb{N} \times \psi_*$ of any length and spanning an arbitrary symbol set $\psi_*$. Then, in case we wish to reduce $\Theta$ to a representative sequence $\Theta_{ossi}$ that only contains elements of $\Theta$ spanning the symbol set, $\psi_\beta$, of some particular base, $\beta$; in which case, $\Theta_{ossi}$ would be an \textbf{orthogonal symbol set identity} (o-SSI) sequence under base-$\beta$, then, the following o-SSI-generator --- also \textbf{an extractor}\footnote{In the sense that, where a sequence already contains the essential symbols spanning some particular symbol set, and even though they might be scattered about or `buried' around in the sequence surrounded by `noise', the function would merely extract those essential symbols [only,] from that sequence in their natural order of first occurrence.} and \textbf{a reducer} transformer, defined using the calculus and semantics of transformatics, would suffice\footnote{Say, and as almost all transformatics might be in practice --- consists of a clear, succinct and complete specification that can readily be translatable into a working or equivalent computer program based on or defined using the chaining of sequence transformers such as in a language as TEA\cite{cli_tttt}.}:\\
+
+
+\begin{transf}[The \textbf{o-SSI Extractor}]
+\label{TRANSFOSSI}
+$\Theta \langle \theta_{i \in [1,n]} \rangle: \mathbb{N} \times \psi_*  \xrightarrow{O_{filter}(\Theta,\psi_\beta)} \Theta^k \langle \theta_i \rangle : \mathbb{N} \times \psi_\beta = \Theta_{ossi};\\ 0 \leq k \leq \invpi(\psi_\beta) \leq \invpi(\Theta) = n \in \mathbb{N} : \forall \theta_i \in \Theta^k \implies \exists \theta_i \in \psi_\beta \quad\\
+\land \quad \forall i,j \in \mathbb{N} \land \theta_i, \theta_j \in \Theta^k: I(\theta_i,\Theta) \leq I(\theta_j,\Theta) \implies I(\theta_i,\Theta^k) \leq I(\theta_j,\Theta^k) $\\
+\end{transf}
+
+
+First, realize that \textbf{\hyperref[TRANSFOSSI]{Transformer \ref{TRANSFOSSI}}} leverages the concept of a sequence filter as first introduced in \textbf{\hyperref[RES8]{Foundational Result 8}}. Also, note that, the \textbf{o-SSI Sequence}, $\Theta_{ossi}$, of any sequence $\Theta$ under $\beta$ would likewise be related to the concept of the \textbf{Specific Symbol Set}\footnote{Refer to \textbf{Definition 3} in \cite{ossipaper}}, $\hat{\psi}(\Theta)$, of that sequence, in the sense that, at most, $\Theta_{ossi}$ is equivalent to $\hat{\psi}_\beta(\Theta)$  or that their cardinalities and memberships are related as:
+
+\begin{equation}
+\invpi(\Theta_{ossi}) \leq  \invpi(\hat{\psi}_\beta(\Theta)) \leq \invpi(\psi_\beta) \leq  \invpi(\Theta)
+\end{equation}
+
+and as for membership:
+
+
+\begin{equation}
+\psi(\Theta_{ossi}) \subseteq  \hat{\psi}_\beta(\Theta) \subseteq \psi_\beta \subseteq  \Theta
+\end{equation}
+
+
+\subsection{Proposal 2: The Anagram Distance Between Any Two Sequences\cite{adtpaper}}
+\label{PROP2}
+
+Occasionally, one shall find that they need to quantify how different some two or more sequences are. In the simplest case, we might merely sort a collection of sequence by the relative size of each sequence, and thus differentiate them by their sequence cardinality for example --- $\invpi(\Theta)$ Vs $\invpi(\Theta^*)$ for some two sequences involved in a general transformation such as:\\
+
+\begin{trans}
+\label{TRANS1}
+$\Theta \rightarrow \Theta^* \quad \implies \quad \invdel_{\Theta,\Theta^*} = (\invpi(\Theta) - \invpi(\Theta^*));\\
+\invdel_{\Theta,\Theta^*} = \begin{cases}
+> 0 & \text{compression}\\
+ 0 & \text{conservation}\\
+ < 0 & \text{protraction}
+ \end{cases}
+$\\
+\end{trans}
+
+or if we only wish to care about absolute distance..\\
+
+\begin{trans}
+\label{TRANS1A}
+$\Theta \rightarrow \Theta^* \quad \implies \quad |\invdel|_{\Theta,\Theta^*} = |\invpi(\Theta) - \invpi(\Theta^*)|;\\
+|\invdel|_{\Theta,\Theta^*} = \begin{cases}
+> 0 & \text{different}\\
+ 0 & \text{similar}\\
+ \end{cases}
+$\\
+\end{trans}
+
+However \textbf{\hyperref[TRANS1]{Transformation \ref{TRANS1}}} and \textbf{\hyperref[TRANS1A]{Transformation \ref{TRANS1A}}} only cater for comparisons or analysis relative to size of the sequences being compared. And such that $\invdel_{\Theta,\Theta^*}$ or $|\invdel|_{\Theta,\Theta^*}$ shall work just fine where the purpose of the sequence analysis is just concerned with the relative sizes of the sequences. But, and as we established in the \textbf{Anagram Distance Theory}(ADT) paper\cite{adtpaper}, there are many important cases when it is necessary to compare two or more sequences \textbf{based on the relative ordering of members in them and not just by their member composition or frequencies}. Thus the \textbf{Anagram Distance Measure}(ADM), and which, for any two sequences as presented above, the essential measure would be:
+
+
+\begin{equation}
+\tilde{A}(\Theta \rightarrow \Theta^*) = \frac{1}{\invpi(\Theta)} \times \sum\limits_{\forall \theta_i \ \in \Theta}^{\invpi(\Theta)} | I(\theta_i,\Theta) - I(\theta_i,\Theta^*)|
+\end{equation} 
+
+Which, as we saw in \cite{adtpaper}, has the interesting interpretation as:
+
+
+\begin{equation}
+\label{EQTHET}
+\tilde{A}(\Theta \rightarrow \Theta^*) = \begin{cases}
+0, & \Theta = \Theta^*, \\
+\leq 1, & \Theta \approx \Theta^*, \\
+> 1, & \Theta \ll \Theta^*.
+\end{cases}
+\end{equation}
+
+And thus can help us observe/compute, quantify and [objectively] appreciate, the \textbf{relative disorder} resulting from one sequence being transformed into another (of potentially similar cardinality and member composition/distribution). In earlier work, we have already demonstrated and argued that the \textbf{ADM} is a very important formalism in mathematical statistics and statistical analysis, especially in cases dealing with \textbf{measures of variability} (MoVs) where traditional measures such as the range, mean deviation, variance and standard deviation statistics cannot (\textbf{or fail to}) catch any actual differences between two or more sequences as we quantifiably/provably demonstrated in \cite{transformatics}, but also where simpler difference measures such as just differences in cardinality (such as in \textbf{\hyperref[TRANS1]{Transformation \ref{TRANS1}}}) aren't sufficient or conclusive enough for the special cases that the ADM caters for; more about this topic has also been covered well in earlier work\cite{lutalo_2025_trans_genetics}.
+
+
+\subsection{Proposal 3: The Transformer Compression Ratio of any Sequence Transformation\cite{transformatics}}
+\label{PROP3}
+
+In  \textbf{\hyperref[TRANS1]{Transformation \ref{TRANS1}}} we have seen that there might be cases in which a transformation results in a sequence that is observably larger or smaller than the source sequence; \textbf{protraction} or \textbf{compression} respectively. And as was laid down in \cite{transformatics} --- refer to \textbf{Section 4.3} of \cite{transformatics} --- we can measure the \textit{overall} effect of a transform on the \textit{entire} sequence merely by comparing the sequence cardinalities of the source and resultant sequence as such:\\
+
+
+\begin{equation}
+\label{EQTCR}
+\xi(\Theta \rightarrow \Theta^*) = \frac{\invpi(\Theta^*)}{\invpi(\Theta)}
+\end{equation}
+
+ The measure, $\xi(\Theta \rightarrow \Theta^*)$ is called the \textbf{Transformer Compression Ratio} (TCR), and when compared against $\invdel_{\Theta,\Theta^*}$, note that TCR is always positive, whereas the later, as we saw in  \textbf{\hyperref[TRANS1]{Transformation \ref{TRANS1}}}, might be negative too; this, because, well, TCR and $\invdel_{\Theta,\Theta^*}$ or even $|\invdel|_{\Theta,\Theta^*}$ all are based on comparing the cardinalities of the source and resultant sequences involved in a transformation, however, unlike them, TCR is computed via a division operation (thus ratio), while the others are based on a subtraction operation. In fact, TCR spans $\mathbb{R^+}$ as was laid out in \cite{transformatics}, and as we saw in that work, given $\invpi(\Theta) \geq 0$ for any sequence $\Theta$, and if $\invpi(\Theta) \geq 1$ for any \textbf{meaningful transformation}\footnote{Well, this is somewhat murky ground, because, in fact, it can make sense for the source sequence to have 0 cardinality such as in a transform as $\Theta \xrightarrow{f(\cdot)} \Theta^*$ where for example $f(\cdot)$ is an operator that can output a non-empty sequence even when given an empty input --- such as the case of a \textbf{\hyperref[RES9]{sequence generator}}!}, can be interpreted as such:
+ 
+ \begin{equation}
+\label{EQTCRCASES}
+\xi(\Theta \rightarrow \Theta^*) = \begin{cases}
+1, & \text{the size of }\Theta \text{ was preserved},\\
+0, & \Theta \text{ was reduced to nothing},\\
+> 1, & \Theta \text{ was extended/protracted},\\
+< 1, & \Theta \text{ was reduced/compressed}.
+\end{cases}
+\end{equation}\\
+
+\subsection{Proposal 4: The Piecemeal Compression Ratio of Any Sequence Transformation\cite{transformatics}}
+
+Further, with regards to how we might quantify the effects of some sequence transformation, note that, in cases such as:\\
+
+\begin{trans}
+\label{TRANSPCR}
+$\Theta: \mathbb{N} \times \psi_\beta \rightarrow \Omega: \mathbb{N} \times \psi_\alpha;\\
+\psi_\beta \neq \psi_\alpha \quad \lor \quad \exists \omega \in \Omega: \omega \notin \Theta$\\
+\end{trans}
+
+As explained in \cite{transformatics} --- refer to \textbf{Section 4.3} of \cite{transformatics} --- when the source and resultant sequence do not share any members in common, \textbf{and yet we wish to evaluate the deformation aspects of the transform}, then we can only compare them using a measure such as \textbf{TCR} --- it only cares about sizes and not membership. However, in case they \textbf{at least} share 1 member in common, then, we can restrict our comparison to only their common aspects --- i.e $\psi(\Theta) \cap \psi(\Theta^*)$, and thus, as laid out in \textbf{Definition 3} in \cite{transformatics}, we can compute a special measure called the \textbf{Piecemeal Compression Ratio}(PCR) as such:\\
+
+
+\begin{equation}
+\label{EQPCR}
+\Psi(\Theta \rightarrow \Theta^*) = \frac{1}{\invpi(\psi_\Theta \cap \psi_{\Theta^*})} \times \sum\limits_{\forall x \in (\psi_\Theta \cap \psi_{\Theta^*})} \frac{\invpi(x \in \Theta^*) - \invpi(x \in \Theta)}{\invpi(x \in \Theta)}
+\end{equation}\\
+
+And for the case of \textbf{\hyperref[TRANSPCR]{Transformation \ref{TRANSPCR}}}, can be re-written as:
+
+\begin{equation}
+\label{EQPCR2}
+\Psi(\Theta \rightarrow \Theta^*) = \frac{1}{\invpi(\psi_\beta \cap \psi_\alpha)} \times \sum\limits_{\forall x \in (\psi_\beta \cap \psi_\alpha)} \frac{\invpi(x \in \Theta^*) - \invpi(x \in \Theta)}{\invpi(x \in \Theta)}
+\end{equation}
+
+And as was laid out in that foundational paper on transformatics\cite{transformatics}, we can interpret \textbf{PCR} values as such\footnote{More research needed, with regards to this matter though.}\\
+
+
+\begin{equation}
+\label{EQPCRCASES}
+\Psi(\Theta,\Theta^*) = \begin{cases}
+undefined, & \psi_\Theta \cap \psi_{\Theta^*} = \emptyset \implies \text{no members in common},\\
+0, & \invpi(x \in \Theta) = \invpi(x \in \Theta^*) \forall x \in \psi_\Theta \cap \psi_{\Theta^*} \implies \text{conservation},\\
+> 0, & \exists x \in \psi_\Theta \cap \psi_{\Theta^*}: \invpi(x \in \Theta^*) > \invpi(x \in \Theta) \implies \text{protraction},\\
+< 0, & \exists x \in \psi_\Theta \cap \psi_{\Theta^*}: \invpi(x \in \Theta^*) < \invpi(x \in \Theta) \implies \text{compression}.
+\end{cases}
+\end{equation}\\
+
+
+Finally, note that, like $\invdel_{\Theta,\Theta^*}$ and $|\invdel|_{\Theta,\Theta^*}$ that we saw in \textbf{\hyperref[PROP2]{Proposal 2}}, \textbf{PCR} is based on a subtraction operation, however, and in addition to that, like both ADM and TCR, it also has division operations in it that makes it take on fractional number\cite{Lutalo2024gtnc} values too. In fact, $\Psi(\Theta,\Theta^*) \in \mathbb{R}$ or equivalently  $-\infty \leq \Psi(\Theta,\Theta^*) \leq \infty$, unlike ADM that only spans $\mathbb{R^+}$, and thus, is great for evaluating deformations involving either growth or contraction as we have seen. 
+
+
+\subsection{Proposal 5: The Modal Sequence Statistic of Any Sequence\cite{transformatics}}
+\label{PROP5}
+
+
+For especially situations when we are not interested in comparing one sequence to another, but when we merely wish to better understand some particular sequence --- like say, not just its size as could be told by computing the \textbf{\hyperref[RES4]{sequence cardinality}}, nor about its membership as we might tell using the \textbf{\hyperref[RES5]{sequence symbol set}}, there might be a case when we want to combine those two concepts into one; such as when we wish to \textbf{compare the relative frequency of members in a particular sequence}. Essentially, we might be faced with the problem:\\
+
+\begin{prob}
+\label{PROB1}
+Given\\ $\Theta^n : \mathbb{N} \times \psi_\beta : \theta_i, \theta_j \in \Theta^n : \theta_i \neq \theta_j  \quad \land \quad i,j \in [1,n] : n \in \mathbb{N}: 1 \leq \invpi(\theta_i \in \Theta^n) < n$,\\ is it true that $\invpi(\theta_i \in \Theta^n) \geq \invpi(\theta_j \in \Theta^n)$?\\
+\end{prob}
+
+So, as laid out in \textbf{Section 4.1} of \cite{transformatics}, we can approach a solution to \textbf{\hyperref[PROB1]{Problem \ref{PROB1}}} by leveraging the concept of the \textbf{modal sequence statistic} (MSS). Essentially, we would compute $\overset{>}{\Theta^n}$, which, by \textbf{Definition 1} in that foundation paper on transformatics\cite{transformatics}, would give us a resultant sequence based on/derived from the source sequence $\Theta^n$, such that the elements/members of the former exactly span the symbol set of the later/source sequence --- i.e. $\psi(\Theta^n)$, and yet, there are not only no duplicates, but that the elements are sorted such that the member/symbol that occurs the most (with highest frequency) in $\Theta^n$, occurs earliest in  $\overset{>}{\Theta^n}$ than any other element, or at least (such as where any two elements have the same relative frequency in $\Theta^n$), they occur in their natural order of first-occurrence.
+
+Thus, if we compute a MSS for the sequence specified in \textbf{\hyperref[PROB1]{Problem \ref{PROB1}}} as such:\\
+
+
+\begin{trans}
+$\Theta^n \xrightarrow{O_{mss}(\Theta^n)} \overset{>}{\Theta^n}$
+\end{trans}
+
+Then, we can solve the problem thus:\\
+
+\begin{soln}
+\label{SOLN1}
+$\invpi(\theta_i \in \Theta^n) \geq \invpi(\theta_j \in \Theta^n)$? = 
+$\begin{cases}
+true & I(\theta_i,\overset{>}{\Theta^n}) \leq I(\theta_j,\overset{>}{\Theta^n})\\
+false & otherwise
+\end{cases}$\\
+\end{soln}
+
+
+Not only shall we come to appreciate and love the MSS for being a statistical measure first introduced in a work on transformatics\cite{transformatics}, but that, like the traditional statistical measure it is inspired by --- the \textbf{mode} of any dataset/sequence --- it is indispensable as a summary statistic, and yet, unlike and though as powerful as the mode, gives us a whole collection of summary statistics in one measure (as a \textbf{sequence or vector of modes}, and not merely as a single scalar value which is all that the traditional mode is). 
+
+Also, we have argued in several works exploring and applying transformatics --- such as in \cite{transformatics}, \cite{adtpaper} and \cite{lutalo_2025_trans_genetics} --- that the modal sequence statistic can be more useful to compute than many traditional summary statistics, but also that, it can help us arrive at other, more useful statistics (such as the next two sections are going to tackle), and for domains or problems such as in \textbf{statistical artificial intelligence}, machine learning and data mining to name but a few, is one of few core measures that can \textbf{greatly simplify decision making problems in an autonomous way}.
+
+
+\subsection{Proposal 6: The Characteristic of Any Sequence\cite{lutalo_2025_trans_genetics}}
+\label{PROP6}
+
+In \textbf{\hyperref[PROP5]{Proposal 5}}, we have encountered the MSS, which is a neat summary statistic applicable to any sequence. However, and as you might notice when we are presented with a sequence such as:\\
+
+
+\begin{equation}
+\label{EQPROP6}
+\text{golden ratio} = 1.618033988749895 \implies \Theta_{gr} = \langle 1, 6, 1, 8, 0, 3, 3, 9, 8, 8, 7, 4, 9, 8, 9, 5 \rangle 
+\end{equation}\\
+
+Which is essentially the golden ratio\footnote{Basically, $\frac{(1 + \sqrt{5})}{2}$} reduced to a sequence of just its first 16 significant digits, and which, if we must summarize it using say $\overset{>}{\Theta_{gr}}$ as such:\\
+
+
+\begin{trans}
+\label{TRANSMSS1}
+$ \Theta_{gr} \xrightarrow{O_{mss}(\cdot)} \overset{>}{\Theta_{gr}} = \langle 8, 9, 1, 3, 6, 0, 7, 4, 5 \rangle$\\
+\end{trans}
+
+maps to a summary statistic, its modal sequence, of cardinality 9, and yet, if one wanted to solve the following problem:\\
+
+\begin{prob}
+\label{PROBSC1}
+Given the sequence $\Theta_{gr}$ in \textbf{\hyperref[EQPROP6]{Equation \ref{EQPROP6}}}, how can we exactly tell if indeed $\invpi(3,\Theta_{gr}) > \invpi(6,\Theta_{gr})$, or if $\invpi(3,\Theta_{gr}) = \invpi(6,\Theta_{gr})$?\\
+\end{prob}
+
+
+Note that though we might attempt to solve \textbf{\hyperref[PROBSC1]{Problem \ref{PROBSC1}}} naively by merely counting the terms in the sequence under question, or by merely checking the relative positions of the involved terms in the computed MSS such as in \textbf{\hyperref[TRANSMSS1]{Transformation \ref{TRANSMSS1}}}, it is not the best way to arrive at a solution. Moreover, and as we have encountered in the previous proposal, and especially since we know that elements that tie on frequency shall occur adjacent to each other in the MSS of a sequence --- ignoring their order of first-occurrence --- and yet, without having a way to look at the frequencies of each element in the MSS, we might not correctly solve this problem \textit{elegantly} and/or optimally (for very large sequences such as the kind we saw when treating of genetic code sequences\cite{lutalo_2025_trans_genetics} that might span millions of terms). 
+
+And so, as laid out in a treatise on how transformatics might be applied in the sequence-heavy science of genetics\cite{lutalo_2025_trans_genetics}, in particular, \textbf{Section 6.4} of \cite{lutalo_2025_trans_genetics}, instead of just the MSS, we can instead compute the related \textbf{sequence characteristic} (SC) statistic, and which, as per \textbf{Definition 8} in that work, consists of both the same exact elements as in the MSS, but with each distinct symbol followed by/annotated by its relative frequency in the original/source sequence. Essentially, given some sequence $\Theta$, and given we know its modal sequence statistic is $\overset{>}{\Theta}$, the SC is as:
+
+
+\begin{equation}
+\label{EQSECHARDEF}
+ \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i\cdot f_i
+\end{equation}
+
+Which, if we apply \textbf{\hyperref[EQSECHARDEF]{Equation \ref{EQSECHARDEF}}} to our example sequence $\Theta_{gr}$, produces the corresponding sequence characteristic as such:\\
+
+
+\begin{trans}
+\label{TRANSSCGR}
+$ \Theta_{gr} \xrightarrow{O_{mss}(\cdot)} \overset{>}{\Theta_{gr}}  \xrightarrow{O_{sc}(\cdot)} \hbar(\overset{>}{\Theta_{gr}}) \rightarrow 8_4.9_3.1_2.3_2.6_1.0_1.7_1.4_1.5_1 \\
+ \rightarrow \textbf{8}4.\textbf{9}3.\textbf{1}2.\textbf{3}2.\textbf{6}1.\textbf{0}1.\textbf{7}1.\textbf{4}1.\textbf{5}1 \rightarrow \textbf{8}4\textbf{9}3\textbf{1}2\textbf{3}2\textbf{6}1\textbf{0}1\textbf{7}1\textbf{4}1\textbf{5}1$\\
+\end{trans}
+
+Note that, in \textbf{\hyperref[TRANSSCGR]{Transformation \ref{TRANSSCGR}}}, we had the liberty to express the sequence characteristic in 3 different ways other than what was originally demonstrated in \cite{lutalo_2025_trans_genetics}. In particular, the alternative expressions for the SC thus shown, shall, such as in this case when we are dealing with a sequence made of entirely numbers/digits, help to make the SC more readable/understandable; instead of merely concatenating the computed frequency of each symbol to the associated symbol such as the basic definition for the SC calls for (see \textbf{Definition 8} in \cite{lutalo_2025_trans_genetics}), and yet, without loss of generality, we can redefine the SC as such:\\
+
+\begin{equation}
+\label{EQSECHARDEF2}
+ \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \psi(\Theta)} {\omega_i}_{f_i}
+\end{equation}\\
+
+So that, as we have seen in the first SC expression in  \textbf{\hyperref[TRANSSCGR]{Transformation \ref{TRANSSCGR}}}, we can merely write the SC for $\Theta_{gr}$ as such:\\
+
+
+\begin{equation}
+\label{EQSCGR2}
+ \hbar(\overset{>}{\Theta_{gr}}) = 8_4.9_3.1_2.3_2.6_1.0_1.7_1.4_1.5_1 \rightarrow 8_4 9_3 1_2 3_2 6_1 0_1 7_1 4_1 5_1
+\end{equation}\\ 
+
+The final form in \textbf{\hyperref[EQSCGR2]{Equation \ref{EQSCGR2}}} also kicking out the ``." symbols meant to show/imply that we are merely concatenating the terms to each other. In fact, the SC could be also expressed as a sequence of \textbf{2-grams}\footnote{In \textbf{Chapter 3} of \cite{lutalo_2025_trans_genetics} we already introduced \textbf{N-grams} or rather higher-order sequences, but shall revisit them again in \textbf{\hyperref[PROP8]{Proposal 8}}.}:\\
+
+
+\begin{equation}
+\label{EQSECHARDEF3}
+ \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \psi(\Theta)} \langle \omega_i, f_i \rangle
+\end{equation}
+
+So that, we can again further express the sequence characteristic for the golden ratio as such\footnote{\textbf{FUTURE WORK:} feels like we might be able to visually/graphically express the sequence characteristic summary statistic! Especially for sequences of numeric data --- essentially, treating the SC in the form shown in \textbf{\hyperref[EQSECHARDEF3]{Equation \ref{EQSECHARDEF3}}} as coordinates in a Cartesian space!}\\
+
+\begin{equation}
+\label{EQSCGR3}
+ \hbar(\overset{>}{\Theta_{gr}}) = \langle \langle 8, 4 \rangle, \langle 9, 3 \rangle, \langle 1, 2 \rangle, \langle 3, 2 \rangle, \langle 6, 1 \rangle, \langle 0, 1 \rangle, \langle 7, 1 \rangle, \langle 4, 1 \rangle, \langle 5, 1 \rangle \rangle 
+\end{equation}\\
+
+
+At this juncture, and returning to \textbf{\hyperref[PROBSC1]{Problem \ref{PROBSC1}}}:\\
+
+\begin{soln}
+Given $\Theta_{gr}$, we can merely compute its sequence characteristic as shown in \textbf{\hyperref[EQSCGR3]{Equation \ref{EQSCGR3}}}, and by inspecting the entries in that resulting SC for the two symbols under question --- `3' and `6', which are known to map to the entries: $\langle ... \langle 3, 2 \rangle, \langle 6, 1 \rangle ... \rangle$ in the SC, confirm that actually $\invpi(3,\Theta_{gr}) > \invpi(6,\Theta_{gr})$ since $\invpi(3,\Theta_{gr})=2 > \invpi(6,\Theta_{gr})=1$
+$\qed$\\
+\end{soln}
+
+Before we move on, and as we shall come to appreciate when we come to \textbf{\hyperref[PROP9]{Proposal 9}}, we can solve many problems not only by leveraging the theory and mathematics of transformatics, but also by leveraging its philosophy, which, as one shall establish, underlies how the \textbf{TEA} computer programming language\cite{cli_tttt} works. Essentially, and with reference to the present proposal, note that we can readily and elegantly compute the sequence characteristic of any sequence\footnote{Sometimes though, only after slight modifications or clean-up/pre-processing of the input sequence expression such as we saw in \textbf{\hyperref[EQPROP6]{Equation \ref{EQPROP6}}}.} by leveraging \textbf{\hyperref[RES7]{sequence-transformers}} and sequence-processors as shown in the following TEA program that can compute the SC of any input sequence, and produce an SC expression similar to what we saw in \textbf{\hyperref[TRANSSCGR]{Transformation \ref{TRANSSCGR}}}:
+
+
+  \begin{tcolorbox}[teaterminalstyle, title=TEA Program: SC-Transformer, breakable]
+  %\begin{lstlisting}[language=TEA, caption={TP C7}, label={LSTC7}, numbers=left]
+  \begin{lstlisting}[language=TEA,breaklines=true]
+#SC-Computer
+#i!:{1618033988749895} 
+v:vIN
+u!:|v:vMSS| v:vSC:{}
+l:lPROC
+y:vMSS|d!:^.|v:vW
+y:vMSS|d:^.|v:vMSS|y:vW
+f:^$:lEND
+y:vIN|d*!:vW|v:|v!:|v:vF|v:vD:_|g*:_:vW:vF:vD|v:vSC1 |
+g*:{}:vSC:vSC1| v:vSC| j:lPROC
+l:lEND
+y:vSC | r!:__:.|d:.$
+#(=8_4.9_3.1_2.3_2.6_1.0_1.7_1.4_1.5_1)
+   \end{lstlisting}
+  \end{tcolorbox}
+  \captionof{figure}{TEA EXAMPLE: \textbf{SC-Computer}: transforms any input sequence into its sequence characteristic!}
+  \label{LISTSC}
+  
+  \vspace{2em}
+
+In case you have a particular sequence of interest that you wish to analyze or for which you wish to compute the SC, then, based on the above theory and the sample TEA program we have just looked at, you can go to the \textbf{WEB TEA IDE} --- \url{https://tea.nuchwezi.com}, and paste in your sequence into the `TEA INPUT' section (for example paste in your long genetic code sequence, a text file, votes/elections tally data well-encoded etc.), and by running it against the SC-program --- which you might load as:\\
+
+\url{https://tea.nuchwezi.com/?fc=https://gist.githubusercontent.com/mcnemesis/b5b9957179a4a1d43b965959f9bb29fb/raw/sc_generator.tea}\\
+
+
+You shall then be able to replicate the results and analyses we have conducted in this proposal --- for example, applied to election/votes datum, can help readily identify the winner.
+
+
+\subsection{Proposal 7: The Population Characteristic of Any Collection of Sequences\cite{lutalo_2025_trans_genetics}}
+\label{PROP7}
+
+
+In \textbf{\hyperref[PROP6]{Proposal 6}}, we have dealt with the matter of applying transformatics towards extending as well as simplifying various important aspects of statistics --- statistical analysis in particular, and which work might also underlie both \textbf{descriptive statistics} (generation of graphs and visualizations summarizing or describing some dataset or sequence) and \textbf{computational statistics} (such as in modeling behavior or distributions or implementing statistical artificial intelligence programs that reason about the statistical patterns in a dataset, sequence or entire collections of them).\\
+
+
+In this section though, and building upon what we have already encountered, we are to re-iterate the concept of the \textbf{Population Characteristic} (PC), that was first presented in the earlier work about transformatics in GENETICS\cite{lutalo_2025_trans_genetics}. That book, in 	\textbf{Section 6.6}, presented a problem for which this proposed concept is [part of] the solution. More specifically, and without repeating what was already well discoursed then, we note that the PC has the following useful properties:
+
+\begin{enumerate}
+\item Given any \textbf{flat-structure}/first-order sequence, $\Theta$, the PC is essentially the same as its SC --- in terms of what its computation produces.
+\item In case two or more sequences are to be reduced to a single characteristic --- in which case it becomes the \textbf{population characteristic} for the combined set, the PC thus computed shall be equivalent to the SC of a sequence generated from flattening and combining all the involved sequences into a single sequence.
+\item Where two or more sequences are involved, and where the SC for each sequence is already known or computed, the PC for the entire collection can readily be derived from the SCs thus already computed as an optimal strategy.
+\end{enumerate}
+
+In summary though, and given a collection of $n$ sequences\footnote{Potentially of arbitrary length and composition.} --- basically a sequence of n-subsequences --- denoted $\Theta^n$, we then can compute the PC as such:\\
+
+
+\begin{equation}
+\label{EQPOPCHAR}
+\hbar(\overset{>}{\Theta^n}) = \prod\limits_{\forall \omega_i \in \psi(\Theta^n)} \omega_i \cdot \invpi(\omega_i \in \Theta^n)
+\end{equation}
+
+Where $\forall \Theta_j \in \Theta^n$
+
+\begin{equation}
+\invpi(\omega_i \in \Theta^n) = \sum\limits_{\forall \hbar(\overset{>}{\Theta_j})} f_{\omega_i}
+\end{equation}
+
+And $\forall i, j \in \mathbb{N}: i < j \implies f_i \geq f_j$ for the frequency terms in $\hbar(\overset{>}{\Theta^n})$.\\
+
+
+Note that, as laid out in \cite{lutalo_2025_trans_genetics}, the PC can be very indispensable in problems \textbf{where we need to analyze multiple sequences in-groups or clusters} --- such as in classification problems, clustering as part of artificial intelligence systems performing tasks such as \textbf{self-modifying maps, unsupervised learning,} etc. All of which are critical matters in statistical artificial intelligence, but also which could be useful in many other areas of applied mathematics and computation.\\
+
+Before we conclude this section, note that, just like we did with and saw with the SC in \textbf{\hyperref[PROP6]{Proposal 6}}, we can use the TEA language to compute a population characteristic statistic for arbitrary sequences (after careful and proper pre-processing perhaps). But also, and concerning how we might express the final output/PC, we can chose from several meaningful expression forms as proposed for the SC in \textbf{\hyperref[PROP6]{Proposal 6}} and depending on where or how the PC expression or statistic thus generated is to be utilized.
+
+\subsection{Proposal 8: A Super Sequence from One or More Sequences\cite{lutalo_2025_trans_genetics}}
+\label{PROP8}
+
+The idea of treating of sequences in other than their flat-structure form was first presented as part of the discussion in how to apply transformatics in GENETICS\cite{lutalo_2025_trans_genetics}; refer to \textbf{Chapter 3} of \cite{lutalo_2025_trans_genetics}. In that work, we demonstrated how, for cases such as in dealing with problems where a sequence might need to be processed in ``chunks" of a fixed size --- also known as \textbf{n-grams}, we might want to introduce abstractions that can allow us to form smaller-sequences/sub-sequences within a larger/the original flat-structure sequence.\\
+
+For example, we saw that, in case we have some sequence of symbols $\Theta^n$ defined as such:\\
+
+\begin{equation}
+\label{EQSEQ1}
+\Theta^n = \langle a_1, a_2,...,a_n\rangle
+\end{equation}\\
+
+And that if we wish to re-write the same sequence such that every $k$ terms are grouped in the same sub-sequence, we then can re-write $\Theta^n$ differently as such:\\
+
+
+\begin{equation}
+\label{EQSEQ2}
+\Theta^n \rightarrow \Theta^* = \Theta_2(n,k) = \langle a_{11}, a_{12}, a_{13}, a_{1k}, a_{21}, a_{22},...,a_{(i)(k)},...,a_{(\frac{n}{k})(k-1)},a_{(\frac{n}{k})(k)}\rangle
+\end{equation}\\
+
+
+Further, and for any arbitrary sequences, we saw that we could leverage a special kind of transformer that can take a flat-structure or lower-order sequence and from it generate a similar, but higher-order sequence (also understood to mean, a sequence of some n-grams/k-grams such that $k > 1$), as such:\\
+
+
+\begin{transf}[The \textbf{k-GRAM Generator}]
+\label{TRANSFBUND}
+$\Theta^n = \langle a_1, a_2,...,a_n\rangle \quad \xrightarrow{O_{bundle-k}(\cdot)} \quad \Theta^* \quad;$\\
+$\Theta^* = \langle \langle a_1, a_2,..., a_k \rangle_1, \langle a_{k+1},...,a_{2k} \rangle_2,... , \langle a_{(n-k+1)},...,a_{(n-k+k-1)},a_{(n-k+k)}\rangle_{\frac{n}{k}} \rangle$\\
+$\forall a_i \in \Theta \quad \exists a_{ij} \in \Theta^*: a_i = a_{ij} \quad \land \quad j \in [1,k]$\\
+For some $n, k \in \mathbb{N}$, and that $\invpi(\Theta^*) = \frac{n}{k} = $ number of k-gram subsequences generated from $\Theta$. $\qed$\\
+\end{transf}
+
+For future purposes, and without deviating from the theory already presented in earlier works, we might also refer to such produced sequences as $\Theta^*$ in \textbf{\hyperref[TRANSFBUND]{Transformer \ref{TRANSFBUND}}} as a \textbf{Super Sequence}.\\
+
+We shall note that if $\Theta^*$ is a super-sequence of/relative-to another sequence, such as the sub-sequence $\langle a_1, a_2,..., a_k \rangle_1$ in \textbf{\hyperref[TRANSFBUND]{Transformer \ref{TRANSFBUND}}}, and which we might denote as $\Theta_1$, then, we can correctly say that:\\
+
+
+\begin{equation}
+\Theta^* \supset \Theta_1 \quad \land \quad \psi(\Theta^*) \supset \psi(\Theta_1)
+\end{equation}
+
+And that generally,\\
+
+
+\begin{equation}
+\forall \Theta_i \in \Theta^* \quad \implies \quad \Theta^* \supset \Theta_i \quad \land \quad \psi(\Theta^*) \supset \psi(\Theta_i)
+\end{equation}\\
+
+Also, and as shown in \textbf{Section 6.6.1} of \cite{lutalo_2025_trans_genetics}, we might also treat of super-sequences as matrices (in the sense of \textbf{linear algebra}). In particular, note that if we have a set of $n$ different sequences of arbitrary composition and lengths:\\
+
+
+\begin{equation}
+ \Omega^n = \langle \Omega1, \Omega2, \Omega3,..., \Omega n \rangle
+\end{equation}\\
+
+
+That we might also express them more elaborately via matrix form as\footnote{Notice how the structures in \textbf{\hyperref[EQMATR]{Equation \ref{EQMATR}}} look like \textit{column matrices}?}\\
+
+
+\begin{multline}
+\label{EQMATR}
+ \Omega^n = 
+ \begin{bmatrix}
+ \Omega1 \langle \prod\limits_{i=1}^{\invpi(\Omega 1) = \alpha} a_{1i} \rangle,\\
+  \Omega2 \langle \prod\limits_{i=1}^{\beta} a_{2i} \rangle,\\
+   \Omega3 \langle \prod\limits_{i=1}^{\chi} a_{3i} \rangle,\\
+   \vdots \\
+   \Omega n \langle \prod\limits_{i=1}^{\zeta} a_{ni} \rangle,\\
+ \end{bmatrix} =
+ \begin{bmatrix}
+ \Omega1 \langle a_{11},a_{12},...,a_{1\alpha} \rangle,\\
+   \Omega2 \langle a_{21},a_{22},...a_{2(\beta-1)} ,a_{2\beta} \rangle,\\
+   \vdots \\
+     \Omega n \langle a_{n1},a_{n2},...,a_{n\zeta} \rangle\\
+ \end{bmatrix}
+\end{multline}\\
+
+
+So that, if we have the special case as what \textbf{\hyperref[TRANSFBUND]{Transformer \ref{TRANSFBUND}}} would produce if given the right kind of input sequence (particularly, that if $\Theta^n$ is to be split into k-grams, then, that it has the property that $\frac{n}{k} = m$ is a pure number\cite{Lutalo2024gtnc}, and so that, we can then map the flat-structure sequence $\Theta^n$ to a higher-order sequence, or super-sequence of \textbf{dimensions $k \times m$}, so that the resulting mathematical structure can be neatly expressed as a  $k \times m$ or $m \times k$ matrix as shown:\\\\
+
+
+\begin{trans}
+$\Theta^n = \langle \theta_1, \theta_2, ..., \theta_n \rangle \xrightarrow{O_{bundle-k}(\Theta^n)}
+ \begin{bmatrix}
+ \theta_{11}, \theta_{12} ,..., \theta_{1k},\\
+   \theta_{21}, \theta_{22} ,... , \theta_{2k},\\
+   \vdots \\
+     \theta_{m1}, \theta_{m2} ,..., \theta_{mk}\\
+ \end{bmatrix}$\\\\
+\end{trans}
+
+So that, if $m=k$, then we essentially have a super-sequence that can be expressed as a \textit{square-matrix} of dimensions $m \times m$. Talking of which, once we can or do express a sequence as a matrix\footnote{Even as a \textit{sparse matrix} such as in cases where a low-order sequence $\Theta^n$ needs be transformed into a super-sequence, but when either $\frac{n}{k}$ is not a pure number, or that there are some sub-sequences that might have empty positions.}, almost all of the mathematical theory of linear-algebra does readily apply on such sequences from transformatics! And thus we sum up our proposal on transformatics and super-sequences.
+
+\subsection{Proposal 9: Programs as Chains of Sequence Transformers (Transformer-Chains)\cite{lutalo_2025_trans_genetics}\cite{cli_tttt}}
+\label{PROP9}
+
+First, note that we already encountered an example of/application of this present proposal in the useful program we encountered at the end of \textbf{\hyperref[PROP6]{Proposal 6}}; in a program that basically computes the sequence characteristic of any input sequence, and which is essentially a \textit{higher-order transformer} that is composed as a chain of smaller sequence transformers  --- which is what all or most of \textbf{TEA primitive instructions}\cite{Lutalo2024TEATAZ} are), and which transformer then (as the ``SC-Generator") essentially reduces any input sequence to its summary statistic expression, particularly the sequence characteristic.\\
+
+Otherwise, note that; looking at a TEA program as depicted in \textbf{\hyperref[LISTSC]{Figure \ref{LISTSC}}} is helpful, since it reflects how the overall [higher-order] transformer program might be composed out of logically-meaningful sections\footnote{In TEA parlance and in relation to how most computer scientists might think of the matter of \textit{scoping}, \textit{code-blocks} or \textit{encapsulation}, for TEA, it is mostly all about \textbf{l-blocks} or \textit{label-blocks} --- also known as ``labeled blocks"\cite{Lutalo2024TEATAZ}.} as a software engineer or computer programmer already familiar with the TEA language might approach the SC problem. However, also note that; that same exact program is also equivalent to the following two versions --- both of which kick-out \textit{TEA comments}\footnote{In the example source-code we shall encounter in this work, but also typically, these are expressions in a TEA program that start with the `\#' character, and which makes them inert or non-executable lines/expressions in the program.}, and \textbf{only focus on the individual TEA instructions necessary to make the program work as desired, as well as how they ought be ordered within the program}, but where, the first (\textbf{\hyperref[LSTSCGEN]{Listing \ref{LSTSCGEN}}}) simplifies the code to just an ordered sequence of TEA instructions one per line, while the second (\textbf{\hyperref[LSTSCGEN]{Listing \ref{LSTSCGENMINI}}}) shows the same exact program, in its \textbf{minified} form --- where, each instruction is delimited from the next by the standard TEA instruction delimiter `\verb!|!', and nothing else.
+
+\vspace{2em}
+
+  \begin{tcolorbox}[teaterminalstyle, title=TEA Program: SC-Generator, breakable]
+    %\begin{lstlisting}[language=TEA,breaklines=true]
+  \begin{lstlisting}[language=TEA, caption={SC-Generator}, label={LSTSCGEN}, numbers=left]
+v:vIN
+u!:
+v:vMSS
+v:vSC:{}
+l:lPROC
+y:vMSS
+d!:^.
+v:vW
+y:vMSS
+d:^.
+v:vMSS
+y:vW
+f:^$:lEND
+y:vIN
+d*!:vW
+v:
+v!:
+v:vF
+v:vD:_
+g*:_:vW:vF:vD
+v:vSC1
+g*:{}:vSC:vSC1
+v:vSC
+j:lPROC
+l:lEND
+y:vSC
+r!:__:.
+d:.$
+   \end{lstlisting}
+  \end{tcolorbox}
+  %\captionof{figure}{TEA EXAMPLE: \textbf{SC-Computer}: transforms any input sequence into its sequence characteristic!}
+  %\label{LISTSC}
+  \vspace{2em}
+
+
+And the same program in its minified form is as:
+
+\vspace{2em}
+
+
+  %\begin{figure}[H]
+  %\centering
+  \begin{tcolorbox}[teaterminalstyle, title=TEA Program: SC-Generator Minified, breakable]
+    %\begin{lstlisting}[language=TEA,breaklines=true]
+  \begin{lstlisting}[language=TEA, caption={SC-Generator Minified}, label={LSTSCGENMINI}, numbers=left]
+v:vIN|u!:|v:vMSS|v:vSC:{}|l:lPROC|y:vMSS|d!:^.|v:vW|y:vMSS|
+d:^.|v:vMSS|y:vW|f:^$:lEND|y:vIN|d*!:vW|v:|v!:|v:vF|v:vD:_|
+g*:_:vW:vF:vD|v:vSC1|g*:{}:vSC:vSC1|v:vSC|j:lPROC|l:lEND|
+y:vSC|r!:__:.|d:.$
+   \end{lstlisting}
+  \end{tcolorbox}
+  %\captionof{figure}{TEA EXAMPLE: \textbf{SC-Computer}: transforms any input sequence into its sequence characteristic!}
+  %\label{LISTSC}
+  \vspace{2em}
+  
+ 
+ As one shall establish while studying \textbf{the 26 TEA primitives A: to Z:}\cite{Lutalo2024TEATAZ}, or if they dive deeper into the potential \textbf{182 distinct TEA commands}\cite{Lutalo2024TEATAZ}; apart from branching commands such as \textbf{F:} (the ``Fork") and \textbf{Q:} (the ``Quit") and commands such as \textbf{L:} (the ``Label") that don't modify or alter the \textbf{Active Input}(AI)\cite{Lutalo2024TEATAZ} --- meaning, when they are encountered in a TEA program, they merely pass on  the current input to the next instruction unmodified, most, or all of the bulk of TEA programming consists of some sequence processing instruction that accepts some input [sequence], processes it or transforms it, and then returns the resultant [sequence] as the \textbf{Instruction Output}(IO).\\
+ 
+ Thus, and without loss of generality, we can \textbf{model or think of any program expressible in the TEA language as a computer program, abstract machine or automaton, expressible as or reducible to just an ordered chain of sequence transformers.} A good demonstration of this is the following basic program, which, when presented with any input text (a sequence of characters), reduces or transforms it into a resultant sequence of characters, preserving their original order, but with the transformation resulting in only UPPER-CASE CONSONANTS [derived from the source/input sequence].\\
+
+\vspace{2em} 
+ 
+  %\begin{figure}[H]
+  %\centering
+  \begin{tcolorbox}[teaterminalstyle, title=TEA Program: CONSONANT FILTER, breakable]
+    %\begin{lstlisting}[language=TEA, caption={SC-Generator Minified}, label={LSTSCGENMINI}, numbers=left]
+    \begin{lstlisting}[language=TEA,breaklines=true]
+i:{This is a TEST 123} | z!: | d:[AEIOU] | d!:[A-Z]
+   \end{lstlisting}
+  \end{tcolorbox}
+  %\captionof{figure}{TEA EXAMPLE: \textbf{SC-Computer}: transforms any input sequence into its sequence characteristic!}
+  %\label{LISTSC}
+  \vspace{2em}
+ 
+ Which program, when run as is, shall use the explicit hard-coded input it opens with --- ``This is a TEST 123", and shall return ``THSSTST". While, if presented with some other input such as ``hello world 123?", shall return ``HLLWRLD".\\
+ 
+The following transformation expression shall help illustrate exactly what is happening in that program, or how the different bits/chained sequence transformers come together to compose the higher-order transformer that is what the entire TEA program is:\\
+ 
+ 
+\begin{trans}
+$\emptyset \xrightarrow{i:\{\text{This is a TEST 123}\}} \langle \text{\textit{This is a TEST 123}} \rangle \xrightarrow{z!:} \langle \text{\textit{THIS IS A TEST 123}} \rangle \xrightarrow{d:[AEIOU]} \langle \text{\textit{THS S  TST 123}} \rangle \xrightarrow{d!:[A-Z]} \langle \text{\textit{THSSTST}} \rangle$\\
+\end{trans} 
+ 
+ 
+ and for the input ``hello world 123?":\\
+ 
+ 
+ \begin{trans}
+$\langle \text{\textit{hello world 123?}} \rangle \xrightarrow{i:\{\text{This is a TEST 123}\}} \langle \text{\textit{hello world 123?}} \rangle \xrightarrow{z!:} \langle \text{\textit{HELLO WORLD 123?}} \rangle \xrightarrow{d:[AEIOU]} \langle \text{\textit{HLL WRLD 123?}} \rangle \xrightarrow{d!:[A-Z]} \langle \text{\textit{HLLWRLD}} \rangle$\\
+\end{trans} 
+ 
+ So, hopefully, after looking at those two example transformations, as well as the preceeding TEA source-code, you start to appreciate that TEA programs are indeed not only [higher-order] sequence transformers in the strict sense, but are likewise compositions of, chains of, sequence transformers.\\
+ 
+ Though the \textbf{TEA TAZ}\cite{Lutalo2024TEATAZ} is still being worked-on as of this writing, much of what is required to understand or write TEA programs is already covered well in that living document, and so, it must be consulted and utilized by those who wish to understand better, but also apply readily, many ideas encountered while working with or developing ideas using the mathematics of transformatics [in/with computing\footnote{Essentially, the TEA language brings to the world, \textbf{a new programming paradigm based on chaining sequence transformers}.}].
+
+
+\subsection{Proposal 10: Entropy of a Sequence\cite{lnspaper}}
+\label{PROPTOE}
+
+\textit{Information expressions} (IE)\cite{lnspaper} are a mathematical structure, $\Omega^{1,\infty} : \mathbb{N} \times \Psi^\infty$, to which \textbf{\hyperref[RES3]{Foundation Idea \ref{RES3}}} applies. The sequence $\Theta_{hw} = \langle \text{\texttt{hello world}} \rangle$ is one such example, with the properties:\\
+
+\begin{equation}
+\label{EQPROP10}
+\Theta_{hw} \rightarrow \begin{cases}
+\invpi(\Theta_{hw}) \rightarrow \mathbb{N} & \text{bits in information}\\\\
+\invpi(\psi(\Theta_{hw})) \rightarrow \mathbb{N} & \text{cardinality of alphabet}\\\\
+\frac{\invpi(\psi(\Theta_{hw}))}{\invpi(\Theta_{hw})} \rightarrow \mathbb{R^+} & \text{sequence entropy}\\\\
+\psi(\Theta_{hw}) \times \psi(\Theta_{hw})^{[1,\invpi(\Theta_{hw})]} \quad \lor \quad \psi(\Theta_{hw}) \times \psi(\Theta_{hw})^{[1,\infty]} \rightarrow \mathbb{N} \times \mathbb{N} & \text{derivative languages}\\
+\end{cases}
+\end{equation}
+
+
+Most important about what we can glean from \textbf{\hyperref[EQPROP10]{Equation \ref{EQPROP10}}} is the fact that we might be able to compute a kind of \textbf{information-content} measure for any arbitrary sequence, merely by looking at the length of the sequence Vs the length of the symbol set spanned by that sequence. Essentially, and as shown in that distillation, given any sequence $\Theta$, we could compute a \textbf{Sequence Entropy} for it --- $\Phi(\Theta)$ as such:\\
+
+
+\begin{defn}[The \textbf{Sequence Entropy}, $\Phi(\Theta)$]
+\label{DEFENTROPY}
+Given any sequence $\Theta \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_*$, we can compute a measure of how much information (\textbf{sequence entropy}) there is in the sequence, using the following measure:\\
+
+\begin{equation}
+\Phi(\Theta) = \frac{\invpi(\psi(\Theta))}{\invpi(\Theta)} = \frac{1}{n} \times \invpi(\psi(\Theta))
+\end{equation}\\
+
+and if we wish to compute the \textbf{relative sequence entropy} --- meaning, the amount of information the sequence contains relative to some particular symbol set/alphabet other than the symbol set spanned explicitly by the sequence --- such as using $\psi_*$ instead\footnote{For example, for the sequence ``hello world", we might wish to measure the entropy relative to the entire Latin Alphabet ($\psi_{az}$) instead of just the symbol set of the string ($\psi(\Theta_{hw}) = \{lohe wrd\}$.} of $\psi(\Theta)$, in which case, the associated measure would be:\\ 
+
+
+\begin{equation}
+\Phi_{\psi_*}(\Theta) = \frac{\invpi(\psi_*)}{\invpi(\Theta)} = \frac{1}{n} \times \invpi(\psi_*)
+\end{equation}\\
+\end{defn}
+
+As far as how a measure such as the \textbf{sequence entropy} in  \textbf{\hyperref[DEFENTROPY]{Definition \ref{DEFENTROPY}}} might go, note that, for our example input sequence $\Theta_{hw}$, we can establish that the entropy is $0.727272\overline{72}$ as per:\\
+
+
+\begin{equation}
+\Phi(\Theta_{hw}) = \frac{\invpi(\psi(\Theta_{hw}))}{\invpi(\Theta_{hw})} = \frac{1}{n} \times \invpi(\psi(\Theta_{hw})) = \frac{1}{11} \times 8 = \frac{8}{11} = 0.727272\overline{72}
+\end{equation}\\
+
+Whereas, and as might be interesting to note given similar ideas such as the \textbf{Shannon Entropy}\cite{shannon1948mathematical}, realize that if we alter $\Theta_{hw}$ further, say, by introducing more redundancy or duplication of terms\footnote{Already, $\Theta_{hw}$ contains two instances of symbol `l", which thus reduces its \textit{unexpectedness} or \textit{surprise} value, and thus its entropy.}, such as in the string ``hello hello world", the new sequence entropy shall likewise go lower as shown:\\
+
+\begin{equation}
+\Phi(\langle \text{\textit{hello hello world}} \rangle) = \frac{1}{n} \times \invpi(\psi(\Theta)) = \frac{1}{17} \times 8 = \frac{8}{17} = 0.47058823529411764
+\end{equation}\\
+
+
+And so, and as expected, since in this last case we increased the length of the sequence, though, we did not introduce any new \textbf{distinct symbols} --- meaning, the sequence's symbol set or alphabet remained the same as before ($\invpi(\psi(\Theta)) = 8$), we then see that indeed, as we would expect of a good entropy measure, $\Phi(\Theta)$ did indeed decrease in value after this sequence transformation.
+
+Of course, if we were to use the \textbf{relative sequence entropy} instead, and for our example, using say the English/Latin alphabet ($\psi_{az}$) as the reference, the associated entropy measures for the two cases we have considered would be as such:\\
+
+\begin{equation}
+\Phi_{\psi_{az}}(\Theta_{hw}) = \frac{1}{n} \times \invpi(\psi_{az}) = \frac{1}{11} \times 26 = \frac{26}{11} = 2.36363636\overline{36}
+\end{equation}\\
+
+and for the transformed/modified sequence:\\
+
+ \begin{equation}
+\Phi_{\psi_{az}}(\langle \text{\textit{hello hello world}} \rangle) = \frac{1}{n} \times \invpi(\psi_{az}) = \frac{1}{17} \times 26 = \frac{26}{17} = 1.52941176470588235294
+\end{equation}\\
+
+For any particular sequence of interest, the following associated, and generic \textbf{WEB TEA} program can be used to compute the sequence entropy ($\Phi(\Theta)$):
+
+\vspace{2em}
+
+  %\begin{figure}[H]
+  %\centering
+  \begin{tcolorbox}[teaterminalstyle, title=TEA Program: Sequence Entropy Computer, breakable]
+    %\begin{lstlisting}[language=TEA, caption={SC-Generator Minified}, label={LSTSCGENMINI}, numbers=left]
+    \begin{lstlisting}[language=TEA,breaklines=true]
+# e.g given input as `hello hello world'
+v:vIN|v*!:vIN|v:vLIN|y:vIN
+|u!:|v:vMSS|v*!:vMSS|v:vLMSS
+|g*:{/}:vLMSS:vLIN|v:vCMD|
+z*:vCMD
+# returns something like: 0.47058823529411764
+   \end{lstlisting}
+  \end{tcolorbox}
+  %\captionof{figure}{TEA EXAMPLE: \textbf{SC-Computer}: transforms any input sequence into its sequence characteristic!}
+  %\label{LISTSC}
+  \vspace{2em}
+
+
+In general, note that both measures ($\Phi(\Theta)$ and $\Phi_{\psi_*}(\Theta)$) shall always return a non-zero and non-negative value as long as they are applied to some sequence of non-zero length. However, how exactly our proposed entropy measure might relate to the more commonplace, standard information-theoretic Shannon Entropy measure shall be a matter of future research/evaluations\footnote{\textbf{FUTURE WORK:} Establish how the transformatic sequence entropy relates to Shannon's Entropy measure when applied to sequences of finite length relative to or not some reference alphabet/symbol set.}.\\
+
+
+\section{Conclusion}
+
+In summary, we have laid down the essential mathematical theory for how to treat of mathematical structures known as ``sequences" as formally defined in \textbf{\hyperref[RES3]{Foundation Idea \ref{RES3}}}. Via \textbf{\hyperref[SECPROP]{10 Proposals}}, we have seen that we can leverage a mathematical and philosophical abstraction such as the \textbf{\hyperref[RES3]{sequence}} and \textbf{\hyperref[RES7]{sequence-transformer}} (as especially a transformatics formalism), so that then, we can readily build pragmatic/empirical solutions to any problems for which a solution can be conceptualized, manifested and proven, based on some model of the problem that allows the problem space to be fully specifiable via the use of one or more sequences. That these sequences might also be treated as or considered to be \textbf{information expressions}\cite{lnspaper} --- essentially, \textit{arguments} or parameters --- that for example \textbf{encode} the character, name, dimensions etc. of the system in which the problem might be rendered tractable/decidable/computable/... so that, then, by applying some particular sequence transformer [program\footnote{For this case, also equivalently a \textbf{definition}, specification, symbol sequence, etc. applicable to \textbf{\hyperref[RES7]{transformers}}}] --- itself, an information expression, though, of \textbf{a different kind} than the data upon which it might be applied\footnote{Or, as is \textbf{the case} in \textbf{TEA}; where, as with the programs of a \textit{Von Neumann Architecture} machine, allows the language to allow for a systematic means in which a program can be expressed with explicit data it might process as a default, but also with the possibility of the program operating on information \textit{read} from the environment (when it is available/presented).} --- we can then manifest sequences that can modify or predictably operate on other sequences --- a mechanism and capability which, when well orchestrated and manifested as is the case of the \textbf{TEA computer programming language}\cite{Lutalo2024TEATAZ}, brings to life a highly robust and useful arcanum practicum in the form of a living, reusable, [technology] platform (both in theory/formalism) and experience(executable mathematics) that, at foundation, is beautifully based on and comprehensible via the theory of TRANSFORMATICS as laid out in the \textbf{\hyperref[SECFOUND]{10 Foundations}} and associated works.
+
+%\bibliographystyle{unsrt}
+%\bibliography{trans_references}
+
+
+\vspace{5cm}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\textbf{TO CITE:}\\
+
+Lutalo, Joseph Willrich (2025). \textbf{TRANSFORMATICS 101 - explained.} I*POW. Thesis. \url{https://www.academia.edu/144344109/}
+
+\end{minipage}}
+\\
+
+
+%%%%%[ END EXTRA NOTE concerning Transformatics 101 ]
+
+
+% insert [front] cover --- could just be a PNG or PDF
+\includepdf[pages=1]{resources/pdfs/trans_back_cover.pdf}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%[ END TRANSFORMATICS 101 ]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%[ EXTRA NOTE concerning Transformatics 101 ]
+
+
+%draw horizontal line
+%\noindent\rule{\textwidth}{0.4pt}
+
+
+
+\chapter{Situating TRANSFORMATICS (as a Theory or Field) within Mathematics:}
+\label{CHAPSITTRANS}
+
+\hl{
+
+\section{A Working Definition and Clarification on Fundamental Nomenclature}
+
+TODO: \textbf{Review and complete this chapter...}
+
+For all practical and theoretical purposes, we might want to define Transformatics as such:
+
+}
+
+\vspace{2em}
+
+\begin{defn}[\textbf{Transformatics}]
+\label{DEFTRANS}
+The study of \textbf{sequences of symbols}, their transformations and analysis.
+\end{defn}
+
+\vspace{2em}
+
+To kick-start our discussion, note that the definition above shall help to distinguish transformatics as its inventor currently treats of it, from any other mathematical line of inquiry, but shall also help explain why past references to and parallels between transformatics and topics such as sequence analysis, sequence transformers, sequence generators and especially a heavy talk about symbol sets and ordered sequences makes all the sense (refer to \textbf{\hyperref[SECFOUND]{Section \ref{SECFOUND}}}). That said, note that we are going to attempt to properly, perhaps somewhat rigorously locate this theory and associated concepts within the vast spectrum of mathematics. However, first, let us clear-up the potential confusion concerning fundamental nomenclature and potential parallels between other fields and sub-fields of mathematics.
+
+\vspace{2em}
+
+In keeping with standard nomenclature, but also applying it well, we shall want to help the reader, and especially the students of Transformatics, to readily distinguish between several somewhat similar, yet distinct concepts and terms from across mathematics, that might help anyone readily make sense of \textbf{\hyperref[DEFTRANS]{Definition \ref{DEFTRANS}}}. So, first, we are going to outline the distinctions and relationships between six foundational mathematical structures: \textbf{set}, \textbf{sequence}, \textbf{series}, \textbf{vector}, \textbf{matrix}, and \textbf{space}. These concepts are central to fields such as linear algebra, analysis, and symbolic systems \cite{axler2015linear, rudin1976principles}.
+
+
+\section*{Comparison Table}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|l|}
+\hline
+\textbf{Concept} & \textbf{Ordered?} & \textbf{Duplicates?} & \textbf{Dimensionality} & \textbf{Key Feature} \\
+\hline
+\hline
+Set & No & No & Abstract & \makecell[l]{Unordered collection\\of distinct elements}\\
+\hline
+Sequence & Yes & Yes & 1D & \makecell[l]{Ordered list\\indexed by $\mathbb{N}$}\\
+\hline
+Series & Yes & Yes & 1D & \makecell[l]{Sum of a sequence\\(often infinite)}\\
+\hline
+Vector & Yes & Yes & 1D (or $n$D) & \makecell[l]{Element of\\a vector space}\\
+\hline
+Matrix & Yes & Yes & 2D & \makecell[l]{Rectangular array\\of scalars}\\
+\hline
+Space & N/A & N/A & $n$D (abstract) & \makecell[l]{Set with algebraic\\or topological structure}\\
+\hline
+\end{tabular}
+\label{TABCOMPCONCEPTS}
+\end{center}
+
+\section*{Definitions and Examples}
+
+\subsection*{Set}
+A \emph{set} is a collection of distinct elements with no inherent order. For example, $\{2, 3, 5\}$ is the same as $\{5, 2, 3\}$. Sets are foundational in logic and topology \cite{halmos1960naive}.
+
+Also, and concerning formal expression, note that authors such as Patrick M. Fitzpatrick, when introducing sets in their textbook undergraduate calculus\cite{fitzpatrick1995advanced}, have this to say:
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+For a set \textbf{A}, the membership of the element $x$ in \textbf{A} is denoted by $x \in \textbf{A}$ or $x$ in \textbf{A}, and the nonmembership of $x$ in \textbf{A} is denoted by $x \not\in \textbf{A}$. A member of \textbf{A} is often called a \textit{point} in \textbf{A}. Two sets are the same if and only if they have the same members. Frequently sets will be denoted by braces, so that $\{ x \quad | \quad \text{proposition about x}\}$ is the set of all elements $x$ such that the proposition about $x$ is true.
+
+}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+That quote gives us a good introduction to the notation most commonly used to treat of sets --- a structure that in one way or another, likewise serves immensely in justifying the formalisms likewise used in transformatics. Also, note that, authors like Walter Nef, introducing sets in a linear algebra text\cite{nef1967linear}, uses a generalization somewhat merely more abstract than the plain-english version above, but still in the same vein, when he writes 
+
+
+\begin{equation}
+\label{EQSETNOT}
+A = \{ x_1, x_2, x_3, ... \} = \{ x ; \phi(x) \}
+\end{equation}
+
+\vspace{2em}
+
+So that $\phi(x)$ denotes a statement by which the elements of A are characterized\footnote{Walter's use of ``;"such as we depict in \textbf{\hyperref[EQSETNOT]{Equation \ref{EQSETNOT}}} might somewhat significantly differ from the notation we have heavily utilized in transformatics when we prefer to either write $\{x: \phi(x)\}$ or even just $\{x \quad|\quad \phi(x)\}$, but the semantics remain the same.}. Moreover, as we see in \textbf{\hyperref[TABCOMPCONCEPTS]{Table \ref{TABCOMPCONCEPTS}}}, particularly for \textbf{only sets}, the order of members or elements \textbf{does not matter}, and also that, \textbf{duplication is not allowed}. Thus, we see below, that we might express a set with different orderings of its members, and still correctly refer to the same set:
+
+\begin{equation}
+VOWELS = \{ a, e, i, o, u \} = \{ e, i, o, a, u \} = \{ u, o, i, e, a\} = \{x : x \in \psi_{vowels} \}
+\end{equation}
+
+\vspace{2em}
+
+Where $\psi_{vowels}$ is the symbol set of only the 5 vowels of the Latin Alphabet.
+
+
+%draw horizontal line
+\noindent\rule{\textwidth}{0.4pt}
+
+
+\subsection*{Sequence}
+A \emph{sequence} is an ordered list of elements possibly with repetition\cite{copilot_dna_assistant} --- for transformatics though, we many times prefer to say ``of symbols". For instance, the Fibonacci sequence is $(1, 1, 2, 3, 5, 8, \dots)$, while the sequence of the vowels in the Latin Alphabet is\footnote{We borrow the formalism of a symbol set over a set, but whose elements are ordered by some criteria, in this case, that of the latin alphabet such as in \cite{transformatics}, but also see \textbf{\hyperref[EQDNASS]{Equation \ref{EQDNASS}}}.} $\hat{\psi}_{az}(VOWELS) = \psi_{vowels}$ as depicted below:
+
+
+\begin{equation}
+\psi_{vowels} = \langle a, e, i, o ,u \rangle \neq \langle e, a, i, o ,u \rangle \neq \langle u, o, i, e, a \rangle
+\end{equation}
+
+
+ Sequences are central in analysis and recursion theory \cite{rudin1976principles}, but also are at the core of transformatics\footnote{Refer to \cite{Lutalo2025_transformatics_thesis}, \textbf{\hyperref[SECFOUND]{Section \ref{SECFOUND}}} and \textbf{\hyperref[DEFTRANS]{Definition \ref{DEFTRANS}}} among others.}.
+
+\vspace{2em}
+
+Note how, as in much of the recent literature on transformatics, we mostly prefer to express sequences using the notation $\langle a_1, a_2, \cdots \rangle$ and not say $\{ a_1, a_2, \cdots \}$ --- this, especially so we emphasize the fact that \textbf{order matters} in transformatics, and so we can \textbf{readily differentiate between unordered sets and ordered sets or rather sequences}. Moreover, as shown in \textbf{\hyperref[EQNASEQ]{Equation \ref{EQNASEQ}}}, we might sometimes prefer to summarize or generalize sequences using notations such as:
+
+\vspace{2em}
+For infinite sequences...
+
+\begin{equation}
+S_\infty = \langle \cdots, a_{n-1}, a_n, a_{n+1}, \cdots \rangle = \langle a_i \rangle^\infty
+\end{equation} 
+
+\vspace{2em}
+And for finite sequences as...
+
+\begin{equation}
+S_n = \langle a_1, a_2, \cdots, a_{n-1}, a_n \rangle = \langle a_i \rangle^n
+\end{equation} 
+
+\vspace{2em}
+
+For $i \in \mathbb{N}$. 
+
+\vspace{2em}
+
+However, and especially where we know that the elements in a sequence might not necessarily be numbers, or that they might not even be simple elements such as just literal symbols but perhaps symbolic structures of say a complex kind --- such as a sequence of codons encoding a gene or perhaps a sequence of words that define or specify a particular phrase such as the command ``fire melts ice"\footnote{Which is indeed different both literally and semantically from ``ice melts fire" or perhaps ``melts fire ice", etc.}, or perhaps, the sequence of instructions in a TEA program (refer to \textbf{\hyperref[PROP9]{Section \ref{PROP9}}}) --- in such cases, we shall want to generalize a sequence by incorporating information about the symbol set spanned by its elements. Thus, we might  adopt generalizations such as...
+
+\vspace{2em}
+
+\begin{equation}
+S_\infty = \langle \cdots, a_{n-1}, a_n, a_{n+1}, \cdots \rangle = \langle a_i \in \psi_S \rangle^\infty
+\end{equation} 
+
+\vspace{2em}
+
+Or perhaps
+
+\vspace{2em}
+
+\begin{equation}
+S_n = \langle a_1, a_2, \cdots, a_{n-1}, a_n \rangle = \langle a_i \in \psi_S \rangle^n = \mathbb{N} \times \psi_S
+\end{equation} 
+
+\vspace{2em}
+
+or, as preferred in calculus texts such as \cite{fitzpatrick1995advanced}, as..
+
+
+\vspace{2em}
+
+\begin{equation}
+S_n = \langle a_1, a_2, \cdots, a_{n-1}, a_n \rangle = f: \mathbb{N} \rightarrow \psi_S
+\end{equation} 
+
+\vspace{2em}
+
+And just $S_n = \{a_k\}$ or maybe $S_n = \{f(a_k)\}$  and even the very plain $a_n = f(n)$ as commonly used in calculus texts such as \cite{fitzpatrick1995advanced} and especially in Ron Larson et al.\cite{ronlarsoncalculus}. In these cases, the emphasis, especially because for fields such as calculus, sequences are used to treat of and generalize continuous or discrete functions mapping the counting numbers ($\mathbb{N}$) to some other numbers (especially to real numbers, $\mathbb{R}$), so that, by focusing on the general term only, and using $n$ as the common subscript in the general term, such as when the sequence of square numbers is written as $\{a^2\}$, it is understood that these collections might be finite or even infinite, however, that the key thing is how, when given any particular position index such as i=1 or i=n or i=$\infty$, one can correctly derive or compute the corresponding term within the specified sequence. In transformatics though, especially when not dealing with sequences whose terms might be readily generalizable using some simple formula that is a function of just the position index, we might prefer to use other generalization notations as the case best warrants.
+
+\vspace{2em}
+
+Finally, note that, perhaps out of preference and for consistency with earlier literature\cite{Lutalo2024gtnc} in transformatics and its development\cite{adtpaper}\cite{ossipaper}\cite{transformatics}, we usually depict general or arbitrary sequences using the letter Theta --- $\Theta$, and its terms or elements using the lowercase version $\theta$ such as in:
+
+\vspace{2em}
+
+\begin{equation}
+\Theta^n = \langle \theta_i \rangle^n : \theta_i \in \psi_\beta \quad \land \quad \invpi(\Theta) = n  \quad \land \quad i,n \in \mathbb{N}
+\end{equation}
+
+\vspace{2em}
+
+For some symbol set $\psi_\beta$ that characterizes the elements of the sequence. But, and \textbf{this is important}; as with many instances across mathematics --- which is just \textit{a language for unambiguously stating [general] truths} --- when the context is clear and simplicity is preferable, much of these formalisms and notations do get much more simpler than discussed here, and so that, to the uninitiated, sometimes it might appear as though one is saying one or more things, when in fact, a certain expression or mathematical statement is actually meaning a particular thing\footnote{As always, care, practice and the \textit{right} background knowledge is necessary when both writing and reading or analyzing mathematical texts, more so in such a new field or theory such as transformatics is.}.
+
+%draw horizontal line
+\noindent\rule{\textwidth}{0.4pt}
+
+
+\subsection*{Series}
+
+A \emph{series} is the sum of a sequence\cite{copilot_dna_assistant}, however, in drawing parallels with similar formalisms from some mathematics fields such as linear algebra, we might likewise think of series as kinds of \textbf{linear combinations}. For example:
+
+\vspace{2em}
+
+\begin{equation}
+ Q = \sum_{n=0}^{\infty} \frac{1}{2^n} = 1 + \frac{1}{2} + \frac{1}{4} + \cdots = 2.
+\end{equation}
+
+\vspace{2em}
+
+Depicts a series $Q$, defined as the linear combination of the terms of a sequence whose general term is $\frac{1}{2^n}$.
+
+\vspace{2em}
+
+Series are used in convergence analysis and power series expansions\cite{knopp1990theory}, which applications come in handy when computing limits or numerical approximations of continuous and discrete functions such as in calculus, but also, because we have related them to linear combinations in linear algebra, they likewise find varied applications in vector analysis such as in establishing linear independence, linear groups, etc \cite{nef1967linear}.
+
+\vspace{2em}
+
+Also, because series are somewhat conventionally derived from sequences\cite{fitzpatrick1995advanced}, such that if we have a sequence S = $\{a_k\}$, then both $\sum\limits_{k=1}^{n} a_k$ and $ \sum\limits_{k=0}^{\infty} \alpha a_k = \alpha \sum\limits_{k=0}^{\infty} a_k$ for some scalar $\alpha$ are corresponding series based off of it, one might wonder, and correctly so, is a linear combination of the terms of S via multiplication a series as well or not? Basically, if S = $\{a_1, a_2, ..., a_n\} = \{a_{i\in [1,n]}\}$, and that $\alpha_1, \alpha_2,... ,\alpha_n$ are scalars, so that
+
+\begin{equation}
+\label{EQSLINCOMBA}
+S^+ = \alpha_1a_1 + \alpha_2a_2 + ... + \alpha_na_n = \sum\limits_{i=1}^{n} \alpha_i a_i  
+\end{equation}
+
+or that
+
+\begin{equation}
+\label{EQSLINCOMBB}
+S^* = \alpha_1a_1 \times \alpha_2a_2 \times ... \times \alpha_na_n = \prod\limits_{i=1}^{n} \alpha_i a_i  
+\end{equation}
+
+\vspace{2em}
+
+We know that  \textbf{\hyperref[EQSLINCOMBA]{Equation \ref{EQSLINCOMBA}}}, or rather, $S^+$ depicts a series or a linear combination over the terms of the sequence S, however, would it also be correct to refer to  \textbf{\hyperref[EQSLINCOMBB]{Equation \ref{EQSLINCOMBB}}} or rather $S^*$ as a series too? 
+
+%draw horizontal line
+\noindent\rule{\textwidth}{0.4pt}
+
+
+\subsection*{Vector}
+
+A \emph{vector} is an element of a vector space, often represented as an ordered tuple or as a sequence of sequences. Vectors are generally used to depict quantities that have both magnitude and direction\cite{axler2015linear}\cite{ronlarsoncalculus} such as velocity, momentum, and force.
+
+\vspace{2em}
+
+When expressing vectors, we normally want to stress the fact that they consist of one or more components, for which each component corresponds to some particular dimension or direction. For example, a pure scalar such as just the number 5, might become a vector, when it is expressed as $\overset{\rightarrow}{5}$ or $\overset{\leftarrow}{5}$ --- in which case we are combining information about direction with information about magnitude, and that our vector consists of just one component or dimension\footnote{In this case we might for example be describing the velocity of a ball swooshing past us, and are interested in indicating its speed and whether it was headed left or right, and nothing more.}.
+
+\vspace{2em}
+
+When a vector consists of multiple components, such as when a ball's velocity needs to describe its relative speeds in the three dimensions of space --- typically denoted $x$, $y$ and $z$, we then might want to express the vector as either a dimension oriented sequence, a dimension annotated series or as some kind of matrix (usually as a column matrix), such as in:
+
+\vspace{2em}
+
+\begin{equation}
+\label{EQVECT}
+\vec{v} = \langle 1, 3, 2 \rangle \equiv 1\textbf{x} + 3\textbf{y} + 2\textbf{z} \equiv  \begin{bmatrix} 1 \\ 3 \\ 2 \end{bmatrix} \in \mathbb{R}^3
+\end{equation}
+
+
+\vspace{2em}
+
+That we can use sequences to depict vectors, such as in the first expression used to specify the vector $\vec{v}$ in the above equation might help to align some results or arguments in transformatics with other mathematical fields such as in calculus, mechanics or even linear algebra. This is essentially via the realization that, as long as we understand a vector to depict an ordered set of quantities where each position in the set maps to a particular dimension, that then, if we for example had a vector that only has two components --- e.g. a velocity with only components in the $x$ and $z$ dimension, we might then still use the sequence notation common in transformatics, to express it, such as in:
+
+
+\begin{equation}
+\label{EQVECT2}
+\vec{v} = \langle 1, 0, 2 \rangle \equiv 1\textbf{x} + 0\textbf{y} + 2\textbf{z} = 1\textbf{x} + 2\textbf{z} \equiv  \begin{bmatrix} 1 \\ 0 \\ 2 \end{bmatrix} \in \mathbb{R}^3
+\end{equation}
+
+
+\vspace{2em}
+
+Thus for example, the case of \textbf{complex numbers} ($\mathbb{C}$), that consist of a real and imaginary component, and which are generally written as the linear combination $a + i\textbf{b}$, might likewise use a sequence-like notation such as just $\langle a, b\rangle$ when the context is clear. In fact, Larson et al. in \cite{ronlarsoncalculus} in their calculus treatment of vectors in the plane has this to say:
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+The components of \textbf{v} = $\overset{\rightarrow}{PQ}$, where P = ($a_1$,$b_1$) and Q = ($a_2$,$b_2$), are the quantities [such that] $a = a_2 - a_1$ ($x$-component) [and] $b = b_2 - b_1$ ($y$-component), [and so that] the pair of components is denoted $\langle a, b \rangle$.
+
+}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+And thus, when the dimensions aspect is clear, we might sometimes see a vector written as just a sequence such as just $\langle a, b \rangle$ --- the \textbf{transformatic-way}, or perhaps as a column matrix, $\begin{bmatrix} a \\ b \end{bmatrix}$ --- the linear algebraic way.
+
+
+%draw horizontal line
+\noindent\rule{\textwidth}{0.4pt}
+
+
+\subsection*{Matrix}
+
+A \emph{matrix} is a two-dimensional array of scalars \cite{copilot_dna_assistant}. In the transformatics language though, we might think of a matrix as a higher-order sequence (see \textbf{\hyperref[PROP8]{Section \ref{PROP8}}}) --- essentially, a sequence of sequences. In fact, a more commonplace or familiar approach might be to think of a matrix as a sequence of vectors --- this helps appreciate that:
+
+\vspace{2em}
+
+\begin{enumerate}
+\item A matrix could be reduced to a vector.
+\item A matrix could be interpreted as the projection of one or more vectors to a sequence that preserves just their component magnitudes but otherwise respecting the dimensions of each component.
+\item Any vector can essentially be re-written as either a column or row matrix.
+\end{enumerate}
+
+
+\vspace{2em}
+
+Matrices are normally described or characterized by their dimensions, so that we find authors such as Walter Nef in \cite{nef1967linear} talking of matrices as ``a rectangular array of numbers", and that ``the matrix A has \textit{m rows} and \textit{n columns}" --- this, when talking of a structure generalized such as:
+
+
+\[ A = \begin{pmatrix} \alpha_{11} & \alpha_{12} & \cdots & \alpha_{1n} \\  \alpha_{21} & \alpha_{22} & ... & \alpha_{2n} \\  \cdots & \cdots & \cdots & \cdots \\ \cdots & \cdots & \cdots & \cdots \\ \alpha_{m1} & \alpha_{m2} & \cdots & \alpha_{mn} \\ \end{pmatrix} = \alpha_{ik} \]
+
+
+\vspace{2em}
+
+Where $k = 1, 2, \cdots, n$ and $i = 1, \cdots, m$ --- essentially, $i, k \in \mathbb{N}$, and further, that ``the \textit{mn} scalars $\alpha_{ik}$ are known as the elements of the matrix", and that we refer to a matrix that \textit{m} rows and \textit{n} columns as an $m \times n$ matrix.
+
+\vspace{2em}
+
+Then, we also know that matrices represent linear transformations and systems of equations \cite{strang2016introduction}\cite{nef1967linear}, and this might be appreciated by relating the case on vectors that we saw before this, to how we might map vectors to matrices, as well as use them to express [linear] transformations. For example, assuming we have a starting vector P = $\langle 1, 2 \rangle$ and a resultant vector Q = $\langle 3, 4 \rangle$, we might then talk of the transformation $A = \overset{\rightarrow}{PQ}$ resulting from the ordered application of these two vectors as such:
+
+\vspace{2em}
+
+\[ A = \begin{pmatrix} \overset{\rightarrow}{P} \\ \overset{\rightarrow}{Q} \end{pmatrix} = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \]
+
+\vspace{2em}
+
+And we would be able to reduce this matrix to a corresponding transformation vector respecting the dimensions as such:
+
+\[ A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 1\cdot x + 2\cdot y \\ 3\cdot x + 4\cdot y \end{pmatrix} = (3-1)x + (4-2)y  = 2\textbf{x} + 2\textbf{y}\]
+
+\vspace{2em}
+
+So that then, we essentially can express the transform $\overset{\rightarrow}{PQ}$ as just the sequence $\langle 2, 2 \rangle$.
+
+\vspace{2em}
+
+Finally, note that, as when we had the debate concerning whether to express sequences in transformatics using braces $\{ \cdots \}$ or instead angled brackets $\langle \cdots \rangle$, note that also, in many fields of mathematics where matrices are encountered, you shall find use of both square brackets $[ \cdots ]$, and brackets $( \cdots )$. The choice often depends on the author and the conventions in the field as long as no confusion arises, otherwise, they might be used interchangeably too.
+
+
+%draw horizontal line
+\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Space}
+A \emph{space} is a set with additional structure \cite{copilot_dna_assistant}. Examples include:
+\begin{itemize}
+  \item \textbf{Vector space}: closed under addition and scalar multiplication.
+  \item \textbf{Metric space}: equipped with a distance function.
+  \item \textbf{Hilbert space}: complete inner product space.
+\end{itemize}
+Spaces provide the abstract setting for geometry, analysis, and quantum mechanics \cite{kolmogorov1970introductory}.
+
+%draw horizontal line
+\noindent\rule{\textwidth}{0.4pt}
+
+
+
+\section{Comparison with Other Fields}
+
+Before we close our focus on Transformatics 101, it shall be very crucial to add a word or two that weren't covered in the original thesis\cite{Lutalo2025_transformatics_thesis}; in particular, concerning where, across the vast spectrum of all mathematics and the mathematical disciplines and sub-disciplines, we might correctly locate or position our theory of Transfomatics. This undertaking might not be something we can fully and rigorously accomplish within the context of a side-note such as this, however, and especially for completeness's sake, it is better we attempt and kick-start this discussion here, in this vital work, the first to undeniably non-trivially, but also exhaustively apply Transformatics (the other major works being \cite{Lutalo2025transpsy} on Psychology, \cite{Lutalo2024TEATAZ} on the TEA language, and more recently, \cite{lutalo_2025_grimlumtauto} on Western Esotericism).
+
+\vspace{2em}
+
+It shall be helpful to note that, earlier attempts to situate this theory within the spectrum of mathematics --- such as when we penned the paper \cite{transformatics}, mostly relied on ``bias" towards where it is that most of the developed theory at that point would find its closest relatives. Thus, it should not be so shocking that initially, we thought perhaps Transformatics had better be treated as a theory within \textbf{mathematical statistics} --- especially because, as one can tell looking at the proposed applications of the theory (\textbf{\hyperref[SECPROP]{Section \ref{SECPROP}}}), many indeed resonate with work in \textbf{Statistics}, and that as with many theories and formalisms in that field, much of what makes statistics what it is, starts by the \textit{special} treatment of sequences known as \texttt{data}\footnote{Whether as ``raw data" or as ``coded data"\cite{clarke1992basic}} --- such as when we treat of a variable $X$, that might taken on values $x_i$ spanning some symbol set ($\psi_X$) and ordered by the naturals ($\mathbb{N}$) --- i.e 
+
+\begin{equation}
+X = \{ x_i: i = 1, 2, ..., N\} = \{x_i : i \in \mathbb{N}\} = \psi_X \times \mathbb{N} = x_{i\in \mathbb{N}} \in \psi_X
+\end{equation}
+
+\vspace{2em}
+
+However, and despite the fact that statistics heavily and naturally relates to not only collecting information that is then encoded using sequences, and which is then processed and interpreted as sequences (of data points, observations, events, probabilities, measurements etc), however, it is not the only major field of mathematics that essentially treats of structures in the form of sequences. 
+
+\vspace{2em}
+
+The other competing field might for example be \textbf{Linear Algebra}; in that field, sequences do show up right at the start (see for example Chapter 1 of \cite{nef1967linear}), and particularly, they manifest in the form or under the terminology of \texttt{sets}. in the form of matrices of many kinds, and that, very often, much of the theory and formalisms of linear algebra rotate about encoding data as the mathematical structure known as a matrix, whether of simple form such as 1-dimensional finite sequence, or as high-dimensional dense or sparse matrices encoding infinitely large spaces or quantifiably large datasets. That field also presents many processes that deal with reducing such basic or higher-order sequences (\textbf{\hyperref[PROP8]{Section \ref{PROP8}}}), also sometimes termed ``vectors", to just simple expressions or quantities such as scalars --- basic numbers in their simplest forms.
+
+And then we encounter sequences in the form of series --- the kind of formalism that treats of data points or coordinates (in some space) corresponding to discrete or continuous functions --- and that this line of inquiry is very typical of work under the field of \textbf{Calculus} --- such as with real and but also numerical analysis.  treat of (including special theories such as those on data transformations and signal processing).
+
+\hl{ TODO: complete this section, then continue with the review and update to the entire manuscript...
+
+
+Then sequences as merely higher abstractions over sets, and thus as potentially an extension of set theory.
+
+Then talk of sequence transformations as being a concept that shows up in many fields of pure and applied mathematics; geometry (transformation of shapes), linear algebra (transformations of spaces), machine learning(transformation of data in matrices or sequence transduction) [2][3], calculus (transformations of functions)[1], etc.
+
+And finally indicate that the matter of where exactly our particular theory of TRANSFORMATICS is located across the vast spectrum of mathematics is yet to be rigourously fixed, but also, until the field's applications and theories get explored by by other researchers, it might be very correct to classify it under any particular field other than treating of it as it's own subfield given than the underlying theories (10 results and 10 proposals) somewhat relate to material spanning set theory, real analysis, computational mathematics, statistics, and information theory among others and that as it stands, we find that this body of theory is coherent and tied together by the fact that it all treats of sequences of symbols (not necessarily numbers, nor just letters), their analysis, processing and transformations, and so that, we might not be wrong in classifying this as its own mathematical field.
+
+
+Refs:
+
+1. (book) Introduction to Orthogonal Transforms With Applications in Data Processing and Analysis -- RUYE WANG
+
+2. (blog) Transformers from Scratch -- Brandon Rohrer
+
+3. (paper) Attention Is All You Need --- Ashish Vaswani, Noam Shazeer, et al.
+
+}
+
+
+\subsubsection{Transformatics as a new Algebra of Sequences}
+
+Finally, note that away from a generalization such as \textbf{\hyperref[DEFTRANS]{Definition \ref{DEFTRANS}}} --- which is the latest and first formal definition of transformatics, in recent comparative studies on transformatics, such as the October 2025 review of \textbf{Professor Jeremy Gibbon}'s 1991 \textbf{tree algebras} thesis\cite{treealgebras_review}, we have the following telling signs that indeed, we might also approach the field of transformatics as a kind of algebra in the sense of the usual use of that term in both mathematics and say computer science:
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+...we might think of the mathematical field or theory of transformatics\cite{Lutalo2025_transformatics_thesis} as \textbf{the algebra of sequences} --- essentially, the treatment of sequences and operations on them. As laid out in the transformatics mini-thesis\cite{Lutalo2025_transformatics_thesis}, we might for example think of mathematical objects such as ordered sets, symbol sets, numeric and alpha-numeric expressions, Lu-Numbers or Lu-Number Expressions\cite{lnspaper}, matrices, sequences of instructions in a TEA program, etc. And as for operations on them, we might call out operations such as concatenation, inversion, splitting, reduction, multiplication, etc. many of which have been well defined, introduced or laid down in Lutalo's earlier works such as \cite{lutalo_2025_trans_genetics}, \cite{lnspaper} or \cite{transformatics}.
+
+}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+
+\section{A Final Definition and Justification of a Field}
+
+
+And thus, or rather, finally, we might advance a more concrete definition for the subject of transformatics as such:
+
+
+\vspace{2em}
+
+\begin{defn}[\textbf{Transformatics}]
+\label{DEFTRANS2}
+The study of \textbf{sequence algebra}, \textbf{sequence transformations} and \textbf{sequence analysis} ---- succinctly: \texttt{the study of the algebra, transformation and analysis of sequences}.
+\end{defn}
+
+\vspace{2em}
+ 
+So that then, transformatics is \textbf{based on} set theory, algebra and mathematical logic, but otherwise \textbf{can underlie} or power old and new ideas in linear algebra, calculus, statistics, computer science, software engineering and [computational or mathematical] genetics\footnote{Or perhaps \textbf{bioinformatics}? computational biology?} to name but a few. 
+
+
+%draw horizontal line
+%\noindent\rule{\textwidth}{0.4pt}
+
+
 
 
 \chapter{Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}
