@@ -95,10 +95,17 @@
 \contentsline {subsection}{\numberline {E.2.10}Proposal 10: Entropy of a Sequence\cite {lnspaper}}{183}{subsection.a.E.2.10}%
 \contentsline {section}{\numberline {E.3}Conclusion}{185}{section.a.E.3}%
 \contentsline {chapter}{Appendix \numberline {F}Situating TRANSFORMATICS (as a Theory or Field) within Mathematics:}{189}{appendix.a.F}%
+\contentsline {section}{\numberline {F.1}A Working Definition and Clarification on Fundamental Nomenclature}{189}{section.a.F.1}%
 \contentsline {section}{\numberline {F.2}Comparison with Other Fields}{198}{section.a.F.2}%
-\contentsline {subsubsection}{Transformatics as a new Algebra of Sequences}{200}{section*.75}%
-\contentsline {section}{\numberline {F.3}A Final Definition and Justification of a Field}{201}{section.a.F.3}%
-\contentsline {chapter}{Appendix \numberline {G}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{203}{appendix.a.G}%
-\contentsline {chapter}{Final Dedication}{217}{appendix*.78}%
-\contentsline {chapter}{About the Author}{220}{appendix*.80}%
-\contentsline {chapter}{Colophon}{223}{appendix*.82}%
+\contentsline {subsection}{\numberline {F.2.1}Relation to Statistics}{198}{subsection.a.F.2.1}%
+\contentsline {subsection}{\numberline {F.2.2}Relation to Linear Algebra}{199}{subsection.a.F.2.2}%
+\contentsline {subsection}{\numberline {F.2.3}Relation to Calculus}{206}{subsection.a.F.2.3}%
+\contentsline {subsection}{\numberline {F.2.4}Relation to Several Other Branches of [Applied] Mathematics}{215}{subsection.a.F.2.4}%
+\contentsline {subsubsection}{Signal Processing}{215}{section*.75}%
+\contentsline {subsubsection}{Artificial Intelligence and Machine Learning: Natural Language Processing via Neural Networks --- so-called ``Transformers"}{220}{section*.76}%
+\contentsline {subsection}{\numberline {F.2.5}Transformatics as a new Algebra of Sequences}{225}{subsection.a.F.2.5}%
+\contentsline {section}{\numberline {F.3}A Final Definition and Justification of a Field}{226}{section.a.F.3}%
+\contentsline {chapter}{Appendix \numberline {G}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{227}{appendix.a.G}%
+\contentsline {chapter}{Final Dedication}{243}{appendix*.79}%
+\contentsline {chapter}{About the Author}{246}{appendix*.81}%
+\contentsline {chapter}{Colophon}{249}{appendix*.83}%

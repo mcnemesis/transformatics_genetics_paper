@@ -2,7 +2,7 @@
 %---|original-author:JWL|date:21AUG2025|email:jwl@nuchwezi.com
 %---|TITLE: Applying TRANSFORMATICS in GENETICS
 %---|EDITOR:Prof. Joseph Willrich Lutalo, Oxford
-%---[MANUSCRIPT-VERSION:28AUG2025]
+%---[MANUSCRIPT-VERSION:24JAN2026]
 %----------------------------------------------------------------|
 %\documentclass[a4paper, 18pt]{article} % A4 paper, readable font size
 \documentclass[a4paper, 18pt]{book} % A4 paper, readable font size
@@ -207,6 +207,27 @@ moredelim=[s][\color{myorange}]{\{}{\}},
 %stringstyle=\color{yellow}
     }
   }
+}
+
+
+% from google-gemini for verbatim listings:
+\tcbuselibrary{listings,breakable}
+
+% Define a language with no syntax highlighting
+\lstdefinelanguage{none}{}
+
+% Define a new tcblisting environment for verbatim content
+\newtcblisting{tcbverbatim}[1][]{
+  % Pass any user options to the new environment
+  #1,
+  breakable, % Allow long lines to wrap
+  listing only, % The box contains only a listing
+  listing options={
+    language=none, % The 'none' language disables highlighting
+    basicstyle=\ttfamily, % Use the typewriter font
+    columns=flexible, % Allow flexible column widths for wrapping
+    breaklines=true, % Enable line breaking
+  },
 }
 
 
@@ -1562,10 +1583,11 @@ cat theta1_dna.txt | tttt -c "d!:C|g:|v:|v!:"
 
 But if we wish to do the same for all distinct symbols within the sequence $\Theta1$ --- \textbf{and especially without having to explicitly list which symbols we are counting within the TEA code} --- meaning, no \textit{hard-coding} of the elements from the sequence's specific symbol set --- and equivalently, merely making the program symbol-set-independent, we could have used ``u!:" as in the previous task, since that TEA command counts how many times each unique symbol occurs in a sequence so as to compute the modal sequence, however, currently (with TEA version \textbf{1.0.8}\cite{cli_tttt}), the actual frequencies aren't returned with the output of ``u!:", and so, we shall want to use a work-around\footnote{\textbf{FUTURE WORK:} Provide a basic, in-built capability within the TEA instruction set, to allow for the automatic computation of a text sequence characteristic, $\hbar(\overset{>}{\Theta})$.} leveraging the above method for computing the frequency of each symbol in the input sequence. We can use the following non-trivial TEA program for that then:
 
-\begin{verbatim}
+
+    \begin{tcbverbatim}[title=EXAMPLE: Computing Sequence Characteristic using TEA on command line]
  cat theta1_dna.txt | tttt -c "v:vSEQ|v:vANA:{}|u!:|v:vMS|l:lMS|y:vMS|d!:^.|v:vSY|y:vMS|d:^.|v:vMS|y:vSEQ|d*!:vSY|g:|v:|v!:|v:vSYN|g*:{}:vSY:vSYN|x*:vANA|v:vANA|y:vMS|f:^$:lFIN|j:lMS|l:lFIN|y:vANA"
-C4G3T3A2
-\end{verbatim}
+C4G3T3A2 
+  \end{tcbverbatim}
 
 The essential result from running that program against $\Theta1$ is the string \textbf{C4G3T3A2}, which tells us that `C' occurs 4 times, `G' 3 times, ... , and then `A' only 2 times. 
 }
@@ -5931,20 +5953,15 @@ And the same program in its minified form is as:
 \vspace{2em}
 
 
-  %\begin{figure}[H]
-  %\centering
   \begin{tcolorbox}[teaterminalstyle, title=TEA Program: SC-Generator Minified, breakable]
-    %\begin{lstlisting}[language=TEA,breaklines=true]
-  \begin{lstlisting}[language=TEA, caption={SC-Generator Minified}, label={LSTSCGENMINI}, numbers=left]
+  \begin{lstlisting}[language=TEA, caption={SC-Generator Minified}, label={LSTSCGENMINI}, breaklines=true]
 v:vIN|u!:|v:vMSS|v:vSC:{}|l:lPROC|y:vMSS|d!:^.|v:vW|y:vMSS|
 d:^.|v:vMSS|y:vW|f:^$:lEND|y:vIN|d*!:vW|v:|v!:|v:vF|v:vD:_|
 g*:_:vW:vF:vD|v:vSC1|g*:{}:vSC:vSC1|v:vSC|j:lPROC|l:lEND|
 y:vSC|r!:__:.|d:.$
-   \end{lstlisting}
+  \end{lstlisting}
   \end{tcolorbox}
-  %\captionof{figure}{TEA EXAMPLE: \textbf{SC-Computer}: transforms any input sequence into its sequence characteristic!}
-  %\label{LISTSC}
-  \vspace{2em}
+
   
  
  As one shall establish while studying \textbf{the 26 TEA primitives A: to Z:}\cite{Lutalo2024TEATAZ}, or if they dive deeper into the potential \textbf{182 distinct TEA commands}\cite{Lutalo2024TEATAZ}; apart from branching commands such as \textbf{F:} (the ``Fork") and \textbf{Q:} (the ``Quit") and commands such as \textbf{L:} (the ``Label") that don't modify or alter the \textbf{Active Input}(AI)\cite{Lutalo2024TEATAZ} --- meaning, when they are encountered in a TEA program, they merely pass on  the current input to the next instruction unmodified, most, or all of the bulk of TEA programming consists of some sequence processing instruction that accepts some input [sequence], processes it or transforms it, and then returns the resultant [sequence] as the \textbf{Instruction Output}(IO).\\
@@ -5979,6 +5996,7 @@ $\emptyset \xrightarrow{i:\{\text{This is a TEST 123}\}} \langle \text{\textit{T
  
  
  \begin{trans}
+ \label{TRANSTEAPROG}
 $\langle \text{\textit{hello world 123?}} \rangle \xrightarrow{i:\{\text{This is a TEST 123}\}} \langle \text{\textit{hello world 123?}} \rangle \xrightarrow{z!:} \langle \text{\textit{HELLO WORLD 123?}} \rangle \xrightarrow{d:[AEIOU]} \langle \text{\textit{HLL WRLD 123?}} \rangle \xrightarrow{d!:[A-Z]} \langle \text{\textit{HLLWRLD}} \rangle$\\
 \end{trans} 
  
@@ -6115,15 +6133,10 @@ Lutalo, Joseph Willrich (2025). \textbf{TRANSFORMATICS 101 - explained.} I*POW. 
 \chapter{Situating TRANSFORMATICS (as a Theory or Field) within Mathematics:}
 \label{CHAPSITTRANS}
 
-\hl{
 
 \section{A Working Definition and Clarification on Fundamental Nomenclature}
 
-TODO: \textbf{Review and complete this chapter...}
 
-For all practical and theoretical purposes, we might want to define Transformatics as such:
-
-}
 
 \vspace{2em}
 
@@ -6166,6 +6179,7 @@ Space & N/A & N/A & $n$D (abstract) & \makecell[l]{Set with algebraic\\or topolo
 \end{center}
 
 \section*{Definitions and Examples}
+\label{SECDEFSTRUCTURES}
 
 \subsection*{Set}
 A \emph{set} is a collection of distinct elements with no inherent order. For example, $\{2, 3, 5\}$ is the same as $\{5, 2, 3\}$. Sets are foundational in logic and topology \cite{halmos1960naive}.
@@ -6214,6 +6228,8 @@ Where $\psi_{vowels}$ is the symbol set of only the 5 vowels of the Latin Alphab
 
 
 \subsection*{Sequence}
+\label{DEFSEQUENCE}
+
 A \emph{sequence} is an ordered list of elements possibly with repetition\cite{copilot_dna_assistant} --- for transformatics though, we many times prefer to say ``of symbols". For instance, the Fibonacci sequence is $(1, 1, 2, 3, 5, 8, \dots)$, while the sequence of the vowels in the Latin Alphabet is\footnote{We borrow the formalism of a symbol set over a set, but whose elements are ordered by some criteria, in this case, that of the latin alphabet such as in \cite{transformatics}, but also see \textbf{\hyperref[EQDNASS]{Equation \ref{EQDNASS}}}.} $\hat{\psi}_{az}(VOWELS) = \psi_{vowels}$ as depicted below:
 
 
@@ -6451,7 +6467,7 @@ Finally, note that, as when we had the debate concerning whether to express sequ
 \noindent\rule{\textwidth}{0.4pt}
 
 \subsection*{Space}
-A \emph{space} is a set with additional structure \cite{copilot_dna_assistant}. Examples include:
+A \emph{space} is a set with additional structure \cite{copilot_dna_assistant}\footnote{Interesting to note: this kind of phrasing somewhat resonates with what is also typical when talking of an \textbf{algebra} --- \textit{a set with a specific operation or operations well-defined for it} --- refer to \textbf{\hyperref[SECTRANSLAG]{Section \ref{SECTRANSLAG}}} for more on this.}. Examples include:
 \begin{itemize}
   \item \textbf{Vector space}: closed under addition and scalar multiplication.
   \item \textbf{Metric space}: equipped with a distance function.
@@ -6466,11 +6482,15 @@ Spaces provide the abstract setting for geometry, analysis, and quantum mechanic
 
 \section{Comparison with Other Fields}
 
-Before we close our focus on Transformatics 101, it shall be very crucial to add a word or two that weren't covered in the original thesis\cite{Lutalo2025_transformatics_thesis}; in particular, concerning where, across the vast spectrum of all mathematics and the mathematical disciplines and sub-disciplines, we might correctly locate or position our theory of Transfomatics. This undertaking might not be something we can fully and rigorously accomplish within the context of a side-note such as this, however, and especially for completeness's sake, it is better we attempt and kick-start this discussion here, in this vital work, the first to undeniably non-trivially, but also exhaustively apply Transformatics (the other major works being \cite{Lutalo2025transpsy} on Psychology, \cite{Lutalo2024TEATAZ} on the TEA language, and more recently, \cite{lutalo_2025_grimlumtauto} on Western Esotericism).
+Before we close our focus on extending what was originally introduced via the Transformatics 101 thesis\cite{Lutalo2025_transformatics_thesis}, it shall especially be worth adding a word or two concerning where, across the vast spectrum of all mathematics and the mathematical disciplines and sub-disciplines, we might correctly locate or position our theory of Transfomatics. This undertaking might not be something we can fully and rigorously accomplish within the context of chapter-sub-section such as this, however, and especially for completeness's sake, it is better we attempt and kick-start this discussion here, in this vital work --- the first to undeniably non-trivially, but also exhaustively apply Transformatics (the other major works being \cite{Lutalo2025transpsy} on Psychology, \cite{Lutalo2024TEATAZ} on the TEA language, and more recently, \cite{lutalo_2025_grimlumtauto} on Western Esotericism).
+
 
 \vspace{2em}
 
-It shall be helpful to note that, earlier attempts to situate this theory within the spectrum of mathematics --- such as when we penned the paper \cite{transformatics}, mostly relied on ``bias" towards where it is that most of the developed theory at that point would find its closest relatives. Thus, it should not be so shocking that initially, we thought perhaps Transformatics had better be treated as a theory within \textbf{mathematical statistics} --- especially because, as one can tell looking at the proposed applications of the theory (\textbf{\hyperref[SECPROP]{Section \ref{SECPROP}}}), many indeed resonate with work in \textbf{Statistics}, and that as with many theories and formalisms in that field, much of what makes statistics what it is, starts by the \textit{special} treatment of sequences known as \texttt{data}\footnote{Whether as ``raw data" or as ``coded data"\cite{clarke1992basic}} --- such as when we treat of a variable $X$, that might taken on values $x_i$ spanning some symbol set ($\psi_X$) and ordered by the naturals ($\mathbb{N}$) --- i.e 
+\subsection{Relation to Statistics}
+\label{SECRELSTAT}
+
+It shall be helpful to note that, earlier attempts to situate this theory within the spectrum of mathematics --- such as when we penned the paper \cite{transformatics}, mostly relied on ``bias" towards where it is that most of the developed theory at that point would find its closest relatives. Thus, it should not be so shocking that initially, we thought perhaps Transformatics had better be treated as a theory within \textbf{mathematical statistics} --- especially because, as one can tell looking at the proposed applications of the theory (\textbf{\hyperref[SECPROP]{Section \ref{SECPROP}}}), many of the proposed and developed ideas back then indeed resonated well with work in \textbf{Statistics}, and that, as with many theories and formalisms in that field, much of what makes statistics what it is, starts by the \textit{special} treatment of sequences known as \texttt{data}\footnote{Whether as ``raw data" or as ``coded data"\cite{clarke1992basic}} --- such as when we treat of a variable $X$, that might taken on values $x_i$ spanning some symbol set ($\psi_X$) and ordered by the naturals ($\mathbb{N}$) --- i.e 
 
 \begin{equation}
 X = \{ x_i: i = 1, 2, ..., N\} = \{x_i : i \in \mathbb{N}\} = \psi_X \times \mathbb{N} = x_{i\in \mathbb{N}} \in \psi_X
@@ -6478,36 +6498,1031 @@ X = \{ x_i: i = 1, 2, ..., N\} = \{x_i : i \in \mathbb{N}\} = \psi_X \times \mat
 
 \vspace{2em}
 
-However, and despite the fact that statistics heavily and naturally relates to not only collecting information that is then encoded using sequences, and which is then processed and interpreted as sequences (of data points, observations, events, probabilities, measurements etc), however, it is not the only major field of mathematics that essentially treats of structures in the form of sequences. 
+However, and despite the fact that statistics heavily and naturally relates to not only collecting information that is then encoded using sequences, and which is then processed and interpreted as sequences (of data points, observations, events, probabilities, measurements etc), however, \textbf{it is not} the only major field of mathematics that essentially treats of structures in the form of sequences. 
 
 \vspace{2em}
 
-The other competing field might for example be \textbf{Linear Algebra}; in that field, sequences do show up right at the start (see for example Chapter 1 of \cite{nef1967linear}), and particularly, they manifest in the form or under the terminology of \texttt{sets}. in the form of matrices of many kinds, and that, very often, much of the theory and formalisms of linear algebra rotate about encoding data as the mathematical structure known as a matrix, whether of simple form such as 1-dimensional finite sequence, or as high-dimensional dense or sparse matrices encoding infinitely large spaces or quantifiably large datasets. That field also presents many processes that deal with reducing such basic or higher-order sequences (\textbf{\hyperref[PROP8]{Section \ref{PROP8}}}), also sometimes termed ``vectors", to just simple expressions or quantities such as scalars --- basic numbers in their simplest forms.
+\subsection{Relation to Linear Algebra}
+\label{SECRELLINALG}
 
-And then we encounter sequences in the form of series --- the kind of formalism that treats of data points or coordinates (in some space) corresponding to discrete or continuous functions --- and that this line of inquiry is very typical of work under the field of \textbf{Calculus} --- such as with real and but also numerical analysis.  treat of (including special theories such as those on data transformations and signal processing).
+The other competing field might for example be \textbf{Linear Algebra}\footnote{Majorly\cite{copilot_dna_assistant} attributed  to \textbf{Hermann Grassmann} the 19th century German polymath that first \textit{created} linear algebra in its modern form when he penned the 1844 work \textit{Die Lineale Ausdehnungslehre} (``Theory of Linear Extension") which introduced the ideas of vector spaces and linear combinations.  Other contributors\cite{copilot_dna_assistant} are Gottfried Willhelm Leibniz (1693) that introduced early ideas of matrices and determinants; Gabriel Cramer (1750) that published \textit{Cramer's Rule} for solving $n$ equations in $n$ unknowns; Joseph-Louis Lagrange (late 1700s) that used matrices to study bilinear forms, and finally Giuseppe Peano (1888) that introduced the abstract modern concept of a vector space, in essence, completing the conceptual framework that underlies all of linear algebra.}; in that field, sequences do show up right at the start (see for example Chapter 1 of \cite{nef1967linear}), and particularly, they \textit{initially} manifest in the form or under the terminology of \texttt{sets}, and then \textit{soon enough} in the [more transformatic] form of matrices of many kinds, and that, very often, much of the theory and formalisms of linear algebra rotate around encoding data as the mathematical structure known as a matrix\footnote{Which we have seen to actually be based on sequences --- refer to \textbf{\hyperref[SECDEFSTRUCTURES]{Section \ref{SECDEFSTRUCTURES}}}}, whether of a simple form such as 1-dimensional finite sequence, or as high-dimensional dense or sparse matrices encoding infinitely large spaces or quantifiably large datasets. That field also presents many processes that deal with reducing such basic or higher-order sequences (\textbf{\hyperref[PROP8]{Section \ref{PROP8}}}), also sometimes likened to or related to ``vectors", to just simple expressions or quantities such as scalars --- basic numbers in their simplest forms, via \textbf{linear-transformations} of many kinds. And talking of transformations, we find in the field of linear algebra, many kinds of ways that one sequence might be mapped or reduced to another sequence, via processes or computations such as computing the basis (a sequence from which other sequences of similar structure can be derived), endomorphisms (linear transforms that map a type onto itself), inverses (sequences which would result in the identity sequence when multiplied with the source sequence), etc.\cite{nef1967linear}
 
-\hl{ TODO: complete this section, then continue with the review and update to the entire manuscript...
+\vspace{2em}
 
+First, concerning sequences in particular, it shall be worth noting that Walter Nef does even explicitly bring up the concept of \textit{a sequence space} --- in relation to, and derived from the concept of a real vector space (also to be found in other fields such as Calculus and real analysis), when he writes:
 
-Then sequences as merely higher abstractions over sets, and thus as potentially an extension of set theory.
+\vspace{2em}
 
-Then talk of sequence transformations as being a concept that shows up in many fields of pure and applied mathematics; geometry (transformation of shapes), linear algebra (transformations of spaces), machine learning(transformation of data in matrices or sequence transduction) [2][3], calculus (transformations of functions)[1], etc.
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+\noindent {\ttfamily
 
-And finally indicate that the matter of where exactly our particular theory of TRANSFORMATICS is located across the vast spectrum of mathematics is yet to be rigourously fixed, but also, until the field's applications and theories get explored by by other researchers, it might be very correct to classify it under any particular field other than treating of it as it's own subfield given than the underlying theories (10 results and 10 proposals) somewhat relate to material spanning set theory, real analysis, computational mathematics, statistics, and information theory among others and that as it stands, we find that this body of theory is coherent and tied together by the fact that it all treats of sequences of symbols (not necessarily numbers, nor just letters), their analysis, processing and transformations, and so that, we might not be wrong in classifying this as its own mathematical field.
-
-
-Refs:
-
-1. (book) Introduction to Orthogonal Transforms With Applications in Data Processing and Analysis -- RUYE WANG
-
-2. (blog) Transformers from Scratch -- Brandon Rohrer
-
-3. (paper) Attention Is All You Need --- Ashish Vaswani, Noam Shazeer, et al.
+Instead of ordered sets of $n$ real numbers, we can also consider countably infinite sequences of real numbers, i.e., $x = (\xi_1, \xi_2, \xi_3, \cdots )$. Addition and multiplication by scalars can be defined... term by term... and in this way, a new real vector space is constructed which we call the space of sequences
 
 }
+\hspace*{\fill} --- \textbf{Walter Nef}, \textit{Linear Algebra}, 1967\cite{nef1967linear}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
 
 
-\subsubsection{Transformatics as a new Algebra of Sequences}
+Moreover, and not to confuse transformatics with linear algebra and similar mathematics, note that, whereas they talk of ``spaces" as especially sets or families of sets that especially satisfy the \textbf{7 axioms of a vector space}, and which especially focus on the operations of addition (of the member sets to other member sets) and multiplication (of scalars by member sets), such that then we can talk of ``the space of sequences", ``the space of polynomials", ``the space of linear manifolds", etc. in transformatics, we are more interested in not assuming anything about the nature of the elements of a set, so that for example, we might not readily talk of the possibility of a meaningful multiplication of a scalar by an element in some set, or that we might not guarantee that the axioms expected of a vector space hold when we apply them to say, sequences of letters (such as in $\psi_{az}$ or $\psi_{na}$), sequences of TEA instructions, etc. And also that, as introduced in both \cite{transformatics} and \cite{treealgebras_review}, we are more interested in operations that can be applied to sequences irrespective of the nature of the elements they contain --- for example, \textbf{concatenation}, \textbf{filtering}, \textbf{lateral inversion}, \textbf{cardinality} etc. would readily work well on sequences of real numbers, integers, letters of the latin alphabet, sequences of quaternions, etc.
+
+\vspace{2em}
+
+Thus, even though transformations of a linear kind or rather, ``linear transformations" in the strict sense, might correctly treat of sequences, vectors and matrices such as when we have two vectors $u$, $v$, and $z$ and some scalar $c$, so that, given some linear transformation $T: V \rightarrow W$ mapping between vector spaces, we have that:
+
+\vspace{2em}
+
+\begin{equation}
+T(u + v) = T(u) + T(v) = z
+\end{equation}
+
+\vspace{2em}
+
+and that
+
+\vspace{2em}
+
+\begin{equation}
+T(cu) = cT(u)
+\end{equation}
+
+\vspace{2em}
+
+And so that the transformation $T(\cdot)$ can be treated of as we typically do in transformatics as such:
+
+\vspace{2em}
+
+\begin{trans}
+$u + v \xrightarrow{T} z$
+\end{trans}
+
+\vspace{2em}
+
+And that if $T(u) = u^*$ and $T(v) = v^*$, so that $u^* + v^* = z$, then we also expect that:
+
+\vspace{2em}
+
+\begin{trans}
+$u^* + v^* \rightarrow z$
+\end{trans}
+
+\vspace{2em}
+
+Or to sum it all up in a linear-algebraic-transformatic notation combo\footnote{Perhaps totally bonkas!}, we have that:
+
+\vspace{2em}
+
+\begin{equation}
+\label{EQAXIOMALG}
+(u + v \xrightarrow{T} z) \equiv ((u \xrightarrow{T} u^*) + (v \xrightarrow{T} v^*) = z)
+\end{equation}
+
+\vspace{2em}
+
+For those not very familiar with linear algebra, note that \textbf{\hyperref[EQAXIOMALG]{Equation \ref{EQAXIOMALG}}} would for example hold for transformations such as \textbf{halving} --- but not say \texttt{squaring}. For example, if we have  $u = \left[\begin{smallmatrix}3\\2\end{smallmatrix}\right]$ and $v = \left[\begin{smallmatrix}4\\5\end{smallmatrix}\right]$, and that we have the operation $T(u) = \{\frac{\alpha_{ik}}{2}\}$ for all $\alpha_{ik} \in u$, then we would indeed see that:
+
+\vspace{2em}
+
+
+\begin{multline}
+\label{EQTRANSLINALG1}
+T(u+v) = T\left( \begin{bmatrix}3\\2\end{bmatrix} +  \begin{bmatrix}4\\5\end{bmatrix} \right) =  T\left( \begin{bmatrix}3+4\\2+5\end{bmatrix} \right) = T\left( \begin{bmatrix}7\\7\end{bmatrix} \right) = \begin{bmatrix}\frac{7}{2}\\\frac{7}{2}\end{bmatrix} = \begin{bmatrix}3.5\\3.5\end{bmatrix}
+\end{multline}
+
+
+\vspace{2em}
+
+While, we also see that
+
+
+\vspace{2em}
+
+
+\begin{multline}
+\label{EQTRANSLINALG2}
+T(u) + T(v) = T\left( \begin{bmatrix}3\\2\end{bmatrix} \right) +  T\left( \begin{bmatrix}4\\5\end{bmatrix} \right) = \begin{bmatrix}3*\frac{1}{2}\\2*\frac{1}{2}\end{bmatrix}  +   \begin{bmatrix}4*\frac{1}{2}\\5*\frac{1}{2}\end{bmatrix} = \begin{bmatrix}\frac{3+4}{2}\\\frac{2+5}{2}\end{bmatrix} = \begin{bmatrix}\frac{7}{2}\\\frac{7}{2}\end{bmatrix} = \begin{bmatrix}3.5\\3.5\end{bmatrix}
+\end{multline}
+
+
+\vspace{2em}
+
+However, and keeping in mind that \textbf{linear transformations apply to the sequences item-wise}, we see that if instead we had an operation such as $S(u) = \{\alpha_{ik}^2\}$, then using the same $u$ and $v$ sequences above, we see that attempting to apply it separately to either sequence Vs applying it to their summation would result in different results as shown hereafter:
+
+
+\vspace{2em}
+
+
+\begin{multline}
+\label{EQSQUARTRANS1}
+S(u+v) = S\left( \begin{bmatrix}3\\2\end{bmatrix} +  \begin{bmatrix}4\\5\end{bmatrix} \right) =  S\left( \begin{bmatrix}3+4\\2+5\end{bmatrix} \right) = S\left( \begin{bmatrix}7\\7\end{bmatrix} \right) = \begin{bmatrix}7^2\\7^2\end{bmatrix} = \begin{bmatrix}49\\49\end{bmatrix}
+\end{multline}
+
+
+\vspace{2em}
+
+
+\begin{multline}
+\label{EQSQUARTRANS2}
+S(u) + S(v) = S\left( \begin{bmatrix}3\\2\end{bmatrix} \right) +  S\left( \begin{bmatrix}4\\5\end{bmatrix} \right) = \begin{bmatrix}3^2\\2^2\end{bmatrix}  +   \begin{bmatrix}4^2\\5^2\end{bmatrix} = \begin{bmatrix}9+16\\4+25\end{bmatrix} = \begin{bmatrix}25\\29\end{bmatrix}
+\end{multline}
+
+
+\vspace{2em}
+
+And so that for the case of a squaring transform applied linearly, we fail to meet the requirements that typical transformations are expected of in linear algebra. Or rather that...
+
+
+\vspace{2em}
+
+\begin{equation}
+\label{EQAXIOMALG2}
+(u + v \xrightarrow{S} z) \not\equiv ((u \xrightarrow{S} u^*) + (v \xrightarrow{S} v^*) = z^*)
+\end{equation}
+
+
+\vspace{2em}
+
+
+
+It should be worth noting that for transformatics --- such as when we have the squaring transformer defined as such:
+
+\vspace{2em}
+
+\begin{transf}[\texttt{squaring transform}, $S(\Theta)$]
+\label{TRANSSQUAR}
+$\Theta^n \xrightarrow{S(\Theta)} \Theta^*;$\\
+$\invpi(\Theta^n) = \invpi(\Theta^*) = n$\\
+$\land \quad \forall \theta_i \in \Theta) \quad \exists \theta_i^* \in \Theta^* : \theta_i^* = \theta_i^2 \quad \forall i \in [1,n]$\\
+$\land \quad \theta, \theta* \in \mathbb{R} \quad \forall \theta \in \Theta \quad \land \quad \theta* \in \Theta^*$
+$\qed$
+\end{transf}
+
+\vspace{2em}
+
+\textbf{\hyperref[TRANSSQUAR]{Transformer \ref{TRANSSQUAR}}} would work on sequences of [real] numbers such as we see in \textbf{\hyperref[EQSQUARTRANS1]{Equation \ref{EQSQUARTRANS1}}} and \textbf{\hyperref[EQSQUARTRANS2]{Equation \ref{EQSQUARTRANS2}}}.
+
+
+
+
+\vspace{2em}
+
+
+So that it starts to surely become clearer that though we might somewhat relate transformatics to linear algebra (perhaps by the fact that they both treat of sequences and transformations on them)... \textbf{AND YET, THEY REALLY ARE DIFFERENT!} First, since for transformatics we ``care less"\footnote{Across a field such as Linear Algebra, it is typically expected or perhaps assumed that the structures being dealt with are at minimum, ones consisting of numbers --- they might be integers, complex numbers or real numbers, but at least they are numbers --- meaning, the transformations and operations being dealt with generally concern taking things like the sign and quantity of the number or symbol into consideration. However, Transformatics can also deal with sequences of unquantifiable symbols such as elements of the set $\psi_{DNA}$ that we encountered in \textbf{\hyperref[DEFDNASS]{Defition \ref{DEFDNASS}}}.} about the actual types of the elements of a set or sequence\footnote{Especially because, where a transformation must rely upon or have the types of the sequence elements in consideration, then the necessary conditions constraining what the transformation can apply to or not, are typically specified as part of the transformation/transformer definition or specification --- such as the final specification line in \textbf{\hyperref[TRANSSQUAR]{Transformer \ref{TRANSSQUAR}}}.}, and more on the structure [and overall composition] of the sequence \textit{before and after the transformation}, and as for the elements themselves, perhaps mostly care about properties such as whether or not they belong to some symbol set or not --- pre- and post-transform, etc. And that we can treat of sequences of elements whose types are not numbers (not just real numbers or integers as fields such as linear algebra and calculus especially focus on), so that, if we have transformatic operations such as the \textbf{Mirror} operation\footnote{Also ``lateral inversion" --- refer to \cite{transformatics}, \cite{Lutalo2024TEATAZ}, but also \cite{lutalo_2025_grimlumtauto}}, $M(\cdot)$, which, when given some sequence such the phrase ``star", returns it reflection as ``rats", so that we essentially have:
+
+\vspace{2em}
+
+\begin{trans}
+$\langle s, t, a, r \rangle \xrightarrow{M} \langle r, a, t, s \rangle$
+\end{trans}
+
+\vspace{2em}
+
+And that if we had two sequences, $u = \langle s, t, a, r \rangle$ and $v = \langle n, u, t, s  \rangle$, then, applying this operation to them individually, and then to their summation or concatenation might not work as one might expect when dealing with linear algebraic transforms:
+
+\vspace{2em}
+
+
+\begin{equation}
+M(u) = M(\langle s, t, a, r \rangle) = \langle r, a, t, s \rangle = u^*_1
+\end{equation}
+
+\vspace{2em}
+
+and that
+
+\vspace{2em}
+
+\begin{equation}
+M(v) = M(\langle n, u, t, s  \rangle) = \langle s, t, u, n \rangle = v^*_1
+\end{equation}
+
+\vspace{2em}
+
+and that
+
+\vspace{2em}
+
+\begin{equation}
+M(u) + M(v) = u^*_1 + v^*_1 = \langle r, a, t, s \rangle + \langle s, t, u, n \rangle = \langle r, a, t, s, s, t, u, n \rangle = u^*_1v^*_1
+\end{equation}
+
+\vspace{2em}
+
+But that
+
+\vspace{2em}
+
+
+\begin{multline}
+M(u + v) = M(\langle s, t, a, r \rangle + \langle n, u, t, s  \rangle) =\\ 
+ M(\langle s, t, a, r, n, u, t, s  \rangle) = \langle s ,t ,u ,n ,r ,a ,t ,s \rangle = v^*_1u^*_1
+\end{multline}
+
+\vspace{2em}
+
+So that then, unlike linear transformations, we see that for the case of transformations such as $M(\cdot)$, we have:
+
+\vspace{2em}
+
+\begin{equation}
+M(u + v) \neq M(u) + M(v) 
+\end{equation}
+
+\vspace{2em}
+
+Or if we are to use an approach similiar to what we saw in \textbf{\hyperref[EQAXIOMALG]{Equation \ref{EQAXIOMALG}}}:
+
+\vspace{2em}
+
+\begin{equation}
+\label{EQAXIOMMIRROR}
+(u + v \xrightarrow{M} v^*_1u^*_1) \not\equiv ((u \xrightarrow{M} u^*_1) + (v \xrightarrow{M} v^*_1) =  u^*_1v^*_1)
+\end{equation}
+
+\vspace{2em}
+
+In fact, for the mirror operation, it is as if $M(u + v) = M(M(u) + M(v))$, which ``totally" makes the kind of operations treated of in transformatics \textbf{so unlike what one would find in linear algebra}\footnote{We say ``so unlike" and not ``totally unlike" because, as one might find, and this not to come off as a total surprise, linear transformations that are typical of linear algebra --- such as what we saw in \textbf{\hyperref[EQTRANSLINALG1]{Equation \ref{EQTRANSLINALG1}}} and \textbf{\hyperref[EQTRANSLINALG2]{Equation \ref{EQTRANSLINALG2}}}, despite being ``linear algebraic" since they conform to the requirements of vector spaces and linear transforms, are also tractable under the transformatics umbrella because nonetheless, they apply to sequences [and also result in sequences!] and that we can use the transformatics formalisms of transformers to specify and analyze them.} despite both fields treating of sequences.
+
+\vspace{2em}
+
+Further, and interestingly, the failure for the mirror operation to preserve the axioms of vector spaces would likewise remain the same even when we were to apply it to sequences of real numbers or numbers for that matter, and it it not the only kind of \textit{peculiar} operation or transformation that we might come across when working with sequences in transformatics --- others, such as the \textbf{LOMT: Multiplication by Lexical Order} transformation first introduced in \cite{transformatics} might likewise fail these tests!
+
+
+\vspace{2em}
+
+Finally, before we leave linear algebra, it shall be worth noting that the transformer concept in transformatics might also be likened to the concept of \textbf{mappings} in linear algebra (and from there, to other fields including calculus for example\footnote{\cite{fitzpatrick1995advanced} has an entire chapter dedicated to approximating nonlinear mappings by linear mappings for example.}). So, how would this work?
+
+\vspace{2em}
+
+
+First, note that, across many fields of mathematics where we encounter functions, the signature of a function --- also technically equivalent to a mapping, is expressed using the notation: $f : D \rightarrow R$, which we can read as ``the function $f$ maps every element in the domain $D$ to a corresponding value in the range $R$". Typically, the language used is that of sets, such as we see in the following excerpt from \cite{nef1967linear}:
+
+
+\vspace{2em}
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+\noindent {\ttfamily
+
+\textbf{General Mappings:} Let $E$ and $F$ be two sets. A \textit{mapping of E into F} is a rule which assigns to each element $x \in E$ a unique element $y \in F$.\\
+
+The element $y \in F$ which is assigned to the element $x \in E$ by the mapping $f$ is called the \textit{image} of $x$ under $f$ and is denoted by $f(x)$. The set $E$ is called the \textit{domain} of $f$ and $F$ is called the \textit{range} of $f$.
+
+}
+\hspace*{\fill} --- \textbf{Walter Nef}, \textit{Linear Algebra}, 1967\cite{nef1967linear}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+And to help stress the possibility that we could actually express mappings in linear algebra using the new formalism of transformers, note how he goes on to clarify concerning the notation used to express mappings:
+
+
+
+\vspace{2em}
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+\noindent {\ttfamily
+
+Mappings will usually be denoted by small Roman letters $f$, $g$, ... \\
+When an element $x \in E$ goes into the element $y \in F$ under the mapping $f$, this will be indicated by the notation $x \rightarrow y = f(x)$.
+
+}
+\hspace*{\fill} --- \textbf{Walter Nef}, \textit{Linear Algebra}, 1967\cite{nef1967linear}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+In transformatics, we would generally express such [mappings] concepts as such:
+
+\vspace{2em}
+
+
+
+\begin{transf}
+\label{TRANSFMAPPINGS}
+$ x \xrightarrow{f(x)} y;$\\
+$ x \in E \quad \land \quad y \in F$
+$\qed$
+\end{transf}
+
+\vspace{2em}
+
+So that, where we have been talking of a transformer (in transformatics), we might then talk of a mapping (or a function) in linear algebra and other related or derivative fields. Also, note that, when studying the structure of a [lean] transformer such as \textbf{\hyperref[TRANSFMAPPINGS]{Transformer \ref{TRANSFMAPPINGS}}} and comparing it to typical transformers in transformatics such as \textbf{\hyperref[TRANSSQUAR]{Transformer \ref{TRANSSQUAR}}} or perhaps a more involved case such as \textbf{\hyperref[TRANSFDECTONASEQ]{Transformer \ref{TRANSFDECTONASEQ}}}, that we typically prefer to flesh-out the transformer definition with some vital details about not just the types or character of the source and resultant (domain and range in this case), but also those essential details about the mapping/function itself --- $f(x)$ in this case --- so that, where it makes sense, we eliminate any ambiguity concerning how the elements in the source (domain) are transformed into the elements in the result (image/range). Thus, as see see in a case such as \textbf{\hyperref[TRANSFGEOSERIES]{Transformer \ref{TRANSFGEOSERIES}}} covered in the next section, we sometimes gain much by investing in a more rigorous specification of the specifics of the transformer that underlies the mapping being defined. However, it remains to be rigorously established if indeed, all \textit{transformatic mappings} are merely another kind of linear algebraic mapping.
+
+
+
+\subsection{Relation to Calculus}
+\label{SECRELCALCULUS}
+
+And then we encounter sequences and especially [linear] sequence transformations, when dealing with sequence-based mathematical structures known as series. Concerning this, note that Sequences and Series are especially commonplace in texts and mathematics dealing with Calculus such as \cite{ronlarsoncalculus}, \cite{fitzpatrick1995advanced} and \cite{Grossman1986CalculusOneVariable} to name a few. Moreover, and as laid out in \cite{Grossman1986CalculusOneVariable}, when sequences are treated of in calculus, it is mostly, or especially in the context of ``sequences of numbers"\footnote{In fact, especially as ``sequence of real numbers", for which  \cite{fitzpatrick1995advanced} says ``A sequence of real numbers is a real-valued function whose domain is the set of natural numbers", and which he generalizes as $f:\mathbb{N} \rightarrow \mathbb{R}$, but which we might also understand to be $f: \mathbb{N} \times \mathbb{R}$ when we wish to emphasize the fact that the sequence is otherwise reducible to set of pairs where for each natural number [position] index, there is a corresponding real number --- this later notation is more common in our transformatics literature.} as we see when he says:
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+\textbf{Definition 1} SEQUENCE: A \textbf{sequence} of real numbers is a function whose domain is the set of positive integers. The values taken by the function are called \textbf{terms} of the sequence.\\
+
+\textbf{NOTATION}. We will often denote the terms of a sequence by $a_n$. Thus, if the function given by Definition 1 is $f$, then $a_n = f(n)$. With this notation, \textit{we can denote the set of values taken by the sequence by $\{a_n\}$}...\\
+
+The following are sequences of real numbers:\\
+
+\textbf{(a)} $\{a_n\} = \begin{Bmatrix}\frac{1}{n}\end{Bmatrix}$\\ 
+
+\textbf{(b)} $\{a_n\} = \begin{Bmatrix}\sqrt{n}\end{Bmatrix}$\\ 
+
+...\textbf{(e)} $\{a_n\} = \begin{Bmatrix}\frac{e^n}{n!}\end{Bmatrix}$\\ 
+
+We sometimes denote a sequence by writing out the values $\{ a_1, a_2, a_3, \cdots \}$. 
+
+}
+\hspace*{\fill} ---\textbf{Stanley I. Grossman}, \textit{Calculus of One Variable}, 1986\cite{Grossman1986CalculusOneVariable}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+And so, we see that first of all, the notation used to denote or represent sequences in transformatics [thus far] is somewhat significantly different from that used in calculus. But this is not all concerning how we might relate treatment of sequences in transformatics with sequences in calculus. It shall be worth noting that in our formal definitions of the subject (see \textbf{\hyperref[DEFTRANS]{Definition \ref{DEFTRANS}}}, but also \textbf{\hyperref[DEFTRANS2]{Definition \ref{DEFTRANS2}}}), an explicit focus is placed on ``transformation" --- particularly, we are specially concerned with how sequences get to be mapped either to other sequences or other mathematical structures and objects, such as reducing a sequence to some number, and this is where the next contrast between transformatics and calculus comes in.
+
+\vspace{2em}
+
+
+In \textbf{\hyperref[SECDEFSTRUCTURES]{Section \ref{SECDEFSTRUCTURES}}}, we introduced the notion of the mathematical concept of series, and we noted that, it is conventionally the notion of taking a sequence (especially for calculus, a sequence of real numbers), and reducing it to some number via a finite or infinite summation of its terms starting from some index\cite{ronlarsoncalculus}\cite{Grossman1986CalculusOneVariable}. In our cross-domain explorations, we found that we might likewise think of series as a kind of application of linear combinations (a concept more common in Linear Algebra), however, this perhaps need be taken with a grain of salt\footnote{For one, linear combinations might involve the summation of terms of one or more sequences, however, there is no guarantee that the combination always needs be via addition operation alone --- yet for series, summation is the de facto signature. Also, with series, the sequences are typically of a kind where all the terms assume a general, similar form, so that the series is reducible to a formulation involving or based on just the general term and otherwise the start and end indices, whereas for linear combinations, the sequences involved might not necessarily have elements conforming to some particular structure, and thus, where summation needs be done, it might not be possible to merely derive the final/limit values without treating of each term individually, etc. But overall, and generally, it is agreed that the [infinite] series treated of in calculus are indeed linear\cite{ronlarsoncalculus}.}.. 
+
+
+\vspace{2em}
+
+
+So, where in transformatics we might reduce a sequence to another sequence or to some scalar, a number or some symbolic expression\footnote{For example the kind of transforms treated of in this book in \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}}, involving transformation from DNA/na-Sequences into decimal-Sequences, then to ozin-expressions and finally into Lu-Genome Expressions that have entirely little to do with the original sequence forms!}, in fields like calculus, the emphasis is on mapping sequences of numbers to some real number [only] as we see explained in these excerpts:
+
+\vspace{2em}
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+\textbf{Definition 1} INFINITE SERIES: Let $\{a_n\}$ be a sequence. Then the infinite sum\\
+
+\begin{equation}
+\label{EQINFISERIES}
+\sum\limits^\infty_{k=1} a_k = a_1 + a_2 + a_3 + \cdots + a_n + \cdots
+\end{equation}
+
+is called an \textbf{infinite series} (or, simply, \textbf{series}). Each $a_k$ in \textbf{\hyperref[EQINFISERIES]{Equation \ref{EQINFISERIES}}} is called a \textbf{term} of the series. The \textbf{partial sums} of the series are given by\\
+
+\begin{equation}
+S_n = \sum\limits^n_{k=1} a_k
+\end{equation}
+
+
+The term $S_n$ is called the \textbf{$n$th partial sum} of the series. If the sequence of partial sums $\{S_n\}$ converges to $L$, then we say that the infinite series $\sum\limits^\infty_{k=1} a_k$ \textbf{converges} to $L$, and we write\\
+
+\begin{equation}
+\sum\limits^\infty_{k=1} a_k = L
+\end{equation}
+
+Otherwise, we say that the series  $\sum\limits^\infty_{k=1} a_k$ \textbf{diverges}.
+
+}
+\hspace*{\fill} ---\textbf{Stanley I. Grossman}, \textit{Calculus of One Variable}, 1986\cite{Grossman1986CalculusOneVariable}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+And then \cite{ronlarsoncalculus} also has this to say, concerning how a sequence's indices might be utilized when dealing with these series:
+
+
+\vspace{2em}
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+Infinite series may begin with any index. For example,\\
+
+\begin{equation}
+\sum\limits^\infty_{n=3} \frac{1}{n} = \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \cdots
+\end{equation}
+
+When it is not necessary to specify the starting point, we write simply $\sum a_n$. Any letter may be used for the index. Thus, we may write $a_m$, $a_k$, $a_i$, etc.
+
+}
+\hspace*{\fill} ---\textbf{Ron Larson and Bruce H. Edwards}, \textit{Calculus}, 2012\cite{ronlarsoncalculus}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+And emphasizing the fact that infinite series can be reduced to finite series (the ``partial sums"), perhaps to some limit when the underlying sequence converges, is illustrated in the result below taken from \cite{fitzpatrick1995advanced}:
+
+
+\begin{equation}
+\sum\limits^\infty_{k=1} a_k = \lim_{n \to \infty} \left[ \sum\limits^n_{k=1} a_k \right]
+\end{equation}
+
+
+\vspace{2em}
+
+
+And so, overall, we find that sequence transformations in calculus are of this kind --- as series, and which essentially consist in taking finite or infinite sequences of numbers and reducing them to some particular number (a summation of the terms in the sequence). Also, it is worth noting that, even though the notations might vary, and yet, the idea of taking a sequence and mapping it to some different value, using the transformatics notations and formalisms, but yet reflecting the formulations typical of such treatments in calculus can be exemplified by the following result (the \textbf{Geometric Sum Formula}) from \cite{fitzpatrick1995advanced}, and which we then re-write as a transformatics transformer thereafter:
+
+\vspace{2em}
+
+\begin{equation}
+\label{EQGEOMSERIES}
+\sum\limits^n_{k=0} r^k = \frac{1 - r^{n+1}}{1 - r} \quad \forall r \in \mathbb{R}
+\end{equation}
+
+\vspace{2em}
+
+Which, in transformatics we can express as the following [more generalized\footnote{Especially for completeness' sake, and to capture all the peculiarities around this important result and series as captured in different calculus texts such as \cite{ronlarsoncalculus},  \cite{fitzpatrick1995advanced} and \cite{Grossman1986CalculusOneVariable} that we have reviewed.}] transformer:
+
+
+\vspace{2em}
+
+\begin{transf}[The \textbf{Generic Geometric Series Sum Generator}, $gsum(\cdot)$]
+\label{TRANSFGEOSERIES}
+$ $\\
+$\Theta = \langle \theta_i \rangle^n : \mathbb{N} \times \mathbb{R} \xrightarrow{gsum(\Theta)} \Theta^*;$\\
+$\invpi(\Theta) = n \quad \land \quad \theta_i = cr^i \quad \forall \theta_i \in \Theta, \forall i \in [1,n] \quad \land \quad n \in \mathbb{N} \quad \land \quad r,c \in \mathbb{R}$\\
+$\land \quad \Theta^* \in \mathbb{R} \quad \land \quad \Theta^* = \begin{cases}
+gsum(\Theta) =  \sum\limits^{\invpi(\Theta)}_{\forall \theta_i \in \Theta} \theta_i = \sum\limits^n_{i=1} cr^i   = \frac{c(1 - r^{n+1})}{1 - r} & \forall n \geq 1 \\
+1 & n = 0\\
+\emptyset & r = 0 \lor r = 1
+\end{cases}$\\
+$\land \quad  c \quad \text{is a constant, while } \quad r \quad \text{is the common ratio.}$\\
+$\qed$.
+\end{transf}
+ 
+ 
+
+\vspace{2em}
+
+
+And so, the attractiveness of transformatics when compared to calculus might be appreciated by the level of detail involved in rigorously specifying an important result such as the \textbf{geometric series summation} as depicted in \textbf{\hyperref[TRANSFGEOSERIES]{Transformer \ref{TRANSFGEOSERIES}}}\footnote{In fact, and no pun intended, but this is a great example of how Transformatics might be applied in Calculus!}. The power of the transformer formalism is that, not just the core formulation of the series is specified, but all possible corner cases can likewise be catered for in a single formula, and that we can clarify on what [necessary] conditions and types all the various parameters and variables involved are or need to be so as to allow for a meaningful computation\footnote{And here is especially where transformatics shines --- leaving no loopholes when a mathematical formalism or model needs to be applied or translated into a computable solution. It is as if, these transformatics specifications are a kind of computer program expressed using pure mathematics.} of the series when given some originating sequence. Also, concerning that transformer, note that we refer to it as a ``generator" in the title, to emphasize the fact that in transformatics (as depicted in both \textbf{\hyperref[RES9]{Foundational Result 9}} and in \cite{lutalo2025transformatic}), often, we encounter \textit{special} transformers that also happen to be a kind of \textbf{generator} as explained in the transformatics literature\footnote{For example, where the calculus formulation depicted in \textbf{\hyperref[EQGEOMSERIES]{Equation \ref{EQGEOMSERIES}}} fails to make sense for parameters such as when $r=0$, or when the sequence being evaluated is empty, we find that our \textbf{\hyperref[TRANSFGEOSERIES]{Transformer \ref{TRANSFGEOSERIES}}} would otherwise still be able to return some meaningful result --- including returning the empty set, $\emptyset$, when the formula can't be meaningfully applied --- a creative way to help deal with problematic scenarios in calculus such as having to resolve results like the \textbf{indeterminate form} $\frac{0}{0}$ concerning which, mathematical history\cite{Grossman1986CalculusOneVariable} tells us the powerful Bishop George Berkeley attacked Isaac Newton's methods such as his \textit{fluxions}, and that it is another British mathematician, Collin Maclaurin (considered the finest after Newton's generation, and after whom we have \textit{Maclaurin Series}), that intervened to help save Newton's work!}.
+
+
+\vspace{2em}
+
+Finally, and revisiting the concept of mappings that we have encountered in \textbf{\hyperref[SECRELLINALG]{Section \ref{SECRELLINALG}}} when dealing with linear algebra, note that these notions come up again and again in calculus texts too, and so, we might give them some attention here as well.
+
+\vspace{2em}
+
+
+\textbf{Larson Edwards et al.} in \cite{ronlarsoncalculus} bring this concept up when discussing problems in calculus that require or call for \textit{change of variables} --- basically, the idea that many functions and analysis problems are simplified significantly when instead of working on them in their original formulations and reference frames, we instead develop some clever or useful substitution formulae that can help map the original expressions to alternative formulations that can then be tackled more directly or using more common methods. These authors introduce the concept as such:
+
+
+\vspace{2em}
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+A function $G: X \rightarrow Y$ from a set $X$ (the domain) to another set $Y$ is often called a \textbf{map} or a \textbf{mapping}. For $x \in X$, the element $G(x)$ belongs to $Y$ and is called the \textbf{image} of $x$. The set of all images $G(x)$ is called the image or \textbf{range} of $G$. We denote the image by $G(X)$.
+
+}
+\hspace*{\fill} ---\textbf{Ron Larson and Bruce H. Edwards}, \textit{Calculus}, 2012\cite{ronlarsoncalculus}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+Again, to relate this to how we would express mappings using the concept of transformers in transformatics, we would use a transformer definition such as:
+
+
+\vspace{1em}
+
+\begin{transf}
+\label{TRANSFMAPPINGSCALC}
+$ x \xrightarrow{G(\cdot)} G(x);$\\
+$ x \in X \quad \land \quad G(x) \in Y$\\
+$\land \quad G(X) = Y$
+$\qed$
+\end{transf}
+
+\vspace{1em}
+
+
+It shall of course be interesting to compare \textbf{\hyperref[TRANSFMAPPINGSCALC]{Transformer \ref{TRANSFMAPPINGSCALC}}} based on the notion of mappings as expressed in a calculus text, to \textbf{\hyperref[TRANSFMAPPINGS]{Transformer \ref{TRANSFMAPPINGS}}} based on related notions in a linear algebra text. Also, note that not all calculus texts explicitly call out transformations nor mappings. For example, in \cite{Grossman1986CalculusOneVariable}, one comes as close to the above ideas of using mappings to effect expression simplifications as the use of the idea of \textbf{variable substitution} that they then apply to simplifying problems in differentiation such as in:
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+If $u$ is a differentiable function of $x$, then 
+
+\begin{equation}
+\label{EQNDIFFSUBST}
+\frac{d}{dx} \cos(u) = - \sin(u) \frac{du}{dx}
+\end{equation}
+
+
+Let $u = \sqrt{x}$. Then $du/dx$ = $1/2\sqrt{x}$, and, using \textbf{\hyperref[EQNDIFFSUBST]{Equation \ref{EQNDIFFSUBST}}}, we have\\
+
+\[\frac{d}{dx} \cos(\sqrt{x}) = \frac{d}{dx} \cos(u) = -\sin(u)\frac{du}{dx} = (-\sin(\sqrt{x}))(\frac{1}{2\sqrt{x}}) = \frac{-\sin(\sqrt{x})}{2\sqrt{x}}\]
+
+$\qed$\\
+}
+\hspace*{\fill} ---\textbf{Stanley I. Grossman}, \textit{Calculus of One Variable}, 1986\cite{Grossman1986CalculusOneVariable}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+And we also encounter this kind of usage when simplifying integrations such as in:
+
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+Compute $\int dx/(ax +b)$.\\
+
+\textbf{Solution.} Let $u = ax + b$. Then $du = a dx$ and\\
+
+\[\int \frac{dx}{ax + b} = \frac{1}{a} \int \frac{a dx}{ax + b} = \frac{1}{a} \int \frac{du}{u} = \frac{1}{a} \ln |u| + C\]
+
+or\\
+
+\[\int \frac{dx}{ax + b} = \frac{1}{a} \ln |ax + b| + C\]
+
+$\qed$\\
+}
+\hspace*{\fill} ---\textbf{Stanley I. Grossman}, \textit{Calculus of One Variable}, 1986\cite{Grossman1986CalculusOneVariable}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+In these last two cases, we might [perhaps remotely] talk of ``simplification of solutions via transformation", and might express the ideas expressed using a transformatic notation for the last case involving integration as such:
+
+\vspace{2em}
+
+\begin{trans}
+\label{TRANSINTEGRAL}
+$\int \frac{dx}{ax + b} \xrightarrow{ax + b=u} \frac{1}{a} \int \frac{du}{u} = \frac{1}{a} \ln |u| + C   \xrightarrow{u=ax + b}  \frac{1}{a} \ln |ax + b| + C$
+\end{trans}
+
+
+\vspace{2em}
+
+
+
+And then, last but not least, note that, when we still are dealing with the idea of mappings, we do encounter cases in calculus that somewhat relate to the solving of complex problems using the \textbf{chaining of transformers} or rather, the chaining of transformations. \textbf{\hyperref[TRANSINTEGRAL]{Transformation \ref{TRANSINTEGRAL}}} already exemplifies this idea for problems in calculus, however, refer to instances such as \textbf{\hyperref[TRANSF3]{Transformer \ref{TRANSF3}}} that we covered in GENETICS for the specification of a \textbf{Ribosome}, or perhaps refer to \textbf{\hyperref[PROP9]{Section \ref{PROP9}}}) that formalizes the idea of approaching computer programs as compositions leveraging chaining of sequence transformers. Overall, one would find that, the more traditional concept that relates to all of these transformatics formalisms is that of \textbf{function composition} --- or perhaps ``compositions of mappings".
+
+\vspace{2em}
+
+Concerning the treatment of compositions in calculus, we have the following illuminating definition from Fitzpatrick's book \cite{fitzpatrick1995advanced}:
+
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+\textbf{Definition.} For functions $f:D \rightarrow \mathbb{R}$ and $g:U \rightarrow \mathbb{R}$ such that $f(D)$ is contained in $U$, we define the composition of $f:D \rightarrow \mathbb{R}$ with $g:U \rightarrow \mathbb{R}$, denoted by $g \odot f:D \rightarrow \mathbb{R}$, by the formula\\
+
+$(g \odot f)(x) \equiv g(f(x))$ for all $x$ in $D$. 
+
+}
+\hspace*{\fill} ---\textbf{Patrick M. Fitzpatrick}, \textit{Advanced Calculus: A Course in Mathematical Analysis}, 1995\cite{fitzpatrick1995advanced}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+And so that, if we are to attempt to express the notion of composition as Fitzpatrick depicts above, but instead using the notation and methods of transformatics, we would process in a manner similar to what we did in \textbf{\hyperref[TRANSINTEGRAL]{Transformation \ref{TRANSINTEGRAL}}}, but more so, as we did in \textbf{\hyperref[TRANSTEAPROG]{Transformation \ref{TRANSTEAPROG}}} that indeed demonstrates the concept of composing \textbf{higher-order transformers} via the method of chaining basic transformes (in this case, functions or just mappings) back to back, and so that, we would rewrite his definition's core concept as such:
+
+
+\begin{transf}[\textbf{Function Composition}, $g(f(x))$]
+\label{TRANSFFUNCOMPOS}
+$ $\\
+$ x \xrightarrow{g(f(x))} y^* \quad \equiv \quad x \xrightarrow{f(x)} y  \xrightarrow{g(y)} y^*;$\\
+$x \in D \quad \land \quad y \in U \quad \land \quad y^* \in \mathbb{R}$
+$\land \quad f:D \rightarrow \mathbb{R} \quad \land \quad g:U \rightarrow \mathbb{R}$
+$\qed$
+\end{transf}
+
+
+\vspace{2em}
+
+The very exciting thing about this concept depicted in \textbf{\hyperref[TRANSFFUNCOMPOS]{Transformer \ref{TRANSFFUNCOMPOS}}}, and which as we have seen is essentially the traditional mathematics idea of function compositions, is that without any lying about it, is essentially what underlies the method of using TEA programs to solve arbitrary problems. We for example can see this notion at work in \textbf{\hyperref[LSTSCGEN]{Listing \ref{LSTSCGEN}}}, but also in more GENETICS-related cases such as shown in \textbf{\hyperref[SECFANAL]{Section \ref{SECFANAL}}} when we use a TEA program to compute the sequence characteristic of some DNA sequence held in a flat text file.
+
+\vspace{2em}
+
+
+With those discussions then, we close our review of calculus vis-a-vis what is happening in transformatics.
+
+\vspace{2em}
+
+
+\subsection{Relation to Several Other Branches of [Applied] Mathematics}
+
+
+Next, we shall quickly look at a few other [sub-]fields that also somewhat relate to either the concepts or the nomenclature used in transformatics. 
+
+\vspace{2em}
+
+\subsubsection{Signal Processing}
+
+
+In his book\cite{Wang2012} that is critically important for modern practice in signal processing and analysis, \textbf{Professor Ruye Wang}\footnote{Professor of Engineering at Harvey Mudd College (Claremont, California), also past Principal Investigator at NASA's Jet Propulsion Laboratory.} brings to surface many basic and nuanced applications of [especially linear] transformations on data originating from sensors and natural phenomena. We bring up Wang's work here, not just because of the somewhat \textit{shocking} absence of the term ``transformer" throughout a book treating of transformations, and whose title --- \textbf{``Introduction to Orthogonal Transforms: With Applications in Data Processing and Analysis"} --- would make anyone already familiar with transformatics turn an eye; but especially because, as we shall briefly demonstrate, several [,if not most,] of the kind of transformation operations described in relation to data processing and analysis as presented in his work, could be reduced to or perhaps expressed using our notion of transformers --- without loss of generality or accuracy.
+
+
+\vspace{2em}
+
+First, we shall begin by clarifying how signals and transformatics are most likely to relate. For starters, we shall bring up Wang's introduction concerning the formal concept of signals in the opening chapters of his book:
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+A physical signal can always be represented as a real- or complex-valued continuous function of time $x(t)$ (unless specified otherwise, such as a function of space). The continuous signal can be sampled to become a discrete signal $x[n]$. If the time interval between two consecutive samples is assumed to be $\triangle$, then the $n$th sample is\\
+
+\begin{equation}
+x[n] = x(t)|_{t=n\triangle} = x(n\triangle)
+\end{equation}
+
+\vspace{1em}
+
+In either the continuous or discrete case, a signal can be assumed in theory to
+have infinite duration; i.e., $-\infty < t < \infty$ for $x(t)$ and $-\infty < n < \infty$ for $x[n]$. However, any signal in practice is finite and can be considered as the truncated
+version of a signal of infinite duration. We typically assume $0 \leq t \leq T$ for a finite
+continuous signal $x(t)$, and $1 \leq n \leq N$ (or sometimes $0 \leq n \leq N - 1$ for certain
+convenience) for a discrete signal $x[n]$. The value of such a finite signal $x(t)$ is not
+defined if $t < 0$ or $t > T$; similarly, $x[n]$ is not defined if $n < 0$ or $n > N$. However,
+for mathematical convenience we could sometimes assume a finite signal to be
+periodic; i.e., $x(t + T) = x(t)$ and $x[n + N] = x[n]$.\\
+
+
+A discrete signal can also be represented as a vector $x = [\cdots ,x[n -
+1], x[n], x[n + 1], \cdots]^T$ of finite or infinite dimensions composed of all of its samples
+or components as the vector elements. We will always represent a discrete
+signal as a column vector (transpose of a row vector).
+
+}
+\hspace*{\fill} ---\textbf{Ruye Wang}, \textit{Introduction to Orthogonal Transforms: With Applications in Data Processing and Analysis}, 2012\cite{Wang2012}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+From that introduction alone, we can safely conclude that all signals being treated of then, can essentially be expressed as or handled as we might do with sequences in transformatics. But that's just about the data representation then. So, what of the kinds of operations we can apply to any such data? We learn from Wang, that...\\
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+Any of the arithmetic operations (addition/subtraction and multiplication/division) can be applied to two continuous signal $x(t)$ and $y(t)$, or two discrete signals x[n] and y[n], to produce a new signal $z(t)$ or $z[n]$:\\
+
+\begin{itemize}
+\item Scaling: $z(t) = ax(t)$ or $z[n] = ax[n]$.
+\item Addition/subtraction: $z(t) = x(t) ± y(t)$ or $z[n] = x[n] ± y[n]$.
+\item Multiplication: $z(t) = x(t)y(t)$ or $z[n] = x[n]y[n]$.
+\item Division: $z(t) = x(t)/y(t)$ or $z[n] = x[n]/y[n]$.
+\end{itemize}
+
+\vspace{1em}
+
+Note that these operations are actually applied to the amplitude values of the two signals $x(t)$ and $y(t)$ at each moment $t$, and the result becomes the value of $z(t)$ at the same moment; and the same is true for the operations on the discrete signals.
+
+}
+\hspace*{\fill} ---\textbf{Ruye Wang}, \textit{Introduction to Orthogonal Transforms: With Applications in Data Processing and Analysis}, 2012\cite{Wang2012}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+
+That theory brings to mind the realization that new/derived signals could be computed or modelled via modification or combination of other signals via basic arithmetic operations on their amplitudes [at specific moments or times]. For comparison with the formalisms and language of transformatics, we might want to note that we could express any such transformations using a single generic transformer such as:\\
+
+
+\begin{transf}[\textbf{General Signal Amplitude Transformer}, $GSAT(x, y,op)$]
+\label{TRANSFGSATSIG}
+$ $\\
+$\langle \Theta_x, \Theta_y \rangle \xrightarrow{GSAT(x, y,op)} \Theta_z;$\\
+$\Theta_x : \mathbb{N} \times \mathbb{R} \quad \land \quad \Theta_y: \mathbb{N} \times \mathbb{R} \quad \land \quad \Theta_z: \mathbb{N} \times \mathbb{R}$\\
+$\land \quad 0 \leq (\invpi(\Theta_x) = \invpi(\Theta_y) = \invpi(\Theta_z)) \leq \infty$\\
+$\land \quad \forall x_i=x(i) \in \Theta_x, y_i=y(i), z_i=z(i) \in \Theta_z \implies i = I(x_i,\Theta_x) = I(y_i,\Theta_y) = I(z_i,\Theta_z) \equiv t \quad \text{(a moment in time)} \implies 0 \leq t \leq \invpi(\Theta_x)$\\
+$\land z_i = GSAT(x_i, y_i,op) = \begin{cases}
+0 + ay_i & \text{op is scaling and } x = 0 \quad \forall x \in \Theta_x\\
+x_i \pm y_i & \text{op is addition/subtraction}\\
+x_i * y_i & \text{op is multiplication}\\
+\frac{x_i}{y_i} & \text{op is division}\\
+\end{cases}$
+$\qed$.
+\end{transf}
+
+
+\vspace{2em}
+
+
+And even though we could have gone further to also define or demonstrate other kinds of transformers that can not only generalize, but also combine multiple signal transformations into a single specification or transformatics operator, we shall only stop at \textbf{\hyperref[TRANSFGSATSIG]{Transformer \ref{TRANSFGSATSIG}}} for now, but otherwise note that, in light of the theory and discussions we have already presented when relating transformatics to Statistics (\textbf{\hyperref[SECRELSTAT]{Section \ref{SECRELSTAT}}}), Linear Algebra (\textbf{\hyperref[SECRELLINALG]{Section \ref{SECRELLINALG}}}) and Calculus (\textbf{\hyperref[SECRELCALCULUS]{Section \ref{SECRELCALCULUS}}}), that, many, if not all of what is presented in \cite{Wang2012} concerning transformations of one or more signals into other signals can without doubt be expressed or modeled using the formalisms of transformatics. 
+
+\vspace{2em}
+
+One finds that many of the signal transforms can in a way or another be based on the concept we have laid down in \textbf{\hyperref[TRANSFGSATSIG]{Transformer \ref{TRANSFGSATSIG}}}. These might for example involve more sophisticated formulations for how the resultant signal $z(t)$ is derived from one or more source signals --- such as transforms involving both scaling and translation, or which instead of relying on transforms of the signal amplitude, rely on re-sampling, complex sampling and otherwise derivations of the final signal based on transformations of the time-dimension\footnote{E.g $z(t) = x(t + t_0)$, $z^*(t) = z(at)$, etc.} and not anything concerning manipulating the signal amplitude itself, etc.
+
+\vspace{2em}
+
+Also, one finds that, these observations shall likewise help make our transformatics relevant across many fields of science and the mathematical sciences especially, once one realizes that the theories and formalisms if signal transformation, processing and analysis likewise span and are relevant across many fields as we see Wang assure us when he says:
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+A generic system (electrical, mechanical, biological, economical, etc.) can be symbolically represented in terms of the relationship between its input $x(t)$ (stimulus, excitation) and output $y(t)$ (response, reaction):\\
+
+\begin{equation}
+\mathbb{O}[x(t)] = y(t)
+\end{equation}
+
+where the symbol $\mathbb{O}[ ]$ represents the operation applied by the system to its input. A system is \textit{linear} if its input-output relationship satisfies both \textit{homogeneity} and \textit{superposition}.\\
+
+}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+And further, clarifies that...
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+
+
+\textbf{Homogeneity}:\\
+
+\begin{equation}
+\mathbb{O}[ax(t)] = a\mathbb{O}[x(t)] = ay(t)
+\end{equation}
+
+\vspace{1em}
+\textbf{Superposition:} If $\mathbb{O}[x_n(t)] = y_n (t)$ $(n = 1, 2, \cdots,N)$, then
+
+\begin{equation}
+\mathbb{O}\left[ \sum\limits_{n=1}^N x_n(t)\right] =  \sum\limits_{n=1}^N \mathbb{O}[x_n(t)] = \sum\limits_{n=1}^N y_n(t)
+\end{equation}
+
+\vspace{1em}
+or [for continuous signals]:\\
+
+\begin{equation}
+\mathbb{O}\left[ \int_{-\infty}^\infty x(t)dt \right] =  \int_{-\infty}^\infty \mathbb{O}[x(t)]dt = \int_{-\infty}^\infty y(t)dt
+\end{equation}
+
+\vspace{1em}
+[and combining which, we have]:\\
+
+\begin{equation}
+\mathbb{O}\left[ \sum\limits_{n=1}^N a_nx_n(t) \right] =  \sum\limits_{n=1}^N a_n\mathbb{O}[x_n(t)] = \sum\limits_{n=1}^N a_ny_n(t)
+\end{equation}
+
+
+\vspace{1em}
+[and]:\\
+
+\begin{equation}
+\mathbb{O}\left[ \int_{-\infty}^\infty a(\tau)x(t,\tau)d\tau \right] =  \int_{-\infty}^\infty a(\tau)\mathbb{O}[x(t,\tau)]d\tau = \int_{-\infty}^\infty a(\tau)y(t,\tau)d\tau
+\end{equation}
+
+}
+\hspace*{\fill} ---\textbf{Ruye Wang}, \textit{Introduction to Orthogonal Transforms: With Applications in Data Processing and Analysis}, 2012\cite{Wang2012}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+Thus, whether it is in economics, or in chemical engineering or perhaps any of the biological sciences or even bio-informatics to which our present major focus on computational genetics would lie, one finds that, when required, especially when we wish to model or formally specify the properties of some signal transformation\footnote{Including \textit{time-invariant} signals\cite{Wang2012}.} --- such as for purposes of rendering it easy to simulate, process or analyze using computer programs such as those expressed via a sequence-transformer paradigm such as with TEA, that then, transformatics and especially its sequence transformer notions, shall readily come in handy. 
+
+
+\vspace{2em}
+
+\subsubsection{Artificial Intelligence and Machine Learning: Natural Language Processing via Neural Networks --- so-called ``Transformers"}
+
+Our final discussion is going to be centered around a very important blog-post\cite{Rohrer2020} that I first came across while browsing the high-signal, ultra-busy technology and research news fire-hose known as \textbf{Hacker News}\footnote{Very popular among elite technocrats all over the world, but especially in the Silicon Valley and mostly because of its \textbf{Y-Combinator}/Paul Graham-biased Internet Community regulars from across all kinds of [tech-]startups and firms big and small.}\footnote{See \url{http://news.ycombinator.com/news}}.
+
+\vspace{2em}
+
+So, it happens that much of what we enjoy and love about contemporary high-tech that is AI-based or AI-driven --- products such as Google AI search, Microsoft Co-Pilot, Apple's Siri personal assistant, Bing Image Creator, ChatGPT-powered AI assistants, etc. etc. all have one major and fundamental thing in common --- so-called ``transformers"! In his article --- see \cite{Rohrer2020} --- on the subject, \textbf{Brandon Rohrer}\footnote{Currently a Principal Machine Learning Engineer at Atlassian\cite{copilot_dna_assistant}} introduced his detailed clarification on the critically important matter of modern neural networks that leverage the ``transformer architecture" as such:\\
+
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+Transformers were introduced in this 2017 paper\cite{Vaswani2017} as a tool for \textit{sequence transduction}---converting one sequence of symbols to another. The most popular examples of this are translation, as in English to German. It has also been modified to perform sequence completion---given a starting prompt, carry on in the same vein and style. They have quickly become an indispensable tool for research and product development in natural language processing.
+
+}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+The stress on the term ``sequence transduction" is ours, especially to emphasize the entry-point of our discussion on how transformatics and contemporary artificial intelligence (AI) and machine learning (ML) might be related. Rohrer is sharing insights into what goes on behind the scenes when a neural network is trained sample data (also technically known as ``training data"), and which for example involves specially crafted mappings between queries and [labeled] outputs, and so that, when the network has finally learned (or inferred) the patterns (typically, neural-network parameters, or rather ``weights") what the training data encoded, it can then use that information to infer, predict or classify new [unlabeled] cases in a way that best resonates with what was [correctly] learned thus far. In this case too, focus isn't on just any kind of neural network\footnote{The core cited paper, Vaswani Ashish et al.\cite{Vaswani2017}, also mentions or mainly contrasts the new neural network architecture to other [earlier] models such as convolutional and recurrent neural networks.} but specifically the \textbf{Transformer}\cite{Vaswani2017} --- a kind neural network whose core architecture essentially relies on ``Attention" --- a special linear-algebraic sequence transformation function that maps a sequence consisting of a combination of queries, keys and value data as the sole input for computing the output that is essentially weighed values\cite{Vaswani2017}.
+
+\vspace{2em}
+
+When one looks back at the theory we have developed and presented in our treatment of applying transformatics to genetics\cite{lutalo_2025_trans_genetics}, especially looking at the work around the \textbf{Lu-Genome Expression System} (\textbf{\hyperref[SEC4]{Section \ref{SEC4}}}), one shall realize that what accomplished by mapping originally DNA (or rather ``na-Sequence") data to visual-spatial (pictographic) expressions --- essentially, starting with text and ending up with images, based on careful and thoughtful chaining of our transformatics-oriented transformer functions is [conceptually\footnote{We stress ``conceptually" here, because, unlike the works and presentations of AI researchers such as Graves\cite{Graves2012} and  Vaswani Ashish et al.\cite{Vaswani2017}, our use of transformers had little to do with conventional machine learning or even neural-network based processing of sequences, and more to do with a basic mathematical and conceptual processing in order to achieve what others might attempt using especially black-box machine learning models and computer programs.}] very much akin to what sequence transduction is as originally presented in the 2012 foundational paper on the concept by \textbf{Alex Graves}\cite{Graves2012}:\\
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+Many machine learning tasks can be expressed as the transformation---or \textit{transduction}---of input sequences into output sequences: speech recognition, machine translation, protein secondary structure prediction and text-to-speech to name but a few.
+
+}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+
+Thus, we see that when we treat of scenarios in which data originates in some particular encoding format (e.g as a Statement of Intent (SOI) expressed in plain usual English language text), and then later [either manually or computationally] gets mapped to a corresponding or even only remotely similar pictograms (such as the sigils, hieroglyphs and even 3-dimensional constructs such as sculptures and pendants treated of in another work on applying transformatics --- see \cite{lutalo_2025_grimlumtauto}), that we in a way are applying the idea of transduction\footnote{The conceptual stretch might be more relevant here than not.}. In Rohrer's article\cite{Rohrer2020}, but also in the underlying paper\cite{Vaswani2017} and also the much earlier paper\cite{Graves2012}, focus is on especially transforms treating of especially data encoded as text --- even where the problem involves processing either images or audio information\footnote{Which, for our case, is also a fact that Lutalo's \textbf{UPLT}\cite{lutalo2024software} clearly cements.}. 
+
+
+\vspace{2em}
+
+And so, we learn from \cite{Rohrer2020} when he talks about transformers as involving ``matrix multiplications and touching on backpropagation (the algorithm for training the model)", that even though these transformer models (but also much of what actually goes on in even earlier, perhaps less sophisticated neural network architectures\cite{Vaswani2017}) might seem to most as ``mysterious black boxes", and yet, underlying these computational beasts that bring modern artificial intelligence to life is nothing other than an application of linear algebra (matrix operations and transforms), statistics (especially probability theory and statistical modeling), calculus (integration and lots of differentiation such as in ``gradient descent"\cite{Graves2012}) but also essential signal processing --- all of which subjects or fields of mathematics we have somewhat touched upon in the discussions and illustrative contrasts between transformatics and other fields throughout \textbf{\hyperref[CHAPSITTRANS]{Chapter \ref{CHAPSITTRANS}}}.
+
+
+\vspace{2em}
+
+For example, concerning the [older] recurrent neural network (RNN) sequence transducers, we have the following enlightening excerpt from \cite{Graves2012}:\\
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+Let $x = (x_1, x_2, \cdots , x_T )$ be a length $T$ \textit{input sequence} of arbitrary length belonging to the set $\chi^*$ of all sequences over some input space $\chi$. Let $y =
+(y_1, y_2, \cdots , y_U )$ be a length $U$ output sequence belonging to the set $\gamma^*$ of all sequences over some output space $\gamma$. Both the inputs vectors $x_t$ and the output
+vectors $y_u$ are represented by fixed-length real-valued vectors; for example if the task is phonetic speech recognition, each $x_t$ would typically be a vector of MFC coefficients and each $y_t$ would be a one-hot vector encoding a particular phoneme. In this paper we will assume that the output space is discrete; however the method can be readily extended to continuous output spaces, provided a tractable, differentiable model can be found for $\gamma$.\\
+
+}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+
+Define the extended output space  $\bar{\gamma}$ as $\gamma \cup \emptyset$, where $\emptyset$ denotes the null output. The intuitive meaning of $\emptyset$ is `output nothing'; the sequence $(y_1, \emptyset, \emptyset, y_2, \emptyset, y_3) \in \bar{\gamma}^*$ is therefore equivalent to $(y_1, y_2, y_3) \in  \gamma^*$. We refer to the elements $a \in \bar{\gamma}^*$ as alignments, since the location of the null symbols determines an alignment between the input and output sequences. Given $x$, the RNN transducer defines a conditional distribution $Pr(a \in \bar{\gamma}^*|x)$. This distribution is then collapsed onto the following distribution over $\gamma^*$:
+
+\begin{equation}
+Pr(y \in \gamma^*|x) = \sum\limits_{a \in \beta^{-1}(y)} Pr(a|x)
+\end{equation}
+
+where $\beta : \bar{\gamma}^*  \rightarrow \gamma^*$ is a function that removes the null
+symbols from the alignments in  $\bar{\gamma}^*$. Two recurrent neural networks are used to determine $Pr(a \in \bar{\gamma}^*|x)$. One network, referred to as the \textit{transcription network} $\digamma$, scans the input sequence $x$ and outputs the sequence \textbf{f} = $(f_1, \cdots , f_T )$ of transcription vectors. The other network, referred to as the \textit{prediction network} $G$, scans the output sequence $y$ and outputs the prediction vector sequence \textbf{g} = $(g_0, g_1 \cdots , g_U )$.
+
+}
+\hspace*{\fill} ---\textbf{Alex Graves}, \textit{Sequence Transduction with Recurrent Neural Networks}, 2012\cite{Graves2012}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+Thus we see that some [costly] processing is involved in eventually generating the output of a network layer when working using RNNs, whereas, for the newer, simpler and also more performant transformer models\cite{Vaswani2017}, we learn from the Attention paper that the vital/newer sequence processing step --- essentially, the ``attention function", is just:\\
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+We call our particular attention ``Scaled Dot-Product Attention"... The input consists of
+queries and keys of dimension $d_k$, and values of dimension $d_v$ . We compute the dot products of the query with all keys, divide each by $\sqrt{d_k}$, and apply a softmax function to obtain the weights on the values.\\
+
+}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+\vspace{2em}
+
+
+\noindent
+\begin{minipage}{1\textwidth}
+\vspace{1em}
+\begin{quotation}
+{\ttfamily
+
+
+In practice, we compute the attention function on a set of queries simultaneously, packed together
+into a matrix $Q$. The keys and values are also packed together into matrices $K$ and $V$. We compute the matrix of outputs as:\\
+
+
+\begin{equation}
+Attention(Q, K, V ) = softmax( \frac{QK^T}{\sqrt{d_k}})V
+\end{equation}
+
+\vspace{2em}
+
+The two most commonly used attention functions are additive attention [2], and dot-product (multiplicative) attention. Dot-product attention is identical to our algorithm, except for the scaling factor of $\frac{1}{\sqrt{d_k}}$. Additive attention computes the compatibility function using a feed-forward network with a single hidden layer. While the two are similar in theoretical complexity, dot-product attention is much faster and more space-efficient in practice, since it can be implemented using highly optimized matrix multiplication code.
+
+}
+\hspace*{\fill} ---\textbf{Ashish Vaswani and Noam Shazeer et. al}, \textit{Attention Is All You Need}, 2017\cite{Vaswani2017}
+\end{quotation}
+\vspace{1em}
+\end{minipage}
+
+
+\vspace{2em}
+
+We shall not attempt to demonstrate if indeed any of the actual computations that go on inside of a [modern] neural network --- convolutional, recurrent or transformer-based --- are somewhat reducible to or expressible using \textbf{\hyperref[RES7]{transformatic transformers}} --- instead leaving any such explorations as an exercise to the reader or reviewer, BUT --- and this is a huge but --- it is only to the blind that this wouldn't make sense; neural networks at core, are first of all a chaining of functions operating on ordered sets (\textbf{\hyperref[DEFSEQUENCE]{sequences transformers}}) of especially real numbers\footnote{Without need to stress the case when ``ancient" networks required special pre-training data alignments to ensure both consistence between types and structure/size across layers or networks meant for different kinds of data\cite{Graves2012} --- such as when a model can only accept binary inputs, etc.} in order to produce/output other numbers (also \textbf{\hyperref[SECRELSTAT]{data}} that is essentially also sequences or just text\cite{lutalo2024software}), and which is then either then the final output, or which is otherwise fed back into the model (``back-propagation") or is passed on to other/next layers/functions that are themselves also sequence processors or transformers, and so that ultimately, what we love about the ``intelligence" in modern AI and ML is but the emergent properties of a [somewhat daunting] complex assembly line or factory whose entire machinery is but a careful chaining of sequence transformers --- the stuff about which, our proposed field of transformatics is all about.
+
+\vspace{2em}
+
+Finally, and before we close the diversion into AI and machine learning, it should be worth noting that not all kinds of automated intelligence need be approached via the methods of neural networks --- NNs are well-known for being shockingly great at modeling all kinds of functions and transforms, however, just like not all statistical problems need by be solved using gaussian models, or equivalently that not all probability distributions need be reduced to the normal distribution\footnote{Even though, and as a great fall-back-to heuristic, the law of large numbers dictates/guarantees this\cite{clarke1992basic}}, we must realize that non-NN oriented transformers exist\footnote{Here, the emphasis is on ``transformers" as used in transformatics --- as computable functions that can map a sequence to [another] sequence or scalar, and especially our argument is towards approaches such as more traditional \textit{logical processors}, non-NN (sic) \textit{statistical artificial intelligence}, \textit{linear programming} etc.} --- such as we demonstrate and model in \textbf{\hyperref[SECSCEND]{Scenario D}} as well as other cases introduced in \textbf{\hyperref[SEC4ASEQ]{Section \ref{SEC4ASEQ}}} --- that can effectively but also efficiently help both model and solve hard and simple problems that popular [and typically resource expensive] methods such as LLMs or NNs might otherwise only ``magically" solve.
+
+
+\subsection{Transformatics as a new Algebra of Sequences}
+\label{SECTRANSLAG}
 
 Finally, note that away from a generalization such as \textbf{\hyperref[DEFTRANS]{Definition \ref{DEFTRANS}}} --- which is the latest and first formal definition of transformatics, in recent comparative studies on transformatics, such as the October 2025 review of \textbf{Professor Jeremy Gibbon}'s 1991 \textbf{tree algebras} thesis\cite{treealgebras_review}, we have the following telling signs that indeed, we might also approach the field of transformatics as a kind of algebra in the sense of the usual use of that term in both mathematics and say computer science:
 
@@ -6536,7 +7551,7 @@ And thus, or rather, finally, we might advance a more concrete definition for th
 
 \begin{defn}[\textbf{Transformatics}]
 \label{DEFTRANS2}
-The study of \textbf{sequence algebra}, \textbf{sequence transformations} and \textbf{sequence analysis} ---- succinctly: \texttt{the study of the algebra, transformation and analysis of sequences}.
+The study of \textbf{sequence algebra}, \textbf{sequence transformations} and \textbf{sequence analysis} ---- succinctly: \texttt{the study of the algebra, transformations and analysis of sequences}.
 \end{defn}
 
 \vspace{2em}
@@ -6653,7 +7668,7 @@ Talking of which, the following is a verbatim excerpt, and is accompanied by a p
 \begin{minipage}{0.9\textwidth}
 \textbf{TO CITE:}\\
 
-Lutalo, Joseph Willrich (2025). \textbf{Applying TRANSFORMATICS in GENETICS} I*POW. Preprint. \url{https://doi.org/10.6084/m9.figshare.29941127}
+Lutalo, Joseph Willrich (2025). \textbf{Applying TRANSFORMATICS in GENETICS} I*POW. Books. \url{https://www.academia.edu/143516392/}
 
 \end{minipage}}
 \\

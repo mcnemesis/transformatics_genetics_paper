@@ -213,6 +213,13 @@ Joseph~Willrich Lutalo.
 \newblock {\em Academia.edu}, 2024.
 \newblock \url{https://www.academia.edu/122871672/}.
 
+\bibitem{lutalo_2025_grimlumtauto}
+Joseph~Willrich Lutalo.
+\newblock {\em \footnotesize \textbf{NOVUS MODERNUS GRIMOIRE LUMTAUTO MAGIA} -
+  \textit{A Modern Grimoire of 5 Eternal Magickal Languages}}.
+\newblock I*POW, November 2025.
+\newblock \url{https://www.academia.edu/resource/work/145086513}.
+
 \bibitem{mochizuki_frobenioids1}
 Shinichi Mochizuki.
 \newblock The geometry of frobenioids i: The general theory.
@@ -536,7 +543,9 @@ Walter Nef.
 \bibitem{ronlarsoncalculus}
 Ron Larson and Bruce~H. Edwards.
 \newblock {\em Calculus}.
-\newblock W. H. Freeman and Company, New York, 2012.
+\newblock W. H. Freeman and Company, New York, 10th edition, 2012.
+\newblock Available online:
+  \url{https://books.google.com/books/about/Calculus.html?id=AEuPzgEACAAJ}.
 
 \bibitem{knopp1990theory}
 Konrad Knopp.
@@ -553,16 +562,46 @@ A.~N. Kolmogorov and S.~V. Fomin.
 \newblock {\em Introductory Real Analysis}.
 \newblock Dover Publications, 1970.
 
-\bibitem{lutalo_2025_grimlumtauto}
-Joseph~Willrich Lutalo.
-\newblock {\em \footnotesize \textbf{NOVUS MODERNUS GRIMOIRE LUMTAUTO MAGIA} -
-  \textit{A Modern Grimoire of 5 Eternal Magickal Languages}}.
-\newblock I*POW, November 2025.
-\newblock \url{https://www.academia.edu/resource/work/145086513}.
-
 \bibitem{clarke1992basic}
 Geoffrey~Mallin Clarke and Dennis Cooke.
 \newblock {\em A Basic Course in Statistics---3rd Ed.}
 \newblock Edward Arnold, 1992.
+
+\bibitem{Grossman1986CalculusOneVariable}
+Stanley~I. Grossman.
+\newblock {\em Calculus of One Variable}.
+\newblock Academic Press, Inc., Orlando, Florida, second edition, 1986.
+\newblock Available online:
+  \url{https://api.pageplace.de/preview/DT0400.9781483262468_A23867188/preview-9781483262468_A23867188.pdf}.
+
+\bibitem{Wang2012}
+Ruye Wang.
+\newblock {\em Introduction to Orthogonal Transforms: With Applications in Data
+  Processing and Analysis}.
+\newblock Cambridge University Press, 2012.
+\newblock Electronic edition available at
+  \url{https://doi.org/10.1017/CBO9781139015158}.
+
+\bibitem{Rohrer2020}
+Brandon Rohrer.
+\newblock Transformers from scratch.
+\newblock \url{https://e2eml.school/transformers.html}, 2020.
+
+\bibitem{Vaswani2017}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock In {\em Proceedings of the 31st International Conference on Neural
+  Information Processing Systems (NeurIPS)}, pages 6000--6010. Curran
+  Associates Inc., 2017.
+\newblock Electronic edition available at
+  \url{https://arxiv.org/abs/1706.03762}.
+
+\bibitem{Graves2012}
+Alex Graves.
+\newblock Sequence transduction with recurrent neural networks.
+\newblock {\em arXiv preprint arXiv:1211.3711}, 2012.
+\newblock Electronic edition available at
+  \url{https://arxiv.org/abs/1211.3711}.
 
 \end{thebibliography}
