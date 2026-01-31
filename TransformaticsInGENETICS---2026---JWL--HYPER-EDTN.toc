@@ -1,5 +1,5 @@
-\contentsline {chapter}{Preface}{xiii}{chapter*.6}%
-\contentsline {chapter}{List of Abbreviations}{xv}{chapter*.7}%
+\contentsline {chapter}{Preface}{xi}{chapter*.6}%
+\contentsline {chapter}{List of Abbreviations}{xiii}{chapter*.7}%
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
 \contentsline {subsection}{\numberline {1.0.1}How to Navigate the Book}{7}{subsection.1.0.1}%
 \contentsline {chapter}{\numberline {2}Sequence Symbol Sets and Sequence Transforms Applied to Genetic Code}{11}{chapter.2}%
@@ -108,4 +108,4 @@
 \contentsline {chapter}{Appendix \numberline {G}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{227}{appendix.a.G}%
 \contentsline {chapter}{Final Dedication}{243}{appendix*.79}%
 \contentsline {chapter}{About the Author}{246}{appendix*.81}%
-\contentsline {chapter}{Colophon}{249}{appendix*.83}%
+\contentsline {chapter}{Colophon}{251}{appendix*.84}%
