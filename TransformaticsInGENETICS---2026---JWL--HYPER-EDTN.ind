@@ -2,11 +2,13 @@
 
   \item $\psi _{DNA}$, \hyperpage{12}
   \item $\psi _{RNA}$, \hyperpage{13}
+  \item $\psi _{na-START}$, \hyperpage{21}
+  \item $\psi _{na-STOP}$, \hyperpage{22}
   \item $\psi _{na}$, \hyperpage{13}
 
   \indexspace
 
-  \item ADM, \hyperpage{19}
+  \item ADM, \hyperpage{19}, \hyperpage{168}
 
   \indexspace
 
@@ -16,6 +18,7 @@
   \indexspace
 
   \item data, \hyperpage{14}
+    \subitem coded or raw, \hyperpage{199}
   \item DNA, \hyperpage{5}
     \subitem as ordered sequences, \hyperpage{11}
     \subitem base-pairing, \hyperpage{12}
@@ -31,18 +34,36 @@
 
   \indexspace
 
+  \item gene program
+    \subitem evil programs, \hyperpage{22}
+    \subitem hacking, \hyperpage{23}
+    \subitem pathologies, \hyperpage{23}
   \item gene programs, \hyperpage{17}
+    \subitem non-coding, \hyperpage{22}
   \item generator, \hyperpage{18}
     \subitem k- or n-gram generator, \hyperpage{18}
+    \subitem natural symbol set, \hyperpage{20}
+    \subitem protein generator, \hyperpage{96}
+    \subitem unspecific symbol set, \hyperpage{20}
   \item genes, \hyperpage{6}
+  \item genetic disease, \hyperpage{23}
   \item genetics, \hyperpage{5}
   \item genome, \hyperpage{6}
     \subitem analysis, \hyperpage{19}
+    \subitem sequencing, \hyperpage{55}
   \item genome expression, \hyperpage{4}
 
   \indexspace
 
-  \item mappings, \hyperpage{11}
+  \item hereditary disease, \hyperpage{23}
+
+  \indexspace
+
+  \item mappings, \hyperpage{11}, \hyperpage{205}
+  \item matrices, \hyperpage{178}
+    \subitem as linear transformations, \hyperpage{197}
+  \item matrix
+    \subitem definition, \hyperpage{196}
   \item mutations, \hyperpage{5}
 
   \indexspace
@@ -57,6 +78,9 @@
 
   \indexspace
 
+  \item ribosome, \hyperpage{96}
+    \subitem flow-chart, \hyperpage{92}
+    \subitem state machine, \hyperpage{93}
   \item RNA, \hyperpage{5}
     \subitem nucleotides, \hyperpage{13}
     \subitem ribonucleic acid, \hyperpage{5}
@@ -65,26 +89,38 @@
   \indexspace
 
   \item sequence
+    \subitem definition, \hyperpage{191}
     \subitem string notation, \hyperpage{15}
   \item sequence analysis
-    \subitem anagram distance, \hyperpage{19}
+    \subitem anagram distance, \hyperpage{19}, \hyperpage{168}
     \subitem base membership, \hyperpage{19}
+    \subitem genetic pathologies, \hyperpage{22}
   \item sequences
+    \subitem as matrices, \hyperpage{178}
     \subitem flat-structure, \hyperpage{17}
     \subitem gene-program, \hyperpage{18}
-    \subitem higher-order, \hyperpage{18}
-  \item sequencing, \hyperpage{12}
+    \subitem higher-order, \hyperpage{18}, \hyperpage{179}, 
+		\hyperpage{199}
+  \item sequencing, \hyperpage{12}, \hyperpage{55}
   \item sex, \hyperpage{5}
+  \item START-codons, \hyperpage{21}
+  \item STOP-codons, \hyperpage{22}
+  \item super-sequence, \hyperpage{178}
+  \item symbol set
+    \subitem natural, \hyperpage{20}
+    \subitem unspecific, \hyperpage{20}
 
   \indexspace
 
   \item transformatics
     \subitem genetics introduction, \hyperpage{5}
-    \subitem mappings, \hyperpage{11}
+    \subitem mappings, \hyperpage{11}, \hyperpage{205, 206}
     \subitem relation to frobenoids, \hyperpage{11}
+  \item transformer
+    \subitem as mapping, \hyperpage{206}
 
   \indexspace
 
-  \item virus, \hyperpage{5}
+  \item virus, \hyperpage{5}, \hyperpage{23}
 
 \end{theindex}
