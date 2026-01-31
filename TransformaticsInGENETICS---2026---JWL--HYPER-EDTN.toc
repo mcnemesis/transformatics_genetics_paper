@@ -9,8 +9,8 @@
 \contentsline {section}{\numberline {4.2}Symbol Sets of n-GRAMS and Testing Sequences for n-GRAM-based Properties}{21}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Concerning Genetic Pathologies based on Faulty Gene-Programs}{23}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Sequence Analysis Using Complement Sets}{25}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Significance of Sequence Complements, $\lnot \Theta $, and Complement Symbol Sets, $\lnot \psi _\beta $}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Potential Applications of Sequence Complements or Inverses}{29}{section.5.2}%
+\contentsline {section}{\numberline {5.1}Significance of Sequence Complements, $\lnot \Theta $, and Complement Symbol Sets, $\lnot \psi _\beta $}{28}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Potential Applications of Sequence Complements or Inverses}{30}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Sequence Analysis Using The Anagram Distance and the Modal Sequence Statistic}{33}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Six Sequences and Four Scenarios}{33}{section.6.1}%
 \contentsline {section}{\numberline {6.2}A First Analysis}{36}{section.6.2}%

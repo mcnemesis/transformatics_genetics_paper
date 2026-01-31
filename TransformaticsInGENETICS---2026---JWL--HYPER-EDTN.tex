@@ -423,7 +423,7 @@ Despite not having been funded by any one or any particular organization, the au
 \chapter*{Abstract}
 \large
 
-It started out as just a paper but is now a treatise. \textbf{Applying TRANSFORMATICS in GENETICS} brings to surface the importance of leveraging the mathematical theory recently named ``Transformatics", that deals with the study, processing and analysis of especially ordered sequences of symbols and their alteration via symbolic machines known as sequence transformers. In earlier and recent work by the author, it has been demonstrated to be a credible and powerful theory in designing, specifying and explaining the properties of automata operating on sequences to produce other sequences. In this particular work, we take that body of knowledge, as well as what we know about the important science of how biological life-forms are defined, transformed and expressed in nature based on genetic code sequences known as DNA (deoxyribonucleic acid), and use that to treat of old and new problems in the field of GENETICS, developing many new, and previously unpresented solutions based on the theories, calculus and mechanics of sequence transformers. We have used transformatics to develop, but also distill many useful general results in the form of theorems as well as 3 laws concerning na-Sequences. We have demonstrated how sequence transformers can be leveraged to solve specific practical problems in genetics via numerous well-structured sequence transformations. We have invented and presented several new algorithms that would allow the concepts and solutions we developed in transformatics theory for various general problems to be readily turned into computable solutions using any programming language, for scenarios in genetics, but especially via leveraging TEA and Python. We have demonstrated how to leverage statistical analysis to make quantifiable differences and similarities between two or more na-Sequences (including entire populations of them) readily discernible. Leveraging transformatics, we have developed a new theory and systematic framework, the Lu-Genome Expression System, with which, via explorations by eye and hand, but also via the use of computers, the matter of how individual DNA sequences, and generally, any sequence that can be transformed into a numeric/decimal sequence, can be used to explore the natural concept of gene and genome expression, in both a visual-spatial, but also mathematical-symbolic way. We have tackled the fundamentally critical problem of genome sequencing, and have managed to not only cast it rigorously using the language and formalisms of transformatics, but have also managed to define an abstract machine that can take a set of DNA sequences potentially out of alignment, and then derive from them, via systematic and meaningful alignment procedures, a final, representative consensus genome sequence. Though this work is significantly theoretical and mathematical, we anticipate that the discussions, notes, formulations, solutions and overall expository treatment of the subject that it brings forth, shall help inspire actual domain experts and other researchers interested in genetics, genetic engineering, and related sciences, to pick up and apply our transformatics theory and ideas in both theory and practice.
+It started out as just a paper but is now a treatise. \textbf{Applying TRANSFORMATICS in GENETICS} brings to surface the importance of leveraging the mathematical theory recently named ``Transformatics", that deals with the study, processing and analysis of especially sequences of symbols and their alteration via symbolic machines known as sequence transformers. In earlier and recent work by the author, it has been demonstrated to be a credible and powerful theory in designing, specifying and explaining the properties of automata operating on sequences to produce other sequences. In this particular work, we take that body of knowledge, as well as what we know about the important science of how biological life-forms are defined, transformed and expressed in nature based on genetic code sequences known as DNA (deoxyribonucleic acid), and use that to treat of old and new problems in the field of GENETICS, developing many new, and previously unpresented solutions based on the theories, calculus and mechanics of sequence transformers. We have used transformatics to develop, but also distill many useful general results in the form of theorems as well as 3 laws concerning na-Sequences. We have demonstrated how sequence transformers can be leveraged to solve specific practical problems in genetics via numerous well-structured sequence transformations. We have invented and presented several new algorithms that would allow the concepts and solutions we developed in transformatics theory for various general problems to be readily turned into computable solutions using any programming language, for scenarios in genetics, but especially via leveraging TEA and Python. We have demonstrated how to leverage statistical analysis to make quantifiable differences and similarities between two or more na-Sequences (including entire populations of them) readily discernible. Leveraging transformatics, we have developed a new theory and systematic framework, the Lu-Genome Expression System, with which, via explorations by eye and hand, but also via the use of computers, the matter of how individual DNA sequences, and generally, any sequence that can be transformed into a numeric/decimal sequence, can be used to explore the natural concept of gene and genome expression, in both a visual-spatial, but also mathematical-symbolic way. We have tackled the fundamentally critical problem of genome sequencing, and have managed to not only cast it rigorously using the language and formalisms of transformatics, but have also managed to define an abstract machine that can take a set of DNA sequences potentially out of alignment, and then derive from them, via systematic and meaningful alignment procedures, a final, representative consensus genome sequence. Though this work is significantly theoretical and mathematical, we anticipate that the discussions, notes, formulations, solutions and overall expository treatment of the subject that it brings forth, shall help inspire actual domain experts and other researchers interested in genetics, genetic engineering, and related sciences, to pick up and apply our transformatics theory and ideas in both theory and practice.
      \newline\newline
      \textbf{Keywords}: Mathematical Statistics, Linear Algebra, Transformatics, Artificial Intelligence, Sequence Processors, Sequence Analysis, DNA, Genetic Code, Genetic Analysis, Abstract Machines, Genome Sequencing, Genome Expression, Gene Programs, Transformers.
 %\end{abstract}
@@ -602,7 +602,7 @@ Frobenioids\cite{mochizuki_frobenioids1}\index{transformatics!relation to froben
 \\
 \end{center}
 
-For the purposes of appreciating transformatics from a genetics engineering or general genetics research perspective, it shall be important to note that, like in the original transformatics paper\cite{transformatics}, beginning by appreciating that whatever formalisms and mechanics we might develop or talk about concerning genetic code or rather DNA, had better begin with a realization that we can model DNA\index{DNA!as ordered sequences} as merely an ordered sequence of symbols.\\
+For the purposes of appreciating transformatics from a genetics engineering or general genetics research perspective, it shall be important to note that, like in the original transformatics paper\cite{transformatics}, beginning by appreciating that whatever formalisms and mechanics we might develop or talk about concerning genetic code or rather DNA, had better begin with a realization that we can model DNA\index{DNA!as sequences} as merely an ordered set\footnote{This terminology to be used with precaution as we later clarify in \textbf{\hyperref[SECDEFSTRUCTURES]{Section \ref{SECDEFSTRUCTURES}}}, since for the case of collections of symbols such as DNA, not only does order matter, but also, and unlike standard sets, duplication of elements or members is allowed --- thus the preference for the more technically correct term; ``sequence" --- and unlike what some might find elsewhere, there is no need to stress that sequences are ordered sets by repeating ourselves when we say ``ordered sequences" instead of just ``sequence"!} --- essentially, ``a sequence" of symbols.\\
 
 
 In the introduction (see \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}), I have already called out both the names and symbols assigned to the most basic units of any genetic code; essentially, the \textit{nucleobases} (or rather, nucleotides). For purposes of simplifying our mathematical logic later on, we shall here neatly define what roles these units play in the grand scheme concerning DNA and RNA code. Basically, we shall want to define the symbol sets for any DNA sequence and the symbol set for any RNA sequence.\\
@@ -633,7 +633,7 @@ And these are mapped to their representative, distinct single-letter symbols as 
 
     \textbf{\hyperref[EQSSDNA]{Equation \ref{EQSSDNA}}} helps to appreciate the extra non-intuitive fact that the special ordering of DNA base symbols in the order A-T-C-G is what is conventionally accepted\cite{nature_atcg}\cite{wikipedia_nucleic_acid} or commonly found in most genetics literature\footnote{It shall be important to bring it out at this point, that, especially for non-domain experts --- people not trained in or normally practicing in genetics or related fields, that the common ordering of the nucleotides in the A-T-C-G ordering might seem unconventional or peculiar! For example, one might wonder, why are they not listed in their alphabetical order? So, for purposes of settings things clear for everyone, the author established\cite{copilot_dna_assistant}, concerning this matter, that: ``The order A, T, C, G isn't alphabetical, and yet it's the most commonly used sequence when referring to DNA bases." We further learn that, the order A-T-G-C reflects a mix of historical usage and bio-chemical structure; \textbf{base-pairing logic}\index{DNA!base-pairing} that the DNA's double-helix is stabilized by ``complementary base pairing" in which A pairs with T (via 2 hydrogen bonds), and C pairs with G (via 3 hydrogen bonds), so that listing A with its partner T and then C with G emphasizes this pairing symmetry\cite{copilot_dna_assistant}. Further, we learn that early molecular biology texts and sequencing protocols (especially post-Watson \& Crick, 1953) adopted this order to reflect the ``functional relationships" between bases. It became entrenched in educational materials, sequencing software, and databases. And lastly, that in visual and structural conventions --- such as in diagrams (see \textbf{Figure \ref{FIG1}}) and models, A–T and C–G are often shown side-by-side. Listing them in this order reinforces the \textbf{duality} of the DNA ladder's rungs\cite{copilot_dna_assistant}. Lastly, that though there is no single documented moment when this convention begun, that the A-T-C-G order likely solidified in the \textbf{1970s - 1980s} during the rise of \textbf{Sanger sequencing}\index{sequencing} (developed in the 1970s), GenBank and EMBL databases, and overall in textbooks and molecular biology curricula.}.
 
-However, and especially because, for transformatics, we wish to work with an \textbf{ordered symbol set}\cite{ossipaper} and not just \textit{any possible symbol set} so that we can apply mathematical logic that respects the ordering of terms in any ordered sequence\cite{transformatics}, we shall then assume a convention similar to how we might derive an ordered symbol set for a sequence of numbers in some base (the concept $\psi_\beta(\Theta)$ --- see \textbf{Definition 5} in \cite{ossipaper}), and given we are using Latin-Alphabet symbols (from $\psi_{az}$\cite{transformatics}) for $\psi_{DNA}$, we might as well better define the \textbf{Lexically Ordered DNA Symbol Set}, $\psi_{DNA}$\index{$\psi_{DNA}$} as such:
+However, and especially because, for transformatics, we wish to work with an \textbf{ordered symbol set}\cite{ossipaper} and not just \textit{any possible symbol set} so that we can apply mathematical logic that respects the ordering of terms in any sequence\cite{transformatics}, we shall then assume a convention similar to how we might derive an ordered symbol set for a sequence of numbers in some base (the concept $\psi_\beta(\Theta)$ --- see \textbf{Definition 5} in \cite{ossipaper}), and given we are using Latin-Alphabet symbols (from $\psi_{az}$\cite{transformatics}) for $\psi_{DNA}$, we might as well better define the \textbf{Lexically Ordered DNA Symbol Set}, $\psi_{DNA}$\index{$\psi_{DNA}$} as such:
 
 \vspace{1em}
 
@@ -804,14 +804,14 @@ We might for example start to wonder, how might we go about determining if some 
 \label{SECSEQAB}
 
 
-Especially for nucleic acid sequences, but also for any other kind of sequence $\Theta$, there might be legitimate situations in which looking at or dealing with the flat-structure sequence\index{sequences!flat-structure} --- such as for the actually modest\footnote{`Modest' because, genomes and realistic genome sequences can typically span millions of genes or billions of nucleotides. We for example know that for a typical human cell's DNA there are $\approx$3.2 billion base pairs\cite{Venter2001}, and yet we know each base pair consists of two nucleotides, one for each strand of the double-helix (so that's $\approx$6.4 billion), plus a few more ($\approx$16,569 base pairs) from mitochondrial DNA\cite{Anderson1981}} $\Theta_{insulin}$ (refer to \textbf{\hyperref[EQINSULIN]{Equation \ref{EQINSULIN}}}), might be cumbersome, ineffective or unnecessary. And so, we are going to briefly look at ways that we might re-write verbose flat-sequences in more terse or higher-order \textbf{abstract ways} so as to focus on details that the flat-structure perhaps doesn't clearly express. This for example is naturally relevant in the processing of say nucleic acid sequences --- since such is useful in scenarios where the processing of any such sequence is done in \textit{non-unity} \textbf{n-tuples} or \textbf{n-grams} --- such as with codons\index{codons} (nucleotide 3-grams) or as gene programs\index{gene programs} (self-contained protein synthesis or function-gene-program sequences composed using codons)\footnote{
+Especially for nucleic acid sequences, but also for any other kind of sequence $\Theta$, there might be legitimate situations in which looking at or dealing with the flat-structure sequence\index{sequence!flat-structure} --- such as for the actually modest\footnote{`Modest' because, genomes and realistic genome sequences can typically span millions of genes or billions of nucleotides. We for example know that for a typical human cell's DNA there are $\approx$3.2 billion base pairs\cite{Venter2001}, and yet we know each base pair consists of two nucleotides, one for each strand of the double-helix (so that's $\approx$6.4 billion), plus a few more ($\approx$16,569 base pairs) from mitochondrial DNA\cite{Anderson1981}} $\Theta_{insulin}$ (refer to \textbf{\hyperref[EQINSULIN]{Equation \ref{EQINSULIN}}}), might be cumbersome, ineffective or unnecessary. And so, we are going to briefly look at ways that we might re-write verbose flat-sequences in more terse or higher-order \textbf{abstract ways} so as to focus on details that the flat-structure perhaps doesn't clearly express. This for example is naturally relevant in the processing of say nucleic acid sequences --- since such is useful in scenarios where the processing of any such sequence is done in \textit{non-unity} \textbf{n-tuples} or \textbf{n-grams} --- such as with codons\index{codons} (nucleotide 3-grams) or as gene programs\index{gene programs} (self-contained protein synthesis or function-gene-program sequences composed using codons)\footnote{
 For purposes of re-using this relevant concept, we shall here define: 
 
 \begin{defn}[A \textbf{gene program}]
 \label{DEFGENPROG}
  In the domain of NA-processors, a \textbf{gene program}, $\mathbb{G}_{p}$ is any sequence of na-Sequence symbols, such that the sequence expresses or contains some sufficient instructions in form of genetic code, that specify what to do, and nothing else --- this might for example be what protein or material to produce, or what DNA-driven function to perform --- the protein is basically an effect, based on just the contents of the sequence --- and nothing more, such that for any such sequence, its basic signature is $\mathbb{G}_{p}: \mathbb{N} \times \psi_{na}:p=\invpi(\mathbb{G}_{p})$.
 $\qed$
-\end{defn} We shall find ways to leverage this definition to express formalisms about how living things and their properties or traits are driven by such computable, affectant and well-ordered sequences in the future. For example, a philosophy that all existence is but a composition of effects resulting from the processing of a basic genetic code:
+\end{defn} We shall find ways to leverage this definition to express formalisms about how living things and their properties or traits are driven by such computable, affectant and ``well-ordered" sequences in the future. For example, a philosophy that all existence is but a composition of effects resulting from the processing of a basic genetic code:
 
 \begin{trans}
 \label{TRANSTOENASEQ}
@@ -855,7 +855,7 @@ Of course, in \textbf{\hyperref[EQSEQ2]{Equation \ref{EQSEQ2}}} we have somewhat
 
 \vspace{1em}
 
-So, this expression in \textbf{\hyperref[EQSEQ3]{Equation \ref{EQSEQ3}}} is our first proper appreciation of what higher-order sequences\index{sequences!higher-order} might be like when they are an abstraction of normal flat-structure sequences. We see for example here, that the $k=4$ \textbf{bundling-parameter} means we shall process the original flat sequence $k$ items at a time, and so, each subsequence in $\Theta_2(n,4)$ then contains exactly (or at most) 4 items --- we are assuming 4 is a factor of n to keep things simple. And so, we expect that, in total, we should have $\frac{n}{k}$ subsequences after applying the bundling transform:
+So, this expression in \textbf{\hyperref[EQSEQ3]{Equation \ref{EQSEQ3}}} is our first proper appreciation of what higher-order sequences\index{sequence!higher-order} might be like when they are an abstraction of normal flat-structure sequences. We see for example here, that the $k=4$ \textbf{bundling-parameter} means we shall process the original flat sequence $k$ items at a time, and so, each subsequence in $\Theta_2(n,4)$ then contains exactly (or at most) 4 items --- we are assuming 4 is a factor of n to keep things simple. And so, we expect that, in total, we should have $\frac{n}{k}$ subsequences after applying the bundling transform:
 
 \vspace{1em}
 
@@ -888,7 +888,7 @@ Thus, we see that the sequence depicted in \textbf{\hyperref[EQSEQ3]{Equation \r
 
 And the way we have bundled up the nucleotides in \textbf{\hyperref[DEFRIBOSOME]{Definition \ref{DEFRIBOSOME}}}, \textbf{\hyperref[EQ7]{Equation \ref{EQ7}}} is exactly how a natural sequence processor such as a Ribosome (see details in \textbf{\hyperref[TRANSF3]{Transformer \ref{TRANSF3}}}) would process it so as to produce say the corresponding protein.
 
-Of course, though we might not delve into it here or at the moment, we know that by chaining several sequence transformers --- such that one operates on the output of the previous one to produce the next sequence (see \textbf{\hyperref[TRANSTOENASEQ]{Transformation \ref{TRANSTOENASEQ}}} as an example), we can arrive at even higher abstraction sequences that might render certain sequence processing programs easier to write, analyze or define. For example, we know that, much as a Ribosome Processor operates on a sequence of codons, and yet, any legitimate protein synthesis and genetic code sequence processing program will require some sort of necessary delimiters (such as the START and STOP codons --- refer to the Protein Synthesis Flow Chart in \textbf{\hyperref[FIG3]{Figure \ref{FIG3}}}), and so that, we might (if we could), abstract away codons and instead generate from a flat-structure DNA or perhaps mRNA sequence, a higher-order n-gram sequence of genes or \textbf{gene-program sequences}\footnote{We have defined gene programs in \textbf{\hyperref[DEFGENPROG]{Definition \ref{DEFGENPROG}}}.}\index{sequences!gene-program}.
+Of course, though we might not delve into it here or at the moment, we know that by chaining several sequence transformers --- such that one operates on the output of the previous one to produce the next sequence (see \textbf{\hyperref[TRANSTOENASEQ]{Transformation \ref{TRANSTOENASEQ}}} as an example), we can arrive at even higher abstraction sequences that might render certain sequence processing programs easier to write, analyze or define. For example, we know that, much as a Ribosome Processor operates on a sequence of codons, and yet, any legitimate protein synthesis and genetic code sequence processing program will require some sort of necessary delimiters (such as the START and STOP codons --- refer to the Protein Synthesis Flow Chart in \textbf{\hyperref[FIG3]{Figure \ref{FIG3}}}), and so that, we might (if we could), abstract away codons and instead generate from a flat-structure DNA or perhaps mRNA sequence, a higher-order n-gram sequence of genes or \textbf{gene-program sequences}\footnote{We have defined gene programs in \textbf{\hyperref[DEFGENPROG]{Definition \ref{DEFGENPROG}}}.}\index{sequence!gene-program}.
 
 
 \chapter{Sequence Analysis Using Symbol Sets}
@@ -1105,10 +1105,9 @@ With the two major problematic gene-program scenarios we have explored in the pr
 
 
 
+The idea of complements when applied to na-Sequences was first brought up in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}, and we get to see it depicted in an exemplary typical diagrammatic depiction of the DNA structure in \textbf{\hyperref[FIG1]{Figure \ref{FIG1}}}. However, apart from having talked about the fact that nucleic acids typically or naturally occur together in base-pairs depicting pairwise complements, we might wish to explore how to leverage transformatics to study this idea at a more general level, as well as from several different and overall useful perspectives. For example, we might wish to explore the matter of \textbf{na-Sequence} (as well as \textit{any sequence}) complements\index{sequence!complements} --- how they come up, how different kinds of sequence complements could be arrived at algorithmically, how they could be expoited,... and thus this section.
 
-The idea of complements when applied to na-Sequences was first brought up in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}, and we get to see it depicted in an exemplary typical diagrammatic depiction of the DNA structure in \textbf{\hyperref[FIG1]{Figure \ref{FIG1}}}. However, apart from having talked about the fact that nucleic acids typically or naturally occur together in base-pairs depicting pairwise complements, we might wish to explore how to leverage transformatics to study this idea at a more general level, as well as from several different and overall useful perspectives. For example, we might wish to explore the matter of \textbf{na-Sequence} (as well as \textit{any sequence}) complements --- how they come up, how different kinds of sequence complements could be arrived at algorithmically, how they could be expoited,... and thus this section.
-
-Assume we start by exploring simple binary sequences --- especially because bits help generalize many ideas in theory and practice. We can for example start by noticing that, like in the case of the interesting \textbf{Lu-Number System}\cite{lnspaper} --- in which any kind of \textit{basic information} can be abstracted by mapping it to either signal ($>$) or anti-signal ($<$), and that \textit{complex information} can then be generated from that using transforms on basic LNS sequences or expressions, etc. We can start by looking at what could be said of the transforms on the binary sequence symbol set, $\psi_{bin}$ --- or better, $\psi_{01}$. In our formulations, we shall denote the complement of a symbol $\rho$ by $\lnot\rho$, and for a sequence $\Theta$, with $\lnot\Theta$.
+Assume we start by exploring simple binary sequences --- especially because bits help generalize many ideas in theory and practice. We can for example start by noticing that, like in the case of the interesting \textbf{Lu-Number System}\cite{lnspaper}\index{lu-number system} --- in which any kind of \textit{basic information} can be abstracted by mapping it to either signal ($>$) or anti-signal ($<$), and that \textit{complex information} can then be generated from that using transforms on basic LNS sequences or expressions, etc. We can start by looking at what could be said of the transforms on the binary sequence symbol set, $\psi_{bin}$ --- or better, $\psi_{01}$\index{$\psi_{01}$}. In our formulations, we shall denote the complement of a symbol $\rho$ by $\lnot\rho$, and for a sequence $\Theta$, with $\lnot\Theta$.
 
 
 \begin{table}[H]
@@ -1123,61 +1122,83 @@ Assume we start by exploring simple binary sequences --- especially because bits
 	\hline
 	$\Theta2$ & 0 1 0 1 & $\psi_{01}\cdot\psi_{01}$ & Sequence Concatenation/Multiplication\\
 	\hline
-	$\Theta3$ & 0 2 0 1 & $\psi_{01}(1 + \psi_{01})$ & Sequence as Linear Combination of other Sequences: case of memberwise addition of the above two sequences\\
+	$\Theta3$ & 0 1 0 0 1 & $\psi_{01}(1 + \psi_{01})$ & Sequence as Linear Combination of other Sequences: case of memberwise addition of the above two sequences\\
 	\hline
 	$\Theta4$ & 1 0 1 0 & $\lnot\Theta2 = \lnot\psi_{01} \cdot \lnot\psi_{01}$ & Basic Complement Transforms\\
 	\hline
+
+	$\Theta5$ & 1 0 1 1 0 & $\lnot\Theta3 = \lnot(\psi_{01}(1 + \psi_{01})) = \lnot(0 1 0 0 1)$ & Complement of a Formula\\
+		\hline
 	              
 \end{tabular}
  \caption{An example of exploring symbol and sequence complements in sequence transformations}
   \label{TABCOMPLEMENTS}
 \end{table}
 
-So, we can begin by noting that, if some sequence $\Theta$ spans some symbol set $\psi_\beta$ --- such as how all the sequences in \textbf{\hyperref[TABCOMPLEMENTS]{Table \ref{TABCOMPLEMENTS}}} span $\psi_{01}$, then we can say that the complement sequence, $\lnot\Theta$, spans the complement symbol set $\lnot\psi_\beta$. But not just that. You can readily tell from studying that table, that actually, if sequence $\Theta$ spans $\psi_\beta$, then it also spans $\lnot\psi_\beta$ --- meaning, its members essentially are one of the distinct elements from either symbol set even though the two sets might not necessarily have the same ordering of their members.
+So, we can begin by noting that, if some sequence $\Theta$ spans some symbol set $\psi_\beta$ --- such as how all the sequences in \textbf{\hyperref[TABCOMPLEMENTS]{Table \ref{TABCOMPLEMENTS}}} span $\psi_{01}$, then we can say that the complement sequence, $\lnot\Theta$, spans the complement symbol set $\lnot\psi_\beta$. But not just that. You can readily tell from studying that table, that actually, if sequence $\Theta$ spans $\psi_\beta$, then it also spans $\lnot\psi_\beta$ --- meaning, its members essentially are one of the distinct elements from either symbol set even though the two sets might not necessarily have the same ordering of their members\footnote{However, things might not necessarily be that simple for starters. Take the case of the last 3 rows in \textbf{\hyperref[TABCOMPLEMENTS]{Table \ref{TABCOMPLEMENTS}}}. How do we know how to open the brackets in the case of evaluating $\Theta3$ for example? And then for $\Theta4$, is it correct to apply the complement to each of the terms in the formula for $\Theta2$ or not? And then the last case --- of $\Theta5$! Note that in this last case, things might start to get even more complicated; for example, it is not clear if it might be correct to first evaluate the formula before applying the compliment operator to the items in the sequence --- in which case we have $\lnot(0 1 0 0 1) = 1 0 1 1 0$ (or even just $110$ in case we treat these sequences as numbers); or if it is okay to apply the complement to the formula's items before evaluation --- such as with $\lnot(\psi_{01}(1+\psi_{01}))$ that might result in a different $10010$ --- essentially, it starts to become obvious that we need to resolve how this complement operator works, and what properties it has when applied to either terms, sequences of terms or combinations of sequences of terms! Somehow, the beginnings of a special sequence algebra or perhaps a \textit{sequence complement algebra}...\index{sequence!algebra}}.
 
-Further, note that, if $\psi_\beta$ is the symbol set of some sequence $\Theta$, and that the \textbf{complement symbol set} it is equivalent to is $\lnot\psi_\beta$, then we can comfortably say that $\lnot\Theta$ spans $\lnot\psi_\beta$ as well. This is true, because, for any sequence $\Theta$, its complement, $\lnot\Theta$ is the sequence of the memberwise complements of $\Theta$. That is to say:
+Further, note that, if $\psi_\beta$ is the symbol set of some sequence $\Theta$, and that the \textbf{complement symbol set} it corresponds to is $\lnot\psi_\beta$, then we can comfortably say that both $\Theta$ and $\lnot\Theta$ span $\lnot\psi_\beta$ as well. This is true, because, for any sequence $\Theta$, its complement, $\lnot\Theta$ is the sequence of the memberwise complements of $\Theta$. That is to say:
+
+\vspace{1em}
 
 \begin{equation}
 \psi_\beta = \lnot (\lnot \psi_\beta)
 \end{equation}
 
+\vspace{1em}
+
 and 
+
+\vspace{1em}
 
 \begin{equation}
 \Theta = \lnot(\lnot\Theta) \implies \lnot\Theta = \lnot(\Theta)
 \end{equation}
 
+\vspace{1em}
+
 So that, if
+
+\vspace{1em}
 
 \begin{equation}
 \label{EQCOMPSETS}
 \psi_\beta = \langle \prod\limits_{i=1}^{n} a_i \rangle \quad \implies \quad \lnot\psi_\beta = \langle \prod\limits_{i=1}^{n} a_{n-(i-1)} \rangle
 \end{equation}
 
-Note that \textbf{\hyperref[EQCOMPSETS]{Equation \ref{EQCOMPSETS}}} casts complementing some sequence $\Theta\langle\theta_1,\theta_2,...,\theta_n \rangle$ as $\lnot\Theta\langle\theta_n,\theta_{n-1},...,\theta_1 \rangle$.  And for any $\Theta: \mathbb{N} \times \psi_\beta$ we know that:
+\vspace{1em}
+
+
+Note that \textbf{\hyperref[EQCOMPSETS]{Equation \ref{EQCOMPSETS}}} casts complementing some sequence $\Theta\langle\theta_1,\theta_2,...,\theta_n \rangle$ as $\lnot\Theta\langle\theta_n,\theta_{n-1},...,\theta_1 \rangle$.  And for any $\Theta: \mathbb{N} \times \psi_\beta$ we then know that:
+
+\vspace{1em}
 
 \begin{equation}
 \lnot\Theta = \prod\limits_{i=1}^{n} \lnot(a_i)
 \end{equation}
 
+\vspace{1em}
+
 for $n = \invpi(\Theta)$ and that $\forall a_i \in \psi_\beta$, 
+
+\vspace{1em}
 
 \begin{equation}
 \label{EQCOMPLEMENTS}
-\lnot(a_i) = \rho_i \in \lnot\psi_\beta
+\lnot(a_i) = \rho_i \in \lnot\psi_\beta \quad : i = I(a_i,\psi_\beta) = I(\rho_i,\lnot\psi_\beta): 1 \leq i \leq (n = \invpi(\psi_\beta) = \invpi(\lnot\psi_\beta))
 \end{equation}
 
+\vspace{1em}
 
 So, one way to appreciate \textbf{\hyperref[EQCOMPLEMENTS]{Equation \ref{EQCOMPLEMENTS}}}, is by realizing that by knowing the members and their order in $\psi_\beta$, we can then systematically determine the members and ordering of $\lnot\psi_\beta$ via \textbf{\hyperref[EQCOMPSETS]{Equation \ref{EQCOMPSETS}}}, and so that, for some $a_i$ in $\psi_\beta$, its complement in $\lnot\psi_\beta$ is the term at position index $n-i$ in $\psi_\beta$. Thus, as we saw in \textbf{\hyperref[TABCOMPLEMENTS]{Table \ref{TABCOMPLEMENTS}}}, for $a_0 = 0$ in $\psi_{01}$, the complement, $\lnot a_0 = a_{\invpi(\psi_{01})-0} = a_2 = 1$. This mechanics can be extended or applied to sequences of arbitrary length and composition as necessary. For purposes of future use, we shall generalize this with a useful theorem as such:
 
 
-%\fbox{\begin{minipage}{0.9\textwidth}
-%\large
+\vspace{2em}
 
 \begin{theo}[\textbf{Complement Sequences}]
 \label{THEOCOMPLEMENTS}
 
-For any ordered sequence $\Theta_n\langle \prod\limits_{i=1}^{n} a_i \rangle$, its equivalent \textbf{complement sequence}, simply denoted $\lnot\Theta_n$, is the sequence with the signature $\Omega_n\langle \prod\limits_{i=1}^{n} \rho_i \rangle$ such that $\rho_i = a_{n-i} \quad \forall a_i \in \Theta_n$. We shall also write $\Omega_n$ as $\lnot\Theta_n$ where necessary.
+For any sequence $\Theta_n\langle \prod\limits_{i=1}^{n} a_i \rangle$, its equivalent \textbf{complement sequence}\index{sequence!complement}\index{complement sequences}, simply denoted $\lnot\Theta_n$, is the sequence with the signature $\Omega_n\langle \prod\limits_{i=1}^{n} \rho_i \rangle$ such that $\rho_i = a_{n-i} \quad \forall a_i \in \Theta_n$. We shall also write $\Omega_n$ as $\lnot\Theta_n$ where necessary.
 
 \begin{proof}
 By \textbf{\hyperref[EQCOMPSETS]{Equation \ref{EQCOMPSETS}}}, we see that if $\Theta_n = \langle a_1, a_2, a_3,...,a_{n-1}, a_n \rangle$, then we can derive its complement $\lnot\Theta_n$ via the mapping of its members to corresponding members in its exact lateral inverse as such:
@@ -1208,16 +1229,22 @@ By \textbf{\hyperref[EQCOMPSETS]{Equation \ref{EQCOMPSETS}}}, we see that if $\T
 \end{proof}
 
 \end{theo}
-%\end{minipage}}
-%\\
 
-And since we are dealing with sequence transformations in this work, we might as well define the necessary transformer:\\
 
-\begin{transf}[The \textbf{Complement Transformer}]
+\vspace{2em}
+
+
+And since we are dealing with sequence transformations in this work, we might as well define the necessary transformer:
+
+\vspace{1em}
+
+\begin{transf}[The \textbf{Complement Transformer}\index{transformer!complement}]
 \label{TRANSCOMPL}
 $ $\\
 $\Theta \xrightarrow{O_{complement}(\Theta)} \Theta^*; \quad \Theta^* = \lnot\Theta$\\
 \end{transf}
+
+\vspace{1em}
 
 
 \section{Significance of Sequence Complements, $\lnot\Theta$, and Complement Symbol Sets, $\lnot\psi_\beta$}
@@ -1227,40 +1254,57 @@ First, we shall momentarily return to binary sequences.
 
 We note that, for some binary sequence $\Theta: \mathbb{N} \times \psi_{01}$, the transform
 
+\vspace{1em}
 \begin{trans}
 $\Theta \xrightarrow{O_{complement}(\cdot)} \Theta^*; \Theta^* = \lnot\Theta$
 \end{trans}
+\vspace{1em}
 
-which applies \textbf{\hyperref[TRANSCOMPL]{Transformer \ref{TRANSCOMPL}}}, produces the same sequence as $\Theta$ but with all bits swapped by their complements, which, as per usual nomenclature in computer science for example, means the resultant sequence is produced from the source via a \textbf{bitwise NOT operation}, and which, for binary sequences, is as simple as merely flipping the bits individually.
+which applies \textbf{\hyperref[TRANSCOMPL]{Transformer \ref{TRANSCOMPL}}}, produces a sequence of the same length as $\Theta$ but with all bits swapped/replaced by their complements, which, as per usual nomenclature in computer science for example, means the resultant sequence is produced from the source via a \textbf{bitwise NOT operation}, and which, for binary sequences, is as simple as merely flipping the bits individually.
 
 Thus, if our source sequence was 
+
+\vspace{1em}
 
 \begin{equation}
 \Theta = \langle 0 1 0 1 1 1 1 0 \rangle
 \end{equation}
 
+\vspace{1em}
+
 Then 
+
+\vspace{1em}
 
 \begin{trans}
 $\Theta \xrightarrow{O_{complement}(\Theta)}  \langle 1 0 1 0 0 0 0 1 \rangle$
 \end{trans}
 
+\vspace{1em}
+
 And then, returning to nucleic acid sequences, we note that if we for example have some na-Sequence such as 
 
+\vspace{1em}
 \begin{equation}
 \label{SEQATC}
 \Theta = \langle A T C G C G T A T \rangle
 \end{equation}
 
-\textbf{That we wish to treat as a DNA-sequence}, then its \textit{na-Complement} sequence would be derivable from $\psi_{DNA}$ as such:
+\vspace{1em}
+
+\textbf{That we wish to treat as a DNA-sequence}, then its \textit{na-Complement}\index{na-Complement}\index{DNA!complement} sequence would be derivable from $\psi_{DNA}$ as such:
 
 Since $\psi_{DNA} = \langle A, C, G, T \rangle$, then by \textbf{\hyperref[EQCOMPSETS]{Equation \ref{EQCOMPSETS}}}, we know that:
 
+\vspace{1em}
 \begin{equation}
 \lnot(\psi_{DNA}) = \lnot\psi_{DNA}) = \langle T, G, C, A \rangle
 \end{equation}
+\vspace{1em}
 
 So that, $\forall \rho \in \psi_{DNA}$, the equivalent complement is via the mapping:
+
+\vspace{2em}
 
 \[
 \begin{tikzpicture}[baseline=(current bounding box.center)]
@@ -1280,22 +1324,29 @@ So that, $\forall \rho \in \psi_{DNA}$, the equivalent complement is via the map
 \end{tikzpicture}
 \]
 
+\vspace{2em}
+
 Which is also the consequence of \textbf{\hyperref[THEOCOMPLEMENTS]{Theorem \ref{THEOCOMPLEMENTS}}}. Thus, for the sequence in \textbf{\hyperref[SEQATC]{Equation \ref{SEQATC}}}, the corresponding complement DNA sequence is:
 
+\vspace{1em}
 \begin{equation}
 \label{SEQATCCOMP}
 \lnot\Theta = \langle T A G C G C A T A \rangle
 \end{equation}
+\vspace{1em}
 
-This ideal can be further appreciated by noticing that the traditional DNA sequence base symbol set (which we shall denote by $\dot{\psi}_{DNA}$), is actually different from $\psi_{DNA}$, and is defined as:
+This ideal can be further appreciated by noticing that the traditional DNA sequence base symbol set (which we shall denote by $\dot{\psi}_{DNA}$\index{$\dot{\psi}_{DNA}$}), is actually different from $\psi_{DNA}$, and is defined as:
 
+\vspace{1em}
 \begin{equation}
 \label{SSDNAT}
 \dot{\psi}_{DNA} = \langle A, T, C, G \rangle
 \end{equation}
+\vspace{1em}
 
 We should come to appreciate this special symbol set, or even justify it --- for logical and mathematical analyses, by acknowledging that it depicts not just a sequence of distinct symbols from $\psi_{DNA}$, but also their natural order based on both order of occurrence in $\psi_{DNA}$ \textbf{and} their equivalent \textbf{symbol complements} in $\lnot\psi_{DNA}$! It is such a terrific discovery/realization. And before we proceed, we note that the $\dot{\psi}_{DNA} \rightarrow \lnot\dot{\psi}_{DNA}$ mapping for pairwise-ordered DNA sequences is as such:
 
+\vspace{2em}
 
 \[
 \begin{tikzpicture}[baseline=(current bounding box.center)]
@@ -1315,33 +1366,38 @@ We should come to appreciate this special symbol set, or even justify it --- for
 \end{tikzpicture}
 \]
 
+\vspace{2em}
 
 Because, from \textbf{\hyperref[SSDNAT]{Equation \ref{SSDNAT}}}, we can tell that:
 
+\vspace{1em}
 \begin{equation}
 \label{SSDNATCOMP}
 \lnot\dot{\psi}_{DNA} = \langle G, C, T, A \rangle
 \end{equation}
+\vspace{1em}
 
-
-Perhaps, and worth checking out, even if momentarily, what would happen when the idea of complement symbols sets and complement sequences is applied to the more commonplace base-10 sequences (aka ``usual numbers")?
+Perhaps, and worth checking out, even if momentarily, what would happen when the idea of complement symbols sets and complement sequences is applied to the more commonplace base-10 sequences\index{sequences!decimal} (aka ``usual numbers"\footnote{And this shall not be a waste of space and time, since, as we shall find out in \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}}, base-10 symbols could underlie a very straight-forward system for implementing or theoretically exploring genome expression, a very important topic in all genetics!})?
 
 First, note that since $\psi_{10}$ --- our choice of symbol for the decimal symbol set, is expressed as such:
 
+\vspace{1em}
 \begin{equation}
 \label{SSDEC}
 \psi_{10}= \langle 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \rangle
 \end{equation}
+\vspace{1em}
 
 Then, by \textbf{\hyperref[THEOCOMPLEMENTS]{Theorem \ref{THEOCOMPLEMENTS}}}, its complement is:
 
-
+\vspace{1em}
 \begin{equation}
 \label{SSDEC}
 \lnot\psi_{10}= \langle 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 \rangle
 \end{equation}
+\vspace{1em}
 
-So that, for any base-10 digit, the corresponding \textbf{complement digit} is as in the mapping below:
+So that, for any base-10 digit, the corresponding \textbf{complement digit}\index{complement digit} is as in the mapping below:
 
 
 \[
@@ -1362,26 +1418,32 @@ So that, for any base-10 digit, the corresponding \textbf{complement digit} is a
 \end{tikzpicture}
 \]
 
-Such a peculiar cipher! Because, usual/familiar number sequences such as the \textbf{Hi-Fi o-SSI}\cite{adtpaper}, defined as such:
+Such a peculiar cipher! Because, usual/familiar number sequences such as the \textbf{Hi-Fi o-SSI}\cite{adtpaper}\index{Hi-Fi o-SSI}, defined as such:
 
+\vspace{1em}
 \begin{equation}
 \Theta_{HiFi} = 8 6 4 9 1 3 7 5 2 0
 \end{equation}
+\vspace{1em}
 
 Has the complement:
 
-
+\vspace{1em}
 \begin{equation}
 \lnot\Theta_{HiFi} = 1 3 5 0 8 6 2 4 7 9
 \end{equation}
+\vspace{1em}
 
-Which, given how that special sequence was derived/discovered(see \textbf{Section 5.1} in \cite{ossipaper} or \textbf{Equation 19} in the same paper), it is interesting to note that its complement under $\psi_{10}$ is also an \textit{orthogonal symbol set identity}! For those who have studied the o-SSI paper\cite{ossipaper}, this can really be exciting for the study of symbol sets and sequences in general --- yes, even for nucleic acid sequences! But, that said, of course, it shouldn't come as a surprise, since, in simple terms, a sequence's complement is just one very special kind anagram among the set of all potential anagrams it can have, and so, before we leave the base-10 case, we can note that if some sequence $\Theta_{10}: \mathbb{N} \times \psi_{10}$ is a base-10 o-SSI, then its complement is also a base-10 o-SSI, and in fact, in general --- even for non-numeric symbol sets such as $\psi_{na}, \psi_{DNA}$ or special $\psi_{RNA}$, that:\\
+Which, given how that special sequence was derived/discovered(see \textbf{Section 5.1} in \cite{ossipaper} or \textbf{Equation 19} in the same paper), it is interesting to note that its complement under $\psi_{10}$ is also an \textit{orthogonal symbol set identity}\index{orthogonal symbol set identity}! For those who have studied the o-SSI paper\cite{ossipaper}, this can really be exciting for the study of symbol sets and sequences in general --- yes, even for nucleic acid sequences! But, that said, of course, it shouldn't come as a surprise, since, in simple terms, a sequence's complement is just one very special kind of anagram\index{anagram}\index{sequence!anagram} among the set of all potential anagrams it can have, and so, before we leave the base-10 case, we can note that if some sequence $\Theta_{10}: \mathbb{N} \times \psi_{10}$ is a base-10 o-SSI, then its complement is also a base-10 o-SSI, and in fact, in general --- even for non-numeric symbol sets such as $\psi_{na}, \psi_{DNA}$ or special $\psi_{RNA}$, that:
 
+\vspace{2em}
 
 \begin{theo}[\textbf{Complement of an o-SSI is an o-SSI}]
 \label{THEOCOMPLOSSI}
 If some sequence $\Theta: \mathbb{N} \times \psi_\beta$ is an orthogonal symbol set identity for the base $\beta$, then its complement, $\lnot\Theta$ is also an orthogonal symbol set identity for $\beta$.\\
 \end{theo}
+
+\vspace{2em}
 
 We shall see how \textbf{\hyperref[THEOCOMPLOSSI]{Theorem  \ref{THEOCOMPLOSSI}}} might be applied, when dealing with algorithmic anagrammatization of sequences such as $\psi_{10}$ in \textbf{\hyperref[SECRSG]{Chapter \ref{SECRSG}}}.
 
@@ -1499,7 +1561,7 @@ $\Theta_{met} \xrightarrow{O_{complement}(\Theta,\psi_{RNA})}  \langle U, A, C \
 and we know that codon UAC is Tyrosine\cite{wikipedia_codon_tables}\footnote{Concerning this particular codon, TAC/UAC, we find that though the Wikipedia reference tables assign it the name Tyrosine in both the DNA and RNA encodings, and yet, the physical reference we have at hand\cite{gregory1987oxford} (perhaps now out-of-date), assigns the name ``Methionine" to TAC --- Table 1 in that reference book did not list RNA codes, but we still would expect to use TAC to look-up the correct name for UAC.}.
 \end{trans}
 
-It should perhaps be immediately noticeable that the ability to derive new/different/special sequences such as complement codons from ordinary na-Sequences might have some useful if not exciting applications as well as problems it awakens for the geneticists, molecular biologists and researchers of gene-sequencing\footnote{For those that do not know: Gene sequencing is the process of determining the exact order of nucleotides --- A, T, C and G --- in a segment of DNA that makes up a gene. It is like reading the biological ``code" that instructs cells how to build proteins and regulate functions\cite{copilot_dna_assistant}.} and analysis. For example, apart from acknowledging that na-Sequence's complements denote potentially legitimate na-helix strand partners for any two sequences (in the form $\Theta$ and $\lnot\Theta$), it would be further rewarding, to determine what other important things we might learn about how important sequences such as na-Sequences, especially relative to how they are utilized in nature, behave or alter their usual function, if replaced by their complements either partially or wholly. Definitely, even for any ordered sequences in general... it must be exhilirating to discover what other things we can learn with or from them, via these kinds of sequence transforms. 
+It should perhaps be immediately noticeable that the ability to derive new/different/special sequences such as complement codons from ordinary na-Sequences might have some useful if not exciting applications as well as problems it awakens for the geneticists, molecular biologists and researchers of gene-sequencing\footnote{For those that do not know: Gene sequencing is the process of determining the exact order of nucleotides --- A, T, C and G --- in a segment of DNA that makes up a gene. It is like reading the biological ``code" that instructs cells how to build proteins and regulate functions\cite{copilot_dna_assistant}.} and analysis. For example, apart from acknowledging that na-Sequence's complements denote potentially legitimate na-helix strand partners for any two sequences (in the form $\Theta$ and $\lnot\Theta$), it would be further rewarding, to determine what other important things we might learn about how important sequences such as na-Sequences, especially relative to how they are utilized in nature, behave or alter their usual function, if replaced by their complements either partially or wholly. Definitely, true for any sequences in general... it must be exhilirating to discover what other things we can learn with or from them, via these kinds of sequence transforms. 
 
 It is already interesting to note that, under complement transforms (which are special kinds of anagrams), the natural/universal protein synthesis START-codon AUG/ATG is equivalent to GCA (\textbf{\hyperref[TRANSGCA]{Transformation \ref{TRANSGCA}}}) or UAC (\textbf{\hyperref[TRANSUAC]{Transformation \ref{TRANSUAC}}}), but, \textbf{are those other codons also START-codons?} That said, is there a possibility that some natural process or genetic code translation or transformation might naturally produce ATG or AUG from any of those corresponding [symbolic] complement sequences? What would this teach us about natural/biological processors? What of the possibilities of using synthetic/artificial processors to render such complement operations useful? And is it actually possible to \textit{transmute} one set of nucleic acid sequences into another, with entirely different functions and identity via leveraging na-complements or complement transforms?
 
@@ -1511,7 +1573,7 @@ It is already interesting to note that, under complement transforms (which are s
 
 
 
-We are going to talk about the matter of comparing or analyzing two or more na-Sequences using especially statistical measures that have been set down by transformatics theory for especially ordered sequences. 
+We are going to talk about the matter of comparing or analyzing two or more na-Sequences using especially statistical measures that have been set down by transformatics theory for especially sequences. 
 
 \section{Six Sequences and Four Scenarios}
 \label{SEC4ASEQ}
@@ -2964,7 +3026,7 @@ Using the same exact sequences, and in the same order as we utilized in \textbf{
 \begin{minipage}{0.9\textwidth}
 \textbf{IMPORTANT: The Consistency of FLSA and SLSA}\\
 
-Note that, though both the \textbf{\hyperref[ALGLUSHUFFLEA]{FLSA}} and \textbf{\hyperref[ALGLUSHUFFLEB]{SLSA}}  randomize any sequence they are given in their respective results/outputs, and yet they are both \textbf{consistent} --- the same input sequence with a particular $k$ shall always produce the same exact expected shuffled sequence post-transform. 
+Note that, though both the \textbf{\hyperref[ALGLUSHUFFLEA]{FLSA}} and \textbf{\hyperref[ALGLUSHUFFLEB]{SLSA}}  randomize any sequence they are given in their respective results/outputs --- essentially, that they produce anagrams\index{sequence!anagram} of their inputs, and yet they are both \textbf{consistent} --- the same input sequence with a particular $k$ shall always produce the same exact expected shuffled sequence post-transform; essentially, that, for a particular value of the parameter $k$, both algorithms produce a particular anagram\index{anagram} for a given input sequence! 
 
 \end{minipage}}
 \\
@@ -3593,7 +3655,7 @@ It shall be interesting to note that for genetic code in natural automata (natur
 
 For simplicity's sake, we can assume the following summarization of the basic process that fully and correctly breaks down the typical ordeal:
 
-First, we shall assume that given the protein is just a chain of amino-acids, we might as well just think of it as though it were an ordered sequence of some terms, and thus, in keeping with the notation from transformatics, we might just refer to such a protein with our usual typical \textbf{resultant sequence} symbol --- $\Theta^*$.
+First, we shall assume that given the protein is just a chain of amino-acids, we might as well just think of it as though it were a sequence of some terms, and thus, in keeping with the notation from transformatics, we might just refer to such a protein with our usual typical \textbf{resultant sequence} symbol --- $\Theta^*$.
 
 And so, given that these proteins are actually nearly direct/1-to-1 mappings from the corresponding DNA sub-sequence code of a finite length, we might then refer to the DNA sequence that encodes the instructions for producing $\Theta^*$ with just the basic typical transformatics \textbf{source sequence} symbol: $\Theta$ --- more conveniently, because we wish to also talk of the length of the sequence, we might preferably write the DNA sequence code of length \textbf{n} (meaning for example, \textbf{it contains exactly n DNA-codons}), as $\Theta_n$. So, for example we might more fully express $\Theta_n$ as such:
 
@@ -3646,7 +3708,7 @@ T& A & G \\
 \end{equation}\\
 
 
-Whether to actually express it as a $3 \times n$ matrix or as $n \times 3$ might be up to the particular taste of the mathematician or scientist, but otherwise, we know that the ordered sequence $\Theta$ in any of the forms above is essentially a \textbf{gene program}\footnote{Indeed, it is right, that any legit natural gene program targeting a codon processor can be expressed as a $n \times 3$ matrix.} or a potential segment of one, that could be used to guide a DNA code processor such as a ribosome, to construct a corresponding protein based on the equivalent transcribed mRNA code sequence --- in this case $\Theta_4^*$, which we might express into mRNA code as such:
+Whether to actually express it as a $3 \times n$ matrix or as $n \times 3$ might be up to the particular taste of the mathematician or scientist, but otherwise, we know that the sequence $\Theta$ in any of the forms above is essentially a \textbf{gene program}\footnote{Indeed, it is right, that any legit natural gene program targeting a codon processor can be expressed as a $n \times 3$ matrix.} or a potential segment of one, that could be used to guide a DNA code processor such as a ribosome, to construct a corresponding protein based on the equivalent transcribed mRNA code sequence --- in this case $\Theta_4^*$, which we might express into mRNA code as such:
 
 
  \begin{equation}
@@ -3689,7 +3751,7 @@ Otherwise $a_i = a_i^* \implies \invpi(a_i = T \in \Theta_n) = \invpi(U \in \The
   \label{TAB1}
 \end{table}
 
-Thus, though the gene in its DNA form comprised of the ordered sequence of amino-acid codes named as in \textbf{\hyperref[TAB1]{Table \ref{TAB1}}}, and yet, the resultant sequence after applying \textbf{\hyperref[TRANSF1]{Transformer \ref{TRANSF1}}} to $\Theta_4$ would be as explained in \textbf{\hyperref[TAB2]{Table \ref{TAB2}}}.
+Thus, though the gene in its DNA form comprised of the sequence of amino-acid codes named as in \textbf{\hyperref[TAB1]{Table \ref{TAB1}}}, and yet, the resultant sequence after applying \textbf{\hyperref[TRANSF1]{Transformer \ref{TRANSF1}}} to $\Theta_4$ would be as explained in \textbf{\hyperref[TAB2]{Table \ref{TAB2}}}.
 
 
 \begin{table}[h]
@@ -3775,14 +3837,14 @@ A plausible and meaningful solution to this problem would be to begin by acquiri
 
 \begin{defn}[A \textbf{Ribosome}]
 \label{DEFRIBOSOME}
-Assuming we re-write a sequence of DNA code in terms of the ordered sequence of nucleotides it contains, as in \textbf{\hyperref[EQ3]{Equation \ref{EQ3}}} re-written as in \textbf{\hyperref[EQ7]{Equation \ref{EQ7}}}:
+Assuming we re-write a sequence of DNA code in terms of the [ordered] sequence of nucleotides it contains, as in \textbf{\hyperref[EQ3]{Equation \ref{EQ3}}} re-written as in \textbf{\hyperref[EQ7]{Equation \ref{EQ7}}}:
 
  \begin{equation}
 \label{EQ7}
 \Theta_n = \{a_i \quad | \quad a_i = \prod\limits_{\rho \in \psi_{DNA}}^3 \rho \quad \land \quad n \in \mathbb{N} \}
 \end{equation}\\
 
-$\Theta_n$ would then be any sequence of DNA-codons of length $n$, equivalent to a flat-structure ordered sequence of nucleotides of length $n \times 3$. We can then produce mRNA-codons from $\Theta_n$ as per \textbf{\hyperref[TRANSF1]{Transformer \ref{TRANSF1}}}, so that we produce a new mRNA-codon sequence of length $n$ that is generated as such:
+$\Theta_n$ would then be any sequence of DNA-codons of length $n$, equivalent to a flat-structure  sequence of nucleotides of length $n \times 3$. We can then produce mRNA-codons from $\Theta_n$ as per \textbf{\hyperref[TRANSF1]{Transformer \ref{TRANSF1}}}, so that we produce a new mRNA-codon sequence of length $n$ that is generated as such:
 
 \begin{trans}
 \label{TRANS1}
@@ -3790,7 +3852,7 @@ $\Theta_n \quad \xrightarrow{O_{mRNA-encode}(\cdot)} \quad \Theta^*_n;$\\
 $\Theta^*_n = \{a_i^* \quad | \quad a_i^* = \prod\limits_{\rho \in \psi_{RNA}}^3 \rho \} \quad \land \quad \invpi(\Theta_n) = \invpi(\Theta^*_n) = n$
 \end{trans}
 
-And with $\Theta^*_n$ thus produced, we can then merely generate the corresponding ordered sequence of amino-acids, denoted as $[\Theta^*_n]^*$, via the following mRNA to amino-acid transformer: 
+And with $\Theta^*_n$ thus produced, we can then merely generate the corresponding sequence of amino-acids, denoted as $[\Theta^*_n]^*$, via the following mRNA to amino-acid transformer: 
 
 \begin{transf}[\textbf{mRNA to Amino-Acid Translator}]
 \label{TRANSF2}
@@ -3892,7 +3954,7 @@ So, in our hypothetical genome expression model --- the \textbf{Lu-Genome Expres
 \psi_{\Omega} = \langle 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \rangle \equiv \psi_{10}
 \end{equation}\\
 
-Which, especially for curiosity's sake, but also, for creative and expressive reasons, is meant to allow us to explore a peculiar genetics model based not on just some four base symbols as is the case in $\psi_{DNA}$, but which allows us to look at any base-10 number expression as a potential genetic code sequence with \textbf{each digit expressing a distinct hypothetical nucleic acid}. 
+Which, especially for curiosity's sake, but also, for creative and expressive reasons, is meant to allow us to explore a peculiar genetics model based not on just some four base symbols as is the case in $\psi_{DNA}$, but which allows us to look at any base-10 number expression --- essentially any \textit{decimal sequence}\index{sequences!decimal}\index{number expression} --- as a potential genetic code sequence with \textbf{each digit expressing a distinct hypothetical nucleic acid}. 
 
 
 For example, we might describe some fictitious organism --- for simplicity's sake, perhaps, just a virus, that we shall name \textbf{the Euler Virus}\footnote{I called it that, simply because of the fact the associated genome sequence is based on the important natural physical constant --- 2.718281828459, the \textbf{Euler number}, that is one of those irrational numbers that also happens to be the base of the natural logarithm and which arises naturally in many areas of mathematics, especially in calculus, complex analysis, and probability theory.} or just ``veuler", as having its entire genome sequence encoded as just:
@@ -4645,7 +4707,7 @@ That said, and back to our \textbf{x-LGES} problem...
 
 \subsection{Revisiting Numeric Sequences}
 
-Before we proceed with actual na-Sequences, we shall first revisit hypothetical genome sequences expressed in numeric form, and then shall use the experience we garner to handle processing of actual na-Sequences later.
+Before we proceed with actual na-Sequences, we shall first revisit hypothetical genome sequences expressed in numeric form\index{sequences!decimal}, and then shall use the experience we garner to handle processing of actual na-Sequences later.
 
 So, returning to that interesting \textbf{Hi-Fi o-SSI} sequence --- $\Omega_{HiFinelle} = 8649137520$, only partially translated into DNA-code in  \textbf{\hyperref[EQDNHIFINUM]{Transformation \ref{EQDNHIFINUM}}}, if we are to convert it to an equivalent na-Sequence using the new information we have, we would obtain the results:\\
 
@@ -5571,7 +5633,7 @@ I(\theta_i, \Theta^n) = i \quad \forall \theta_i \in \Theta^n
 
 Further, if we have any two elements from the sequence (whether or not they are equal: $\theta_i = \theta_j$ or not: $\theta_i \neq \theta_j$), and yet, if $i \neq j$, then $I(\theta_i, \Theta^n) \neq I(\theta_j, \Theta^n)$, and if $i \leq j$, then $I(\theta_i, \Theta^n) \leq I(\theta_j, \Theta^n)$. 
 
-As you shall come to appreciate when studying formulations and expressions in transformatics, the position operator or measure, $I(\cdot, \cdot)$ is very fundamental, useful and indispensable especially when treating of \textbf{ordered sequences} or of order in any sequence.
+As you shall come to appreciate when studying formulations and expressions in transformatics, the position operator or measure, $I(\cdot, \cdot)$ is very fundamental, useful and indispensable especially when treating of (sic) \textbf{ordered sequences} or of order in any sequence.
 
 \subsection{Proposal 1: The o-SSI Sequence from any Sequence\cite{ossipaper}}
 
@@ -5953,7 +6015,7 @@ And that generally,\\
 \forall \Theta_i \in \Theta^* \quad \implies \quad \Theta^* \supset \Theta_i \quad \land \quad \psi(\Theta^*) \supset \psi(\Theta_i)
 \end{equation}\\
 
-Also, and as shown in \textbf{Section 6.6.1} of \cite{lutalo_2025_trans_genetics}, we might also treat of super-sequences as matrices\index{matrices}\index{sequences!as matrices} (in the sense of \textbf{linear algebra}). In particular, note that if we have a set of $n$ different sequences of arbitrary composition and lengths:\\
+Also, and as shown in \textbf{Section 6.6.1} of \cite{lutalo_2025_trans_genetics}, we might also treat of super-sequences as matrices\index{matrices}\index{sequence!as matrices} (in the sense of \textbf{linear algebra}). In particular, note that if we have a set of $n$ different sequences of arbitrary composition and lengths:\\
 
 
 \begin{equation}
@@ -5983,7 +6045,7 @@ That we might also express them more elaborately via matrix form as\footnote{Not
 \end{multline}\\
 
 
-So that, if we have the special case as what \textbf{\hyperref[TRANSFBUNDb]{Transformer \ref{TRANSFBUNDb}}} would produce if given the right kind of input sequence (particularly, that if $\Theta^n$ is to be split into k-grams, then, that it has the property that $\frac{n}{k} = m$ is a pure number\cite{Lutalo2024gtnc}, and so that, we can then map the flat-structure sequence $\Theta^n$ to a higher-order sequence\index{sequences!higher-order}, or super-sequence of \textbf{dimensions $k \times m$}, so that the resulting mathematical structure can be neatly expressed as a  $k \times m$ or $m \times k$ matrix as shown:\\\\
+So that, if we have the special case as what \textbf{\hyperref[TRANSFBUNDb]{Transformer \ref{TRANSFBUNDb}}} would produce if given the right kind of input sequence (particularly, that if $\Theta^n$ is to be split into k-grams, then, that it has the property that $\frac{n}{k} = m$ is a pure number\cite{Lutalo2024gtnc}, and so that, we can then map the flat-structure sequence $\Theta^n$ to a higher-order sequence\index{sequence!higher-order}, or super-sequence of \textbf{dimensions $k \times m$}, so that the resulting mathematical structure can be neatly expressed as a  $k \times m$ or $m \times k$ matrix as shown:\\\\
 
 
 \begin{trans}
@@ -6003,7 +6065,7 @@ So that, if $m=k$, then we essentially have a super-sequence that can be express
 
 First, note that we already encountered an example of/application of this present proposal in the useful program we encountered at the end of \textbf{\hyperref[PROP6]{Proposal 6}}; in a program that basically computes the sequence characteristic of any input sequence, and which is essentially a \textit{higher-order transformer} that is composed as a chain of smaller sequence transformers  --- which is what all or most of \textbf{TEA primitive instructions}\cite{Lutalo2024TEATAZ} are), and which transformer then (as the ``SC-Generator") essentially reduces any input sequence to its summary statistic expression, particularly the sequence characteristic.\\
 
-Otherwise, note that; looking at a TEA program as depicted in \textbf{\hyperref[LISTSC]{Figure \ref{LISTSC}}} is helpful, since it reflects how the overall [higher-order] transformer program might be composed out of logically-meaningful sections\footnote{In TEA parlance and in relation to how most computer scientists might think of the matter of \textit{scoping}, \textit{code-blocks} or \textit{encapsulation}, for TEA, it is mostly all about \textbf{l-blocks} or \textit{label-blocks} --- also known as ``labeled blocks"\cite{Lutalo2024TEATAZ}.} as a software engineer or computer programmer already familiar with the TEA language might approach the SC problem. However, also note that; that same exact program is also equivalent to the following two versions --- both of which kick-out \textit{TEA comments}\footnote{In the example source-code we shall encounter in this work, but also typically, these are expressions in a TEA program that start with the `\#' character, and which makes them inert or non-executable lines/expressions in the program.}, and \textbf{only focus on the individual TEA instructions necessary to make the program work as desired, as well as how they ought be ordered within the program}, but where, the first (\textbf{\hyperref[LSTSCGEN]{Listing \ref{LSTSCGEN}}}) simplifies the code to just an ordered sequence of TEA instructions one per line, while the second (\textbf{\hyperref[LSTSCGEN]{Listing \ref{LSTSCGENMINI}}}) shows the same exact program, in its \textbf{minified} form --- where, each instruction is delimited from the next by the standard TEA instruction delimiter `\verb!|!', and nothing else.
+Otherwise, note that; looking at a TEA program as depicted in \textbf{\hyperref[LISTSC]{Figure \ref{LISTSC}}} is helpful, since it reflects how the overall [higher-order] transformer program might be composed out of logically-meaningful sections\footnote{In TEA parlance and in relation to how most computer scientists might think of the matter of \textit{scoping}, \textit{code-blocks} or \textit{encapsulation}, for TEA, it is mostly all about \textbf{l-blocks} or \textit{label-blocks} --- also known as ``labeled blocks"\cite{Lutalo2024TEATAZ}.} as a software engineer or computer programmer already familiar with the TEA language might approach the SC problem. However, also note that; that same exact program is also equivalent to the following two versions --- both of which kick-out \textit{TEA comments}\footnote{In the example source-code we shall encounter in this work, but also typically, these are expressions in a TEA program that start with the `\#' character, and which makes them inert or non-executable lines/expressions in the program.}, and \textbf{only focus on the individual TEA instructions necessary to make the program work as desired, as well as how they ought be ordered within the program}, but where, the first (\textbf{\hyperref[LSTSCGEN]{Listing \ref{LSTSCGEN}}}) simplifies the code to just a sequence of TEA instructions one per line, while the second (\textbf{\hyperref[LSTSCGEN]{Listing \ref{LSTSCGENMINI}}}) shows the same exact program, in its \textbf{minified} form --- where, each instruction is delimited from the next by the standard TEA instruction delimiter `\verb!|!', and nothing else.
 
 \vspace{2em}
 
@@ -6244,7 +6306,7 @@ The study of \textbf{sequences of symbols}, their transformations and analysis.
 
 \vspace{2em}
 
-To kick-start our discussion, note that the definition above shall help to distinguish transformatics as its inventor currently treats of it, from any other mathematical line of inquiry, but shall also help explain why past references to and parallels between transformatics and topics such as sequence analysis, sequence transformers, sequence generators and especially a heavy talk about symbol sets and ordered sequences makes all the sense (refer to \textbf{\hyperref[SECFOUND]{Section \ref{SECFOUND}}}). That said, note that we are going to attempt to properly, perhaps somewhat rigorously locate this theory and associated concepts within the vast spectrum of mathematics. However, first, let us clear-up the potential confusion concerning fundamental nomenclature and potential parallels between other fields and sub-fields of mathematics.
+To kick-start our discussion, note that the definition above shall help to distinguish transformatics as its inventor currently treats of it, from any other mathematical line of inquiry, but shall also help explain why past references to and parallels between transformatics and topics such as sequence analysis, sequence transformers, sequence generators and especially a heavy talk about symbol sets and sequences makes all the sense (refer to \textbf{\hyperref[SECFOUND]{Section \ref{SECFOUND}}}). That said, note that we are going to attempt to properly, perhaps somewhat rigorously locate this theory and associated concepts within the vast spectrum of mathematics. However, first, let us clear-up the potential confusion concerning fundamental nomenclature and potential parallels between other fields and sub-fields of mathematics.
 
 \vspace{2em}
 
@@ -6602,7 +6664,7 @@ However, and despite the fact that statistics heavily and naturally relates to n
 \subsection{Relation to Linear Algebra}
 \label{SECRELLINALG}
 
-The other competing field might for example be \textbf{Linear Algebra}\footnote{Majorly\cite{copilot_dna_assistant} attributed  to \textbf{Hermann Grassmann} the 19th century German polymath that first \textit{created} linear algebra in its modern form when he penned the 1844 work \textit{Die Lineale Ausdehnungslehre} (``Theory of Linear Extension") which introduced the ideas of vector spaces and linear combinations.  Other contributors\cite{copilot_dna_assistant} are Gottfried Willhelm Leibniz (1693) that introduced early ideas of matrices and determinants; Gabriel Cramer (1750) that published \textit{Cramer's Rule} for solving $n$ equations in $n$ unknowns; Joseph-Louis Lagrange (late 1700s) that used matrices to study bilinear forms, and finally Giuseppe Peano (1888) that introduced the abstract modern concept of a vector space, in essence, completing the conceptual framework that underlies all of linear algebra.}; in that field, sequences do show up right at the start (see for example Chapter 1 of \cite{nef1967linear}), and particularly, they \textit{initially} manifest in the form or under the terminology of \texttt{sets}, and then \textit{soon enough} in the [more transformatic] form of matrices of many kinds, and that, very often, much of the theory and formalisms of linear algebra rotate around encoding data as the mathematical structure known as a matrix\footnote{Which we have seen to actually be based on sequences --- refer to \textbf{\hyperref[SECDEFSTRUCTURES]{Section \ref{SECDEFSTRUCTURES}}}}, whether of a simple form such as 1-dimensional finite sequence, or as high-dimensional dense or sparse matrices encoding infinitely large spaces or quantifiably large datasets. That field also presents many processes that deal with reducing such basic or higher-order sequences\index{sequences!higher-order} (\textbf{\hyperref[PROP8]{Section \ref{PROP8}}}), also sometimes likened to or related to ``vectors", to just simple expressions or quantities such as scalars --- basic numbers in their simplest forms, via \textbf{linear-transformations} of many kinds. And talking of transformations, we find in the field of linear algebra, many kinds of ways that one sequence might be mapped or reduced to another sequence, via processes or computations such as computing the basis (a sequence from which other sequences of similar structure can be derived), endomorphisms (linear transforms that map a type onto itself), inverses (sequences which would result in the identity sequence when multiplied with the source sequence), etc.\cite{nef1967linear}
+The other competing field might for example be \textbf{Linear Algebra}\footnote{Majorly\cite{copilot_dna_assistant} attributed  to \textbf{Hermann Grassmann} the 19th century German polymath that first \textit{created} linear algebra in its modern form when he penned the 1844 work \textit{Die Lineale Ausdehnungslehre} (``Theory of Linear Extension") which introduced the ideas of vector spaces and linear combinations.  Other contributors\cite{copilot_dna_assistant} are Gottfried Willhelm Leibniz (1693) that introduced early ideas of matrices and determinants; Gabriel Cramer (1750) that published \textit{Cramer's Rule} for solving $n$ equations in $n$ unknowns; Joseph-Louis Lagrange (late 1700s) that used matrices to study bilinear forms, and finally Giuseppe Peano (1888) that introduced the abstract modern concept of a vector space, in essence, completing the conceptual framework that underlies all of linear algebra.}; in that field, sequences do show up right at the start (see for example Chapter 1 of \cite{nef1967linear}), and particularly, they \textit{initially} manifest in the form or under the terminology of \texttt{sets}, and then \textit{soon enough} in the [more transformatic] form of matrices of many kinds, and that, very often, much of the theory and formalisms of linear algebra rotate around encoding data as the mathematical structure known as a matrix\footnote{Which we have seen to actually be based on sequences --- refer to \textbf{\hyperref[SECDEFSTRUCTURES]{Section \ref{SECDEFSTRUCTURES}}}}, whether of a simple form such as 1-dimensional finite sequence, or as high-dimensional dense or sparse matrices encoding infinitely large spaces or quantifiably large datasets. That field also presents many processes that deal with reducing such basic or higher-order sequences\index{sequence!higher-order} (\textbf{\hyperref[PROP8]{Section \ref{PROP8}}}), also sometimes likened to or related to ``vectors", to just simple expressions or quantities such as scalars --- basic numbers in their simplest forms, via \textbf{linear-transformations} of many kinds. And talking of transformations, we find in the field of linear algebra, many kinds of ways that one sequence might be mapped or reduced to another sequence, via processes or computations such as computing the basis (a sequence from which other sequences of similar structure can be derived), endomorphisms (linear transforms that map a type onto itself), inverses (sequences which would result in the identity sequence when multiplied with the source sequence), etc.\cite{nef1967linear}
 
 \vspace{2em}
 
@@ -7648,7 +7710,7 @@ And thus, or rather, finally, we might advance a more concrete definition for th
 
 \begin{defn}[\textbf{Transformatics}]
 \label{DEFTRANS2}
-The study of \textbf{sequence algebra}, \textbf{sequence transformations} and \textbf{sequence analysis} ---- succinctly: \texttt{the study of the algebra, transformations and analysis of sequences}.
+The study of \textbf{sequence algebra}\index{sequence!algebra}\index{sequence algebra}\index{transformatics!as an algebra}\index{transformatics!definition}, \textbf{sequence transformations} and \textbf{sequence analysis} ---- succinctly: \texttt{the study of the algebra, transformations and analysis of sequences}.
 \end{defn}
 
 \vspace{2em}

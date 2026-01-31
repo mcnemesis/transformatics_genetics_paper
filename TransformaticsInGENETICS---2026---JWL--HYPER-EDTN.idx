@@ -20,7 +20,7 @@
 \indexentry{transformatics!relation to frobenoids|hyperpage}{11}
 \indexentry{mappings|hyperpage}{11}
 \indexentry{transformatics!mappings|hyperpage}{11}
-\indexentry{DNA!as ordered sequences|hyperpage}{11}
+\indexentry{DNA!as sequences|hyperpage}{11}
 \indexentry{DNA!symbol set|hyperpage}{12}
 \indexentry{$\psi _{DNA}$|hyperpage}{12}
 \indexentry{nucleotides|hyperpage}{12}
@@ -36,13 +36,13 @@
 \indexentry{data|hyperpage}{14}
 \indexentry{DNA!sequence example|hyperpage}{15}
 \indexentry{sequence!string notation|hyperpage}{15}
-\indexentry{sequences!flat-structure|hyperpage}{17}
+\indexentry{sequence!flat-structure|hyperpage}{17}
 \indexentry{codons|hyperpage}{17}
 \indexentry{gene programs|hyperpage}{17}
-\indexentry{sequences!higher-order|hyperpage}{18}
+\indexentry{sequence!higher-order|hyperpage}{18}
 \indexentry{generator|hyperpage}{18}
 \indexentry{generator!k- or n-gram generator|hyperpage}{18}
-\indexentry{sequences!gene-program|hyperpage}{18}
+\indexentry{sequence!gene-program|hyperpage}{18}
 \indexentry{ADM|hyperpage}{19}
 \indexentry{sequence analysis!anagram distance|hyperpage}{19}
 \indexentry{sequence analysis!base membership|hyperpage}{19}
@@ -64,24 +64,49 @@
 \indexentry{genetic disease|hyperpage}{23}
 \indexentry{hereditary disease|hyperpage}{23}
 \indexentry{transformatics!in medicine|hyperpage}{23}
+\indexentry{sequence!complements|hyperpage}{25}
+\indexentry{lu-number system|hyperpage}{25}
+\indexentry{$\psi_{01}$|hyperpage}{25}
+\indexentry{sequence!algebra|hyperpage}{26}
+\indexentry{sequence!complement|hyperpage}{27}
+\indexentry{complement sequences|hyperpage}{27}
+\indexentry{transformer!complement|hyperpage}{28}
+\indexentry{na-Complement|hyperpage}{28}
+\indexentry{DNA!complement|hyperpage}{28}
+\indexentry{$\dot{\psi}_{DNA}$|hyperpage}{29}
+\indexentry{sequences!decimal|hyperpage}{29}
+\indexentry{complement digit|hyperpage}{30}
+\indexentry{Hi-Fi o-SSI|hyperpage}{30}
+\indexentry{orthogonal symbol set identity|hyperpage}{30}
+\indexentry{anagram|hyperpage}{30}
+\indexentry{sequence!anagram|hyperpage}{30}
 \indexentry{sequencing|hyperpage}{55}
 \indexentry{genome!sequencing|hyperpage}{55}
+\indexentry{sequence!anagram|hyperpage}{72}
+\indexentry{anagram|hyperpage}{72}
 \indexentry{ribosome!flow-chart|hyperpage}{92}
 \indexentry{ribosome!state machine|hyperpage}{93}
 \indexentry{generator!protein generator|hyperpage}{96}
 \indexentry{ribosome|hyperpage}{96}
+\indexentry{sequences!decimal|hyperpage}{99}
+\indexentry{number expression|hyperpage}{99}
+\indexentry{sequences!decimal|hyperpage}{123}
 \indexentry{ADM|hyperpage}{168}
 \indexentry{sequence analysis!anagram distance|hyperpage}{168}
 \indexentry{super-sequence|hyperpage}{178}
 \indexentry{matrices|hyperpage}{178}
-\indexentry{sequences!as matrices|hyperpage}{178}
-\indexentry{sequences!higher-order|hyperpage}{179}
+\indexentry{sequence!as matrices|hyperpage}{178}
+\indexentry{sequence!higher-order|hyperpage}{179}
 \indexentry{sequence!definition|hyperpage}{191}
 \indexentry{matrix!definition|hyperpage}{196}
 \indexentry{matrices!as linear transformations|hyperpage}{197}
 \indexentry{data!coded or raw|hyperpage}{199}
-\indexentry{sequences!higher-order|hyperpage}{199}
+\indexentry{sequence!higher-order|hyperpage}{199}
 \indexentry{transformatics!mappings|hyperpage}{205}
 \indexentry{mappings|hyperpage}{205}
 \indexentry{transformatics!mappings|hyperpage}{206}
 \indexentry{transformer!as mapping|hyperpage}{206}
+\indexentry{sequence!algebra|hyperpage}{226}
+\indexentry{sequence algebra|hyperpage}{226}
+\indexentry{transformatics!as an algebra|hyperpage}{226}
+\indexentry{transformatics!definition|hyperpage}{226}
