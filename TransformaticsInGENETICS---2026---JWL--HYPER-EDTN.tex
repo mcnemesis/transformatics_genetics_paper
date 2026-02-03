@@ -1447,17 +1447,21 @@ If some sequence $\Theta: \mathbb{N} \times \psi_\beta$ is an orthogonal symbol 
 
 We shall see how \textbf{\hyperref[THEOCOMPLOSSI]{Theorem  \ref{THEOCOMPLOSSI}}} might be applied, when dealing with algorithmic anagrammatization of sequences such as $\psi_{10}$ in \textbf{\hyperref[SECRSG]{Chapter \ref{SECRSG}}}.
 
+
 \section{Potential Applications of Sequence Complements or Inverses}
 \label{SECAPPCOMPLEMENTS}
 
-First, in genetics and analysis of genetic code sequences, note that, for especially na-Sequences in say the \textit{non-native}(non-storage) form, such as the processed/derivative RNA-sequences, it might sometimes be useful to determine if some two sequences are the same, equivalent or closely related, even though their apparent ordering of members, or even member composition looks unlike, \textbf{as long as their cardinalities are the same}\footnote{This requirement to have their sizes the same, is a natural consequence of how a sequence and its anagrams relate --- see \cite{adtpaper}}.
+
+First, in genetics and analysis of genetic code sequences, note that, for especially na-Sequences in say the \textit{non-native}(non-storage) form, such as the processed/derivative RNA-sequences, it might sometimes be useful to determine if some two sequences are the same, equivalent or closely related, even though their apparent ordering of members, or even member composition looks unlike, \textbf{as long as their cardinalities are the same}\footnote{This requirement to have their sizes the same, is a natural consequence of how a sequence and its anagrams relate --- see \cite{adtpaper}. However, once the basic concepts are well understood, this condition may be relaxed or merely be worked around. Also, for cases where we are concerned with sequence analysis and comparison where lengths either don't matter or are potentially different, refer to the kinds of analyses we conduct in the next chapter --- see \textbf{\hyperref[SEC4ASEQ]{Section \ref{SEC4ASEQ}}} for example.}.
 
 We should note, and interestingly so, that the complement of any sequence $\Theta$, which is $\lnot\Theta$, is just an anagram of $\Theta$, and that in general, we can comfortably say:
+
+\vspace{2em}
 
 
 \begin{theo}[\textbf{Equivalence of Sequences under the Complement Transform}]
 \label{THEOCOMPEQUIV}
-If two sequences $\Theta$ and $\Omega$ that are \textbf{not equal}, but which do have the same cardinality and similar distribution of members, then they are essentially equivalent under the sequence complement transform.
+If two sequences $\Theta$ and $\Omega$ that are \textbf{not equal}, do have the same cardinality and similar distribution of members, then they are essentially equivalent under the sequence complement transform and some projections of their form.
 
 \begin{proof}
 The proofs are several:
@@ -1470,16 +1474,22 @@ The proofs are several:
 
 \end{theo}
 
+\vspace{2em}
 
 Note that, for RNA, since $\psi_{RNA} = \langle A, C, G, U \rangle$ (\textbf{\hyperref[EQRNASS]{Equation \ref{EQRNASS}}}), then: 
+
+\vspace{1em}
 
 \begin{equation}
 \label{EQRNACOMP}
 \lnot\psi_{RNA} = \langle U, G, C, A \rangle
 \end{equation}
 
+\vspace{1em}
+
 And this is what we'd expect via the complement mapping:
 
+\vspace{1em}
 
 \[
 \begin{tikzpicture}[baseline=(current bounding box.center)]
@@ -1499,23 +1509,34 @@ And this is what we'd expect via the complement mapping:
 \end{tikzpicture}
 \]
 
+\vspace{1em}
 
 But, since the traditional pairwise ordered symbol set for RNA, $\dot{\psi}_{RNA}$ is
 
+\vspace{1em}
 
 \begin{equation}
 \label{EQRNATRAD}
 \dot{\psi}_{RNA} = \langle A, U, C, G \rangle
 \end{equation}
 
+\vspace{1em}
+
 Then its corresponding complement,$\lnot\dot{\psi}_{RNA}$, is
+
+\vspace{1em}
 
 \begin{equation}
 \label{EQRNATRADCOMP}
 \lnot\dot{\psi}_{RNA} = \langle G, C, U, A \rangle
 \end{equation}
 
+\vspace{1em}
+
 And so we have the associated complement mapping as
+
+\vspace{1em}
+
 
 \[
 \begin{tikzpicture}[baseline=(current bounding box.center)]
@@ -1535,16 +1556,21 @@ And so we have the associated complement mapping as
 \end{tikzpicture}
 \]
 
+\vspace{1em}
 
 So, that, for some RNA-sequence such as $\Theta_{met}$:
 
+\vspace{1em}
 
 \begin{equation}
 \Theta_{met} = \langle A, U, G \rangle
 \end{equation}
 
+\vspace{1em}
 
 Which is the famous START-codon \textbf{Methionine} (see \textbf{\hyperref[TAB2]{Table \ref{TAB2}}}), has as its corresponding nucleic acid sequence complement under $\dot{\psi}_{RNA}$:
+
+\vspace{1em}
 
 \begin{trans}
 \label{TRANSGCA}
@@ -1552,7 +1578,11 @@ $\Theta_{met} \xrightarrow{O_{complement}(\Theta,\dot{\psi}_{RNA})}  \langle G, 
 That codon isn't the same as the source (ATG/AUG/Methionine), but there's some debate concerning what it actually is called --- \textbf{Table 1} in \cite{gregory1987oxford} names codon GCA as \textbf{Arginine}, while Wikipedia\cite{wikipedia_codon_tables} names it \textbf{Alanine}.
 \end{trans}
 
+\vspace{1em}
+
 While --- \textbf{and important to note}, its complement under $\psi_{RNA}$ is [indeed] different!
+
+\vspace{1em}
 
 \begin{trans}
 \label{TRANSUAC}
@@ -1561,10 +1591,24 @@ $\Theta_{met} \xrightarrow{O_{complement}(\Theta,\psi_{RNA})}  \langle U, A, C \
 and we know that codon UAC is Tyrosine\cite{wikipedia_codon_tables}\footnote{Concerning this particular codon, TAC/UAC, we find that though the Wikipedia reference tables assign it the name Tyrosine in both the DNA and RNA encodings, and yet, the physical reference we have at hand\cite{gregory1987oxford} (perhaps now out-of-date), assigns the name ``Methionine" to TAC --- Table 1 in that reference book did not list RNA codes, but we still would expect to use TAC to look-up the correct name for UAC.}.
 \end{trans}
 
-It should perhaps be immediately noticeable that the ability to derive new/different/special sequences such as complement codons from ordinary na-Sequences might have some useful if not exciting applications as well as problems it awakens for the geneticists, molecular biologists and researchers of gene-sequencing\footnote{For those that do not know: Gene sequencing is the process of determining the exact order of nucleotides --- A, T, C and G --- in a segment of DNA that makes up a gene. It is like reading the biological ``code" that instructs cells how to build proteins and regulate functions\cite{copilot_dna_assistant}.} and analysis. For example, apart from acknowledging that na-Sequence's complements denote potentially legitimate na-helix strand partners for any two sequences (in the form $\Theta$ and $\lnot\Theta$), it would be further rewarding, to determine what other important things we might learn about how important sequences such as na-Sequences, especially relative to how they are utilized in nature, behave or alter their usual function, if replaced by their complements either partially or wholly. Definitely, true for any sequences in general... it must be exhilirating to discover what other things we can learn with or from them, via these kinds of sequence transforms. 
+\vspace{1em}
+
+It should perhaps be immediately noticeable that the ability to derive new/different/special sequences such as complement codons from ordinary na-Sequences might have some useful if not exciting applications as well as problems it awakens for the geneticists, molecular biologists and researchers of gene-sequencing\footnote{For those that do not know: Gene sequencing is the process of determining the exact order of nucleotides --- A, T, C and G --- in a segment of DNA that makes up a gene. It is like reading the biological ``code" that instructs cells how to build proteins and regulate functions\cite{copilot_dna_assistant}.} and analysis. For example, apart from acknowledging that na-Sequence's complements denote potentially legitimate na-helix strand partners for any two sequences (in the form $\Theta$ and $\lnot\Theta$), it would be further rewarding, to determine what other important things we might learn about how important sequences such as na-Sequences --- especially relative to how they are utilized in nature, behave or alter their usual function, if replaced by their complements either partially or wholly. Definitely, true for any sequences in general... it must be exhilirating to discover what other things we can learn with or from them, via these kinds of sequence transforms. 
+
+
+
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\LARGE
+More \textbf{FUTURE WORK} for GENETICS Researchers:\\
 
 It is already interesting to note that, under complement transforms (which are special kinds of anagrams), the natural/universal protein synthesis START-codon AUG/ATG is equivalent to GCA (\textbf{\hyperref[TRANSGCA]{Transformation \ref{TRANSGCA}}}) or UAC (\textbf{\hyperref[TRANSUAC]{Transformation \ref{TRANSUAC}}}), but, \textbf{are those other codons also START-codons?} That said, is there a possibility that some natural process or genetic code translation or transformation might naturally produce ATG or AUG from any of those corresponding [symbolic] complement sequences? What would this teach us about natural/biological processors? What of the possibilities of using synthetic/artificial processors to render such complement operations useful? And is it actually possible to \textit{transmute} one set of nucleic acid sequences into another, with entirely different functions and identity via leveraging na-complements or complement transforms?
 
+
+\end{minipage}}
+\\
+\end{center}
 
 
 
@@ -1573,18 +1617,18 @@ It is already interesting to note that, under complement transforms (which are s
 
 
 
-We are going to talk about the matter of comparing or analyzing two or more na-Sequences using especially statistical measures that have been set down by transformatics theory for especially sequences. 
+We are going to talk about the matter of comparing or analyzing two or more na-Sequences using especially statistical measures that have been set down by transformatics theory for especially sequences of the kind we are interested in when exploring work in genetics. 
 
 \section{Six Sequences and Four Scenarios}
 \label{SEC4ASEQ}
 
-In particular, we shall be looking at na-Sequence analysis through lens of measures we have formalized earlier on, and shall break down our analysis into four representative scenarios:
+In particular, we shall be looking at na-Sequence analysis through lens of measures we have formalized earlier on\footnote{For those not yet familiar with the existing mathematical theories and results of transformatics, \textbf{\hyperref[CHAPTRANS]{Chapter \ref{CHAPTRANS}}} in the appendix does provide all the necessary background context relevant for mastering all the new [applied transformatics] material we are exploring in this chapter.}, and shall break down our analysis into four representative scenarios:
 
 \begin{enumerate}
-\item \textbf{Scenario A:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, of the same length, $n$, and with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_n) = n$), \textbf{how to quantify how similar or dissimilar} they are?
-\item \textbf{Scenario B:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$, but with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
-\item \textbf{Scenario C:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of \textbf{different lengths}, $n$ and $k$ and with different symbol sets ($\psi_{na}(\Theta1_n) \neq \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
-\item \textbf{Scenario D:} Finally, how, when given a particular na-Sequence, $Q_k$, and two collections/samples of other sequences ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, $m$ and $n$ respectively, and that belong to \textbf{labeled or classified populations} --- POPA and POPB, to determine which of the two populations the query sequence, $Q_k$, best-belongs to (so we classify it under one of those labels), as well as determine which of the \textbf{particular} sample member sequences from either collections it is closest to?
+\item \textbf{Scenario A:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, not necessary the same, but which are of the same length, $n$, and with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_n) = n$), \textbf{how to quantify how similar or dissimilar} they are?
+\item \textbf{Scenario B:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, still not necessary the same, and of different lengths, $n$ and $k$, but with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
+\item \textbf{Scenario C:} Given some two potentially different, particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of \textbf{different lengths}, $n$ and $k$ and \textbf{with different symbol sets} ($\psi_{na}(\Theta1_n) \neq \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
+\item \textbf{Scenario D:} Finally, how, when given a particular na-Sequence, $Q_k$, and two collections/samples of other sequences ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, $m$ and $n$ respectively, and that belong to \textbf{labeled or classified populations} --- POPA and POPB, to determine which of the two populations the query sequence, $Q_k$, best-belongs to (so we classify it under one of those labels), as well as determine \textbf{which of \textit{the particular sample member sequences} from either collections it is closest to?}
 \end{enumerate}
 
 Note that, in conducting these analyses, we shall especially exploit the sequence-specific measures, $\tilde{A}(\cdot)$, the Anagram Distance Measure\cite{adtpaper}\cite{transformatics}, and $\overset{>}{\Theta}$, the Modal Sequence Statistic\cite{transformatics}, and that we shall use the following representative, even though somewhat hypothetical (for the first four), na-Sequences:
@@ -1674,7 +1718,7 @@ GAGGAGUUUGCUUUGGCUUUGGAGGAGUUUGCUUUGGCUUUGGAGGAG
 \Large
 
 
-%The first four sequences are merely hypothetical, and intentionally small/short, with $\Theta1_{DNA}$, $\Theta3_{DNA}$ and $\Theta4_{DNA}$ being DNA-sequences, while $\Theta2_{RNA}$ is just some RNA-sequence. $\Theta_{insulin}$ is a DNA-sequence we have already encountered in \textbf{\hyperref[SEC2]{Chapter \ref{SEC2}}} (see \textbf{\hyperref[EQINSULIN]{Equation \ref{EQINSULIN}}}), while the most verbose sequence we shall encountered in this work is named $\Theta_{rbcl}$ and is a real-life, biologically relevant RNA-sequence from a well-known plant protein: \textbf{RbcL}\footnote{$\Theta_{rbcl}$ is actually just a sample mRNA Sequence (partial, from \textit{Arabidopsis thaliana} RbcL gene), and is excerpted from a paper that includes the \textit{Arabidopsis thaliana} chloroplast genome, which contains the rbcL gene encoding the large subunit of RuBisCO\cite{Sato1999ArabidopsisChloroplastGenome}.}, the large subunit of \textbf{RuBisCO} --- the enzyme responsible for carbon fixation in photosynthesis. It is one of the most abundant and essential proteins in plants\cite{copilot_dna_assistant}.
+The first four sequences are merely hypothetical, and intentionally small/short, with $\Theta1_{DNA}$, $\Theta3_{DNA}$ and $\Theta4_{DNA}$ being DNA-sequences, while $\Theta2_{RNA}$ is just some RNA-sequence. $\Theta_{insulin}$ is a DNA-sequence we have already encountered in \textbf{\hyperref[SEC2]{Chapter \ref{SEC2}}} (see \textbf{\hyperref[EQINSULIN]{Equation \ref{EQINSULIN}}}), while the most verbose sequence we shall encountered in this work is named $\Theta_{rbcl}$ and is a real-life, biologically relevant RNA-sequence from a well-known plant protein: \textbf{RbcL}\footnote{$\Theta_{rbcl}$ is actually just a sample mRNA Sequence (partial, from \textit{Arabidopsis thaliana} RbcL gene), and is excerpted from a paper that includes the \textit{Arabidopsis thaliana} chloroplast genome, which contains the rbcL gene encoding the large subunit of RuBisCO\cite{Sato1999ArabidopsisChloroplastGenome}.}, the large subunit of \textbf{RuBisCO} --- the enzyme responsible for carbon fixation in photosynthesis. It is one of the most abundant and essential proteins in plants\cite{copilot_dna_assistant}.
 
 \section{A First Analysis}
 \label{SECFANAL}
@@ -1692,70 +1736,94 @@ Before we dive into the matter of solving the analytic problems under the four s
 For purposes of helping others replicate the analyses and results we shall obtain, we recommend that the following analysis method be used: 
 
 
-\textbf{We shall use TEA}\footnote{Instructions for how to install and use TEA/Transforming Executable Alphabet general-purpose text-processing oriented computer programming language are offered via the project's GitHub: \url{https://github.com/mcnemesis/cli_tttt}}\cite{Lutalo2024_taz}\cite{cli_tttt} --- a text-processing-oriented general-purpose computer programming language --- an executable software language by the author, via its \texttt{tttt} Linux package and utility, to implement most of the analyses we wish to conduct via the command-line.
+\textbf{We shall use TEA}\footnote{Instructions for how to install and use TEA/Transforming Executable Alphabet general-purpose text-processing oriented computer programming language are offered via the project's GitHub: \url{https://github.com/mcnemesis/cli_tttt} | Otherwise, also note that one can readily try TEA as well as run any of the TEA programs we have included in this chapter and anywhere in the book, without installing any special software, merely by visiting the online, browser-based \textbf{TEA WEB IDE} via \url{https://tea.nuchwezi.com}}\cite{Lutalo2024_taz}\cite{cli_tttt} --- a text-processing-oriented general-purpose computer programming language --- an executable software language by the author, via its \texttt{tttt} Linux package and utility, to implement most of the analyses we wish to conduct via the command-line.
 
 \begin{enumerate}
 \item {\textbf{To Process a Sequence via the Command-Line?} For example, copy-and-paste sequence $\Theta1$ into a file named \texttt{theta1\_dna.txt}}
 \item {\textbf{To compute the sequence symbol set?} For example, for $\Theta1$, run the following command against the sequence file to display the unique symbols in the sequence, in their natural order of first-occurrence within the sequence:
 
+\vspace{1em}
 \begin{verbatim}
 cat theta1_dna.txt | tttt -c "b:"
 TACG
 \end{verbatim}
+\vspace{1em}
 
 }
-\item {\textbf{To compute the modal sequence statistic?} First, note that the \textbf{modal sequence statistic} is well introduced, defined and how to use it demonstrated in \cite{transformatics}\footnote{See \textbf{Definition 1} in \cite{transformatics}}. That said, for example, for $\Theta1$, run the following command against the sequence file to display the unique symbols in the sequence, in their order of most frequent first, but also their natural order of first-occurrence within the sequence:
+\item {\textbf{To compute the modal sequence statistic?} First, note that the \textbf{modal sequence statistic} is well introduced, defined and how to use it demonstrated in \cite{transformatics}\footnote{See \textbf{Definition 1} in \cite{transformatics}, but also refer to \textbf{\hyperref[PROP5]{Proposal 5}} in \textbf{\hyperref[CHAPTRANS]{Chapter \ref{CHAPTRANS}}}.}. That said, for example, for $\Theta1$, run the following command against the sequence file to display the unique symbols in the sequence, in their order of most frequent first, but also their natural order of first-occurrence within the sequence:
 
+\vspace{1em}
 \begin{verbatim}
 cat theta1_dna.txt | tttt -c "u!"":"
-CGTA
+CTGA
 \end{verbatim}
-Note that, the actual command/TEA-code for this is just ``u!:", however, because of the way the Linux command-line treats the `!' symbol as a special character --- even inside strings, we must cleverly use it in a manner such as shown; we write ``u!"``:" to avoid the \textit{``unrecognized history modifier"} error if that code is written directly on the terminal. This shall apply to all the other cases where we must deal with the TEA command qualifier `!"\cite{Lutalo2024_taz}.
+\vspace{1em}
 
-The other workaround is to \textbf{first turn off the BASH history expansion modifier} --- this, so that we can just write clean TEA code such as ``u!:" without errors, directly on the Linux terminal interface. So, to disable history expasion for the \textit{active/current session} in your terminal, just run the command:
+Note that, the actual command/TEA-code for this is just \texttt{u!:}, however, because of the way the Linux command-line treats the `!' symbol as a special character --- even inside strings, we must cleverly use it in a manner such as shown; we write ``u!"``:" to avoid the \textit{``unrecognized history modifier"} error if that code is written directly on the terminal. This shall apply to all the other cases where we must deal with the TEA command qualifier `!"\cite{Lutalo2024_taz}.
 
+The other workaround is to \textbf{first turn off the BASH history expansion modifier} --- this, so that we can just write clean TEA code such as \texttt{u!:} without errors, directly on the Linux terminal interface. So, to disable history expasion for the \textit{active/current session} in your terminal, just run the command:
+
+\vspace{1em}
 \begin{verbatim}
 set +H
 \end{verbatim}
+\vspace{1em}
 
 And after that, you can just write clean TEA code for the above task as such:
+
+\vspace{1em}
 \begin{verbatim}
 cat theta1_dna.txt | tttt -c u!:
 CGTA
 \end{verbatim}
+\vspace{1em}
 }
 \item {\textbf{To compute the distribution of symbols within a sequence?} For example, to compute how many times the symbol `T' occurs in $\Theta1$, we can merely run the code:
 
+\vspace{1em}
 \begin{verbatim}
 cat theta1_dna.txt | tttt -c "d!:T|g:|v:|v!:"
 3
 \end{verbatim}
+\vspace{1em}
+
 And for the symbol `C', we just modify that code to count for `C' as such:
 
-
+\vspace{1em}
 \begin{verbatim}
 cat theta1_dna.txt | tttt -c "d!:C|g:|v:|v!:"
 4
 \end{verbatim}
 
-But if we wish to do the same for all distinct symbols within the sequence $\Theta1$ --- \textbf{and especially without having to explicitly list which symbols we are counting within the TEA code} --- meaning, no \textit{hard-coding} of the elements from the sequence's specific symbol set --- and equivalently, merely making the program symbol-set-independent, we could have used ``u!:" as in the previous task, since that TEA command counts how many times each unique symbol occurs in a sequence so as to compute the modal sequence, however, currently (with TEA version \textbf{1.0.8}\cite{cli_tttt}), the actual frequencies aren't returned with the output of ``u!:", and so, we shall want to use a work-around\footnote{\textbf{FUTURE WORK:} Provide a basic, in-built capability within the TEA instruction set, to allow for the automatic computation of a text sequence characteristic, $\hbar(\overset{>}{\Theta})$.} leveraging the above method for computing the frequency of each symbol in the input sequence. We can use the following non-trivial TEA program for that then:
+\vspace{1em}
 
+But if we wish to do the same for all distinct symbols within the sequence $\Theta1$ --- \textbf{and especially without having to explicitly list which symbols we are counting within the TEA code} --- meaning, no \textit{hard-coding} of the elements from the sequence's specific symbol set --- and equivalently, merely making the program symbol-set-independent --- or rather ``applicable to any sequence file", we could have used ``u!:" as in the previous task, since that TEA command counts how many times each unique symbol occurs in a sequence so as to compute the modal sequence, however, currently (with TEA version \textbf{1.3.6}\cite{cli_tttt}), the actual frequencies aren't returned with the output of ``u!:", and so, we shall want to use a work-around\footnote{\textbf{FUTURE WORK:} Provide a basic, in-built capability within the TEA instruction set, to allow for the automatic computation of a text sequence characteristic, $\hbar(\overset{>}{\Theta})$.} leveraging the above method for computing the frequency of each symbol in the input sequence. We can use the following non-trivial TEA program for that then:
+
+\vspace{1em}
 
     \begin{tcbverbatim}[title=EXAMPLE: Computing Sequence Characteristic using TEA on command line]
  cat theta1_dna.txt | tttt -c "v:vSEQ|v:vANA:{}|u!:|v:vMS|l:lMS|y:vMS|d!:^.|v:vSY|y:vMS|d:^.|v:vMS|y:vSEQ|d*!:vSY|g:|v:|v!:|v:vSYN|g*:{}:vSY:vSYN|x*:vANA|v:vANA|y:vMS|f:^$:lFIN|j:lMS|l:lFIN|y:vANA"
-C4G3T3A2 
+C4T3G3A2 
   \end{tcbverbatim}
+  
+  \vspace{1em}
 
-The essential result from running that program against $\Theta1$ is the string \textbf{C4G3T3A2}, which tells us that `C' occurs 4 times, `G' 3 times, ... , and then `A' only 2 times. 
+The essential result from running that program against $\Theta1$ is the string \textbf{C4T3G3A2}, which tells us that `C' occurs 4 times, `T' 3 times, ... , and then `A' only 2 times --- the symbols in the sequence, and their frequencies, sorted in descending order of most frequent (mode) first, otherwise by their natural order of first occurrence (when two symbols have same frequency). 
 }
 \item {\textbf{To compute the cardinality of a sequence?} For example, for $\Theta2$, run the following command against the sequence file to display the total number of all symbols within the sequence:
+
+\vspace{1em}
 
 \begin{verbatim}
 cat theta2_rna.txt | tttt -c "v:|v!:"
 18
 \end{verbatim}
 
+\vspace{1em}
+
 To confirm if TEA is telling us the correct thing, we can also count the characters in that sequence (assuming we pasted just the sequence symbols into the file and nothing else, and no delimiters between them), using the standard Linux/Unix command ``wc'' as such:
+
+\vspace{1em}
 
 \begin{verbatim}
 cat theta2_rna.txt | wc -c
@@ -1766,7 +1834,7 @@ cat theta2_rna.txt | wc -c
 \end{enumerate}
 
 
-Such is the power of the sequence analysis we can do with the TEA language, without any sophisticated tools. Thus, shall we analyze all the other sequences in our problem set, and to simplify things, we shall merely tabulate the analysis results for all six sequences as such:
+Such is the power of the sequence analysis we can do with the TEA language, without any sophisticated tools. Thus shall we analyze all the other sequences in our problem set, and to simplify things, we shall merely tabulate the analysis results for all six sequences as such:
 
 
 \begin{table}[H]
@@ -1781,7 +1849,7 @@ Such is the power of the sequence analysis we can do with the TEA language, with
 	${\Theta1}_{DNA}$ & $\langle T, A, C, G \rangle$ & $\psi_{DNA}$ &  
 	\centering
 	\begin{tabular}[t]{|c|c|c|c|}
-		C & G & T & A\\
+		C & T & G & A\\
 		\hline
 		4 & 3 & 3 & 2\\	
 		\hline
@@ -1793,7 +1861,7 @@ Such is the power of the sequence analysis we can do with the TEA language, with
 	${\Theta2}_{RNA}$ & $\langle A, U, G, C, T \rangle$ & $\psi_{na}$ &  
 	\centering
 	\begin{tabular}[t]{|c|c|c|c|c|}
-		G & C & A & U & T\\
+		G & A & C & U & T\\
 		\hline
 		6 & 4 & 4 & 3 & 1\\	
 		\hline
@@ -1819,7 +1887,7 @@ Such is the power of the sequence analysis we can do with the TEA language, with
 	${\Theta4}_{DNA}$ & $\langle T, A, C, G \rangle$ & $\psi_{DNA}$ &  
 	\centering
 	\begin{tabular}[t]{|c|c|c|c|}
-		C & G & T & A\\
+		C & T & G & A\\
 		\hline
 		4 & 3 & 3 & 2\\	
 		\hline
@@ -1859,6 +1927,51 @@ Such is the power of the sequence analysis we can do with the TEA language, with
 \end{table}
 
 
+\vspace{2em}
+
+To re-iterate the essential steps used to arrive at \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, note that the following methods leveraging TEA programs were used to arrive at the results in the computed columns:
+
+\begin{enumerate}
+\item{ \textit{Column 2}: \textbf{Unspecific Symbol Set}: 
+
+  \begin{tcolorbox}[teaterminalstyle, title=Computing Unspecific Symbol Set]
+  \begin{lstlisting}[language=TEA]
+  b:
+   \end{lstlisting}
+  \end{tcolorbox}
+
+}
+\item{ \textit{Column 4}: \textbf{Sequence Characteristic}:
+
+
+  \begin{tcolorbox}[teaterminalstyle, title=Computing Sequence Characteristic]
+  \begin{lstlisting}[language=TEA,breaklines=True]
+v:vSEQ|v:vANA:{}|u!:|v:vMS|l:lMS|y:vMS|d!:^.|v:vSY|y:vMS|d:^.|v:vMS|y:vSEQ|d*!:vSY|g:|v:|v!:|v:vSYN|g*:{}:vSY:vSYN|x*:vANA|v:vANA|y:vMS|f:^$:lFIN|j:lMS|l:lFIN|y:vANA
+   \end{lstlisting}
+  \end{tcolorbox}
+
+}
+\item{ \textit{Column 5}: \textbf{Sequence Cardinality}:
+
+  \begin{tcolorbox}[teaterminalstyle, title=Computing Sequence Cardinality]
+  \begin{lstlisting}[language=TEA]
+v:|v!:
+   \end{lstlisting}
+  \end{tcolorbox}
+
+}
+\item{ \textit{Column 6}: \textbf{Codon Count}:
+
+  \begin{tcolorbox}[teaterminalstyle, title=Computing Codon Count]
+  \begin{lstlisting}[language=TEA]
+v:|v!:|x!:/3|r.:
+   \end{lstlisting}
+  \end{tcolorbox}
+}
+\end{enumerate}
+
+
+Those TEA programs shall work without modification for any case in which you have a sequence and need to evaluate its properties as above, whether via the TEA command-line interface with \texttt{tttt} or via TEA on the WEB\footnote{For TEA on the WEB, you might for example take the sequence contents as we have seen them before --- just the contents of for example text file \texttt{theta1\_dna.txt}, and just copy-paste them into the input section on the interface --- ``TEA Input", and for the TEA program, copy-paste that into the ``TEA Code" section, after which you then hit the ``RUN" button, and the results shall appear in the ``TEA Output" section. Refer to \cite{Lutalo2024TEATAZ} or visit \url{https://tea.nuchwezi.com} for more.} or anywhere [in-between].
 
 
 
@@ -6175,7 +6288,7 @@ $\langle \text{\textit{hello world 123?}} \rangle \xrightarrow{i:\{\text{This is
 \invpi(\Theta_{hw}) \rightarrow \mathbb{N} & \text{bits in information}\\\\
 \invpi(\psi(\Theta_{hw})) \rightarrow \mathbb{N} & \text{cardinality of alphabet}\\\\
 \frac{\invpi(\psi(\Theta_{hw}))}{\invpi(\Theta_{hw})} \rightarrow \mathbb{R^+} & \text{sequence entropy}\\\\
-\psi(\Theta_{hw}) \times \psi(\Theta_{hw})^{[1,\invpi(\Theta_{hw})]} \quad \lor \quad \psi(\Theta_{hw}) \times \psi(\Theta_{hw})^{[1,\infty]} \rightarrow \mathbb{N} \times \mathbb{N} & \text{derivative languages}\\
+\psi(\Theta_{hw}) \times \psi(\Theta_{hw})^{[1,\invpi(\Theta_{hw})]} \quad\\ \lor \quad \psi(\Theta_{hw}) \times \psi(\Theta_{hw})^{[1,\infty]} \rightarrow \mathbb{N} \times \mathbb{N} & \text{derivative languages}\\
 \end{cases}
 \end{equation}
 
