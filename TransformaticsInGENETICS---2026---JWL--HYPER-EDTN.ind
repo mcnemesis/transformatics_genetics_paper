@@ -10,18 +10,24 @@
 
   \indexspace
 
-  \item ADM, \hyperpage{19}, \hyperpage{168}
+  \item ADM, \hyperpage{19}, \hyperpage{172}
+  \item anagram, \hyperpage{30}, \hyperpage{76}
 
   \indexspace
 
   \item chromosomes, \hyperpage{6}
+  \item codon, \hyperpage{32}
+    \subitem complements, \hyperpage{32}
   \item codons, \hyperpage{6}, \hyperpage{17}
+  \item complement codon, \hyperpage{32}
+  \item complement digit, \hyperpage{30}
   \item complement sequences, \hyperpage{27}
+  \item complement transform, \hyperpage{31}, \hyperpage{33}
 
   \indexspace
 
   \item data, \hyperpage{14}
-    \subitem coded or raw, \hyperpage{199}
+    \subitem coded or raw, \hyperpage{205}
   \item DNA, \hyperpage{5}
     \subitem as sequences, \hyperpage{11}
     \subitem base-pairing, \hyperpage{12}
@@ -47,19 +53,20 @@
   \item generator, \hyperpage{18}
     \subitem k- or n-gram generator, \hyperpage{18}
     \subitem natural symbol set, \hyperpage{20}
-    \subitem protein generator, \hyperpage{96}
+    \subitem protein generator, \hyperpage{100}
     \subitem unspecific symbol set, \hyperpage{20}
   \item genes, \hyperpage{6}
   \item genetic disease, \hyperpage{23}
   \item genetics, \hyperpage{5}
   \item genome, \hyperpage{6}
     \subitem analysis, \hyperpage{19}
-    \subitem sequencing, \hyperpage{55}
+    \subitem sequencing, \hyperpage{59}
   \item genome expression, \hyperpage{4}
 
   \indexspace
 
   \item hereditary disease, \hyperpage{23}
+  \item Hi-Fi o-SSI, \hyperpage{30}
 
   \indexspace
 
@@ -67,11 +74,11 @@
 
   \indexspace
 
-  \item mappings, \hyperpage{11}, \hyperpage{205}
-  \item matrices, \hyperpage{178}
-    \subitem as linear transformations, \hyperpage{197}
+  \item mappings, \hyperpage{11}, \hyperpage{211}
+  \item matrices, \hyperpage{184}
+    \subitem as linear transformations, \hyperpage{203}
   \item matrix
-    \subitem definition, \hyperpage{196}
+    \subitem definition, \hyperpage{202}
   \item mutations, \hyperpage{5}
 
   \indexspace
@@ -80,6 +87,11 @@
   \item na-sequence, \hyperpage{14}
   \item nucleobase, \hyperpage{7}
   \item nucleotides, \hyperpage{7}, \hyperpage{12, 13}
+  \item number expression, \hyperpage{103}
+
+  \indexspace
+
+  \item orthogonal symbol set identity, \hyperpage{30}
 
   \indexspace
 
@@ -87,9 +99,9 @@
 
   \indexspace
 
-  \item ribosome, \hyperpage{96}
-    \subitem flow-chart, \hyperpage{92}
-    \subitem state machine, \hyperpage{93}
+  \item ribosome, \hyperpage{100}
+    \subitem flow-chart, \hyperpage{96}
+    \subitem state machine, \hyperpage{97}
   \item RNA, \hyperpage{5}
     \subitem nucleotides, \hyperpage{13}
     \subitem ribonucleic acid, \hyperpage{5}
@@ -98,41 +110,45 @@
   \indexspace
 
   \item sequence
-    \subitem algebra, \hyperpage{26}, \hyperpage{226}
-    \subitem as matrices, \hyperpage{178}
+    \subitem algebra, \hyperpage{26}, \hyperpage{232}
+    \subitem anagram, \hyperpage{30}, \hyperpage{76}
+    \subitem as matrices, \hyperpage{184}
     \subitem complement, \hyperpage{27}
     \subitem complements, \hyperpage{25}
-    \subitem definition, \hyperpage{191}
+    \subitem definition, \hyperpage{197}
     \subitem flat-structure, \hyperpage{17}
     \subitem gene-program, \hyperpage{18}
-    \subitem higher-order, \hyperpage{18}, \hyperpage{179}, 
-		\hyperpage{199}
+    \subitem higher-order, \hyperpage{18}, \hyperpage{184}, 
+		\hyperpage{205}
     \subitem string notation, \hyperpage{15}
-  \item sequence algebra, \hyperpage{226}
+  \item sequence algebra, \hyperpage{232}
   \item sequence analysis
-    \subitem anagram distance, \hyperpage{19}, \hyperpage{168}
+    \subitem anagram distance, \hyperpage{19}, \hyperpage{172}
     \subitem base membership, \hyperpage{19}
     \subitem genetic pathologies, \hyperpage{22}
-  \item sequencing, \hyperpage{12}, \hyperpage{55}
+  \item sequences
+    \subitem decimal, \hyperpage{29}, \hyperpage{103}, \hyperpage{127}
+  \item sequencing, \hyperpage{12}, \hyperpage{59}
   \item sex, \hyperpage{5}
   \item START-codons, \hyperpage{21}
   \item STOP-codons, \hyperpage{22}
-  \item super-sequence, \hyperpage{178}
+  \item super-sequence, \hyperpage{183}
   \item symbol set
     \subitem natural, \hyperpage{20}
+    \subitem orthogonal, \hyperpage{30}
     \subitem unspecific, \hyperpage{20}
 
   \indexspace
 
   \item transformatics
-    \subitem as an algebra, \hyperpage{226}
-    \subitem definition, \hyperpage{226}
+    \subitem as an algebra, \hyperpage{232}
+    \subitem definition, \hyperpage{232}
     \subitem genetics introduction, \hyperpage{5}
     \subitem in medicine, \hyperpage{23}
-    \subitem mappings, \hyperpage{11}, \hyperpage{205, 206}
+    \subitem mappings, \hyperpage{11}, \hyperpage{211, 212}
     \subitem relation to frobenoids, \hyperpage{11}
   \item transformer
-    \subitem as mapping, \hyperpage{206}
+    \subitem as mapping, \hyperpage{212}
     \subitem complement, \hyperpage{28}
 
   \indexspace

@@ -64,7 +64,7 @@
 \indexentry{genetic disease|hyperpage}{23}
 \indexentry{hereditary disease|hyperpage}{23}
 \indexentry{transformatics!in medicine|hyperpage}{23}
-\indexentry{sequence!complements|hyperpage}{25}
+\indexentry{sequence!complement|hyperpage}{25}
 \indexentry{lu-number system|hyperpage}{25}
 \indexentry{$\psi_{01}$|hyperpage}{25}
 \indexentry{sequence!algebra|hyperpage}{26}
@@ -80,6 +80,13 @@
 \indexentry{orthogonal symbol set identity|hyperpage}{30}
 \indexentry{anagram|hyperpage}{30}
 \indexentry{sequence!anagram|hyperpage}{30}
+\indexentry{symbol set!orthogonal|hyperpage}{30}
+\indexentry{complement transform|hyperpage}{31}
+\indexentry{codon|hyperpage}{32}
+\indexentry{codon!complements|hyperpage}{32}
+\indexentry{complement codon|hyperpage}{32}
+\indexentry{complement transform|hyperpage}{33}
+\indexentry{complement transform|hyperpage}{33}
 \indexentry{sequencing|hyperpage}{59}
 \indexentry{genome!sequencing|hyperpage}{59}
 \indexentry{sequence!anagram|hyperpage}{76}

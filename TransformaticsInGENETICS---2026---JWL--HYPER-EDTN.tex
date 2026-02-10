@@ -1105,7 +1105,7 @@ With the two major problematic gene-program scenarios we have explored in the pr
 
 
 
-The idea of complements when applied to na-Sequences was first brought up in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}, and we get to see it depicted in an exemplary typical diagrammatic depiction of the DNA structure in \textbf{\hyperref[FIG1]{Figure \ref{FIG1}}}. However, apart from having talked about the fact that nucleic acids typically or naturally occur together in base-pairs depicting pairwise complements, we might wish to explore how to leverage transformatics to study this idea at a more general level, as well as from several different and overall useful perspectives. For example, we might wish to explore the matter of \textbf{na-Sequence} (as well as \textit{any sequence}) complements\index{sequence!complements} --- how they come up, how different kinds of sequence complements could be arrived at algorithmically, how they could be expoited,... and thus this section.
+The idea of complements when applied to na-Sequences was first brought up in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}, and we get to see it depicted in an exemplary typical diagrammatic depiction of the DNA structure in \textbf{\hyperref[FIG1]{Figure \ref{FIG1}}}. However, apart from having talked about the fact that nucleic acids typically or naturally occur together in base-pairs depicting pairwise complements, we might wish to explore how to leverage transformatics to study this idea at a more general level, as well as from several different and overall useful perspectives. For example, we might wish to explore the matter of \textbf{na-Sequence} (as well as \textit{any sequence}) complements\index{sequence!complement} --- how they come up, how different kinds of sequence complements could be arrived at algorithmically, how they could be expoited,... and thus this section.
 
 Assume we start by exploring simple binary sequences --- especially because bits help generalize many ideas in theory and practice. We can for example start by noticing that, like in the case of the interesting \textbf{Lu-Number System}\cite{lnspaper}\index{lu-number system} --- in which any kind of \textit{basic information} can be abstracted by mapping it to either signal ($>$) or anti-signal ($<$), and that \textit{complex information} can then be generated from that using transforms on basic LNS sequences or expressions, etc. We can start by looking at what could be said of the transforms on the binary sequence symbol set, $\psi_{bin}$ --- or better, $\psi_{01}$\index{$\psi_{01}$}. In our formulations, we shall denote the complement of a symbol $\rho$ by $\lnot\rho$, and for a sequence $\Theta$, with $\lnot\Theta$.
 
@@ -1440,7 +1440,7 @@ Which, given how that special sequence was derived/discovered(see \textbf{Sectio
 
 \begin{theo}[\textbf{Complement of an o-SSI is an o-SSI}]
 \label{THEOCOMPLOSSI}
-If some sequence $\Theta: \mathbb{N} \times \psi_\beta$ is an orthogonal symbol set identity for the base $\beta$, then its complement, $\lnot\Theta$ is also an orthogonal symbol set identity for $\beta$.\\
+If some sequence $\Theta: \mathbb{N} \times \psi_\beta$ is an orthogonal symbol set identity\index{symbol set!orthogonal} for the base $\beta$, then its complement, $\lnot\Theta$ is also an orthogonal symbol set identity for $\beta$.\\
 \end{theo}
 
 \vspace{2em}
@@ -1459,7 +1459,7 @@ We should note, and interestingly so, that the complement of any sequence $\Thet
 \vspace{2em}
 
 
-\begin{theo}[\textbf{Equivalence of Sequences under the Complement Transform}]
+\begin{theo}[\textbf{Equivalence of Sequences under the Complement Transform\index{complement transform}}]
 \label{THEOCOMPEQUIV}
 If two sequences $\Theta$ and $\Omega$ that are \textbf{not equal}, do have the same cardinality and similar distribution of members, then they are essentially equivalent under the sequence complement transform and some projections of their form.
 
@@ -1575,7 +1575,7 @@ Which is the famous START-codon \textbf{Methionine} (see \textbf{\hyperref[TAB2]
 \begin{trans}
 \label{TRANSGCA}
 $\Theta_{met} \xrightarrow{O_{complement}(\Theta,\dot{\psi}_{RNA})}  \langle G, C, A \rangle$\\
-That codon isn't the same as the source (ATG/AUG/Methionine), but there's some debate concerning what it actually is called --- \textbf{Table 1} in \cite{gregory1987oxford} names codon GCA as \textbf{Arginine}, while Wikipedia\cite{wikipedia_codon_tables} names it \textbf{Alanine}.
+That codon\index{codon} isn't the same as the source (ATG/AUG/Methionine), but there's some debate concerning what it actually is called --- \textbf{Table 1} in \cite{gregory1987oxford} names codon GCA as \textbf{Arginine}, while Wikipedia\cite{wikipedia_codon_tables} names it \textbf{Alanine}.
 \end{trans}
 
 \vspace{1em}
@@ -1593,7 +1593,7 @@ and we know that codon UAC is Tyrosine\cite{wikipedia_codon_tables}\footnote{Con
 
 \vspace{1em}
 
-It should perhaps be immediately noticeable that the ability to derive new/different/special sequences such as complement codons from ordinary na-Sequences might have some useful if not exciting applications as well as problems it awakens for the geneticists, molecular biologists and researchers of gene-sequencing\footnote{For those that do not know: Gene sequencing is the process of determining the exact order of nucleotides --- A, T, C and G --- in a segment of DNA that makes up a gene. It is like reading the biological ``code" that instructs cells how to build proteins and regulate functions\cite{copilot_dna_assistant}.} and analysis. For example, apart from acknowledging that na-Sequence's complements denote potentially legitimate na-helix strand partners for any two sequences (in the form $\Theta$ and $\lnot\Theta$), it would be further rewarding, to determine what other important things we might learn about how important sequences such as na-Sequences --- especially relative to how they are utilized in nature, behave or alter their usual function, if replaced by their complements either partially or wholly. Definitely, true for any sequences in general... it must be exhilirating to discover what other things we can learn with or from them, via these kinds of sequence transforms. 
+It should perhaps be immediately noticeable that the ability to derive new/different/special sequences such as complement codons\index{codon!complements}\index{complement codon} from ordinary na-Sequences might have some useful if not exciting applications as well as problems it awakens for the geneticists, molecular biologists and researchers of gene-sequencing\footnote{For those that do not know: Gene sequencing is the process of determining the exact order of nucleotides --- A, T, C and G --- in a segment of DNA that makes up a gene. It is like reading the biological ``code" that instructs cells how to build proteins and regulate functions\cite{copilot_dna_assistant}.} and analysis. For example, apart from acknowledging that na-Sequence's complements denote potentially legitimate na-helix strand partners for any two sequences (in the form $\Theta$ and $\lnot\Theta$), it would be further rewarding, to determine what other important things we might learn about how important sequences such as na-Sequences --- especially relative to how they are utilized in nature, behave or alter their usual function, if replaced by their complements either partially or wholly. Definitely, true for any sequences in general... it must be exhilarating to discover what other things we can learn with or from them, via these kinds of sequence transforms. 
 
 
 
@@ -1603,7 +1603,7 @@ It should perhaps be immediately noticeable that the ability to derive new/diffe
 \LARGE
 More \textbf{FUTURE WORK} for GENETICS Researchers:\\
 
-It is already interesting to note that, under complement transforms (which are special kinds of anagrams), the natural/universal protein synthesis START-codon AUG/ATG is equivalent to GCA (\textbf{\hyperref[TRANSGCA]{Transformation \ref{TRANSGCA}}}) or UAC (\textbf{\hyperref[TRANSUAC]{Transformation \ref{TRANSUAC}}}), but, \textbf{are those other codons also START-codons?} That said, is there a possibility that some natural process or genetic code translation or transformation might naturally produce ATG or AUG from any of those corresponding [symbolic] complement sequences? What would this teach us about natural/biological processors? What of the possibilities of using synthetic/artificial processors to render such complement operations useful? And is it actually possible to \textit{transmute} one set of nucleic acid sequences into another, with entirely different functions and identity via leveraging na-complements or complement transforms?
+It is already interesting to note that, under complement transforms\index{complement transform} (which are special kinds of anagrams), the natural/universal protein synthesis START-codon AUG/ATG is equivalent to GCA (\textbf{\hyperref[TRANSGCA]{Transformation \ref{TRANSGCA}}}) or UAC (\textbf{\hyperref[TRANSUAC]{Transformation \ref{TRANSUAC}}}), but, \textbf{are those other codons also START-codons?} That said, is there a possibility that some natural process or genetic code translation or transformation might naturally produce ATG or AUG from any of those corresponding [symbolic] complement sequences? What would this teach us about natural/biological processors? What of the possibilities of using synthetic/artificial processors to render such complement operations useful? And is it actually possible to \textit{transmute} one set of nucleic acid sequences into another, with entirely different functions and identity via leveraging na-complements or complement transforms\index{complement transform}?
 
 
 \end{minipage}}
@@ -1614,6 +1614,18 @@ It is already interesting to note that, under complement transforms (which are s
 
 \chapter{Sequence Analysis Using The Anagram Distance and the Modal Sequence Statistic}
 \label{SEC4A}
+
+
+
+{
+\LARGE
+
+\hl{
+
+TODO: Continue indexing starting from here
+
+}
+}
 
 
 
@@ -6108,7 +6120,7 @@ At this juncture, and returning to \textbf{\hyperref[PROBSC1]{Problem \ref{PROBS
 
 \vspace{1em}
 \begin{soln}
-Given $\Theta_{gr}$, we can merely compute its sequence characteristic as shown in \textbf{\hyperref[EQSCGR3]{Equation \ref{EQSCGR3}}}, and by inspecting the entries in that resulting SC for the two symbols under question --- `3' and `6', which are known to map to the entries: $\langle ... \langle 3, 2 \rangle, \langle 6, 1 \rangle ... \rangle$ in the SC, confirm that actually $\invpi(3,\Theta_{gr}) > \invpi(6,\Theta_{gr})$ since $\invpi(3,\Theta_{gr})=2 > \invpi(6,\Theta_{gr})=1$
+Given $\Theta_{gr}$, we can merely compute its sequence characteristic as shown in \textbf{\hyperref[EQSCGR3]{Equation \ref{EQSCGR3}}}, and by inspecting the entries in that resulting SC for the two symbols under question --- `3' and `6', which are known to map to the entries: $\langle ... \langle 3, 2 \rangle, \langle 6, 1 \rangle ... \rangle$ in the SC, confirm that actually $\invpi(3 \in \Theta_{gr}) > \invpi(6 \in \Theta_{gr})$ since $(\invpi(3 \in \Theta_{gr})=2) > (\invpi(6 \in \Theta_{gr})=1)$
 $\qed$
 \end{soln}
 \vspace{1em}
@@ -7059,8 +7071,8 @@ It should be worth noting that for transformatics --- such as when we have the s
 \label{TRANSSQUAR}
 $\Theta^n \xrightarrow{S(\Theta)} \Theta^*;$\\
 $\invpi(\Theta^n) = \invpi(\Theta^*) = n$\\
-$\land \quad \forall \theta_i \in \Theta) \quad \exists \theta_i^* \in \Theta^* : \theta_i^* = \theta_i^2 \quad \forall i \in [1,n]$\\
-$\land \quad \theta, \theta* \in \mathbb{R} \quad \forall \theta \in \Theta \quad \land \quad \theta* \in \Theta^*$
+$\land \quad \forall \theta_i \in \Theta \quad \exists \theta_i^* \in \Theta^* : \theta_i^* = \theta_i^2 \quad \forall i \in [1,n]$\\
+$\land \quad \theta, \theta^* \in \mathbb{R} \quad \forall \theta \in \Theta \quad \land \quad \theta^* \in \Theta^*$
 $\qed$
 \end{transf}
 
