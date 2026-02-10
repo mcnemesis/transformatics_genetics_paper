@@ -292,11 +292,26 @@ Wikipedia contributors.
 \newblock Accessed August 2, 2025. Provides codon-to-amino acid mappings and
   genetic code/name tables.
 
+\bibitem{transformatics_interview}
+Joseph~Willrich Lutalo.
+\newblock \textbf{An Interview and Meta-Review of Transformatics Introductory
+  Lecture of 3rd FEB 2026}.
+\newblock {\em Preprints}, February 2026.
+\newblock Access Original version: \url{https://www.academia.edu/164509813/}.
+
 \bibitem{Sato1999ArabidopsisChloroplastGenome}
 Shusei Sato, Yasukazu Nakamura, Takakazu Kaneko, Erika Asamizu, and Satoshi
   Tabata.
 \newblock Complete structure of the chloroplast genome of arabidopsis thaliana.
 \newblock {\em DNA Research}, 6(5):283--290, 1999.
+
+\bibitem{Lutalo2024TEATAZ}
+Joseph~Willrich Lutalo.
+\newblock \textbf{TEA TAZ - Transforming Executable Alphabet A: to Z: COMMAND
+  SPACE SPECIFICATION}.
+\newblock {\em Academia.edu}, 2024.
+\newblock Accessed on 14 May, 2025, via
+  \url{https://www.academia.edu/122871672/TEA_TAZ_Transforming_Executable_Alphabet_A_to_Z_COMMAND_SPACE_SPECIFICATION}.
 
 \bibitem{illingworth1996computing}
 Valerie Illingworth, editor.
@@ -501,14 +516,6 @@ Joseph~Willrich Lutalo.
 Joseph~Willrich Lutalo.
 \newblock \textbf{A Mini-Review of RNG Theory}, 2025.
 \newblock \url{https://www.academia.edu/143901839/A_Mini_Review_of_RNG_Theory}.
-
-\bibitem{Lutalo2024TEATAZ}
-Joseph~Willrich Lutalo.
-\newblock \textbf{TEA TAZ - Transforming Executable Alphabet A: to Z: COMMAND
-  SPACE SPECIFICATION}.
-\newblock {\em Academia.edu}, 2024.
-\newblock Accessed on 14 May, 2025, via
-  \url{https://www.academia.edu/122871672/TEA_TAZ_Transforming_Executable_Alphabet_A_to_Z_COMMAND_SPACE_SPECIFICATION}.
 
 \bibitem{shannon1948mathematical}
 Claude~E. Shannon.

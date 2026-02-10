@@ -1625,9 +1625,9 @@ We are going to talk about the matter of comparing or analyzing two or more na-S
 In particular, we shall be looking at na-Sequence analysis through lens of measures we have formalized earlier on\footnote{For those not yet familiar with the existing mathematical theories and results of transformatics, \textbf{\hyperref[CHAPTRANS]{Chapter \ref{CHAPTRANS}}} in the appendix does provide all the necessary background context relevant for mastering all the new [applied transformatics] material we are exploring in this chapter.}, and shall break down our analysis into four representative scenarios:
 
 \begin{enumerate}
-\item \textbf{Scenario A:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, not necessary the same, but which are of the same length, $n$, and with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_n) = n$), \textbf{how to quantify how similar or dissimilar} they are?
-\item \textbf{Scenario B:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, still not necessary the same, and of different lengths, $n$ and $k$, but with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
-\item \textbf{Scenario C:} Given some two potentially different, particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of \textbf{different lengths}, $n$ and $k$ and \textbf{with different symbol sets} ($\psi_{na}(\Theta1_n) \neq \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?
+\item \textbf{Scenario A:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, \textbf{not necessarily the same} ($(\Theta1_n = \Theta2_n) \quad \lor \quad (\Theta1_n \neq \Theta2_n)$), but which are of the same length, $\invpi(\Theta1_n) = \invpi(\Theta2_n) = n$, and with similar symbol sets\footnote{\textbf{NOTE} that in this case we are expressing this problem aspect using specific symbol sets --- such as $\hat{\psi}_{na}(\Theta1_n)$ --- and not say unspecific symbol sets ($\hat{\psi}(\Theta1_n)$), nor implicit symbol sets ($\psi(\Theta1_n)$), and neither natural symbol sets ($\psi_{na}(\Theta1_n)$), because, we do not wish to assume that the two sequences have the same exact ordering of distinct elements from the specified base symbol set --- $\psi_{na}$ --- a fact which for example the natural symbol set can't show/preserve, and yet, because we know the base, we do not want to only deal with base-less symbol sets such would be the case with the unspecific and implicit symbol set. For details concerning these different symbol sets, refer to the clarifying discussion offered in \textbf{Question 4} of \cite{transformatics_interview}.}, $(\hat{\psi}_{na}(\Theta1_n) \cong \hat{\psi}_{na}(\Theta2_n)) \quad \land \quad (\invpi(\psi_{na}(\Theta1_n)) = \invpi(\psi_{na}(\Theta2_n)) \leq n)$, \textbf{how to quantify how similar or dissimilar} they are?
+\item \textbf{Scenario B:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, still not necessary the same, and of different lengths, $(\invpi(\Theta1_n) = n) \neq (\invpi(\Theta2_k) = k)$, but with \textbf{similar symbol sets}, $(\hat{\psi}_{na}(\Theta1_n) \cong \hat{\psi}_{na}(\Theta2_k)) \quad \land \quad (\invpi(\psi_{na}(\Theta1_n)) = \invpi(\psi_{na}(\Theta2_k)) \leq Min(n,k))$, how to quantify how similar or dissimilar they are?
+\item \textbf{Scenario C:} Given some two \textbf{potentially different}, particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of \textbf{different lengths}, $n$ and $k$, and \textbf{with different symbol sets}, $((\hat{\psi}_{na}(\Theta1_n) \neq \hat{\psi}_{na}(\Theta2_k)) \quad \lor \quad (\invpi(\psi_{na}(\Theta1_n)) \neq \invpi(\psi_{na}(\Theta2_k))))$, how to quantify how similar or dissimilar they are?
 \item \textbf{Scenario D:} Finally, how, when given a particular na-Sequence, $Q_k$, and two collections/samples of other sequences ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, $m$ and $n$ respectively, and that belong to \textbf{labeled or classified populations} --- POPA and POPB, to determine which of the two populations the query sequence, $Q_k$, best-belongs to (so we classify it under one of those labels), as well as determine \textbf{which of \textit{the particular sample member sequences} from either collections it is closest to?}
 \end{enumerate}
 
@@ -1841,7 +1841,7 @@ Such is the power of the sequence analysis we can do with the TEA language, with
   \Large
 	\begin{tabular}[t]{|p{1.5cm}||p{3cm}|p{2cm}|p{6cm}|p{1.5cm}|p{1.5cm}|}
 	\hline
-	na-Seq & Unspecific Sequence Symbol Set: $\psi(\Theta)$ & Closest Parent Symbol Set & \makecell{Modal Sequence\\Statistic, $\overset{>}{\Theta}$\\ and Symbol\\ Distribution:\\ $\invpi(\rho \in \Theta)$} & $\invpi(\Theta)$ &  \makecell{Codon\\ Count:\\ $\invpi(\Theta^*)$\\ $\approx \frac{\invpi(\Theta)}{3}$}\\
+	na-Seq & Unspecific Sequence Symbol Set: $\hat{\psi}(\Theta)$ & Closest Parent Symbol Set & \makecell{Modal Sequence\\Statistic, $\overset{>}{\Theta}$\\ and Symbol\\ Distribution:\\ $\invpi(\rho \in \Theta)$} & $\invpi(\Theta)$ &  \makecell{Codon\\ Count:\\ $\invpi(\Theta^*)$\\ $\approx \frac{\invpi(\Theta)}{3}$}\\
 	\hline
 	\hline
 	
@@ -1978,15 +1978,16 @@ Those TEA programs shall work without modification for any case in which you hav
 \section{SCENARIO A --- the anagram distance measure}
 \label{SECSCENA}
 
+
 \begin{quote}
 \small
 \texttt{
-Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, of the same length, $n$, and with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_n) = n$), \textbf{how to quantify how similar or dissimilar} they are?}
+Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, \textbf{not necessarily the same} ($(\Theta1_n = \Theta2_n) \quad \lor \quad (\Theta1_n \neq \Theta2_n)$), but which are of the same length, $\invpi(\Theta1_n) = \invpi(\Theta2_n) = n$, and with similar symbol sets, $(\hat{\psi}_{na}(\Theta1_n) \cong \hat{\psi}_{na}(\Theta2_n)) \quad \land \quad (\invpi(\psi_{na}(\Theta1_n)) = \invpi(\psi_{na}(\Theta2_n)) \leq n)$, \textbf{how to quantify how similar or dissimilar} they are?}
 \end{quote}
 
 So, in this scenario, we are basically given some two particular na-Sequences, of the same length, and which have similar symbol sets, and are tasked with how to quantify their similarity or dissimilarity.
 
-Looking at our example sequences above in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, only two sequences satisfy the necessary conditions --- $\Theta1$ and $\Theta4$, which both have length \textbf{12} and which have similar symbol sets under base-na\footnote{Formally defined in \textbf{\hyperref[DEFUNA]{Definition \ref{DEFUNA}}}} --- $\psi_{na}(\Theta1) = \psi_{na}(\Theta4) = \langle A, C, G, T \rangle$, but also their unspecific sequence symbol sets are already similar.
+Looking at our example sequences above in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, only two sequences satisfy the necessary conditions --- $\Theta1$ and $\Theta4$, which both have length \textbf{12} and which have similar [natural/base]  symbol sets under base-na\footnote{Formally defined in \textbf{\hyperref[DEFUNA]{Definition \ref{DEFUNA}}}} --- $\psi_{na}(\Theta1) = \psi_{na}(\Theta4) = \langle A, C, G, T \rangle$, but also their unspecific sequence symbol sets are already similar.
 
 Actually, this case is very telling concerning what might actually happen with na-Sequences --- essentially, we note that, despite the two sequences \textbf{actually being different} --- for example, $\Theta1$ ends with codon \texttt{TTC}, while $\Theta4$ ends with \texttt{CAT}, and yet, looking at their breakdown analysis in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, we see that \textbf{they almost seem to be the same!} They have the same sequence symbol set, the same parent symbol set, the same modal sequence and symbol distribution, the same sequence length and thus same number of codons! So, how exactly can we quantifiably distinguish between such sequences in real life?
 
@@ -1994,7 +1995,7 @@ At this juncture, it definitely might make sense to recall what the purpose of t
 
 The ADM, $\tilde{A}(\Theta \rightarrow \Theta^*) \geq 0$ is essentially a measure that allows us to tell if any two sequences, $\Theta$ and $\Theta^*$, that might contain the same exact distinct symbols, but possibly in different proportions and/or order, are different or not. 
 
-So, since we can't use the usually sufficient\cite{transformatics} \textbf{modal sequence statistic} to distinguish between these two actually different sequences, let us attempt to compute their anagram distance instead\footnote{It shall be \textbf{very important} to bring to mind here, the fact that, the cases where comparing sequences or datasets using the ADM might not seem obvious, but as we already saw in a detailed attempt to distinguish between actually different sequences using many various traditional statistical measures  (of variation moreover) that all failed to show a difference between some two test sequences --- see \textbf{Table 1} in \cite{transformatics}, one shouldn't take ADM any less serious even for non-numerical data such as analysis nucleic acid sequences!}. 
+So, since we can't use the usually sufficient \textbf{modal sequence statistic}\cite{transformatics} to distinguish between these two actually different sequences, let us attempt to compute their anagram distance instead\footnote{It shall be \textbf{very important} to bring to mind here, the fact that, the cases where comparing sequences or datasets using the ADM might not seem obvious, but, as we already saw in a detailed attempt to distinguish between actually different sequences using many various traditional statistical measures  --- of variation moreover --- that all failed to show a difference between some two test sequences --- see \textbf{Table 1} in \cite{transformatics}, one shouldn't take the ADM any less serious even for non-numerical data such as analysis of nucleic acid sequences!}. 
 
 \begin{center}
 \fbox{\begin{minipage}{0.9\textwidth}
@@ -2005,16 +2006,19 @@ So, since we can't use the usually sufficient\cite{transformatics} \textbf{modal
 The Anagram Distance Measure (ADM), associated testing method, background and justifications for the new statistic were first laid out in the seminal paper\cite{adtpaper} introducing that measure and its theory. That work was later advanced in the transformatics paper\cite{transformatics}, and essentially, we can note that:
 
 \begin{itemize}
-\item{Given any two sequences, $\Theta$ and $\Theta^*$, that ideally should be of the same length, and with the same sequence symbol set, then we compute the anagram distance between them via the formula:
+\item{Given any two sequences, $\Theta$ and $\Theta^*$, that ideally should be of the same length, and with the same\footnote{Or more accurately, ``similar composition" symbol sets --- such as $\psi(\Theta) \cong \psi(\Theta^*)$ --- or perhaps similar natural symbols sets as per some base $\beta$ --- $\psi_\beta(\Theta) = \psi_\beta(\Theta^*)$ --- with this condition being most important for cases where the two sequences being compared aren't of same length or same symbol distribution, so that then, a more accurate approximate analysis might be applied to their modal sequence statistics --- which only makes sense if both MSS contain the same exact symbols irrespective of their member ordering.} sequence symbol set, then we compute the anagram distance between them via the formula:
 
+\vspace{1em}
 \begin{equation}
 \label{EQADM}
 \tilde{A}(\Theta \rightarrow \Theta^*) = \frac{1}{\invpi(\Theta)} \times \sum\limits_{i=1}^{\invpi(\Theta)} |I(\omega_i,\Theta^*) - i|
 \end{equation}
+\vspace{1em}
 }
 \item {
 And that we can interpret the results --- which shall always be a positive real number ($\mathbb{R^+}$) as such:
 
+\vspace{1em}
 \begin{equation}
 \label{EQINTADM}
 \tilde{A}(\Theta \rightarrow \Theta^*) = \begin{cases}
@@ -2024,6 +2028,7 @@ And that we can interpret the results --- which shall always be a positive real 
 > 1, & \Theta \ll \Theta^*, \text{potential indication there is chaos.}
 \end{cases}
 \end{equation}
+\vspace{1em}
 
 For a quick primer, on how this works out, assume we have $\Theta_1=\langle a, b, c\rangle$, $\Theta_2=\langle a, c, b\rangle$, $\Theta_3=\langle b, c, a\rangle$, $\Theta_4=\langle c, a, b\rangle$, $\Theta_5=\langle b, a, c\rangle$. Then we can see that:
 
@@ -2056,13 +2061,13 @@ So, if we return to our na-Sequence analysis, we see that for our tricky case co
 \centering
 \begin{tabular}[t]{|c||c|c|c|c|c|c|c|c|c|c|c|c|}
 \hline
-$\Theta4$ & T & A & C & T & C & C & G & G & G & C & A & T\\
+$i = I(\omega_i,\Theta1)$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12\\
 \hline
 $\omega_i \in \Theta1$ & T & A & C & G & G & G & C & A & T & T & C & C\\
 \hline
-$i$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12\\
+$\omega^*_i \in \Theta4$ & T & A & C & T & C & C & G & G & G & C & A & T\\
 \hline
-$I(\omega_i,\Theta4)$ & 1 & 2 & 3 & 7 & 8 & 9 & 5 & 11 & 4 & 12 & 6 & 10\\
+$I(\omega_i \in \Theta1,\Theta4) = I(\omega_i,\Theta4)$ & 1 & 2 & 3 & 7 & 8 & 9 & 5 & 11 & 4 & 12 & 6 & 10\\
 \hline
 $|I(\omega_i,\Theta4) - i|$ & 0 & 0 & 0 & 3 & 3 & 3 & 2 & 3 & 5 & 2 & 5 & 2\\
 \hline
@@ -2090,32 +2095,32 @@ And so, despite the measures and first analysis in \textbf{\hyperref[TABFAN]{Tab
 \begin{quote}
 \small
 \texttt{
-Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of different lengths, $n$ and $k$, but with similar symbol sets ($\psi_{na}(\Theta1_n) = \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?}
+Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, still not necessary the same, and of different lengths, $(\invpi(\Theta1_n) = n) \neq (\invpi(\Theta2_k) = k)$, but with \textbf{similar symbol sets}, $(\hat{\psi}_{na}(\Theta1_n) \cong \hat{\psi}_{na}(\Theta2_k)) \quad \land \quad (\invpi(\psi_{na}(\Theta1_n)) = \invpi(\psi_{na}(\Theta2_k)) \leq Min(n,k))$, how to quantify how similar or dissimilar they are?}
 \end{quote}
 
-So, given the conditions of this scenario and our sample sequences as summarized in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, we shall pick sequences $\Theta1$ and $\Theta3$, which both have the same sequence symbol set under base-na, and which have cardinalities 12 and 16 respectively.
+So, given the conditions of this scenario and our sample sequences as summarized in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, we shall pick sequences $\Theta1$ and $\Theta3$, which both have the same sequence symbol set under base-na, and which have different cardinalities; 12 and 16 respectively.
 
-Good enough, we have already worked through some of the essential details of the analysis method in \textbf{\hyperref[SECSCENA]{Section \ref{SECSCENA}}}. However, for this scenario, we can sum up how to conduct our comparative analysis thus:
+Good enough, we have already worked through some of the essential details of the analysis method in \textbf{\hyperref[SECSCENA]{Section \ref{SECSCENA}}} --- \textbf{Scenario A}. However, for the present scenario, we can sum up how to conduct our comparative analysis thus:
 
 \begin{enumerate}
-\item{First, conduct tabular analysis so as to see how the two sequences contrast against each other by the dimensions: 
+\item{First, conduct tabular analysis so as to see how the two sequences contrast against each other by the criteria: 
 \begin{enumerate}
-\item Their unspecific\footnote{The \textbf{Unspecific Symbol Set} concept is first introduced in \textbf{Definition 4} of the o-SSI paper\cite{ossipaper}} sequence symbol sets.
-\item Their closest parent/containing/superset symbol set.
-\item Their modal sequence statistic.
-\item Their \textbf{sequence characteristic} --- more about this soon.
-\item Their cardinality.
+\item Their unspecific\footnote{The \textbf{Unspecific Symbol Set} concept is first introduced in \textbf{Definition 4} of the o-SSI paper\cite{ossipaper}} sequence symbol sets --- such as $\hat{\psi}(\Theta1)$ Vs $\hat{\psi}(\Theta3)$.
+\item Their closest parent/containing/superset symbol set --- meaning, find some other symbol set, $\psi^*$, such that $\psi^* \supset \psi(\Theta1) \quad \land \quad \psi^* \supset \psi(\Theta3)$ --- equivalently, that $\psi^* \supset \psi(\Theta1) \cup \psi(\Theta3)$ .
+\item Their modal sequence statistic --- such as $\overset{>}{\Theta1}$ Vs $\overset{>}{\Theta3}$.
+\item Their \textbf{sequence characteristic} --- more about this soon: essentially, $\hbar(\overset{>}{\Theta1})$ Vs $\hbar(\overset{>}{\Theta3})$.
+\item Their cardinality --- that is, $\invpi(\Theta1)$ Vs $\invpi(\Theta3)$
 \end{enumerate}
 
 We have already seen how to do all the above analysis steps and why, in the First Analysis described in \textbf{\hyperref[SECFANAL]{Section \ref{SECFANAL}}}.
 }
-\item So, if none of the analyses in the first step help show the \textbf{quantifiable similarities} or \textbf{quantifiable differences} between the two sequences, then proceed to using the more subtle Anagram Distance Measure on them. How to do this we have already covered well in \textbf{\hyperref[SECSCENA]{Scenario A}}.
-\item In case the ADM also can't find any differences between the two sequences, then most likely, their only differences are \textbf{cosmetic} --- such as simply naming the same sequence differently, and thus the two sequences under analysis can be considered to be \textbf{quantifiably similar}.
+\item So, \textbf{if none} of the analyses in the first step help show the \textbf{quantifiable similarities} or \textbf{quantifiable differences} between the two sequences, then proceed to using the more subtle Anagram Distance Measure on them. How to do this we have already covered well in \textbf{\hyperref[SECSCENA]{Scenario A}}.
+\item \textbf{In case the ADM also can't find any differences between the two sequences} after having already failed to find any such quantifiable differences with the earlier analyses, then most likely, their only differences are \textbf{cosmetic} --- such as simply naming the same sequence differently, and thus the two sequences under analysis can be considered to be \textbf{quantifiably similar}.
 \end{enumerate}
 
-So, first, note that, from \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, that even though the two sequences we are looking at, $\Theta1$ and $\Theta3$ have the same \textbf{specific sequence symbol set}\footnote{The concept of the \textbf{specific symbol set} is first introduced in \textbf{Definition 3} of \cite{ossipaper}} (under base-na or DNA): $\psi_{na}(\Theta1) = \psi_{na}(\Theta3) = \langle A, C, G, T \rangle$, and yet, their \textbf{unspecific sequence symbol sets} are different! 
+So, first, note that, from \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, that even though the two sequences we are looking at, $\Theta1$ and $\Theta3$ have the same \textbf{specific sequence symbol set}\footnote{The concept of the \textbf{specific symbol set} is first introduced in \textbf{Definition 3} of \cite{ossipaper}, but also further discussed in \textbf{Question 4} of \cite{transformatics_interview}.} (under base-na but also with base-DNA): $\hat{\psi}_{na}(\Theta1) = \hat{\psi}_{na}(\Theta3) = \langle A, C, G, T \rangle$, and yet, their \textbf{unspecific sequence symbol sets} are different! 
 
-So, their first difference is in their unspecific sequence symbol sets: $\psi(\Theta1) = \langle T, A, C, G\rangle$ and yet $\psi(\Theta3) = \langle A, T, G, C\rangle$. So, at minimum, we know that they have quantifiable difference in the ordering of their similar symbols within either sequence just by this analysis --- especially because these symbol sets respect order of first occurrence within the sequence they summarize.
+Thus, their first difference is in their unspecific sequence symbol sets: $\hat{\psi}(\Theta1) = \langle T, A, C, G\rangle$ and yet $\hat{\psi}(\Theta3) = \langle A, T, G, C\rangle$. So, at minimum, we know that they have quantifiable difference in the [first-occurrence] ordering of their similar symbols within either sequence just by this analysis --- especially because these particular symbol set types respect order of first occurrence within the sequence they summarize.
 
 If we must continue to still analyze the two sequences, we can further note that they have the same closest\footnote{I say ``closest parent symbol set" because, for several scenarios in analyzing sequences, one can encounter cases where two sequences have symbols that belong to more than one symbol set where that other symbol set is larger than the sequence symbol set. For example, the case of having to decide if a sequence such as ``101" belongs to base 2, base 3, base 10 or even base-36! Or if we have the sequence ``AUG" that might span the RNA-symbol set, but also $\psi_{na}$, and talking of which, we must note that, in principle at least, all na-Sequences could also be classified as sequences of terms from the Latin-Alphabet --- the symbol set $\psi_{az}$!} parent symbol set, $\psi_{DNA}$. And so, that's a similarity.
 
@@ -2126,7 +2131,7 @@ And then we come to the matter of their modal sequence statistics. For this case
 \item $\overset{>}{\Theta3} = \langle G, A, T, C \rangle$
 \end{itemize}
 
-So, this alone can tell us that the two sequences differ quantifiably in terms of either their relative distribution of members/symbols, or that they differ in the order of first occurrence of their symbols at worst.
+So, this alone can tell us that the two sequences differ quantifiably in terms of either their relative distribution of members/symbols, or that they differ in the order of first occurrence of their symbols at worst --- essentially, the last, iff the symbols have ties on their relative frequencies in either original sequences.
 
 Also, note that, the modal sequence statistic (MSS), is definitely computed readily by considering the relative frequency of terms within the sequence under analysis, and so, when we look at the MSS column in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, we see that below each of the terms for the MSS, we also display the associated symbol frequencies. This is important as we are to see hereafter...
 
@@ -2142,11 +2147,11 @@ Concerning this, note that, unlike \textbf{\hyperref[SECSCENA]{Scenario A}} wher
 
 \begin{defn}[The \textbf{Sequence Characteristic}, $\hbar(\overset{>}{\Theta})$]
 \label{DEFSEQCHAR}
-If a sequence $\Theta$ has the modal sequence statistic $\overset{>}{\Theta} = \langle \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i, \rangle$, so that we can express it as a string concatenation of its distinct symbols in their relative order of highest frequency and first occurrence such as $\omega_1\omega_2\omega_3\ldots\omega_k$ for some $k$ the size of $\overset{>}{\Theta}$, then, if for each $\omega_i$ we also know its corresponding frequency in $\Theta$, such as $f_i$ for $\omega_i$, then writing the frequency next to the symbol such as $\omega_if_i$ for all terms in $\overset{>}{\Theta}$ produces a string that contains both the information about the unique modal sequence of $\Theta$, but also the information about how frequent each symbol occurred. We shall call such an expression the \textbf{Sequence Characteristic}, and shall denote it as  $\hbar(\overset{>}{\Theta})$, so that we can then write for $\Theta$, its corresponding sequence characteristic as:
+If a sequence $\Theta$ has the modal sequence statistic\footnote{Refer to rigorous definition: \textbf{\hyperref[DEFMSSFIN]{Definition \ref{DEFMSSFIN}}}} $\overset{>}{\Theta} = \langle \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i, \rangle$, so that we can express it as a string concatenation of its distinct symbols in their relative order of highest frequency and first occurrence such as $\omega_1\omega_2\omega_3\ldots\omega_k$ for some $k$ the size of $\overset{>}{\Theta}$, then, if for each $\omega_i$ we also know its corresponding frequency in $\Theta$, such as $f_i$ for $\omega_i$, then writing the frequency next to the symbol such as $\omega_if_i$ for all terms in $\overset{>}{\Theta}$ produces a string that contains both the information about the unique modal sequence of $\Theta$, but also the information about how frequent each symbol occurred. We shall call such an expression the \textbf{Sequence Characteristic}, and shall denote it as  $\hbar(\overset{>}{\Theta})$, so that we can then write for $\Theta$, its corresponding sequence characteristic as:
 
 \begin{equation}
 \label{EQSECHARDEF}
- \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i\cdot f_i
+ \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \overset{>}{\Theta}} \omega_i\cdot f_i
 \end{equation}
 
 Note that, for any $\Theta$, if $\invpi(\Theta) = n$ and $\invpi(\omega_i \in \Theta) = f_i$, then $1 \leq f_i \leq n \quad \land \quad \sum\limits_{1 \leq i \leq \invpi(\overset{>}{\Theta})} f_i = n$.
@@ -2156,6 +2161,13 @@ Note that, for any $\Theta$, if $\invpi(\Theta) = n$ and $\invpi(\omega_i \in \T
 \end{minipage}
 }
 \end{center}
+
+
+{
+\LARGE
+
+\hl{TODO: proceed from here...}
+}
 
 
 
@@ -2184,7 +2196,7 @@ It should be worth noting, that in contrast to the previous scenario, the sequen
 \begin{quote}
 \small
 \texttt{
-Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of \textbf{different lengths}, $n$ and $k$ and with different symbol sets ($\psi_{na}(\Theta1_n) \neq \psi_{na}(\Theta2_k)$), how to quantify how similar or dissimilar they are?}
+Given some two \textbf{potentially different}, particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of \textbf{different lengths}, $n$ and $k$, and \textbf{with different symbol sets}, $((\hat{\psi}_{na}(\Theta1_n) \neq \hat{\psi}_{na}(\Theta2_k)) \quad \lor \quad (\invpi(\psi_{na}(\Theta1_n)) \neq \invpi(\psi_{na}(\Theta2_k))))$, how to quantify how similar or dissimilar they are?}
 \end{quote}
 
 Without repeating ourselves nor wasting time, note that, from the cases we have in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, this scenario might be applicable to sequences such as $\Theta1$ and $\Theta_{rbcl}$ for example. And, from the analysis procedure we have already encountered in \textbf{\hyperref[SECSCENB]{Scenario B}}, we can definitely use any of several available ways to quantify their similarities or differences. However, most useful perhaps, might be to just look at their sequence characteristics:
@@ -3330,7 +3342,7 @@ but in a more robust case, we can also randomize the symbol set to be used in ge
 \end{equation}\\
 
 }
-\item \textbf{USYMBOLSET}$(\Omega)$ is a function that reduces the input argument $\Omega$, which is expected to be a sequence of some symbols --- unique or not, to its \textbf{unspecific symbol set} --- $\psi(\Omega)$\footnote{See \textbf{Definition 4} in \cite{ossipaper}}.
+\item \textbf{USYMBOLSET}$(\Omega)$ is a function that reduces the input argument $\Omega$, which is expected to be a sequence of some symbols --- unique or not, to its \textbf{unspecific symbol set} --- $\hat{\psi}(\Omega)$\footnote{See \textbf{Definition 4} in \cite{ossipaper}}.
 \item \textbf{PROTRACT}$(\Theta, n)$ is a transformation of the sequence of [possibly] distinct $n$ symbols from the source sequence $\Theta$ such that the resultant sequence is of length\footnote{But just like the first parameter might be any sequence of symbols, also, the second parameter could be any positive number, and by which, the function shall \textbf{either shrink/truncate or grow/multiply} the input sequence to the required \textbf{multiplier} size} $k \times 2 \times \invpi(\psi_y)$ and spans the source sequence symbol set\footnote{As you shall see in the sample outputs and as well as the actual implementation source code for our \textbf{RSG}, the choice of the protraction parameter $k \times 2 \times \invpi(\psi_y)$, is both to be sensitive to the length of the input sequence's unique symbol set, but also the size of final output required --- both factors influence the quality of the result in terms of randomness/entropy.}.
 \item  \textbf{SHUFFLE}$(\Theta)$ is a function such as a generalization of \textbf{slsa($\cdot$)} from \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLUSHUFFLEB}}} that returns a shuffled/randomized instance of any input sequence such as $\Theta$ that it is given.
 \item \textbf{SELECT}$(x, \Theta)$ is a function that can return the first $x$ terms from $\Theta$ as the result of its invocation for some $x \leq \invpi(\Theta)$.
@@ -5737,12 +5749,13 @@ $\Theta^n \xrightarrow{f(\Theta^n,k))=\Theta^k} \Theta^k = \langle \theta_{i \in
 \section{Proposed Abstractions Leveraging Transformatics}
 \label{SECPROP}
 
-Before we kick-off, note that, as in many previous works on transformatics since \cite{transformatics}, when we have any sequence $\Theta^n : \forall i \in [1,n] : \exists \theta_i \in \Theta^n$, then, when we wish to talk of the \textbf{position index} of some member element or symbol $\theta_i$ in $\Theta^n$, such that we mean the member in that sequence that is located or positioned at exactly index $i$ in the range $[1,n]$, then we shall, as introduced and elaborated upon in the introduction section of \cite{transformatics}, merely use the notation:\\
+Before we kick-off, note that, as in many previous works on transformatics since \cite{transformatics}, when we have any sequence $\Theta^n : \forall i \in [1,n] : \exists \theta_i \in \Theta^n$, then, when we wish to talk of the \textbf{position index} of some member element or symbol $\theta_i$ in $\Theta^n$, such that we mean the member in that sequence that is located or positioned at exactly index $i$ in the range $[1,n]$, then we shall, as introduced and elaborated upon in the introduction section of \cite{transformatics}, merely use the notation:
 
-
+\vspace{1em}
 \begin{equation}
 I(\theta_i, \Theta^n) = i \quad \forall \theta_i \in \Theta^n
 \end{equation}
+\vspace{1em}
 
 Further, if we have any two elements from the sequence (whether or not they are equal: $\theta_i = \theta_j$ or not: $\theta_i \neq \theta_j$), and yet, if $i \neq j$, then $I(\theta_i, \Theta^n) \neq I(\theta_j, \Theta^n)$, and if $i \leq j$, then $I(\theta_i, \Theta^n) \leq I(\theta_j, \Theta^n)$. 
 
@@ -5750,35 +5763,40 @@ As you shall come to appreciate when studying formulations and expressions in tr
 
 \subsection{Proposal 1: The o-SSI Sequence from any Sequence\cite{ossipaper}}
 
-Assume we consider the sequence $\Theta: \mathbb{N} \times \psi_*$ of any length and spanning an arbitrary symbol set $\psi_*$. Then, in case we wish to reduce $\Theta$ to a representative sequence $\Theta_{ossi}$ that only contains elements of $\Theta$ spanning the symbol set, $\psi_\beta$, of some particular base, $\beta$; in which case, $\Theta_{ossi}$ would be an \textbf{orthogonal symbol set identity} (o-SSI) sequence under base-$\beta$, then, the following o-SSI-generator --- also \textbf{an extractor}\footnote{In the sense that, where a sequence already contains the essential symbols spanning some particular symbol set, and even though they might be scattered about or `buried' around in the sequence surrounded by `noise', the function would merely extract those essential symbols [only,] from that sequence in their natural order of first occurrence.} and \textbf{a reducer} transformer, defined using the calculus and semantics of transformatics, would suffice\footnote{Say, and as almost all transformatics might be in practice --- consists of a clear, succinct and complete specification that can readily be translatable into a working or equivalent computer program based on or defined using the chaining of sequence transformers such as in a language as TEA\cite{cli_tttt}.}:\\
+Assume we consider the sequence $\Theta: \mathbb{N} \times \psi_*$ of any length and spanning an arbitrary symbol set $\psi_*$. Then, in case we wish to reduce $\Theta$ to a representative sequence $\Theta_{ossi}$ that only contains elements of $\Theta$ spanning the symbol set, $\psi_\beta$, of some particular base, $\beta$; in which case, $\Theta_{ossi}$ would be an \textbf{orthogonal symbol set identity} (o-SSI) sequence under base-$\beta$, then, the following o-SSI-generator --- also \textbf{an extractor}\footnote{In the sense that, where a sequence already contains the essential symbols spanning some particular symbol set, and even though they might be scattered about or `buried' around in the sequence surrounded by `noise', the function would merely extract those essential symbols [only,] from that sequence in their natural order of first occurrence.} and \textbf{a reducer} transformer, defined using the calculus and semantics of transformatics, would suffice\footnote{Say, and as almost all transformatics might be in practice --- consists of a clear, succinct and complete specification that can readily be translatable into a working or equivalent computer program based on or defined using the chaining of sequence transformers such as in a language as TEA\cite{cli_tttt}.}:
 
-
+\vspace{1em}
 \begin{transf}[The \textbf{o-SSI Extractor}]
 \label{TRANSFOSSI}
 $\Theta \langle \theta_{i \in [1,n]} \rangle: \mathbb{N} \times \psi_*  \xrightarrow{O_{filter}(\Theta,\psi_\beta)} \Theta^k \langle \theta_i \rangle : \mathbb{N} \times \psi_\beta = \Theta_{ossi};\\ 0 \leq k \leq \invpi(\psi_\beta) \leq \invpi(\Theta) = n \in \mathbb{N} : \forall \theta_i \in \Theta^k \implies \exists \theta_i \in \psi_\beta \quad\\
-\land \quad \forall i,j \in \mathbb{N} \land \theta_i, \theta_j \in \Theta^k: I(\theta_i,\Theta) \leq I(\theta_j,\Theta) \implies I(\theta_i,\Theta^k) \leq I(\theta_j,\Theta^k) $\\
+\land \quad \forall i,j \in \mathbb{N} \land \theta_i, \theta_j \in \Theta^k: I(\theta_i,\Theta) \leq I(\theta_j,\Theta) \implies I(\theta_i,\Theta^k) \leq I(\theta_j,\Theta^k) $
 \end{transf}
+\vspace{1em}
 
 
-First, realize that \textbf{\hyperref[TRANSFOSSI]{Transformer \ref{TRANSFOSSI}}} leverages the concept of a sequence filter as first introduced in \textbf{\hyperref[RES8]{Foundational Result 8}}. Also, note that, the \textbf{o-SSI Sequence}, $\Theta_{ossi}$, of any sequence $\Theta$ under $\beta$ would likewise be related to the concept of the \textbf{Specific Symbol Set}\footnote{Refer to \textbf{Definition 3} in \cite{ossipaper}}, $\hat{\psi}(\Theta)$, of that sequence, in the sense that, at most, $\Theta_{ossi}$ is equivalent to $\hat{\psi}_\beta(\Theta)$  or that their cardinalities and memberships are related as:
+First, realize that \textbf{\hyperref[TRANSFOSSI]{Transformer \ref{TRANSFOSSI}}} leverages the concept of a sequence filter as first introduced in \textbf{\hyperref[RES8]{Foundational Result 8}}. Also, note that, the \textbf{o-SSI Sequence}, $\Theta_{ossi}$, of any sequence $\Theta$ under $\beta$ would likewise be related to the concept of the \textbf{Specific Symbol Set}\footnote{Refer to \textbf{Definition 3} in \cite{ossipaper}}, $\hat{\psi}_\beta(\Theta)$, of that sequence, in the sense that, at most, $\Theta_{ossi}$ is equivalent to $\hat{\psi}_\beta(\Theta)$  or that their cardinalities and memberships are related as:
 
+\vspace{1em}
 \begin{equation}
 \invpi(\Theta_{ossi}) \leq  \invpi(\hat{\psi}_\beta(\Theta)) \leq \invpi(\psi_\beta) \leq  \invpi(\Theta)
 \end{equation}
+\vspace{1em}
 
 and as for membership:
 
-
+\vspace{1em}
 \begin{equation}
 \psi(\Theta_{ossi}) \subseteq  \hat{\psi}_\beta(\Theta) \subseteq \psi_\beta \subseteq  \Theta
 \end{equation}
+\vspace{1em}
 
 
 \subsection{Proposal 2: The Anagram Distance Between Any Two Sequences\cite{adtpaper}}
 \label{PROP2}
 
-Occasionally, one shall find that they need to quantify how different some two or more sequences are. In the simplest case, we might merely sort a collection of sequence by the relative size of each sequence, and thus differentiate them by their sequence cardinality for example --- $\invpi(\Theta)$ Vs $\invpi(\Theta^*)$ for some two sequences involved in a general transformation such as:\\
+Occasionally, one shall find that they need to quantify how different some two or more sequences are. In the simplest case, we might merely sort a collection of sequence by the relative size of each sequence, and thus differentiate them by their sequence cardinality for example --- $\invpi(\Theta)$ Vs $\invpi(\Theta^*)$ for some two sequences involved in a general transformation such as:
 
+\vspace{1em}
 \begin{trans}
 \label{TRANS1}
 $\Theta \rightarrow \Theta^* \quad \implies \quad \invdel_{\Theta,\Theta^*} = (\invpi(\Theta) - \invpi(\Theta^*));\\
@@ -5787,11 +5805,13 @@ $\Theta \rightarrow \Theta^* \quad \implies \quad \invdel_{\Theta,\Theta^*} = (\
  0 & \text{conservation}\\
  < 0 & \text{protraction}
  \end{cases}
-$\\
+$
 \end{trans}
+\vspace{1em}
 
-or if we only wish to care about absolute distance..\\
+or if we only wish to care about absolute distance..
 
+\vspace{1em}
 \begin{trans}
 \label{TRANS1A}
 $\Theta \rightarrow \Theta^* \quad \implies \quad |\invdel|_{\Theta,\Theta^*} = |\invpi(\Theta) - \invpi(\Theta^*)|;\\
@@ -5799,19 +5819,21 @@ $\Theta \rightarrow \Theta^* \quad \implies \quad |\invdel|_{\Theta,\Theta^*} = 
 > 0 & \text{different}\\
  0 & \text{similar}\\
  \end{cases}
-$\\
+$
 \end{trans}
+\vspace{1em}
 
 However \textbf{\hyperref[TRANS1]{Transformation \ref{TRANS1}}} and \textbf{\hyperref[TRANS1A]{Transformation \ref{TRANS1A}}} only cater for comparisons or analysis relative to size of the sequences being compared. And such that $\invdel_{\Theta,\Theta^*}$ or $|\invdel|_{\Theta,\Theta^*}$ shall work just fine where the purpose of the sequence analysis is just concerned with the relative sizes of the sequences. But, and as we established in the \textbf{Anagram Distance Theory}(ADT) paper\cite{adtpaper}, there are many important cases when it is necessary to compare two or more sequences \textbf{based on the relative ordering of members in them and not just by their member composition or frequencies}. Thus the \textbf{Anagram Distance Measure}(ADM)\index{ADM}\index{sequence analysis!anagram distance}, and which, for any two sequences as presented above, the essential measure would be:
 
-
+\vspace{1em}
 \begin{equation}
 \tilde{A}(\Theta \rightarrow \Theta^*) = \frac{1}{\invpi(\Theta)} \times \sum\limits_{\forall \theta_i \ \in \Theta}^{\invpi(\Theta)} | I(\theta_i,\Theta) - I(\theta_i,\Theta^*)|
 \end{equation} 
+\vspace{1em}
 
 Which, as we saw in \cite{adtpaper}, has the interesting interpretation as:
 
-
+\vspace{1em}
 \begin{equation}
 \label{EQTHET}
 \tilde{A}(\Theta \rightarrow \Theta^*) = \begin{cases}
@@ -5820,6 +5842,21 @@ Which, as we saw in \cite{adtpaper}, has the interesting interpretation as:
 > 1, & \Theta \ll \Theta^*.
 \end{cases}
 \end{equation}
+\vspace{1em}
+
+And otherwise a more elaborate analysis as worked out in \textbf{\hyperref[SECSCENA]{Section \ref{SECSCENA}}} of \cite{lutalo_2025_trans_genetics}: 
+
+\vspace{1em}
+\begin{equation}
+\label{EQINTADMTHES}
+\tilde{A}(\Theta \rightarrow \Theta^*) = \begin{cases}
+0, & \Theta = \Theta^*,  \text{no differences}\\
+< 1, & \Theta \approx \Theta^*, \text{different in at minimum two positions}\\
+= 1, & \Theta \neq \Theta^*, \text{all members shifted by exactly 1 position}\\
+> 1, & \Theta \ll \Theta^*, \text{potential indication there is chaos.}
+\end{cases}
+\end{equation}
+\vspace{1em}
 
 And thus can help us observe/compute, quantify and [objectively] appreciate, the \textbf{relative disorder} resulting from one sequence being transformed into another (of potentially similar cardinality and member composition/distribution). In earlier work, we have already demonstrated and argued that the \textbf{ADM} is a very important formalism in mathematical statistics and statistical analysis, especially in cases dealing with \textbf{measures of variability} (MoVs) where traditional measures such as the range, mean deviation, variance and standard deviation statistics cannot (\textbf{or fail to}) catch any actual differences between two or more sequences as we quantifiably/provably demonstrated in \cite{transformatics}, but also where simpler difference measures such as just differences in cardinality (such as in \textbf{\hyperref[TRANS1]{Transformation \ref{TRANS1}}}) aren't sufficient or conclusive enough for the special cases that the ADM caters for; more about this topic has also been covered well in earlier work\cite{lutalo_2025_trans_genetics}.
 
@@ -5827,16 +5864,19 @@ And thus can help us observe/compute, quantify and [objectively] appreciate, the
 \subsection{Proposal 3: The Transformer Compression Ratio of any Sequence Transformation\cite{transformatics}}
 \label{PROP3}
 
-In  \textbf{\hyperref[TRANS1]{Transformation \ref{TRANS1}}} we have seen that there might be cases in which a transformation results in a sequence that is observably larger or smaller than the source sequence; \textbf{protraction} or \textbf{compression} respectively. And as was laid down in \cite{transformatics} --- refer to \textbf{Section 4.3} of \cite{transformatics} --- we can measure the \textit{overall} effect of a transform on the \textit{entire} sequence merely by comparing the sequence cardinalities of the source and resultant sequence as such:\\
+In  \textbf{\hyperref[TRANS1]{Transformation \ref{TRANS1}}} we have seen that there might be cases in which a transformation results in a sequence that is observably larger or smaller than the source sequence; \textbf{protraction} or \textbf{compression} respectively. And as was laid down in \cite{transformatics} --- refer to \textbf{Section 4.3} of \cite{transformatics} --- we can measure the \textit{overall} effect of a transform on the \textit{entire} sequence merely by comparing the sequence cardinalities of the source and resultant sequence as such:
 
-
+\vspace{1em}
 \begin{equation}
 \label{EQTCR}
 \xi(\Theta \rightarrow \Theta^*) = \frac{\invpi(\Theta^*)}{\invpi(\Theta)}
 \end{equation}
+\vspace{1em}
+
 
  The measure, $\xi(\Theta \rightarrow \Theta^*)$ is called the \textbf{Transformer Compression Ratio} (TCR), and when compared against $\invdel_{\Theta,\Theta^*}$, note that TCR is always positive, whereas the later, as we saw in  \textbf{\hyperref[TRANS1]{Transformation \ref{TRANS1}}}, might be negative too; this, because, well, TCR and $\invdel_{\Theta,\Theta^*}$ or even $|\invdel|_{\Theta,\Theta^*}$ all are based on comparing the cardinalities of the source and resultant sequences involved in a transformation, however, unlike them, TCR is computed via a division operation (thus ratio), while the others are based on a subtraction operation. In fact, TCR spans $\mathbb{R^+}$ as was laid out in \cite{transformatics}, and as we saw in that work, given $\invpi(\Theta) \geq 0$ for any sequence $\Theta$, and if $\invpi(\Theta) \geq 1$ for any \textbf{meaningful transformation}\footnote{Well, this is somewhat murky ground, because, in fact, it can make sense for the source sequence to have 0 cardinality such as in a transform as $\Theta \xrightarrow{f(\cdot)} \Theta^*$ where for example $f(\cdot)$ is an operator that can output a non-empty sequence even when given an empty input --- such as the case of a \textbf{\hyperref[RES9]{sequence generator}}!}, can be interpreted as such:
  
+ \vspace{1em}
  \begin{equation}
 \label{EQTCRCASES}
 \xi(\Theta \rightarrow \Theta^*) = \begin{cases}
@@ -5845,36 +5885,43 @@ In  \textbf{\hyperref[TRANS1]{Transformation \ref{TRANS1}}} we have seen that th
 > 1, & \Theta \text{ was extended/protracted},\\
 < 1, & \Theta \text{ was reduced/compressed}.
 \end{cases}
-\end{equation}\\
+\end{equation}
+\vspace{1em}
+
 
 \subsection{Proposal 4: The Piecemeal Compression Ratio of Any Sequence Transformation\cite{transformatics}}
 
-Further, with regards to how we might quantify the effects of some sequence transformation, note that, in cases such as:\\
+Further, with regards to how we might quantify the effects of some sequence transformation, note that, in cases such as:
 
+\vspace{1em}
 \begin{trans}
 \label{TRANSPCR}
 $\Theta: \mathbb{N} \times \psi_\beta \rightarrow \Omega: \mathbb{N} \times \psi_\alpha;\\
-\psi_\beta \neq \psi_\alpha \quad \lor \quad \exists \omega \in \Omega: \omega \notin \Theta$\\
+\psi_\beta \neq \psi_\alpha \quad \lor \quad \exists \omega \in \Omega: \omega \notin \Theta$
 \end{trans}
+\vspace{1em}
 
-As explained in \cite{transformatics} --- refer to \textbf{Section 4.3} of \cite{transformatics} --- when the source and resultant sequence do not share any members in common, \textbf{and yet we wish to evaluate the deformation aspects of the transform}, then we can only compare them using a measure such as \textbf{TCR} --- it only cares about sizes and not membership. However, in case they \textbf{at least} share 1 member in common, then, we can restrict our comparison to only their common aspects --- i.e $\psi(\Theta) \cap \psi(\Theta^*)$, and thus, as laid out in \textbf{Definition 3} in \cite{transformatics}, we can compute a special measure called the \textbf{Piecemeal Compression Ratio}(PCR) as such:\\
+As explained in \cite{transformatics} --- refer to \textbf{Section 4.3} of \cite{transformatics} --- when the source and resultant sequence do not share any members in common, \textbf{and yet we wish to evaluate the deformation aspects of the transform}, then we can only compare them using a measure such as \textbf{TCR} --- it only cares about sizes and not membership. However, in case they \textbf{at least} share 1 member in common, then, we can restrict our comparison to only their common aspects --- i.e $\psi(\Theta) \cap \psi(\Theta^*)$, and thus, as laid out in \textbf{Definition 3} in \cite{transformatics}, we can compute a special measure called the \textbf{Piecemeal Compression Ratio}(PCR) as such:
 
-
+\vspace{1em}
 \begin{equation}
 \label{EQPCR}
 \Psi(\Theta \rightarrow \Theta^*) = \frac{1}{\invpi(\psi_\Theta \cap \psi_{\Theta^*})} \times \sum\limits_{\forall x \in (\psi_\Theta \cap \psi_{\Theta^*})} \frac{\invpi(x \in \Theta^*) - \invpi(x \in \Theta)}{\invpi(x \in \Theta)}
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 And for the case of \textbf{\hyperref[TRANSPCR]{Transformation \ref{TRANSPCR}}}, can be re-written as:
 
+\vspace{1em}
 \begin{equation}
 \label{EQPCR2}
 \Psi(\Theta \rightarrow \Theta^*) = \frac{1}{\invpi(\psi_\beta \cap \psi_\alpha)} \times \sum\limits_{\forall x \in (\psi_\beta \cap \psi_\alpha)} \frac{\invpi(x \in \Theta^*) - \invpi(x \in \Theta)}{\invpi(x \in \Theta)}
 \end{equation}
+\vspace{1em}
 
-And as was laid out in that foundational paper on transformatics\cite{transformatics}, we can interpret \textbf{PCR} values as such\footnote{More research needed, with regards to this matter though.}\\
+And as was laid out in that foundational paper on transformatics\cite{transformatics}, we can interpret \textbf{PCR} values as such\footnote{More research needed, with regards to this matter though.}
 
-
+\vspace{1em}
 \begin{equation}
 \label{EQPCRCASES}
 \Psi(\Theta,\Theta^*) = \begin{cases}
@@ -5883,7 +5930,8 @@ undefined, & \psi_\Theta \cap \psi_{\Theta^*} = \emptyset \implies \text{no memb
 > 0, & \exists x \in \psi_\Theta \cap \psi_{\Theta^*}: \invpi(x \in \Theta^*) > \invpi(x \in \Theta) \implies \text{protraction},\\
 < 0, & \exists x \in \psi_\Theta \cap \psi_{\Theta^*}: \invpi(x \in \Theta^*) < \invpi(x \in \Theta) \implies \text{compression}.
 \end{cases}
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 
 Finally, note that, like $\invdel_{\Theta,\Theta^*}$ and $|\invdel|_{\Theta,\Theta^*}$ that we saw in \textbf{\hyperref[PROP2]{Proposal 2}}, \textbf{PCR} is based on a subtraction operation, however, and in addition to that, like both ADM and TCR, it also has division operations in it that makes it take on fractional number\cite{Lutalo2024gtnc} values too. In fact, $\Psi(\Theta,\Theta^*) \in \mathbb{R}$ or equivalently  $-\infty \leq \Psi(\Theta,\Theta^*) \leq \infty$, unlike ADM that only spans $\mathbb{R^+}$, and thus, is great for evaluating deformations involving either growth or contraction as we have seen. 
@@ -5893,32 +5941,37 @@ Finally, note that, like $\invdel_{\Theta,\Theta^*}$ and $|\invdel|_{\Theta,\The
 \label{PROP5}
 
 
-For especially situations when we are not interested in comparing one sequence to another, but when we merely wish to better understand some particular sequence --- like say, not just its size as could be told by computing the \textbf{\hyperref[RES4]{sequence cardinality}}, nor about its membership as we might tell using the \textbf{\hyperref[RES5]{sequence symbol set}}, there might be a case when we want to combine those two concepts into one; such as when we wish to \textbf{compare the relative frequency of members in a particular sequence}. Essentially, we might be faced with the problem:\\
+For especially situations when we are not interested in comparing one sequence to another, but when we merely wish to better understand some particular sequence --- like say, not just its size as could be told by computing the \textbf{\hyperref[RES4]{sequence cardinality}}, nor about its membership as we might tell using the \textbf{\hyperref[RES5]{sequence symbol set}}, there might be a case when we want to combine those two concepts into one; such as when we wish to \textbf{compare the relative frequency of members in a particular sequence}. Essentially, we might be faced with the problem:
 
+\vspace{1em}
 \begin{prob}
 \label{PROB1}
-Given\\ $\Theta^n : \mathbb{N} \times \psi_\beta : \theta_i, \theta_j \in \Theta^n : \theta_i \neq \theta_j  \quad \land \quad i,j \in [1,n] : n \in \mathbb{N}: 1 \leq \invpi(\theta_i \in \Theta^n) < n$,\\ is it true that $\invpi(\theta_i \in \Theta^n) \geq \invpi(\theta_j \in \Theta^n)$?\\
+Given\\ $\Theta^n : \mathbb{N} \times \psi_\beta : \theta_i, \theta_j \in \Theta^n : \theta_i \neq \theta_j  \quad \land \quad i,j \in [1,n] : n \in \mathbb{N}: 1 \leq \invpi(\theta_i \in \Theta^n) < n$,\\ is it true that $\invpi(\theta_i \in \Theta^n) \geq \invpi(\theta_j \in \Theta^n)$?
 \end{prob}
+\vspace{1em}
 
 So, as laid out in \textbf{Section 4.1} of \cite{transformatics}, we can approach a solution to \textbf{\hyperref[PROB1]{Problem \ref{PROB1}}} by leveraging the concept of the \textbf{modal sequence statistic} (MSS). Essentially, we would compute $\overset{>}{\Theta^n}$, which, by \textbf{Definition 1} in that foundation paper on transformatics\cite{transformatics}, would give us a resultant sequence based on/derived from the source sequence $\Theta^n$, such that the elements/members of the former exactly span the symbol set of the later/source sequence --- i.e. $\psi(\Theta^n)$, and yet, there are not only no duplicates, but that the elements are sorted such that the member/symbol that occurs the most (with highest frequency) in $\Theta^n$, occurs earliest in  $\overset{>}{\Theta^n}$ than any other element, or at least (such as where any two elements have the same relative frequency in $\Theta^n$), they occur in their natural order of first-occurrence.
 
-Thus, if we compute a MSS for the sequence specified in \textbf{\hyperref[PROB1]{Problem \ref{PROB1}}} as such:\\
+Thus, if we compute a MSS for the sequence specified in \textbf{\hyperref[PROB1]{Problem \ref{PROB1}}} as such:
 
-
+\vspace{1em}
 \begin{trans}
 $\Theta^n \xrightarrow{O_{mss}(\Theta^n)} \overset{>}{\Theta^n}$
 \end{trans}
+\vspace{1em}
 
-Then, we can solve the problem thus:\\
+Then, we can solve the problem thus:
 
+\vspace{1em}
 \begin{soln}
 \label{SOLN1}
 $\invpi(\theta_i \in \Theta^n) \geq \invpi(\theta_j \in \Theta^n)$? = 
 $\begin{cases}
 true & I(\theta_i,\overset{>}{\Theta^n}) \leq I(\theta_j,\overset{>}{\Theta^n})\\
 false & otherwise
-\end{cases}$\\
+\end{cases}$
 \end{soln}
+\vspace{1em}
 
 
 Not only shall we come to appreciate and love the MSS for being a statistical measure first introduced in a work on transformatics\cite{transformatics}, but that, like the traditional statistical measure it is inspired by --- the \textbf{mode} of any dataset/sequence --- it is indispensable as a summary statistic, and yet, unlike and though as powerful as the mode, gives us a whole collection of summary statistics in one measure (as a \textbf{sequence or vector of modes}, and not merely as a single scalar value which is all that the traditional mode is). 
@@ -5926,89 +5979,139 @@ Not only shall we come to appreciate and love the MSS for being a statistical me
 Also, we have argued in several works exploring and applying transformatics --- such as in \cite{transformatics}, \cite{adtpaper} and \cite{lutalo_2025_trans_genetics} --- that the modal sequence statistic can be more useful to compute than many traditional summary statistics, but also that, it can help us arrive at other, more useful statistics (such as the next two sections are going to tackle), and for domains or problems such as in \textbf{statistical artificial intelligence}, machine learning and data mining to name but a few, is one of few core measures that can \textbf{greatly simplify decision making problems in an autonomous way}.
 
 
+
+Finally, note that, as per the notation and arguments employed in \textbf{\hyperref[DEFSEQCHAR]{Definition \ref{DEFSEQCHAR}}} in \cite{lutalo_2025_trans_genetics} when defining and formalizing the related concept of the sequence characteristic, we can succinctly define the modal sequence statistic for any sequence $\Theta$, as such:
+
+\vspace{1em}
+\begin{defn}[The \textbf{Modal Sequence Statistic}, $\overset{>}{\Theta}$]
+\label{DEFMSSFIN}
+$ $\\
+Given any sequence $\Theta$ that consists of well ordered finite collection of $n$ symbols, $\omega_i$, possibly with some being repeated --- essentially that we have the sequence $\Theta : \mathbb{N} \times \psi_{\omega} \quad \land \quad \invpi(\Theta) = n$, then the measure:
+
+\vspace{1em}
+\begin{equation}
+\overset{>}{\Theta} = \langle \prod\limits_{\omega_i \in \psi_\omega} \omega_i \rangle 
+\end{equation}
+\vspace{1em}
+
+is the \textbf{modal sequence statistic} (MSS) of the given sequence, and that $\psi_\omega \cong \psi(\Theta)$, such that, we can produce or generate $\overset{>}{\Theta}$ from $\Theta$ via the following transformer:
+
+\vspace{1em}
+\begin{transf}[The MSS Generator, $O_{mss}(\Theta)$]
+\label{TRANSMSSGEN}
+$ $\\
+$\Theta \xrightarrow{O_{mss}(\Theta)} \overset{>}{\Theta} = \langle \prod\limits_{\omega_i \in \psi_\omega} \omega_i \rangle ;$\\
+$\forall \omega_i \in \Theta \quad \exists \omega_i \in \overset{>}{\Theta}$\\
+$\land \quad I(\omega_i,\overset{>}{\Theta}) < I(\omega_j,\overset{>}{\Theta})$\\ 
+$\quad \implies \quad \invpi(\omega_i \in \Theta) > \invpi(\omega_j \in \Theta) \quad \lor \quad I(\omega_i,\Theta) < I(\omega_j, \Theta) \quad \forall i,j \in \mathbb{N}$\\
+$\land \quad \psi_\omega \cong  \psi(\Theta) \cong \overset{>}{\Theta}$\\
+$\land \quad \invpi(\psi(\Theta)) = \invpi(\overset{>}{\Theta}) \leq \invpi(\Theta)$
+$\qed$
+\end{transf}
+\vspace{1em}
+
+
+\end{defn}
+\vspace{1em}
+
+
 \subsection{Proposal 6: The Characteristic of Any Sequence\cite{lutalo_2025_trans_genetics}}
 \label{PROP6}
 
-In \textbf{\hyperref[PROP5]{Proposal 5}}, we have encountered the MSS, which is a neat summary statistic applicable to any sequence. However, and as you might notice when we are presented with a sequence such as:\\
+In \textbf{\hyperref[PROP5]{Proposal 5}}, we have encountered the MSS, which is a neat summary statistic applicable to any sequence. However, and as you might notice when we are presented with a sequence such as:
 
-
+\vspace{1em}
 \begin{equation}
 \label{EQPROP6}
 \text{golden ratio} = 1.618033988749895 \implies \Theta_{gr} = \langle 1, 6, 1, 8, 0, 3, 3, 9, 8, 8, 7, 4, 9, 8, 9, 5 \rangle 
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
-Which is essentially the golden ratio\footnote{Basically, $\frac{(1 + \sqrt{5})}{2}$} reduced to a sequence of just its first 16 significant digits, and which, if we must summarize it using say $\overset{>}{\Theta_{gr}}$ as such:\\
+Which is essentially the golden ratio\footnote{Basically, $\frac{(1 + \sqrt{5})}{2}$} reduced to a sequence of just its first 16 significant digits, and which, if we must summarize it using say $\overset{>}{\Theta_{gr}}$ as such:
 
-
+\vspace{1em}
 \begin{trans}
 \label{TRANSMSS1}
-$ \Theta_{gr} \xrightarrow{O_{mss}(\cdot)} \overset{>}{\Theta_{gr}} = \langle 8, 9, 1, 3, 6, 0, 7, 4, 5 \rangle$\\
+$ \Theta_{gr} \xrightarrow{O_{mss}(\cdot)} \overset{>}{\Theta_{gr}} = \langle 8, 9, 1, 3, 6, 0, 7, 4, 5 \rangle$
 \end{trans}
+\vspace{1em}
 
-maps to a summary statistic, its modal sequence, of cardinality 9, and yet, if one wanted to solve the following problem:\\
+maps to a summary statistic, its modal sequence, of cardinality 9, and yet, if one wanted to solve the following problem:
 
+\vspace{1em}
 \begin{prob}
 \label{PROBSC1}
-Given the sequence $\Theta_{gr}$ in \textbf{\hyperref[EQPROP6]{Equation \ref{EQPROP6}}}, how can we exactly tell if indeed $\invpi(3,\Theta_{gr}) > \invpi(6,\Theta_{gr})$, or if $\invpi(3,\Theta_{gr}) = \invpi(6,\Theta_{gr})$?\\
+Given the sequence $\Theta_{gr}$ in \textbf{\hyperref[EQPROP6]{Equation \ref{EQPROP6}}}, how can we exactly tell if indeed $\invpi(3,\Theta_{gr}) > \invpi(6,\Theta_{gr})$, or if $\invpi(3,\Theta_{gr}) = \invpi(6,\Theta_{gr})$?
 \end{prob}
+\vspace{1em}
 
 
 Note that though we might attempt to solve \textbf{\hyperref[PROBSC1]{Problem \ref{PROBSC1}}} naively by merely counting the terms in the sequence under question, or by merely checking the relative positions of the involved terms in the computed MSS such as in \textbf{\hyperref[TRANSMSS1]{Transformation \ref{TRANSMSS1}}}, it is not the best way to arrive at a solution. Moreover, and as we have encountered in the previous proposal, and especially since we know that elements that tie on frequency shall occur adjacent to each other in the MSS of a sequence --- ignoring their order of first-occurrence --- and yet, without having a way to look at the frequencies of each element in the MSS, we might not correctly solve this problem \textit{elegantly} and/or optimally (for very large sequences such as the kind we saw when treating of genetic code sequences\cite{lutalo_2025_trans_genetics} that might span millions of terms). 
 
 And so, as laid out in a treatise on how transformatics might be applied in the sequence-heavy science of genetics\cite{lutalo_2025_trans_genetics}, in particular, \textbf{Section 6.4} of \cite{lutalo_2025_trans_genetics}, instead of just the MSS, we can instead compute the related \textbf{sequence characteristic} (SC) statistic, and which, as per \textbf{Definition 8} in that work, consists of both the same exact elements as in the MSS, but with each distinct symbol followed by/annotated by its relative frequency in the original/source sequence. Essentially, given some sequence $\Theta$, and given we know its modal sequence statistic is $\overset{>}{\Theta}$, the SC is as:
 
-
+\vspace{1em}
 \begin{equation}
 \label{EQSECHARDEF}
  \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i\cdot f_i
 \end{equation}
+\vspace{1em}
 
-Which, if we apply \textbf{\hyperref[EQSECHARDEF]{Equation \ref{EQSECHARDEF}}} to our example sequence $\Theta_{gr}$, produces the corresponding sequence characteristic as such:\\
+Which, if we apply \textbf{\hyperref[EQSECHARDEF]{Equation \ref{EQSECHARDEF}}} to our example sequence $\Theta_{gr}$, produces the corresponding sequence characteristic as such:
 
-
+\vspace{1em}
 \begin{trans}
 \label{TRANSSCGR}
 $ \Theta_{gr} \xrightarrow{O_{mss}(\cdot)} \overset{>}{\Theta_{gr}}  \xrightarrow{O_{sc}(\cdot)} \hbar(\overset{>}{\Theta_{gr}}) \rightarrow 8_4.9_3.1_2.3_2.6_1.0_1.7_1.4_1.5_1 \\
- \rightarrow \textbf{8}4.\textbf{9}3.\textbf{1}2.\textbf{3}2.\textbf{6}1.\textbf{0}1.\textbf{7}1.\textbf{4}1.\textbf{5}1 \rightarrow \textbf{8}4\textbf{9}3\textbf{1}2\textbf{3}2\textbf{6}1\textbf{0}1\textbf{7}1\textbf{4}1\textbf{5}1$\\
+ \rightarrow \textbf{8}4.\textbf{9}3.\textbf{1}2.\textbf{3}2.\textbf{6}1.\textbf{0}1.\textbf{7}1.\textbf{4}1.\textbf{5}1 \rightarrow \textbf{8}4\textbf{9}3\textbf{1}2\textbf{3}2\textbf{6}1\textbf{0}1\textbf{7}1\textbf{4}1\textbf{5}1$
 \end{trans}
+\vspace{1em}
 
-Note that, in \textbf{\hyperref[TRANSSCGR]{Transformation \ref{TRANSSCGR}}}, we had the liberty to express the sequence characteristic in 3 different ways other than what was originally demonstrated in \cite{lutalo_2025_trans_genetics}. In particular, the alternative expressions for the SC thus shown, shall, such as in this case when we are dealing with a sequence made of entirely numbers/digits, help to make the SC more readable/understandable; instead of merely concatenating the computed frequency of each symbol to the associated symbol such as the basic definition for the SC calls for (see \textbf{Definition 8} in \cite{lutalo_2025_trans_genetics}), and yet, without loss of generality, we can redefine the SC as such:\\
+Note that, in \textbf{\hyperref[TRANSSCGR]{Transformation \ref{TRANSSCGR}}}, we had the liberty to express the sequence characteristic in 3 different ways other than what was originally demonstrated in \cite{lutalo_2025_trans_genetics}. In particular, the alternative expressions for the SC thus shown, shall, such as in this case when we are dealing with a sequence made of entirely numbers/digits, help to make the SC more readable/understandable; instead of merely concatenating the computed frequency of each symbol to the associated symbol such as the basic definition for the SC calls for (see \textbf{Definition 8} in \cite{lutalo_2025_trans_genetics}), and yet, without loss of generality, we can redefine the SC as such:
 
+\vspace{1em}
 \begin{equation}
 \label{EQSECHARDEF2}
  \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \psi(\Theta)} {\omega_i}_{f_i}
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
-So that, as we have seen in the first SC expression in  \textbf{\hyperref[TRANSSCGR]{Transformation \ref{TRANSSCGR}}}, we can merely write the SC for $\Theta_{gr}$ as such:\\
+So that, as we have seen in the first SC expression in  \textbf{\hyperref[TRANSSCGR]{Transformation \ref{TRANSSCGR}}}, we can merely write the SC for $\Theta_{gr}$ as such:
 
-
+\vspace{1em}
 \begin{equation}
 \label{EQSCGR2}
  \hbar(\overset{>}{\Theta_{gr}}) = 8_4.9_3.1_2.3_2.6_1.0_1.7_1.4_1.5_1 \rightarrow 8_4 9_3 1_2 3_2 6_1 0_1 7_1 4_1 5_1
-\end{equation}\\ 
+\end{equation}
+\vspace{1em}
 
-The final form in \textbf{\hyperref[EQSCGR2]{Equation \ref{EQSCGR2}}} also kicking out the ``." symbols meant to show/imply that we are merely concatenating the terms to each other. In fact, the SC could be also expressed as a sequence of \textbf{2-grams}\footnote{In \textbf{Chapter 3} of \cite{lutalo_2025_trans_genetics} we already introduced \textbf{N-grams} or rather higher-order sequences, but shall revisit them again in \textbf{\hyperref[PROP8]{Proposal 8}}.}:\\
+The final form in \textbf{\hyperref[EQSCGR2]{Equation \ref{EQSCGR2}}} also kicking out the ``." symbols meant to show/imply that we are merely concatenating the terms to each other. In fact, the SC could be also expressed as a sequence of \textbf{2-grams}\footnote{In \textbf{Chapter 3} of \cite{lutalo_2025_trans_genetics} we already introduced \textbf{N-grams} or rather higher-order sequences, but shall revisit them again in \textbf{\hyperref[PROP8]{Proposal 8}}.}:
 
-
+\vspace{1em}
 \begin{equation}
 \label{EQSECHARDEF3}
  \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \psi(\Theta)} \langle \omega_i, f_i \rangle
 \end{equation}
+\vspace{1em}
 
-So that, we can again further express the sequence characteristic for the golden ratio as such\footnote{\textbf{FUTURE WORK:} feels like we might be able to visually/graphically express the sequence characteristic summary statistic! Especially for sequences of numeric data --- essentially, treating the SC in the form shown in \textbf{\hyperref[EQSECHARDEF3]{Equation \ref{EQSECHARDEF3}}} as coordinates in a Cartesian space!}\\
+So that, we can again further express the sequence characteristic for the golden ratio as such\footnote{\textbf{FUTURE WORK:} feels like we might be able to visually/graphically express the sequence characteristic summary statistic! Especially for sequences of numeric data --- essentially, treating the SC in the form shown in \textbf{\hyperref[EQSECHARDEF3]{Equation \ref{EQSECHARDEF3}}} as coordinates in a Cartesian space!}
 
+\vspace{1em}
 \begin{equation}
 \label{EQSCGR3}
  \hbar(\overset{>}{\Theta_{gr}}) = \langle \langle 8, 4 \rangle, \langle 9, 3 \rangle, \langle 1, 2 \rangle, \langle 3, 2 \rangle, \langle 6, 1 \rangle, \langle 0, 1 \rangle, \langle 7, 1 \rangle, \langle 4, 1 \rangle, \langle 5, 1 \rangle \rangle 
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 
-At this juncture, and returning to \textbf{\hyperref[PROBSC1]{Problem \ref{PROBSC1}}}:\\
+At this juncture, and returning to \textbf{\hyperref[PROBSC1]{Problem \ref{PROBSC1}}}:
 
+\vspace{1em}
 \begin{soln}
 Given $\Theta_{gr}$, we can merely compute its sequence characteristic as shown in \textbf{\hyperref[EQSCGR3]{Equation \ref{EQSCGR3}}}, and by inspecting the entries in that resulting SC for the two symbols under question --- `3' and `6', which are known to map to the entries: $\langle ... \langle 3, 2 \rangle, \langle 6, 1 \rangle ... \rangle$ in the SC, confirm that actually $\invpi(3,\Theta_{gr}) > \invpi(6,\Theta_{gr})$ since $\invpi(3,\Theta_{gr})=2 > \invpi(6,\Theta_{gr})=1$
-$\qed$\\
+$\qed$
 \end{soln}
+\vspace{1em}
 
 Before we move on, and as we shall come to appreciate when we come to \textbf{\hyperref[PROP9]{Proposal 9}}, we can solve many problems not only by leveraging the theory and mathematics of transformatics, but also by leveraging its philosophy, which, as one shall establish, underlies how the \textbf{TEA} computer programming language\cite{cli_tttt} works. Essentially, and with reference to the present proposal, note that we can readily and elegantly compute the sequence characteristic of any sequence\footnote{Sometimes though, only after slight modifications or clean-up/pre-processing of the input sequence expression such as we saw in \textbf{\hyperref[EQPROP6]{Equation \ref{EQPROP6}}}.} by leveraging \textbf{\hyperref[RES7]{sequence-transformers}} and sequence-processors as shown in the following TEA program that can compute the SC of any input sequence, and produce an SC expression similar to what we saw in \textbf{\hyperref[TRANSSCGR]{Transformation \ref{TRANSSCGR}}}:
 
@@ -6059,19 +6162,22 @@ In this section though, and building upon what we have already encountered, we a
 \item Where two or more sequences are involved, and where the SC for each sequence is already known or computed, the PC for the entire collection can readily be derived from the SCs thus already computed as an optimal strategy.
 \end{enumerate}
 
-In summary though, and given a collection of $n$ sequences\footnote{Potentially of arbitrary length and composition.} --- basically a sequence of n-subsequences --- denoted $\Theta^n$, we then can compute the PC as such:\\
+In summary though, and given a collection of $n$ sequences\footnote{Potentially of arbitrary length and composition.} --- basically a sequence of n-subsequences --- denoted $\Theta^n$, we then can compute the PC as such:
 
-
+\vspace{1em}
 \begin{equation}
 \label{EQPOPCHAR}
 \hbar(\overset{>}{\Theta^n}) = \prod\limits_{\forall \omega_i \in \psi(\Theta^n)} \omega_i \cdot \invpi(\omega_i \in \Theta^n)
 \end{equation}
+\vspace{1em}
 
 Where $\forall \Theta_j \in \Theta^n$
 
+\vspace{1em}
 \begin{equation}
 \invpi(\omega_i \in \Theta^n) = \sum\limits_{\forall \hbar(\overset{>}{\Theta_j})} f_{\omega_i}
 \end{equation}
+\vspace{1em}
 
 And $\forall i, j \in \mathbb{N}: i < j \implies f_i \geq f_j$ for the frequency terms in $\hbar(\overset{>}{\Theta^n})$.\\
 
@@ -6085,60 +6191,67 @@ Before we conclude this section, note that, just like we did with and saw with t
 
 The idea of treating of sequences in other than their flat-structure form was first presented as part of the discussion in how to apply transformatics in GENETICS\cite{lutalo_2025_trans_genetics}; refer to \textbf{Chapter 3} of \cite{lutalo_2025_trans_genetics}. In that work, we demonstrated how, for cases such as in dealing with problems where a sequence might need to be processed in ``chunks" of a fixed size --- also known as \textbf{n-grams}, we might want to introduce abstractions that can allow us to form smaller-sequences/sub-sequences within a larger/the original flat-structure sequence.\\
 
-For example, we saw that, in case we have some sequence of symbols $\Theta^n$ defined as such:\\
+For example, we saw that, in case we have some sequence of symbols $\Theta^n$ defined as such:
 
+\vspace{1em}
 \begin{equation}
 \label{EQSEQ1b}
 \Theta^n = \langle a_1, a_2,...,a_n\rangle
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
-And that if we wish to re-write the same sequence such that every $k$ terms are grouped in the same sub-sequence, we then can re-write $\Theta^n$ differently as such:\\
+And that if we wish to re-write the same sequence such that every $k$ terms are grouped in the same sub-sequence, we then can re-write $\Theta^n$ differently as such:
 
-
+\vspace{1em}
 \begin{equation}
 \label{EQSEQ2b}
 \Theta^n \rightarrow \Theta^* = \Theta_2(n,k) = \langle a_{11}, a_{12}, a_{13}, a_{1k}, a_{21}, a_{22},...,a_{(i)(k)},...,a_{(\frac{n}{k})(k-1)},a_{(\frac{n}{k})(k)}\rangle
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 
-Further, and for any arbitrary sequences, we saw that we could leverage a special kind of transformer that can take a flat-structure or lower-order sequence and from it generate a similar, but higher-order sequence (also understood to mean, a sequence of some n-grams/k-grams such that $k > 1$), as such:\\
+Further, and for any arbitrary sequences, we saw that we could leverage a special kind of transformer that can take a flat-structure or lower-order sequence and from it generate a similar, but higher-order sequence (also understood to mean, a sequence of some n-grams/k-grams such that $k > 1$), as such:
 
-
+\vspace{1em}
 \begin{transf}[The \textbf{k-GRAM Generator}]
 \label{TRANSFBUNDb}
 $\Theta^n = \langle a_1, a_2,...,a_n\rangle \quad \xrightarrow{O_{bundle-k}(\cdot)} \quad \Theta^* \quad;$\\
 $\Theta^* = \langle \langle a_1, a_2,..., a_k \rangle_1, \langle a_{k+1},...,a_{2k} \rangle_2,... , \langle a_{(n-k+1)},...,a_{(n-k+k-1)},a_{(n-k+k)}\rangle_{\frac{n}{k}} \rangle$\\
 $\forall a_i \in \Theta \quad \exists a_{ij} \in \Theta^*: a_i = a_{ij} \quad \land \quad j \in [1,k]$\\
-For some $n, k \in \mathbb{N}$, and that $\invpi(\Theta^*) = \frac{n}{k} = $ number of k-gram subsequences generated from $\Theta$. $\qed$\\
+For some $n, k \in \mathbb{N}$, and that $\invpi(\Theta^*) = \frac{n}{k} = $ number of k-gram subsequences generated from $\Theta$. $\qed$
 \end{transf}
+\vspace{1em}
 
 For future purposes, and without deviating from the theory already presented in earlier works, we might also refer to such produced sequences as $\Theta^*$ in \textbf{\hyperref[TRANSFBUNDb]{Transformer \ref{TRANSFBUNDb}}} as a \textbf{Super Sequence}.\\
 
-We shall note that if $\Theta^*$ is a super-sequence\index{super-sequence} of/relative-to another sequence, such as the sub-sequence $\langle a_1, a_2,..., a_k \rangle_1$ in \textbf{\hyperref[TRANSFBUNDb]{Transformer \ref{TRANSFBUNDb}}}, and which we might denote as $\Theta_1$, then, we can correctly say that:\\
+We shall note that if $\Theta^*$ is a super-sequence\index{super-sequence} of/relative-to another sequence, such as the sub-sequence $\langle a_1, a_2,..., a_k \rangle_1$ in \textbf{\hyperref[TRANSFBUNDb]{Transformer \ref{TRANSFBUNDb}}}, and which we might denote as $\Theta_1$, then, we can correctly say that:
 
-
+\vspace{1em}
 \begin{equation}
 \Theta^* \supset \Theta_1 \quad \land \quad \psi(\Theta^*) \supset \psi(\Theta_1)
 \end{equation}
+\vspace{1em}
 
-And that generally,\\
+And that generally,
 
-
+\vspace{1em}
 \begin{equation}
 \forall \Theta_i \in \Theta^* \quad \implies \quad \Theta^* \supset \Theta_i \quad \land \quad \psi(\Theta^*) \supset \psi(\Theta_i)
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
-Also, and as shown in \textbf{Section 6.6.1} of \cite{lutalo_2025_trans_genetics}, we might also treat of super-sequences as matrices\index{matrices}\index{sequence!as matrices} (in the sense of \textbf{linear algebra}). In particular, note that if we have a set of $n$ different sequences of arbitrary composition and lengths:\\
+Also, and as shown in \textbf{Section 6.6.1} of \cite{lutalo_2025_trans_genetics}, we might also treat of super-sequences as matrices\index{matrices}\index{sequence!as matrices} (in the sense of \textbf{linear algebra}). In particular, note that if we have a set of $n$ different sequences of arbitrary composition and lengths:
 
-
+\vspace{1em}
 \begin{equation}
  \Omega^n = \langle \Omega1, \Omega2, \Omega3,..., \Omega n \rangle
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 
-That we might also express them more elaborately via matrix form as\footnote{Notice how the structures in \textbf{\hyperref[EQMATR]{Equation \ref{EQMATR}}} look like \textit{column matrices}?}\\
+That we might also express them more elaborately via matrix form as\footnote{Notice how the structures in \textbf{\hyperref[EQMATR]{Equation \ref{EQMATR}}} look like \textit{column matrices}?}
 
-
+\vspace{1em}
 \begin{multline}
 \label{EQMATR}
  \Omega^n = 
@@ -6155,12 +6268,13 @@ That we might also express them more elaborately via matrix form as\footnote{Not
    \vdots \\
      \Omega n \langle a_{n1},a_{n2},...,a_{n\zeta} \rangle\\
  \end{bmatrix}
-\end{multline}\\
+\end{multline}
+\vspace{1em}
 
 
-So that, if we have the special case as what \textbf{\hyperref[TRANSFBUNDb]{Transformer \ref{TRANSFBUNDb}}} would produce if given the right kind of input sequence (particularly, that if $\Theta^n$ is to be split into k-grams, then, that it has the property that $\frac{n}{k} = m$ is a pure number\cite{Lutalo2024gtnc}, and so that, we can then map the flat-structure sequence $\Theta^n$ to a higher-order sequence\index{sequence!higher-order}, or super-sequence of \textbf{dimensions $k \times m$}, so that the resulting mathematical structure can be neatly expressed as a  $k \times m$ or $m \times k$ matrix as shown:\\\\
+So that, if we have the special case as what \textbf{\hyperref[TRANSFBUNDb]{Transformer \ref{TRANSFBUNDb}}} would produce if given the right kind of input sequence (particularly, that if $\Theta^n$ is to be split into k-grams, then, that it has the property that $\frac{n}{k} = m$ is a pure number\cite{Lutalo2024gtnc}, and so that, we can then map the flat-structure sequence $\Theta^n$ to a higher-order sequence\index{sequence!higher-order}, or super-sequence of \textbf{dimensions $k \times m$}, so that the resulting mathematical structure can be neatly expressed as a  $k \times m$ or $m \times k$ matrix as shown:
 
-
+\vspace{2em}
 \begin{trans}
 $\Theta^n = \langle \theta_1, \theta_2, ..., \theta_n \rangle \xrightarrow{O_{bundle-k}(\Theta^n)}
  \begin{bmatrix}
@@ -6168,8 +6282,9 @@ $\Theta^n = \langle \theta_1, \theta_2, ..., \theta_n \rangle \xrightarrow{O_{bu
    \theta_{21}, \theta_{22} ,... , \theta_{2k},\\
    \vdots \\
      \theta_{m1}, \theta_{m2} ,..., \theta_{mk}\\
- \end{bmatrix}$\\\\
+ \end{bmatrix}$
 \end{trans}
+\vspace{2em}
 
 So that, if $m=k$, then we essentially have a super-sequence that can be expressed as a \textit{square-matrix} of dimensions $m \times m$. Talking of which, once we can or do express a sequence as a matrix\footnote{Even as a \textit{sparse matrix} such as in cases where a low-order sequence $\Theta^n$ needs be transformed into a super-sequence, but when either $\frac{n}{k}$ is not a pure number, or that there are some sub-sequences that might have empty positions.}, almost all of the mathematical theory of linear-algebra does readily apply on such sequences from transformatics! And thus we sum up our proposal on transformatics and super-sequences.
 
@@ -6256,21 +6371,23 @@ i:{This is a TEST 123} | z!: | d:[AEIOU] | d!:[A-Z]
  
  Which program, when run as is, shall use the explicit hard-coded input it opens with --- ``This is a TEST 123", and shall return ``THSSTST". While, if presented with some other input such as ``hello world 123?", shall return ``HLLWRLD".\\
  
-The following transformation expression shall help illustrate exactly what is happening in that program, or how the different bits/chained sequence transformers come together to compose the higher-order transformer that is what the entire TEA program is:\\
+The following transformation expression shall help illustrate exactly what is happening in that program, or how the different bits/chained sequence transformers come together to compose the higher-order transformer that is what the entire TEA program is:
  
- 
+ \vspace{1em}
 \begin{trans}
 $\emptyset \xrightarrow{i:\{\text{This is a TEST 123}\}} \langle \text{\textit{This is a TEST 123}} \rangle \xrightarrow{z!:} \langle \text{\textit{THIS IS A TEST 123}} \rangle \xrightarrow{d:[AEIOU]} \langle \text{\textit{THS S  TST 123}} \rangle \xrightarrow{d!:[A-Z]} \langle \text{\textit{THSSTST}} \rangle$\\
 \end{trans} 
+\vspace{1em}
  
  
- and for the input ``hello world 123?":\\
+ and for the input ``hello world 123?":
  
- 
+ \vspace{1em}
  \begin{trans}
  \label{TRANSTEAPROG}
-$\langle \text{\textit{hello world 123?}} \rangle \xrightarrow{i:\{\text{This is a TEST 123}\}} \langle \text{\textit{hello world 123?}} \rangle \xrightarrow{z!:} \langle \text{\textit{HELLO WORLD 123?}} \rangle \xrightarrow{d:[AEIOU]} \langle \text{\textit{HLL WRLD 123?}} \rangle \xrightarrow{d!:[A-Z]} \langle \text{\textit{HLLWRLD}} \rangle$\\
+$\langle \text{\textit{hello world 123?}} \rangle \xrightarrow{i:\{\text{This is a TEST 123}\}} \langle \text{\textit{hello world 123?}} \rangle \xrightarrow{z!:} \langle \text{\textit{HELLO WORLD 123?}} \rangle \xrightarrow{d:[AEIOU]} \langle \text{\textit{HLL WRLD 123?}} \rangle \xrightarrow{d!:[A-Z]} \langle \text{\textit{HLLWRLD}} \rangle$
 \end{trans} 
+\vspace{1em}
  
  So, hopefully, after looking at those two example transformations, as well as the preceeding TEA source-code, you start to appreciate that TEA programs are indeed not only [higher-order] sequence transformers in the strict sense, but are likewise compositions of, chains of, sequence transformers.\\
  
@@ -6280,8 +6397,9 @@ $\langle \text{\textit{hello world 123?}} \rangle \xrightarrow{i:\{\text{This is
 \subsection{Proposal 10: Entropy of a Sequence\cite{lnspaper}}
 \label{PROPTOE}
 
-\textit{Information expressions} (IE)\cite{lnspaper} are a mathematical structure, $\Omega^{1,\infty} : \mathbb{N} \times \Psi^\infty$, to which \textbf{\hyperref[RES3]{Foundation Idea \ref{RES3}}} applies. The sequence $\Theta_{hw} = \langle \text{\texttt{hello world}} \rangle$ is one such example, with the properties:\\
+\textit{Information expressions} (IE)\cite{lnspaper} are a mathematical structure, $\Omega^{1,\infty} : \mathbb{N} \times \Psi^\infty$, to which \textbf{\hyperref[RES3]{Foundation Idea \ref{RES3}}} applies. The sequence $\Theta_{hw} = \langle \text{\texttt{hello world}} \rangle$ is one such example, with the properties:
 
+\vspace{1em}
 \begin{equation}
 \label{EQPROP10}
 \Theta_{hw} \rightarrow \begin{cases}
@@ -6291,54 +6409,65 @@ $\langle \text{\textit{hello world 123?}} \rangle \xrightarrow{i:\{\text{This is
 \psi(\Theta_{hw}) \times \psi(\Theta_{hw})^{[1,\invpi(\Theta_{hw})]} \quad\\ \lor \quad \psi(\Theta_{hw}) \times \psi(\Theta_{hw})^{[1,\infty]} \rightarrow \mathbb{N} \times \mathbb{N} & \text{derivative languages}\\
 \end{cases}
 \end{equation}
+\vspace{1em}
 
 
-Most important about what we can glean from \textbf{\hyperref[EQPROP10]{Equation \ref{EQPROP10}}} is the fact that we might be able to compute a kind of \textbf{information-content} measure for any arbitrary sequence, merely by looking at the length of the sequence Vs the length of the symbol set spanned by that sequence. Essentially, and as shown in that distillation, given any sequence $\Theta$, we could compute a \textbf{Sequence Entropy} for it --- $\Phi(\Theta)$ as such:\\
+Most important about what we can glean from \textbf{\hyperref[EQPROP10]{Equation \ref{EQPROP10}}} is the fact that we might be able to compute a kind of \textbf{information-content} measure for any arbitrary sequence, merely by looking at the length of the sequence Vs the length of the symbol set spanned by that sequence. Essentially, and as shown in that distillation, given any sequence $\Theta$, we could compute a \textbf{Sequence Entropy} for it --- $\Phi(\Theta)$ as such:
 
-
+\vspace{1em}
 \begin{defn}[The \textbf{Sequence Entropy}, $\Phi(\Theta)$]
 \label{DEFENTROPY}
-Given any sequence $\Theta \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_*$, we can compute a measure of how much information (\textbf{sequence entropy}) there is in the sequence, using the following measure:\\
+Given any sequence $\Theta \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_*$, we can compute a measure of how much information (\textbf{sequence entropy}) there is in the sequence, using the following measure:
 
+\vspace{1em}
 \begin{equation}
 \Phi(\Theta) = \frac{\invpi(\psi(\Theta))}{\invpi(\Theta)} = \frac{1}{n} \times \invpi(\psi(\Theta))
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
-and if we wish to compute the \textbf{relative sequence entropy} --- meaning, the amount of information the sequence contains relative to some particular symbol set/alphabet other than the symbol set spanned explicitly by the sequence --- such as using $\psi_*$ instead\footnote{For example, for the sequence ``hello world", we might wish to measure the entropy relative to the entire Latin Alphabet ($\psi_{az}$) instead of just the symbol set of the string ($\psi(\Theta_{hw}) = \{lohe wrd\}$.} of $\psi(\Theta)$, in which case, the associated measure would be:\\ 
+and if we wish to compute the \textbf{relative sequence entropy} --- meaning, the amount of information the sequence contains relative to some particular symbol set/alphabet other than the symbol set spanned explicitly by the sequence --- such as using $\psi_*$ instead\footnote{For example, for the sequence ``hello world", we might wish to measure the entropy relative to the entire Latin Alphabet ($\psi_{az}$) instead of just the symbol set of the string ($\psi(\Theta_{hw}) = \{lohe wrd\}$.} of $\psi(\Theta)$, in which case, the associated measure would be: 
 
-
+\vspace{1em}
 \begin{equation}
 \Phi_{\psi_*}(\Theta) = \frac{\invpi(\psi_*)}{\invpi(\Theta)} = \frac{1}{n} \times \invpi(\psi_*)
-\end{equation}\\
+\end{equation}
 \end{defn}
+\vspace{1em}
 
-As far as how a measure such as the \textbf{sequence entropy} in  \textbf{\hyperref[DEFENTROPY]{Definition \ref{DEFENTROPY}}} might go, note that, for our example input sequence $\Theta_{hw}$, we can establish that the entropy is $0.727272\overline{72}$ as per:\\
+As far as how a measure such as the \textbf{sequence entropy} in  \textbf{\hyperref[DEFENTROPY]{Definition \ref{DEFENTROPY}}} might go, note that, for our example input sequence $\Theta_{hw}$, we can establish that the entropy is $0.727272\overline{72}$ as per:
 
-
+\vspace{1em}
 \begin{equation}
 \Phi(\Theta_{hw}) = \frac{\invpi(\psi(\Theta_{hw}))}{\invpi(\Theta_{hw})} = \frac{1}{n} \times \invpi(\psi(\Theta_{hw})) = \frac{1}{11} \times 8 = \frac{8}{11} = 0.727272\overline{72}
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
-Whereas, and as might be interesting to note given similar ideas such as the \textbf{Shannon Entropy}\cite{shannon1948mathematical}, realize that if we alter $\Theta_{hw}$ further, say, by introducing more redundancy or duplication of terms\footnote{Already, $\Theta_{hw}$ contains two instances of symbol `l", which thus reduces its \textit{unexpectedness} or \textit{surprise} value, and thus its entropy.}, such as in the string ``hello hello world", the new sequence entropy shall likewise go lower as shown:\\
+Whereas, and as might be interesting to note given similar ideas such as the \textbf{Shannon Entropy}\cite{shannon1948mathematical}, realize that if we alter $\Theta_{hw}$ further, say, by introducing more redundancy or duplication of terms\footnote{Already, $\Theta_{hw}$ contains two instances of symbol `l", which thus reduces its \textit{unexpectedness} or \textit{surprise} value, and thus its entropy.}, such as in the string ``hello hello world", the new sequence entropy shall likewise go lower as shown:
 
+\vspace{1em}
 \begin{equation}
 \Phi(\langle \text{\textit{hello hello world}} \rangle) = \frac{1}{n} \times \invpi(\psi(\Theta)) = \frac{1}{17} \times 8 = \frac{8}{17} = 0.47058823529411764
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 
 And so, and as expected, since in this last case we increased the length of the sequence, though, we did not introduce any new \textbf{distinct symbols} --- meaning, the sequence's symbol set or alphabet remained the same as before ($\invpi(\psi(\Theta)) = 8$), we then see that indeed, as we would expect of a good entropy measure, $\Phi(\Theta)$ did indeed decrease in value after this sequence transformation.
 
-Of course, if we were to use the \textbf{relative sequence entropy} instead, and for our example, using say the English/Latin alphabet ($\psi_{az}$) as the reference, the associated entropy measures for the two cases we have considered would be as such:\\
+Of course, if we were to use the \textbf{relative sequence entropy} instead, and for our example, using say the English/Latin alphabet ($\psi_{az}$) as the reference, the associated entropy measures for the two cases we have considered would be as such:
 
+\vspace{1em}
 \begin{equation}
 \Phi_{\psi_{az}}(\Theta_{hw}) = \frac{1}{n} \times \invpi(\psi_{az}) = \frac{1}{11} \times 26 = \frac{26}{11} = 2.36363636\overline{36}
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
-and for the transformed/modified sequence:\\
+and for the transformed/modified sequence:
 
+\vspace{1em}
  \begin{equation}
 \Phi_{\psi_{az}}(\langle \text{\textit{hello hello world}} \rangle) = \frac{1}{n} \times \invpi(\psi_{az}) = \frac{1}{17} \times 26 = \frac{26}{17} = 1.52941176470588235294
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 For any particular sequence of interest, the following associated, and generic \textbf{WEB TEA} program can be used to compute the sequence entropy ($\Phi(\Theta)$):
 

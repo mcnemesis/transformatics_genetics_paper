@@ -16,11 +16,11 @@
 \contentsline {section}{\numberline {6.2}A First Analysis}{38}{section.6.2}%
 \contentsline {section}{\numberline {6.3}SCENARIO A --- the anagram distance measure}{42}{section.6.3}%
 \contentsline {section}{\numberline {6.4}SCENARIO B --- the sequence characteric [statistic]}{45}{section.6.4}%
-\contentsline {section}{\numberline {6.5}SCENARIO C}{48}{section.6.5}%
-\contentsline {section}{\numberline {6.6}SCENARIO D --- the population characteristic measure}{49}{section.6.6}%
+\contentsline {section}{\numberline {6.5}SCENARIO C}{49}{section.6.5}%
+\contentsline {section}{\numberline {6.6}SCENARIO D --- the population characteristic measure}{50}{section.6.6}%
 \contentsline {subsection}{\numberline {6.6.1}Measuring Proximity to a Set of Sequences, $\Omega ^n$}{50}{subsection.6.6.1}%
-\contentsline {subsection}{\numberline {6.6.2}Measuring Proximity between a $Q_k$ and Members of a Sequence Population, $\Omega ^n$}{53}{subsection.6.6.2}%
-\contentsline {section}{\numberline {6.7}Concerning Optimal Symbolic Storage of na-Sequences in Databases - Computing the G$\ddot {o}$del Number for a Sequence $\Theta _n$ based on its Characteristic $\hbar (\overset {>}{\Theta _n})$ }{55}{section.6.7}%
+\contentsline {subsection}{\numberline {6.6.2}Measuring Proximity between a $Q_k$ and Members of a Sequence Population, $\Omega ^n$}{54}{subsection.6.6.2}%
+\contentsline {section}{\numberline {6.7}Concerning Optimal Symbolic Storage of na-Sequences in Databases - Computing the G$\ddot {o}$del Number for a Sequence $\Theta _n$ based on its Characteristic $\hbar (\overset {>}{\Theta _n})$ }{56}{section.6.7}%
 \contentsline {chapter}{\numberline {7}The Mathematics of Genome Sequencing: Sequence Alignment, The Modal Sequence, The Sequencing Machine and the Identifier Genome Sequence Law}{59}{chapter.7}%
 \contentsline {section}{\numberline {7.1}3 Core Problems to Solve}{60}{section.7.1}%
 \contentsline {subsection}{\numberline {7.1.1}PROBLEM G1: Computing Maximum Common Subsequence: $\Theta _1 \Diamond \Theta _2$}{61}{subsection.7.1.1}%
@@ -84,28 +84,28 @@
 \contentsline {subsection}{\numberline {E.1.10}Result 10: A Sequence Sampler\cite {lutalo_2025_trans_genetics}}{168}{subsection.a.E.1.10}%
 \contentsline {section}{\numberline {E.2}Proposed Abstractions Leveraging Transformatics}{170}{section.a.E.2}%
 \contentsline {subsection}{\numberline {E.2.1}Proposal 1: The o-SSI Sequence from any Sequence\cite {ossipaper}}{171}{subsection.a.E.2.1}%
-\contentsline {subsection}{\numberline {E.2.2}Proposal 2: The Anagram Distance Between Any Two Sequences\cite {adtpaper}}{171}{subsection.a.E.2.2}%
+\contentsline {subsection}{\numberline {E.2.2}Proposal 2: The Anagram Distance Between Any Two Sequences\cite {adtpaper}}{172}{subsection.a.E.2.2}%
 \contentsline {subsection}{\numberline {E.2.3}Proposal 3: The Transformer Compression Ratio of any Sequence Transformation\cite {transformatics}}{173}{subsection.a.E.2.3}%
-\contentsline {subsection}{\numberline {E.2.4}Proposal 4: The Piecemeal Compression Ratio of Any Sequence Transformation\cite {transformatics}}{173}{subsection.a.E.2.4}%
+\contentsline {subsection}{\numberline {E.2.4}Proposal 4: The Piecemeal Compression Ratio of Any Sequence Transformation\cite {transformatics}}{174}{subsection.a.E.2.4}%
 \contentsline {subsection}{\numberline {E.2.5}Proposal 5: The Modal Sequence Statistic of Any Sequence\cite {transformatics}}{175}{subsection.a.E.2.5}%
-\contentsline {subsection}{\numberline {E.2.6}Proposal 6: The Characteristic of Any Sequence\cite {lutalo_2025_trans_genetics}}{176}{subsection.a.E.2.6}%
-\contentsline {subsection}{\numberline {E.2.7}Proposal 7: The Population Characteristic of Any Collection of Sequences\cite {lutalo_2025_trans_genetics}}{179}{subsection.a.E.2.7}%
-\contentsline {subsection}{\numberline {E.2.8}Proposal 8: A Super Sequence from One or More Sequences\cite {lutalo_2025_trans_genetics}}{181}{subsection.a.E.2.8}%
-\contentsline {subsection}{\numberline {E.2.9}Proposal 9: Programs as Chains of Sequence Transformers (Transformer-Chains)\cite {lutalo_2025_trans_genetics}\cite {cli_tttt}}{183}{subsection.a.E.2.9}%
-\contentsline {subsection}{\numberline {E.2.10}Proposal 10: Entropy of a Sequence\cite {lnspaper}}{187}{subsection.a.E.2.10}%
-\contentsline {section}{\numberline {E.3}Conclusion}{189}{section.a.E.3}%
-\contentsline {chapter}{Appendix \numberline {F}Situating TRANSFORMATICS (as a Theory or Field) within Mathematics:}{193}{appendix.a.F}%
-\contentsline {section}{\numberline {F.1}A Working Definition and Clarification on Fundamental Nomenclature}{193}{section.a.F.1}%
-\contentsline {section}{\numberline {F.2}Comparison with Other Fields}{202}{section.a.F.2}%
-\contentsline {subsection}{\numberline {F.2.1}Relation to Statistics}{202}{subsection.a.F.2.1}%
-\contentsline {subsection}{\numberline {F.2.2}Relation to Linear Algebra}{203}{subsection.a.F.2.2}%
-\contentsline {subsection}{\numberline {F.2.3}Relation to Calculus}{210}{subsection.a.F.2.3}%
-\contentsline {subsection}{\numberline {F.2.4}Relation to Several Other Branches of [Applied] Mathematics}{219}{subsection.a.F.2.4}%
-\contentsline {subsubsection}{Signal Processing}{219}{section*.75}%
-\contentsline {subsubsection}{Artificial Intelligence and Machine Learning: Natural Language Processing via Neural Networks --- so-called ``Transformers"}{224}{section*.76}%
-\contentsline {subsection}{\numberline {F.2.5}Transformatics as a new Algebra of Sequences}{229}{subsection.a.F.2.5}%
-\contentsline {section}{\numberline {F.3}A Final Definition and Justification of a Field}{230}{section.a.F.3}%
-\contentsline {chapter}{Appendix \numberline {G}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{231}{appendix.a.G}%
-\contentsline {chapter}{Final Dedication}{247}{appendix*.79}%
-\contentsline {chapter}{About the Author}{250}{appendix*.81}%
-\contentsline {chapter}{Colophon}{257}{appendix*.84}%
+\contentsline {subsection}{\numberline {E.2.6}Proposal 6: The Characteristic of Any Sequence\cite {lutalo_2025_trans_genetics}}{177}{subsection.a.E.2.6}%
+\contentsline {subsection}{\numberline {E.2.7}Proposal 7: The Population Characteristic of Any Collection of Sequences\cite {lutalo_2025_trans_genetics}}{181}{subsection.a.E.2.7}%
+\contentsline {subsection}{\numberline {E.2.8}Proposal 8: A Super Sequence from One or More Sequences\cite {lutalo_2025_trans_genetics}}{182}{subsection.a.E.2.8}%
+\contentsline {subsection}{\numberline {E.2.9}Proposal 9: Programs as Chains of Sequence Transformers (Transformer-Chains)\cite {lutalo_2025_trans_genetics}\cite {cli_tttt}}{185}{subsection.a.E.2.9}%
+\contentsline {subsection}{\numberline {E.2.10}Proposal 10: Entropy of a Sequence\cite {lnspaper}}{188}{subsection.a.E.2.10}%
+\contentsline {section}{\numberline {E.3}Conclusion}{191}{section.a.E.3}%
+\contentsline {chapter}{Appendix \numberline {F}Situating TRANSFORMATICS (as a Theory or Field) within Mathematics:}{195}{appendix.a.F}%
+\contentsline {section}{\numberline {F.1}A Working Definition and Clarification on Fundamental Nomenclature}{195}{section.a.F.1}%
+\contentsline {section}{\numberline {F.2}Comparison with Other Fields}{204}{section.a.F.2}%
+\contentsline {subsection}{\numberline {F.2.1}Relation to Statistics}{204}{subsection.a.F.2.1}%
+\contentsline {subsection}{\numberline {F.2.2}Relation to Linear Algebra}{205}{subsection.a.F.2.2}%
+\contentsline {subsection}{\numberline {F.2.3}Relation to Calculus}{212}{subsection.a.F.2.3}%
+\contentsline {subsection}{\numberline {F.2.4}Relation to Several Other Branches of [Applied] Mathematics}{221}{subsection.a.F.2.4}%
+\contentsline {subsubsection}{Signal Processing}{221}{section*.75}%
+\contentsline {subsubsection}{Artificial Intelligence and Machine Learning: Natural Language Processing via Neural Networks --- so-called ``Transformers"}{226}{section*.76}%
+\contentsline {subsection}{\numberline {F.2.5}Transformatics as a new Algebra of Sequences}{231}{subsection.a.F.2.5}%
+\contentsline {section}{\numberline {F.3}A Final Definition and Justification of a Field}{232}{section.a.F.3}%
+\contentsline {chapter}{Appendix \numberline {G}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{233}{appendix.a.G}%
+\contentsline {chapter}{Final Dedication}{249}{appendix*.79}%
+\contentsline {chapter}{About the Author}{252}{appendix*.81}%
+\contentsline {chapter}{Colophon}{259}{appendix*.84}%
