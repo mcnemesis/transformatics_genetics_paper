@@ -1617,33 +1617,22 @@ It is already interesting to note that, under complement transforms\index{comple
 
 
 
-{
-\LARGE
-
-\hl{
-
-TODO: Continue indexing starting from here
-
-}
-}
-
-
-
 We are going to talk about the matter of comparing or analyzing two or more na-Sequences using especially statistical measures that have been set down by transformatics theory for especially sequences of the kind we are interested in when exploring work in genetics. 
 
 \section{Six Sequences and Four Scenarios}
 \label{SEC4ASEQ}
 
-In particular, we shall be looking at na-Sequence analysis through lens of measures we have formalized earlier on\footnote{For those not yet familiar with the existing mathematical theories and results of transformatics, \textbf{\hyperref[CHAPTRANS]{Chapter \ref{CHAPTRANS}}} in the appendix does provide all the necessary background context relevant for mastering all the new [applied transformatics] material we are exploring in this chapter.}, and shall break down our analysis into four representative scenarios:
+In particular, we shall be looking at na-Sequence analysis\index{sequence analysis} through lens of measures we have formalized earlier on\footnote{For those not yet familiar with the existing mathematical theories and results of transformatics, \textbf{\hyperref[CHAPTRANS]{Chapter \ref{CHAPTRANS}}} in the appendix does provide all the necessary background context relevant for mastering all the new [applied transformatics] material we are exploring in this chapter.}, and shall break down our analysis into four representative scenarios:
 
 \begin{enumerate}
 \item \textbf{Scenario A:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_n$, \textbf{not necessarily the same} ($(\Theta1_n = \Theta2_n) \quad \lor \quad (\Theta1_n \neq \Theta2_n)$), but which are of the same length, $\invpi(\Theta1_n) = \invpi(\Theta2_n) = n$, and with similar symbol sets\footnote{\textbf{NOTE} that in this case we are expressing this problem aspect using specific symbol sets --- such as $\hat{\psi}_{na}(\Theta1_n)$ --- and not say unspecific symbol sets ($\hat{\psi}(\Theta1_n)$), nor implicit symbol sets ($\psi(\Theta1_n)$), and neither natural symbol sets ($\psi_{na}(\Theta1_n)$), because, we do not wish to assume that the two sequences have the same exact ordering of distinct elements from the specified base symbol set --- $\psi_{na}$ --- a fact which for example the natural symbol set can't show/preserve, and yet, because we know the base, we do not want to only deal with base-less symbol sets such would be the case with the unspecific and implicit symbol set. For details concerning these different symbol sets, refer to the clarifying discussion offered in \textbf{Question 4} of \cite{transformatics_interview}.}, $(\hat{\psi}_{na}(\Theta1_n) \cong \hat{\psi}_{na}(\Theta2_n)) \quad \land \quad (\invpi(\psi_{na}(\Theta1_n)) = \invpi(\psi_{na}(\Theta2_n)) \leq n)$, \textbf{how to quantify how similar or dissimilar} they are?
 \item \textbf{Scenario B:} Given some two particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, still not necessary the same, and of different lengths, $(\invpi(\Theta1_n) = n) \neq (\invpi(\Theta2_k) = k)$, but with \textbf{similar symbol sets}, $(\hat{\psi}_{na}(\Theta1_n) \cong \hat{\psi}_{na}(\Theta2_k)) \quad \land \quad (\invpi(\psi_{na}(\Theta1_n)) = \invpi(\psi_{na}(\Theta2_k)) \leq Min(n,k))$, how to quantify how similar or dissimilar they are?
 \item \textbf{Scenario C:} Given some two \textbf{potentially different}, particular instances of na-Sequences, $\Theta1_n$ and $\Theta2_k$, of \textbf{different lengths}, $n$ and $k$, and \textbf{with different symbol sets}, $((\hat{\psi}_{na}(\Theta1_n) \neq \hat{\psi}_{na}(\Theta2_k)) \quad \lor \quad (\invpi(\psi_{na}(\Theta1_n)) \neq \invpi(\psi_{na}(\Theta2_k))))$, how to quantify how similar or dissimilar they are?
-\item \textbf{Scenario D:} Finally, how, when given a particular na-Sequence, $Q_k$, and two collections/samples of other sequences ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, $m$ and $n$ respectively, and that belong to \textbf{labeled or classified populations} --- POPA and POPB, to determine which of the two populations the query sequence, $Q_k$, best-belongs to (so we classify it under one of those labels), as well as determine \textbf{which of \textit{the particular sample member sequences} from either collections it is closest to?}
+\item \textbf{Scenario D:} Finally, how, when given a particular na-Sequence, $Q_k$, and two collections/samples of other sequences\\
+ ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, $m$ and $n$ respectively, and that belong to \textbf{labeled or classified populations} --- POPA and POPB respectively, to determine which of the two populations the query sequence, $Q_k$, best-belongs to (so we classify it under the associated label), as well as determine which of the \textbf{particular} sample's member sequences --- from that chosen collection it is closest to.
 \end{enumerate}
 
-Note that, in conducting these analyses, we shall especially exploit the sequence-specific measures, $\tilde{A}(\cdot)$, the Anagram Distance Measure\cite{adtpaper}\cite{transformatics}, and $\overset{>}{\Theta}$, the Modal Sequence Statistic\cite{transformatics}, and that we shall use the following representative, even though somewhat hypothetical (for the first four), na-Sequences:
+Note that, in conducting these analyses, we shall especially exploit the sequence-specific measures, $\tilde{A}(\cdot)$, the Anagram Distance Measure\cite{adtpaper}\cite{transformatics}, and $\overset{>}{\Theta}$, the Modal Sequence Statistic\cite{transformatics}, and that we shall use the following representative, even though somewhat hypothetical (for the first four), na-Sequences\index{na-Sequence}\index{genetic sequence}\index{DNA!examples}:
 
 \begin{equation}
 {\Theta1}_{DNA} = \langle TAC GGG CAT TCC \rangle\\
@@ -1735,6 +1724,46 @@ The first four sequences are merely hypothetical, and intentionally small/short,
 \section{A First Analysis}
 \label{SECFANAL}
 
+
+%draw horizontal line
+\noindent\rule{\textwidth}{0.4pt}
+{
+
+
+\noindent\textbf{NOTE:}\\
+\noindent\textbf{TEA programming language INSTALLATION and Basic USAGE Instructions}
+
+\normalsize
+\vspace{2em}
+
+TEA as a language\index{TEA!installation guide} is designed to be usable from almost anywhere there is a computer capable of running the TEA language interpreter --- currently implemented for WEB (browser environments) using JavaScript, and for all other environments via Python3. However, to really get started using TEA, especially when one has a modern computer, a smartphone or some device capable of accessing the Internet and rendering web pages, one then need not install anything or download anything apart from merely visiting the following link:
+
+\vspace{1em}
+\textbf{TEA WEB IDE:} \url{https://tea.nuchwezi.com}
+\vspace{1em}
+
+So that, by visiting that page, one can readily access a usable basic and standard interface with which they can not only write, browse, read and run existing TEA programs --- especially those sample/example applications that are made available as part of the growing list of ``Standard TEA programs" --- but that they can also share the TEA program source code either using links, or copy-pasted codes. Using the WEB IDE is the simplest, best method for trying out TEA that is also beginner-friendly. Also, other than accessing the TEA programs and runtime, the IDE offers access to a TEA debugger for help with analyzing or troubleshooting problematic TEA programs, access to the TEA documentation, links to the TEA community, lecture notes and videos, etc.
+
+For those that need to use TEA from any other environment or platform other than the web --- such as in non-interactive server-side programs, in command-line scripts, in stand-alone desktop programs, etc. The following installation method is what is currently most recommended:
+
+\begin{enumerate}
+\item To INSTALL TTTT and the TEA language [\textit{plus some standard TEA programs packaged together with TTTT; ZHA and AMC}\footnote{Users of TEA via the WEB IDE automatically get access to all (30+) standard TEA programs/example applications, however, for users of TEA via the Debian package tttt, only a few of these applications are currently included/accessible via the default installation method --- \textbf{ZHA}; the ``Zee Hacker Assistant" and \textbf{AMC}; Advanced Mathematics Computer}.] on your system, run the following command in your terminal:
+
+    \begin{tcbverbatim}[title=UNIX/Linux TEA installation command]
+curl -Ls https://bit.ly/installtea | bash
+  \end{tcbverbatim}
+\end{enumerate}
+
+Once TEA is installed via the above command-line method, one can then readily view/browse the official documentation that comes along with that package via: \texttt{man tttt}
+
+}
+
+%draw horizontal line
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{2em}
+
+
+
 Before we dive into the matter of solving the analytic problems under the four scenarios introduced in \textbf{\hyperref[SEC4ASEQ]{Section \ref{SEC4ASEQ}}} above, we shall want to begin with a background analysis that shall give us some high-level insights about any of the sequences in our problem set. In particular, we are going to start by analyzing each of those sequences, so as to know the following basic facts:
 
 \begin{enumerate}
@@ -1748,7 +1777,7 @@ Before we dive into the matter of solving the analytic problems under the four s
 For purposes of helping others replicate the analyses and results we shall obtain, we recommend that the following analysis method be used: 
 
 
-\textbf{We shall use TEA}\footnote{Instructions for how to install and use TEA/Transforming Executable Alphabet general-purpose text-processing oriented computer programming language are offered via the project's GitHub: \url{https://github.com/mcnemesis/cli_tttt} | Otherwise, also note that one can readily try TEA as well as run any of the TEA programs we have included in this chapter and anywhere in the book, without installing any special software, merely by visiting the online, browser-based \textbf{TEA WEB IDE} via \url{https://tea.nuchwezi.com}}\cite{Lutalo2024_taz}\cite{cli_tttt} --- a text-processing-oriented general-purpose computer programming language --- an executable software language by the author, via its \texttt{tttt} Linux package and utility, to implement most of the analyses we wish to conduct via the command-line.
+\textbf{We shall use TEA}\footnote{Instructions for how to install and use TEA/Transforming Executable Alphabet general-purpose text-processing oriented computer programming language are offered via the project's GitHub: \url{https://github.com/mcnemesis/cli_tttt} --- but also check the associated note presented at the start of this section | Otherwise, also note that one can readily try TEA as well as run any of the TEA programs we have included in this chapter and anywhere in the book, without installing any special software, merely by visiting the online, browser-based \textbf{TEA WEB IDE} via \url{https://tea.nuchwezi.com}}\cite{Lutalo2024_taz}\cite{cli_tttt} --- a text-processing-oriented general-purpose computer programming language --- an executable software language by the author, via its \texttt{tttt} Linux package and utility, to implement most of the analyses we wish to conduct via the command-line.
 
 \begin{enumerate}
 \item {\textbf{To Process a Sequence via the Command-Line?} For example, copy-and-paste sequence $\Theta1$ into a file named \texttt{theta1\_dna.txt}}
@@ -1771,7 +1800,7 @@ CTGA
 \end{verbatim}
 \vspace{1em}
 
-Note that, the actual command/TEA-code for this is just \texttt{u!:}, however, because of the way the Linux command-line treats the `!' symbol as a special character --- even inside strings, we must cleverly use it in a manner such as shown; we write ``u!"``:" to avoid the \textit{``unrecognized history modifier"} error if that code is written directly on the terminal. This shall apply to all the other cases where we must deal with the TEA command qualifier `!"\cite{Lutalo2024_taz}.
+Note that, the actual command/TEA-code for this is just \texttt{u!:}\index{TEA program!modal sequence statistic}, however, because of the way the Linux command-line treats the `!' symbol as a special character --- even inside strings, we must cleverly use it in a manner such as shown; we write ``u!"``:" to avoid the \textit{``unrecognized history modifier"} error if that code is written directly on the terminal. This shall apply to all the other cases where we must deal with the TEA command qualifier `!"\cite{Lutalo2024_taz}.
 
 The other workaround is to \textbf{first turn off the BASH history expansion modifier} --- this, so that we can just write clean TEA code such as \texttt{u!:} without errors, directly on the Linux terminal interface. So, to disable history expasion for the \textit{active/current session} in your terminal, just run the command:
 
@@ -1813,7 +1842,7 @@ But if we wish to do the same for all distinct symbols within the sequence $\The
 
 \vspace{1em}
 
-    \begin{tcbverbatim}[title=EXAMPLE: Computing Sequence Characteristic using TEA on command line]
+    \begin{tcbverbatim}[title=EXAMPLE: Computing Sequence Characteristic\index{TEA program!sequence characteristic} using TEA on command line]
  cat theta1_dna.txt | tttt -c "v:vSEQ|v:vANA:{}|u!:|v:vMS|l:lMS|y:vMS|d!:^.|v:vSY|y:vMS|d:^.|v:vMS|y:vSEQ|d*!:vSY|g:|v:|v!:|v:vSYN|g*:{}:vSY:vSYN|x*:vANA|v:vANA|y:vMS|f:^$:lFIN|j:lMS|l:lFIN|y:vANA"
 C4T3G3A2 
   \end{tcbverbatim}
@@ -2015,7 +2044,7 @@ So, since we can't use the usually sufficient \textbf{modal sequence statistic}\
 \textbf{NOTE:}\\
  A Quick Recap \textbf{Concerning Interpreting ADM, $\tilde{A}(\Theta,\Theta^*)$} \\
 
-The Anagram Distance Measure (ADM), associated testing method, background and justifications for the new statistic were first laid out in the seminal paper\cite{adtpaper} introducing that measure and its theory. That work was later advanced in the transformatics paper\cite{transformatics}, and essentially, we can note that:
+The Anagram Distance Measure (ADM)\index{ADM}\index{Anagram Distance Measure}, associated testing method, background and justifications for the new statistic were first laid out in the seminal paper\cite{adtpaper} introducing that measure and its theory. That work was later advanced in the transformatics paper\cite{transformatics}, and essentially, we can note that:
 
 \begin{itemize}
 \item{Given any two sequences, $\Theta$ and $\Theta^*$, that ideally should be of the same length, and with the same\footnote{Or more accurately, ``similar composition" symbol sets --- such as $\psi(\Theta) \cong \psi(\Theta^*)$ --- or perhaps similar natural symbols sets as per some base $\beta$ --- $\psi_\beta(\Theta) = \psi_\beta(\Theta^*)$ --- with this condition being most important for cases where the two sequences being compared aren't of same length or same symbol distribution, so that then, a more accurate approximate analysis might be applied to their modal sequence statistics --- which only makes sense if both MSS contain the same exact symbols irrespective of their member ordering.} sequence symbol set, then we compute the anagram distance between them via the formula:
@@ -2092,12 +2121,14 @@ $|I(\omega_i,\Theta4) - i|$ & 0 & 0 & 0 & 3 & 3 & 3 & 2 & 3 & 5 & 2 & 5 & 2\\
 
 It shall be worth noting concerning how we derive the values of the updated position of $\omega_i$ in the compared/resultant sequence, $\Theta4$, via $I(\omega_i,\Theta4)$, that we are actually careful to follow the definition of that function (see \textbf{Note} on \textbf{Page 5} in \cite{transformatics}), with the useful detail that since both sequences contain repeated/duplicated symbols despite their similar length, that we assign to some symbol, such as the first `T' in $\Theta1$, the index of the first `T' in $\Theta4$, and second `T' in $\Theta1$, the index of the second `T' in $\Theta4$ --- no skipping ahead, no juggling them up\footnote{Thus, we can generally say for any two sequences, $\Theta$ and $\Theta^*$ under ADM analysis, that for computing the $I(\omega_i,\Theta^*)$ for terms from the source, $\Theta$, even where $\omega_i$ occurs multiple times in either sequence, even if at different positions, that we assign the first instance of $\omega_i$, the value of $I(\omega_i,\Theta^*)$ equal to the position of the first instance of $\omega_i$ in $\Theta^*$, the second instance of $\omega_i$, the position of the second instance of $\omega_i$ in $\Theta^*$, etc. So as to properly/correctly compute the ADM, but also for any other cases in using the \textbf{position-index function} in say logic or formulations as we do in many scenarios concerning Transformatics.}.
 
-And thus, we can see readily that:\\
+And thus, we can see readily that:
 
+\vspace{1em}
 \begin{equation}
 \label{EQCOMPNASEQ14}
 \tilde{A}(\Theta1 \rightarrow \Theta4) = \frac{1}{12}(0 + 0 + 0 + 3 + 3 + 3 + 2 + 3 + 5 + 2 + 5 + 2) = \frac{28}{12} = 2.3\bar{3} > 1 > 0
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 And so, despite the measures and first analysis in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}} having shown that these two nucleic acid sequences didn't have any significant differences, and yet, using ADM as in \textbf{\hyperref[TABADM1]{Table \ref{TABADM1}}} and \textbf{\hyperref[EQCOMPNASEQ14]{Equation \ref{EQCOMPNASEQ14}}}, we find that they are appreciably \textbf{significantly different}! Their ADM being $2.3$, it tells us the second sequence potentially has elements in the first sequence shifted to new locations in the sequence, potentially by more than just 1 position. Thus, despite all their other similarities, they do have some differences that we can measure and pin to some telling numbers.
 
@@ -2134,7 +2165,7 @@ So, first, note that, from \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, that 
 
 Thus, their first difference is in their unspecific sequence symbol sets: $\hat{\psi}(\Theta1) = \langle T, A, C, G\rangle$ and yet $\hat{\psi}(\Theta3) = \langle A, T, G, C\rangle$. So, at minimum, we know that they have quantifiable difference in the [first-occurrence] ordering of their similar symbols within either sequence just by this analysis --- especially because these particular symbol set types respect order of first occurrence within the sequence they summarize.
 
-If we must continue to still analyze the two sequences, we can further note that they have the same closest\footnote{I say ``closest parent symbol set" because, for several scenarios in analyzing sequences, one can encounter cases where two sequences have symbols that belong to more than one symbol set where that other symbol set is larger than the sequence symbol set. For example, the case of having to decide if a sequence such as ``101" belongs to base 2, base 3, base 10 or even base-36! Or if we have the sequence ``AUG" that might span the RNA-symbol set, but also $\psi_{na}$, and talking of which, we must note that, in principle at least, all na-Sequences could also be classified as sequences of terms from the Latin-Alphabet --- the symbol set $\psi_{az}$!} parent symbol set, $\psi_{DNA}$. And so, that's a similarity.
+If we must continue to still analyze the two sequences, we can further note that they have the same closest\footnote{I say ``closest parent symbol set"\index{symbol set!parent} because, for several scenarios in analyzing sequences, one can encounter cases where two sequences have symbols that belong to more than one symbol set where that other symbol set is larger than the sequence symbol set. For example, the case of having to decide if a sequence such as ``101" belongs to base 2, base 3, base 10 or even base-36! Or if we have the sequence ``AUG" that might span the RNA-symbol set, but also $\psi_{na}$, and talking of which, we must note that, in principle at least, all na-Sequences could also be classified as sequences of terms from the Latin-Alphabet --- the symbol set $\psi_{az}$!} parent symbol set, $\psi_{DNA}$. And so, that's a similarity.
 
 And then we come to the matter of their modal sequence statistics. For this case, we see that we have the values: 
 
@@ -2157,14 +2188,16 @@ Concerning this, note that, unlike \textbf{\hyperref[SECSCENA]{Scenario A}} wher
 \begin{minipage}{0.8\textwidth}
 \Large
 
-\begin{defn}[The \textbf{Sequence Characteristic}, $\hbar(\overset{>}{\Theta})$]
+\begin{defn}[The \textbf{Sequence Characteristic}\index{sequence characteristic}\index{characteristic!sequence}, $\hbar(\overset{>}{\Theta})$]
 \label{DEFSEQCHAR}
 If a sequence $\Theta$ has the modal sequence statistic\footnote{Refer to rigorous definition: \textbf{\hyperref[DEFMSSFIN]{Definition \ref{DEFMSSFIN}}}} $\overset{>}{\Theta} = \langle \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i, \rangle$, so that we can express it as a string concatenation of its distinct symbols in their relative order of highest frequency and first occurrence such as $\omega_1\omega_2\omega_3\ldots\omega_k$ for some $k$ the size of $\overset{>}{\Theta}$, then, if for each $\omega_i$ we also know its corresponding frequency in $\Theta$, such as $f_i$ for $\omega_i$, then writing the frequency next to the symbol such as $\omega_if_i$ for all terms in $\overset{>}{\Theta}$ produces a string that contains both the information about the unique modal sequence of $\Theta$, but also the information about how frequent each symbol occurred. We shall call such an expression the \textbf{Sequence Characteristic}, and shall denote it as  $\hbar(\overset{>}{\Theta})$, so that we can then write for $\Theta$, its corresponding sequence characteristic as:
 
+\vspace{1em}
 \begin{equation}
 \label{EQSECHARDEF}
  \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \overset{>}{\Theta}} \omega_i\cdot f_i
 \end{equation}
+\vspace{1em}
 
 Note that, for any $\Theta$, if $\invpi(\Theta) = n$ and $\invpi(\omega_i \in \Theta) = f_i$, then $1 \leq f_i \leq n \quad \land \quad \sum\limits_{1 \leq i \leq \invpi(\overset{>}{\Theta})} f_i = n$.
 
@@ -2175,26 +2208,22 @@ Note that, for any $\Theta$, if $\invpi(\Theta) = n$ and $\invpi(\omega_i \in \T
 \end{center}
 
 
-{
-\LARGE
-
-\hl{TODO: proceed from here...}
-}
 
 
+Closely related, and since we have already seen such a computation and its application in \textbf{Step\#4} of our \textbf{\hyperref[SECFANAL]{First Analysis}} using the TEA programming language, we might as well formally define a generic machine that can compute $\hbar(\overset{>}{\Theta})$ for any sequence.
 
-Closely related, and since we have already seen such a computation and its application in \textbf{Step\#4} of our \textbf{\hyperref[SECFANAL]{First Analysis}} using the TEA programming language, we might as well formally define a generic machine that can compute $\hbar(\overset{>}{\Theta})$ for any sequence.\\
-
-\begin{transf}[The \textbf{Sequence Characteristic Generator}, gSC]
+\vspace{1em}
+\begin{transf}[The \textbf{Sequence Characteristic Generator}\index{generator!sequence characteristic}, gSC]
 \label{TRANSFGENSEQCHAR}
 $ $\\
 $\Theta \xrightarrow{O_{gSC}(\Theta)} \Theta^*; \quad \Theta^* = \hbar(\overset{>}{\Theta}) = \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i\cdot f_i = \prod\limits_{\rho_i \in \overset{>}{\Theta}} \rho_i\cdot \invpi(\rho_i \in \Theta)$
 \end{transf}
+\vspace{1em}
 
-So, we note that, like in the example we saw in generating $\hbar(\overset{>}{\Theta1})$ for $\Theta1$ in our \textbf{\hyperref[SECFANAL]{First Analysis}} --- which returned the characteristic string as \textbf{C4G3T3A2}, we can then see that, by using the information in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, that for the two sequences we are comparing, we have their sequence characteristics as such:
+So, we note that, like in the example we saw in generating $\hbar(\overset{>}{\Theta1})$ for $\Theta1$ in our \textbf{\hyperref[SECFANAL]{First Analysis}} --- which returned the characteristic string as \textbf{C4T3G3A2}, we can then see that, by using the information in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, that for the two sequences we are comparing, we have their sequence characteristics as such:
 
 \begin{itemize}
-\item $\hbar(\overset{>}{\Theta1})$ = \textbf{C4G3T3A2}
+\item $\hbar(\overset{>}{\Theta1})$ = \textbf{C4T3G3A2}
 \item $\hbar(\overset{>}{\Theta3})$ = \textbf{G6A5T4C1}
 \end{itemize}
 
@@ -2214,15 +2243,16 @@ Given some two \textbf{potentially different}, particular instances of na-Sequen
 Without repeating ourselves nor wasting time, note that, from the cases we have in \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}}, this scenario might be applicable to sequences such as $\Theta1$ and $\Theta_{rbcl}$ for example. And, from the analysis procedure we have already encountered in \textbf{\hyperref[SECSCENB]{Scenario B}}, we can definitely use any of several available ways to quantify their similarities or differences. However, most useful perhaps, might be to just look at their sequence characteristics:
 
 \begin{itemize}
-\item $\hbar(\overset{>}{\Theta1})$ = \textbf{C4G3T3A2}
-\item $\hbar(\overset{>}{\Theta_{rbcl}})$ = \textbf{U1355G1207A305C301}
+\item $\hbar(\overset{>}{\Theta1})$ = \textbf{C}4\textbf{T}3\textbf{G}3\textbf{A}2
+\item $\hbar(\overset{>}{\Theta_{rbcl}})$ = \textbf{U}1355\textbf{G}1207\textbf{A}305\textbf{C}301
 \end{itemize}
 
-Which, \textbf{automatically disqualifies any allegations that the two sequences are similar}, and which, further [can/does] tells us they differ in not only their symbol sets, but also in their symbol distribution if they actually do.
+Which, \textbf{automatically disqualifies any allegations that the two sequences are similar}, and which, further [can/does] tell us they differ in not only their symbol sets, but also in their symbol distribution if they actually do.
 
-Also, and important to note, we see that, by having a sequence's \textbf{characteristic}\footnote{Yes, sometimes we might just talk of a \textbf{characteristic} when we mean a ``sequence characteristic".} computed, we can not only tell at a glance which symbols occur most frequent in a sequence, which symbols only occur once but in different order, but also, be able to readily compute the actual cardinality of the summarized sequence --- so, with $\hbar(\overset{>}{\Theta_{rbcl}})$ = \textbf{U1355G1207A305C301}, we can compute the length of the \textbf{RbcL} by just summing up the $f_i$ terms in $\hbar(\overset{>}{\Theta_{rbcl}})$: 1355 + 1207 + 305 + 301 = \textbf{3168}. Thus, the \textbf{sequence characteristic} statistic --- see \textbf{\hyperref[DEFSEQCHAR]{Definition \ref{DEFSEQCHAR}}}. 
+Also, and important to note, we see that, by having a \textbf{characteristic}\footnote{Yes, sometimes we might just talk of a \textbf{characteristic} when we mean a ``sequence characteristic".\index{characteristic}}\index{characteristic} computed, we can not only tell at a glance which symbols occur most frequently in a sequence, which symbols only occur once or with similar frequencies but with telling ordering, but also, be able to readily compute the actual cardinality of the sequence being summarized by the characteristic\index{sequence characteristic!relation to cardinality} --- so, with $\hbar(\overset{>}{\Theta_{rbcl}})$ = \textbf{U}1355\textbf{G}1207\textbf{A}305\textbf{C}301, we can compute the length of the \textbf{RbcL} by just summing up the corresponding $f_i$ terms in $\hbar(\overset{>}{\Theta_{rbcl}})$: 1355 + 1207 + 305 + 301 = \textbf{3168}. Such is the relevance of the \textbf{sequence characteristic} statistic --- see \textbf{\hyperref[DEFSEQCHAR]{Definition \ref{DEFSEQCHAR}}}. 
 
-It is such a handy and robust measure or rather, statistic, when comparing especially large or arbitrarily sized sequences \textit{at a glance}. Good enough, we have seen that there is a simple/short TEA program to help automatically compute and display that measure for any input sequence, so, interested researchers and students can just adapt/build on that in the future.
+It is such a handy and robust measure or rather, statistic, when comparing especially large or arbitrarily sized sequences \textit{at a glance}. Good enough, we have seen that there is a simple/short TEA program\footnote{In fact, the sequence characteristic is featured among the TEA standard programs that one might access [and even run] either via the TEA WEB IDE: \url{https://tea.nuchwezi.com} or via the TEA project repository\cite{cli_tttt}.\index{TEA program!sequence characteristic}} to help automatically compute and display that measure for any [well formatted] sequence, so, interested researchers and students can just adapt/build on that in the future.
+
 
 \section{SCENARIO D --- the population characteristic measure}
 \label{SECSCEND}
@@ -2231,11 +2261,11 @@ It is such a handy and robust measure or rather, statistic, when comparing espec
 \small
 \texttt{
 How, when given a particular na-Sequence, $Q_k$, and two collections/samples of other sequences\\
- ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, $m$ and $n$ respectively, and that belong to \textbf{labeled or classified populations} --- POPA and POPB respectively, to determine which of the two populations the query sequence, $Q_k$, best-belongs to (so we classify it under one of those labels), as well as determine which of the \textbf{particular} sample member sequences from either collections it is closest to.}
+ ($\Theta1, \Theta2, \Theta3,..., \Theta m$) and ($\Omega1, \Omega2, \Omega3,..., \Omega n$) of potentially dissimilar lengths, $m$ and $n$ respectively, and that belong to \textbf{labeled or classified populations} --- POPA and POPB respectively, to determine which of the two populations the query sequence, $Q_k$, best-belongs to (so we classify it under the associated label), as well as determine which of the \textbf{particular} sample's member sequences --- from that chosen collection it is closest to.}
 \end{quote}
 
 
-To begin with, and unlike the other scenarios we have already dealt with, it seems like the biggest concern here is to compare against a sequence of not just one other sequence, but an entire collection of them --- essentially, it is like having to quantify the distance between a particular sequence and some collection --- a cluster, of other sequences. 
+To begin with, and unlike the other scenarios we have already dealt with, it seems like the biggest concern here is to compare some given sequence against not just one other sequence, but an entire collection of them --- essentially, it is like having to quantify the distance between a particular sequence and some collection --- perhaps a cluster, of other sequences. 
 
 So how might we go about solving this using the tools already at our disposal?
 
@@ -2249,7 +2279,7 @@ So how might we go about solving this using the tools already at our disposal?
 Though we don't intend to borrow many or any ideas from what others would do or how existing [external or independent] methods might provide a solution to our classification problem, we shall call-out one useful general concept that is well placed in the Oxford Dictionary of Computing in relation to this kind of problem:
 
 \begin{quotation}
-\noindent \textbf{Decision Surface}: \texttt{A (hyper) surface in a multidimensional state space that partitions the space into different regions. Data lying on one side of a decision surface are defined as belonging to a different class from those lying on the other. Decision surfaces may be created or modified as a result of a learning process and they are frequently used in machine learning, pattern recognition, and classification systems.}\\
+\noindent \textbf{Decision Surface}\index{decision surface} \texttt{A (hyper) surface in a multidimensional state space that partitions the space into different regions. Data lying on one side of a decision surface are defined as belonging to a different class from those lying on the other. Decision surfaces may be created or modified as a result of a learning process and they are frequently used in machine learning, pattern recognition, and classification systems.}\\
 \hspace*{\fill} --- \textbf{Oxford Dictionary of Computing}\cite{illingworth1996computing}
 \end{quotation}
 
@@ -2263,17 +2293,19 @@ First, let us deal with the matter of associating our query sequence, $Q_k$, wit
 \subsection{Measuring Proximity to a Set of Sequences, $\Omega^n$}
 \label{SECPROXPOP}
 
-So, if we have a set of $n$ different sequences of arbitrary composition and lengths:\\
+So, if we have a set of $n$ different sequences of arbitrary composition and lengths:
 
 
+\vspace{1em}
 \begin{equation}
  \Omega^n = \langle \Omega1, \Omega2, \Omega3,..., \Omega n \rangle
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 
-And which we might also express more elaborately via matrix form as:\\
+And which we might also express more elaborately via [sparse\footnote{Especially given that some of the rows might mostly contain missing elements where other rows have values, given the sequences (one per row) are of unequal length.}] matrix form as:
 
-
+\vspace{1em}
 \begin{multline}
  \Omega^n = 
  \begin{bmatrix}
@@ -2289,49 +2321,59 @@ And which we might also express more elaborately via matrix form as:\\
    \vdots \\
      \Omega n \langle a_{n1},a_{n2},...,a_{n\zeta} \rangle,\\
  \end{bmatrix}
-\end{multline}\\
+\end{multline}
+\vspace{1em}
 
 
-Then, given some query sequence such as $Q_k$, and the consequences of \textbf{Theorem 2} in \cite{transformatics}, we can safely classify the query sequence as \textbf{belonging to} or \textbf{being appreciably close} to a given population, if we find that computing the anagram distance between the query and the population via their representative modal sequence statistics results in an ADM value of 0, or if, where there are two or more populations to compare against, that we select that population whose ADM against the query sequence's MSS is appreciably close enough to 0.
+Then, given some query sequence such as $Q_k$, and the consequences of \textbf{Theorem 2} in \cite{transformatics}\footnote{Concerning ``Equivalence of Distributions under Modal Sequence
+Analysis" --- that if any two sequences otherwise so unlike in literal membership, ordering, size, etc, instead end up having similar or equal modal sequence statistics, then we can safely conclude they possibly belong to the same probability distribution.}, we can safely classify the query sequence as \textbf{belonging to} or \textbf{being appreciably close} to a given population, if we find that computing the anagram distance between the query and the population via their representative modal sequence statistics results in an ADM value of 0, or if, where there are two or more populations to compare against, that we select that population whose ADM against the query sequence's MSS is appreciably close enough to 0 --- or perhaps the least when comparing against multiple populations.
 
-With that useful theory then, and given we already know how to compute an MSS, $\overset{>}{Q_k}$, for any particular sequence\footnote{In this work, check \textbf{\hyperref[SECFANAL]{First Analysis}}, but also \textbf{Section 4.1} and especially \textbf{Definition 1} in \cite{transformatics} concerning how to compute the modal sequence statistic.} $Q_k$, we instead better start by solving the matter of how to compute an MSS for a set of sequences --- a \textbf{representative population modal sequence statistic}.
+With that useful theory then, and given we already know how to compute an MSS, $\overset{>}{Q_k}$, for any particular sequence\footnote{In this work, check \textbf{\hyperref[SECFANAL]{First Analysis}}, but also \textbf{Section 4.1} and especially \textbf{Definition 1} in \cite{transformatics} concerning how to compute the modal sequence statistic. Also consult \textbf{\hyperref[DEFMSSFIN]{Definition \ref{DEFMSSFIN}}} in the appendix.} $Q_k$, we instead better start by solving the matter of how to compute an MSS for a set of sequences --- a \textbf{representative population modal sequence statistic}.
 
 
 So, assuming we have $Q_k = \langle a, d, c \rangle$, $\Omega1 = \langle a, b, c, d, e, f \rangle$ and $\Omega2 = \langle a, b, a, d, c \rangle$, and so that $\Omega^n = \langle \Omega1, \Omega2 \rangle$, we wish to compute $\overset{>}{\Omega^n}$, a population modal sequence statistic representing or summarizing the membership and frequency distribution across the two sequences. So, how should we go about [correctly] computing $\overset{>}{\Omega^n}$?
 
-\textbf{STRATEGY 1:} Since we have multiple sequences, and that they potentially even have some uncommon terms and dissimilar lengths, a meaningful strategy might be to not attempt to compute the population MSS directly from the individual sequences, and instead use their sequence characteristics. That is, we would compute $\hbar(\overset{>}{\Omega1})$, $\hbar(\overset{>}{\Omega2})$, ... etc. and then using these, generate a combined \textbf{population characteristic}, $\hbar(\overset{>}{\Omega^n})$. The essential definition shall help make things clearer:\\
+\vspace{2em}
 
+\textbf{STRATEGY 1:} Since we have multiple sequences, and that they potentially even have some uncommon terms and dissimilar lengths, a meaningful strategy might be to not attempt to compute the population MSS directly from the individual sequences, and instead use their sequence characteristics. That is, we would compute $\hbar(\overset{>}{\Omega1})$, $\hbar(\overset{>}{\Omega2})$, ... etc. and then using these, generate a combined \textbf{population characteristic}, $\hbar(\overset{>}{\Omega^n})$. The essential definition shall help make things clearer:
 
-\begin{defn}[The \textbf{Population Characteristic}]
+\vspace{1em}
+\begin{defn}[The \textbf{Population Characteristic}\index{population characteristic}\index{characteristic!population}]
 \label{DEFPOPCHAR}
-Given a collection, $\Theta^n$, of $n$ sequences of arbitrary length and composition. The representative \textbf{population characteristic}, that summarizes all the sequences within that population, denoted $\hbar(\overset{>}{\Theta^n})$, is derived from the sequence characteristics of the contained sequences, $\hbar(\overset{>}{\Theta_1})$, $\hbar(\overset{>}{\Theta_2})$, ... , $\hbar(\overset{>}{\Theta_n})$ as such:
+Given a collection, $\Theta^n$, of $n$ sequences of arbitrary length and composition, the representative \textbf{population characteristic}, that summarizes all the sequences within that population, denoted $\hbar(\overset{>}{\Theta^n})$, is derived from the sequence characteristics of the contained sequences, $\hbar(\overset{>}{\Theta_1})$, $\hbar(\overset{>}{\Theta_2})$, ... , $\hbar(\overset{>}{\Theta_n})$ as such:
 
+\vspace{1em}
 \begin{equation}
 \label{EQPOPCHAR}
 \hbar(\overset{>}{\Theta^n}) = \prod\limits_{\forall \omega_i \in \psi(\Theta^n)} \omega_i \cdot \invpi(\omega_i \in \Theta^n)
 \end{equation}
+\vspace{1em}
 
-Where $\forall \Theta_j \in \Theta^n$
+Where $\forall \Theta_\alpha \in \Theta^n$
 
+\vspace{1em}
 \begin{equation}
-\invpi(\omega_i \in \Theta^n) = \sum\limits_{\forall \hbar(\overset{>}{\Theta_j})} f_{\omega_i}
+\invpi(\omega_i \in \Theta^n) = \sum\limits_{\forall \hbar(\overset{>}{\Theta_\alpha})} f_{\omega_i}
 \end{equation}
+\vspace{1em}
 
-And $\forall i, j \in \mathbb{N}: i < j \implies f_i \geq f_j$ for the frequency terms in $\hbar(\overset{>}{\Theta^n})$.
+And $\forall i, j \in \mathbb{N}: I(\omega_i,\overset{>}{\Theta^n}) < I(\omega_j,\overset{>}{\Theta^n}) \implies f_{\omega_i} \geq f_{\omega_j}$ for the frequency terms in $\hbar(\overset{>}{\Theta^n})$.
+$\qed$
 \end{defn}
+\vspace{1em}
 
 
-Thus having computed the representative population characteristic for our sample/collection/list/set of sequences as $\hbar(\overset{>}{\Omega^n})$, we then proceed to extract or reduce it to just the \textbf{representative population modal sequence statistic} (RPMSS)\footnote{Any careful analyst shall realize that computing or deriving the RPMSS as in the given process, or as per \textbf{\hyperref[EQPOPCHAR]{Definition \ref{EQPOPCHAR}}}, shall make the most sense, because, any other way would either ignore the important per-sequence symbol distribution information, or might just not be efficient or robust/trustworthy enough. Plus, where the frequencies don't matter --- such as when each symbol only appears once across all sequences, then working from the per-sequence MSS would help generate a RPMSS that is close-enough to the relative ordering of terms in each member sequence with minimal or no effort.}, $\overset{>}{\Omega^n}$.
+Thus having computed the representative population characteristic for our sample/collection/list/set of sequences as $\hbar(\overset{>}{\Omega^n})$, we then proceed to extract or reduce it to just the \textbf{representative population modal sequence statistic} (RPMSS)\footnote{Any careful analyst shall realize that computing or deriving the RPMSS as in the given process, or as per \textbf{\hyperref[EQPOPCHAR]{Definition \ref{EQPOPCHAR}}}, shall make the most sense, because, any other way would either ignore the important per-sequence symbol distribution information, or might just not be efficient or robust/trustworthy enough. Plus, where the frequencies don't matter --- such as when each symbol only appears once across all sequences, then working from the per-sequence MSS would help generate a RPMSS that is close-enough to the relative ordering of terms in each member sequence with minimal or no effort.}\index{representative population modal sequence statistic}\index{RPMSS}\index{modal sequence statistic!for a population}, $\overset{>}{\Omega^n}$.
 
-And with the RPMSS, $\overset{>}{\Omega^n}$, and having computed the MSS of the query sequence, $\overset{>}{Q_k}$, we can then proceed to compute the proximity between the query and the population via a measure such as the ADM: $\tilde{A}(\overset{>}{Q_k},\overset{>}{\Omega^n})$, and if there were more than one population to compare the query against, use the computed ADM values as a \textbf{decision surface} to help objectively decide which of the analyzed populations the query most likely belongs to.
+And with the RPMSS, $\overset{>}{\Omega^n}$, and having computed the MSS of the query sequence, $\overset{>}{Q_k}$, we can then proceed to compute the proximity between the query and the population via a measure such as the ADM: $\tilde{A}(\overset{>}{Q_k},\overset{>}{\Omega^n})$, and if there were more than one population to compare the query against, use the computed ADM values as a \textbf{decision surface}\index{decision surface}\index{machine learning}\index{statistical artificial intelligence} to help objectively decide which of the analyzed populations the query most likely belongs to.
 
-Concerning this method too, it is important to note that, given there might be cases in which the query sequence and the population contain several uncommon symbols --- i.e. $\psi(Q_k) \setminus \psi(\Omega^n) \neq \emptyset$ or that $\psi(Q_k) \cap \psi(\Omega^n) = \emptyset$ --- in the later case, there being no need to conduct any further analysis, we might need to adjust the modal sequences for both the query and population so that we can correctly compute their associated ADM. Thus, we might proceed by eliminating from both $\overset{>}{Q_k}$ and $\overset{>}{\Omega^n}$, those uncommon terms, so that the ADM we use as our decision surface is computed thus: $\tilde{A}(\approx\overset{>}{Q_k} \rightarrow \approx\overset{>}{\Omega^n})$.\\
+Concerning this method too, it is important to note that, given there might be cases in which the query sequence and the population contain several uncommon symbols --- i.e. $\psi(Q_k) \setminus \psi(\Omega^n) \neq \emptyset$ or that $\psi(Q_k) \cap \psi(\Omega^n) = \emptyset$ --- in the later case, there being no need to conduct any further analysis. Otherwise, we might need to adjust the modal sequences for both the query and population so that we can correctly compute their associated ADM. Thus, we might proceed by eliminating from both $\overset{>}{Q_k}$ and $\overset{>}{\Omega^n}$, those uncommon terms, so that the ADM we use as our decision surface is computed thus: $\tilde{A}(\approx\overset{>}{Q_k} \rightarrow \approx\overset{>}{\Omega^n})$.\\
 
 \begin{center}
 \fbox{\begin{minipage}{0.9\textwidth}
 \large
 \textbf{EXAMPLE:}\\
-  \textbf{How to Compute $\tilde{A}(\approx\overset{>}{Q_k} \rightarrow \approx\overset{>}{\Omega^n})$} \\
+  \textbf{How to Compute\index{anagram distance measure!for non-anagrams} $\tilde{A}(\approx\overset{>}{Q_k} \rightarrow \approx\overset{>}{\Omega^n})$} \\
 
 Assume we use the given sequences: $Q_k = \langle a, d, c \rangle$, $\Omega1 = \langle a, b, c, d, e, f \rangle$ and $\Omega2 = \langle a, b, a, d, c \rangle$, and so that $\Omega^n = \langle \Omega1, \Omega2 \rangle$, then:
 
@@ -2350,11 +2392,32 @@ However, given $\overset{>}{\Omega^n} \setminus \overset{>}{Q_k} \neq \emptyset$
 
 And so that we can then compute $\tilde{A}(\overset{>}{Q_k} \rightarrow \approx\overset{>}{\Omega^n}) = \frac{1}{3}(|1-1| + |2-3| + |3-2|) = \frac{2}{3} < 1$.\\
 
-If there is no other population to compare the query against, we can safely conclude the query is appreciably close enough to the population, otherwise we also compute the ADM between the query and the other populations, and then pick the one with the smallest ADM.
+If there is no other population to compare the query against, we can safely conclude the query is appreciably close enough to the population, otherwise we also compute the ADM between the query and the other populations, and then pick the one with the smallest/least ADM.
 
 \end{minipage}}
 \\
 \end{center}
+
+\vspace{2em}
+
+
+{
+\LARGE
+
+\hl{
+
+TODO: Continue indexing starting from here
+
+}
+}
+
+
+{
+\LARGE
+
+\hl{TODO: proceed from here...}
+}
+
 
 \textbf{STRATEGY 2:} The process outlined in the first strategy to solving the first problem in \textbf{\hyperref[SECSCEND]{Scenario D}} might work well and be convincing enough for most practical and theoretical purposes, however, it is not the only plausible route to a good solution. Especially because we are mostly concerned with how to obtain the RPMSS for a collection of potentially widely dissimilar sequences --- a very possible case if we are for example dealing with realistic collections of DNA sequence readings/scans of say a person's genome, the genome of some newly identified species with scanty details, or even the case of attempting to obtain an RPMSS for an entire set of individual organisms --- e.g human members of a clan or particular family tree, etc. So, even though we might not delve into it here, there is a proposal to compute $\overset{>}{\Omega^n}$ from $n$ sequences via computing the population's \textbf{genome sequence}. 
 
@@ -6305,7 +6368,7 @@ So that, if $m=k$, then we essentially have a super-sequence that can be express
 
 First, note that we already encountered an example of/application of this present proposal in the useful program we encountered at the end of \textbf{\hyperref[PROP6]{Proposal 6}}; in a program that basically computes the sequence characteristic of any input sequence, and which is essentially a \textit{higher-order transformer} that is composed as a chain of smaller sequence transformers  --- which is what all or most of \textbf{TEA primitive instructions}\cite{Lutalo2024TEATAZ} are), and which transformer then (as the ``SC-Generator") essentially reduces any input sequence to its summary statistic expression, particularly the sequence characteristic.\\
 
-Otherwise, note that; looking at a TEA program as depicted in \textbf{\hyperref[LISTSC]{Figure \ref{LISTSC}}} is helpful, since it reflects how the overall [higher-order] transformer program might be composed out of logically-meaningful sections\footnote{In TEA parlance and in relation to how most computer scientists might think of the matter of \textit{scoping}, \textit{code-blocks} or \textit{encapsulation}, for TEA, it is mostly all about \textbf{l-blocks} or \textit{label-blocks} --- also known as ``labeled blocks"\cite{Lutalo2024TEATAZ}.} as a software engineer or computer programmer already familiar with the TEA language might approach the SC problem. However, also note that; that same exact program is also equivalent to the following two versions --- both of which kick-out \textit{TEA comments}\footnote{In the example source-code we shall encounter in this work, but also typically, these are expressions in a TEA program that start with the `\#' character, and which makes them inert or non-executable lines/expressions in the program.}, and \textbf{only focus on the individual TEA instructions necessary to make the program work as desired, as well as how they ought be ordered within the program}, but where, the first (\textbf{\hyperref[LSTSCGEN]{Listing \ref{LSTSCGEN}}}) simplifies the code to just a sequence of TEA instructions one per line, while the second (\textbf{\hyperref[LSTSCGEN]{Listing \ref{LSTSCGENMINI}}}) shows the same exact program, in its \textbf{minified} form --- where, each instruction is delimited from the next by the standard TEA instruction delimiter `\verb!|!', and nothing else.
+Otherwise, note that; looking at a TEA program as depicted in \textbf{\hyperref[LISTSC]{Figure \ref{LISTSC}}} is helpful, since it reflects how the overall [higher-order] transformer program\index{TEA!as higher-order transformers} might be composed out of logically-meaningful sections\footnote{In TEA parlance and in relation to how most computer scientists might think of the matter of \textit{scoping}, \textit{code-blocks} or \textit{encapsulation}, for TEA, it is mostly all about \textbf{l-blocks} or \textit{label-blocks} --- also known as ``labeled blocks"\cite{Lutalo2024TEATAZ}.} as a software engineer or computer programmer already familiar with the TEA language might approach the SC problem. However, also note that; that same exact program is also equivalent to the following two versions --- both of which kick-out \textit{TEA comments}\footnote{In the example source-code we shall encounter in this work, but also typically, these are expressions in a TEA program that start with the `\#' character, and which makes them inert or non-executable lines/expressions in the program.}, and \textbf{only focus on the individual TEA instructions necessary to make the program work as desired, as well as how they ought be ordered within the program}, but where, the first (\textbf{\hyperref[LSTSCGEN]{Listing \ref{LSTSCGEN}}}) simplifies the code to just a sequence of TEA instructions one per line, while the second (\textbf{\hyperref[LSTSCGEN]{Listing \ref{LSTSCGENMINI}}}) shows the same exact program, in its \textbf{minified} form --- where, each instruction is delimited from the next by the standard TEA instruction delimiter `\verb!|!', and nothing else.
 
 \vspace{2em}
 
