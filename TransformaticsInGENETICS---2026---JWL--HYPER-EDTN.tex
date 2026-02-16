@@ -1220,9 +1220,9 @@ By \textbf{\hyperref[EQCOMPSETS]{Equation \ref{EQCOMPSETS}}}, we see that if $\T
     \draw[->] (A-1-\i) -- (B-1-\i);
 
   % Optional: arrows for ellipsis and final element
-  \draw[->] (A-1-4) -- (B-1-4); % for \cdots
-  \draw[->] (A-1-5) -- (B-1-5); % for a_{n-1} → b_{n-1}
-  \draw[->] (A-1-6) -- (B-1-6); % for a_n → b_n
+  \draw[->] (A-1-6) -- (B-1-6); % for \cdots
+  \draw[->] (A-1-7) -- (B-1-7); % for a_{n-1} → b_{n-1}
+  \draw[->] (A-1-8) -- (B-1-8); % for a_n → b_n
 \end{tikzpicture}
 \]
 
@@ -2559,7 +2559,7 @@ Thus, for optimal lookup mechanisms --- concerns about space and [polynomial] ti
 Computing a hashkey based on a G$\ddot{o}$del number is just one approach to the optimal way to implement a sequence lookup mechanism with \textbf{\hyperref[TRANSFSEQLOOKUP]{Transformer \ref{TRANSFSEQLOOKUP}}}. Among the \textbf{attractive properties} of this method, is the realization that, unlike the case of using the \textbf{ADM}, the G$\ddot{o}$del number approach boils down to comparing sequences using pure numbers and to which mere basic arithmetic tests can be applied than using sequences directly or sequence projections (themselves still potentially non-numeric sequences) to which we can not readily apply search or measurements by pure arithmetic means.
  
  
- Also, note that, with the G$\ddot{o}$del number approach, and if we proceed to compute the identifier or hash-key of some sequence $\Theta$ --- i.e $\Gamma (id(\Theta))$ --- via computation of its corresponding G$\ddot{o}$del number, $\ddot{o}(\Theta)$, as per the following formulation:
+ Also, note that, with the G$\ddot{o}$del number approach, and if we proceed to compute the identifier or hash-key of some sequence $\Theta$ --- i.e $\Gamma (id(\Theta))$ --- via computation of its corresponding G$\ddot{o}$del number, $\ddot{o}(\Theta) \in \mathbb{N}$, as per the following formulation:
  
  \vspace{1em}
 \begin{equation}
@@ -2582,6 +2582,49 @@ We know that if any two sequences have some uncommon symbol, then we shall find 
  
  
    However, even that method utilizes the transformatics concept of summarizing arbitrary sequences by their \textbf{sequence characteristic} first, and consequently, their \textbf{modal sequence statistic}, so as to later arrive at the pure number hash keys\footnote{\textbf{FUTURE WORK}: In later analyses and perhaps further development of this idea, it might help to ascertain whether or not projecting arbitrary sequences to pure numbers would still internally preserve useful distance heuristics such as how the ADM can hint at sequences that are quantifiably and especially lexically similar/close to each other, while, with G$\ddot{o}$del numbers, we have not clearly or robustly explored all such nuances, and there could be a possibility that perhaps, unless, as we have somewhat constrained our derivation methods here, it might be possible to arrive at multiple pure numbers for the same exact sequence when the formulation for computing a sequence's  G$\ddot{o}$del number is altered across storage or sequence look-up systems.}. However, as we see in the constraints and specification of that generator-transformer, the other option is to compute the solution using the ADM applied to keys based on just the modal sequence statistics of the query and the target sequences in $\Theta^n$ as we have already gotten well acquainted with in much of this chapter.
+   
+   Finally, given that the hashkey or identifier key for some sequence $\Theta$ as per the G$\ddot{o}$del number method might result in a potentially large natural number that is derived from the product of several natural numbers ($f_i$) and prime numbers ($p_i$), as per \textbf{\hyperref[EQHASHKEYSEQGODEL]{Equation \ref{EQHASHKEYSEQGODEL}}}, of course, unless a clever method for keeping these keys short is enforced\footnote{Such as, when for starters, we limit our sequence alphabets to only a minimal finite symbol set such as $\psi_{na}$, $\psi_{az}$ or perhaps for arbitrary text sequences, something like either $\psi_{36}$ or the ascii character set, $\psi_{ascii}$.\index{$\psi_{ascii}$}, since, by having a small alphabet or symbol set, also the corresponding largest prime number, $p_i$, that we would encounter when computing the corresponding G$\ddot{o}$del number-based keys would be thus constrained --- especially since for any such symbol set, we want to ensure that $I(\omega_1,\psi_*) = I(p_1,\mathbb{P})$ where we know that $p_1 = 2, p_2 = 3, p_3= 5, \cdots$}, otherwise, given what we know of the way that the length of number expressions grow in sequence cardinality\index{sequence!cardinality under multiplication}\index{GTNC} under multiplication for pure numbers\cite{Lutalo2024gtnc}:
+   
+   \vspace{1em}
+   \fbox{\begin{minipage}{0.9\textwidth}
+\large
+\textbf{NOTE:}\\
+
+
+\begin{theo}[\textbf{Cardinality under Multiplication for Pure Numbers}]
+\label{T10}
+Given any two \textbf{pure numbers} $\tau$ and $\sigma$, the cardinality of their product $\invpi(\tau \times \sigma)$ is bounded thus\footnote{Note that in this reformulation of \textbf{Theorem 15} of GTNC\cite{Lutalo2024gtnc}, that we have replaced use of the original cardinality notation $C_{\Theta}$ in favor of the new, transformatics notation $\invpi(\Theta)$, but the concepts and underlying logic remain the same.}
+
+\begin{equation}
+\label{EQ21}
+Max(\invpi(\tau),\invpi(\sigma)) \leq \invpi(\tau \times \sigma) \leq \invpi(\tau) + \invpi(\sigma)
+\end{equation} 
+
+iff $\tau \neq 0$ and $\sigma \neq 0$ otherwise
+
+\begin{equation}
+\label{EQ21.1}
+\textbf{$C_{\tau \times \sigma}$} = 1
+\end{equation}
+
+\end{theo}
+
+\end{minipage}}
+   \vspace{1em}
+   
+It means that for hashkeys generated via \textbf{\hyperref[EQHASHKEYSEQGODEL]{Equation \ref{EQHASHKEYSEQGODEL}}}, the size of the resulting expressions is bounded thus:
+
+\vspace{1em}
+\begin{equation}
+\label{EQ21}
+Max(\invpi(f_i), \invpi(p_i)) \leq \invpi(\Gamma (id(\Theta))) \leq \sum \invpi(f_i) + \invpi(p_i)
+\end{equation}
+\vspace{1em}
+
+For all $f_i \geq 1$ --- which is all $f_i$ we shall encounter for any sequence, since there is no way a symbol's frequency entry, $f_i$ --- for say some $\omega_i \in \Theta$ or from an associated symbol set,  $\omega_i \in \psi_*$ --- would end up in our G$\ddot{o}$del number formulation (\textbf{\hyperref[EQHASHKEYSEQGODEL]{Equation \ref{EQHASHKEYSEQGODEL}}}) unless it at least corresponded to at minimum one symbol instance in the underlying sequence $\Theta$ and thus at least $f_i = 1$ in the corresponding $\hbar(\overset{>}{\Theta})$.
+
+
+
 
 
 
