@@ -110,38 +110,46 @@
 \indexentry{representative population modal sequence statistic|hyperpage}{53}
 \indexentry{RPMSS|hyperpage}{53}
 \indexentry{modal sequence statistic!for a population|hyperpage}{53}
-\indexentry{decision surface|hyperpage}{53}
-\indexentry{machine learning|hyperpage}{53}
-\indexentry{statistical artificial intelligence|hyperpage}{53}
+\indexentry{decision surface|hyperpage}{54}
+\indexentry{machine learning|hyperpage}{54}
+\indexentry{statistical artificial intelligence|hyperpage}{54}
 \indexentry{anagram distance measure!for non-anagrams|hyperpage}{54}
-\indexentry{sequencing|hyperpage}{61}
-\indexentry{genome!sequencing|hyperpage}{61}
-\indexentry{sequence!anagram|hyperpage}{78}
-\indexentry{anagram|hyperpage}{78}
-\indexentry{ribosome!flow-chart|hyperpage}{98}
-\indexentry{ribosome!state machine|hyperpage}{99}
-\indexentry{generator!protein generator|hyperpage}{102}
-\indexentry{ribosome|hyperpage}{102}
-\indexentry{sequences!decimal|hyperpage}{105}
-\indexentry{number expression|hyperpage}{105}
-\indexentry{sequences!decimal|hyperpage}{129}
-\indexentry{ADM|hyperpage}{174}
-\indexentry{sequence analysis!anagram distance|hyperpage}{174}
-\indexentry{super-sequence|hyperpage}{185}
-\indexentry{matrices|hyperpage}{186}
-\indexentry{sequence!as matrices|hyperpage}{186}
-\indexentry{sequence!higher-order|hyperpage}{186}
-\indexentry{TEA!as higher-order transformers|hyperpage}{187}
-\indexentry{sequence!definition|hyperpage}{199}
-\indexentry{matrix!definition|hyperpage}{204}
-\indexentry{matrices!as linear transformations|hyperpage}{205}
-\indexentry{data!coded or raw|hyperpage}{207}
-\indexentry{sequence!higher-order|hyperpage}{207}
-\indexentry{transformatics!mappings|hyperpage}{213}
-\indexentry{mappings|hyperpage}{213}
-\indexentry{transformatics!mappings|hyperpage}{214}
-\indexentry{transformer!as mapping|hyperpage}{214}
-\indexentry{sequence!algebra|hyperpage}{234}
-\indexentry{sequence algebra|hyperpage}{234}
-\indexentry{transformatics!as an algebra|hyperpage}{234}
-\indexentry{transformatics!definition|hyperpage}{234}
+\indexentry{genome sequence!of a population|hyperpage}{55}
+\indexentry{algorithm!Closest Sequence Search|hyperpage}{56}
+\indexentry{sequence!higher-order|hyperpage}{59}
+\indexentry{generator!Sequence Lookup System|hyperpage}{59}
+\indexentry{sequence entropy|hyperpage}{59}
+\indexentry{G$\ddot  {o}$del number|hyperpage}{59}
+\indexentry{G$\ddot{o}$del number!sequence similarity test|hyperpage}{61}
+\indexentry{sequencing|hyperpage}{63}
+\indexentry{genome!sequencing|hyperpage}{63}
+\indexentry{sequence!anagram|hyperpage}{80}
+\indexentry{anagram|hyperpage}{80}
+\indexentry{ribosome!flow-chart|hyperpage}{100}
+\indexentry{ribosome!state machine|hyperpage}{101}
+\indexentry{generator!protein generator|hyperpage}{104}
+\indexentry{ribosome|hyperpage}{104}
+\indexentry{sequences!decimal|hyperpage}{107}
+\indexentry{number expression|hyperpage}{107}
+\indexentry{sequences!decimal|hyperpage}{131}
+\indexentry{ADM|hyperpage}{176}
+\indexentry{sequence analysis!anagram distance|hyperpage}{176}
+\indexentry{super-sequence|hyperpage}{187}
+\indexentry{matrices|hyperpage}{188}
+\indexentry{sequence!as matrices|hyperpage}{188}
+\indexentry{sequence!higher-order|hyperpage}{188}
+\indexentry{TEA!as higher-order transformers|hyperpage}{189}
+\indexentry{sequence entropy!definition|hyperpage}{193}
+\indexentry{sequence!definition|hyperpage}{201}
+\indexentry{matrix!definition|hyperpage}{206}
+\indexentry{matrices!as linear transformations|hyperpage}{207}
+\indexentry{data!coded or raw|hyperpage}{209}
+\indexentry{sequence!higher-order|hyperpage}{209}
+\indexentry{transformatics!mappings|hyperpage}{215}
+\indexentry{mappings|hyperpage}{215}
+\indexentry{transformatics!mappings|hyperpage}{216}
+\indexentry{transformer!as mapping|hyperpage}{216}
+\indexentry{sequence!algebra|hyperpage}{236}
+\indexentry{sequence algebra|hyperpage}{236}
+\indexentry{transformatics!as an algebra|hyperpage}{236}
+\indexentry{transformatics!definition|hyperpage}{236}
