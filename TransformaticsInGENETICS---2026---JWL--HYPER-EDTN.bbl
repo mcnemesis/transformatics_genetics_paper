@@ -344,6 +344,11 @@ Kurt Gödel.
 \newblock English translation of Gödel's 1931 paper, accessible via:
   \url{https://archive.org/details/collectedworks0001gode}.
 
+\bibitem{CDC2024GenomicSequencing}
+Centers for Disease~Control and Prevention.
+\newblock What is genomic sequencing?
+\newblock \url{https://www.cdc.gov/amd/whatis-genomic-sequencing.html}, 2024.
+
 \bibitem{przytycka_wgs_lecture10}
 Teresa Przytycka.
 \newblock Lecture 10: Whole genome sequencing and analysis.

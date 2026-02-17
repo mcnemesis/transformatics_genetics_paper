@@ -2625,11 +2625,254 @@ For all $f_i \geq 1$ --- which is all $f_i$ we shall encounter for any sequence,
 
 
 
-
-
-
 \chapter{The Mathematics of Genome Sequencing: Sequence Alignment, The Modal Sequence, The Sequencing Machine and the Identifier Genome Sequence Law}
 \label{SECMATHSEQ}
+
+
+
+\section{Relevant Background}
+
+\begin{figure}[h]
+\fbox{\begin{minipage}{0.9\textwidth}
+\large
+\textbf{NOTE:}\\
+ On \textbf{Sequencing} \\
+
+It is important that we have some general appreciation of the core concept about which this chapter is dedicated; \textit{sequencing}. For this matter, we shall want to bring to mind one of the popular definitions of the term as employed in computer science for example:
+
+
+\begin{quotation}
+\noindent \textbf{Sequencing}\index{sequencing} \texttt{The procedure by which ordered units of data (octets or messages) are numbered, transmitted over a communications network (which may rearrange their order), and reassembled into the original order at their destination.}\\
+\hspace*{\fill} --- \textbf{Oxford Dictionary of Computing}\cite{illingworth1996computing}
+\end{quotation}
+
+
+That is the closest concept or definition I could glean from my collection of academic literature and books in my private library at Nuchwezi Research Lab, however, this other definition, obtained via Microsoft's Copilot might also help shed more light on the particular concept of concern here: \textit{genome sequencing}\index{genome sequencing}:
+
+\begin{quotation}
+\noindent \textbf{Genome Sequencing}\footnote{Also see: \url{https://en.wikipedia.org/wiki/Whole_genome_sequencing}}\cite{CDC2024GenomicSequencing}: {\ttfamily Genome sequencing is the process of determining the complete DNA (or RNA) sequence of an organism’s genome. It identifies the precise order of nucleotide bases (A, T, C, G) across all or most of the genetic material, providing a comprehensive "blueprint" of the organism's hereditary information. This technique is fundamental in biology, medicine, and biotechnology, enabling insights into genetic variation, disease mechanisms, and evolutionary relationships.
+
+}
+\hspace*{\fill} --- \textbf{Microsoft Copilot}\cite{copilot_dna_assistant}
+\end{quotation}
+
+
+\end{minipage}}
+\end{figure}
+%\vspace{2em}
+
+
+First, we shall mostly assume there is essentially no reliable mathematical formalisms or theory concerning the important matter of genome sequencing\footnote{For those that do not know, a formal definition is presented in \textbf{\hyperref[DEFGENOMESEQUENCING]{Definition \ref{DEFGENOMESEQUENCING}}}.}\index{sequencing}\index{genome!sequencing}. And so, shall set out to construct and develop such a formalism ourselves, from what we already know.
+
+Second, from the theoretical and exploratory reviews we have conducted leading up to this moment, and what some authorities\cite{przytycka_wgs_lecture10} say about the subject, we know that genome sequencing as a practice leveraging computational and mathematical principles and concepts, or rather, when approached from a predominantly mathematical theory perspective, still has some ambiguities and unresolved problems that we have identified and intend to iron out especially in this chapter.
+
+These for example include an overall lack of proper mathematical formalisms around  issues such as:
+
+\begin{enumerate}
+\item How [genome] sequencing works or what it is exactly; how can it be described computationally?
+\item If we treat of genome sequencing using the language of transformatics, and think of it in terms of processing some collection of sequences to arrive at some resultant genome sequence, how should one arrive at such a resultant sequence then? 
+\item What is a ``consensus sequence"\cite{przytycka_wgs_lecture10}?
+\item What is meant by ``a most representative genome sequence" or perhaps an identifying \textbf{na-Sequence} given some living organism or particular aspects of it?
+\item Could we (perhaps conceptually, or theoretically) talk of sequencing a population instead of an individual organism, an entire species or perhaps (sic) non-living things too? How?
+\item Could we pin down a genome sequence or some na-Sequence responsible for say the expression\footnote{Related, but not to be treated of in this chapter but instead in \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}}, is the matter of mathematically approaching how the expression --- visual, material or spatial, of any meaningful \textit{genome} sequence --- could be for a basic organism, an aspect of it, or even the case of \textit{anomalous entities} such as viruses, mere proteins or such, could be approached.} of some particular protein, some genetic mutation, a behavioral trait, anatomical or psychological anomalies and pathologies, the material basis of particular or general diseases, incapacities, etc. using a mathematical theory or language? How?
+\end{enumerate}
+
+Seeing as the matter of determining the actual na-Sequence that correctly identifies a person or thing might be hinging on the case of attempting to reconstruct a book by mathematically piecing together disparate pieces of it --- some in alignment, some out of alignment, some, supersets of  others, some prefixes or suffixes of others, etc.\footnote{This analogy shouldn't come as a surprise, when compared to how we found it best to describe DNA using a figurative metaphor (see \textbf{\hyperref[SEC1]{Introduction}}), but also based on how some authorities seem to be teaching this subject to their students\cite{przytycka_wgs_lecture10}.}, we then start to come to some appreciation of how best we might approach the problem's solution. 
+
+
+Also, though we might not immediately surface such philosophical speculations here, the difficulties and problems thus raised above, might likewise apply to or at least hint at the challenges there might be, in attempting to think of or practically resolve the matter of ``computationally sequencing anything" --- the idea being, to not limit the concept of \textit{sequencing} to only living things or living organisms only, but to also think generally and abstractly \textbf{concerning sequencing anything expressible in consensus reality via some kind of specification sequence}\footnote{Or perhaps an ``identifying sequence".}. 
+
+
+Thus, we might want to also think of, keep in mind, the possibility of sequencing the peculiar, miniscule aspects of consensus reality --- sub-atomic particles that make up atoms that make up molecules that make up living things on the miniature scale, and then all the way up to planets, stars and galaxies on the grand, cosmic and universal scale. One might wonder, and correctly so, is such sequencing possible? Does it/would it make sense? Is it necessary or even useful? These, and related problems are among the concerns we shall attempt to address in the rest of this chapter, but also, bits of what we can not immediately answer, perhaps we shall tackle in later chapters or future works\footnote{\textbf{FUTURE WORK:} Explore, philosophically, but also mathematically, whether or not it makes sense to think of the [genome] sequencing of arbitrary things; not necessarily only living/biological entities, but also any coherent material entities such as particular atoms, molecules,... all the way to entire ecosystems, planets and star-systems perhaps! For example, given that the manifestation of biological lifeforms on some particular planets within a star system heavily relies on some initial conditions inherent in the early formation of the star [system] itself, could it be that something fundamental in matter could underlie all manifestation or expression of existence other than just biological life, and that we might somehow be able to pin it down to some kind of identifier sequence? A genome for en entire planet or star system?}.
+
+\section{3 Core Problems to Solve}
+\label{SEC3COREPROB}
+
+We shall develop our theory in bits, starting with the most basic, most fundamental, and then basing on that, to construct higher aspects of the necessary mathematical structures and system.
+
+The method is simple; we have distilled 3 core problems whose solutions would culminate in the formal and mathematical definition of genome sequencing. The 3 problems are\index{genome sequencing!underlying problems}
+
+
+\begin{enumerate}
+\item \textbf{PROBLEM 1}: Computing the best or rather correct common subsequence given any two potentially dissimilar sequences.
+\item \textbf{PROBLEM 2}: Computing the correct sequence that resolves conflicts and correctly expresses variations at each particular position (essentially a column) in the alignment matrix depicting a definite alignment of two or more sequences with an overlap in the alignment position being considered.
+\item \textbf{PROBLEM 3}: Computing the Genome Sequence.
+\end{enumerate}
+
+We shall tackle each of these problems in its own section, one by one, until we arrive at the original objective of this chapter, in \textbf{\hyperref[SECGENSEQ]{Section \ref{SECGENSEQ}}}.
+
+\subsection{PROBLEM G1: Computing Maximum Common Subsequence: $\Theta_1 \Diamond \Theta_2$}
+\label{PROBG1}
+
+\begin{prob}[\textit{Computing MCS:}\index{Maximum Common Subsequence (MCS)}]: $\Theta_1 \Diamond \Theta_2$] 
+\label{PROBMCS}
+Given sequences $\Theta_1 = \langle k, l, m, o, p, x, y, z \rangle$ and $\Theta_2 = \langle b, c, a, y, z, k, l, m, o, p \rangle$, find the longest common subsequence they share --- also to be denoted $\Theta_1 \Diamond \Theta_2$, their \textbf{M}aximum \textbf{C}ommon \textbf{S}ubsequence.
+
+\vspace{1em}
+\begin{soln}
+\label{SOLMCS}
+We shall specify a transformer, tMCS($\Theta_1,\Theta_2$) that produces the required solution from the input sequences as such:
+
+\begin{transf}[The \textbf{tMCS} Transformer\index{transformer!tMCS, for maximum common subsequence}]
+\label{TRANSFMCS}
+$\langle \Theta_1,\Theta_2 \rangle  \quad \xrightarrow{O_{tMCS}(\Theta_1,\Theta_2)} \quad \Theta_1 \Diamond \Theta_2;$\\
+$0 \leq \invpi(\Theta_1 \Diamond \Theta_2) \leq Max(\invpi(\Theta_1), \invpi(\Theta_2))$\\
+$\land \quad \forall \omega \in \Theta_1 \Diamond \Theta_2 \quad \exists \omega \in \Theta_1 \land \exists \omega \in \Theta_2$\\
+$\land \quad \forall \omega_i, \omega_j \in \Theta_1 \Diamond \Theta_2 : I(\omega_i, \Theta_1 \Diamond \Theta_2) < I(\omega_j, \Theta_1 \Diamond \Theta_2) \quad $\\
+$\quad \implies \quad I(\omega_i, \Theta_1) < I(\omega_j, \Theta_1) \quad \land \quad I(\omega_i, \Theta_2) < I(\omega_j, \Theta_2)$
+\end{transf}
+$\qed$
+\end{soln}
+\end{prob}
+\vspace{1em}
+
+\textbf{\hyperref[SOLMCS]{Solution \ref{SOLMCS}}} is easier said than done. However, we shall attempt to formally and rigorously express it by formalizing what exactly the $tMCS(\Theta_1,\Theta_2)$ transformer does when expressed as a computable algorithm. Basically, we are to compute the MCS via \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}} specified hereafter.
+
+\vspace{2em}
+\begin{alg}[The \textbf{tMCS} Algorithm\index{algorithm!computing MCS}]
+\label{ALGtMCS}
+$ $
+\begin{enumerate}
+\item{\textbf{INITIALIZE} the global maximum common sequence, $O^m_g$, to the empty sequence\footnote{Refer to \textbf{\hyperref[RES1]{Foundation Idea \ref{RES1}}}}.} 
+\item{
+\textbf{GIVEN}  \textbf{a collection of $n$ sequences}, $\Theta^n = \{\Theta_1, \Theta_2,..., \Theta_n\}$.
+}
+\item{
+\textbf{START}  by computing the cardinality of each sequence, $\Theta_i \in \Theta^n$, and note the \textbf{largest sequence cardinality}, $Max(\invpi(\Theta_i) \quad \forall \Theta_i \in \Theta^n)$ = $Max(\invpi(\Theta_i))$, for the longest sequence, $\Theta_m$ such that $Max(\invpi(\Theta_i)) = \invpi(\Theta_m)$.
+}
+\item {
+\textbf{COMPUTE}  the cardinality of a sequence that can exactly contain the given sequences each concatenated to the other, but with the longest sequence duplicated. Essentially, compute:
+
+\begin{equation}
+\label{EQLSEQ}
+C_R = \invpi(\Theta_m) + \sum\limits_{\forall \Theta_i \in \Theta^n} \invpi(\Theta_i)
+\end{equation}
+
+}
+\item{
+\textbf{SORT}  the collection of sequences, $\Theta^n$, in descending order\footnote{\textbf{FUTURE WORK:} We especially prefer descending order by sequence cardinality because, as we shall come to appreciate in the rest of the tMCS algorithm, it is more likely that the MCS is discovered or developed based on the longest  common [sub-]sequence (in the longest sequences in the collection) than if we had started out with the shortest sequences. In fact, it also is somewhat very logical, since, the longest sequence shall most likely also contain elements and subsequences that shorter sequences have or are derived from than vice versa! Thus we can converge towards the MCS faster that way. Also, this is \textit{the optimistic strategy} --- believing that the most common subsequence shall most likely already exist in the longest sequences we are analyzing --- which makes sense for genome sequencing given we are typically analyzing sequences from the same entity or individual or species, and that DNA or genetic code for the same individual or entity stays consistent across all or most of the samples from that entity. But otherwise the pessimist route might be to start out with the shortest sequences in the collection (esp. where we are dealing with totally antagonistic entities). But is this always optimal? Should it stay this way even when we are attempting [genome] sequencing for non-biological or non-genetic sequences?} of the sequence cardinality. Let the sorted sequence collection be denoted ${\hat{\Theta}}^n = \langle \Theta_m, \Theta_{2*}, \cdots , \Theta_{n*} \rangle$
+}
+\item{
+\textbf{SELECT}  the first two sequences from ${\hat{\Theta}}^n$, such as  $\Theta_m$ and $\Theta_{2*}$ --- or rather/generally, ${\hat{\Theta}}^n[1]$ and ${\hat{\Theta}}^n[2]$, as the two sequences we shall use to search for and derive the potential MCS.
+}
+\item { \textbf{POSITION} the two sequences, $\Theta_m$ and $\Theta_{2*}$ within two adjacent arrays $A_1^{C_R}$ and $A_2^{C_R}$ of equal length $C_R$ --- for simplicity, we shall just denote them as  $A_1$ and $A_2$, in such a way that $\Theta_m$ occupies in its containing array $A_1$, positions from 1 to $m$, while $\Theta_{2*}$ occupies positions in the range\footnote{We write ``$\Theta_{2*}[1]$" in our formulation here, to mean the first element in $\Theta_{2*}$ --- i.e. position 1 has value 1, and the nth position has value $n$, not usual (computer-science) $n-1$}:
+
+\vspace{1em}
+ $[(1 + I(\Theta_m[m], A_1)$, $\quad$ $I(\Theta_m[m], A_1) + \invpi(\Theta_{2*})]$
+\vspace{1em}
+
+And Equivalently, the range:
+
+\vspace{1em}
+$[m+1,\quad m + \invpi(\Theta_{2*})]$. 
+ \vspace{1em}
+
+Which we can also express visually as:\\\\
+
+\begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|}
+\hline
+$A_1$ & $a_{1,1}$ & $a_{1,2}$ & $\cdots$ & $a_{1,m}$ & & & & & & $\cdots$\\
+\hline
+$A_2$ & & & & & $a_{2,1}$ & $a_{2,2}$ & $\cdots$ & $a_{2,\invpi(\Theta_{2*})}$ & & $\cdots$ \\
+\hline
+ 
+\end{tabular}\\\\
+
+
+}
+\item{
+\textbf{UPDATE}  the two sequence alignment arrays as such:
+\begin{enumerate}
+\item{
+\textbf{KEEP}  the first array, $A_1$, unchanged (since it contains the longest sequence, $\Theta_{1*} \in \hat{\Theta}_n$ --- essentially, $\Theta_m$).
+}
+\item \textbf{SET}  $j = z$, where $z$ is the \textbf{shift step size} --- simplest scenario, $z = 1$.
+\item {\textbf{SHIFT}  each element in the second sequence by $z$-steps to an earlier position in array $A_2$, so that the two sequences $\Theta_m$ and $\Theta_{2*}$ have an overlap across the alignment arrays/matrix in positions spanning range:
+
+\vspace{1em}
+ $[m+1-j,\quad m]$
+\vspace{1em}
+ 
+and so that $\Theta_2$ shall be occupying the updated range: 
+
+\vspace{1em}
+$[m+1 - j,\quad m+\invpi(\Theta_{2*}) - j]$
+\vspace{1em}
+}
+\item {
+\textbf{SCAN}  the overlapping sections in both sequences, in positions  $[m+1-j, m]$ and by comparing each item in that range --- i.e. $\Theta_m[i]$ Vs $\Theta_{2*}[i]$, determine the longest common subsequence, or rather the \textbf{MCS}, thus:\\
+
+Assume the overlap is of length $\phi$ such that the overlap can be visually depicted as such:\\\\
+
+\begin{tabular}[H]{|c||c|c|c|c|}
+\hline
+$\approx \Theta_m$ & $a_{1,m-\phi+1}$ & $a_{1,m-\phi+2}$ & $\cdot\cdot\cdot$ & $a_{1,m}$\\
+\hline
+$\approx \Theta_2$ & $a_{2,m-\phi+1}$ & $a_{2,m-\phi+2}$ & $\cdot\cdot\cdot$ & $a_{2,m}$\\
+\hline
+$(\Theta_m[i] == \Theta_{2*}[i])?$ & 1 & 0 &  $\cdot\cdot\cdot$ & 1\\
+\hline
+$\approx (\Theta_m[i] == \Theta_{2*}[i]) \approx O^\phi$ & $f(\Theta_m[i],\Theta_{2*}[i])$ & 0 &  $\cdot\cdot\cdot$ & $f(a_{1,m},a_{2,m})$ \\
+\hline
+ \end{tabular}\\\\
+
+ 
+ \textbf{CREATE}  another array of maximum length $\phi$, i.e. $O^\phi$, which contains at most $\phi$ elements generated thus:
+ \begin{itemize}
+ \item{ $O^\phi[i]$ contains 0 if the corresponding two elements in $\Theta_m$ and $\Theta_{2*}$ didn't match. Otherwise it contains the matching element value from the first sequence. Essentially, resolve what goes into $O^\phi$ at each of the overlap indices --- $i: i \in [m-\phi+1, m]$ ---  via the function:
+ 
+ \vspace{1em}
+\begin{equation}
+f(\Theta_m[i],\Theta_{2*}[i]) = \begin{cases}
+\Theta_m[i] & \Theta_m[i] == \Theta_{2*}[i],\\
+0 & \Theta_m[i] \neq \Theta_{2*}[i]
+\end{cases}
+\end{equation}
+ \vspace{1em}
+ 
+ 
+ }
+ \item \textbf{TRUNCATE}  $O^\phi$ to its longest non-zero/non-empty subsequence, and \textbf{SET} that as $\bar{O^\phi}$.
+ \item \textbf{IFF}  $\invpi(\bar{O^\phi}) > \invpi(O^m_g)$, then \textbf{UPDATE} or replace $O^m_g$ with $\bar{O^\phi}$\\ $\implies$  $O^m_g := \bar{O^\phi}$
+ \end{itemize}
+}
+\item{
+\textbf{UPDATE}  $j \implies j := j + z$
+}
+\item {
+\textbf{IFF}  $j = \invpi(\Theta_{2*})$, then \textbf{GOTO} \textbf{Step\#9}
+}
+\item{\textbf{ELSE} \textbf{ITERATE}  from \textbf{Step\#c}}
+\end{enumerate}
+}
+
+\item{ \textbf{UPDATE} $\Theta_{2*}$ as such:
+
+\begin{itemize}
+\item{ \textbf{COMPUTE} index of next comparison sequence, $k$, as such: 
+
+\vspace{1em}
+\begin{equation}
+k = I(\Theta_{2*},{\hat{\Theta}}^n) + 1
+\end{equation}
+\vspace{1em}
+
+}
+\item \textbf{IFF} $k > n$, then \textbf{RETURN}\footnote{Basically, we have reached the end of our sorted list of sequences and whatever we currently have as MCS must be the solution.}  $O^m_g$.
+\item \textbf{ELSE} \textbf{LET} $\Theta_{2*} := {\hat{\Theta}}^n[k]$
+
+\end{itemize}
+
+}
+\item \textbf{IFF} $\invpi(\Theta_{2*}) <  \invpi(O^m_g)$, then \textbf{RETURN}\footnote{Basically, once we find that the current MCS is longer than any of the remaining sequences in the collection, we might as well stop searching and return it as the final solution.}  $O^m_g$.
+\item \textbf{ELSE ITERATE}  from \textbf{Step\#7}
+\end{enumerate}
+
+
+%\end{enumerate}
+\end{alg}
+\vspace{2em}
+
 
 
 {
@@ -2650,154 +2893,6 @@ TODO: Continue indexing starting from here
 }
 
 
-
-
-First, we shall mostly assume there is essentially no reliable mathematical formalisms or theory concerning the important matter of genome sequencing\footnote{For those that do not know, a formal definition is presented in \textbf{\hyperref[DEFGENOMESEQUENCING]{Definition \ref{DEFGENOMESEQUENCING}}}.}\index{sequencing}\index{genome!sequencing}. And so, shall set out to construct and develop such a formalism ourselves, from what we already know.
-
-Second, from the theoretical and exploratory reviews we have conducted leading up to this moment, and what some authorities\cite{przytycka_wgs_lecture10} say about the subject, we know that genome sequencing as a practice leveraging computational and mathematical principles and concepts, or rather, when approached from a predominantly mathematical theory perspective, still has some ambiguities and unresolved problems that we have identified and intend to iron out especially in this chapter.
-
-These for example include an overall lack of proper mathematical formalisms around  issues such as:
-
-\begin{enumerate}
-\item How sequencing works or what it is exactly; how can it be described computationally?
-\item If we treat of genome sequencing using the language of transformatics, and think of it in terms of processing some collection of sequences to arrive at some resultant genome sequence, how should one arrive at such a resultant sequence then? 
-\item What is a consensus sequence?
-\item What is meant by a most representative genome sequence or perhaps an identifying\footnote{And also closely related, though not to be treated of in this chapter but instead in \textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}}, is the matter of mathematically approaching how the expression --- visual, material or spatial, of any meaningful \textit{genome} sequence --- could be for a basic organism, an aspect of it, or even the case of \textit{anomalous entities} such as viruses, mere proteins or such, could be approached.} \textbf{na-Sequence} given some living organism or particular aspects of it?
-\item Could we pin down a genome sequence or some na-Sequence responsible for say the expression of some particular protein, some genetic mutation, a behavioral trait, anatomical or psychological anomalies and pathologies, the material basis of particular or general diseases, incapacities, etc. using a mathematical theory or language? How?
-\end{enumerate}
-
-Seeing as the matter of determining the actual na-Sequence that correctly identifies a person or thing might be hinging on the case of attempting to reconstruct a book by mathematically piecing together disparate pieces of it --- some in alignment, some out of alignment, some, supersets of  others, some prefixes or suffixes of others, etc.\footnote{This analogy shouldn't come as a surprise, when compared to how we found it best to describe DNA using a figurative metaphor (see \textbf{\hyperref[SEC1]{Introduction}}), but also based on how some authorities seem to be teaching this subject to their students\cite{przytycka_wgs_lecture10}.} 
-
-
-Also, though we might not immediately surface such philosophical speculations here, the difficulties and problems thus raised above, might likewise apply to or at least hint at the challenges there might be, in attempting to think of or practically resolve the matter of ``computationally sequencing anything" --- the idea being, to not limit the concept of \textit{sequencing} to only living things or living organisms only, but to also think generally and abstractly \textbf{concerning sequencing anything expressible in consensus reality via some kind of specification sequence}. 
-
-
-Thus, we might want to think of the sequencing of the peculiar, miniscule aspects of consensus reality --- sub-atomic particles that make up atoms that make up molecules that make up living things on the miniature scale, and then all the way up to planets, stars and galaxies on the grand, cosmic and universal scale. One might wonder, and correctly so, is such sequencing possible? Does it/would it make sense? Is it necessary or even useful? These, and related problems are among the concerns we shall attempt to address in the rest of this chapter, but also, bits of what we can not immediately answer, perhaps we shall tackle in later chapters.
-
-\section{3 Core Problems to Solve}
-\label{SEC3COREPROB}
-
-We shall develop our theory in bits, starting with the most basic, most fundamental, and then basing on that, to construct higher aspects of the necessary mathematical structures and system.
-
-The method is simple; we have distilled 3 core problems, whose solutions would culminate in the formal and mathematical definition of genome sequencing. The 3 problems are:
-
-
-\begin{enumerate}
-\item \textbf{PROBLEM 1}: Computing the best or rather correct common subsequence given any two potentially dissimilar sequences.
-\item \textbf{PROBLEM 2}: Computing the correct sequence that resolves conflicts and correctly expresses variations at each particular position (essentially a column) in the alignment matrix depicting a definite alignment of two or more sequences with an overlap in the alignment position being considered.
-\item \textbf{PROBLEM 3}: Computing the Genome Sequence.
-\end{enumerate}
-
-We shall tackle each of these problems in its own section, one by one, until we arrive at the original objective of this chapter, in \textbf{\hyperref[SECGENSEQ]{Section \ref{SECGENSEQ}}}.
-
-\subsection{PROBLEM G1: Computing Maximum Common Subsequence: $\Theta_1 \Diamond \Theta_2$}
-\label{PROBG1}
-
-\begin{prob}[\textit{Computing MCS:}]: $\Theta_1 \Diamond \Theta_2$] 
-\label{PROBMCS}
-Given sequences $\Theta_1 = \langle k, l, m, o, p, x, y, z \rangle$ and $\Theta_2 = \langle b, c, a, y, z, k, l, m, o, p \rangle$, find the longest common subsequence they share --- also to be denoted $\Theta_1 \Diamond \Theta_2$, their \textbf{M}aximum \textbf{C}ommon \textbf{S}ubsequence.
-
-\begin{soln}
-\label{SOLMCS}
-We shall specify a transformer, tMCS($\Theta_1,\Theta_2$) that produces the required solution from the input sequences as such:
-
-\begin{transf}[The \textbf{tMCS} Transformer]
-\label{TRANSFMCS}
-$\langle \Theta_1,\Theta_2 \rangle  \quad \xrightarrow{O_{tMCS}(\Theta_1,\Theta_2)} \quad \Theta_1 \Diamond \Theta_2;$\\
-$0 \leq \invpi(\Theta_1 \Diamond \Theta_2) \leq Max(\invpi(\Theta_1), \invpi(\Theta_2))$
-\end{transf}
-$\qed$
-\end{soln}
-\end{prob}
-
-\textbf{\hyperref[SOLMCS]{Solution \ref{SOLMCS}}} is easier said than done. However, we shall attempt to formally and rigorously express it by formalizing what exactly the $tMCS(\Theta_1,\Theta_2)$ transformer does. Basically, we are to compute the MCS via \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}}.
-
-
-\begin{alg}[The \textbf{tMCS} Algorithm]
-\label{ALGtMCS}
-\begin{enumerate}
-\item{\textbf{INITIALIZE} the global maximum common sequence, $O^m_g$, to the empty set.} 
-\item{
-\textbf{GIVEN}  \textbf{a collection of $n$ sequences}, $\Theta^n = \{\Theta_1, \Theta_2,...\}$.
-}
-\item{
-\textbf{START}  by computing the cardinality of each sequence, $\Theta_i \in \Theta^n$, and note the \textbf{largest sequence cardinality}, $Max(\invpi(\Theta_i) \forall \Theta_i \in \Theta^n)$ = $Max(\invpi(\Theta_i))$, for the longest sequence, $\Theta_m$ such that $Max(\invpi(\Theta_i)) = \invpi(\Theta_m)$.
-}
-\item {
-\textbf{COMPUTE}  the cardinality of a sequence that can exactly contain the given sequences each concatenated to the other, but with the longest sequence duplicated. Essentially, compute:
-
-\begin{equation}
-\label{EQLSEQ}
-C_R = \invpi(\Theta_m) + \sum\limits_{\forall \Theta_i \in \Theta^n} \invpi(\Theta_i)
-\end{equation}
-
-}
-\item{
-\textbf{SORT}  the collection of sequences, $\Theta^n$, in ascending order of the sequence cardinality. Let the sorted sequence collection be denoted ${\hat{\Theta}}^n$
-}
-\item {
-\textbf{START}  with the first two sequences from ${\hat{\Theta}}^n$, such as $\Theta_1$ and $\Theta_2$, and place them within two adjacent arrays $A_1^{C_R}$ and $A_2^{C_R}$ of equal length $C_R$ --- for simplicity, we shall just denote them as  $A_1$ and $A_2$, in such a way that $\Theta_1$ occupies in its containing array $A_1$, positions from 1 to $\invpi(\Theta_1)$, while $\Theta_2$ occupies positions in the range: $[(1 + \sum \limits_{\Theta: \invpi(\Theta) > \invpi(\Theta_2)}\invpi(\Theta)) = I(\Theta_2[1] \in A_2)$\footnote{We write $\Theta_2[1]$ to mean the first element in $\Theta_2$ --- i.e. position 1 has value 1, and the nth position has value $n$, not usual $n-1$}, $I(\Theta_2[1] \in A_2) + \invpi(\Theta_2) - 1]$, which also means, $\forall a_i \in \Theta_j$ such that $I(\Theta_j,\hat{\Theta}_n) <  I(\Theta_2, \hat{\Theta}_n)$, it implies $j < I(\Theta_2[1] \in A_2)$.
-
-And Equivalently, the range $[\invpi(\Theta_1)+1, \invpi(\Theta_1) + 1 + \invpi(\Theta_2) - 1] = [\invpi(\Theta_1)+1, \invpi(\Theta_1)+ \invpi(\Theta_2)]$. 
-
-Visually, we can express this as:\\\\
-
-\begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|}
-\hline
-$A_1$ & $a_{1,1}$ & $a_{1,2}$ & $\cdot\cdot\cdot$ & $a_{1,\invpi(\Theta_1)}$ & & & & & & \\
-\hline
-$A_2$ & & & & & $a_{2,1}$ & $a_{2,2}$ & $\cdot\cdot\cdot$ & $a_{2,\invpi(\Theta_1)}$ & & \\
-\hline
- 
-\end{tabular}\\\\
-
-
-}
-\item{
-\textbf{UPDATE}  the two sequence alignment arrays as such:
-\begin{enumerate}
-\item{
-\textbf{KEEP}  the first array, $A_1$, unchanged (since it contains the longest sequence, $\Theta_1 \in \hat{\Theta}_n$).
-}
-\item \textbf{SET}  $j = z$, where $z$ is the \textbf{shift step size} --- simplest scenario, $z = 1$.
-\item {\textbf{SHIFT}  each element in the second sequence by $z$-steps to an earlier position in array $A_2$, so that the two sequences $\Theta_1$ and $\Theta_2$ have an overlap across the alignment arrays/matrix in positions spanning range: $[\invpi(\Theta_1)+1-j, \invpi(\Theta_1)]$, and so that $\Theta_2$ shall be occupying the updated range: $[\invpi(\Theta_1)+1 - j, \invpi(\Theta_1)+\invpi(\Theta_2) - j]$}
-\item {
-\textbf{SCAN}  the overlapping sections in both sequences, in positions  $[\invpi(\Theta_1)+1-j, \invpi(\Theta_1)]$, and by comparing each item in that range --- i.e. $\Theta_1[i]$ Vs $\Theta_2[i]$, determine the longest common subsequence, or rather the \textbf{MCS}, thus:\\
-
-Assume the overlap is of length $m$ such that the overlap can be visually depicted as such:\\\\
-
-\begin{tabular}[H]{|c||c|c|c|c|}
-\hline
-$\approx \Theta_1$ & $a_{1,k}$ & $a_{1,k+1}$ & $\cdot\cdot\cdot$ & $a_{1,k+m}$\\
-\hline
-$\approx \Theta_2$ & $a_{2,l}$ & $a_{2,l+1}$ & $\cdot\cdot\cdot$ & $a_{2,l+m}$\\
-\hline
-$(\Theta_1[i] == \Theta_2[i])?$ & 1 & 0 &  $\cdot\cdot\cdot$ & 1\\
-\hline
-$\approx (\Theta_1[i] == \Theta_2[i]) \approx O^m$ & $f(a_{1,k},a_{2,l})$ & 0 &  $\cdot\cdot\cdot$ & $f(a_{1,k+m},a_{2,l+m})$ \\
-\hline
- \end{tabular}\\\\
- 
- for some $k \in [1,\invpi(\Theta_1)]$ and $l \in [1,\invpi(\Theta_2)]$.
- 
- \textbf{CREATE}  another array of maximum length $m$, $O^m$, which contains at most m elements generated thus:
- \begin{itemize}
- \item $O^m[i]$ contains 0 if the corresponding two elements in $\Theta_1$ and $\Theta_2$ didn't match. Otherwise it contains the matching element value from the first sequence --- or rather, $f(a_{1,k},a_{2,l}) = a_{1,k}$ iff $a_{1,k} == a_{2,l}$.
- \item \textbf{TRUNCATE}  $O^m$ to its longest non-zero/non-empty subsequence, set that as $O^m$.
- \item \textbf{IFF}  $\invpi(O^m) > \invpi(O^m_g)$, then \textbf{UPDATE} or replace $O^m_g$ with $O^m$\\ $\implies$  $O^m_g := O^m$
- \end{itemize}
-}
-\item{
-\textbf{UPDATE}  $j \implies j := j + z$
-}
-\item {
-\textbf{IFF}  $j = \invpi(\Theta_2)$, then \textbf{RETURN}  $O^m_g$
-}
-\item{Otherwise \textbf{ITERATE}  from \textbf{Step\#c}}
-\end{enumerate}
-}
-\end{enumerate}
-\end{alg}
 
 
 \subsection{PROBLEM G2: Computing Overlap Resultant Sequences: $\Theta_1 \ast \Theta_2$}
@@ -5828,7 +5923,7 @@ That said, note that, we started this work with a photograph of a pineapple read
 
 \section*{ABSTRACT\footnote{Note that this chapter attempts to present \cite{Lutalo2025_transformatics_thesis} verbatim, with the only major difference being the numbering of citations and references, which are co-shared with the main manuscript.}:}
 %\Large
-In only \textbf{10 general foundational results}\cite{lutalo_2025_trans101_1page} --- all \textbf{based on earlier mathematical research} by the author, as well as \textbf{10 extra abstractions} spanning \textbf{how transformatics might be leveraged} as \textbf{a basis mathematics} \texttt{for problems} in; \texttt{number theory} and \texttt{cryptography} (o-SSIs); \texttt{mathematical statistics} (ADM, TCR, PCR, MSS, SC, PC); \texttt{linear algebra} (super sequences); \texttt{computer science} (TEA language, transformer-chains/sequence-transformers) and \texttt{information theory} (entropy of a sequence) among others, we distill and establish, in a summarized form, the \textbf{core foundations of Transformatics}\cite{transformatics} as its own mathematical theory, branch, or \textbf{discipline}. In this \textbf{mini-thesis}. Each foundational result presented is likewise accompanied by one or \textbf{more references} to some earlier work where the idea or presented concept was first developed, presented, or applied by the author during their research. \textbf{Useful notes and commentary} are also included where necessary, and in the extension decade of \textbf{proposed abstractions}, also commentary about how the proposals relate to the decade of foundational results likewise is catered for.
+In only \textbf{10 general foundational results}\cite{lutalo_2025_trans101_1page} --- all \textbf{based on earlier mathematical research} by the author, as well as \textbf{10 extra abstractions} spanning \textbf{how transformatics might be leveraged} as \textbf{a basis mathematics} \texttt{for problems} in; \texttt{number theory} and \texttt{cryptography} (o-SSIs); \texttt{mathematical statistics} (ADM, TCR, PCR, MSS, SC, PC); \texttt{linear algebra} (super sequences); \texttt{computer science} (TEA language, transformer-chains or sequence-transformers) and \texttt{information theory} (entropy of a sequence) among others, we distill and establish, in a summarized form, the \textbf{core foundations of Transformatics}\cite{transformatics} as its own mathematical theory, branch, or \textbf{discipline}. In this \textbf{mini-thesis}. Each foundational result presented is likewise accompanied by one or \textbf{more references} to some earlier work where the idea or presented concept was first developed, presented, or applied by the author during their research. \textbf{Useful notes and commentary} are also included where necessary, and in the extension decade of \textbf{proposed abstractions}, also commentary about how the proposals relate to the decade of foundational results likewise is catered for.
  \newline\newline
      \textbf{Keywords}: Foundations, Transformatics, Sequence Analysis,  Sequence Transformers, Thesis
 %\end{abstract}
@@ -5837,6 +5932,7 @@ In only \textbf{10 general foundational results}\cite{lutalo_2025_trans101_1page
 \label{SECFOUND}
 
 \subsection{Result 1: The Empty Sequence\cite{lnspaper}}
+\label{RES1}
 
 $\Theta = \langle \rangle \implies |\Theta| = 0 \quad \land \quad \Theta \equiv \emptyset$
 

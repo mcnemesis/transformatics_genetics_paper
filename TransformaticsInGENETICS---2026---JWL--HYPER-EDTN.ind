@@ -3,6 +3,7 @@
   \item $\dot{\psi}_{DNA}$, \hyperpage{29}
   \item $\psi _{DNA}$, \hyperpage{12}
   \item $\psi _{RNA}$, \hyperpage{13}
+  \item $\psi _{ascii}$, \hyperpage{61}
   \item $\psi _{na-START}$, \hyperpage{21}
   \item $\psi _{na-STOP}$, \hyperpage{22}
   \item $\psi _{na}$, \hyperpage{13}
@@ -13,6 +14,7 @@
   \item ADM, \hyperpage{19}, \hyperpage{45}, \hyperpage{176}
   \item algorithm
     \subitem Closest Sequence Search, \hyperpage{56}
+    \subitem computing MCS, \hyperpage{66}
   \item anagram, \hyperpage{30}, \hyperpage{80}
   \item Anagram Distance Measure, \hyperpage{45}
   \item anagram distance measure
@@ -80,6 +82,9 @@
   \item genome expression, \hyperpage{4}
   \item genome sequence
     \subitem of a population, \hyperpage{55}
+  \item genome sequencing, \hyperpage{64}
+    \subitem underlying problems, \hyperpage{65}
+  \item GTNC, \hyperpage{61}
 
   \indexspace
 
@@ -98,6 +103,7 @@
     \subitem as linear transformations, \hyperpage{207}
   \item matrix
     \subitem definition, \hyperpage{206}
+  \item Maximum Common Subsequence (MCS), \hyperpage{66}
   \item modal sequence statistic
     \subitem for a population, \hyperpage{53}
   \item mutations, \hyperpage{5}
@@ -139,6 +145,7 @@
     \subitem algebra, \hyperpage{26}, \hyperpage{236}
     \subitem anagram, \hyperpage{30}, \hyperpage{80}
     \subitem as matrices, \hyperpage{188}
+    \subitem cardinality under multiplication, \hyperpage{61}
     \subitem complement, \hyperpage{25}, \hyperpage{27}
     \subitem definition, \hyperpage{201}
     \subitem flat-structure, \hyperpage{17}
@@ -157,7 +164,7 @@
     \subitem definition, \hyperpage{193}
   \item sequences
     \subitem decimal, \hyperpage{29}, \hyperpage{107}, \hyperpage{131}
-  \item sequencing, \hyperpage{12}, \hyperpage{63}
+  \item sequencing, \hyperpage{12}, \hyperpage{63, 64}
   \item sex, \hyperpage{5}
   \item START-codons, \hyperpage{21}
   \item statistical artificial intelligence, \hyperpage{54}
@@ -187,6 +194,7 @@
   \item transformer
     \subitem as mapping, \hyperpage{216}
     \subitem complement, \hyperpage{28}
+    \subitem tMCS, for maximum common subsequence, \hyperpage{66}
 
   \indexspace
 

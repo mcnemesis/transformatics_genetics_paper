@@ -126,33 +126,39 @@
 \indexentry{$\psi _{ascii}$|hyperpage}{61}
 \indexentry{sequencing|hyperpage}{63}
 \indexentry{genome!sequencing|hyperpage}{63}
-\indexentry{sequence!anagram|hyperpage}{80}
-\indexentry{anagram|hyperpage}{80}
-\indexentry{ribosome!flow-chart|hyperpage}{100}
-\indexentry{ribosome!state machine|hyperpage}{101}
-\indexentry{generator!protein generator|hyperpage}{104}
-\indexentry{ribosome|hyperpage}{104}
-\indexentry{sequences!decimal|hyperpage}{107}
-\indexentry{number expression|hyperpage}{107}
-\indexentry{sequences!decimal|hyperpage}{131}
-\indexentry{ADM|hyperpage}{176}
-\indexentry{sequence analysis!anagram distance|hyperpage}{176}
-\indexentry{super-sequence|hyperpage}{187}
-\indexentry{matrices|hyperpage}{188}
-\indexentry{sequence!as matrices|hyperpage}{188}
-\indexentry{sequence!higher-order|hyperpage}{188}
-\indexentry{TEA!as higher-order transformers|hyperpage}{189}
-\indexentry{sequence entropy!definition|hyperpage}{193}
-\indexentry{sequence!definition|hyperpage}{201}
-\indexentry{matrix!definition|hyperpage}{206}
-\indexentry{matrices!as linear transformations|hyperpage}{207}
-\indexentry{data!coded or raw|hyperpage}{209}
-\indexentry{sequence!higher-order|hyperpage}{209}
-\indexentry{transformatics!mappings|hyperpage}{215}
-\indexentry{mappings|hyperpage}{215}
-\indexentry{transformatics!mappings|hyperpage}{216}
-\indexentry{transformer!as mapping|hyperpage}{216}
-\indexentry{sequence!algebra|hyperpage}{236}
-\indexentry{sequence algebra|hyperpage}{236}
-\indexentry{transformatics!as an algebra|hyperpage}{236}
-\indexentry{transformatics!definition|hyperpage}{236}
+\indexentry{sequencing|hyperpage}{64}
+\indexentry{genome sequencing|hyperpage}{64}
+\indexentry{genome sequencing!underlying problems|hyperpage}{65}
+\indexentry{Maximum Common Subsequence (MCS)|hyperpage}{66}
+\indexentry{transformer!tMCS, for maximum common subsequence|hyperpage}{66}
+\indexentry{algorithm!computing MCS|hyperpage}{66}
+\indexentry{sequence!anagram|hyperpage}{82}
+\indexentry{anagram|hyperpage}{82}
+\indexentry{ribosome!flow-chart|hyperpage}{102}
+\indexentry{ribosome!state machine|hyperpage}{103}
+\indexentry{generator!protein generator|hyperpage}{106}
+\indexentry{ribosome|hyperpage}{106}
+\indexentry{sequences!decimal|hyperpage}{109}
+\indexentry{number expression|hyperpage}{109}
+\indexentry{sequences!decimal|hyperpage}{133}
+\indexentry{ADM|hyperpage}{178}
+\indexentry{sequence analysis!anagram distance|hyperpage}{178}
+\indexentry{super-sequence|hyperpage}{189}
+\indexentry{matrices|hyperpage}{190}
+\indexentry{sequence!as matrices|hyperpage}{190}
+\indexentry{sequence!higher-order|hyperpage}{190}
+\indexentry{TEA!as higher-order transformers|hyperpage}{191}
+\indexentry{sequence entropy!definition|hyperpage}{195}
+\indexentry{sequence!definition|hyperpage}{203}
+\indexentry{matrix!definition|hyperpage}{208}
+\indexentry{matrices!as linear transformations|hyperpage}{209}
+\indexentry{data!coded or raw|hyperpage}{211}
+\indexentry{sequence!higher-order|hyperpage}{211}
+\indexentry{transformatics!mappings|hyperpage}{217}
+\indexentry{mappings|hyperpage}{217}
+\indexentry{transformatics!mappings|hyperpage}{218}
+\indexentry{transformer!as mapping|hyperpage}{218}
+\indexentry{sequence!algebra|hyperpage}{238}
+\indexentry{sequence algebra|hyperpage}{238}
+\indexentry{transformatics!as an algebra|hyperpage}{238}
+\indexentry{transformatics!definition|hyperpage}{238}
