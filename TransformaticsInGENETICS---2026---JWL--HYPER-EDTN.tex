@@ -16,6 +16,9 @@
 \usepackage{makeidx} %for the index
 \makeindex
 
+%to allow adjusting indentation such as for list-nested wide tables
+\usepackage{changepage}
+
 % for about author styling
 \usepackage{setspace}
 
@@ -2694,8 +2697,8 @@ The method is simple; we have distilled 3 core problems whose solutions would cu
 
 
 \begin{enumerate}
-\item \textbf{PROBLEM 1}: Computing the best or rather correct common subsequence given any two potentially dissimilar sequences.
-\item \textbf{PROBLEM 2}: Computing the correct sequence that resolves conflicts and correctly expresses variations at each particular position (essentially a column) in the alignment matrix depicting a definite alignment of two or more sequences with an overlap in the alignment position being considered.
+\item \textbf{PROBLEM 1}: Computing the best or rather correct common subsequence given any two or more potentially dissimilar sequences.
+\item \textbf{PROBLEM 2}: Computing the correct sequence that resolves conflicts and correctly expresses variations at each particular position (essentially a column) in the alignment matrix depicting a definite side-by-side alignment of two or more sequences with an overlap in the alignment position being considered.
 \item \textbf{PROBLEM 3}: Computing the Genome Sequence.
 \end{enumerate}
 
@@ -2716,10 +2719,12 @@ We shall specify a transformer, tMCS($\Theta_1,\Theta_2$) that produces the requ
 \begin{transf}[The \textbf{tMCS} Transformer\index{transformer!tMCS, for maximum common subsequence}]
 \label{TRANSFMCS}
 $\langle \Theta_1,\Theta_2 \rangle  \quad \xrightarrow{O_{tMCS}(\Theta_1,\Theta_2)} \quad \Theta_1 \Diamond \Theta_2;$\\
-$0 \leq \invpi(\Theta_1 \Diamond \Theta_2) \leq Max(\invpi(\Theta_1), \invpi(\Theta_2))$\\
+$\Theta_1 \Diamond \Theta_2 = \Theta_2 \Diamond \Theta_1$
+$\quad \land \quad 0 \leq \invpi(\Theta_1 \Diamond \Theta_2) \leq Max(\invpi(\Theta_1), \invpi(\Theta_2))$\\
 $\land \quad \forall \omega \in \Theta_1 \Diamond \Theta_2 \quad \exists \omega \in \Theta_1 \land \exists \omega \in \Theta_2$\\
 $\land \quad \forall \omega_i, \omega_j \in \Theta_1 \Diamond \Theta_2 : I(\omega_i, \Theta_1 \Diamond \Theta_2) < I(\omega_j, \Theta_1 \Diamond \Theta_2) \quad $\\
-$\quad \implies \quad I(\omega_i, \Theta_1) < I(\omega_j, \Theta_1) \quad \land \quad I(\omega_i, \Theta_2) < I(\omega_j, \Theta_2)$
+$\quad \implies \quad I(\omega_i, \Theta_1) < I(\omega_j, \Theta_1) \quad \land \quad I(\omega_i, \Theta_2) < I(\omega_j, \Theta_2)$\\
+$\land \quad \forall \Theta_1 \Diamond \Theta_2, \quad \Theta_1 \Diamond \Theta_2 \subset \Theta_1 \quad \land \quad \Theta_1 \Diamond \Theta_2 \subset \Theta_2$
 \end{transf}
 $\qed$
 \end{soln}
@@ -2729,7 +2734,7 @@ $\qed$
 \textbf{\hyperref[SOLMCS]{Solution \ref{SOLMCS}}} is easier said than done. However, we shall attempt to formally and rigorously express it by formalizing what exactly the $tMCS(\Theta_1,\Theta_2)$ transformer does when expressed as a computable algorithm. Basically, we are to compute the MCS via \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}} specified hereafter.
 
 \vspace{2em}
-\begin{alg}[The \textbf{tMCS} Algorithm\index{algorithm!computing MCS}]
+\begin{alg}[The \textbf{tMCS} Algorithm\index{algorithm!computing MCS}\footnote{\textbf{IMPORTANT:} Note that, even though the MCS transformer, \textbf{\hyperref[TRANSFMCS]{Transformer \ref{TRANSFMCS}}}, is defined for just two sequences, and yet, the tMCS algorithm based off of it is designed to handle any arbitrary number of sequences and not just a pair.}]
 \label{ALGtMCS}
 $ $
 \begin{enumerate}
@@ -2750,30 +2755,37 @@ C_R = \invpi(\Theta_m) + \sum\limits_{\forall \Theta_i \in \Theta^n} \invpi(\The
 
 }
 \item{
-\textbf{SORT}  the collection of sequences, $\Theta^n$, in descending order\footnote{\textbf{FUTURE WORK:} We especially prefer descending order by sequence cardinality because, as we shall come to appreciate in the rest of the tMCS algorithm, it is more likely that the MCS is discovered or developed based on the longest  common [sub-]sequence (in the longest sequences in the collection) than if we had started out with the shortest sequences. In fact, it also is somewhat very logical, since, the longest sequence shall most likely also contain elements and subsequences that shorter sequences have or are derived from than vice versa! Thus we can converge towards the MCS faster that way. Also, this is \textit{the optimistic strategy} --- believing that the most common subsequence shall most likely already exist in the longest sequences we are analyzing --- which makes sense for genome sequencing given we are typically analyzing sequences from the same entity or individual or species, and that DNA or genetic code for the same individual or entity stays consistent across all or most of the samples from that entity. But otherwise the pessimist route might be to start out with the shortest sequences in the collection (esp. where we are dealing with totally antagonistic entities). But is this always optimal? Should it stay this way even when we are attempting [genome] sequencing for non-biological or non-genetic sequences?} of the sequence cardinality. Let the sorted sequence collection be denoted ${\hat{\Theta}}^n = \langle \Theta_m, \Theta_{2*}, \cdots , \Theta_{n*} \rangle$
+\textbf{SORT}  the collection of sequences, $\Theta^n$, in descending order\footnote{\textbf{FUTURE WORK:} We especially prefer descending order by sequence cardinality because, as we shall come to appreciate in the rest of the tMCS algorithm, it is more likely that the MCS is discovered or developed based on the longest  common [sub-]sequence (in the longest sequences in the collection) than if we had started out with the shortest sequences. In fact, it also is somewhat very logical, since, the longest sequence shall most likely also contain elements and subsequences that shorter sequences have or are derived from than vice versa! Thus we can converge towards the MCS faster that way. Also, this is \textit{the optimistic strategy} --- believing that the most common subsequence shall most likely already exist in the longest sequences we are analyzing --- which makes sense for genome sequencing given we are typically analyzing sequences from the same entity or individual or species, and that DNA or genetic code for the same individual or entity stays consistent across all or most of the samples from that entity. But otherwise the pessimist route might be to start out with the shortest sequences in the collection (esp. where we are dealing with totally antagonistic entities). But is this always optimal? Should it stay this way even when we are attempting [genome] sequencing for non-biological or non-genetic sequences?} of the sequence cardinality. Let the sorted sequence collection be denoted ${\hat{\Theta}}^n = \langle \Theta_m, \Theta_{2*}, \cdots , \Theta_{n*} \rangle$ --- where the first item in ${\hat{\Theta}}^n$, $\Theta_{1*}$ is essentially $\Theta_m$.
 }
 \item{
 \textbf{SELECT}  the first two sequences from ${\hat{\Theta}}^n$, such as  $\Theta_m$ and $\Theta_{2*}$ --- or rather/generally, ${\hat{\Theta}}^n[1]$ and ${\hat{\Theta}}^n[2]$, as the two sequences we shall use to search for and derive the potential MCS.
 }
-\item { \textbf{POSITION} the two sequences, $\Theta_m$ and $\Theta_{2*}$ within two adjacent arrays $A_1^{C_R}$ and $A_2^{C_R}$ of equal length $C_R$ --- for simplicity, we shall just denote them as  $A_1$ and $A_2$, in such a way that $\Theta_m$ occupies in its containing array $A_1$, positions from 1 to $m$, while $\Theta_{2*}$ occupies positions in the range\footnote{We write ``$\Theta_{2*}[1]$" in our formulation here, to mean the first element in $\Theta_{2*}$ --- i.e. position 1 has value 1, and the nth position has value $n$, not usual (computer-science) $n-1$}:
+\item { \textbf{POSITION} the two sequences, $\Theta_m$ and $\Theta_{2*}$ within two adjacent arrays $A_1^{C_R}$ and $A_2^{C_R}$ of equal length $C_R$ --- for simplicity, we shall just denote them as  $A_1$ and $A_2$, in such a way that $\Theta_m$ occupies in its containing array $A_1$, positions from m to $2m$, but for simplicity's sake\footnote{We shall later see (in \textbf{Step\#8(c)}) that it is useful to position $\Theta_m$ this way, because then, the second sequence's positions are all that need to be changed --- items being shifted leftwards in $A_2$ relative to $A_1$, while those of the longest sequence in $A_1$ remain fixed. But to keep the mathematical formalisms simple, we shall especially write our expressions as though elements of $\Theta_m$ were positioned from index 1 in $A_1$ --- these details especially matter to programmers and software engineers that shall want to translate the algorithm into working computer program source-code for various different languages and type-systems.}, which we shall just treat as though 1 to $m$:
 
 \vspace{1em}
- $[(1 + I(\Theta_m[m], A_1)$, $\quad$ $I(\Theta_m[m], A_1) + \invpi(\Theta_{2*})]$
+ $A_1: [1, m]$
 \vspace{1em}
 
-And Equivalently, the range:
+
+While $\Theta_{2*}$ occupies positions in the range\footnote{We write ``$\Theta_{2*}[1]$" in our formulation here, to mean the first element in $\Theta_{2*}$ --- i.e. position 1 has value 1, and the nth position has value $n$, not usual (computer-science) $n-1$}:
 
 \vspace{1em}
-$[m+1,\quad m + \invpi(\Theta_{2*})]$. 
+ $A_2: [(1 + I(\Theta_m[m], A_1)$, $\quad$ $I(\Theta_m[m], A_1) + \invpi(\Theta_{2*})]$
+\vspace{1em}
+
+Or, equivalently, the range:
+
+\vspace{1em}
+$A_2: [m+1,\quad m + \invpi(\Theta_{2*})]$. 
  \vspace{1em}
 
 Which we can also express visually as:\\\\
 
 \begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|}
 \hline
-$A_1$ & $a_{1,1}$ & $a_{1,2}$ & $\cdots$ & $a_{1,m}$ & & & & & & $\cdots$\\
+$A_1$ & $\cdots$ & $a_{1,1}$ & $a_{1,2}$ & $\cdots$ & $a_{1,m}$ & & & & & $\cdots$\\
 \hline
-$A_2$ & & & & & $a_{2,1}$ & $a_{2,2}$ & $\cdots$ & $a_{2,\invpi(\Theta_{2*})}$ & & $\cdots$ \\
+$A_2$ & $\cdots$ & & & & & $a_{2,1}$ & $a_{2,2}$ & $\cdots$ & $a_{2,\invpi(\Theta_{2*})}$ & $\cdots$ \\
 \hline
  
 \end{tabular}\\\\
@@ -2784,42 +2796,51 @@ $A_2$ & & & & & $a_{2,1}$ & $a_{2,2}$ & $\cdots$ & $a_{2,\invpi(\Theta_{2*})}$ &
 \textbf{UPDATE}  the two sequence alignment arrays as such:
 \begin{enumerate}
 \item{
-\textbf{KEEP}  the first array, $A_1$, unchanged (since it contains the longest sequence, $\Theta_{1*} \in \hat{\Theta}_n$ --- essentially, $\Theta_m$).
+\textbf{KEEP}  the first array, $A_1$, unchanged (since it contains the longest sequence, $\Theta_{1*} \in \hat{\Theta}_n$).
 }
 \item \textbf{SET}  $j = z$, where $z$ is the \textbf{shift step size} --- simplest scenario, $z = 1$.
-\item {\textbf{SHIFT}  each element in the second sequence by $z$-steps to an earlier position in array $A_2$, so that the two sequences $\Theta_m$ and $\Theta_{2*}$ have an overlap across the alignment arrays/matrix in positions spanning range:
+\item {\textbf{SHIFT}  each element in the second sequence by $j$-steps to an earlier position in array $A_2$, so that the two sequences $\Theta_m$ and $\Theta_{2*}$ have an overlap across the alignment arrays/matrix in positions spanning range:
 
 \vspace{1em}
- $[m+1-j,\quad m]$
+ $A_1: [m-j,\quad m]$
 \vspace{1em}
  
 and so that $\Theta_2$ shall be occupying the updated range: 
 
 \vspace{1em}
-$[m+1 - j,\quad m+\invpi(\Theta_{2*}) - j]$
+$A_2: [m + 1 - j,\quad m+\invpi(\Theta_{2*}) - j]$
 \vspace{1em}
 }
 \item {
-\textbf{SCAN}  the overlapping sections in both sequences, in positions  $[m+1-j, m]$ and by comparing each item in that range --- i.e. $\Theta_m[i]$ Vs $\Theta_{2*}[i]$, determine the longest common subsequence, or rather the \textbf{MCS}, thus:\\
+\textbf{SCAN}  the overlapping sections in both sequences, in positions  $[m-j, m]$ and by comparing each item in that range --- i.e. $\Theta_m[i]$ Vs $\Theta_{2*}[i]$, determine the longest common subsequence, or rather the \textbf{MCS}, thus:\\
 
-Assume the overlap is of length $\phi$ such that the overlap can be visually depicted as such:\\\\
+Assume the overlap is of length\footnote{Essentially, since the overlap spans the range $[m-j, m]$, then $\phi = m - (m-j) = j$}$\phi$ such that the overlap can be visually depicted as such:
 
-\begin{tabular}[H]{|c||c|c|c|c|}
+{
+
+\vspace{2em}
+% to force wide table to fit well on page irrespective of nesting/list indentation
+\begin{adjustwidth}{-4em}{}
+\begin{tabular}[H]{|c||c|c|c|c|c|}
 \hline
-$\approx \Theta_m$ & $a_{1,m-\phi+1}$ & $a_{1,m-\phi+2}$ & $\cdot\cdot\cdot$ & $a_{1,m}$\\
+$\approx \Theta_m$ & $a_{1,m-\phi+0}$ &$a_{1,m-\phi+1}$ & $a_{1,m-\phi+2}$ & $\cdot\cdot\cdot$ & $a_{1,m-\phi+j}$\\
 \hline
-$\approx \Theta_2$ & $a_{2,m-\phi+1}$ & $a_{2,m-\phi+2}$ & $\cdot\cdot\cdot$ & $a_{2,m}$\\
+$\approx \Theta_2$ & $a_{2,m-\phi}$ &$a_{2,m-\phi+1}$ & $a_{2,m-\phi+2}$ & $\cdot\cdot\cdot$ & $a_{2,m}$\\
 \hline
-$(\Theta_m[i] == \Theta_{2*}[i])?$ & 1 & 0 &  $\cdot\cdot\cdot$ & 1\\
+$(\Theta_m[i] == \Theta_{2*}[i])?$ & 1 & 1& 0 &  $\cdot\cdot\cdot$ & 1\\
 \hline
-$\approx (\Theta_m[i] == \Theta_{2*}[i]) \approx O^\phi$ & $f(\Theta_m[i],\Theta_{2*}[i])$ & 0 &  $\cdot\cdot\cdot$ & $f(a_{1,m},a_{2,m})$ \\
+$\approx (\Theta_m[i] == \Theta_{2*}[i]) \approx O^\phi$ & $f(\Theta_m[i],\Theta_{2*}[i])$ & $a_{1,m-\phi+1}$ & 0 &  $\cdot\cdot\cdot$ & $f(a_{1,m},a_{2,m})$ \\
 \hline
- \end{tabular}\\\\
+ \end{tabular}
+ \end{adjustwidth}
+  \vspace{2em}
+
+ }
 
  
  \textbf{CREATE}  another array of maximum length $\phi$, i.e. $O^\phi$, which contains at most $\phi$ elements generated thus:
  \begin{itemize}
- \item{ $O^\phi[i]$ contains 0 if the corresponding two elements in $\Theta_m$ and $\Theta_{2*}$ didn't match. Otherwise it contains the matching element value from the first sequence. Essentially, resolve what goes into $O^\phi$ at each of the overlap indices --- $i: i \in [m-\phi+1, m]$ ---  via the function:
+ \item{ $O^\phi[i]$ contains 0 if the corresponding two elements in $\Theta_m$ and $\Theta_{2*}$ didn't match. Otherwise it contains the matching element value from the first sequence. Essentially, resolve what goes into $O^\phi$ at each of the overlap indices --- $i: i \in [m-\phi, m]$ ---  via the function:
  
  \vspace{1em}
 \begin{equation}
@@ -2840,7 +2861,7 @@ f(\Theta_m[i],\Theta_{2*}[i]) = \begin{cases}
 \textbf{UPDATE}  $j \implies j := j + z$
 }
 \item {
-\textbf{IFF}  $j = \invpi(\Theta_{2*})$, then \textbf{GOTO} \textbf{Step\#9}
+\textbf{IFF}  $j = \invpi(\Theta_m) + \invpi(\Theta_{2*})$, then \textbf{GOTO}\footnote{At this juncture, we shall have essentially finished sliding the second sequence, $\Theta_{2*}$, past all the elements of the first sequence so that at $j = \invpi(\Theta_m) + \invpi(\Theta_{2*})$ there is nomore overlap possible, and so we can move on to the next sequence.} \textbf{Step\#9}
 }
 \item{\textbf{ELSE} \textbf{ITERATE}  from \textbf{Step\#c}}
 \end{enumerate}
@@ -2870,9 +2891,147 @@ k = I(\Theta_{2*},{\hat{\Theta}}^n) + 1
 
 
 %\end{enumerate}
+$\qed$
 \end{alg}
 \vspace{2em}
 
+%draw horizontal line
+\noindent\rule{\textwidth}{0.4pt}
+
+\vspace{2em}
+
+And so, applying \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}} to our example sequence collection:
+
+We see that:
+
+\begin{enumerate}
+\item Initially, our MCS, $O^m_g = \langle \rangle$.
+\item{ For our given sequences, we have our collection $\Theta^n = \Theta^2$ as such:
+
+\vspace{1em}
+\begin{equation}
+ \Theta^n = \langle \Theta_1, \Theta_2 \rangle = \langle \langle k, l, m, o, p, x, y, z \rangle , \langle b, c, a, y, z, k, l, m, o, p \rangle \rangle
+\end{equation}
+\vspace{1em}
+
+}
+\item $\invpi(\Theta_1) = 8$, and $\invpi(\Theta_2) = 10$, so that then, $\Theta_2$ is our longest sequence, and thus $\Theta_m = \Theta_2$.
+\item{ As for the size of our alignment array, we have that:
+
+\begin{equation}
+C_R = 10 + (10 + 8) = 28
+\end{equation}
+
+
+}
+\item And as for the sorted collection, we have that $\hat{\Theta}^n = \langle \Theta_2, \Theta_1 \rangle$, which implies that initially, $\Theta_{2*} = \Theta_1$.
+\item{As for how the two sequences are located in the alignment matrix or arrays, we have the following visual depiction initially:
+
+\vspace{1em}
+% to force wide table to fit well on page irrespective of nesting/list indentation
+\begin{adjustwidth}{0em}{}
+\begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$i$ & $\cdots$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 \\
+\hline
+$A_1$ & $\cdots$ & b & c & a & y & z & k & l & m & o & p &  &  &  &  &  &  &  &  \\
+\hline
+$A_2$ & $\cdots$ &  &  &  &  &  &  &  &  &  &  & k & l & m & o & p & x & y & z  \\
+\hline
+ 
+\end{tabular}
+\end{adjustwidth}
+\vspace{1em}
+
+At which point, the MCS between these two sequences, $\Theta_m \Diamond \Theta_{2*}$ = $O^\phi = \langle \rangle$.
+
+}
+\item{ We find that there shall be no interesting overlaps until when we reach $j = 5$, at which point, we shall have the following alignment configuration:
+
+\vspace{1em}
+% to force wide table to fit well on page irrespective of nesting/list indentation
+\begin{adjustwidth}{0em}{}
+\begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$i$ & $\cdots$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & $\cdots$ \\
+\hline
+$A_1$ & $\cdots$ & b & c & a & y & z & k & l & m & o & p &  &  &  &  &  &$\cdots$ \\
+\hline
+$A_2$ & $\cdots$ &  &  &  &  &  & k & l & m & o & p & x & y & z &  &  &$\cdots$\\
+\hline
+$a_1[i]==a_2[i]?$ & $\cdots$ & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & $\cdots$ \\
+\hline
+ 
+\end{tabular}
+\end{adjustwidth}
+\vspace{1em}
+
+At which point, the MCS between these two sequences, $\Theta_m \Diamond \Theta_{2*}$ = $O^\phi = \langle k, l, m, o, p\rangle$, and that $\invpi(O^\phi) = 5 \quad > \quad \invpi(O^m_g)$, and so then we can update the global MCS so that $O^m_g = \langle k, l, m, o, p\rangle$.
+
+
+}
+\item{ At $j =  \invpi(\Theta_m) = 10$, we find that the second sequence shall entirely be positioned at the start of the longest sequence, and that we should have the second sequence entirely overlapping with the first, and at which point, we shall have the following alignment configuration for our example:
+
+\vspace{1em}
+% to force wide table to fit well on page irrespective of nesting/list indentation
+\begin{adjustwidth}{0em}{}
+\begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$i$ & $\cdots$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & $\cdots$ \\
+\hline
+$A_1$ & $\cdots$ & b & c & a & y & z & k & l & m & o & p &$\cdots$ \\
+\hline
+$A_2$ & $\cdots$ & k & l & m & o & p & x & y & z &  &  &$\cdots$\\
+\hline
+$a_1[i]==a_2[i]?$ & $\cdots$ & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0  & $\cdots$ \\
+\hline
+ 
+\end{tabular}
+\end{adjustwidth}
+\vspace{1em}
+
+At which point, the MCS between these two sequences, $\Theta_m \Diamond \Theta_{2*}$ = $O^\phi = \langle \rangle$, and that $\invpi(O^\phi) = 0 \quad < \quad \invpi(O^m_g)$, and so then we cannot update the global MCS so that, \textbf{still}, $O^m_g = \langle k, l, m, o, p\rangle$.
+
+
+}
+\item{ At $j =  13$, we find that we have another interesting overlap, and at which point, we shall have the following alignment configuration for our example:
+
+\vspace{1em}
+% to force wide table to fit well on page irrespective of nesting/list indentation
+\begin{adjustwidth}{0em}{}
+\begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$i$ & $\cdots$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & $\cdots$ \\
+\hline
+$A_1$ & $\cdots$ & & & & b & c & a & y & z & k & l & m & o & p & &$\cdots$ \\
+\hline
+$A_2$ & $\cdots$ & k & l & m & o & p & x & y & z &  &  & & & & &$\cdots$\\
+\hline
+$a_1[i]==a_2[i]?$ & $\cdots$ & 0& 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0  &0 & $\cdots$ \\
+\hline
+ 
+\end{tabular}
+\end{adjustwidth}
+\vspace{1em}
+
+At which point, the MCS between these two sequences, $\Theta_m \Diamond \Theta_{2*}$ = $O^\phi = \langle y, z\rangle$, and that $\invpi(O^\phi) = 2 \quad < \quad \invpi(O^m_g)$, and so then we cannot update the global MCS so that, \textbf{still}, $O^m_g = \langle k, l, m, o, p\rangle$.
+
+
+}
+\item We finally stop when $j = \invpi(\Theta_m) + \invpi(\Theta_{2*}) = 10 + 8 = 18$, and at which point we shall find that we have not encountered any other overlap longer than our earlier MCS, and so that, given we also have no more sequences to compare against, we must \textbf{return the final MCS} as $O^m_g = \langle k, l, m, o, p\rangle$.
+\end{enumerate}
+
+\vspace{2em}
+
+Thus, after applying  \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}} to our two-member sequence collection, we find that the MCS solution we arrive at is $\langle k, l, m, o, p\rangle$ for that particular higher-order sequence. We can confirm that the solution conforms to the specifications of \textbf{\hyperref[TRANSFMCS]{Transformer \ref{TRANSFMCS}}}, such as noting that:
+
+\begin{itemize}
+\item From $\langle \Theta_1, \Theta_2 \rangle$, we have $\Theta_1 \Diamond \Theta_2$ = $\Theta_2 \Diamond \Theta_1$ =  $\langle k, l, m, o, p\rangle$.
+\item We see that $\invpi(\Theta_1 \Diamond \Theta_2) = 5$, so that $ 0 \leq \invpi(\Theta_1 \Diamond \Theta_2) \leq Max(10, 8)$
+\item We also see that all elements in $\Theta_1 \Diamond \Theta_2$ also exist in either sequences.
+\item And also that the relative order of elements in $\Theta_1 \Diamond \Theta_2$ preserves the relative order of corresponding symbols in both $\Theta_1$ and $\Theta_2$.
+\item And that finally, we see that $\Theta_1 \Diamond \Theta_2$ is a sub-sequence of both $\Theta_1$ and $\Theta_2$.
+\end{itemize}
 
 
 {
