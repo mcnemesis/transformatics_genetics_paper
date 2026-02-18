@@ -1,0 +1,945 @@
+%---[ TEMPLATE: BOOK | monograph | mini-treatise ]
+%---|original-author:JWL|date:21AUG2025|email:jwl@nuchwezi.com
+%---|TITLE: Applying TRANSFORMATICS in GENETICS
+%---|EDITOR:Prof. Joseph Willrich Lutalo, Oxford
+%---[MANUSCRIPT-VERSION:24JAN2026]
+%----------------------------------------------------------------|
+\documentclass[a4paper, 18pt]{article} % A4 paper, readable font size
+%\documentclass[a4paper, 18pt]{book} % A4 paper, readable font size
+%\documentclass[a4paper, 18pt]{book} % A4 paper, readable font size
+\usepackage{geometry} % Adjust margins
+\geometry{top=0.8in, bottom=0.8in, left=0.8in, right=0.6in} 
+
+
+% packages we'll need...
+
+\usepackage{makeidx} %for the index
+\makeindex
+
+%to allow adjusting indentation such as for list-nested wide tables
+\usepackage{changepage}
+
+% for about author styling
+\usepackage{setspace}
+
+% allow table of contents to also list subsections
+\setcounter{tocdepth}{2}
+
+% for better appendices
+\usepackage[title,titletoc]{appendix}
+
+% for controlling page numbers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+
+% throw in page-top header
+\fancyhead[L]{Applying \textbf{TRANSFORMATICS} in GENETICS: Sample Chapter}
+
+% for graphics
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+
+% for text-wrapping in verbatim environments
+\usepackage{fvextra}
+\RecustomVerbatimEnvironment{verbatim}{Verbatim}{breaklines, breakanywhere}
+
+% for drawing text boxes
+
+% for proper treatment of urls
+\usepackage{hyperref}
+
+% for tables
+\usepackage{tabularx}
+
+% for line-breaks in table cells
+\usepackage{makecell}
+
+% for diagonalsplit in table headers cell
+\usepackage{diagbox}
+
+% make table cells center vertically where we could have used p{1cm} -- we use m{1cm}
+%\usepackage{array}
+% alternatively, just use custom column type --- M{1cm}
+%\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+
+% for long tables
+\usepackage{longtable}
+% for custom table col widths
+%\usepackage{array}
+%\newcolumntype{L}{>{\centering\arraybackslash}m{2cm}}
+%\newcolumntype{M}{>{\centering\arraybackslash}m{5cm}}
+
+% for json listings...
+\usepackage{listings}
+%\usepackage{minted}
+%\usemintedstyle{xcode}% no parser errors in listings?
+%\usemintedstyle{bw} % grayscale color in listings, but shows parser errors!
+
+% for maths
+\usepackage{amsmath}
+% for number sets symbols
+\usepackage{amssymb}
+%\usepackage{ntheorem}
+\usepackage{amsthm}
+
+\usepackage{tikz} % for v-aligned matrices with arrows between them
+\usetikzlibrary{matrix, positioning} % ← This line is essential
+
+
+% extra symbols
+\usepackage{textgreek}
+%\usepackage{mnsymbol}
+
+% for writing our theorems and defs...
+\newtheorem{comp}{Computation}
+\newtheorem{theo}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{lem}{Lemma}
+\newtheorem{prop}{Proposition}
+\newtheorem{axiom}{Axiom}
+\newtheorem{post}{Postulate}
+\newtheorem{trans}{Transformation}
+\newtheorem{transf}{Transformer}
+\newtheorem{law}{Law}
+\newtheorem{prob}{Problem}
+\newtheorem{soln}{Solution}
+\newtheorem{alg}{Algorithm}
+
+% for highlighting text
+\usepackage{xcolor, soul}
+%\definecolor{highcolor}{rgb}{0,255,255} % our default hl color for background, friendly on black text foreground
+\definecolor{highcolor}{rgb}{0,255,255} %a accent background color, must be friendly on black text foreground
+\sethlcolor{highcolor}
+
+
+% for wrapping text around floats
+\usepackage{wrapfig}
+
+% to include pdf pages
+\usepackage{pdfpages}
+
+% Define inverted Delta symbol...
+\newcommand{\invdel}[1]{\mathop{\rotatebox[origin=c]{180}{$\Delta$}}#1}
+
+% for multiline comments...
+\newcommand{\comment}[1]{}
+
+% for the cardinality symbol
+\newcommand{\invpi}{\rotatebox[origin=c]{180}{$\pi$}}
+
+%%%%%%[ Extra Preamble for Transformatics 101 extension chapter ]
+
+
+%for multi-figure figures?
+\usepackage{subcaption}
+
+% for highlighting text
+\usepackage{xcolor, soul}
+% then define colors we shall use:
+\definecolor{myteal}{RGB}{0, 128, 128}
+\definecolor{lightgray}{HTML}{CCCCCC}
+\definecolor{myorange}{HTML}{FFD7B3}
+
+% for table with alternating row bg colors 
+\usepackage[table]{xcolor}
+\definecolor{lightgray}{gray}{0.9}  % or use HTML/RGB if preferred
+
+
+%\definecolor{highcolor}{rgb}{0,255,255} % our default hl color for background, friendly on black text foreground
+\definecolor{highcolor}{rgb}{0,255,255} %a accent background color, must be friendly on black text foreground
+\sethlcolor{highcolor}
+
+%for regular expression and TEA code presentation in console-like text-boxes
+\usepackage{tcolorbox}
+\tcbuselibrary{listings,skins,breakable}
+\usepackage{listings}
+
+% style for general terminal-like listings
+\tcbset{
+  myterminalstyle/.style={
+    colback=black,       % background color
+    coltext=white,       % text color
+    fontupper=\ttfamily, % typewriter font
+    boxrule=0pt,         % no border
+    arc=0pt,             % square corners
+    outer arc=0pt,
+    left=2mm, right=2mm, top=1mm, bottom=1mm,
+    enhanced,
+    sharp corners,
+  }
+}
+
+% define listings config for TEA language
+\lstdefinelanguage{TEA}{
+  morecomment=[l]{\#},
+  sensitive=true,
+  alsoletter={:*!},
+  %morekeywords=[1]{i:, u!:, g:, l:, f:, x:, j:, q!:},
+  morekeywords=[1]{%
+a:, a.:, a*:, a!:, a.*:, a.!:, a*!:, b:, b.:, b*:, b!:, b.*:, b.!:, b*!:, c:, c.:, c*:, c!:, c.*:, c.!:, c*!:, d:, d.:, d*:, d!:, d.*:, d.!:, d*!:, e:, e.:, e*:, e!:, e.*:, e.!:, e*!:, f:, f.:, f*:, f!:, f.*:, f.!:, f*!:, g:, g.:, g*:, g!:, g.*:, g.!:, g*!:, h:, h.:, h*:, h!:, h.*:, h.!:, h*!:, i:, i.:, i*:, i!:, i.*:, i.!:, i*!:, j:, j.:, j*:, j!:, j.*:, j.!:, j*!:, k:, k.:, k*:, k!:, k.*:, k.!:, k*!:, l:, l.:, l*:, l!:, l.*:, l.!:, l*!:, m:, m.:, m*:, m!:, m.*:, m.!:, m*!:, n:, n.:, n*:, n!:, n.*:, n.!:, n*!:, o:, o.:, o*:, o!:, o.*:, o.!:, o*!:, p:, p.:, p*:, p!:, p.*:, p.!:, p*!:, q:, q.:, q*:, q!:, q.*:, q.!:, q*!:, r:, r.:, r*:, r!:, r.*:, r.!:, r*!:, s:, s.:, s*:, s!:, s.*:, s.!:, s*!:, t:, t.:, t*:, t!:, t.*:, t.!:, t*!:, u:, u.:, u*:, u!:, u.*:, u.!:, u*!:, v:, v.:, v*:, v!:, v.*:, v.!:, v*!:, w:, w.:, w*:, w!:, w.*:, w.!:, w*!:, x:, x.:, x*:, x!:, x.*:, x.!:, x*!:, y:, y.:, y*:, y!:, y.*:, y.!:, y*!:, z:, z.:, z*:, z!:, z.*:, z.!:, z*!:,%
+A:, A.:, A*:, A!:, A.*:, A.!:, A*!:, B:, B.:, B*:, B!:, B.*:, B.!:, B*!:, C:, C.:, C*:, C!:, C.*:, C.!:, C*!:, D:, D.:, D*:, D!:, D.*:, D.!:, D*!:, E:, E.:, E*:, E!:, E.*:, E.!:, E*!:, F:, F.:, F*:, F!:, F.*:, F.!:, F*!:, G:, G.:, G*:, G!:, G.*:, G.!:, G*!:, H:, H.:, H*:, H!:, H.*:, H.!:, H*!:, I:, I.:, I*:, I!:, I.*:, I.!:, I*!:, J:, J.:, J*:, J!:, J.*:, J.!:, J*!:, K:, K.:, K*:, K!:, K.*:, K.!:, K*!:, L:, L.:, L*:, L!:, L.*:, L.!:, L*!:, M:, M.:, M*:, M!:, M.*:, M.!:, M*!:, N:, N.:, N*:, N!:, N.*:, N.!:, N*!:, O:, O.:, O*:, O!:, O.*:, O.!:, O*!:, P:, P.:, P*:, P!:, P.*:, P.!:, P*!:, Q:, Q.:, Q*:, Q!:, Q.*:, Q.!:, Q*!:, R:, R.:, R*:, R!:, R.*:, R.!:, R*!:, S:, S.:, S*:, S!:, S.*:, S.!:, S*!:, T:, T.:, T*:, T!:, T.*:, T.!:, T*!:, U:, U.:, U*:, U!:, U.*:, U.!:, U*!:, V:, V.:, V*:, V!:, V.*:, V.!:, V*!:, W:, W.:, W*:, W!:, W.*:, W.!:, W*!:, X:, X.:, X*:, X!:, X.*:, X.!:, X*!:, Y:, Y.:, Y*:, Y!:, Y.*:, Y.!:, Y*!:, Z:, Z.:, Z*:, Z!:, Z.*:, Z.!:, Z*!:%
+},
+  keywordstyle=[1]\color{green},
+  commentstyle=\color{lightgray},
+  morestring=[b]",
+stringstyle=\color{myorange},
+moredelim=[s][\color{myorange}]{\{}{\}},
+}
+
+
+% define custom terminal for TEA language snippets
+
+\tcbset{
+  teaterminalstyle/.style={
+    enhanced,
+    colback=myteal,
+    coltext=white,
+    fontupper=\ttfamily,
+    boxrule=0pt,
+    arc=0pt,
+    outer arc=0pt,
+    left=2mm, right=2mm, top=1mm, bottom=1mm,
+    sharp corners,
+    listing only,
+    listing options={
+      language=TEA,
+     basicstyle=\ttfamily,
+%keywordstyle=\color{cyan}\bfseries,
+%commentstyle=\color{green}\itshape,
+%stringstyle=\color{yellow}
+    }
+  }
+}
+
+
+% from google-gemini for verbatim listings:
+\tcbuselibrary{listings,breakable}
+
+% Define a language with no syntax highlighting
+\lstdefinelanguage{none}{}
+
+% Define a new tcblisting environment for verbatim content
+\newtcblisting{tcbverbatim}[1][]{
+  % Pass any user options to the new environment
+  #1,
+  breakable, % Allow long lines to wrap
+  listing only, % The box contains only a listing
+  listing options={
+    language=none, % The 'none' language disables highlighting
+    basicstyle=\ttfamily, % Use the typewriter font
+    columns=flexible, % Allow flexible column widths for wrapping
+    breaklines=true, % Enable line breaking
+  },
+}
+
+
+
+% for maths
+\usepackage{amsmath}
+% for number sets symbols
+\usepackage{amssymb}
+%\usepackage{ntheorem}
+\usepackage{amsthm}
+
+
+% for writing our theorems and defs...
+%\newtheorem{comp}{Computation}
+%\newtheorem{theo}{Theorem}
+%\newtheorem{defn}{Definition}
+%\newtheorem{lem}{Lemma}
+%\newtheorem{prop}{Proposition}
+%\newtheorem{axiom}{Axiom}
+%\newtheorem{post}{Postulate}
+%\newtheorem{trans}{Transformation}
+%\newtheorem{transf}{Transformer}
+%\newtheorem{law}{Law}
+%\newtheorem{prob}{Problem}
+%\newtheorem{soln}{Solution}
+%\newtheorem{alg}{Algorithm}
+
+
+%%%%%%[ End Extra Preamble ]
+
+\title{Applying \textbf{TRANSFORMATICS} in GENETICS: The Mathematics of Genome Sequencing}
+
+
+\author{Willrich J. Lutalo\thanks{Currently a volunteering \& Independent Principal Investigator at Nuchwezi Research --- \url{https://nuchwezi.com}}\\
+\texttt{joewillrich@gmail.com, jwl@nuchwezi.com}}
+
+%\date{21$^{st}$ August, 2025}
+\date{\today}
+
+\begin{document}
+
+%---[ START BOOK CONTENT/FRONT ]
+%\frontmatter
+
+% insert [front] cover --- could just be a PNG or PDF
+%\includepdf[pages=1]{resources/pdfs/front_cover.pdf}
+
+
+% insert I*POW frontmatter
+%\includepdf[pages=-]{resources/pdfs/FrontisMatter.pdf}
+
+
+\maketitle
+
+\begin{abstract}
+This work is part of an upcoming book, ``Applying TRANSFORMATICS in GENETICS" by the author. Sequencing is such a central concept in genetics that it surely warrants its own chapter in a book on any modern mathematics of genetics such as is being developed and being formalized in this book. Moreover, it is not just in genetics that the idea of sequencing finds immediate relevance, just as with many of the other concepts being treated of in this book, much of what mechanics and theory is being developed about sequence processing, analysis and in general, the algebra of sequences, shall find many useful and sometimes fundamental applications in domains such as computer science, physics, pure and applied mathematics, medicine, economics, etc. In this chapter though, focus is on the problem of \textit{genome sequencing}, with special attention being given to identifying the core problems underlying such sequencing as it is encountered in contemporary genetics literature and practice, and then, leveraging the new mathematics of transformatics\cite{Lutalo2025_transformatics_thesis}, to develop entirely new formalisms and theory concerning how such sequencing might be accomplished, but also how it might be applied. We cover the matter of sequence alignment, with special, deep treatment of the issue of computing the maximum common subsequence from any collection of disparate sequences. We then handle the issue of computing a consensus sequence given any two sequences well aligned and with potential disparities in the overlapping sections (specifically for genetic sequences here), then finally apply these two solutions to the issue of formally specifying the problem of genome sequencing, to which we provide a solution in form of a special sequence transformer that we call the genome sequencer. Finally, we see how the theory thus developed might be used to implement such critical applications such as DNA or genetic tests, and how these ideas culminate in a law about the unique identity of any entity for which there exists some kind of genome sequence.
+ \newline\newline
+     \textbf{Keywords}: Modern Mathematics, Transformatics, Sequence Algebra, Sequence Analysis, Sequence Processors, DNA, Genome Sequencing, Sequence Transformers.
+\end{abstract}
+
+
+
+
+
+\section{Relevant Background}
+
+
+It is important that we have some general appreciation of the core concept about which this chapter\footnote{Part of new material in upcoming new edition of earlier book draft\cite{lutalo_2025_trans_genetics}.} is dedicated; \textit{sequencing}. For this matter, we shall want to bring to mind one of the popular definitions of the term as employed in computer science for example:
+
+
+\begin{quotation}
+\noindent \textbf{Sequencing}\index{sequencing} \texttt{The procedure by which ordered units of data (octets or messages) are numbered, transmitted over a communications network (which may rearrange their order), and reassembled into the original order at their destination.}\\
+\hspace*{\fill} --- \textbf{Oxford Dictionary of Computing}\cite{illingworth1996computing}
+\end{quotation}
+
+
+That is the closest concept or definition I could glean from my collection of academic literature and books in my private library at Nuchwezi Research Lab, however, this other definition, obtained via Microsoft's Copilot might also help shed more light on the particular concept of concern here: \textit{genome sequencing}\index{genome sequencing}:
+
+\begin{quotation}
+\noindent \textbf{Genome Sequencing}\footnote{Also see: \url{https://en.wikipedia.org/wiki/Whole_genome_sequencing}}\cite{CDC2024GenomicSequencing}: {\ttfamily Genome sequencing is the process of determining the complete DNA (or RNA) sequence of an organism’s genome. It identifies the precise order of nucleotide bases (A, T, C, G) across all or most of the genetic material, providing a comprehensive "blueprint" of the organism's hereditary information. This technique is fundamental in biology, medicine, and biotechnology, enabling insights into genetic variation, disease mechanisms, and evolutionary relationships.
+
+}
+\hspace*{\fill} --- \textbf{Microsoft Copilot}\cite{copilot_dna_assistant}
+\end{quotation}
+
+
+
+\subsection{Problems and Knowledge Gaps}
+
+
+First, we shall mostly assume there is essentially no reliable mathematical formalisms or theory concerning the important matter of genome sequencing\footnote{For those that do not know, a formal definition is presented in \textbf{\hyperref[DEFGENOMESEQUENCING]{Definition \ref{DEFGENOMESEQUENCING}}}.}\index{sequencing}\index{genome!sequencing}. And so, shall set out to construct and develop such a formalism ourselves, from what we already know.
+
+Second, from the theoretical and exploratory reviews we have conducted leading up to this moment, and what some authorities\cite{przytycka_wgs_lecture10} say about the subject, we know that genome sequencing as a practice leveraging computational and mathematical principles and concepts, or rather, when approached from a predominantly mathematical theory perspective, still has some ambiguities and unresolved problems that we have identified and intend to iron out especially in this chapter.
+
+These for example include an overall lack of proper mathematical formalisms around  issues such as:
+
+\begin{enumerate}
+\item How [genome] sequencing works or what it is exactly; how can it be described computationally?
+\item If we treat of genome sequencing using the language of transformatics, and think of it in terms of processing some collection of sequences to arrive at some resultant genome sequence, how should one arrive at such a resultant sequence then? 
+\item What is a ``consensus sequence"\cite{przytycka_wgs_lecture10}?
+\item What is meant by ``a most representative genome sequence" or perhaps an identifying \textbf{na-Sequence} given some living organism or particular aspects of it?
+\item Could we (perhaps conceptually, or theoretically) talk of sequencing a population instead of an individual organism, an entire species or perhaps (sic) non-living things too? How?
+\item Could we pin down a genome sequence or some na-Sequence responsible for say the expression\footnote{Related, but not to be treated of in this chapter but instead in \textbf{Chapter 10}\cite{lutalo_2025_trans_genetics}, is the matter of mathematically approaching how the expression --- visual, material or spatial, of any meaningful \textit{genome} sequence --- could be for a basic organism, an aspect of it, or even the case of \textit{anomalous entities} such as viruses, mere proteins or such, could be approached.} of some particular protein, some genetic mutation, a behavioral trait, anatomical or psychological anomalies and pathologies, the material basis of particular or general diseases, incapacities, etc. using a mathematical theory or language? How?
+\end{enumerate}
+
+Seeing as the matter of determining the actual na-Sequence that correctly identifies a person or thing might be hinging on the case of attempting to reconstruct a book by mathematically piecing together disparate pieces of it --- some in alignment, some out of alignment, some, supersets of  others, some prefixes or suffixes of others, etc.\footnote{This analogy shouldn't come as a surprise, when compared to how we found it best to describe DNA using a figurative metaphor (see \textbf{\hyperref[SEC1]{Introduction}}), but also based on how some authorities seem to be teaching this subject to their students\cite{przytycka_wgs_lecture10}.}, we then start to come to some appreciation of how best we might approach the problem's solution. 
+
+
+Also, though we might not immediately surface such philosophical speculations here, the difficulties and problems thus raised above, might likewise apply to or at least hint at the challenges there might be, in attempting to think of or practically resolve the matter of ``computationally sequencing anything" --- the idea being, to not limit the concept of \textit{sequencing} to only living things or living organisms only, but to also think generally and abstractly \textbf{concerning sequencing anything expressible in consensus reality via some kind of specification sequence}\footnote{Or perhaps an ``identifying sequence".}. 
+
+
+Thus, we might want to also think of, keep in mind, the possibility of sequencing the peculiar, miniscule aspects of consensus reality --- sub-atomic particles that make up atoms that make up molecules that make up living things on the miniature scale, and then all the way up to planets, stars and galaxies on the grand, cosmic and universal scale. One might wonder, and correctly so, is such sequencing possible? Does it/would it make sense? Is it necessary or even useful? These, and related problems are among the concerns we shall attempt to address in the rest of this chapter, but also, bits of what we can not immediately answer, perhaps we shall tackle in later chapters or future works\footnote{\textbf{FUTURE WORK:} Explore, philosophically, but also mathematically, whether or not it makes sense to think of the [genome] sequencing of arbitrary things; not necessarily only living/biological entities, but also any coherent material entities such as particular atoms, molecules,... all the way to entire ecosystems, planets and star-systems perhaps! For example, given that the manifestation of biological lifeforms on some particular planets within a star system heavily relies on some initial conditions inherent in the early formation of the star [system] itself, could it be that something fundamental in matter could underlie all manifestation or expression of existence other than just biological life, and that we might somehow be able to pin it down to some kind of identifier sequence? A genome for en entire planet or star system?}.
+
+
+\section{An Original Treatment: 3 Core Problems to Solve}
+\label{SEC3COREPROB}
+
+We shall develop our theory in bits, starting with the most basic, most fundamental, and then basing on that, to construct higher aspects of the necessary mathematical structures and system.
+
+The method is simple; we have distilled 3 core problems whose solutions would culminate in the formal and mathematical definition of genome sequencing. The 3 problems are\index{genome sequencing!underlying problems}
+
+
+\begin{enumerate}
+\item \textbf{PROBLEM 1}: Computing the best or rather correct common subsequence given any two or more potentially dissimilar sequences.
+\item \textbf{PROBLEM 2}: Computing the correct sequence that resolves conflicts and correctly expresses variations at each particular position (essentially a column) in the alignment matrix depicting a definite side-by-side alignment of two or more sequences with an overlap in the alignment position being considered.
+\item \textbf{PROBLEM 3}: Computing the Genome Sequence.
+\end{enumerate}
+
+We shall tackle each of these problems in its own section, one by one, until we arrive at the original objective of this chapter, in \textbf{\hyperref[SECGENSEQ]{Section \ref{SECGENSEQ}}}.
+
+\subsection{PROBLEM G1: Computing Maximum Common Subsequence: $\Theta_1 \Diamond \Theta_2$}
+\label{PROBG1}
+
+\begin{prob}[\textit{Computing MCS:}\index{Maximum Common Subsequence (MCS)}]: $\Theta_1 \Diamond \Theta_2$] 
+\label{PROBMCS}
+Given sequences $\Theta_1 = \langle k, l, m, o, p, x, y, z \rangle$ and $\Theta_2 = \langle b, c, a, y, z, k, l, m, o, p \rangle$, find the longest common subsequence they share --- also to be denoted $\Theta_1 \Diamond \Theta_2$, their \textbf{M}aximum \textbf{C}ommon \textbf{S}ubsequence.
+
+\vspace{1em}
+\begin{soln}
+\label{SOLMCS}
+We shall specify a transformer, tMCS($\Theta_1,\Theta_2$) that produces the required solution from the input sequences as such:
+
+\begin{transf}[The \textbf{tMCS} Transformer\index{transformer!tMCS, for maximum common subsequence}]
+\label{TRANSFMCS}
+$\langle \Theta_1,\Theta_2 \rangle  \quad \xrightarrow{O_{tMCS}(\Theta_1,\Theta_2)} \quad \Theta_1 \Diamond \Theta_2;$\\
+$\Theta_1 \Diamond \Theta_2 = \Theta_2 \Diamond \Theta_1$
+$\quad \land \quad 0 \leq \invpi(\Theta_1 \Diamond \Theta_2) \leq Max(\invpi(\Theta_1), \invpi(\Theta_2))$\\
+$\land \quad \forall \omega \in \Theta_1 \Diamond \Theta_2 \quad \exists \omega \in \Theta_1 \land \exists \omega \in \Theta_2$\\
+$\land \quad \forall \omega_i, \omega_j \in \Theta_1 \Diamond \Theta_2 : I(\omega_i, \Theta_1 \Diamond \Theta_2) < I(\omega_j, \Theta_1 \Diamond \Theta_2) \quad $\\
+$\quad \implies \quad I(\omega_i, \Theta_1) < I(\omega_j, \Theta_1) \quad \land \quad I(\omega_i, \Theta_2) < I(\omega_j, \Theta_2)$\\
+$\land \quad \forall \Theta_1 \Diamond \Theta_2, \quad \Theta_1 \Diamond \Theta_2 \subset \Theta_1 \quad \land \quad \Theta_1 \Diamond \Theta_2 \subset \Theta_2$
+\end{transf}
+$\qed$
+\end{soln}
+\end{prob}
+\vspace{1em}
+
+\textbf{\hyperref[SOLMCS]{Solution \ref{SOLMCS}}} is easier said than done. However, we shall attempt to formally and rigorously express it by formalizing what exactly the $tMCS(\Theta_1,\Theta_2)$ transformer does when expressed as a computable algorithm. Basically, we are to compute the MCS via \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}} specified hereafter.
+
+\vspace{2em}
+\begin{alg}[The \textbf{tMCS} Algorithm\index{algorithm!computing MCS}\footnote{\textbf{IMPORTANT:} Note that, even though the MCS transformer, \textbf{\hyperref[TRANSFMCS]{Transformer \ref{TRANSFMCS}}}, is defined for just two sequences, and yet, the tMCS algorithm based off of it is designed to handle any arbitrary number of sequences and not just a pair.}]
+\label{ALGtMCS}
+$ $
+\begin{enumerate}
+\item{\textbf{INITIALIZE} the global maximum common sequence, $O^m_g$, to the empty sequence\footnote{Refer to \textbf{Foundation Idea 1}\cite{Lutalo2025_transformatics_thesis}.}.} 
+\item{
+\textbf{GIVEN}  \textbf{a collection of $n$ sequences}, $\Theta^n = \{\Theta_1, \Theta_2,..., \Theta_n\}$.
+}
+\item{
+\textbf{START}  by computing the cardinality of each sequence, $\Theta_i \in \Theta^n$, and note the \textbf{largest sequence cardinality}, $Max(\invpi(\Theta_i) \quad \forall \Theta_i \in \Theta^n)$ = $Max(\invpi(\Theta_i))$, for the longest sequence, $\Theta_m$ such that $Max(\invpi(\Theta_i)) = \invpi(\Theta_m)$.
+}
+\item {
+\textbf{COMPUTE}  the cardinality of a sequence that can exactly contain the given sequences each concatenated to the other, but with the longest sequence duplicated. Essentially, compute:
+
+\begin{equation}
+\label{EQLSEQ}
+C_R = \invpi(\Theta_m) + \sum\limits_{\forall \Theta_i \in \Theta^n} \invpi(\Theta_i)
+\end{equation}
+
+}
+\item{
+\textbf{SORT}  the collection of sequences, $\Theta^n$, in descending order\footnote{\textbf{FUTURE WORK:} We especially prefer descending order by sequence cardinality because, as we shall come to appreciate in the rest of the tMCS algorithm, it is more likely that the MCS is discovered or developed based on the longest  common [sub-]sequence (in the longest sequences in the collection) than if we had started out with the shortest sequences. In fact, it also is somewhat very logical, since, the longest sequence shall most likely also contain elements and subsequences that shorter sequences have or are derived from than vice versa! Thus we can converge towards the MCS faster that way. Also, this is \textit{the optimistic strategy} --- believing that the most common subsequence shall most likely already exist in the longest sequences we are analyzing --- which makes sense for genome sequencing given we are typically analyzing sequences from the same entity or individual or species, and that DNA or genetic code for the same individual or entity stays consistent across all or most of the samples from that entity. But otherwise the pessimist route might be to start out with the shortest sequences in the collection (esp. where we are dealing with totally antagonistic entities). But is this always optimal? Should it stay this way even when we are attempting [genome] sequencing for non-biological or non-genetic sequences?} of the sequence cardinality. Let the sorted sequence collection be denoted ${\hat{\Theta}}^n = \langle \Theta_m, \Theta_{2*}, \cdots , \Theta_{n*} \rangle$ --- where the first item in ${\hat{\Theta}}^n$, $\Theta_{1*}$ is essentially $\Theta_m$.
+}
+\item{
+\textbf{SELECT}  the first two sequences from ${\hat{\Theta}}^n$, such as  $\Theta_m$ and $\Theta_{2*}$ --- or rather/generally, ${\hat{\Theta}}^n[1]$ and ${\hat{\Theta}}^n[2]$, as the two sequences we shall use to search for and derive the potential MCS.
+}
+\item { \textbf{POSITION} the two sequences, $\Theta_m$ and $\Theta_{2*}$ within two adjacent arrays $A_1^{C_R}$ and $A_2^{C_R}$ of equal length $C_R$ --- for simplicity, we shall just denote them as  $A_1$ and $A_2$, in such a way that $\Theta_m$ occupies in its containing array $A_1$, positions from m to $2m$, but for simplicity's sake\footnote{We shall later see (in \textbf{Step\#8(c)}) that it is useful to position $\Theta_m$ this way, because then, the second sequence's positions are all that need to be changed --- items being shifted leftwards in $A_2$ relative to $A_1$, while those of the longest sequence in $A_1$ remain fixed. But to keep the mathematical formalisms simple, we shall especially write our expressions as though elements of $\Theta_m$ were positioned from index 1 in $A_1$ --- these details especially matter to programmers and software engineers that shall want to translate the algorithm into working computer program source-code for various different languages and type-systems.}, which we shall just treat as though 1 to $m$:
+
+\vspace{1em}
+ $A_1: [1, m]$
+\vspace{1em}
+
+
+While $\Theta_{2*}$ occupies positions in the range\footnote{We write ``$\Theta_{2*}[1]$" in our formulation here, to mean the first element in $\Theta_{2*}$ --- i.e. position 1 has value 1, and the nth position has value $n$, not usual (computer-science) $n-1$}:
+
+\vspace{1em}
+ $A_2: [(1 + I(\Theta_m[m], A_1)$, $\quad$ $I(\Theta_m[m], A_1) + \invpi(\Theta_{2*})]$
+\vspace{1em}
+
+Or, equivalently, the range:
+
+\vspace{1em}
+$A_2: [m+1,\quad m + \invpi(\Theta_{2*})]$. 
+ \vspace{1em}
+
+Which we can also express visually as:\\\\
+
+\begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|}
+\hline
+$A_1$ & $\cdots$ & $a_{1,1}$ & $a_{1,2}$ & $\cdots$ & $a_{1,m}$ & & & & & $\cdots$\\
+\hline
+$A_2$ & $\cdots$ & & & & & $a_{2,1}$ & $a_{2,2}$ & $\cdots$ & $a_{2,\invpi(\Theta_{2*})}$ & $\cdots$ \\
+\hline
+ 
+\end{tabular}\\\\
+
+
+}
+\item{
+\textbf{UPDATE}  the two sequence alignment arrays as such:
+\begin{enumerate}
+\item{
+\textbf{KEEP}  the first array, $A_1$, unchanged (since it contains the longest sequence, $\Theta_{1*} \in \hat{\Theta}_n$).
+}
+\item \textbf{SET}  $j = z$, where $z$ is the \textbf{shift step size} --- simplest scenario, $z = 1$.
+\item {\textbf{SHIFT}  each element in the second sequence by $j$-steps to an earlier position in array $A_2$, so that the two sequences $\Theta_m$ and $\Theta_{2*}$ have an overlap across the alignment arrays/matrix in positions spanning range:
+
+\vspace{1em}
+ $A_1: [m-j,\quad m]$
+\vspace{1em}
+ 
+and so that $\Theta_2$ shall be occupying the updated range: 
+
+\vspace{1em}
+$A_2: [m + 1 - j,\quad m+\invpi(\Theta_{2*}) - j]$
+\vspace{1em}
+}
+\item {
+\textbf{SCAN}  the overlapping sections in both sequences, in positions  $[m-j, m]$ and by comparing each item in that range --- i.e. $\Theta_m[i]$ Vs $\Theta_{2*}[i]$, determine the longest common subsequence, or rather the \textbf{MCS}, thus:\\
+
+Assume the overlap is of length\footnote{Essentially, since the overlap spans the range $[m-j, m]$, then $\phi = m - (m-j) = j$}$\phi$ such that the overlap can be visually depicted as such:
+
+{
+
+\vspace{2em}
+% to force wide table to fit well on page irrespective of nesting/list indentation
+\begin{adjustwidth}{-4em}{}
+\begin{tabular}[H]{|c||c|c|c|c|c|}
+\hline
+$\approx \Theta_m$ & $a_{1,m-\phi+0}$ &$a_{1,m-\phi+1}$ & $a_{1,m-\phi+2}$ & $\cdot\cdot\cdot$ & $a_{1,m-\phi+j}$\\
+\hline
+$\approx \Theta_2$ & $a_{2,m-\phi}$ &$a_{2,m-\phi+1}$ & $a_{2,m-\phi+2}$ & $\cdot\cdot\cdot$ & $a_{2,m}$\\
+\hline
+$(\Theta_m[i] == \Theta_{2*}[i])?$ & 1 & 1& 0 &  $\cdot\cdot\cdot$ & 1\\
+\hline
+$\approx (\Theta_m[i] == \Theta_{2*}[i]) \approx O^\phi$ & $f(\Theta_m[i],\Theta_{2*}[i])$ & $a_{1,m-\phi+1}$ & 0 &  $\cdot\cdot\cdot$ & $f(a_{1,m},a_{2,m})$ \\
+\hline
+ \end{tabular}
+ \end{adjustwidth}
+  \vspace{2em}
+
+ }
+
+ 
+ \textbf{CREATE}  another array of maximum length $\phi$, i.e. $O^\phi$, which contains at most $\phi$ elements generated thus:
+ \begin{itemize}
+ \item{ $O^\phi[i]$ contains 0 if the corresponding two elements in $\Theta_m$ and $\Theta_{2*}$ didn't match. Otherwise it contains the matching element value from the first sequence. Essentially, resolve what goes into $O^\phi$ at each of the overlap indices --- $i: i \in [m-\phi, m]$ ---  via the function:
+ 
+ \vspace{1em}
+\begin{equation}
+f(\Theta_m[i],\Theta_{2*}[i]) = \begin{cases}
+\Theta_m[i] & \Theta_m[i] == \Theta_{2*}[i],\\
+0 & \Theta_m[i] \neq \Theta_{2*}[i]
+\end{cases}
+\end{equation}
+ \vspace{1em}
+ 
+ 
+ }
+ \item \textbf{TRUNCATE}  $O^\phi$ to its longest non-zero/non-empty subsequence, and \textbf{SET} that as $\bar{O^\phi}$.
+ \item \textbf{IFF}  $\invpi(\bar{O^\phi}) > \invpi(O^m_g)$, then \textbf{UPDATE} or replace $O^m_g$ with $\bar{O^\phi}$\\ $\implies$  $O^m_g := \bar{O^\phi}$
+ \end{itemize}
+}
+\item{
+\textbf{UPDATE}  $j \implies j := j + z$
+}
+\item {
+\textbf{IFF}  $j = \invpi(\Theta_m) + \invpi(\Theta_{2*})$, then \textbf{GOTO}\footnote{At this juncture, we shall have essentially finished sliding the second sequence, $\Theta_{2*}$, past all the elements of the first sequence so that at $j = \invpi(\Theta_m) + \invpi(\Theta_{2*})$ there is nomore overlap possible, and so we can move on to the next sequence.} \textbf{Step\#9}
+}
+\item{\textbf{ELSE} \textbf{ITERATE}  from \textbf{Step\#c}}
+\end{enumerate}
+}
+
+\item{ \textbf{UPDATE} $\Theta_{2*}$ as such:
+
+\begin{itemize}
+\item{ \textbf{COMPUTE} index of next comparison sequence, $k$, as such: 
+
+\vspace{1em}
+\begin{equation}
+k = I(\Theta_{2*},{\hat{\Theta}}^n) + 1
+\end{equation}
+\vspace{1em}
+
+}
+\item \textbf{IFF} $k > n$, then \textbf{RETURN}\footnote{Basically, we have reached the end of our sorted list of sequences and whatever we currently have as MCS must be the solution.}  $O^m_g$.
+\item \textbf{ELSE} \textbf{LET} $\Theta_{2*} := {\hat{\Theta}}^n[k]$
+
+\end{itemize}
+
+}
+\item \textbf{IFF} $\invpi(\Theta_{2*}) <  \invpi(O^m_g)$, then \textbf{RETURN}\footnote{Basically, once we find that the current MCS is longer than any of the remaining sequences in the collection, we might as well stop searching and return it as the final solution.}  $O^m_g$.
+\item \textbf{ELSE ITERATE}  from \textbf{Step\#7}
+\end{enumerate}
+
+
+%\end{enumerate}
+$\qed$
+\end{alg}
+\vspace{2em}
+
+%draw horizontal line
+\noindent\rule{\textwidth}{0.4pt}
+
+\vspace{2em}
+
+\subsubsection{Applying The Transformer and Associated Alogirithm}
+\label{SECAPPLYTRANSALG}
+
+And so, applying \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}} to our example sequence collection:
+
+We see that:
+
+\begin{enumerate}
+\item Initially, our MCS, $O^m_g = \langle \rangle$.
+\item{ For our given sequences, we have our collection $\Theta^n = \Theta^2$ as such:
+
+\vspace{1em}
+\begin{equation}
+ \Theta^n = \langle \Theta_1, \Theta_2 \rangle = \langle \langle k, l, m, o, p, x, y, z \rangle , \langle b, c, a, y, z, k, l, m, o, p \rangle \rangle
+\end{equation}
+\vspace{1em}
+
+}
+\item $\invpi(\Theta_1) = 8$, and $\invpi(\Theta_2) = 10$, so that then, $\Theta_2$ is our longest sequence, and thus $\Theta_m = \Theta_2$.
+\item{ As for the size of our alignment array, we have that:
+
+\begin{equation}
+C_R = 10 + (10 + 8) = 28
+\end{equation}
+
+
+}
+\item And as for the sorted collection, we have that $\hat{\Theta}^n = \langle \Theta_2, \Theta_1 \rangle$, which implies that initially, $\Theta_{2*} = \Theta_1$.
+\item{As for how the two sequences are located in the alignment matrix or arrays, we have the following visual depiction initially:
+
+\vspace{1em}
+% to force wide table to fit well on page irrespective of nesting/list indentation
+\begin{adjustwidth}{0em}{}
+\begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$i$ & $\cdots$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 \\
+\hline
+$A_1$ & $\cdots$ & b & c & a & y & z & k & l & m & o & p &  &  &  &  &  &  &  &  \\
+\hline
+$A_2$ & $\cdots$ &  &  &  &  &  &  &  &  &  &  & k & l & m & o & p & x & y & z  \\
+\hline
+ 
+\end{tabular}
+\end{adjustwidth}
+\vspace{1em}
+
+At which point, the MCS between these two sequences, $\Theta_m \Diamond \Theta_{2*}$ = $O^\phi = \langle \rangle$.
+
+}
+\item{ We find that there shall be no interesting overlaps until when we reach $j = 5$, at which point, we shall have the following alignment configuration:
+
+\vspace{1em}
+% to force wide table to fit well on page irrespective of nesting/list indentation
+\begin{adjustwidth}{0em}{}
+\begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$i$ & $\cdots$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & $\cdots$ \\
+\hline
+$A_1$ & $\cdots$ & b & c & a & y & z & k & l & m & o & p &  &  &  &  &  &$\cdots$ \\
+\hline
+$A_2$ & $\cdots$ &  &  &  &  &  & k & l & m & o & p & x & y & z &  &  &$\cdots$\\
+\hline
+$a_1[i]==a_2[i]?$ & $\cdots$ & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & $\cdots$ \\
+\hline
+ 
+\end{tabular}
+\end{adjustwidth}
+\vspace{1em}
+
+At which point, the MCS between these two sequences, $\Theta_m \Diamond \Theta_{2*}$ = $O^\phi = \langle k, l, m, o, p\rangle$, and that $\invpi(O^\phi) = 5 \quad > \quad \invpi(O^m_g)$, and so then we can update the global MCS so that $O^m_g = \langle k, l, m, o, p\rangle$.
+
+
+}
+\item{ At $j =  \invpi(\Theta_m) = 10$, we find that the second sequence shall entirely be positioned at the start of the longest sequence, and that we should have the second sequence entirely overlapping with the first, and at which point, we shall have the following alignment configuration for our example:
+
+\vspace{1em}
+% to force wide table to fit well on page irrespective of nesting/list indentation
+\begin{adjustwidth}{0em}{}
+\begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$i$ & $\cdots$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & $\cdots$ \\
+\hline
+$A_1$ & $\cdots$ & b & c & a & y & z & k & l & m & o & p &$\cdots$ \\
+\hline
+$A_2$ & $\cdots$ & k & l & m & o & p & x & y & z &  &  &$\cdots$\\
+\hline
+$a_1[i]==a_2[i]?$ & $\cdots$ & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0  & $\cdots$ \\
+\hline
+ 
+\end{tabular}
+\end{adjustwidth}
+\vspace{1em}
+
+At which point, the MCS between these two sequences, $\Theta_m \Diamond \Theta_{2*}$ = $O^\phi = \langle \rangle$, and that $\invpi(O^\phi) = 0 \quad < \quad \invpi(O^m_g)$, and so then we cannot update the global MCS so that, \textbf{still}, $O^m_g = \langle k, l, m, o, p\rangle$.
+
+
+}
+\item{ At $j =  13$, we find that we have another interesting overlap, and at which point, we shall have the following alignment configuration for our example:
+
+\vspace{1em}
+% to force wide table to fit well on page irrespective of nesting/list indentation
+\begin{adjustwidth}{0em}{}
+\begin{tabular}[H]{|c||c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$i$ & $\cdots$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & $\cdots$ \\
+\hline
+$A_1$ & $\cdots$ & & & & b & c & a & y & z & k & l & m & o & p & &$\cdots$ \\
+\hline
+$A_2$ & $\cdots$ & k & l & m & o & p & x & y & z &  &  & & & & &$\cdots$\\
+\hline
+$a_1[i]==a_2[i]?$ & $\cdots$ & 0& 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0  &0 & $\cdots$ \\
+\hline
+ 
+\end{tabular}
+\end{adjustwidth}
+\vspace{1em}
+
+At which point, the MCS between these two sequences, $\Theta_m \Diamond \Theta_{2*}$ = $O^\phi = \langle y, z\rangle$, and that $\invpi(O^\phi) = 2 \quad < \quad \invpi(O^m_g)$, and so then we cannot update the global MCS so that, \textbf{still}, $O^m_g = \langle k, l, m, o, p\rangle$.
+
+
+}
+\item We finally stop when $j = \invpi(\Theta_m) + \invpi(\Theta_{2*}) = 10 + 8 = 18$, and at which point we shall find that we have not encountered any other overlap longer than our earlier MCS, and so that, given we also have no more sequences to compare against, we must \textbf{return the final MCS} as $O^m_g = \langle k, l, m, o, p\rangle$.
+\end{enumerate}
+
+\vspace{2em}
+
+Thus, after applying  \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}} to our two-member sequence collection, we find that the MCS solution we arrive at is $\langle k, l, m, o, p\rangle$ for that particular higher-order sequence. We can confirm that the solution conforms to the specifications of \textbf{\hyperref[TRANSFMCS]{Transformer \ref{TRANSFMCS}}}, such as noting that:
+
+\begin{itemize}
+\item From $\langle \Theta_1, \Theta_2 \rangle$, we have $\Theta_1 \Diamond \Theta_2$ = $\Theta_2 \Diamond \Theta_1$ =  $\langle k, l, m, o, p\rangle$.
+\item We see that $\invpi(\Theta_1 \Diamond \Theta_2) = 5$, so that $ 0 \leq \invpi(\Theta_1 \Diamond \Theta_2) \leq Max(10, 8)$
+\item We also see that all elements in $\Theta_1 \Diamond \Theta_2$ also exist in either sequences.
+\item And also that the relative order of elements in $\Theta_1 \Diamond \Theta_2$ preserves the relative order of corresponding symbols in both $\Theta_1$ and $\Theta_2$.
+\item And that finally, we see that $\Theta_1 \Diamond \Theta_2$ is a sub-sequence of both $\Theta_1$ and $\Theta_2$.
+\end{itemize}
+
+
+
+
+
+\subsection{PROBLEM G2: Computing Overlap Resultant Sequences: $\Theta_1 \ast \Theta_2$}
+\label{PROBG2}
+
+\begin{prob}[\textit{Computing ORS: \textbf{Overlap Resultant Sequence}}\index{Overlap Resultant Sequence (ORS)}]: $\Theta_1 \ast \Theta_2$] 
+\label{PROBORS}
+Given two overlapping/well-aligned sequences $\Theta_1$ and $\Theta_2$ of the same length but potentially different terms at any position in the range $[1, \invpi(\Theta_1)]$, how to compute a resultant sequence $\Theta_1 \ast \Theta_2$ that is most meaningful for DNA sequences?
+
+\vspace{1em}
+\begin{soln}
+\label{SOLORS}
+Assuming $\Theta_1 = \langle \prod\limits_{i=1}^n a_i, \rangle$ and $\Theta_2 = \langle \prod\limits_{i=1}^n b_i, \rangle$, construct $\Theta^*$ via the following tORS transformer:
+
+\begin{transf}[The \textbf{tORS} Transformer\index{transformer!tORS, for Overlap Resultant Sequence}]$ $\\
+\label{TRANSFORS}
+$\langle\langle \Theta_1\langle \prod\limits_{i=1}^n a_i, \rangle, \Theta_2\langle \prod\limits_{i=1}^n b_i, \rangle \rangle  \quad \xrightarrow{O_{tORS}(\Theta_1,\Theta_2)} \quad \Theta^* = 	 \quad \Theta_1 \ast \Theta_2;$\\
+$\invpi(\Theta_1 \ast \Theta_2) = \invpi(\Theta_1) = \invpi(\Theta_2) = n$\\
+$\land \quad \Theta^* = \langle \prod\limits_{i=1}^n f(a_i,b_i), \rangle$\\
+ for $f(x,y)$ \textbf{the ORS resolver function} defined as such:
+
+\[
+f(x,y) = 
+\begin{cases}
+x, & x == y, \text{terms are the same}\\
+x, & x = \lnot(y), \text{one term is the complement of the other}\\
+y & otherwise.
+\end{cases}
+\]
+
+\end{transf}
+$\qed$
+\vspace{2em}
+\end{soln}
+\end{prob}
+
+\vspace{2em}
+
+
+Concerning that succinct solution, note that we have covered sequence complements in \textbf{Chapter 5}\cite{lutalo_2025_trans_genetics} and especially for DNA or na-Complements\index{na-Complement!application in computing ORS} in \textbf{Section 5.1}. We shall not delve into the intricacies of translating \textbf{\hyperref[TRANSFORS]{Transformer \ref{TRANSFORS}}} into a working generic algorithm such as we did for \textbf{\hyperref[PROBG1]{Problem G1}}, because we have already well illustrated how the process works --- see or compare  \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}} to \textbf{\hyperref[TRANSFMCS]{Transformer \ref{TRANSFMCS}}}, and also see how we have applied both the algorithm and underlying transformer to some illustrative test-cases in \textbf{\hyperref[SECAPPLYTRANSALG]{Section \ref{SECAPPLYTRANSALG}}}. Thus, it should not be hard for the serious student, researcher or genetics engineer to apply, verify and/or extend the above proposed solution to their particular needs.
+
+Finally, note that being able to compute the \textbf{ORS} is quite useful, as it underlies the computation of the consensus overlapping sequence from which a genome sequence is then derivable as we see in the next section.
+
+
+
+\subsection{PROBLEM G3: Computing the Genome Sequence (GS): $(\Theta_1 \Diamond \Theta_2)^*$}
+\label{SECCOMPGENSEQ}
+
+\begin{prob}[\textit{Computing GS: \textbf{Genome Sequence}}]: $(\Theta_1 \Diamond \Theta_2)^*$] 
+\label{PROBGS}
+Given any two sequences, $\Theta_1$ and $\Theta_2$, that are the elements of a sequence collection, $\Theta^n$, compute their \textbf{resultant genome sequence}\index{genome sequence}\index{genome sequence!defining problem}, denoted $(\Theta_1 \Diamond \Theta_2)^*$, that contains at core, their longest common subsequence (the MCS), $O^m = (\Theta_1 \Diamond \Theta_2)$, potentially padded on either side by the specially computed prefix and suffix subsequences from either input sequence as such:
+
+\vspace{1em}
+\begin{equation}
+\label{EQGS}
+(\Theta_1 \Diamond \Theta_2)^* \quad = \quad \Theta_1^a\cdot(\Theta_1^b \ast \Theta_2^b)\cdot(\Theta_1 \Diamond \Theta_2)\cdot(\Theta_1^c \ast \Theta_2^c)\cdot\Theta_2^a\\\\
+\end{equation}
+\vspace{1em}
+
+And where the special terms are derived and named as such:
+
+\begin{itemize}
+\item $\Theta_1^a$ is the non-overlapping section of $\Theta_1$ before the \textbf{COS} --- to be introduced soon.
+\item $(\Theta_1^b \ast \Theta_2^b)$ is a consensus sequence from $\Theta_1$ and $\Theta_2$ such that its elements are the result of applying the \textbf{ORS resolver function} to compute $f(\Theta_1[i],\Theta_2[i])$ as specified in \textbf{\hyperref[TRANSFORS]{Transformer \ref{TRANSFORS}}}. Thus, it is one of the overlapping resultant sequences (ORS) resulting from $\Theta_1$ and $\Theta_2$ --- this particular one occurring \textbf{before the MCS}.
+\item $(\Theta_1 \Diamond \Theta_2)$ is the \textbf{maximum common subsequence}, MCS, $O^m_g$, of $\Theta_1$ and $\Theta_2$. It is the heart of the computed genome sequence.
+\item $(\Theta_1^c \ast \Theta_2^c)$ is the other ORS from $\Theta_1$ and $\Theta_2$, this one occurring  \textbf{after the MCS}.
+\item  $\Theta_2^a$ is the non-overlapping section of $\Theta_2$ after the \textbf{COS}.
+\end{itemize}
+
+\textbf{COS}, $\overline{\Theta_1\Theta_2}$, which is the \textbf{Consensus Overlapping Sequence}\index{consensus overlapping sequence}\index{consensus overlapping sequence!properties}, padded on either side by the non-overlapping sections of either $\Theta_1$ or $\Theta_2$, has the following properties:
+
+\begin{itemize}
+\item $\overline{\Theta_1\Theta_2} = (\Theta_1^b \ast \Theta_2^b)\cdot(\Theta_1 \Diamond \Theta_2)\cdot(\Theta_1^c \ast \Theta_2^c)$
+\item $\Theta_1 \approx \Theta_1^a \cdot \overline{\Theta_1\Theta_2}$
+\item $\Theta_2 \approx \overline{\Theta_1\Theta_2} \cdot \Theta_2^a$
+\end{itemize}
+
+So that we could rewrite \textbf{\hyperref[EQGS]{Equation \ref{EQGS}}} as such:
+
+\vspace{1em}
+\begin{equation}
+\label{EQGS2}
+(\Theta_1 \Diamond \Theta_2)^* \quad = \quad \Theta_1^a\cdot\overline{\Theta_1\Theta_2}\cdot\Theta_2^a
+\end{equation}
+\vspace{1em}
+
+Finally, we know that the cardinality of the genome sequence, $\invpi((\Theta_1 \Diamond \Theta_2)^*)$, is bounded thus:
+
+\vspace{1em}
+\begin{equation}
+\label{EQBOUNDGSa}
+\invpi(\Theta_m) \leq \invpi((\Theta_1 \Diamond \Theta_2)^*) \leq C_R - \invpi(\Theta_m)
+\end{equation}
+\vspace{1em}
+
+As per \textbf{\hyperref[EQLSEQ]{Equation  \ref{EQLSEQ}}} and the sensibilities of GTNC\cite{Lutalo2024gtnc}, and which inequality, in its most general form (applicable to a genome sequence derived from more than just two sequences) we might also depict as\index{genome sequence!limits on size}\footnote{\textbf{NOTE:} we write $\Diamond(\Theta^n)$ in  \textbf{\hyperref[EQBOUNDGSb]{Equation  \ref{EQBOUNDGSb}}} instead of $\Theta_1 \Diamond \Theta_2$ to mean the MCS resulting from processing all (potentially more than just two) sequences in some collection or higher-order sequence $\Theta^n$. And so that, even though it results from a higher-order sequence,$\Diamond(\Theta^n)$, just like $\Theta_1 \Diamond \Theta_2$, is a first-order (or rather, ``flat") sequence\index{first-order sequence}.}:
+
+
+\vspace{1em}
+\begin{equation}
+\label{EQBOUNDGSb}
+Max(\invpi(\Theta_i)) \leq \invpi(\Diamond(\Theta^n)) \leq \sum\limits_{\forall \Theta_i \in \Theta^n} \invpi(\Theta_i)
+\end{equation}
+\vspace{1em}
+
+
+\end{prob}
+
+\section{The Genome Sequencer}
+\label{SECGENSEQ}
+
+\fbox{\begin{minipage}{0.9\textwidth}
+\begin{defn}[A \textbf{Genome Sequencer}]
+\label{DEFGENOMESEQ} 
+A solution to \textbf{\hyperref[PROBGS]{Problem \ref{PROBGS}}}, is a special sequence processor, $\tilde{T}(\Theta^n)$, that can compute and return a resultant sequence, $R_{\Theta^n}$, also known as the \textbf{genome sequence}, defined as\footnote{Note that in our formalism here we express the \textbf{sequence difference} of $\{\Theta_m\}$ from $\Theta^n$ as $\Theta^n \setminus \Theta_m$ --- essentially using a set-theoretic notation even though we are actually dealing with sequences here. This, so as to keep the notation simple, but otherwise, later also appeal to the same concept when considering the remaining higher-order sequence after the first $j$ member sequences have been processed and removed from it, with the notation $\Theta^{n-j}$.}
+
+\vspace{1em}
+\begin{equation}
+\label{EQGSVAL}
+R_{\Theta^n} = (\Theta_m \Diamond (\hat{\Theta}^n \setminus \Theta_m))^* 
+\end{equation}
+\vspace{1em}
+
+Such that $\Theta_m$ is the longest sequence in $\Theta^n$ --- a collection of $n$ sequences or $\hat{\Theta}^n$, its version with member sequences sorted in descending order of sequence cardinality, and that $\tilde{T}(\Theta^n)$ produces/generates/computes $R_{\Theta^n}$ by iteratively computing and updating the genome sequence in n-1 iterations over $\hat{\Theta}^n$ as such\index{transformer chain}
+
+\vspace{1em}
+\begin{trans}
+\label{TRANSGENSEQ}
+$R_{\hat{\Theta}^n}^0 \xrightarrow{O_{tGS}(R_{\hat{\Theta}^n}^0,\hat{\Theta}^{n-1},1)} R_{\Theta^n}^1$
+$\xrightarrow{O_{tGS}(R_{\hat{\Theta}^n}^1, \hat{\Theta}^{n-2},2)} R_{\hat{\Theta}^n}^2$
+$\xrightarrow{O_{tGS}(R_{\hat{\Theta}^n}^2, \hat{\Theta}^{n-3},3)} R_{\hat{\Theta}^n}^3$
+$\ldots \xrightarrow{O_{tGS}(R_{\hat{\Theta}^n}^{j-1}, \hat{\Theta}^{n-j},j)} R_{\hat{\Theta}^n}^{j+1}$
+$\ldots \xrightarrow{O_{tGS}(R_{\hat{\Theta}^n}^{n-2}, \hat{\Theta}^{1},n-1)} R_{\hat{\Theta}^n}^{n}$
+\end{trans}
+\vspace{1em}
+
+To produce the final genome sequence, $R_{\hat{\Theta}^n}^{n}$ via the \textbf{tGS Transformer} defined as such:
+
+\vspace{1em}
+\begin{transf}[The \textbf{tGS Transformer}, $\tilde{T}(\Theta^n)$\index{transformer!tGS, Genome Sequencer}\index{genome sequencer}]
+\label{TRANSFGENSEQ}
+$ $\\
+$R_{\hat{\Theta}^n}^{j}  \xrightarrow{O_{tGS}(R_{\hat{\Theta}^n}^{j-1}, \hat{\Theta}^{n-j},j)} R_{\hat{\Theta}^n}^{j+1};$\\
+$R_{\hat{\Theta}^n}^{0} = \Theta_m \quad \land \quad R_{\hat{\Theta}^n}^{j+1} = ( R_{\hat{\Theta}^n}^j \Diamond \hat{\Theta}^{n-j}[1])^* \quad \forall j \geq 1$\\
+$\qed$
+\vspace{1em}
+
+and $R_{\hat{\Theta}^n}^{j+1}$ is the resultant genome sequence after processing $\hat{\Theta}^n$ with the first $j$ sequences removed from it, and with the previous genome sequence, $R_{\hat{\Theta}^n}^j$ passed to it, as the current best candidate genome sequence so as to produce that next genome sequence $R_{\hat{\Theta}^n}^{j+1}$. Also, for a sequence collection of $n$ member sequences, we write $R_{\Theta^n}$ to also mean $R_{\hat{\Theta}^n}^{n}$ as in \textbf{\hyperref[EQGSVAL]{Equation \ref{EQGSVAL}}}.
+\end{transf} 
+\vspace{1em}
+
+\end{defn}
+\end{minipage}}
+\vspace{2em}
+
+Thus, \textbf{\hyperref[TRANSFGENSEQ]{Transformer \ref{TRANSFGENSEQ}}}, $\tilde{T}(\Theta^n)$, is a genome sequencer, and is essentially a transformer that reduces a matrix of na-Sequences to a resultant sequence, $R_{\Theta^n}$, that is the resultant genome sequence of a specie, population, or any natural entity\footnote{In principle though, it is not that we can not apply this theory to the computing of genome sequences for artificial or rather conceptual entities too.} represented by or expressed by the [potentially incomplete or approximate] genome sequences in the collection $\Theta^n$.
+
+It shall be worth noting that, for the special case where we merely have a collection of just two sequences from which to compute the genome --- such as when $\Theta^n = \langle \Theta_1, \Theta_2 \rangle $ for some two [na-]sequences, $\Theta_1$ and $\Theta_2$, we shall readily find that applying \textbf{\hyperref[TRANSFGENSEQ]{Transformer \ref{TRANSFGENSEQ}}} to that pair of sequences reduces to the case we have encountered in \textbf{\hyperref[PROBGS]{Problem \ref{PROBGS}}}, and that then, we find that:
+
+\vspace{1em}
+\begin{equation}
+R_{\Theta^n} = (\Theta_m \Diamond (\hat{\Theta}^n \setminus \Theta_m))^* \quad = \quad (\Theta_1 \Diamond \Theta_2)^* \quad = \quad \Theta_1^a\cdot\overline{\Theta_1\Theta_2}\cdot\Theta_2^a
+\end{equation}
+\vspace{1em}
+
+
+Finally, it shall help to put it out clearly, what our working definition of \textbf{Genome Sequencing} is, given what we now know.
+
+\vspace{1em}
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\begin{defn}[\textbf{Genome Sequencing}\index{genome sequencing}]
+\label{DEFGENOMESEQUENCING} 
+
+When a collection of na-Sequences, $\Theta^n$, is reduced to a single na-Sequence, $\Theta_{gs}$, via a process that correctly aligns all the sequences in $\Theta^n$ such that the resultant $\Theta_{gs}$ is the best representative consensus sequence given all the variations in $\Theta^n$, we call $\Theta_{gs}$ the \textbf{genome sequence} of $\Theta^n$, and we know that if some other sequence, $\Omega_{na}$ is considered to be a legitimate genome sequence of $\Theta^n$, then it must be equivalent to $\Theta_{gs}$, where $\Theta_{gs}$ can be computationally produced from $\Theta^n$, via \textbf{\hyperref[TRANSFGENSEQ]{Transformer \ref{TRANSFGENSEQ}}} as such:
+
+
+\begin{trans}
+$\Theta^n  \xrightarrow{\tilde{T}(\Theta^n)} \Theta_{gs}$
+\end{trans}
+
+and equivalently:
+
+\begin{equation}
+\Theta_{gs} = \tilde{T}(\Theta^n) = R_{\Theta^n}
+\end{equation}
+\vspace{1em}
+
+We call the process of reducing $\Theta^n$ to $R_{\Theta^n}$, \textbf{genome sequencing}, and can use it to test or prove if indeed some sequence $\Omega_{na}$ is a legitimate genome sequence of $\Theta^n$ --- essentially, testing if the two sequences belong to the same entity or perhaps species\index{DNA!test}\index{genetic test}, by running the test:
+
+\begin{equation}
+0 \leq \tilde{A}(R_{\Theta^n} \rightarrow  \Omega_{na}) \leq \epsilon \quad \lor \quad 0 \leq \tilde{A}(\Theta_{gs} \rightarrow  \Omega_{na}) \leq \epsilon \quad \implies \quad \Omega_{na} \cong \Theta_{gs}
+\end{equation}
+
+Otherwise $\Omega_{na} \ne \Theta_{gs}$, for $\epsilon \leq 1$.
+
+\end{defn}
+\end{minipage}}
+\\
+\end{center}
+
+
+
+\section{The Identity Genome Sequence (IGS) Law}
+\label{SECIGSL}
+
+\begin{law}[The \textbf{Identity Genome Sequence Law}\index{IGS Law}\index{genome sequencing!a law}]
+\label{LAWGDL}
+The Identity Genome Sequence, $R_{\Theta^n}(\Omega): \mathbb{N} \times \psi_{DNA}$, is derived from some collection of sequences, $\Theta^n \langle \prod\limits^n \theta_i \rangle$ such that $\theta_i \subset \Omega \lor \theta_i \approx \Omega$ are approximations of $\Omega$, the longest known genome sequence of the entity, whose exact genome sequence would be $\Omega$, and which can uniquely identify it. For sufficiently large $n$, and where the sample sequences $\theta_i$ were read or generated correctly by scanning or sequencing the entity, then 
+
+\begin{equation}
+\label{SEQRofOM}
+R_{\Theta^n}(\Omega) \approx \Omega_m
+\end{equation} 
+
+Where $\Omega_m$ is the known best approximation of the genome sequence that correctly identifies any instance of a member of the kind $\Omega$.
+\end{law}
+
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\large
+\textbf{NOTE:}\\
+ On \textbf{Consequences of IGS} \\
+
+One potentially significant consequence of \textbf{\hyperref[LAWGDL]{Law \ref{LAWGDL}}} is that every distinct living thing --- unique or distinct animal, plant, eukaryote or prokaryote, has a distinct identifying genome sequence, $\Omega$, that we can discover and approximate via significantly many readings of particular or representative [sub-]sequences of the DNA of the observable expressions of $\Omega$.
+
+However, given that in reality it might not be exactly possible to exhaustively compute the correct value of $R_{\Theta^n}$, nor tell exactly when that approximation approaches $\Omega$ exactly, it makes one wonder whether we can ever accurately know what it is that exactly underlies the expression of our reality --- living things or not\footnote{First, because, for currently known living things, the sheer complexity of correctly or accurately sequencing a genome for even the simplest organisms is constrained by the sheer amount of large resources required to correctly process millions to billions of nucelotides, and that typically, it is not possible to obtain an entire genome sequence in a single reading. And then, note that there is the queer possibility that a kind of genome sequencing might be applicable to also inanimate/non-living things too! But that's a philosophical discussion for another day.}.
+
+\end{minipage}}
+\\
+\end{center}
+
+
+
+\section{Conclusion}
+
+
+In this chapter, we have introduced the central concept of sequencing, and shown how it is applied to the genetics engineering problem of genome sequencing. We have formally specified the three core problems underlying genome sequencing as is currently explored in both literature and practice, and have especially given the matter a whole new treatment using the mathematics of transformatics. We have demonstrated a detailed solution for the problem of computing the MCS, and have proposed solutions for the ORS and finally the computation of the genome sequence itself. We have specified a generic abstract machine capable of computing the genome sequence of any collection of sequences (not just genetic sequences), and have also shown how the idea of genome sequencing might be leveraged in practically relevant scenarios such as the evaluation of whether or not some two or more sequences belong to the same entity based on known or computed genome sequences --- a problem that might even find immediate use in special kinds of artificial intelligence such as in genetic programming systems or perhaps in various kinds of bio-automata and even synthetic biology. Finally, a law, the Identity Genome Sequence law, has been proposed, and it is argued that it would find relevance beyond just genetics if well expounded upon with research and theory in other fields. This chapter is but one of many critical areas of genetics being studied, formalized and being furthered using the new mathematics of transformatics, and so, hopefully, the discussions and ideas kickstarted in this work shall spur the interest of those already familiar with what is going on in genetics, but also those coming to this work from related fields such computational biology, computer science, linear algebra, pure and applied mathematics, etc.
+
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+
+\end{document}
