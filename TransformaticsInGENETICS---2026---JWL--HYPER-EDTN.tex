@@ -858,7 +858,7 @@ Of course, in \textbf{\hyperref[EQSEQ2]{Equation \ref{EQSEQ2}}} we have somewhat
 
 \vspace{1em}
 
-So, this expression in \textbf{\hyperref[EQSEQ3]{Equation \ref{EQSEQ3}}} is our first proper appreciation of what higher-order sequences\index{sequence!higher-order} might be like when they are an abstraction of normal flat-structure sequences. We see for example here, that the $k=4$ \textbf{bundling-parameter} means we shall process the original flat sequence $k$ items at a time, and so, each subsequence in $\Theta_2(n,4)$ then contains exactly (or at most) 4 items --- we are assuming 4 is a factor of n to keep things simple. And so, we expect that, in total, we should have $\frac{n}{k}$ subsequences after applying the bundling transform:
+So, this expression in \textbf{\hyperref[EQSEQ3]{Equation \ref{EQSEQ3}}} is our first proper appreciation of what higher-order sequences\index{sequence!higher-order} might be like when they are an abstraction of normal flat-structure sequences. We see for example here, that the $k=4$ \textbf{bundling-parameter} means we shall process the original flat sequence\footnote{Note that we might also refer to a ``flat sequence" as a \textit{first-order} sequence.\index{flat sequence}\index{first-order sequence}} $k$ items at a time, and so, each subsequence in $\Theta_2(n,4)$ then contains exactly (or at most) 4 items --- we are assuming 4 is a factor of n to keep things simple. And so, we expect that, in total, we should have $\frac{n}{k}$ subsequences after applying the bundling transform:
 
 \vspace{1em}
 
@@ -2900,6 +2900,9 @@ $\qed$
 
 \vspace{2em}
 
+\subsubsection{Applying The Transformer and Associated Alogirithm}
+\label{SECAPPLYTRANSALG}
+
 And so, applying \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}} to our example sequence collection:
 
 We see that:
@@ -3034,43 +3037,27 @@ Thus, after applying  \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}} to ou
 \end{itemize}
 
 
-{
-\LARGE
-
-\hl{
-
-TODO: Continue indexing starting from here
-
-}
-}
-
-
-{
-\LARGE
-
-\hl{TODO: proceed from here...}
-}
-
 
 
 
 \subsection{PROBLEM G2: Computing Overlap Resultant Sequences: $\Theta_1 \ast \Theta_2$}
 \label{PROBG2}
 
-\begin{prob}[\textit{Computing ORS: \textbf{Overlap Resultant Sequence}}]: $\Theta_1 \ast \Theta_2$] 
+\begin{prob}[\textit{Computing ORS: \textbf{Overlap Resultant Sequence}}\index{Overlap Resultant Sequence (ORS)}]: $\Theta_1 \ast \Theta_2$] 
 \label{PROBORS}
 Given two overlapping/well-aligned sequences $\Theta_1$ and $\Theta_2$ of the same length but potentially different terms at any position in the range $[1, \invpi(\Theta_1)]$, how to compute a resultant sequence $\Theta_1 \ast \Theta_2$ that is most meaningful for DNA sequences?
 
+\vspace{1em}
 \begin{soln}
 \label{SOLORS}
 Assuming $\Theta_1 = \langle \prod\limits_{i=1}^n a_i, \rangle$ and $\Theta_2 = \langle \prod\limits_{i=1}^n b_i, \rangle$, construct $\Theta^*$ via the following tORS transformer:
 
-\begin{transf}[The \textbf{tORS} Transformer]$ $\\
+\begin{transf}[The \textbf{tORS} Transformer\index{transformer!tORS, for Overlap Resultant Sequence}]$ $\\
 \label{TRANSFORS}
 $\langle\langle \Theta_1\langle \prod\limits_{i=1}^n a_i, \rangle, \Theta_2\langle \prod\limits_{i=1}^n b_i, \rangle \rangle  \quad \xrightarrow{O_{tORS}(\Theta_1,\Theta_2)} \quad \Theta^* = 	 \quad \Theta_1 \ast \Theta_2;$\\
 $\invpi(\Theta_1 \ast \Theta_2) = \invpi(\Theta_1) = \invpi(\Theta_2) = n$\\
 $\land \quad \Theta^* = \langle \prod\limits_{i=1}^n f(a_i,b_i), \rangle$\\
- for $f(x,y)$ \textbf{a resolver function} defined as such:
+ for $f(x,y)$ \textbf{the ORS resolver function} defined as such:
 
 \[
 f(x,y) = 
@@ -3083,32 +3070,44 @@ y & otherwise.
 
 \end{transf}
 $\qed$
+\vspace{2em}
 \end{soln}
 \end{prob}
+
+\vspace{2em}
+
+
+Concerning that succinct solution, note that we have covered sequence complements in \textbf{\hyperref[SEC3A]{Chapter \ref{SEC3A}}} and especially for DNA or na-Complements\index{na-Complement!application in computing ORS} in \textbf{\hyperref[SECSIGCOMPLE]{Section \ref{SECSIGCOMPLE}}}. We shall not delve into the intricacies of translating \textbf{\hyperref[TRANSFORS]{Transformer \ref{TRANSFORS}}} into a working generic algorithm such as we did for \textbf{\hyperref[PROBG1]{Problem G1}}, because we have already well illustrated how the process works --- see or compare  \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}} to \textbf{\hyperref[TRANSFMCS]{Transformer \ref{TRANSFMCS}}}, and also see how we have applied both the algorithm and underlying transformer to some illustrative test-cases in \textbf{\hyperref[SECAPPLYTRANSALG]{Section \ref{SECAPPLYTRANSALG}}}. Thus, it should not be hard for the serious student, researcher or genetics engineer to apply, verify and/or extend the above proposed solution to their particular needs.
+
+Finally, note that being able to compute the \textbf{ORS} is quite useful, as it underlies the computation of the consensus overlapping sequence from which a genome sequence is then derivable as we see in the next section.
+
+
 
 \subsection{PROBLEM G3: Computing the Genome Sequence (GS): $(\Theta_1 \Diamond \Theta_2)^*$}
 \label{SECCOMPGENSEQ}
 
 \begin{prob}[\textit{Computing GS: \textbf{Genome Sequence}}]: $(\Theta_1 \Diamond \Theta_2)^*$] 
 \label{PROBGS}
-Given any two sequences, $\Theta_1$ and $\Theta_2$, compute their \textbf{resultant genome sequence}, denoted $(\Theta_1 \Diamond \Theta_2)^*$, that contains at core, their longest common subsequence (the MCS), $O^m = (\Theta_1 \Diamond \Theta_2)$, potentially padded either side by the specially computed prefix and suffix subsequences from either input sequence as such:\\
+Given any two sequences, $\Theta_1$ and $\Theta_2$, that are the elements of a sequence collection, $\Theta^n$, compute their \textbf{resultant genome sequence}\index{genome sequence}\index{genome sequence!defining problem}, denoted $(\Theta_1 \Diamond \Theta_2)^*$, that contains at core, their longest common subsequence (the MCS), $O^m = (\Theta_1 \Diamond \Theta_2)$, potentially padded on either side by the specially computed prefix and suffix subsequences from either input sequence as such:
 
+\vspace{1em}
 \begin{equation}
 \label{EQGS}
 (\Theta_1 \Diamond \Theta_2)^* \quad = \quad \Theta_1^a\cdot(\Theta_1^b \ast \Theta_2^b)\cdot(\Theta_1 \Diamond \Theta_2)\cdot(\Theta_1^c \ast \Theta_2^c)\cdot\Theta_2^a\\\\
 \end{equation}
+\vspace{1em}
 
 And where the special terms are derived and named as such:
 
 \begin{itemize}
-\item $\Theta_1^a$ is the non-overlapping section of $\Theta_1$ before the \textbf{COS}.
-\item $(\Theta_1^b \ast \Theta_2^b)$ is the consensus sequence from $\Theta_1$ and $\Theta_2$ such that its elements are the result of applying the \textbf{resolver function} to compute $f(\Theta_1[i],\Theta_2[i])$ as specified in \textbf{\hyperref[TRANSFMCS]{Transformer \ref{TRANSFMCS}}}. It occurs \textbf{before the MCS}.
+\item $\Theta_1^a$ is the non-overlapping section of $\Theta_1$ before the \textbf{COS} --- to be introduced soon.
+\item $(\Theta_1^b \ast \Theta_2^b)$ is a consensus sequence from $\Theta_1$ and $\Theta_2$ such that its elements are the result of applying the \textbf{ORS resolver function} to compute $f(\Theta_1[i],\Theta_2[i])$ as specified in \textbf{\hyperref[TRANSFORS]{Transformer \ref{TRANSFORS}}}. Thus, it is one of the overlapping resultant sequences (ORS) resulting from $\Theta_1$ and $\Theta_2$ --- this particular one occurring \textbf{before the MCS}.
 \item $(\Theta_1 \Diamond \Theta_2)$ is the \textbf{maximum common subsequence}, MCS, $O^m_g$, of $\Theta_1$ and $\Theta_2$. It is the heart of the computed genome sequence.
-\item $(\Theta_1^c \ast \Theta_2^c)$ is the consensus sequence from $\Theta_1$ and $\Theta_2$ \textbf{after the MCS}.
+\item $(\Theta_1^c \ast \Theta_2^c)$ is the other ORS from $\Theta_1$ and $\Theta_2$, this one occurring  \textbf{after the MCS}.
 \item  $\Theta_2^a$ is the non-overlapping section of $\Theta_2$ after the \textbf{COS}.
 \end{itemize}
 
-\textbf{COS}, $\overline{\Theta_1\Theta_2}$, which is the \textbf{Consensus Overlapping Sequence}, padded on either side by the non-overlapping sections of either $\Theta_1$ or $\Theta_2$, has the following properties:
+\textbf{COS}, $\overline{\Theta_1\Theta_2}$, which is the \textbf{Consensus Overlapping Sequence}\index{consensus overlapping sequence}\index{consensus overlapping sequence!properties}, padded on either side by the non-overlapping sections of either $\Theta_1$ or $\Theta_2$, has the following properties:
 
 \begin{itemize}
 \item $\overline{\Theta_1\Theta_2} = (\Theta_1^b \ast \Theta_2^b)\cdot(\Theta_1 \Diamond \Theta_2)\cdot(\Theta_1^c \ast \Theta_2^c)$
@@ -3118,19 +3117,32 @@ And where the special terms are derived and named as such:
 
 So that we could rewrite \textbf{\hyperref[EQGS]{Equation \ref{EQGS}}} as such:
 
+\vspace{1em}
 \begin{equation}
 \label{EQGS2}
-(\Theta_1 \Diamond \Theta_2)^* \quad = \quad \Theta_1^a\cdot\overline{\Theta_1\Theta_2}\cdot\Theta_2^a\\\\
+(\Theta_1 \Diamond \Theta_2)^* \quad = \quad \Theta_1^a\cdot\overline{\Theta_1\Theta_2}\cdot\Theta_2^a
 \end{equation}
+\vspace{1em}
 
 Finally, we know that the cardinality of the genome sequence, $\invpi((\Theta_1 \Diamond \Theta_2)^*)$, is bounded thus:
 
+\vspace{1em}
 \begin{equation}
-\label{EQBOUNDGS}
-\invpi(\Theta_m) \leq \invpi((\Theta_1 \Diamond \Theta_2)^*) \leq \invpi(\Theta_m) + \sum\limits_{\forall \Theta_i \in \Theta^n} \invpi(\Theta_i)
+\label{EQBOUNDGSa}
+\invpi(\Theta_m) \leq \invpi((\Theta_1 \Diamond \Theta_2)^*) \leq C_R - \invpi(\Theta_m)
 \end{equation}
+\vspace{1em}
 
-As per \textbf{\hyperref[EQLSEQ]{Equation  \ref{EQLSEQ}}} and the sensibilities of GTNC\cite{Lutalo2024gtnc}.
+As per \textbf{\hyperref[EQLSEQ]{Equation  \ref{EQLSEQ}}} and the sensibilities of GTNC\cite{Lutalo2024gtnc}, and which inequality, in its most general form (applicable to a genome sequence derived from more than just two sequences) we might also depict as\index{genome sequence!limits on size}\footnote{\textbf{NOTE:} we write $\Diamond(\Theta^n)$ in  \textbf{\hyperref[EQBOUNDGSb]{Equation  \ref{EQBOUNDGSb}}} instead of $\Theta_1 \Diamond \Theta_2$ to mean the MCS resulting from processing all (potentially more than just two) sequences in some collection or higher-order sequence $\Theta^n$. And so that, even though it results from a higher-order sequence,$\Diamond(\Theta^n)$, just like $\Theta_1 \Diamond \Theta_2$, is a first-order (or rather, ``flat") sequence\index{first-order sequence}.}:
+
+
+\vspace{1em}
+\begin{equation}
+\label{EQBOUNDGSb}
+Max(\invpi(\Theta_i)) \leq \invpi(\Diamond(\Theta^n)) \leq \sum\limits_{\forall \Theta_i \in \Theta^n} \invpi(\Theta_i)
+\end{equation}
+\vspace{1em}
+
 
 \end{prob}
 
@@ -3140,45 +3152,64 @@ As per \textbf{\hyperref[EQLSEQ]{Equation  \ref{EQLSEQ}}} and the sensibilities 
 \fbox{\begin{minipage}{0.9\textwidth}
 \begin{defn}[A \textbf{Genome Sequencer}]
 \label{DEFGENOMESEQ} 
-A solution to \textbf{\hyperref[PROBGS]{Problem \ref{PROBGS}}}, is a special sequence processor, $\tilde{T}(\Theta^n)$, that can compute and return a resultant sequence, $R_{\Theta^n}$, also known as the \textbf{genome sequence}, defined as\footnote{Note that, even though in our formalism here we express the \textbf{relative complement set} of $\{\Theta_m\}$ in $\Theta^n$ as $\Theta^n \setminus \Theta_m$ --- especially to keep the notation simple, we actually mean $\Theta^n \setminus \{\Theta_m\}$, which means, the first set with the elements in the second set omitted.}
+A solution to \textbf{\hyperref[PROBGS]{Problem \ref{PROBGS}}}, is a special sequence processor, $\tilde{T}(\Theta^n)$, that can compute and return a resultant sequence, $R_{\Theta^n}$, also known as the \textbf{genome sequence}, defined as\footnote{Note that in our formalism here we express the \textbf{sequence difference} of $\{\Theta_m\}$ from $\Theta^n$ as $\Theta^n \setminus \Theta_m$ --- essentially using a set-theoretic notation even though we are actually dealing with sequences here. This, so as to keep the notation simple, but otherwise, later also appeal to the same concept when considering the remaining higher-order sequence after the first $j$ member sequences have been processed and removed from it, with the notation $\Theta^{n-j}$.}
 
+\vspace{1em}
 \begin{equation}
 \label{EQGSVAL}
-R_{\Theta^n} = (\Theta_m \Diamond \Theta^n \setminus \Theta_m)^* 
+R_{\Theta^n} = (\Theta_m \Diamond (\hat{\Theta}^n \setminus \Theta_m))^* 
 \end{equation}
+\vspace{1em}
 
-Such that $\Theta_m$ is the longest sequence in $\Theta^n$ --- a collection of $n$ sequences, and that $\tilde{T}(\Theta^n)$ produces/generates/computes $R_{\Theta^n}$ by iteratively computing and updating the genome sequence in n-1 iterations as such:
+Such that $\Theta_m$ is the longest sequence in $\Theta^n$ --- a collection of $n$ sequences or $\hat{\Theta}^n$, its version with member sequences sorted in descending order of sequence cardinality, and that $\tilde{T}(\Theta^n)$ produces/generates/computes $R_{\Theta^n}$ by iteratively computing and updating the genome sequence in n-1 iterations over $\hat{\Theta}^n$ as such\index{transformer chain}
 
+\vspace{1em}
 \begin{trans}
 \label{TRANSGENSEQ}
-$R_{\Theta^n}^0 \xrightarrow{O_{tGS}(\{R_{\Theta^n}^0\} \cup\Theta^n,0)} R_{\Theta^n}^1$
-$\xrightarrow{O_{tGS}(\{R_{\Theta^n}^1\} \cup \Theta^{n-1},1)} R_{\Theta^n}^2$
-$\xrightarrow{O_{tGS}(\{R_{\Theta^n}^2\} \cup \Theta^{n-2},2)}$
-$\ldots \xrightarrow{O_{tGS}(\{R_{\Theta^n}^j\} \cup \Theta^{n-j},j)} R_{\Theta^n}^{j+1}$
-$\ldots \xrightarrow{O_{tGS}(\{R_{\Theta^n}^{n-2}\} \cup \Theta^{1},n-2)} R_{\Theta^n}^{n-1}$
+$R_{\hat{\Theta}^n}^0 \xrightarrow{O_{tGS}(R_{\hat{\Theta}^n}^0,\hat{\Theta}^{n-1},1)} R_{\Theta^n}^1$
+$\xrightarrow{O_{tGS}(R_{\hat{\Theta}^n}^1, \hat{\Theta}^{n-2},2)} R_{\hat{\Theta}^n}^2$
+$\xrightarrow{O_{tGS}(R_{\hat{\Theta}^n}^2, \hat{\Theta}^{n-3},3)} R_{\hat{\Theta}^n}^3$
+$\ldots \xrightarrow{O_{tGS}(R_{\hat{\Theta}^n}^{j-1}, \hat{\Theta}^{n-j},j)} R_{\hat{\Theta}^n}^{j+1}$
+$\ldots \xrightarrow{O_{tGS}(R_{\hat{\Theta}^n}^{n-2}, \hat{\Theta}^{1},n-1)} R_{\hat{\Theta}^n}^{n}$
 \end{trans}
+\vspace{1em}
 
-To produce the final genome sequence, $R_{\Theta^n}^{n-1}$ via the \textbf{tGS Transformer} defined as such:
+To produce the final genome sequence, $R_{\hat{\Theta}^n}^{n}$ via the \textbf{tGS Transformer} defined as such:
 
-\begin{transf}[The \textbf{tGS Transformer}, $\tilde{T}(\Theta^n)$]
+\vspace{1em}
+\begin{transf}[The \textbf{tGS Transformer}, $\tilde{T}(\Theta^n)$\index{transformer!tGS, Genome Sequencer}\index{genome sequencer}]
 \label{TRANSFGENSEQ}
-$R_{\Theta^n}^{j} \xrightarrow{O_{tGS}(\{R_{\Theta^n}^j\} \cup \Theta^{n-j},j)} R_{\Theta^n}^{j+1};$
-$R_{\Theta^n}^{0} = \emptyset$\\
-and $R_{\Theta^n}^{j+1}$ is the resultant genome sequence after processing $\Theta^n$ with the first $j$ sequences removed from it, and with the previous genome sequence, $\{R_{\Theta^n}^j\}$ appended to it, so as to produce that next genome sequence $R_{\Theta^n}^{j+1}$.
+$ $\\
+$R_{\hat{\Theta}^n}^{j}  \xrightarrow{O_{tGS}(R_{\hat{\Theta}^n}^{j-1}, \hat{\Theta}^{n-j},j)} R_{\hat{\Theta}^n}^{j+1};$\\
+$R_{\hat{\Theta}^n}^{0} = \Theta_m \quad \land \quad R_{\hat{\Theta}^n}^{j+1} = ( R_{\hat{\Theta}^n}^j \Diamond \hat{\Theta}^{n-j}[1])^* \quad \forall j \geq 1$\\
+$\qed$
+\vspace{1em}
+
+and $R_{\hat{\Theta}^n}^{j+1}$ is the resultant genome sequence after processing $\hat{\Theta}^n$ with the first $j$ sequences removed from it, and with the previous genome sequence, $R_{\hat{\Theta}^n}^j$ passed to it, as the current best candidate genome sequence so as to produce that next genome sequence $R_{\hat{\Theta}^n}^{j+1}$. Also, for a sequence collection of $n$ member sequences, we write $R_{\Theta^n}$ to also mean $R_{\hat{\Theta}^n}^{n}$ as in \textbf{\hyperref[EQGSVAL]{Equation \ref{EQGSVAL}}}.
 \end{transf} 
+\vspace{1em}
 
 \end{defn}
 \end{minipage}}
-\\
+\vspace{2em}
 
-That transformer, $\tilde{T}(\Theta^n)$, is a genome sequencer, and is essentially a transformer that reduces a matrix of na-Sequences to a resultant sequence, $R_{\Theta^n}$, that is the resultant genome sequence of a specie, population, or any natural entity\footnote{In principle though, it is not that we can not apply this theory to the computing of genome sequences for artificial or rather conceptual entities too.} represented by or expressed by the [potentially incomplete or approximate] genome sequences in the collection $\Theta^n$.
+Thus, \textbf{\hyperref[TRANSFGENSEQ]{Transformer \ref{TRANSFGENSEQ}}}, $\tilde{T}(\Theta^n)$, is a genome sequencer, and is essentially a transformer that reduces a matrix of na-Sequences to a resultant sequence, $R_{\Theta^n}$, that is the resultant genome sequence of a specie, population, or any natural entity\footnote{In principle though, it is not that we can not apply this theory to the computing of genome sequences for artificial or rather conceptual entities too.} represented by or expressed by the [potentially incomplete or approximate] genome sequences in the collection $\Theta^n$.
+
+It shall be worth noting that, for the special case where we merely have a collection of just two sequences from which to compute the genome --- such as when $\Theta^n = \langle \Theta_1, \Theta_2 \rangle $ for some two [na-]sequences, $\Theta_1$ and $\Theta_2$, we shall readily find that applying \textbf{\hyperref[TRANSFGENSEQ]{Transformer \ref{TRANSFGENSEQ}}} to that pair of sequences reduces to the case we have encountered in \textbf{\hyperref[PROBGS]{Problem \ref{PROBGS}}}, and that then, we find that:
+
+\vspace{1em}
+\begin{equation}
+R_{\Theta^n} = (\Theta_m \Diamond (\hat{\Theta}^n \setminus \Theta_m))^* \quad = \quad (\Theta_1 \Diamond \Theta_2)^* \quad = \quad \Theta_1^a\cdot\overline{\Theta_1\Theta_2}\cdot\Theta_2^a
+\end{equation}
+\vspace{1em}
+
 
 Finally, it shall help to put it out clearly, what our working definition of \textbf{Genome Sequencing} is, given what we now know.
 
-
+\vspace{1em}
 \begin{center}
 \fbox{\begin{minipage}{0.9\textwidth}
-\begin{defn}[\textbf{Genome Sequencing}]
+\begin{defn}[\textbf{Genome Sequencing}\index{genome sequencing}]
 \label{DEFGENOMESEQUENCING} 
 
 When a collection of na-Sequences, $\Theta^n$, is reduced to a single na-Sequence, $\Theta_{gs}$, via a process that correctly aligns all the sequences in $\Theta^n$ such that the resultant $\Theta_{gs}$ is the best representative consensus sequence given all the variations in $\Theta^n$, we call $\Theta_{gs}$ the \textbf{genome sequence} of $\Theta^n$, and we know that if some other sequence, $\Omega_{na}$ is considered to be a legitimate genome sequence of $\Theta^n$, then it must be equivalent to $\Theta_{gs}$, where $\Theta_{gs}$ can be computationally produced from $\Theta^n$, via \textbf{\hyperref[TRANSFGENSEQ]{Transformer \ref{TRANSFGENSEQ}}} as such:
@@ -3193,11 +3224,12 @@ and equivalently:
 \begin{equation}
 \Theta_{gs} = \tilde{T}(\Theta^n) = R_{\Theta^n}
 \end{equation}
+\vspace{1em}
 
-We call the process of reducing $\Theta^n$ to $R_{\Theta^n}$, \textbf{genome sequencing}, and can use it to test or prove if indeed some sequence $\Omega_{na}$ is a legitimate genome sequence of $\Theta^n$, by running the test:
+We call the process of reducing $\Theta^n$ to $R_{\Theta^n}$, \textbf{genome sequencing}, and can use it to test or prove if indeed some sequence $\Omega_{na}$ is a legitimate genome sequence of $\Theta^n$ --- essentially, testing if the two sequences belong to the same entity or perhaps species\index{DNA!test}\index{genetic test}, by running the test:
 
 \begin{equation}
-0 \leq \tilde{A}(R_{\Theta^n} \rightarrow  \Omega_{na}) \leq \epsilon \quad \lor \quad 0 \leq \tilde{A}(\Theta_{gs} \rightarrow  \Omega_{na}) \leq \epsilon \quad \implies \quad \Omega_{na} \equiv \Theta_{gs}
+0 \leq \tilde{A}(R_{\Theta^n} \rightarrow  \Omega_{na}) \leq \epsilon \quad \lor \quad 0 \leq \tilde{A}(\Theta_{gs} \rightarrow  \Omega_{na}) \leq \epsilon \quad \implies \quad \Omega_{na} \cong \Theta_{gs}
 \end{equation}
 
 Otherwise $\Omega_{na} \ne \Theta_{gs}$, for $\epsilon \leq 1$.
@@ -3212,7 +3244,7 @@ Otherwise $\Omega_{na} \ne \Theta_{gs}$, for $\epsilon \leq 1$.
 \section{The Identity Genome Sequence (IGS) Law}
 \label{SECIGSL}
 
-\begin{law}[The \textbf{Identity Genome Sequence Law}]
+\begin{law}[The \textbf{Identity Genome Sequence Law}\index{IGS Law}\index{genome sequencing!a law}]
 \label{LAWGDL}
 The Identity Genome Sequence, $R_{\Theta^n}(\Omega): \mathbb{N} \times \psi_{DNA}$, is derived from some collection of sequences, $\Theta^n \langle \prod\limits^n \theta_i \rangle$ such that $\theta_i \subset \Omega \lor \theta_i \approx \Omega$ are approximations of $\Omega$, the longest known genome sequence of the entity, whose exact genome sequence would be $\Omega$, and which can uniquely identify it. For sufficiently large $n$, and where the sample sequences $\theta_i$ were read or generated correctly by scanning or sequencing the entity, then 
 
@@ -3232,11 +3264,30 @@ Where $\Omega_m$ is the known best approximation of the genome sequence that cor
 
 One potentially significant consequence of \textbf{\hyperref[LAWGDL]{Law \ref{LAWGDL}}} is that every distinct living thing --- unique or distinct animal, plant, eukaryote or prokaryote, has a distinct identifying genome sequence, $\Omega$, that we can discover and approximate via significantly many readings of particular or representative [sub-]sequences of the DNA of the observable expressions of $\Omega$.
 
-However, given that in reality it might not be exactly possible to exhaustively compute the correct value of $R_{\Theta^n}$, nor tell exactly when that approximation approaches $\Omega$ exactly, it makes one wonder whether we can ever accurately know what it is that exactly underlies the expression of our reality --- living things or not\footnote{Since there is the queer possibility that a kind of genome sequencing might be applicable to also inanimate/non-living things! But that's a philosophical discussion for another day.}.
+However, given that in reality it might not be exactly possible to exhaustively compute the correct value of $R_{\Theta^n}$, nor tell exactly when that approximation approaches $\Omega$ exactly, it makes one wonder whether we can ever accurately know what it is that exactly underlies the expression of our reality --- living things or not\footnote{First, because, for currently known living things, the sheer complexity of correctly or accurately sequencing a genome for even the simplest organisms is constrained by the sheer amount of large resources required to correctly process millions to billions of nucelotides, and that typically, it is not possible to obtain an entire genome sequence in a single reading. And then, note that there is the queer possibility that a kind of genome sequencing might be applicable to also inanimate/non-living things too! But that's a philosophical discussion for another day.}.
 
 \end{minipage}}
 \\
 \end{center}
+
+
+{
+\LARGE
+
+\hl{
+
+TODO: Continue indexing starting from here
+
+}
+}
+
+
+{
+\LARGE
+
+\hl{TODO: proceed from here...}
+}
+
 
 
 \chapter{Random Sequence Generators (RSGs)}
@@ -6793,7 +6844,7 @@ i:{This is a TEST 123} | z!: | d:[AEIOU] | d!:[A-Z]
  
  Which program, when run as is, shall use the explicit hard-coded input it opens with --- ``This is a TEST 123", and shall return ``THSSTST". While, if presented with some other input such as ``hello world 123?", shall return ``HLLWRLD".\\
  
-The following transformation expression shall help illustrate exactly what is happening in that program, or how the different bits/chained sequence transformers come together to compose the higher-order transformer that is what the entire TEA program is:
+The following transformation expression shall help illustrate exactly what is happening in that program, or how the different bits/chained sequence transformers\index{transformer chain} come together to compose the higher-order transformer that is what the entire TEA program is:
  
  \vspace{1em}
 \begin{trans}
