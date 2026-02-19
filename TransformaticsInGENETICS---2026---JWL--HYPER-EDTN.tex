@@ -1841,7 +1841,7 @@ cat theta1_dna.txt | tttt -c "d!:C|g:|v:|v!:"
 
 \vspace{1em}
 
-But if we wish to do the same for all distinct symbols within the sequence $\Theta1$ --- \textbf{and especially without having to explicitly list which symbols we are counting within the TEA code} --- meaning, no \textit{hard-coding} of the elements from the sequence's specific symbol set --- and equivalently, merely making the program symbol-set-independent --- or rather ``applicable to any sequence file", we could have used ``u!:" as in the previous task, since that TEA command counts how many times each unique symbol occurs in a sequence so as to compute the modal sequence, however, currently (with TEA version \textbf{1.3.6}\cite{cli_tttt}), the actual frequencies aren't returned with the output of ``u!:", and so, we shall want to use a work-around\footnote{\textbf{FUTURE WORK:} Provide a basic, in-built capability within the TEA instruction set, to allow for the automatic computation of a text sequence characteristic, $\hbar(\overset{>}{\Theta})$.} leveraging the above method for computing the frequency of each symbol in the input sequence. We can use the following non-trivial TEA program for that then:
+But if we wish to do the same for all distinct symbols within the sequence $\Theta1$ --- \textbf{and especially without having to explicitly list which symbols we are counting within the TEA code} --- meaning, no \textit{hard-coding} of the elements from the sequence's specific symbol set --- and equivalently, merely making the program symbol-set-independent --- or rather ``applicable to any sequence file", we could have used ``u!:" as in the previous task, since that TEA command counts how many times each unique symbol occurs in a sequence so as to compute the modal sequence, however, currently (with TEA version \textbf{1.3.6}\cite{cli_tttt}), the actual frequencies aren't returned with the output of ``u!:", and so, we shall want to use a work-around\footnote{\textbf{FUTURE WORK:} Provide a basic, in-built capability within the TEA instruction set, to allow for the automatic computation of a text sequence characteristic, $\hbar(\overset{>}{\Theta})$.} leveraging the above method for computing the frequency of each symbol in the input sequence. We can use the following non-trivial TEA program\index{program!Sequence Characteristic} for that then:
 
 \vspace{1em}
 
@@ -3271,62 +3271,45 @@ However, given that in reality it might not be exactly possible to exhaustively 
 \end{center}
 
 
-{
-\LARGE
-
-\hl{
-
-TODO: Continue indexing starting from here
-
-}
-}
-
-
-{
-\LARGE
-
-\hl{TODO: proceed from here...}
-}
-
 
 
 \chapter{Random Sequence Generators (RSGs)}
 \label{SECRSG}
 
 
-In many problems involving intelligent or non-linear processing of sequences, we might come across the need for either a random number, a random symbol or a random sequence of these, spanning some known/particular symbol set. This for example could be how we solve the problem: \textbf{Given the DNA symbol set $\psi_{DNA}$, how to generate a random DNA sequence of length n?}.
+In many problems involving intelligent or non-linear processing of sequences, we might come across the need for either a random number, a random symbol or a random sequence of these, spanning some known/particular symbol set. This for example could be how we solve the problem: \textbf{Given the DNA symbol set $\psi_{DNA}$, how to generate a random DNA sequence of length n that conforms to some particular specie's genome or DNA-distribution?\footnote{Solving such a problem might for example allow us the means or theory via which we might manifest random instances of a particular genome or species of interest using say the methods of synthetic biology, modern genetic engineering or \textit{unnatural selection(?)}.}}.
 
-So, to help solve such critical and fundamental problems once and for all, and in a generic, transformatic-way, we shall specify some \textbf{fundamental abstract machines} --- entropy sources being first and core, especially for the derivation of or construction of stochastic generator machines and algorithms. These can then be used to solve any specific problem of generating a random sequence of a specific length given some finite symbol set, and we can thus apply this to the generation of random na-Sequences.
-
-
+So, to help solve such critical and fundamental problems once and for all, and in a generic, transformatic-way, we shall \textbf{specify some fundamental abstract machines} --- entropy sources\index{entropy} being first and core, especially for the derivation of or construction of stochastic generator machines and algorithms. These can then be used to solve any specific problem concerning the generation of a random sequence of a specific length given some finite symbol set, but also that we might leverage this in cases where the randomness needs be biased towards some specific distribution. And thus, we can apply such to the generation of random na-Sequences for arbitrary ends.
 
 
+\vspace{2em}
 \fbox{
 \begin{minipage}{0.9\textwidth}
 \textbf{Abstract Sequence Generation:}\\
 
-The ultimate purpose of this chapter though, is to give us both a mathematical formalism, but also a computational and ideological one, underlying the notion of abstract sequence generation --- especially where the purpose is to arrive at either truly random, or otherwise Gaussian sequences. 
+The ultimate purpose of this chapter though, is to give us both a mathematical formalism, but also a computational and ideological one, underlying the notion of abstract sequence generation --- especially where the purpose is to arrive at either truly random, or otherwise Gaussian sequences\index{Gaussian sequence}. 
 
 \end{minipage}}
-\\
+\vspace{2em}
 
 
-In the following sections then, starting with consideration of how to re-organize a room without taking anything out --- essentially, shuffling sequences; we shall construct and formalise a theoretical and computation implementation of  the \textbf{First Lu-Shuffle Algorithm}, but also other \textbf{abstract computing systems} --- sequence transformers all of them, that culminate in the specification of a \textbf{Random Sequence Generator}, \textbf{RSG}, as specified and implemented in \textbf{\hyperref[SECRSGFUNC]{Section \ref{SECRSGFUNC}}}.
+In the following sections then, starting with consideration of how to re-organize a room without taking anything out --- essentially, shuffling sequences; we shall construct and formalise a theoretical and computation implementation of  the \textbf{First Lu-Shuffle Algorithm}\footnote{\textbf{FUTURE WORK:} It is very possible that other shuffling algorithms exist out there that would have served our purposes here, however, our own research and specific needs inspired original ideas and methodologies that underlie our own approach to the problem as laid out in most of this chapter. And so, both the FLSA and SLSA should be considered to be original inventions. However, it shall be relevant to benchmark these against earlier or alternative methods out there so as to ascertain whether or not they are better than, just as good or perhaps not as effective or as efficient as the state of the art. Moreover, and as one shall establish while reading or reviewing their development in this chapter, they are founded on sound principles, and actually do provably get the work done, and are demonstrably performant.}, but also other \textbf{abstract computing systems} --- sequence transformers all of them, that culminate in the specification of a \textbf{Random Sequence Generator}, \textbf{RSG}, as specified and implemented in \textbf{\hyperref[SECRSGFUNC]{Section \ref{SECRSGFUNC}}}.
 
 \section{The First Lu-Shuffle Algorithm (FLSA)}
 
-For this algorithm, for which we shall start by specifying its signature, the most important property it has is that it merely takes a sequence $\Theta$ as input and some parameter $k$ --- that \textbf{should lie in range} $1 \leq k \leq n$ and that $\invpi(\Theta) \geq 2$.
+For this algorithm\index{lu-shuffle algorithm}, for which we shall start by specifying its signature, the most important property it has, is that it merely takes a sequence of some symbols or elements, $\Theta$, of length $n = \invpi(\Theta)$, as the input or data to be shuffled, and then just one other parameter, $k$ --- that is called the ``\textbf{partitioning index}", and that \textbf{should lie in the range} $1 \leq k < n$, and that $\invpi(\Theta) \geq 2$ --- this last condition justified by the fact that it wouldn't make any sense trying to shuffle a sequence of either one or no members using the partitioning method employed in the algorithm.
 
-\subsection{The FLSA Algorithm Using Mathematics}
 
-\begin{alg}[The \textbf{First Lu-Shuffle Algorithm}: $\text{flsa}(\Theta, k_0)$]
+\subsection{A Mathematical and Computational Specification of the FLSA Algorithm}
+
+\begin{alg}[The \textbf{First Lu-Shuffle Algorithm}: $\text{flsa}(\Theta, k_0)$\index{algorithm!First Lu-Shuffle (FLSA)}]
 \label{ALGLUSHUFFLEA}
 $ $\\
 \begin{enumerate}
-\item \textbf{GIVEN} source sequence $\Theta$ of length $n = \invpi(\Theta)$.
-\item  \textbf{GIVEN} input parameter $k_0$ that is \textbf{Initial Partition Index}.
+\item \textbf{GIVEN} source sequence $\Theta$ such that $n = \invpi(\Theta)$.
+\item  \textbf{GIVEN} input parameter $k_0$ that is \textbf{Initial Partitioning Index}.
 \item \textbf{IF} $n < 2$ \textbf{RETURN} $\Theta$ unmodified.
-\item {\textbf{LIMIT} initial partition index using cardinality of input sequence, i.e
+\item {\textbf{LIMIT} initial partitioning index using cardinality of input sequence, i.e
 \begin{equation}
 k = k_0 \mod n
 \end{equation}
@@ -3341,12 +3324,12 @@ k = k_0 \mod n
 \item { \textbf{WHILE} \textbf{TRUE}:
 \begin{enumerate}
 	\item \textbf{BREAK IF} $k = n$
-	\item \textbf{SET} partition index, $p_{index} = k$
+	\item \textbf{SET} partitioning index, $p_{index} = k$
 	\item \textbf{SET} partition start, $p_{start} = 0$
 	\item \textbf{SET} sub-partition end/index, $sp_{index} = \text{\textbf{CEIL}}(\frac{p_{index}}{2})$
-	\item \textbf{SET} left sub-partition, $\Theta_{l} = \{\omega_i | \omega_i \in \Theta^* \quad \land \quad i \in [p_{start},sp_{index}]\}$
-	\item \textbf{SET} right sub-partition, $\Theta_{r} = \{\omega_i | \omega_i \in \Theta^* \quad \land \quad i \in [sp_{index},p_{index}]\}$
-	\item \textbf{SET} unpartitioned sequence, $\Theta_{rest} = \{\omega_i | \omega_i \in \Theta^* \quad \land \quad i \in [p_{index},n]\}$
+	\item \textbf{SET} left sub-partition, $\Theta_{l} = \{\omega_i \quad|\quad \omega_i \in \Theta^* \quad \land \quad i \in [p_{start},sp_{index}]\}$
+	\item \textbf{SET} right sub-partition, $\Theta_{r} = \{\omega_i \quad|\quad \omega_i \in \Theta^* \quad \land \quad i \in [sp_{index},p_{index}]\}$
+	\item \textbf{SET} unpartitioned sequence, $\Theta_{rest} = \{\omega_i \quad|\quad \omega_i \in \Theta^* \quad \land \quad i \in [p_{index},n]\}$
 	\item \textbf{SET} swapped sequence, $\Theta_{swap} = \Theta_{r} \cdot \Theta_{l}$ 
 	
 	\item{\textbf{IF} $k$ is \textbf{ODD}: $(k \mod 2) = 1$:
@@ -3369,10 +3352,10 @@ $\qed$
 \end{alg}
 
 
-\subsection{Examples of Applying FLSA}
+\subsection{Analysis and Examples of Applying FLSA}
 \label{SECAPPLYFLSA}
 
-Using the basic, yet important sequence, $\psi_{10}$ (refer to \textbf{\hyperref[EQHYPDNASS]{Equation \ref{EQHYPDNASS}}}) as the input, especially given we leverage such in many aspects of applied transformatics and genetics engineering in this work, we see hereafter, a trace of the accurate \textbf{invariant}\footnote{Basically, for a given particular input sequence such as $\psi_{10}$, we shall \textbf{always} get the same exact resultant sequence for a particular $k$, so that, it feels as though the algorithm randomizes the input sequence, but in a predictable/derivable manner, and this has its relevance in many problems as we shall come to appreciate.} variants (actually, computed and predictable anagrams) of that set --- all of them \textbf{base-10 o-SSIs}\cite{ossipaper}, when it is shuffled using \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} and various \textbf{meaningful values}\footnote{I say ``meaningful" because, given how the algorithm works --- shuffling the input sequence by partitioning it up into chunks and then swapping their order, the partitioning index, which determines where the swapping starts, \textbf{would not make much sense} for values greater than $\frac{\invpi(\Theta)}{2}$, and for values less than $1$. Also, the algorithm doesn't make sense for any value of $k$ when $\invpi(\Theta) \leq 1$. Luckily, the algorithm as specified in \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} is designed so that it checks and applies the necessary remedies for meaningless values of $k$ --- such as setting $k = k \mod n$ for $k > n$ and $k=1$ for $k < 1$. It returns $\Theta$ unmodified for cases where $\invpi(\Theta) \leq 1$.} of the \textbf{initial partition index} $k$, starting from 1 and \textit{preferably} up to $\frac{n}{2} = 5$ --- we have also included values up to $n-1$, just to drive the point home, that the algorithm shall return a result with some \textbf{k-grams}\footnote{The more common term is usually ``n-grams"} of up to $k = \frac{n}{2}$ in the result for any $k > \frac{n}{2}$ --- those large unshuffled subsequences might spoil the randomness of the resultant as you shall see when inspecting the examples we present. 
+Using the basic, yet important sequence, $\psi_{10}$ (refer to \textbf{\hyperref[EQHYPDNASS]{Equation \ref{EQHYPDNASS}}}) as the input, especially given we leverage such in many aspects of applied transformatics and genetics engineering in this work, we see hereafter, a trace of the accurate \textbf{invariant}\footnote{Basically, for a given particular input sequence such as $\psi_{10}$, we shall \textbf{always} get the same exact resultant sequence for a particular $k$, so that, it feels as though the algorithm randomizes the input sequence, but in a predictable and consistent manner, and this has its relevance in many problems as we shall come to appreciate.} variants (actually, computed and consistent anagrams) of that set --- all of them \textbf{base-10 o-SSIs}\cite{ossipaper}, when it is shuffled using \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} and various \textbf{meaningful values}\footnote{I say ``meaningful" because, given how the algorithm works --- shuffling the input sequence by partitioning it up into chunks and then swapping their order, the partitioning index, which determines where the swapping starts, \textbf{would not make much sense} for values greater than $\frac{\invpi(\Theta)}{2}$, and for values less than $1$. Also, the algorithm doesn't make sense for any value of $k$ when $\invpi(\Theta) \leq 1$. Luckily, the algorithm as specified in \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} is designed so that it checks and applies the necessary remedies for meaningless values of $k$ --- such as setting $k = k \mod n$ for $k > n$ and $k=1$ for $k < 1$. It returns $\Theta$ unmodified for cases where $\invpi(\Theta) \leq 1$.} of the \textbf{initial partitioning index} $k$, starting from 1 and \textit{preferably} up to $\frac{n}{2} = 5$ --- in the illustrations hereafter, we have also included values up to $n-1$, just to drive the point home, that the algorithm shall return a result with some \textbf{k-grams}\footnote{The more common term is usually ``n-grams"} of up to $k = \frac{n}{2}$ in the result for any $k > \frac{n}{2}$ --- those large unshuffled subsequences might spoil the randomness of the resultant as you shall see when inspecting the examples we present. 
 
 \begin{figure}[H]
   \begin{center}
@@ -3426,10 +3409,11 @@ k=3 | s=[4, 3, 1, 2]
 \end{figure}
 
 
+However, it is not just $\psi_{10}$ that shall help us appreciate this algorithm. \textbf{\hyperref[FIGTRACEFLSASIMPLE]{Figure \ref{FIGTRACEFLSASIMPLE}}} does help cast more light on how FLSA works, using other sequences, particularly shorter than what we started out with, while, in the other examples hereafter, we consider not only longer, but also non-numerical, alphabetical, and specifically, genetic-code sequences too!
 
-\textbf{NOTE} that, after looking at the examples in \textbf{\hyperref[FIGTRACEFLSA]{Figure \ref{FIGTRACEFLSA}}} and \textbf{\hyperref[FIGTRACEFLSASIMPLE]{Figure \ref{FIGTRACEFLSASIMPLE}}}, one might somewhat start to comfortably say that the \textbf{best range} for the partitioning index $k$, is possibly $1 \leq k \leq \frac{n}{4}$.
+Moreover, note that, after looking at the examples in \textbf{\hyperref[FIGTRACEFLSA]{Figure \ref{FIGTRACEFLSA}}} and \textbf{\hyperref[FIGTRACEFLSASIMPLE]{Figure \ref{FIGTRACEFLSASIMPLE}}}, one might somewhat start to comfortably say that the \textbf{best range for the partitioning index} $k$, is possibly $1 \leq k \leq \frac{n}{4}$ --- though, based on analysis of the algorithm itself, any values of $k$ in the range $1 \leq k \leq \frac{n}{2}$ should also get us provably well shuffled resultant sequences\index{sequence!shuffling}.
 
-We might also want to look at cases of generating shuffled or randomized na-Sequences based on well-known, useful starter sequences (not necessarily symbol sets, or deduplicated sequences, but still useful). For example, $\Theta_{2na}$ from \textbf{\hyperref[EQDUPLNASEQ]{Equation \ref{EQDUPLNASEQ}}}
+And thus we come to the case of generating shuffled or randomized na-Sequences based on well-known, useful starter sequences (not necessarily symbol sets, or deduplicated sequences, but still useful ones nonetheless). For example, $\Theta_{2na}$ from \textbf{\hyperref[EQDUPLNASEQ]{Equation \ref{EQDUPLNASEQ}}} is the input sequence in our next illustration...
 
 \begin{figure}[H]
   \begin{center}
@@ -3478,6 +3462,15 @@ k=9 | s=['A', 'U', 'T', 'G', 'C', 'A', 'C', 'G', 'T', 'U']
   \end{center}
 \end{figure}
 
+
+Having looked at those examples and illustrations, finally note that, it is of course easiest to follow or analyze (by eye), what is going on when some initial/input sequence is being shuffled via the FLSA when the input sequence started out as a well ordered sequence in some natural or common ordering --- such as when we are dealing with $\psi_{10}$, $\psi_{az}$ or perhaps $\psi_{36}$. Especially note how easy it shall be to appreciate the algorithm when the analysis is conducted using naturally ordered initial sequences such as $\psi_{10}$ that are also entirely numerical (see \textbf{\hyperref[FIGTRACEFLSA]{Figure \ref{FIGTRACEFLSA}}}). 
+
+
+But, all that aside, because the algorithm is generic and works on any sequence of symbols, it won't matter even if what is passed in as input is a sequence of letters in a typical language such as English; that might contain not just letters and numbers, but also symbols, punctuation and white-space! It shall still work, and the only critical factors that matter shall be that the input is a finite sequence, and that the value of the initial partitioning index is suitably set.
+
+Hereafter, we shall shift attention to an implementation of \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} using actual executable computer programming source code so that then it is easier for anyone to reproduce these examples we have just looked at, but also that is becomes easy for analysts and engineers to adapt or profile the algorithm vis-a-vis what other/similar algorithms do.
+
+
 \subsection{The Source Code for FLSA}
 
 And the essential source code --- compartible with \textbf{Python 3}, is as provided in \textbf{\hyperref[LST_FLSA]{Listing \ref{LST_FLSA}}}
@@ -3495,7 +3488,6 @@ def lu_shuffler_a(s, k0):
         return s,k0 #essentially, nothing to shuffle
     # make k meaningful...
     k = k0 % n
-    k1 = k # for tracing/debugging...
     k = 1 if k < 1 else k # can't partition between nothing
     new_s = s
     while True:
@@ -3522,7 +3514,6 @@ def lu_shuffler_a(s, k0):
             #        +f"{p_index}][{p_start}-"
             #        +f"{sub_p_index}][{p_index}-{n}] == {new_s}")
         k += 1 # so we advance from k-gram to (k+1)-grams
-    #print(f"k={k1} | s={new_s}")
     return new_s,k
 
 #---[ Uncomment Lines Below to Run Examples ]
@@ -3544,24 +3535,62 @@ def lu_shuffler_a(s, k0):
 \end{figure}
 
 
-Concerning the source code sample for the \textbf{FLSA} as shown in \textbf{\hyperref[LST_FLSA]{Listing \ref{LST_FLSA}}}, realize that we have chosen to leave explanatory notes and debugging/tracing code (though commented out) within the sample, mostly to help newcomers learn to read the program well as well as help any nonbelievers or critics of the \textbf{FLSA} to try it out themselves and also look at what happens in the guts of the algorithm while it computes the final resultant. This shall help many to also be able to apply or use the algorithm by paper and pen because it is that simple, though unimaginably powerful.
+Concerning the source code sample for the \textbf{FLSA} as shown in \textbf{\hyperref[LST_FLSA]{Listing \ref{LST_FLSA}}}, realize that we have chosen to leave explanatory notes and debugging/tracing code (though commented out) within the sample, mostly to help newcomers learn to read and appreciate the algorithm's implementation properly, but also that we help any nonbelievers or critics of the \textbf{FLSA} to try it out themselves and also look at what happens in the guts of the algorithm while it computes the final resultant. A clean and succinct version though, is also shared hereafter, in \textbf{\hyperref[LST_FLSA_clean]{Listing \ref{LST_FLSA_clean}}}. This shall help many to also be able to apply or use the algorithm by paper and pen because it is that simple, though unimaginably powerful.
+
+
+\begin{figure}[H]
+  \begin{center}
+  \begin{lstlisting}[caption={The FLSA}, label={LST_FLSA_clean}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}]
+#!/usr/bin/env python3
+import math
+
+def flsa(s, k0):
+    n = len(s)
+    if n < 2:
+        return s,k0
+    k = k0 % n
+    k = 1 if k < 1 else k
+    new_s = s
+    while True:
+        if k == n:
+            break
+        p_index = k
+        p_start = 0
+        sub_p_index = math.ceil(0.5 * p_index)
+        sub_p_l = new_s[p_start:sub_p_index]
+        sub_p_r = new_s[sub_p_index:p_index]
+        rest_p = new_s[p_index:n]
+        swapped = sub_p_r + sub_p_l
+        if k%2 == 1:
+            new_s = rest_p + swapped
+        else:
+            new_s = swapped + rest_p
+        k += 1
+    return new_s,k
+\end{lstlisting}
+  \end{center}
+  \caption{A clean version of the Python3 implementation of the FLSA\index{program!FLSA}}
+\end{figure}
 
 
 \section{The Second Lu-Shuffle Algorithm (SLSA)}
 \label{APPSLSA}
 
-This second algorithm, is a variation of and enhancement of the \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}}. Also, and \textbf{IMPORTANT to NOTE}, this second algorithm combines with the first algorithm at each invocation, so that it takes the output of \textbf{FLSA} and further transforms it to produce the (\textbf{\textit{more} randomized}) resultant  sequence as we see in the following algorithm specification:
+This second algorithm --- the Second Lu-Shuffle Algorithm (SLSA)\index{lu-shuffle algorithm}, is a variation of and enhancement of \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} --- the First Lu-Shuffle Algorithm. Also, and \textbf{IMPORTANT to NOTE}; this second algorithm combines with the first algorithm at each invocation, so that it takes the output of \textbf{FLSA} and further transforms it to produce the (\textbf{\textit{more} randomized}) resultant  sequence as we see in the following algorithm specification and illustrative examples that follow thereafter.
 
-\subsection{The SLSA Algorithm Using Mathematics}
+Moreover, just like the FLSA, the SLSA also has a simple signature that essentially accepts just a finite sequence, $\Theta$, of length $n$, and a corresponding initial partitioning index parameter, $k$, that can take on values in the range $1 \leq k < n$. It returns a resultant sequence of length $n$, $\Theta^*$, that is essentially a well randomized version of the input sequence --- essentially, a consistent anagram of $\Theta$ relative to a particular value of $k$.
 
-\begin{alg}[The \textbf{Second Lu-Shuffle Algorithm}: $\text{slsa}(\Theta, k_0)$]
+
+\subsection{The Mathematical and Computational Specification of the SLSA Algorithm}
+
+\begin{alg}[The \textbf{Second Lu-Shuffle Algorithm}: $\text{slsa}(\Theta, k_0)$\index{algorithm!Second Lu-Shuffle (SLSA)}]
 \label{ALGLUSHUFFLEB}
 $ $\\
 \begin{enumerate}
-\item \textbf{GIVEN} source sequence $\Theta$ of length $n = \invpi(\Theta)$.
-\item  \textbf{GIVEN} input parameter $k_0$ that is \textbf{Initial Partition Index}.
+\item \textbf{GIVEN} source sequence $\Theta$ such that $n = \invpi(\Theta)$.
+\item  \textbf{GIVEN} input parameter $k_0$ that is \textbf{Initial Partitioning Index}.
 \item \textbf{IF} $n < 2$ \textbf{RETURN} $\Theta$ unmodified.
-\item {\textbf{LIMIT} initial partition index using cardinality of input sequence, i.e
+\item {\textbf{LIMIT} initial partitioning index using cardinality of input sequence, i.e
 \begin{equation}
 k = k_0 \mod n
 \end{equation}
@@ -3579,12 +3608,12 @@ k = k_0 \mod n
 \item { \textbf{WHILE} \textbf{TRUE}:
 \begin{enumerate}
 	\item \textbf{BREAK IF} $k = n$
-	\item \textbf{SET} partition index, $p_{index} = k$
+	\item \textbf{SET} partitioning index, $p_{index} = k$
 	\item \textbf{SET} partition start, $p_{start} = 0$
 	\item \textbf{SET} sub-partition end/index, $sp_{index} = \text{\textbf{CEIL}}(\frac{p_{index}}{2})$
-	\item \textbf{SET} left sub-partition, $\Theta_{l} = \{\omega_i | \omega_i \in \Theta^* \quad \land \quad i \in [p_{start},sp_{index}]\}$
-	\item \textbf{SET} right sub-partition, $\Theta_{r} = \{\omega_i | \omega_i \in \Theta^* \quad \land \quad i \in [sp_{index},p_{index}]\}$
-	\item \textbf{SET} unpartitioned sequence, $\Theta_{rest} = \{\omega_i | \omega_i \in \Theta^* \quad \land \quad i \in [p_{index},n]\}$
+	\item \textbf{SET} left sub-partition, $\Theta_{l} = \{\omega_i \quad|\quad \omega_i \in \Theta^* \quad \land \quad i \in [p_{start},sp_{index}]\}$
+	\item \textbf{SET} right sub-partition, $\Theta_{r} = \{\omega_i \quad|\quad \omega_i \in \Theta^* \quad \land \quad i \in [sp_{index},p_{index}]\}$
+	\item \textbf{SET} unpartitioned sequence, $\Theta_{rest} = \{\omega_i \quad|\quad \omega_i \in \Theta^* \quad \land \quad i \in [p_{index},n]\}$
 	\item \textbf{SET} swapped sequence, $\Theta_{swap} = \Theta_{r} \cdot \Theta_{l}$ 
 	
 	\item{\textbf{IF} $k$ is \textbf{ODD}: $(k \mod 2) = 1$:
@@ -3606,27 +3635,27 @@ k = k_0 \mod n
 $\qed$
 \end{alg}
 
-So, important to note that \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLUSHUFFLEB}}} invokes \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} with the \textbf{decreasing initial partitioning index} $n-k$ as shown in \textbf{\hyperref[EQIPI]{Equation \ref{EQIPI}}}
+So, important to note that \textbf{\hyperref[ALGLUSHUFFLEB]{SLSA}} invokes \textbf{\hyperref[ALGLUSHUFFLEA]{FLSA}} with the \textbf{decreasing initial partitioning index} $n-k$ as shown in \textbf{\hyperref[EQIPI]{Equation \ref{EQIPI}}} as an alteration in how it initializes its resultant sequence, $\Theta^*$ --- one of the key differences it has from the FLSA\footnote{That's actually all the difference between SLSA and FLSA! It is subtle, but makes all the difference as you shall establish in our analysis of SLSA.}.
 
 
 
-\subsection{Examples of Applying SLSA}
+\subsection{Analysis and Examples of Applying SLSA}
 \label{SECAPPLYSLSA}
 
 
 
-Using the same exact sequences, and in the same order as we utilized in \textbf{\hyperref[SECAPPLYFLSA]{Section \ref{SECAPPLYFLSA}}}, we shall come to appreciate readily, not just that the two algorithms, though they perform similar functions, produce \textbf{different} results for the same exact sequence and same exact partitioning index parameter.
+Using the same exact sequences, and in the same order as we utilized in \textbf{\hyperref[SECAPPLYFLSA]{Section \ref{SECAPPLYFLSA}}} when analyzing the FLSA, we shall come to appreciate readily, not just that the two algorithms, though they perform similar functions, produce \textbf{entirely different results for the same exact sequence and same exact partitioning index parameter}, but also that, there are some good reasons for why one might prefer one or the other.
 
 
-\vspace{1em}
+\vspace{2em}
 \fbox{
 \begin{minipage}{0.9\textwidth}
 \textbf{IMPORTANT: The Consistency of FLSA and SLSA}\\
 
-Note that, though both the \textbf{\hyperref[ALGLUSHUFFLEA]{FLSA}} and \textbf{\hyperref[ALGLUSHUFFLEB]{SLSA}}  randomize any sequence they are given in their respective results/outputs --- essentially, that they produce anagrams\index{sequence!anagram} of their inputs, and yet they are both \textbf{consistent} --- the same input sequence with a particular $k$ shall always produce the same exact expected shuffled sequence post-transform; essentially, that, for a particular value of the parameter $k$, both algorithms produce a particular anagram\index{anagram} for a given input sequence! 
+Note that, though both the \textbf{\hyperref[ALGLUSHUFFLEA]{FLSA}} and \textbf{\hyperref[ALGLUSHUFFLEB]{SLSA}}  randomize any sequence they are given in their respective results/outputs --- essentially, that they produce anagrams\index{sequence!anagram} of their inputs, and yet they are both \textbf{consistent} --- the same input sequence with a particular $k$ shall always produce the same exact expected shuffled sequence post-transform; for a particular value of the parameter $k$, both algorithms consistently produce a particular anagram\index{anagram} for a given input sequence. 
 
 \end{minipage}}
-\\
+\vspace{2em}
 
 
 
@@ -3739,10 +3768,14 @@ k=9 | s=['T', 'T', 'C', 'G', 'C', 'A', 'G', 'U', 'A', 'U']
   \end{center}
 \end{figure}
 
+
+And thus, one shall observe that unlike the FLSA that had some noticeable convergence for values of $k > \frac{n}{2}$, for SLSA, all values of $1 \leq k < n$ produce appreciably well randomized resultant sequences with the exception being cases having very small values of $n$; essentially, one notices that FLSA and SLSA might perform similarly well for small sequences and similar values of $k$, however, \textbf{the larger the size of the sequence, the better the results that one obtains for any value of $k$ when using the SLSA} than not.
+
+
 \subsection{The Source Code for SLSA}
 \label{SECSLSACODE}
 
-And the essential source code --- compartible with \textbf{Python 3}, is as provided in  \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}}
+And the essential source code --- compartible with \textbf{Python 3}, for the SLSA is as provided in  \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}}\index{program!SLSA}
 
 
 \begin{figure}[H]
@@ -3751,14 +3784,14 @@ And the essential source code --- compartible with \textbf{Python 3}, is as prov
 #!/usr/bin/env python3
 import math
 
-def lu_shuffler_b(s, k0):
+#SLSA
+def slsa(s, k0):
     n = len(s)
     if n < 2:
         return s,k0
     k = k0 % n
-    k1 = k
     k = 1 if k < 1 else k
-    new_s = lu_shuffler_a(s,n-k)[0] #invoke FLSA with k0=n-k
+    new_s = flsa(s,n-k)[0] #invoke FLSA with k0=n-k
     while True:
         if k == n:
             break
@@ -3774,9 +3807,38 @@ def lu_shuffler_b(s, k0):
         else:
             new_s = swapped + rest_p
         k += 1
-    #print(f"k={k1} | s={new_s}")
     return new_s,k
-    
+
+#FLSA
+def flsa(s, k0):
+    n = len(s)
+    if n < 2:
+        return s,k0
+    k = k0 % n
+    k = 1 if k < 1 else k
+    new_s = s
+    while True:
+        if k == n:
+            break
+        p_index = k
+        p_start = 0
+        sub_p_index = math.ceil(0.5 * p_index)
+        sub_p_l = new_s[p_start:sub_p_index]
+        sub_p_r = new_s[sub_p_index:p_index]
+        rest_p = new_s[p_index:n]
+        swapped = sub_p_r + sub_p_l
+        if k%2 == 1:
+            new_s = rest_p + swapped
+        else:
+            new_s = swapped + rest_p
+        k += 1
+    return new_s,k
+
+
+#TEST:
+#s,k = [0,1,2,3,4,5,6,7,8,9],8
+#rs=slsa(s,k)
+#print(f"For s={s} and k={k}:\ns*={rs}") # show test results    
 \end{lstlisting}
   \end{center}
   \caption{The Second Lu-Shuffle Algorithm implemented using Python}
@@ -3785,24 +3847,30 @@ def lu_shuffler_b(s, k0):
 
 \section{Generating Realistic Random na-Sequences}
 
-In the previous sections we have considered the matter of taking a particular symbol set or some tiny set of almost or exactly distinct symbols and then worked on ways to generate random sequences from these. However, focus was specifically on randomizing an existing sequence, and not necessarily about generating entirely new sequences with say new symbol distributions different from what was in the source/input sequence. Thus, starting from the fundamental aspect of \textbf{generating a SINGLE RANDOM DNA symbol} --- such as randomly generating one of the DNA-nucleobases from $\psi_{DNA}$ or doing the same for RNA, shall be where our adventures start.
+In the previous sections we have considered the matter of taking a particular sequence (of any symbols or elements, including symbol sets) and then worked on ways to generate random sequences, particularly their anagrams, based off of these. Thus, focus was specifically on randomizing an existing sequence, and not necessarily about generating entirely new sequences with say new symbol distributions different from what was in the source/input sequence. In this section though, we wish to instead turn our attention towards the other related problem --- generating a previously non-existent random sequence of arbitrary length, based off of just a small initial ``seed" sequence such as just a basic symbol set. We shall especially want to treat of the matter of how to generate such sequences, when they are DNA, RNA or otherwise na-Sequences.
+
+Thus, starting from the fundamental case of \textbf{generating a SINGLE RANDOM DNA symbol} --- such as randomly generating one of the DNA-nucleobases from $\psi_{DNA}$ or doing the same for RNA, shall be where our adventures start.
 
 \subsection{How to Generate a Random Nucleotide \& The Random Symbol Generator}
 
-Given that we already have the necessary source symbol sets, the matter for how to generate a single \textbf{random letter} from a particular symbol set shall be as follows --- first, we shall merely define an abstract machine using the notation and semantics of transformatics.\\
+Given that we already have the necessary source symbol sets, the matter for how to generate a single \textbf{random letter} from a particular symbol set (also sometimes referred to as ``alphabet") shall be as follows; first, we shall merely define an abstract machine using the notation and semantics of transformatics.\\
 
 
 
 \fbox{
 \begin{minipage}{0.9\textwidth}
 
-\begin{transf}[The \textbf{Random Symbol Generator (RSG)}, $RSG(k,\Theta_n)$]
+\begin{transf}[The \textbf{Random Symbol Generator (RSG)}, $RSG(k,\Theta_n)$\index{generator!RSG}\index{transformer!RSG}]
 \label{TRANSFRSG}
 $ $\\
-$\Theta_n \xrightarrow{O_{RSG}(k,\Theta_n)} \Theta^*_k;$\\
-$ \quad \invpi(\Theta^*_k) = k \quad \land \quad  \psi(\Theta^*_k) \subseteq \psi(\Theta)$\\
-$\land \quad \forall x,y \in \mathbb{N}, \Omega:N \times \psi_y,$\\\\
-$ RSG(x,\Omega) = \text{SELECT}(x,\text{SHUFFLE}(\text{PROTRACT}(\psi_y,k \times 2 \times \invpi(\psi_y))))$\\
+$\Theta_n \xrightarrow{O_{RSG}(k,\Theta_n)} \Theta^*_k;$\\\\
+$\invpi(\Theta_n) = n \quad \land \quad \invpi(\Theta^*_k) = k \quad \land \quad  \psi(\Theta^*_k) \subseteq \psi(\Theta)$\\
+$\land \quad \forall x,y \in \mathbb{N}, \quad \Omega:\mathbb{N} \times \psi_y \quad \text{such that:}$\\\\
+\begin{equation}
+\label{EQRSG}
+RSG(x,\Omega) = \text{SELECT}(x,\text{SHUFFLE}(\text{PROTRACT}(\psi_y,k \times 2 \times \invpi(\psi_y))))
+\end{equation}
+\\
 
 Where;\\
 \begin{itemize}
@@ -3814,21 +3882,24 @@ but in a more robust case, we can also randomize the symbol set to be used in ge
 \end{equation}\\
 
 }
-\item \textbf{USYMBOLSET}$(\Omega)$ is a function that reduces the input argument $\Omega$, which is expected to be a sequence of some symbols --- unique or not, to its \textbf{unspecific symbol set} --- $\hat{\psi}(\Omega)$\footnote{See \textbf{Definition 4} in \cite{ossipaper}}.
-\item \textbf{PROTRACT}$(\Theta, n)$ is a transformation of the sequence of [possibly] distinct $n$ symbols from the source sequence $\Theta$ such that the resultant sequence is of length\footnote{But just like the first parameter might be any sequence of symbols, also, the second parameter could be any positive number, and by which, the function shall \textbf{either shrink/truncate or grow/multiply} the input sequence to the required \textbf{multiplier} size} $k \times 2 \times \invpi(\psi_y)$ and spans the source sequence symbol set\footnote{As you shall see in the sample outputs and as well as the actual implementation source code for our \textbf{RSG}, the choice of the protraction parameter $k \times 2 \times \invpi(\psi_y)$, is both to be sensitive to the length of the input sequence's unique symbol set, but also the size of final output required --- both factors influence the quality of the result in terms of randomness/entropy.}.
+\item \textbf{USYMBOLSET}$(\Theta)$ is a function that reduces the input argument $\Theta$, which is expected to be a sequence of some symbols --- unique or not, to its \textbf{unspecific symbol set}\index{symbol set!unspecific} --- $\hat{\psi}(\Theta)$\footnote{See \textbf{Definition 4} in \cite{ossipaper}}.
+\item \textbf{PROTRACT}$(\Theta, \alpha)$ is a transformation\footnote{Note that, just like the first parameter could be any sequence of any symbols, also, the second parameter could be any positive number, and further that, the function shall operate on the input sequence so as to \textbf{either shrink/truncate it} --- for $\alpha < \invpi(\Theta)$ --- or \textbf{grow/multiply it} --- for $\alpha > \invpi(\Theta)$ --- relative to the specified \textbf{multiplier} size, $\alpha$.} of the sequence of [possibly] distinct $n$ symbols from the source sequence $\Theta$ such that the resultant sequence is of length $\alpha$ and spans the source sequence symbol set.
 \item  \textbf{SHUFFLE}$(\Theta)$ is a function such as a generalization of \textbf{slsa($\cdot$)} from \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLUSHUFFLEB}}} that returns a shuffled/randomized instance of any input sequence such as $\Theta$ that it is given.
-\item \textbf{SELECT}$(x, \Theta)$ is a function that can return the first $x$ terms from $\Theta$ as the result of its invocation for some $x \leq \invpi(\Theta)$.
+\item \textbf{SELECT}$(x, \Theta)$ is a function that can return the first $x$ terms from $\Theta$ as the result of its invocation for some $1 \geq x \leq \invpi(\Theta)$.
 \end{itemize}
 $\qed$
 \end{transf}
 \end{minipage}}
 \\
 
-So, with the essential mathematics out of the way as depicted in \textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}}, we can then try to see how this would work practically with some real tangible computer programs that implement that generator-transformer specification.
+So, with the essential mathematics out of the way as depicted in \textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}}, we can then try to see how this would work practically, with some real tangible computer programs that implement that higher-order\footnote{The \textbf{RSG} is indeed a great example of a higher-order transformer\index{higher-order transformer}, because, as you can tell from the specification of the underlying RSG() function in \textbf{\hyperref[EQRSG]{Equation \ref{EQRSG}}}, its resultant sequence is derived from the chaining of several other sequence transformers.} generator-transformer specification.
+
+
+
 
 \subsection{The USYMBOLSET Function}
 
-We shall go bit by bit. So, first, here is what the \textbf{USYMBOLSET} function looks like in Python:
+We shall go bit by bit. So, first, here is what the \textbf{USYMBOLSET}\index{symbol set!unspecific (Python implementation)}\index{program!unspecific symbol set} function looks like in Python:
 
 \begin{figure}[H]
   \begin{center}
@@ -3858,7 +3929,7 @@ def usymbolset(s):
 #s = [0,1,2,3,4,5,6,7,8,9]
 # s = [0,1,2,3,4,5,6,7,8,9] --> usymbolset(s+s+s+s) 
 #--> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-#s = [1,0,1,1,1,1,1,0,1,1] --> usymbolset(s) --> [0,1]
+#s = [1,0,1,1,1,1,1,0,1,1] --> usymbolset(s) --> [1,0]
 #s = "3.1415926535898" # --> usymbolset(s) --> 
 #['3', '.', '1', '4', '5', '9', '2', '6', '8']
 #s = ['A' , 'C' , 'G' , 'T' , 'U' , 'U' , 'T' , 'G' , 'C' , 'A'] #w/duplication
@@ -3871,9 +3942,12 @@ def usymbolset(s):
 \end{figure}
 
 
+As one can tell from the commented-out test-cases for that \textbf{USYMBOLSET}$(\Omega)$ implementation, indeed, our code conforms to what we expect of the unspecific symbol set --- refer to \textbf{Question 4} of \cite{transformatics_interview}.
+
+
 \subsection{The PROTRACT Function}
 
-We shall go bit by bit. Let's begin by looking at what the \textbf{PROTRACT} function looks like in Python:
+And here is what the \textbf{PROTRACT} function\index{program!sequence protraction} looks like in Python:
 
 \begin{figure}[H]
   \begin{center}
@@ -3909,6 +3983,28 @@ def protract(s,n):
   \end{center}
   \caption{The \textbf{PROTRACT}$(\Theta, n)$ sequence generator-transformer implemented using Python}
 \end{figure}
+
+Thus, we see that the \textbf{PROTRACT}$(\Theta, n)$ function, when given a value of $n$ less than the size of the input sequence, shall merely truncate the sequence to the specified size. While, if the value of $n$ is larger than the size of the input sequence, it shall produce a resultant that somewhat contains the input sequence concatenated to itself multiple times, but such that the final resultant is again truncated to the exact specified and required output length, $n$.
+
+
+
+{
+\LARGE
+
+\hl{
+
+TODO: Continue indexing starting from here
+
+}
+}
+
+
+{
+\LARGE
+
+\hl{TODO: proceed from here...}
+}
+
 
 
 \subsection{The Random Number Generator, RNG Function}
@@ -6888,7 +6984,7 @@ $\langle \text{\textit{hello world 123?}} \rangle \xrightarrow{i:\{\text{This is
 Most important about what we can glean from \textbf{\hyperref[EQPROP10b]{Equation \ref{EQPROP10b}}} is the fact that we might be able to compute a kind of \textbf{information-content} measure for any arbitrary sequence, merely by looking at the length of the sequence Vs the length of the symbol set spanned by that sequence. Essentially, and as shown in that distillation, given any sequence $\Theta$, we could compute a \textbf{Sequence Entropy} for it --- $\Phi(\Theta)$ as such:
 
 \vspace{1em}
-\begin{defn}[The \textbf{Sequence Entropy}, $\Phi(\Theta)$\index{sequence entropy!definition}]
+\begin{defn}[The \textbf{Sequence Entropy}, $\Phi(\Theta)$\index{sequence entropy!definition}\index{entropy}]
 \label{DEFENTROPYb}
 Given any sequence $\Theta \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_*$, we can compute a measure of how much information (\textbf{sequence entropy}) there is in the sequence, using the following measure:
 
