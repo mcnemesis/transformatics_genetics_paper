@@ -363,7 +363,7 @@ moredelim=[s][\color{myorange}]{\{}{\}},
   \centering
   \Huge
 	\begin{tabular}[t]{|p{0.8\textwidth}}
-The friendly, 20th century philosopher, \textbf{Alan Watts}, \small such a fatherly, enlightening voice I keep hearing in my thoughts every once in a while; for I enjoy listening to his rants, once said \Huge \textit{``You are the universe experiencing itself."} \Large I always wished to be a father to someone... \textbf{a real boy or a girl out there... a soul... my own genetic code alive and existing independently of me}. To experience and enjoy the expressions of my own genetic code remains among my greatest dreams. But, in case I don't see my own child in this lifetime, at least, this message should inspire those that read it, who come after, to know and trust that when we express ourselves, we in a way express those that brought us into the world. Personally, I would cherish it! I surely dedicate this work to you, my father and mother. \Large I can't express enough how grateful I am, that you enabled me to be... You gave me a distinctive identity and a voice. \Huge \textbf{May this work help further your expressions in this world... and beyond.}\\
+The friendly, 20th century philosophical entertainer, \textbf{Alan Watts}, \normalsize such a fatherly, enlightening voice I keep hearing in my thoughts every once in a while; for I enjoy listening to his rants, once said \Huge \textit{``You are the universe experiencing itself."} \Large I always wished to be a father to someone... \textbf{a real boy or a girl out there... a soul... my own genetic code alive and existing independently of me}. To experience and enjoy the expressions of my own genetic code remains among my greatest dreams. But, in case I don't see my own child in this lifetime, at least, this message should inspire those that read it, who come after, to know and trust that when we express ourselves, we in a way express those that brought us into the world. Personally, I would cherish it! I surely dedicate this work to you, my father and mother. \Large I can't express enough how grateful I am, that you enabled me to be... You gave me a distinctive identity and a voice. \Huge \textbf{May this work help further your expressions in this world... and beyond.}\\
 	\hline
 	              
 \end{tabular}
@@ -4122,13 +4122,13 @@ RNG From 1900-1999 -> 1995
   \label{RNGTESTDUMP}
 \end{figure}
 
-Before we proceed, note that, just like with all our earlier programs, the RNG implementation we just finished testing hardly relies on any external libraries or functions except the \texttt{time.time()} utility we needed for providing an entropy source\footnote{\textbf{IMPORTANT:} Realize when studying our use of the \texttt{time.time()} function as an entropy source that we couldn't just merely use the value it returns --- which ideally is the current time in seconds and milliseconds since epoch --- because, when the \texttt{RNG()} function is then invoked multiple times within the same second, it is very likely that the result of using this entropy source would then stay the same (as our own tests did prove with earlier implementations of this function). Thus we had to tweak the output of that function further as you can see with the extra massaging of its output via \texttt{pick = int(flsa(str(time.time()).replace(`.',`'),1)[0])\%n}, so that then, even when the value the time function returns doesn't change across invocations, we are sure that the value we pick shall still be random since we apply the FLSA shuffle algorithm to the output of the time function nonetheless! This hack is very crucial!}, and then our own \texttt{flsa()} that we use to randomize the items in the specified range that we then pick from. As for which shuffling algorithm to use, of course, we could have used the \textbf{SLSA}, however, so as to keep the implementation very efficient, we chose to use the \textbf{FLSA} since we pass in a cleverly chosen partitioning index that is computed such that it lies somewhat around $\frac{n}{2}$ when we derive it from the two user-specified RNG parameters as such:
+Before we proceed, note that, just like with all our earlier programs, the RNG implementation we just finished testing hardly relies on any external libraries or functions except the \texttt{time.time()} utility we needed for providing an entropy source\footnote{\textbf{IMPORTANT FUTURE WORK:} Realize when studying our use of the \texttt{time.time()} function as an entropy source that we couldn't just merely use the value it returns without any extra transforms on it --- which ideally is the current time in seconds and milliseconds since epoch --- because, when the \texttt{RNG()} function is then invoked multiple times within the same second, it is very likely that the result of using this entropy source would then stay the same (as our own tests did prove with earlier implementations of this function --- such as merely using \texttt{pick = int(time.time()\%n)} that only \textit{sluggishly} changes --- with almost no changes in the order and relative distribution of some digits (in the seconds part of the underlying time sequence) for hours, days or even months!)). Thus we had to tweak the output of that function further as you can see with the extra massaging of its output via \texttt{pick = int(flsa(str(time.time()).replace(`.',`'),1)[0])\%n}, so that then, even when the value the time function returns doesn't change [significantly] across invocations, we are sure that the value we pick shall still be well randomized since we apply the FLSA shuffle algorithm to the output of the time function nonetheless! The other alternative would be to not even bother with involving any mangling of the time value, such as by anagrammatizing it before use, but instead by merely doing away with the bit that mostly stays stable or stagnant across multiple invocations on the millisecond spectrum --- essentially, leveraging an approach such as \texttt{pick = int(str(time.time()).split('.')[1])\%n}. However, even that approach, despite not involving complex procedures such as the shuffler \texttt{flsa()}, and yet, if the invocation resolution window is small enough even on the millisecond level, it shall take us back to the same original problem we set out to avoid! And so, we should settle with the chosen Lu-Shuffle work-around for now.  That hack is very very crucial!}, and then our own \texttt{flsa()} that we use to randomize the items in the specified range that we then pick from. As for which shuffling algorithm to use, of course, we could have used the \textbf{SLSA}, however, so as to keep the implementation very efficient, we chose to use the \textbf{FLSA} since we pass in a cleverly chosen partitioning index that is computed such that it lies somewhat around $\frac{n}{2}$ when we derive it from the two user-specified RNG parameters as such:
 
-\vspace{1em}
+%\vspace{1em}
 \begin{equation}
 k = \frac{ul - ll}{2}
 \end{equation}
-\vspace{1em}
+%\vspace{1em}
 
 And as per our analysis of FLSA and SLSA, we know that with such a value of the initial partitioning index, then FLSA shall get us just the right kind of anagram as might be obtained using SLSA\footnote{So, it happens that, when we have little or no control over the initial partitioning index parameter, $k$, that is required for the two shuffling algorithms FLSA and SLSA, that then, for optimal guarantee that we shall always obtain fine sequence anagrams, then the SLSA is preferable. But where we know what we are doing, such as when we can dynamically compute the $k$, we might as well just default to the FLSA as demonstrated here.}. Refer to \textbf{\hyperref[LST_RNG]{Listing \ref{LST_RNG}}}, but also \textbf{\hyperref[SECAPPLYFLSA]{Section \ref{SECAPPLYFLSA}}} and \textbf{\hyperref[SECAPPLYSLSA]{Section \ref{SECAPPLYSLSA}}} for details.
 
@@ -4164,7 +4164,7 @@ def shuffle(s):
 #print(result)
 \end{lstlisting}
   \end{center}
-  \caption{The \textbf{SHUFFLE}$(\Theta)$ sequence randomizer implemented\index{program!SHUFFLE sequence anagrammatize} using Python}
+  \caption{The \textbf{SHUFFLE}$(\Theta)$ sequence randomizer implemented\index{program!SHUFFLE: sequence anagrams} using Python}
 \end{figure}
 
 Definitely, just like we didn't \textit{originally} want to implement our own basic random number generator (see \textbf{Line\#8} and \textbf{Line\#10} in \textbf{\hyperref[LST_SHUFFLE]{Listing \ref{LST_SHUFFLE}}}), we could also have used an external shuffle algorithm --- such as with the standard python random utility in \texttt{s=[1,2,3];rng.shuffle(s);s} that might return \texttt{[3,1,2]} for example, but we chose to use our own shuffle algorithms as developed in the previous sections (see \textbf{Line\#9} and \textbf{Line\#11} that invoke , first, the \textbf{SLSA}, and then the \textbf{FLSA}, \texttt{slsa($\cdot$)}, defined in \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}}), so those who need to cut dependencies might pick a leaf from our solution, or perhaps port our algorithms to any programming language as is. 
@@ -4248,9 +4248,46 @@ def rsg(n,s):
 \end{figure}
 
 
+Interesting to note, we could also take a program such as we have in \textbf{\hyperref[LST_RSG]{Listing \ref{LST_RSG}}}, and somewhat express it (albeit in summary or abstract form), using the semantics and notation of transformatics. Normally, it would be the case that the mathematical specification must or would precede the procedural implementation, however, nothing should stop us from working in reverse too! And so, the essential higher-order RSG transformer\index{higher-order transformer} as thus implemented can be expressed mathematically as such:
+
+
+
+
+\vspace{1em}
+\begin{transf}[The \textbf{RSG($\Theta, k$)}\index{transformer!RSG}]
+\label{TRANSFRSGCORE}
+$\langle \Theta, k \rangle \xrightarrow{RSG(\Theta,k)} \Omega;$\\
+$\Omega = \langle \rangle \quad \text{iff} \quad \invpi(\Theta) = 0 \lor k = 0$\\
+Otherwise, $\Omega$ is derived via the following transformer chain:
+%\vspace{1em}
+\begin{trans}
+\label{TRANSRNGCHAIN}
+$\langle \Theta, k \rangle \xrightarrow{O_{usymbolset(\Theta),k}}  \langle \Theta^*_1, k \rangle \xrightarrow{O_{shuffle(\Theta^*_1),k}} \langle \Theta^*_2, k \rangle \xrightarrow{O_{protract(\Theta^*_2,k),k}} \langle \Theta^*_3, k \rangle \xrightarrow{O_{shuffle(\Theta^*_3),k}} \langle \Theta^*_4, k \rangle \xrightarrow{O_{select(k,\Theta^*_4)}} \Theta^*_5 = \Omega$
+\end{trans}
+\vspace{1em}
+$\land \quad \forall \omega \in \Omega \quad \exists \omega \in \Theta$
+$\quad \land \quad \psi(\Omega) \subset \psi(\Theta)$
+$\quad \land \quad \invpi(\Omega) = k$
+$\qed$
+\end{transf}
+\vspace{2em}
+
+Of course, the careful reader or observer should have already noticed that we now have two transformatics specifications of the \textbf{RSG} transformer; \textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}} and \textbf{\hyperref[TRANSFRSGCORE]{Transformer \ref{TRANSFRSGCORE}}}. Moreover, both exactly say the same thing concerning this transformer, however, they say it differently and that's among the beauties or peculiarities of the mathematics of transformatics! 
+
+For example, the earlier transformer specification was more verbose (almost filling an entire page) and was expressed mostly using natural language/English. However, this final, later version is suitably succinct and terse, and should help demonstrate how such formalisms leveraging transformatics might be evolved over time to become clearer, more general, less ambiguous, terse and precise! 
+
+But yet again, neither version is less useful --- for example, where \textbf{\hyperref[TRANSFRSGCORE]{Transformer \ref{TRANSFRSGCORE}}} sacrifices verbosity for generality and terseness, it might leave some people without any understanding for how the actual transformation might be implemented or what the internal transforms depicted in \textbf{\hyperref[TRANSRNGCHAIN]{Transformation \ref{TRANSRNGCHAIN}}} might be interpreted as. While, \textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}} does offer sufficient details about how the internals of the transformer work or how they might be realized --- almost so that it most closely reflects what we find depicted in the \textbf{RSG} implementation as we see it expressed using Python in the following section (where the RSG is implemented in its complete form). Thus, depending on context, audience and needs, sometimes a transformer might be written one way and not the other, as long as we don't leave much doubt about what it is we are specifying or expressing using the mathematics and language of transformatics --- especially when expressing or applying sequence transformers. 
+
+Finally, this should be yet another great example in this book, and treatment of transformatics, for how, the mathematics and notions of transformatics are very handy when it comes to abstracting several otherwise intricate or complex matters in domains such as computing and general mathematics.
+
+
+\newpage
+
+\subsubsection{The Complete RSG Implementation}
+
 Note that \textbf{\hyperref[LST_RSG]{Listing \ref{LST_RSG}}} focused on just the \texttt{RSG(n,s)} function, which is indeed the basic implementation of our sequence generator at the highest level. However, if we were to have to fill-in all the gaps --- such as having an implementation that can work with all referenced functions in a single file, then the following code listing would be what we instead need:
 
-\vspace{2em}
+\vspace{1em}
 
 
 {
@@ -4265,7 +4302,8 @@ Note that \textbf{\hyperref[LST_RSG]{Listing \ref{LST_RSG}}} focused on just the
 #----------------------------------
 # A complete standalone reference 
 # implementation in Python 3.
-# Copyright: Fut. Prof. JWL
+# COPYRIGHT: Fut. Prof. JWL
+# FEEDBACK: jwl@nuchwezi.com
 # Nuchwezi Research (nuchwezi.com)
 ###################################
 
@@ -4424,7 +4462,7 @@ def rsg(n,s, DEBUG=False):
     return resultant
 
 #---[ TEST RSG ]
-s = [0,1,2,3,4,5,6,7,8,9,0,1]
+#s = [0,1,2,3,4,5,6,7,8,9,0,1]
 #s = [0,1,2,3,4,5,6,7,8,9] --> rsg(0,s) --> [],
 # rsg(1,s) --> [6], [1], [0], etc.
 # rsg(3,s) --> [2, 9, 5], [0, 1, 2],[5, 6, 5], etc.

@@ -69,7 +69,18 @@ def rng(l,u):
     part_k = int((lu - ll) * 0.5)
     candidates = flsa(list(range(ll,lu+1)),part_k)[0] #invokes FLSA
     n = len(candidates)
-    pick = int(flsa(str(time.time()).replace('.',''),1)[0])%n #because we need an entropy source!
+    #pick = int(flsa(str(time.time()).replace('.',''),1)[0])%n #because we need an entropy source!
+
+    #---[ original method: stagnant like molasses! ]
+    #vtime = time.time()
+    #val = vtime%n
+    #vali = int(val)
+    #pick = vali
+    #print(f"TIME: {vtime} | time%n: {val} | int(time%n): {vali}")
+
+    #also better/not much dependencies...
+    pick = int(str(time.time()).split('.')[1])%n
+
     return candidates[pick]
 
 #---[ SHUFFLE(s) ]

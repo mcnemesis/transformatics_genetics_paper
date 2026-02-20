@@ -11,7 +11,7 @@
 
   \indexspace
 
-  \item ADM, \hyperpage{19}, \hyperpage{45}, \hyperpage{186}
+  \item ADM, \hyperpage{19}, \hyperpage{45}, \hyperpage{192}
   \item algorithm
     \subitem Closest Sequence Search, \hyperpage{56}
     \subitem computing MCS, \hyperpage{66}
@@ -21,6 +21,7 @@
   \item Anagram Distance Measure, \hyperpage{45}
   \item anagram distance measure
     \subitem for non-anagrams, \hyperpage{54}
+  \item artificial intelligence, \hyperpage{107}
 
   \indexspace
 
@@ -41,7 +42,7 @@
   \indexspace
 
   \item data, \hyperpage{14}
-    \subitem coded or raw, \hyperpage{219}
+    \subitem coded or raw, \hyperpage{223}
   \item decision surface, \hyperpage{51}, \hyperpage{54}
   \item DNA, \hyperpage{5}
     \subitem as sequences, \hyperpage{11}
@@ -51,13 +52,14 @@
     \subitem examples, \hyperpage{36}
     \subitem library metaphor, \hyperpage{6}
     \subitem nucleotides, \hyperpage{12}
+    \subitem random sequences, \hyperpage{107}
     \subitem sequence example, \hyperpage{15}
     \subitem symbol set, \hyperpage{12}
     \subitem test, \hyperpage{76}
 
   \indexspace
 
-  \item entropy, \hyperpage{79}, \hyperpage{203}
+  \item entropy, \hyperpage{79}, \hyperpage{96}, \hyperpage{208}
   \item eukaryotes, \hyperpage{5}
 
   \indexspace
@@ -80,7 +82,8 @@
   \item generator, \hyperpage{18}
     \subitem k- or n-gram generator, \hyperpage{18}
     \subitem natural symbol set, \hyperpage{20}
-    \subitem protein generator, \hyperpage{114}
+    \subitem protein generator, \hyperpage{120}
+    \subitem RSG, \hyperpage{93}
     \subitem sequence characteristic, \hyperpage{49}
     \subitem Sequence Lookup System, \hyperpage{59}
     \subitem unspecific symbol set, \hyperpage{20}
@@ -107,6 +110,7 @@
 
   \item hereditary disease, \hyperpage{23}
   \item Hi-Fi o-SSI, \hyperpage{30}
+  \item higher-order transformer, \hyperpage{94}, \hyperpage{100}
 
   \indexspace
 
@@ -120,11 +124,11 @@
   \indexspace
 
   \item machine learning, \hyperpage{54}
-  \item mappings, \hyperpage{11}, \hyperpage{225}
-  \item matrices, \hyperpage{198}
-    \subitem as linear transformations, \hyperpage{217}
+  \item mappings, \hyperpage{11}, \hyperpage{229}
+  \item matrices, \hyperpage{204}
+    \subitem as linear transformations, \hyperpage{221}
   \item matrix
-    \subitem definition, \hyperpage{216}
+    \subitem definition, \hyperpage{220}
   \item Maximum Common Subsequence (MCS), \hyperpage{66}
   \item modal sequence statistic
     \subitem for a population, \hyperpage{53}
@@ -138,7 +142,7 @@
   \item na-sequence, \hyperpage{14}
   \item nucleobase, \hyperpage{7}
   \item nucleotides, \hyperpage{7}, \hyperpage{12, 13}
-  \item number expression, \hyperpage{117}
+  \item number expression, \hyperpage{123}
 
   \indexspace
 
@@ -150,17 +154,26 @@
   \item population characteristic, \hyperpage{53}
   \item program
     \subitem FLSA, \hyperpage{86}
+    \subitem Random Number Generator(RNG), \hyperpage{96}
+    \subitem Random Sequence Generator (RSG), \hyperpage{100}
+    \subitem SELECT, \hyperpage{99}
     \subitem Sequence Characteristic, \hyperpage{41}
-    \subitem SLSA, \hyperpage{90}
+    \subitem sequence protraction, \hyperpage{95}
+    \subitem SHUFFLE sequence anagrammatize, \hyperpage{98}
+    \subitem SLSA, \hyperpage{91}
+    \subitem unspecific symbol set, \hyperpage{94}
   \item prokaryotes, \hyperpage{5}
 
   \indexspace
 
+  \item random number generator(RNG), \hyperpage{92}
+  \item random sequence generator(RSG), \hyperpage{92}
+  \item random symbol generator(RSG), \hyperpage{92}
   \item representative population modal sequence statistic, 
 		\hyperpage{53}
-  \item ribosome, \hyperpage{114}
-    \subitem flow-chart, \hyperpage{110}
-    \subitem state machine, \hyperpage{111}
+  \item ribosome, \hyperpage{120}
+    \subitem flow-chart, \hyperpage{116}
+    \subitem state machine, \hyperpage{117}
   \item RNA, \hyperpage{5}
     \subitem nucleotides, \hyperpage{13}
     \subitem ribonucleic acid, \hyperpage{5}
@@ -170,63 +183,65 @@
   \indexspace
 
   \item sequence
-    \subitem algebra, \hyperpage{26}, \hyperpage{246}
+    \subitem algebra, \hyperpage{26}, \hyperpage{250}
     \subitem anagram, \hyperpage{30}, \hyperpage{88}
-    \subitem as matrices, \hyperpage{198}
+    \subitem as matrices, \hyperpage{204}
     \subitem cardinality under multiplication, \hyperpage{61}
     \subitem complement, \hyperpage{25}, \hyperpage{27}
-    \subitem definition, \hyperpage{211}
+    \subitem definition, \hyperpage{215}
     \subitem flat-structure, \hyperpage{17}
     \subitem gene-program, \hyperpage{18}
     \subitem higher-order, \hyperpage{18}, \hyperpage{59}, 
-		\hyperpage{198}, \hyperpage{219}
+		\hyperpage{204}, \hyperpage{223}
     \subitem shuffling, \hyperpage{83}
     \subitem string notation, \hyperpage{15}
-  \item sequence algebra, \hyperpage{246}
+  \item sequence algebra, \hyperpage{250}
   \item sequence analysis, \hyperpage{35}
-    \subitem anagram distance, \hyperpage{19}, \hyperpage{186}
+    \subitem anagram distance, \hyperpage{19}, \hyperpage{192}
     \subitem base membership, \hyperpage{19}
     \subitem genetic pathologies, \hyperpage{22}
   \item sequence characteristic, \hyperpage{49}
     \subitem relation to cardinality, \hyperpage{50}
   \item sequence entropy, \hyperpage{59}
-    \subitem definition, \hyperpage{203}
+    \subitem definition, \hyperpage{208}
   \item sequences
-    \subitem decimal, \hyperpage{29}, \hyperpage{117}, \hyperpage{141}
+    \subitem decimal, \hyperpage{29}, \hyperpage{123}, \hyperpage{147}
   \item sequencing, \hyperpage{12}, \hyperpage{63, 64}
   \item sex, \hyperpage{5}
   \item START-codons, \hyperpage{21}
   \item statistical artificial intelligence, \hyperpage{54}
   \item STOP-codons, \hyperpage{22}
-  \item super-sequence, \hyperpage{197}
+  \item super-sequence, \hyperpage{203}
   \item symbol set
     \subitem natural, \hyperpage{20}
     \subitem orthogonal, \hyperpage{30}
     \subitem parent, \hyperpage{48}
-    \subitem unspecific, \hyperpage{20}
+    \subitem unspecific, \hyperpage{20}, \hyperpage{93}
+    \subitem unspecific (Python implementation), \hyperpage{94}
 
   \indexspace
 
   \item TEA
-    \subitem as higher-order transformers, \hyperpage{199}
+    \subitem as higher-order transformers, \hyperpage{205}
     \subitem installation guide, \hyperpage{38}
   \item TEA program
     \subitem modal sequence statistic, \hyperpage{40}
     \subitem sequence characteristic, \hyperpage{41}, \hyperpage{51}
   \item transformatics
-    \subitem as an algebra, \hyperpage{246}
-    \subitem definition, \hyperpage{246}
+    \subitem as an algebra, \hyperpage{250}
+    \subitem definition, \hyperpage{250}
     \subitem genetics introduction, \hyperpage{5}
     \subitem in medicine, \hyperpage{23}
-    \subitem mappings, \hyperpage{11}, \hyperpage{225, 226}
+    \subitem mappings, \hyperpage{11}, \hyperpage{229, 230}
     \subitem relation to frobenoids, \hyperpage{11}
   \item transformer
-    \subitem as mapping, \hyperpage{226}
+    \subitem as mapping, \hyperpage{230}
     \subitem complement, \hyperpage{28}
+    \subitem RSG, \hyperpage{93}, \hyperpage{100}
     \subitem tGS, Genome Sequencer, \hyperpage{74}
     \subitem tMCS, for maximum common subsequence, \hyperpage{66}
     \subitem tORS, for Overlap Resultant Sequence, \hyperpage{71}
-  \item transformer chain, \hyperpage{74}, \hyperpage{201}
+  \item transformer chain, \hyperpage{74}, \hyperpage{207}
 
   \indexspace
 
