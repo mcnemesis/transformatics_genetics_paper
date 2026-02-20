@@ -28,40 +28,40 @@
 \contentsline {figure}{\numberline {8.16}{\ignorespaces The \textbf {SHUFFLE}$(\Theta )$ sequence randomizer implemented using Python}}{98}{figure.caption.35}%
 \contentsline {figure}{\numberline {8.17}{\ignorespaces The \textbf {SELECT}$(n,\Theta )$ sequence sampler function implemented using Python}}{99}{figure.caption.36}%
 \contentsline {figure}{\numberline {8.18}{\ignorespaces The \textbf {RSG}$(n,\Theta )$ random sequence generator function implemented using Python}}{100}{figure.caption.37}%
-\contentsline {figure}{\numberline {8.19}{\ignorespaces A Random DNA Sequence of exactly 200 random codons as generated using our \textbf {RSG}$(n,\Theta )$ random sequence generator algorithm.}}{101}{figure.caption.38}%
+\contentsline {figure}{\numberline {8.19}{\ignorespaces A Random DNA Sequence of exactly 200 random codons as generated using our \textbf {RSG}$(n,\Theta )$ random sequence generator algorithm.}}{106}{figure.caption.38}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces An illustration of the gene translation process in a cell via protein-factories known as ribosomes, and which was sourced from \cite {geeksforgeeks2024protein}}}{104}{figure.caption.40}%
-\contentsline {figure}{\numberline {9.2}{\ignorespaces \textbf {Flow-Chart summarizing the Ribosome-based Protein-Synthesis Process in a Living Cell}}}{110}{figure.caption.43}%
-\contentsline {figure}{\numberline {9.3}{\ignorespaces \textbf {The RIBOSOME State Machine}}}{111}{figure.caption.44}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces An illustration of the gene translation process in a cell via protein-factories known as ribosomes, and which was sourced from \cite {geeksforgeeks2024protein}}}{110}{figure.caption.40}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces \textbf {Flow-Chart summarizing the Ribosome-based Protein-Synthesis Process in a Living Cell}}}{116}{figure.caption.43}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces \textbf {The RIBOSOME State Machine}}}{117}{figure.caption.44}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces A blackboard snapshot from the author's \textbf {Blackboard Adventures} (\url {https://t.me/bclectures}) series on Telegram, on \textbf {20$^{th}$ AUG, 2025}, depicting two \textbf {LGES} example genome expressions, one for $\overset {>}{\Theta } = \langle 218 \rangle $, the other for the \textbf {PFA} segment configuration $4_{pf}\otimes 6_{oz}$}}{115}{figure.caption.46}%
-\contentsline {figure}{\numberline {10.2}{\ignorespaces The OZIN Cipher\cite {lutalo_2025_ozin}, a mapping from Decimal Symbols (our base-$\Omega $) to Symbols for Intermediate Genetic Code.}}{118}{figure.caption.47}%
-\contentsline {figure}{\numberline {10.3}{\ignorespaces The equivalent OZIN expression of the hypothetical Euler Virus genome sequence.}}{119}{figure.caption.48}%
-\contentsline {figure}{\numberline {10.4}{\ignorespaces The equivalent OZIN expression of the HiFinelle genome sequence.}}{119}{figure.caption.49}%
-\contentsline {figure}{\numberline {10.5}{\ignorespaces The equivalent OZIN expression of the $\Omega _{3}$ genome sequence.}}{120}{figure.caption.50}%
-\contentsline {figure}{\numberline {10.6}{\ignorespaces The palindromic sequence $\Omega _{pal}$ transcribed into base-OZ.}}{121}{figure.caption.51}%
-\contentsline {figure}{\numberline {10.7}{\ignorespaces The PLATONIC Cipher\cite {lutalo_2025_platonic} a mapping from Decimal Symbols (our base-$\Omega $) to Spatial-Geometric Forms ($\psi _{pf}$).}}{124}{figure.caption.52}%
-\contentsline {figure}{\numberline {10.8}{\ignorespaces An example of a single \textbf {amino-acid} or rather, the \textbf {PFA} component of a \textbf {FGE} equivalent to one \textbf {amino-acid} segment expressed using the \textbf {LGES} system. This particular expression corresponding to a rendering of the configuration \textbf {$4_{pf} \otimes 6_{oz}$} = \textbf {$4_{pf} + 4 \times 6_{oz}$}.}}{128}{figure.caption.53}%
-\contentsline {figure}{\numberline {10.9}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{3}$ genome sequence (from \textbf {\hyperref [EQDNEXA]{Equation \ref {EQDNEXA}}})}}{129}{figure.caption.54}%
-\contentsline {figure}{\numberline {10.10}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{veuler}$ (Euler Virus) genome sequence (from \textbf {\hyperref [EQGFEEVIRUS]{Equation \ref {EQGFEEVIRUS}}})}}{131}{figure.caption.55}%
-\contentsline {figure}{\numberline {10.11}{\ignorespaces An \textbf {alternative rendering} of the same sequence as $\Omega _{veuler}$ originally depicted as the \textbf {LGES} genome expression in \textbf {\hyperref [FIGLGESEULERVIRUS]{Figure \ref {FIGLGESEULERVIRUS}}}}}{132}{figure.caption.56}%
-\contentsline {figure}{\numberline {10.12}{\ignorespaces The \textbf {x-LGES form rendering} of the $\Omega _{veuler}$, the \textbf {Euler Virus}, now with HEAD, BODY and ROOT segments.}}{137}{figure.caption.57}%
-\contentsline {figure}{\numberline {10.13}{\ignorespaces An example of an actual organism from nature --- an Earthworm, for which, like the x-LGES rendering of the sequence $\Omega _{HiFinelle}$, results in a genome expression for a creature that almost looks the same at the HEAD and ROOT. Image sourced from Wikimedia Commons\cite {earthwormImage}.}}{142}{figure.caption.58}%
-\contentsline {figure}{\numberline {10.14}{\ignorespaces The \textbf {x-LGES form rendering} of the sequence $\Theta _{mlla}$, depicting its complete \textbf {FGE} with HEAD, BODY and ROOT segments.}}{145}{figure.caption.59}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces An excerpt from architectural design notes by the author, from the early days of his home-based research laboratory. In this particular sketch note, we also get to see an idea similar to how gene expressions are actually a chain of glyphs that, as in the \textbf {LGES} protocols, are depicted as structures chained to each other along a \textit {backbone structure} symbolically depicted as a line (curved lines in this case). Copyrights due to author and Nuchwezi Research Labs.}}{160}{figure.caption.60}%
-\contentsline {figure}{\numberline {B.2}{\ignorespaces The OZIN Cipher in use. An excerpt from the Church of Dance Eternal OGF}}{162}{figure.caption.61}%
-\contentsline {figure}{\numberline {B.3}{\ignorespaces The OZIN Cipher in use. An excerpt from author's research notes (circa 2019) on developing a cryptographic system leveraging a dial mechanism. Copyrights due to author and Nuchwezi Research Labs.}}{163}{figure.caption.62}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces An example of a single \textbf {PFA} component equivalent to the configuration \textbf {$8_{pf} \otimes 6_{oz}$}.}}{169}{figure.caption.65}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{3}$ genome sequence (from \textbf {\hyperref [EQDNEXA]{Equation \ref {EQDNEXA}}})}}{176}{figure.caption.66}%
-\contentsline {figure}{\numberline {D.2}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{veuler}$ (Euler Virus) genome sequence (from \textbf {\hyperref [EQGFEEVIRUS_ORIG]{Equation \ref {EQGFEEVIRUS_ORIG}}})}}{177}{figure.caption.67}%
-\contentsline {figure}{\numberline {D.3}{\ignorespaces The \textbf {alternative rendering} of the same sequence as $\Omega _{veuler}$.}}{178}{figure.caption.68}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces TEA EXAMPLE: \textbf {SC-Computer}: transforms any input sequence into its sequence characteristic!}}{194}{figure.a.E.1}%
+\contentsline {figure}{\numberline {10.1}{\ignorespaces A blackboard snapshot from the author's \textbf {Blackboard Adventures} (\url {https://t.me/bclectures}) series on Telegram, on \textbf {20$^{th}$ AUG, 2025}, depicting two \textbf {LGES} example genome expressions, one for $\overset {>}{\Theta } = \langle 218 \rangle $, the other for the \textbf {PFA} segment configuration $4_{pf}\otimes 6_{oz}$}}{121}{figure.caption.46}%
+\contentsline {figure}{\numberline {10.2}{\ignorespaces The OZIN Cipher\cite {lutalo_2025_ozin}, a mapping from Decimal Symbols (our base-$\Omega $) to Symbols for Intermediate Genetic Code.}}{124}{figure.caption.47}%
+\contentsline {figure}{\numberline {10.3}{\ignorespaces The equivalent OZIN expression of the hypothetical Euler Virus genome sequence.}}{125}{figure.caption.48}%
+\contentsline {figure}{\numberline {10.4}{\ignorespaces The equivalent OZIN expression of the HiFinelle genome sequence.}}{125}{figure.caption.49}%
+\contentsline {figure}{\numberline {10.5}{\ignorespaces The equivalent OZIN expression of the $\Omega _{3}$ genome sequence.}}{126}{figure.caption.50}%
+\contentsline {figure}{\numberline {10.6}{\ignorespaces The palindromic sequence $\Omega _{pal}$ transcribed into base-OZ.}}{127}{figure.caption.51}%
+\contentsline {figure}{\numberline {10.7}{\ignorespaces The PLATONIC Cipher\cite {lutalo_2025_platonic} a mapping from Decimal Symbols (our base-$\Omega $) to Spatial-Geometric Forms ($\psi _{pf}$).}}{130}{figure.caption.52}%
+\contentsline {figure}{\numberline {10.8}{\ignorespaces An example of a single \textbf {amino-acid} or rather, the \textbf {PFA} component of a \textbf {FGE} equivalent to one \textbf {amino-acid} segment expressed using the \textbf {LGES} system. This particular expression corresponding to a rendering of the configuration \textbf {$4_{pf} \otimes 6_{oz}$} = \textbf {$4_{pf} + 4 \times 6_{oz}$}.}}{134}{figure.caption.53}%
+\contentsline {figure}{\numberline {10.9}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{3}$ genome sequence (from \textbf {\hyperref [EQDNEXA]{Equation \ref {EQDNEXA}}})}}{135}{figure.caption.54}%
+\contentsline {figure}{\numberline {10.10}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{veuler}$ (Euler Virus) genome sequence (from \textbf {\hyperref [EQGFEEVIRUS]{Equation \ref {EQGFEEVIRUS}}})}}{137}{figure.caption.55}%
+\contentsline {figure}{\numberline {10.11}{\ignorespaces An \textbf {alternative rendering} of the same sequence as $\Omega _{veuler}$ originally depicted as the \textbf {LGES} genome expression in \textbf {\hyperref [FIGLGESEULERVIRUS]{Figure \ref {FIGLGESEULERVIRUS}}}}}{138}{figure.caption.56}%
+\contentsline {figure}{\numberline {10.12}{\ignorespaces The \textbf {x-LGES form rendering} of the $\Omega _{veuler}$, the \textbf {Euler Virus}, now with HEAD, BODY and ROOT segments.}}{143}{figure.caption.57}%
+\contentsline {figure}{\numberline {10.13}{\ignorespaces An example of an actual organism from nature --- an Earthworm, for which, like the x-LGES rendering of the sequence $\Omega _{HiFinelle}$, results in a genome expression for a creature that almost looks the same at the HEAD and ROOT. Image sourced from Wikimedia Commons\cite {earthwormImage}.}}{148}{figure.caption.58}%
+\contentsline {figure}{\numberline {10.14}{\ignorespaces The \textbf {x-LGES form rendering} of the sequence $\Theta _{mlla}$, depicting its complete \textbf {FGE} with HEAD, BODY and ROOT segments.}}{151}{figure.caption.59}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {G.1}{\ignorespaces The surreal painting, ``Arrival of the Anunnaki", by Joseph W. Lutalo, as part of their 2022 \textbf {The Zermelo Frankael Dream Collection} that was first exhibited at Ndugu Art Gallery then in Entebbe Town.}}{250}{figure.caption.80}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces An excerpt from architectural design notes by the author, from the early days of his home-based research laboratory. In this particular sketch note, we also get to see an idea similar to how gene expressions are actually a chain of glyphs that, as in the \textbf {LGES} protocols, are depicted as structures chained to each other along a \textit {backbone structure} symbolically depicted as a line (curved lines in this case). Copyrights due to author and Nuchwezi Research Labs.}}{166}{figure.caption.60}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces The OZIN Cipher in use. An excerpt from the Church of Dance Eternal OGF}}{168}{figure.caption.61}%
+\contentsline {figure}{\numberline {B.3}{\ignorespaces The OZIN Cipher in use. An excerpt from author's research notes (circa 2019) on developing a cryptographic system leveraging a dial mechanism. Copyrights due to author and Nuchwezi Research Labs.}}{169}{figure.caption.62}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces An example of a single \textbf {PFA} component equivalent to the configuration \textbf {$8_{pf} \otimes 6_{oz}$}.}}{175}{figure.caption.65}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{3}$ genome sequence (from \textbf {\hyperref [EQDNEXA]{Equation \ref {EQDNEXA}}})}}{182}{figure.caption.66}%
+\contentsline {figure}{\numberline {D.2}{\ignorespaces The equivalent LGES complete genome expression of the $\Omega _{veuler}$ (Euler Virus) genome sequence (from \textbf {\hyperref [EQGFEEVIRUS_ORIG]{Equation \ref {EQGFEEVIRUS_ORIG}}})}}{183}{figure.caption.67}%
+\contentsline {figure}{\numberline {D.3}{\ignorespaces The \textbf {alternative rendering} of the same sequence as $\Omega _{veuler}$.}}{184}{figure.caption.68}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces TEA EXAMPLE: \textbf {SC-Computer}: transforms any input sequence into its sequence characteristic!}}{200}{figure.a.E.1}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {G.1}{\ignorespaces The surreal painting, ``Arrival of the Anunnaki", by Joseph W. Lutalo, as part of their 2022 \textbf {The Zermelo Frankael Dream Collection} that was first exhibited at Ndugu Art Gallery then in Entebbe Town.}}{254}{figure.caption.80}%

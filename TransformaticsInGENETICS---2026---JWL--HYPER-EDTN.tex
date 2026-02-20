@@ -215,6 +215,73 @@ moredelim=[s][\color{myorange}]{\{}{\}},
   }
 }
 
+% Define custom colors
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{1,1,1}
+
+% Define Python language style
+\lstdefinelanguage{PYTHON}{
+  keywords=[1]{def, return, if, elif, else, while, for, in, try, except, finally,
+            with, as, import, from, class, pass, break, continue, lambda, True, False, None},
+  keywordstyle=[1]\color{blue},
+  %ndkeywords={self},
+  %ndkeywordstyle=\color{teal},
+  identifierstyle=\color{black},
+  sensitive=true,
+  comment=[l]{\#},
+  commentstyle=\color{green}\ttfamily,
+  stringstyle=\color{purple}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+% Global style for listings
+\lstset{
+  language=PYTHON,
+%  backgroundcolor=\color{backcolour},
+%  basicstyle=\ttfamily\footnotesize,
+  numbers=left,
+  numberstyle=\tiny\color{codegray},
+%  stepnumber=1,
+  numbersep=10pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+%  frame=single,
+  tabsize=4,
+%  captionpos=b,
+  breaklines=true,
+%  breakatwhitespace=true,
+%  escapeinside={(*@}{@*)}
+}
+
+\tcbset{
+  pythonterminalstyle/.style={
+    enhanced,
+    colback=white,
+    coltext=black,
+    fontupper=\ttfamily,
+    boxrule=0pt,
+    arc=0pt,
+    outer arc=0pt,
+    left=2mm, right=2mm, top=1mm, bottom=1mm,
+    sharp corners,
+    listing only,
+    listing options={
+      language=PYTHON,
+     basicstyle=\ttfamily,
+
+%comment=[l]{\#},     
+     
+%keywordstyle=\color{cyan}\bfseries,
+%commentstyle=[1]\color{green}\itshape,
+%stringstyle=\color{orange}
+    }
+  }
+}
+
 
 % from google-gemini for verbatim listings:
 \tcbuselibrary{listings,breakable}
@@ -3478,11 +3545,10 @@ And the essential source code --- compartible with \textbf{Python 3}, is as prov
 
 \begin{figure}[H]
   \begin{center}
-  \begin{lstlisting}[caption={The FLSA}, label={LST_FLSA}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}]
+  \begin{lstlisting}[caption={The FLSA}, label={LST_FLSA}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}, stringstyle=\color{orange}, keywordstyle=\color{purple}\bfseries]
 #!/usr/bin/env python3
-import math
 
-def lu_shuffler_a(s, k0):
+def flsa(s, k0):
     n = len(s)
     if n < 2:
         return s,k0 #essentially, nothing to shuffle
@@ -3495,7 +3561,7 @@ def lu_shuffler_a(s, k0):
             break
         p_index = k
         p_start = 0
-        sub_p_index = math.ceil(0.5 * p_index)
+        sub_p_index = int(0.5 * p_index)
         #print(f"At k={k} |"
         #        +f" [[{p_start}-{sub_p_index}][{sub_p_index}-"
         #        +f"{p_index}][{p_index}-{n}]")
@@ -3540,9 +3606,8 @@ Concerning the source code sample for the \textbf{FLSA} as shown in \textbf{\hyp
 
 \begin{figure}[H]
   \begin{center}
-  \begin{lstlisting}[caption={The FLSA}, label={LST_FLSA_clean}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}]
+  \begin{lstlisting}[caption={The FLSA}, label={LST_FLSA_clean}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}, stringstyle=\color{orange}, keywordstyle=\color{purple}\bfseries]
 #!/usr/bin/env python3
-import math
 
 def flsa(s, k0):
     n = len(s)
@@ -3556,7 +3621,7 @@ def flsa(s, k0):
             break
         p_index = k
         p_start = 0
-        sub_p_index = math.ceil(0.5 * p_index)
+        sub_p_index = int(0.5 * p_index)
         sub_p_l = new_s[p_start:sub_p_index]
         sub_p_r = new_s[sub_p_index:p_index]
         rest_p = new_s[p_index:n]
@@ -3775,14 +3840,13 @@ And thus, one shall observe that unlike the FLSA that had some noticeable conver
 \subsection{The Source Code for SLSA}
 \label{SECSLSACODE}
 
-And the essential source code --- compartible with \textbf{Python 3}, for the SLSA is as provided in  \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}}\index{program!SLSA}
+And the essential source code --- compartible with \textbf{Python 3}, for the SLSA is as provided in  \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}}
 
 
 \begin{figure}[H]
   \begin{center}
-  \begin{lstlisting}[caption={The SLSA}, label={LST_SLSA}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}]
+  \begin{lstlisting}[caption={The SLSA}, label={LST_SLSA}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}, stringstyle=\color{orange}, keywordstyle=\color{purple}\bfseries]
 #!/usr/bin/env python3
-import math
 
 #SLSA
 def slsa(s, k0):
@@ -3797,7 +3861,7 @@ def slsa(s, k0):
             break
         p_index = k
         p_start = 0
-        sub_p_index = math.ceil(0.5 * p_index)
+        sub_p_index = int(0.5 * p_index)
         sub_p_l = new_s[p_start:sub_p_index]
         sub_p_r = new_s[sub_p_index:p_index]
         rest_p = new_s[p_index:n]
@@ -3822,7 +3886,7 @@ def flsa(s, k0):
             break
         p_index = k
         p_start = 0
-        sub_p_index = math.ceil(0.5 * p_index)
+        sub_p_index = int(0.5 * p_index)
         sub_p_l = new_s[p_start:sub_p_index]
         sub_p_r = new_s[sub_p_index:p_index]
         rest_p = new_s[p_index:n]
@@ -3841,7 +3905,7 @@ def flsa(s, k0):
 #print(f"For s={s} and k={k}:\ns*={rs}") # show test results    
 \end{lstlisting}
   \end{center}
-  \caption{The Second Lu-Shuffle Algorithm implemented using Python}
+  \caption{The Second Lu-Shuffle Algorithm implemented using Python\index{program!SLSA}}
 \end{figure}
 
 
@@ -3853,14 +3917,16 @@ Thus, starting from the fundamental case of \textbf{generating a SINGLE RANDOM D
 
 \subsection{How to Generate a Random Nucleotide \& The Random Symbol Generator}
 
-Given that we already have the necessary source symbol sets, the matter for how to generate a single \textbf{random letter} from a particular symbol set (also sometimes referred to as ``alphabet") shall be as follows; first, we shall merely define an abstract machine using the notation and semantics of transformatics.\\
+In this section, we are going to tackle two related problems --- the generation of a random symbol (such as just one element from some symbol set or sequence), and then the case of how to generate a random sequence given some starter or seed sequence. So, basically, we are interested in implementing a \textbf{Random Symbol Generator}(RSG), but also which would very likely underlie the implementation of a \textbf{Random Sequence Generator} (RSG), and both of which are problems or concepts related to the popular matter of a \textbf{Random Number Generator} (RNG)\index{random symbol generator(RSG)}\index{random sequence generator(RSG)}\index{random number generator(RNG)}. Especially though, we are interested in developing a mechanism via which we can generate random na-Sequences such as believable random DNA sequences or genetic code.
+
+So, first of all, given that we already have the necessary source symbol sets well defined\footnote{Refer to \textbf{\hyperref[SEC3]{Chapter \ref{SEC3}}} for the case of DNA and RNA.}, the matter of how to generate a single \textbf{random letter} from a particular symbol set (also sometimes referred to as ``alphabet") shall be as follows; first, we shall merely define an abstract machine using the notation and semantics of transformatics.\\
 
 
 
 \fbox{
 \begin{minipage}{0.9\textwidth}
 
-\begin{transf}[The \textbf{Random Symbol Generator (RSG)}, $RSG(k,\Theta_n)$\index{generator!RSG}\index{transformer!RSG}]
+\begin{transf}[The \textbf{Random Sequence Generator (RSG)}, $RSG(k,\Theta_n)$\index{generator!RSG}\index{transformer!RSG}]
 \label{TRANSFRSG}
 $ $\\
 $\Theta_n \xrightarrow{O_{RSG}(k,\Theta_n)} \Theta^*_k;$\\\\
@@ -3883,27 +3949,27 @@ but in a more robust case, we can also randomize the symbol set to be used in ge
 
 }
 \item \textbf{USYMBOLSET}$(\Theta)$ is a function that reduces the input argument $\Theta$, which is expected to be a sequence of some symbols --- unique or not, to its \textbf{unspecific symbol set}\index{symbol set!unspecific} --- $\hat{\psi}(\Theta)$\footnote{See \textbf{Definition 4} in \cite{ossipaper}}.
-\item \textbf{PROTRACT}$(\Theta, \alpha)$ is a transformation\footnote{Note that, just like the first parameter could be any sequence of any symbols, also, the second parameter could be any positive number, and further that, the function shall operate on the input sequence so as to \textbf{either shrink/truncate it} --- for $\alpha < \invpi(\Theta)$ --- or \textbf{grow/multiply it} --- for $\alpha > \invpi(\Theta)$ --- relative to the specified \textbf{multiplier} size, $\alpha$.} of the sequence of [possibly] distinct $n$ symbols from the source sequence $\Theta$ such that the resultant sequence is of length $\alpha$ and spans the source sequence symbol set.
+\item \textbf{PROTRACT}$(\Theta, \alpha)$ is a sequence transformer\footnote{Note that, just like the first parameter could be any sequence of any symbols, also, the second parameter could be any positive number, and further that, the function shall operate on the input sequence so as to \textbf{either shrink/truncate it} --- for $\alpha < \invpi(\Theta)$ --- or \textbf{grow/multiply it} --- for $\alpha > \invpi(\Theta)$ --- relative to the specified \textbf{multiplier} size, $\alpha$.} that operates on a source sequence of [possibly] distinct $n$ symbols, $\Theta$, such that the resultant sequence is of length $\alpha$ and spans the source sequence symbol set.
 \item  \textbf{SHUFFLE}$(\Theta)$ is a function such as a generalization of \textbf{slsa($\cdot$)} from \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLUSHUFFLEB}}} that returns a shuffled/randomized instance of any input sequence such as $\Theta$ that it is given.
-\item \textbf{SELECT}$(x, \Theta)$ is a function that can return the first $x$ terms from $\Theta$ as the result of its invocation for some $1 \geq x \leq \invpi(\Theta)$.
+\item \textbf{SELECT}$(x, \Theta)$ is a function that can return the first $x$ terms from $\Theta$ as the result of its invocation for some $1 \leq x \leq \invpi(\Theta)$.
 \end{itemize}
 $\qed$
 \end{transf}
 \end{minipage}}
 \\
 
-So, with the essential mathematics out of the way as depicted in \textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}}, we can then try to see how this would work practically, with some real tangible computer programs that implement that higher-order\footnote{The \textbf{RSG} is indeed a great example of a higher-order transformer\index{higher-order transformer}, because, as you can tell from the specification of the underlying RSG() function in \textbf{\hyperref[EQRSG]{Equation \ref{EQRSG}}}, its resultant sequence is derived from the chaining of several other sequence transformers.} generator-transformer specification.
+So, with the essential mathematics out of the way as depicted in \textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}}, we can then try to see how this would work practically, with some real tangible computer programs that implement that higher-order\footnote{The \textbf{RSG} is indeed a great example of a higher-order transformer\index{higher-order transformer}, because, as you can tell from the specification of the underlying RSG() function in \textbf{\hyperref[EQRSG]{Equation \ref{EQRSG}}}, its resultant sequence is derived from the chaining of several other sequence transformers in a manner similar to what is formalized in \textbf{\hyperref[PROP9]{Section \ref{PROP9}}}.} generator-transformer specification.
 
 
 
 
 \subsection{The USYMBOLSET Function}
 
-We shall go bit by bit. So, first, here is what the \textbf{USYMBOLSET}\index{symbol set!unspecific (Python implementation)}\index{program!unspecific symbol set} function looks like in Python:
+We shall go bit by bit. So, first, here is what the \textbf{USYMBOLSET}\index{symbol set!unspecific (Python implementation)} function looks like in Python:
 
 \begin{figure}[H]
   \begin{center}
-  \begin{lstlisting}[caption={The USYMBOLSET}, label={LST_USYMBOLSET}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}]
+  \begin{lstlisting}[caption={The USYMBOLSET}, label={LST_USYMBOLSET}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}, stringstyle=\color{orange}, keywordstyle=\color{purple}\bfseries]
 #!/usr/bin/env python3
 
 #---[ USYMBOLSET(s) ]
@@ -3938,7 +4004,7 @@ def usymbolset(s):
 #print(result)
 \end{lstlisting}
   \end{center}
-  \caption{The \textbf{USYMBOLSET}$(\Omega)$ unspecific symbol set generator implemented using Python}
+  \caption{The \textbf{USYMBOLSET}$(\Omega)$ unspecific symbol set generator implemented using Python\index{program!unspecific symbol set}}
 \end{figure}
 
 
@@ -3947,25 +4013,24 @@ As one can tell from the commented-out test-cases for that \textbf{USYMBOLSET}$(
 
 \subsection{The PROTRACT Function}
 
-And here is what the \textbf{PROTRACT} function\index{program!sequence protraction} looks like in Python:
+And here is what the \textbf{PROTRACT} function looks like in Python:
 
 \begin{figure}[H]
   \begin{center}
-  \begin{lstlisting}[caption={The PROTRACT}, label={LST_PROTRACT}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}]
+  \begin{lstlisting}[caption={The PROTRACT}, label={LST_PROTRACT}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}, stringstyle=\color{orange}, keywordstyle=\color{purple}\bfseries]
 #!/usr/bin/env python3
-import math
 
 #---[ PROTRACT(s,n) ]
 def protract(s,n):
-    n_s = len(s)
+    n_s, n = len(s), int(n)
     if n_s < 1:
         return s
     if n < n_s:
         return s[:n]
     if n == n_s:
         return s
-    multiple = math.ceil(n_s / n)
-    target_n = n * multiple
+    multiple = int(n / n_s)
+    target_n = n_s * multiple + 1
     resultant = s
     i = 1
     while i < target_n:
@@ -3981,10 +4046,540 @@ def protract(s,n):
 #print(result)
 \end{lstlisting}
   \end{center}
-  \caption{The \textbf{PROTRACT}$(\Theta, n)$ sequence generator-transformer implemented using Python}
+  \caption{The \textbf{PROTRACT}$(\Theta, n)$ sequence generator-transformer implemented\index{program!sequence protraction} using Python}
 \end{figure}
 
 Thus, we see that the \textbf{PROTRACT}$(\Theta, n)$ function, when given a value of $n$ less than the size of the input sequence, shall merely truncate the sequence to the specified size. While, if the value of $n$ is larger than the size of the input sequence, it shall produce a resultant that somewhat contains the input sequence concatenated to itself multiple times, but such that the final resultant is again truncated to the exact specified and required output length, $n$.
+
+
+
+
+\subsection{The Random Number Generator, RNG Function}
+\label{SECRNGFUNC}
+
+Before we proceed to the \textbf{SHUFFLE} function, we shall want to first specify and test an important utility that would otherwise make our implementation dependent on someone else's random sequence generator --- thus rendering all our efforts here almost useless!
+
+The critically important function is \textbf{RNG}$(ll,ul)$ that essentially takes two parameters --- $ll$, the \textbf{lower limit} and $ul$, the \textbf{upper limit}, both of which are expected to be integers, and using which, the function is supposed to generate a \textbf{random number} $n$ that lies within the range:
+
+\begin{equation}
+ll \leq n \leq ul
+\end{equation}
+
+It is such \textbf{a critically important routine} (see author's earlier work on the matter\cite{lnspaper}), however, for the interests of keeping things simple, for now, we shall settle with a basic implementation that only relies on the \textbf{System Time} functions as our \textbf{source of entropy}\index{entropy}\footnote{\textbf{FUTURE WORK}: While, and perhaps in the near future, we continue to seek for theory and practical ways to generate entropy algorithmically --- which \textit{might be} futile, we shall also perhaps need to implement our own entropy generators interfacing with entropy sources in nature for more naturally stable, trustworthy sources of randomness.}.
+
+So, without delving into formally specifying our \textbf{Random Number Generator}, \textbf{RNG}, here, the associated definition of this utility as implemented using Python is as follows:
+
+\begin{figure}[H]
+  \begin{center}
+  \begin{lstlisting}[caption={The RNG}, label={LST_RNG}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}, stringstyle=\color{orange}, keywordstyle=\color{purple}\bfseries]
+#!/usr/bin/env python3
+import time
+
+#---[ RNG(ll,ul) ]
+def rng(l,u):
+    lu = max(l,u)
+    ll = min(l,u)
+    lu = lu + 1 if ll == lu else lu
+    part_k = int((lu - ll) * 0.5)
+    candidates = flsa(list(range(ll,lu+1)),part_k)[0] #invokes FLSA
+    n = len(candidates)
+    pick = int(flsa(str(time.time()).replace('.',''),1)[0])%n #because we need an entropy source!
+    return candidates[pick]
+
+#---[ TEST RNG ]
+#for r in [[0,10],[0,1],[0,100],[1900,1999]]:
+#    print(f"RNG From {r[0]}-{r[1]} -> {random_ng(r[0],r[1])}")
+\end{lstlisting}
+  \end{center}
+  \caption{The \textbf{RNG}$(ll,ul)$ random number generator implemented\index{program!Random Number Generator(RNG)} using Python}
+\end{figure}
+
+
+In the following demonstration, we can indeed ascertain, via a review of various illustrative invocations of our program --- such a simple and beautiful RNG! --- that indeed, it does get the job perfectly done and is such an indispensable little gem!
+
+\begin{figure}[H]
+  \begin{center}
+  \begin{lstlisting}[caption={A TESTING Our RANDOM NUMBER GENERATOR }, label={LST_RNG_TEST}, frame=single, numbers=none, basicstyle=\ttfamily,  commentstyle=\color{blue}, breaklines=true, breakatwhitespace=false]
+
+RNG From 0-10 -> 6
+RNG From 0-1 -> 0
+RNG From 0-100 -> 56
+RNG From 1900-1999 -> 1984
+
+RNG From 0-10 -> 7
+RNG From 0-1 -> 1
+RNG From 0-100 -> 46
+RNG From 1900-1999 -> 1950
+
+RNG From 0-10 -> 6
+RNG From 0-1 -> 0
+RNG From 0-100 -> 11
+RNG From 1900-1999 -> 1995
+
+\end{lstlisting}
+  \end{center}
+  \caption{A text dump from testing our RNG$(ll,ul)$ that only utilizes System Time as entropy source, and uses our First Lu-Shuffle Algorithm to generate True Random Numbers}
+  \label{RNGTESTDUMP}
+\end{figure}
+
+Before we proceed, note that, just like with all our earlier programs, the RNG implementation we just finished testing hardly relies on any external libraries or functions except the \texttt{time.time()} utility we needed for providing an entropy source\footnote{\textbf{IMPORTANT:} Realize when studying our use of the \texttt{time.time()} function as an entropy source that we couldn't just merely use the value it returns --- which ideally is the current time in seconds and milliseconds since epoch --- because, when the \texttt{RNG()} function is then invoked multiple times within the same second, it is very likely that the result of using this entropy source would then stay the same (as our own tests did prove with earlier implementations of this function). Thus we had to tweak the output of that function further as you can see with the extra massaging of its output via \texttt{pick = int(flsa(str(time.time()).replace(`.',`'),1)[0])\%n}, so that then, even when the value the time function returns doesn't change across invocations, we are sure that the value we pick shall still be random since we apply the FLSA shuffle algorithm to the output of the time function nonetheless! This hack is very crucial!}, and then our own \texttt{flsa()} that we use to randomize the items in the specified range that we then pick from. As for which shuffling algorithm to use, of course, we could have used the \textbf{SLSA}, however, so as to keep the implementation very efficient, we chose to use the \textbf{FLSA} since we pass in a cleverly chosen partitioning index that is computed such that it lies somewhat around $\frac{n}{2}$ when we derive it from the two user-specified RNG parameters as such:
+
+\vspace{1em}
+\begin{equation}
+k = \frac{ul - ll}{2}
+\end{equation}
+\vspace{1em}
+
+And as per our analysis of FLSA and SLSA, we know that with such a value of the initial partitioning index, then FLSA shall get us just the right kind of anagram as might be obtained using SLSA\footnote{So, it happens that, when we have little or no control over the initial partitioning index parameter, $k$, that is required for the two shuffling algorithms FLSA and SLSA, that then, for optimal guarantee that we shall always obtain fine sequence anagrams, then the SLSA is preferable. But where we know what we are doing, such as when we can dynamically compute the $k$, we might as well just default to the FLSA as demonstrated here.}. Refer to \textbf{\hyperref[LST_RNG]{Listing \ref{LST_RNG}}}, but also \textbf{\hyperref[SECAPPLYFLSA]{Section \ref{SECAPPLYFLSA}}} and \textbf{\hyperref[SECAPPLYSLSA]{Section \ref{SECAPPLYSLSA}}} for details.
+
+
+\subsection{The SHUFFLE Function}
+
+And here is what the \textbf{SHUFFLE} function looks like in Python:
+
+\begin{figure}[H]
+  \begin{center}
+  \begin{lstlisting}[caption={The SHUFFLE}, label={LST_SHUFFLE}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}, stringstyle=\color{orange}, keywordstyle=\color{purple}\bfseries]
+#!/usr/bin/env python3
+
+#---[ SHUFFLE(s) ]
+def shuffle(s):
+    n_s = len(s)
+    if n_s < 2:
+        return s
+    random_k = rng(1,n_s)
+    shuffled_s,k = slsa(s,random_k) #invokes SLSA
+    random_k2 = rng(1,int(n_s*0.5))
+    shuffled_s,k = flsa(shuffled_s,random_k2) #invokes FLSA
+    return shuffled_s
+
+#---[ TEST SHUFFLE ]
+#s = [0,1,2,3,4,5,6,7,8,9]
+# s = [0,1,2,3,4,5,6,7,8,9] --> [9, 3, 4, 7, 0, 5, 2, 1, 6, 8], 
+# [4, 6, 0, 3, 5, 2, 7, 9, 1, 8], etc.
+#s = ['A' , 'C' , 'G' , 'T' , 'U']
+#--> ['C', 'G', 'T', 'U', 'A'], 
+# ['U', 'G', 'T', 'C', 'A'], etc.
+#result = shuffle(s)
+#print(result)
+\end{lstlisting}
+  \end{center}
+  \caption{The \textbf{SHUFFLE}$(\Theta)$ sequence randomizer implemented\index{program!SHUFFLE sequence anagrammatize} using Python}
+\end{figure}
+
+Definitely, just like we didn't \textit{originally} want to implement our own basic random number generator (see \textbf{Line\#8} and \textbf{Line\#10} in \textbf{\hyperref[LST_SHUFFLE]{Listing \ref{LST_SHUFFLE}}}), we could also have used an external shuffle algorithm --- such as with the standard python random utility in \texttt{s=[1,2,3];rng.shuffle(s);s} that might return \texttt{[3,1,2]} for example, but we chose to use our own shuffle algorithms as developed in the previous sections (see \textbf{Line\#9} and \textbf{Line\#11} that invoke , first, the \textbf{SLSA}, and then the \textbf{FLSA}, \texttt{slsa($\cdot$)}, defined in \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}}), so those who need to cut dependencies might pick a leaf from our solution, or perhaps port our algorithms to any programming language as is. 
+
+Also, unlike invoking  \texttt{slsa($\Theta, k$)} directly, the provided sequence randomizer utility function takes care of generating random parameters for the \textbf{Lu Shuffle Algorithm}, by randomly picking legitimate values of $k$ from 1 to $\invpi(\Theta)$, so that the \textbf{SHUFFLE} function can be invoked without having to explicitly pass any arguments other than just the sequence one wishes to have shuffled.
+
+Also, note that \textbf{\hyperref[LST_SHUFFLE]{Listing \ref{LST_SHUFFLE}}}, like the ones we have looked at before, provides some (commented out) code that might give one an idea how to use the function, or how the potential results of invoking it with certain sequences might look like. Otherwise, the function itself is very minimal, with the essential code spanning just about 9 lines of code!
+
+
+
+\subsection{The SELECT Function}
+
+And as for the \textbf{SELECT} function required by \textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}} (the \textbf{RSG}), the corresponding definition for that function in Python is as shown:
+
+\begin{figure}[H]
+  \begin{center}
+  \begin{lstlisting}[caption={The SELECT}, label={LST_SELECT}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}, stringstyle=\color{orange}, keywordstyle=\color{purple}\bfseries]
+#!/usr/bin/env python3
+
+#---[ SELECT(n,s) ]
+def select(n,s):
+    n_s, n = len(s), int(n)
+    resultant = []
+    if n <= 0:
+        return resultant
+    n = n if n <= n_s else n_s
+    resultant = s[:n]
+    return resultant
+
+#---[ TEST SELECT ]
+#s = [0,1,2,3,4,5,6,7,8,9]
+#s = [0,1,2,3,4,5,6,7,8,9] --> select(2,s) --> [0,1], 
+# select(12,s) --> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], etc.
+#s = ['A' , 'C' , 'G' , 'T' , 'U']
+#select(3,s) --> ['A', 'C', 'G'], etc.
+#result = select(12,s)
+#print(result)
+\end{lstlisting}
+  \end{center}
+  \caption{The \textbf{SELECT}$(n,\Theta)$ sequence sampler function implemented\index{program!SELECT} using Python}
+\end{figure}
+
+Thus, the \texttt{select($n,s$)} function shall return the first $n$ elements from the specified sequence $s$, and when the specified selection criteria $n$ lies outside the cardinality of the sequence; such as when $n \leq 0$, it returns the empty sequence. Otherwise, when $n > \invpi(s)$, it returns the entire sequence as is.
+
+\subsection{The RSG Function}
+\label{SECRSGFUNC}
+
+Having seen how to implement the individual essential components that make the \textbf{Random Sequence Generator (RSG)}, $RSG(k,\Theta_n)$, defined in \textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}} work, we can then go ahead and actually implement a re-usable, and generic random sequence generator or \textbf{even a random symbol generator} based off of that. 
+
+As with the sample codes offered in earlier sections of this chapter, we shall merely default to implementing a Python-compliant function, but the semantics and code could of course be adapted for other programming languages by interested engineers, students and researchers.
+
+\begin{figure}[H]
+  \begin{center}
+  \begin{lstlisting}[caption={The RSG}, label={LST_RSG}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}, stringstyle=\color{orange}, keywordstyle=\color{purple}\bfseries]
+#!/usr/bin/env python3
+
+# import/add earlier utilities as necessary...
+# of course: flsa(s,k), slsa(s,k) and rng(ll,ul) first
+# then usymbolset(s), protract(s,n), shuffle(s) and select(n,s)
+
+#---[ RSG(n,s) ]
+def rsg(n,s):
+    n_s,n = len(s),int(n)
+    resultant = []
+    if n == 0 or n_s == 0:
+        return resultant
+    # first, compute the u-symbol set
+    s_usymbolset = usymbolset(s)
+    n_us = len(s_usymbolset)
+    # then chain the sequence transformers...
+    resultant = shuffle(s_usymbolset) # randomize the symbol set
+    resultant = protract(resultant,n*2*n_us)
+    resultant = shuffle(resultant)
+    # then pick only as much as was asked for...
+    resultant = select(n,resultant)
+    return resultant
+
+\end{lstlisting}
+  \end{center}
+  \caption{The \textbf{RSG}$(n,\Theta)$ random sequence generator function\index{program!Random Sequence Generator (RSG)} implemented using Python}
+\end{figure}
+
+
+Note that \textbf{\hyperref[LST_RSG]{Listing \ref{LST_RSG}}} focused on just the \texttt{RSG(n,s)} function, which is indeed the basic implementation of our sequence generator at the highest level. However, if we were to have to fill-in all the gaps --- such as having an implementation that can work with all referenced functions in a single file, then the following code listing would be what we instead need:
+
+\vspace{2em}
+
+
+{
+\normalsize
+
+  \begin{tcolorbox}[pythonterminalstyle, title=The RSG (complete implementation), breakable]
+    %\begin{lstlisting}[language=TEA,breaklines=true]
+  \begin{lstlisting}[language=PYTHON, caption={Complete RSG}, label={LST_RSG_COMPLETE}, numbers=left, breaklines=true, commentstyle=\color{blue}, stringstyle=\color{orange}, keywordstyle=\color{purple}\bfseries]
+#!/usr/bin/env python3
+###################################
+# RSG: Random Sequence Generator
+#----------------------------------
+# A complete standalone reference 
+# implementation in Python 3.
+# Copyright: Fut. Prof. JWL
+# Nuchwezi Research (nuchwezi.com)
+###################################
+
+import time
+
+##---[ FLSA(s,k) ]
+def flsa(s, k0):
+    n = len(s)
+    if n < 2:
+        return s,k0
+    k = k0 % n
+    k = 1 if k < 1 else k
+    new_s = s
+    while True:
+        if k == n:
+            break
+        p_index = k
+        p_start = 0
+        sub_p_index = int(0.5 * p_index)
+        sub_p_l = new_s[p_start:sub_p_index]
+        sub_p_r = new_s[sub_p_index:p_index]
+        rest_p = new_s[p_index:n]
+        swapped = sub_p_r + sub_p_l
+        if k%2 == 1:
+            new_s = rest_p + swapped
+        else:
+            new_s = swapped + rest_p
+        k += 1
+    return new_s,k
+
+#---[ SLSA(s,k) ]
+def slsa(s, k0):
+    n = len(s)
+    if n < 2:
+        return s,k0
+    k = k0 % n
+    k = 1 if k < 1 else k
+    new_s = flsa(s,n-k)[0] #invoke FLSA with k0=n-k
+    while True:
+        if k == n:
+            break
+        p_index = k
+        p_start = 0
+        sub_p_index = int(0.5 * p_index)
+        sub_p_l = new_s[p_start:sub_p_index]
+        sub_p_r = new_s[sub_p_index:p_index]
+        rest_p = new_s[p_index:n]
+        swapped = sub_p_r + sub_p_l
+        if k%2 == 1:
+            new_s = rest_p + swapped
+        else:
+            new_s = swapped + rest_p
+        k += 1
+    return new_s,k
+
+#---[ RNG(ll,ul) ]
+def rng(l,u):
+    lu = max(l,u)
+    ll = min(l,u)
+    lu = lu + 1 if ll == lu else lu
+    part_k = int((lu - ll) * 0.5)
+    candidates = flsa(list(range(ll,lu+1)),part_k)[0] #invokes FLSA
+    n = len(candidates)
+    pick = int(flsa(str(time.time()).replace('.',''),1)[0])%n #time-entropy
+    return candidates[pick]
+
+#---[ SHUFFLE(s) ]
+def shuffle(s):
+    n_s = len(s)
+    if n_s < 2:
+        return s
+    random_k = rng(1,n_s)
+    shuffled_s,k = slsa(s,random_k)
+    random_k2 = rng(1,int(n_s*0.5))
+    shuffled_s,k = flsa(shuffled_s,random_k2)
+    return shuffled_s
+
+#---[ USYMBOLSET(s) ]
+def usymbolset(s):
+    n_s = len(s)
+    if n_s <= 1:
+        return s
+    resultant = []
+    for i in range(n_s):
+        s_i = s[i]
+        if not (s_i in resultant):
+            resultant.append(s_i)
+    return resultant
+
+#---[ PROTRACT(s,n) ]
+def protract(s,n):
+    n_s, n = len(s), int(n)
+    if n_s < 1:
+        return s
+    if n < n_s:
+        return s[:n]
+    if n == n_s:
+        return s
+    multiple = int(n / n_s)
+    target_n = n_s * multiple + 1
+    resultant = s
+    i = 1
+    while i < target_n:
+        resultant = resultant + s
+        i += 1
+    return resultant[:n] # could potentially, also compress
+
+#---[ SHUFFLE(s) ]
+def shuffle(s):
+    n_s = len(s)
+    if n_s < 2:
+        return s
+    random_k = rng(1,n_s)
+    shuffled_s,k = slsa(s,random_k)
+    random_k2 = rng(1,int(n_s*0.5))
+    shuffled_s,k = flsa(shuffled_s,random_k2)
+    return shuffled_s
+
+#---[ SELECT(n,s) ]
+def select(n,s):
+    n_s, n = len(s), int(n)
+    resultant = []
+    if n <= 0:
+        return resultant
+    n = n if n <= n_s else n_s
+    resultant = s[:n]
+    return resultant
+
+#---[ RSG(n,s) ]
+def rsg(n,s, DEBUG=False):
+    n_s,n = len(s),int(n)
+    resultant = []
+    if n == 0 or n_s == 0:
+        return resultant
+    # first, compute the u-symbol set
+    if DEBUG:
+        print(f;'input sequence: {s}')
+    s_usymbolset = usymbolset(s)
+    if DEBUG:
+        print(f'u-symbolset: {s_usymbolset}')
+    n_us = len(s_usymbolset)
+    # then chain the sequence transformers...
+    resultant = shuffle(s_usymbolset) # randomize the symbol set
+    if DEBUG:
+        print(f"shuffled u-symbolset: {resultant}")
+    resultant = protract(resultant,n*2*n_us)
+    if DEBUG:
+        print(f"protracted: {resultant}")
+    resultant = shuffle(resultant)
+    if DEBUG:
+        print(f"shuffled: {resultant}")
+    # then pick only as much as was asked for...
+    resultant = select(n,resultant)
+    if DEBUG:
+        print(f"selection:{n}: {resultant}")
+    return resultant
+
+#---[ TEST RSG ]
+s = [0,1,2,3,4,5,6,7,8,9,0,1]
+#s = [0,1,2,3,4,5,6,7,8,9] --> rsg(0,s) --> [],
+# rsg(1,s) --> [6], [1], [0], etc.
+# rsg(3,s) --> [2, 9, 5], [0, 1, 2],[5, 6, 5], etc.
+#s = ['A' , 'C' , 'G' , 'T' , 'U']
+# rsg(1,s) --> ['T'], ['A'], ['G'], etc.
+#s = ['A' , 'T' , 'C' , 'G']
+# rsg(3,s) --> ['C', 'G', 'A'], ['G', 'T', 'C'] # random DNA codons!
+#result = rsg(3,s,False)
+#print(f"RSG result: {result}")
+# what of generating sentences from words?
+# e.g pass in a glossary
+# rsg(10,['CAT','DOG','PEN','ACE','SKY','EYE','IS','THAT','NO','YOU'])
+# --> ['YOU', 'IS', 'NO', 'DOG', 'SKY', 'THAT', 'ACE', 'EYE', 'CAT', 'PEN']
+
+\end{lstlisting}
+  \end{tcolorbox}
+}
+
+Of course, as shown in the final comments in the \textbf{RSG} code listing in \textbf{\hyperref[LST_RSG_COMPLETE]{Listing \ref{LST_RSG_COMPLETE}}}, we can see that our basic random sequence generator can actually be used to \textbf{generate random ANYTHING!} In that complete listing, unlike the earlier RSG specification in \textbf{\hyperref[LST_RSG]{Listing \ref{LST_RSG}}}, we have also enhanced the function with an extra optional keyword parameter, \textbf{DEBUG}, that expects a boolean value (\texttt{True} or \texttt{False}), and so that, by setting that flag to ``True" --- the boolean value for \textbf{true} in Python, we then allow the function to print-out the internal transformation results as it processes the final resultant sequence. Thus, we might appreciate how it works for various inputs based on example illustrative debugging outputs as shown hereafter...
+
+
+\vspace{1em}
+  \begin{tcbverbatim}[title=Example 1: DEBUG Output of RSG: Generating a random digit 3-gram]
+input sequence: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]
+u-symbolset: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+shuffled u-symbolset: [9, 6, 1, 4, 2, 8, 0, 7, 5, 3]
+protracted: [9, 6, 1, 4, 2, 8, 0, 7, 5, 3, 9, 6, 1, 4, 2, 8, 0, 7, 5, 3, 9, 6, 1, 4, 2, 8, 0, 7, 5, 3, 9, 6, 1, 4, 2, 8, 0, 7, 5, 3, 9, 6, 1, 4, 2, 8, 0, 7, 5, 3, 9, 6, 1, 4, 2, 8, 0, 7, 5, 3]
+shuffled: [0, 3, 9, 5, 6, 3, 4, 5, 3, 1, 1, 2, 0, 0, 4, 4, 5, 4, 9, 9, 4, 8, 0, 7, 3, 6, 8, 6, 0, 7, 1, 5, 3, 5, 6, 9, 2, 8, 1, 6, 2, 8, 2, 2, 7, 9, 4, 3, 6, 5, 7, 2, 8, 1, 0, 7, 1, 7, 8, 9]
+selection:3: [0, 3, 9]
+RSG result: [0, 3, 9]
+  \end{tcbverbatim}
+  \vspace{1em}
+  
+
+  \begin{tcbverbatim}[title=Example 2: DEBUG Output of RSG:: Generating a random letter]
+input sequence: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+u-symbolset: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+shuffled u-symbolset: ['j', 'p', 'l', 'm', 'v', 'q', 'r', 'c', 'a', 'g', 't', 'h', 'w', 'e', 'y', 'z', 'x', 's', 'b', 'o', 'f', 'u', 'k', 'i', 'n', 'd']
+protracted: ['j', 'p', 'l', 'm', 'v', 'q', 'r', 'c', 'a', 'g', 't', 'h', 'w', 'e', 'y', 'z', 'x', 's', 'b', 'o', 'f', 'u', 'k', 'i', 'n', 'd', 'j', 'p', 'l', 'm', 'v', 'q', 'r', 'c', 'a', 'g', 't', 'h', 'w', 'e', 'y', 'z', 'x', 's', 'b', 'o', 'f', 'u', 'k', 'i', 'n', 'd']
+shuffled: ['o', 'x', 'g', 'f', 't', 'p', 'h', 'h', 'l', 's', 'c', 'e', 'b', 'u', 'a', 'k', 'd', 'w', 'w', 'j', 'd', 'n', 'k', 'z', 'u', 'm', 's', 'q', 'i', 'c', 'y', 'r', 'g', 'n', 'i', 'a', 'v', 'r', 't', 'y', 'x', 'e', 'b', 'o', 'j', 'z', 'f', 'p', 'l', 'm', 'v', 'q']
+selection:1: ['o']
+RSG result: ['o']
+  \end{tcbverbatim}
+  \vspace{1em}
+  
+ 
+  \begin{tcbverbatim}[title=Example 3: DEBUG Output of RSG:: Generating a random DNA Codon]
+input sequence: ['A', 'T', 'C', 'G']
+u-symbolset: ['A', 'T', 'C', 'G']
+shuffled u-symbolset: ['C', 'T', 'A', 'G']
+protracted: ['C', 'T', 'A', 'G', 'C', 'T', 'A', 'G', 'C', 'T', 'A', 'G', 'C', 'T', 'A', 'G', 'C', 'T', 'A', 'G', 'C', 'T', 'A', 'G']
+shuffled: ['T', 'G', 'A', 'C', 'A', 'C', 'C', 'C', 'T', 'T', 'C', 'A', 'G', 'A', 'T', 'A', 'G', 'T', 'G', 'C', 'T', 'G', 'A', 'G']
+selection:3: ['T', 'G', 'A']
+RSG result: ['T', 'G', 'A']
+  \end{tcbverbatim}
+  \vspace{1em}
+  
+  
+  In fact, we can appreciate how useful this RSG is, at generating random sequences, if we turn off debugging, combine the results into a string, and then perform multiple invocations to get us a sequence of random sequences as we see in the next output that shows a sequence of random DNA codons it generates when we invoke it 10 times in a row with the same parameters as in the last example...
+  
+  
+    
+    \vspace{1em}
+  \begin{tcbverbatim}[title=Example 4: Generating 10 random DNA Codons]
+10 random DNA codons via RSG(3,['A,'C','T','G']):
+
+['CGC', 'AGT', 'GGA', 'TCG', 'CGC', 'GTC', 'CGA', 'ATC', 'CTA', 'GTC']
+
+['AAT', 'AGG', 'GTC', 'CTC', 'CGG', 'AAT', 'AAC', 'CTC', 'TCT', 'AGT']
+
+['CCC', 'CTC', 'TGC', 'AAT', 'ATC', 'ACG', 'GAG', 'AAT', 'GTT', 'CCC']
+  \end{tcbverbatim}
+  \vspace{1em}
+
+
+But not just that! We have already seen that it could be used to generate random numbers --- whether individual digits such as 1, 5 or 0,.. but also sequences or n-grams of them --- just depending on what kind of sequence we pass in as the source, how long we wish the output to be and what we do with the result. Moreover, note that \textbf{RSG} could be used to compute long DNA sequences using a clever invocations such as:
+
+\vspace{1em}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\texttt{
+N=3*200; print(`'.join(str(c) for c in rsg(N,[`A',`T',`C',`G'])));
+}
+\end{minipage}}
+\vspace{1em}
+
+
+Which would get us compelling na-Sequences and potentially useful genetic codes as shown in the following listing that leverages that little code-golf snippet shown above...
+
+\begin{figure}[H]
+  \begin{center}
+  \begin{lstlisting}[caption={A RANDOM DNA SEQUENCE}, label={LST_RANDSEQ}, frame=single, numbers=none, basicstyle=\ttfamily,  commentstyle=\color{blue}]
+
+TATACGGCAAGCGATGAGATATCAAGCTAATCGATAGGCAACGAGACACCAGGAGACGCGT
+CAGGCAACAAGGAATTAAGTCACGCGTCAAGCTATGAGATACTAAGCAACACGGTAGGCAA
+CGAGACAATAGGAGATGCGCCAGGCGACAAGGAATCAAGTTATCCGACAAGCAATGAGATA
+GTAAGCGACGCGGTAGGCAACGAGACATAAGGAAACGCGCCAGGCCACAAGGAATCAAGTT
+ATACGGCAAGCGATGAGATATCAAGCTATTCGATAGGCAACGAGACACCAGGAGTCGCTTC
+CGTCAACATCGAACTCATTCCCGCCTCAACCTATGCCATACTAACCAATACCGTTGCCAAC
+GATACAACTGCAGTTGCTCCCGTAGACATCGATCCCATTTCTCACACAACCATTGCCATAG
+TAACCGAGGACGTTGCCAGCGATACATTTGCAATTGCTCCCGTACGCATCGCTCACATCTT
+GAGTGCTATAGTCGCTACGTTCATCTTCTGTACTGTCAACGCTACGCCCGTCGTGGCTTCT
+GTGACCACTGCTTACATCCTCGATTCTATGTTCGCTACACGCATCATAACT
+
+\end{lstlisting}
+  \end{center}
+  \caption{A Random DNA Sequence\index{DNA!random sequences} of exactly 200 random codons as generated using our \textbf{RSG}$(n,\Theta)$ random sequence generator algorithm.}
+  \label{RandomDNASEQ}
+\end{figure}
+
+
+And finally, realizing that much of what is exciting about today's use of computing and especially artificial intelligence\index{artificial intelligence} concerns popular applications such as the likes of \textbf{ChatGPT} that does interesting text-generation based on user provided prompts --- including not just the ability to generate stories, essays, code snippets and even DNA sequences, but also ascii-art, music scores, etc. We shall then want to note here that, our basic \texttt{RSG(n,s)} function --- a higher-order sequence transformer, can likewise do some surely compelling feats such as when we use it to generate some random prose based on a carefully selected list of input words:
+
+
+
+  \begin{tcolorbox}[pythonterminalstyle, title=A Random Prose Generator based on the RSG, breakable]
+    %\begin{lstlisting}[language=TEA,breaklines=true]
+  \begin{lstlisting}[language=PYTHON, numbers=left, breaklines=true, commentstyle=\color{blue}, stringstyle=\color{orange}, keywordstyle=\color{purple}\bfseries]
+print('\n'.join([' '.join(rsg(10,['CAT','DOG','PEN','ACE','SKY','EYE','IS','THAT','NO','YOU'])) for i in range(1,6)]))
+\end{lstlisting}
+  \end{tcolorbox}
+
+\vspace{1em}
+
+
+Which code then gives us some stupid but entertaining stories and prose such as...
+
+
+    \vspace{1em}
+  \begin{tcbverbatim}[title=Example 5: Random Prose based on RSG]
+YOU ACE NO ACE SKY NO THAT CAT THAT ACE
+YOU ACE EYE NO SKY THAT CAT THAT THAT CAT
+THAT PEN IS NO DOG YOU SKY THAT IS EYE
+YOU ACE NO ACE SKY NO THAT CAT THAT ACE
+PEN THAT NO ACE IS ACE CAT SKY CAT IS
+  \end{tcbverbatim}
+  \vspace{1em}
+
+
+or perhaps...
+
+
+
+    \vspace{1em}
+  \begin{tcbverbatim}[title=Example 6: Random Prose based on RSG]
+NO DOG THAT YOU IS EYE DOG IS SKY NO
+PEN THAT EYE IS DOG EYE SKY CAT ACE EYE
+YOU CAT IS THAT ACE IS EYE THAT THAT SKY
+THAT DOG THAT YOU ACE YOU NO PEN CAT CAT
+ACE NO IS DOG NO EYE YOU ACE CAT IS
+  \end{tcbverbatim}
+  \vspace{1em}
+
+
+Thus you must note that the sheer significance of having a properly working generator-transformer such as the \textbf{RSG} is difficult --- almost impossible, to explain\footnote{Even though we might not exhaust all ways that a random symbol or random sequence generator might be utilized in GENETICS, we shall never the less come to appreciate some of the utilities underlying our RSG, but also the RSG itself, in other parts of the book such as in \textbf{\hyperref[SECIFAMSSPFMAPS]{Chapter \ref{SECIFAMSSPFMAPS}}} and in \textbf{\hyperref[SEC05]{Chapter \ref{SEC05}}}.}. 
 
 
 
@@ -4004,256 +4599,6 @@ TODO: Continue indexing starting from here
 
 \hl{TODO: proceed from here...}
 }
-
-
-
-\subsection{The Random Number Generator, RNG Function}
-\label{SECRNGFUNC}
-
-Before we proceed to the \textbf{SHUFFLE} function, we shall want to first specify and test an important utility that would otherwise make our implementation dependent on someone else's random sequence generator --- thus rendering all our efforts here almost useless!
-
-The critically important function is \textbf{RNG}$(ll,ul)$ that essentially takes two parameters --- $ll$, the \textbf{lower limit} and $ul$, the \textbf{upper limit}, both of which are expected to be integers, and using which, the function is supposed to generate a \textbf{random number} $n$ that lies within the range:
-
-\begin{equation}
-ll \leq n \leq ul
-\end{equation}
-
-It is such a CRITICALLY important routine(see author's earlier work on the matter\cite{lnspaper}), however, for the interests of keeping things simple, for now, we shall settle with a basic implementation that only relies on the \textbf{System Time} functions as our \textbf{source of entropy}\footnote{\textbf{FUTURE WORK}: While, and perhaps in the near future, we continue to seek for theory and practical ways to generate entropy algorithmically --- which might be \textit{futile}, or perhaps implement our own entropy generators interfacing with entropy sources in nature?}.
-
-So, without delving into formally specifying our \textbf{Random Number Generator}, \textbf{RNG}, here, the associated definition of this utility as implemented using Python is as follows:
-
-\begin{figure}[H]
-  \begin{center}
-  \begin{lstlisting}[caption={The RNG}, label={LST_RNG}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}]
-#!/usr/bin/env python3
-import time
-
-#---[ RNG(ll,ul) ]
-def random_ng(l,u):
-    lu = max(l,u)
-    ll = min(l,u)
-    lu = lu + 1 if ll == lu else lu
-    part_k = 1
-    candidates = lu_shuffler_a(list(range(ll,lu+1)),part_k)[0]
-    n = len(candidates)
-    pick = int(time.time())%n #because we need an entropy source!
-    return candidates[pick]
-
-#---[ TEST RNG ]
-#for r in [[0,10],[0,1],[0,100],[1900,1999]]:
-#    print(f"RNG From {r[0]}-{r[1]} -> {random_ng(r[0],r[1])}")
-\end{lstlisting}
-  \end{center}
-  \caption{The \textbf{RNG}$(ll,ul)$ random number generator implemented using Python}
-\end{figure}
-
-
-We can indeed look at some trace dumps from testing our beautiful RNG and appreciate what a little gem it is!
-
-\begin{figure}[H]
-  \begin{center}
-  \begin{lstlisting}[caption={A TESTING Our RANDOM NUMBER GENERATOR }, label={LST_RNG}, frame=single, numbers=none, basicstyle=\ttfamily,  commentstyle=\color{blue}, breaklines=true, breakatwhitespace=false]
-
-RNG From 0-10 -> 6
-RNG From 0-1 -> 0
-RNG From 0-100 -> 56
-RNG From 1900-1999 -> 1984
-
-RNG From 0-10 -> 7
-RNG From 0-1 -> 1
-RNG From 0-100 -> 46
-RNG From 1900-1999 -> 1950
-
-
-k=1 | s=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-RNG From 0-10 -> 2
-
-k=1 | s=[0, 1]
-RNG From 0-1 -> 1
-
-k=1 | s=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
-RNG From 0-100 -> 28
-
-k=1 | s=[1900, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
-RNG From 1900-1999 -> 1987
-
-\end{lstlisting}
-  \end{center}
-  \caption{A text dump from testing our RNG$(ll,ul)$ that only utilizes System Time as entropy source, and uses our First Lu-Shuffle Algorithm to generate True Random Numbers}
-  \label{RNGTESTDUMP}
-\end{figure}
-
-Before we proceed, just note that the verbose output in the lower trace dump in \textbf{\hyperref[LST_RNG]{Listing \ref{LST_RNG}}} is because we turned on the DEBUG print in our \textbf{lu\_shuffler\_a}$(\cdot)$ invocation --- see \textbf{Line\#11}, so as to cross-check/confirm if our RNG is operating on the correct ranges given our input lower and upper bounds.
-
-
-\subsection{The SHUFFLE Function}
-
-And here is what the \textbf{SHUFFLE} function looks like in Python:
-
-\begin{figure}[H]
-  \begin{center}
-  \begin{lstlisting}[caption={The SHUFFLE}, label={LST_SHUFFLE}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}]
-#!/usr/bin/env python3
-
-#---[ SHUFFLE(s) ]
-def shuffle(s):
-    n_s = len(s)
-    if n_s < 2:
-        return s
-    random_k = random_ng(1,n_s)
-    shuffled_s,k = lu_shuffler_b(s,random_k)
-    random_k2 = random_ng(1,n_s)
-    shuffled_s,k = lu_shuffler_a(shuffled_s,random_k2)
-    return shuffled_s
-
-#---[ TEST SHUFFLE ]
-#s = [0,1,2,3,4,5,6,7,8,9]
-# s = [0,1,2,3,4,5,6,7,8,9] --> [9, 3, 4, 7, 0, 5, 2, 1, 6, 8], 
-# [4, 6, 0, 3, 5, 2, 7, 9, 1, 8], etc.
-#s = ['A' , 'C' , 'G' , 'T' , 'U']
-# s = ['A' , 'C' , 'G' , 'T' , 'U'] --> ['C', 'G', 'T', 'U', 'A'], 
-# ['U', 'G', 'T', 'C', 'A'], etc.
-#result = shuffle(s)
-#print(result)
-\end{lstlisting}
-  \end{center}
-  \caption{The \textbf{SHUFFLE}$(\Theta)$ sequence randomizer implemented using Python}
-\end{figure}
-
-Definitely, just like we didn't \textit{originally} want to implement our own basic random number generator (see \textbf{Line\#8} and \textbf{Line\#10} in \textbf{\hyperref[LST_SHUFFLE]{Listing \ref{LST_SHUFFLE}}}), we could also have used an external shuffle algorithm --- such as with the standard python random utility in \texttt{s=[1,2,3];rng.shuffle(s);s} that might return \texttt{[3,1,2]} for example, but we chose to use our own shuffle algorithms as developed in the previous sections (see \textbf{Line\#9} and \textbf{Line\#11} that invoke , first, the \textbf{FLSA}, and then the \textbf{SLSA}, \textbf{lu\_shuffler\_b($\cdot$)}, defined in \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}}), so those who need to cut dependencies might pick a leaf from our solution, or perhaps port our algorithms to any programming language as is. 
-
-Also, unlike invoking  \textbf{lu\_shuffler\_b($\Theta, k$)} directly, the provided sequence randomizer utility function takes care of generating random parameters to the \textbf{Lu Shuffle Algorithm}, by randomly picking legitimate values of $k$ from 1 to $\invpi(\Theta)$, so that the \textbf{SHUFFLE} function can be invoked without having to explicitly pass any arguments other than just the sequence one wishes to have shuffled.
-
-Also, note that \textbf{\hyperref[LST_SHUFFLE]{Listing \ref{LST_SHUFFLE}}}, like the ones we have looked at before, provides some (commented out) code that might give one an idea how to use the function, or how the potential results of invoking it with certain sequences might look like.
-
-
-
-\subsection{The SELECT Function}
-
-And as for the \textbf{SELECT} function required by \textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}} (the \textbf{RSG}), the corresponding definition for that function in Python is as shown:
-
-\begin{figure}[H]
-  \begin{center}
-  \begin{lstlisting}[caption={The SELECT}, label={LST_SELECT}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}]
-#!/usr/bin/env python3
-
-#---[ SELECT(n,s) ]
-def select(n,s):
-    n_s = len(s)
-    resultant = []
-    if n == 0:
-        return resultant
-    n = n if n <= n_s else n_s
-    resultant = s[:n]
-    return resultant
-
-#---[ TEST SELECT ]
-#s = [0,1,2,3,4,5,6,7,8,9]
-#s = [0,1,2,3,4,5,6,7,8,9] --> select(2,s) --> [0,1], 
-# select(12,s) --> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], etc.
-#s = ['A' , 'C' , 'G' , 'T' , 'U']
-# s = ['A' , 'C' , 'G' , 'T' , 'U'] --> select(3,s) --> ['A', 'C', 'G'], etc.
-#result = select(12,s)
-#print(result)
-\end{lstlisting}
-  \end{center}
-  \caption{The \textbf{SELECT}$(n,\Theta)$ sequence sampler function implemented using Python}
-\end{figure}
-
-
-
-\subsection{The RSG Function}
-\label{SECRSGFUNC}
-
-Having seen how to implement the individual essential components that make the \textbf{Random Symbol Generator (RSG)}, $RSG(k,\Theta_n)$, defined in \textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}}, we can then go ahead and actually implement a re-usable, and generic random sequence  generator or even a random symbol generator. 
-
-As with the sample codes offered in earlier sections of thic chapter, we shall merely default to implementing a Python-compliant function, but the semantics and code could of course be adapted for other programming languages by interested engineers, students and researchers.
-
-\begin{figure}[H]
-  \begin{center}
-  \begin{lstlisting}[caption={The RSG}, label={LST_RSG}, language=Python, frame=single, numbers=left, basicstyle=\ttfamily,  commentstyle=\color{blue}]
-#!/usr/bin/env python3
-
-# import/add earlier utilities as necessary...
-# usymbolset(s), protract(s,n), shuffle(s) and select(n,s)
-
-#---[ RSG(n,s) ]
-def rsg(n,s):
-    n_s = len(s)
-    resultant = []
-    if n == 0 or n_s == 0:
-        return resultant
-    # first, compute the u-symbol set
-    s_usymbolset = usymbolset(s)
-    n_us = len(s_usymbolset)
-    # then chain the transformers...
-    resultant = shuffle(s_usymbolset) # randomize the symbol set
-    resultant = protract(resultant,n*2*n_us)
-    resultant = shuffle(resultant)
-    # then pick only as much as was asked for...
-    resultant = select(n,resultant)
-    return resultant
-
-#---[ TEST RSG ]
-#s = [0,1,2,3,4,5,6,7,8,9]
-#s = [0,1,2,3,4,5,6,7,8,9] --> rsg(0,s) --> [],
-# rsg(1,s) --> [6], [1], [0], etc.
-# rsg(3,s) --> [2, 9, 5], [0, 1, 2],[5, 6, 5], etc.
-#s = ['A' , 'C' , 'G' , 'T' , 'U']
-# rsg(1,s) --> ['T'], ['A'], ['G'], etc.
-#s = ['A' , 'T' , 'C' , 'G']
-# rsg(3,s) --> ['C', 'G', 'A'], ['G', 'T', 'C'] # random DNA codons!
-#result = rsg(3,s)
-#print(result)
-# what of generating sentences from words?
-# e.g pass in a glossary
-# rsg(10,['CAT','DOG','PEN','ACE','SKY','EYE','IS','THAT','NO','YOU']) 
-# --> ['YOU', 'IS', 'NO', 'DOG', 'SKY', 'THAT', 'ACE', 'EYE', 'CAT', 'PEN']
-\end{lstlisting}
-  \end{center}
-  \caption{The \textbf{RSG}$(n,\Theta)$ random sequence generator function implemented using Python}
-\end{figure}
-
-Of course, as shown in the final comments in the \textbf{RSG} code listing in \textbf{\hyperref[LST_RSG]{Listing \ref{LST_RSG}}}, we can use that basic function to \textbf{generate random ANYTHING!} 
-
-It could be used to generate random numbers --- whether individual digits such as 1, 5 or 0,.. but also sequences or n-grams of them --- just depending on what kind of sequence we pass in as the source, how long we wish the output to be and what we do with the result. 
-
-The \textbf{RSG} could be used to compute long DNA sequences using a clever invocation such as:\\
-
-
-\fbox{
-\begin{minipage}{0.9\textwidth}
-\texttt{
-N=3*200; print(`'.join(str(c) for c in rsg(N,[`A',`T',`C',`G'])));
-}
-
-\end{minipage}}
-\\
-
-As shown in the following listing, that little code-golf snippet does indeed perform impressively well!
-
-\begin{figure}[H]
-  \begin{center}
-  \begin{lstlisting}[caption={A RANDOM DNA SEQUENCE}, label={LST_RANDSEQ}, frame=single, numbers=none, basicstyle=\ttfamily,  commentstyle=\color{blue}]
-
-TATACGGCAAGCGATGAGATATCAAGCTAATCGATAGGCAACGAGACACCAGGAGACGCGT
-CAGGCAACAAGGAATTAAGTCACGCGTCAAGCTATGAGATACTAAGCAACACGGTAGGCAA
-CGAGACAATAGGAGATGCGCCAGGCGACAAGGAATCAAGTTATCCGACAAGCAATGAGATA
-GTAAGCGACGCGGTAGGCAACGAGACATAAGGAAACGCGCCAGGCCACAAGGAATCAAGTT
-ATACGGCAAGCGATGAGATATCAAGCTATTCGATAGGCAACGAGACACCAGGAGTCGCTTC
-CGTCAACATCGAACTCATTCCCGCCTCAACCTATGCCATACTAACCAATACCGTTGCCAAC
-GATACAACTGCAGTTGCTCCCGTAGACATCGATCCCATTTCTCACACAACCATTGCCATAG
-TAACCGAGGACGTTGCCAGCGATACATTTGCAATTGCTCCCGTACGCATCGCTCACATCTT
-GAGTGCTATAGTCGCTACGTTCATCTTCTGTACTGTCAACGCTACGCCCGTCGTGGCTTCT
-GTGACCACTGCTTACATCCTCGATTCTATGTTCGCTACACGCATCATAACT
-
-\end{lstlisting}
-  \end{center}
-  \caption{A Random DNA Sequence of exactly 200 random codons as generated using our \textbf{RSG}$(n,\Theta)$ random sequence generator algorithm.}
-  \label{RandomDNASEQ}
-\end{figure}
-
-The sheer significance of having a properly working generator-transformer such as the \textbf{RSG} is difficult --- almost impossible, to explain. 
 
 
 
@@ -6868,7 +7213,7 @@ Otherwise, note that; looking at a TEA program as depicted in \textbf{\hyperref[
 
   \begin{tcolorbox}[teaterminalstyle, title=TEA Program: SC-Generator, breakable]
     %\begin{lstlisting}[language=TEA,breaklines=true]
-  \begin{lstlisting}[language=TEA, caption={SC-Generator}, label={LSTSCGEN}, numbers=left]
+  \begin{lstlisting}[language=TEA, label={LSTSCGEN}, numbers=left]
 v:vIN
 u!:
 v:vMSS
@@ -6910,11 +7255,8 @@ And the same program in its minified form is as:
 
 
   \begin{tcolorbox}[teaterminalstyle, title=TEA Program: SC-Generator Minified, breakable]
-  \begin{lstlisting}[language=TEA, caption={SC-Generator Minified}, label={LSTSCGENMINI}, breaklines=true]
-v:vIN|u!:|v:vMSS|v:vSC:{}|l:lPROC|y:vMSS|d!:^.|v:vW|y:vMSS|
-d:^.|v:vMSS|y:vW|f:^$:lEND|y:vIN|d*!:vW|v:|v!:|v:vF|v:vD:_|
-g*:_:vW:vF:vD|v:vSC1|g*:{}:vSC:vSC1|v:vSC|j:lPROC|l:lEND|
-y:vSC|r!:__:.|d:.$
+  \begin{lstlisting}[language=TEA, label={LSTSCGENMINI}, breaklines=true]
+v:vIN|u!:|v:vMSS|v:vSC:{}|l:lPROC|y:vMSS|d!:^.|v:vW|y:vMSS|d:^.|v:vMSS|y:vW|f:^$:lEND|y:vIN|d*!:vW|v:|v!:|v:vF|v:vD:_|g*:_:vW:vF:vD|v:vSC1|g*:{}:vSC:vSC1|v:vSC|j:lPROC|l:lEND|y:vSC|r!:__:.|d:.$
   \end{lstlisting}
   \end{tcolorbox}
 

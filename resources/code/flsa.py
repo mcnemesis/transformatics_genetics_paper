@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import math
 
-def lu_shuffler_a(s, k):
+def flsa(s, k):
     n = len(s)
     if n < 2:
         return s,k #essentially, nothing to shuffle
@@ -37,5 +37,5 @@ k = len(s)
 s_k = 0
 print(f"GIVEN s={s}")
 while s_k < k:
-    new_s_b,last_k_b = lu_shuffler_a(s,s_k) # for FLSA
+    new_s_b,last_k_b = flsa(s,s_k) # for FLSA
     s_k += 1
