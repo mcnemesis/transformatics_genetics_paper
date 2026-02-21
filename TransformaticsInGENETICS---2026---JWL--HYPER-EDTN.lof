@@ -30,7 +30,7 @@
 \contentsline {figure}{\numberline {8.18}{\ignorespaces The \textbf {RSG}$(n,\Theta )$ random sequence generator function implemented using Python}}{100}{figure.caption.37}%
 \contentsline {figure}{\numberline {8.19}{\ignorespaces A Random DNA Sequence of exactly 200 random codons as generated using our \textbf {RSG}$(n,\Theta )$ random sequence generator algorithm.}}{108}{figure.caption.39}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces An illustration of the gene translation process in a cell via protein-factories known as ribosomes, and which was sourced from \cite {geeksforgeeks2024protein}}}{112}{figure.caption.41}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces An illustration of the gene translation process in a cell via protein-factories known as ribosomes (Illustration credit: GeeksForGeeks.org\cite {geeksforgeeks2024protein})}}{112}{figure.caption.41}%
 \contentsline {figure}{\numberline {9.2}{\ignorespaces \textbf {Flow-Chart summarizing the Ribosome-based Protein-Synthesis Process in a Living Cell}}}{118}{figure.caption.44}%
 \contentsline {figure}{\numberline {9.3}{\ignorespaces \textbf {The RIBOSOME State Machine}}}{119}{figure.caption.45}%
 \addvspace {10\p@ }

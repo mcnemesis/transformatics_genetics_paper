@@ -49,9 +49,9 @@
 \contentsline {subsection}{\numberline {8.3.7}The RSG Function}{99}{subsection.8.3.7}%
 \contentsline {subsubsection}{The Complete RSG Implementation}{102}{section*.38}%
 \contentsline {chapter}{\numberline {9}Gene Expression in Living Organisms Leveraging Genetic Code (DNA $\rightarrow mRNA \rightarrow Protein \rightarrow $ Organism)}{111}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Protein Manufacturing Algorithm}{117}{section.9.1}%
+\contentsline {section}{\numberline {9.1}The Protein Manufacturing Algorithm}{117}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Gene Expression in Living Things and for Bio-Automata via Ribosomes}{121}{section.9.2}%
-\contentsline {chapter}{\numberline {10}Transformatics and Lu-Genome Expression System in Bio-Automata}{123}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Transformatics and the Lu-Genome Expression System in Bio-Automata}{123}{chapter.10}%
 \contentsline {section}{\numberline {10.1}The Ozin Genetic Code Cipher}{125}{section.10.1}%
 \contentsline {subsection}{\numberline {10.1.1}$\Omega $-to-OZIN Genetic Code Transcription Rules}{128}{subsection.10.1.1}%
 \contentsline {subsection}{\numberline {10.1.2}Examples of $\Omega $-Genetic Code Transcription}{129}{subsection.10.1.2}%

@@ -4621,27 +4621,19 @@ Thus you must note that the sheer significance of having a properly working gene
 
 
 
-{
-\LARGE
 
-\hl{
-
-TODO: Continue indexing starting from here
-
-}
-}
-
-
-{
-\LARGE
-
-\hl{TODO: proceed from here...}
-}
 
 
 
 \chapter{Gene Expression in Living Organisms Leveraging Genetic Code (DNA $\rightarrow mRNA \rightarrow Protein \rightarrow$ Organism)}
 \label{SEC05}
+
+
+In earlier parts of this book, we have looked at the stuff that underlies a special kind of code from which biological life manifests. This \textit{genetic code} is a kind of natural computer program that contains and specifies special instructions by which the mechanisms of nature\footnote{\textbf{FUTURE WORK:} We have a potentially fundamental philosophical problem here; The rather \textit{weird} aspect of this entire gene and genome expression mechanism underlying the manifestation of biological life from genetic code, is that, the very mechanisms or material substratum via which such genetic processing proceeds --- the cells and proteins and protein factories, etc. that process DNA and RNA code --- are themselves results of DNA or built up from genetic code!\index{genetic code!origin problem} It is such a fine contrast from how artificial computing works; physical computers (the equivalent of physical organisms) are made of silicon and metals and plastic, etc. \textbf{but} the software that runs them (equivalent of genetic code) is perhaps best understood as just the electricity (emergent property of the physical matter) flowing through the physical machine in particular ways, and which, from some levels of abstraction might even seem as though it were \textit{immaterial} --- a good analogy for relating software to the ``spirit" or ``soul" that underlies material lifeforms, but though, that too somewhat doesn't work well, because, software can be pinned down to the action of say electrons and ions in a physical computer, just like the materials making up the physical computer itself are likewise fundamentally made of similar stuff! 
+
+And then there's the other major problem; it somewhat feels like there is a chicken-egg problem here... a question, if not perhaps in the domain of bio-physics, perhaps one of philosophy; what happened before DNA was, and before there was genetic code to specify the formation of life's building blocks? Is it that DNA had to come first, or that there existed life in some form, and then genetic code manifested from that as a later refinement of what could have started out as a purely haphazard process? And so that, if it proceeded thus in the beginning, why can't it be possible to create or manifest biological life from anything else but genetic code [anymore]?
+
+And then of course there is the interesting matter of [genetic] code executing genetic code! Reminds one of Lutalo's \textbf{UPLT} --- Universal Programming Language Theory --- applicable to software and modern [digital] computers; \textit{that all programming is text-processing and that programs are essentially \textbf{text processing text}}\cite{lutalo2024software}! It feels like, for biological life, all ``biological software" or ``biological processing" is nothing other than genetic code executing [other] genetic code!} process na-Sequences so as to decide how to bring forth particular kinds of life or life-functions.
 
 
 \vspace{2em}
@@ -4664,6 +4656,10 @@ Code: A rule for transforming a message from one symbolic form (the source alpha
 \vspace{2em}
 
 
+In a later section (\textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}}) we shall deal with [whole] genome expression --- a kind of na-Sequence processing that results in not just bits, but an entire living organism, and shall especially deal with a particular hypothetical system of genome expression as well as use the modal sequence concept introduced earlier on, as the basis for exploring the expression or manifestation of an entire organism from just its basic genetic code. In this section though, we shall focus on the [lesser] processes that underlie whole genome expression; particularly, actual \textbf{gene expression} in real and natural biological systems, and shall specifically focus more on expression at a molecular level --- essentially, at the level of protein manifestation via gene expression.\\
+
+
+
 \begin{table}[H]
   \centering
   \begin{tabular}{p{0.95\textwidth}|} % Left border only
@@ -4671,7 +4667,7 @@ Code: A rule for transforming a message from one symbolic form (the source alpha
     \begin{figure}[H]
       \centering
       \includegraphics[width=0.9\textwidth]{resources/images/protein_synthesis.png} \\
-       \caption{An illustration of the gene translation process in a cell via protein-factories known as ribosomes, and which was sourced from \cite{geeksforgeeks2024protein}}
+       \caption{An illustration of the gene translation process in a cell via protein-factories known as ribosomes (Illustration credit: GeeksForGeeks.org\cite{geeksforgeeks2024protein})}
       \label{FIG2}
     \end{figure} \\
     \cline{1-1} % Bottom border only
@@ -4680,15 +4676,14 @@ Code: A rule for transforming a message from one symbolic form (the source alpha
 
 
 
+It shall be interesting to note that for genetic code in natural automata (nature-like bio-automata\footnote{My research assistant --- thanks \textbf{Microsoft Copilot}, did bring it to my attention that the term ``bio-automata" is ``usually reserved for models or conceptual representations of biological systems --- especially those designed to simulate behaviors, growth patterns, or decisions-making processes using predefined rules, like in cellular automata or agent-based modeling." And thus, much as I often find it attractive to use the term --- as an umbrella term including actual living organisms (which, from the perspective of the computer scientist in me, are still correctly classifiable under the ``biological automata" category since they actually operate on some [inherent ] natural [software] programs in their DNA just like artificial automata do [based on digital software]), however, perhaps it is indeed correct to relax any such usages moving forward.} and generally living things), the most important reason the genetic coding language exists, is so that the body/host-organism system can produce required materials as and when they are needed or demanded for. This for example means producing new or extra body tissue in a still growing organism or in one with any damaged or missing tissue, and essentially, such productions are about the synthesis of particular molecules in the body's system that are basically proteins, and from which then, other materials are then [later] formed or regulated. The diagram in \textbf{\hyperref[FIG2]{Figure \ref{FIG2}}} is a basic illustration of the protein formation process for living organisms --- eukaryotes especially.
     
-    
-In a later section (\textbf{\hyperref[SEC4]{Chapter \ref{SEC4}}}) we shall deal with [whole] genome expression, and shall especially deal with a particular hypothetical system of genome expression as well as use the modal sequence concept as the basis for exploring expression or manifestation of an entire organism from just its basic genetic code. In this section though, we shall focus on actual expression in real and natural biological systems, and shall focus more on expression at a molecular level --- essentially, at the level of protein manifestation via \textbf{gene expression}.\\
 
-
+\vspace{2em}
 \fbox{\begin{minipage}{0.9\textwidth}
 \large
 
-\begin{defn}[The \textbf{DNA and RNA Codon Symbol Sets}, $\psi_{DNA}^*$ and $\psi_{RNA}^*$]
+\begin{defn}[The \textbf{DNA and RNA Codon Symbol Sets}, $\psi_{DNA}^*$ and $\psi_{RNA}^*$ \index{symbol set!codon}]
 \label{DEFNDNACODONSS}
 If $\Theta_n$ is a DNA sequence of length $n$ --- meaning, it contains $n$ nucleotides or $n$ symbols from $\psi_{DNA}$, then, if each triplet of symbols in $\Theta_n$ is replaced by its corresponding 3-gram/CODON, then, we can re-write $\Theta_n$ as a sequence of terms from a special symbol set $\psi_{DNA}^*$:
 
@@ -4714,7 +4709,7 @@ Further, since RNA sequences are similar to DNA sequences with just the symbols 
 \psi_{RNA}^* = \langle \beta_1, \beta_2, \cdots , \beta_{64} \rangle
 \end{equation}
 
-And the names of the codons in $\psi_{RNA}^*$ are similar to those in $\psi_{DNA}^*$ by the following rule:
+And the names of the codons\index{codon}\index{amino acid} in $\psi_{RNA}^*$ are similar to those in $\psi_{DNA}^*$ by the following rule:
 
 \begin{equation}
 \label{EQNAMINGRNACodons}
@@ -4724,16 +4719,14 @@ name(\beta_i) = name(\alpha_i) \quad \forall \beta_i \in \psi_{RNA}^*: \beta_i =
 
 \end{defn}
 \end{minipage}}
-\\
+\vspace{2em}
 
-
-It shall be interesting to note that for genetic code in natural automata (nature-like bio-automata\footnote{My research assistant --- thanks \textbf{Microsoft Copilot}, did bring it to my attention that the term ``bio-automata" is ``usually reserved for models or conceptual representations of biological systems --- especially those designed to simulate behaviors, growth patterns, or decisions-making processes using predefined rules, like in cellular automata or agent-based modeling." And thus, much as I often find it attractive to use the term --- as an umbrella term including actual living organisms which, from the perspective of the computer scientist in me, are still correctly classifiable under the ``biological automata" category in my opinion since they actually operate on some infallible inherent natural programs in their DNA. But, I shall adhere to the advise of my assistant for now.} and generally living things), the most important reason the genetic coding language exists, is so that the body/host-organism system can produce required materials as and when they are needed or demanded for. This for example means producing new or extra body tissue in a still growing organism or in one with any damaged or missing tissue, and essentially, such productions are about the synthesis of particular molecules in the body's system that are basically proteins. The diagram in \textbf{\hyperref[FIG2]{Figure \ref{FIG2}}} is a basic illustration of the process for living organisms --- eukaryotes especially.
 
 For simplicity's sake, we can assume the following summarization of the basic process that fully and correctly breaks down the typical ordeal:
 
-First, we shall assume that given the protein is just a chain of amino-acids, we might as well just think of it as though it were a sequence of some terms, and thus, in keeping with the notation from transformatics, we might just refer to such a protein with our usual typical \textbf{resultant sequence} symbol --- $\Theta^*$.
+First, we shall assume that given the protein is just a chain of amino-acids, we might as well just think of it as though it were a sequence of some terms, and thus, in keeping with the notation from transformatics, we might just refer to such a protein with our usual typical \textbf{resultant sequence} symbol --- $\Theta^*$ --- especially when we are talking about it as a result of some prior processing of another kind of sequence.
 
-And so, given that these proteins are actually nearly direct/1-to-1 mappings from the corresponding DNA sub-sequence code of a finite length, we might then refer to the DNA sequence that encodes the instructions for producing $\Theta^*$ with just the basic typical transformatics \textbf{source sequence} symbol: $\Theta$ --- more conveniently, because we wish to also talk of the length of the sequence, we might preferably write the DNA sequence code of length \textbf{n} (meaning for example, \textbf{it contains exactly n DNA-codons}), as $\Theta_n$. So, for example we might more fully express $\Theta_n$ as such:
+And so, given that these proteins are actually nearly direct/1-to-1 mappings from the corresponding DNA sub-sequence code of a finite length, we might then refer to the DNA sequence that encodes the instructions for producing $\Theta^*$ with just the basic typical transformatics \textbf{source sequence} symbol: $\Theta$ --- more conveniently, because we wish to also talk of the length of the sequence, we might preferably write the DNA sequence code of length \textbf{n} (meaning for example, \textbf{it contains exactly n DNA-codons}), as $\Theta_n$. So, for example we might more clearly express $\Theta_n$ as such:
 
 \begin{equation}
 \label{EQ1}
@@ -4764,14 +4757,14 @@ Thus we might encounter a gene such as $\Theta_4$ composed of exactly 4 codons a
 \Theta_4 = \langle \langle A, T, G \rangle, \langle A, A, A \rangle, \langle T, T, A \rangle, \langle T, A, G \rangle \rangle
 \end{equation}\\
 
-Which, might also equivalently be expressed as a flattened sequence if the fact that the nucleobases it contains are always read in triplets/3-grams/tuples of 3 at a time. So that we can merely write it as:\\
+Which might also be equivalently expressed as a flattened sequence if the fact that the nucleobases it contains are always read in triplets/3-grams/tuples of 3 at a time isn't that important. So that we can merely write it as:\\
 
  \begin{equation}
 \label{EQ5}
 \Theta_{4 \times 3} = \langle  A, T, G, A, A, A, T, T, A, T, A, G \rangle
 \end{equation}\\
 
-So we imply that under the flat-structure notation, the sequence has exactly $4 \times 3$ elements. By this fact and the observation that the previous nested notation merely helps to group together each codon's members within a meaningful sub-sequence, and that the order is otherwise maintained in the flat-sequence structure, we might then also equivalently express the same actual DNA code sequence as an $n \times 3$ matrix as shown below:
+So we imply by that expression, that under the flat-structure notation, the sequence has exactly $4 \times 3 = 12$ elements. By this fact and the observation that the previous nested notation merely helps to group together each codon's members within a meaningful sub-sequence, and that the order is otherwise maintained in the flat-sequence structure, we might then also equivalently express the same actual DNA code sequence as an $n \times 3$ matrix as shown below:
 
  \begin{equation}
 \label{EQ5a}
@@ -4792,10 +4785,10 @@ Whether to actually express it as a $3 \times n$ matrix or as $n \times 3$ might
 \Theta_4^* = \langle \langle A, U, G \rangle, \langle A, A, A \rangle, \langle U, U, A \rangle, \langle U, A, G \rangle \rangle
 \end{equation}\\
 
-Which is what we would obtain after a necessary \textbf{DNA} $\rightarrow$ \textbf{mRNA} transform attainable via a DNA sequence transformer we might define as such:\\
+Which is what we would obtain after a necessary \textbf{DNA} $\rightarrow$ \textbf{mRNA} transform attainable via a DNA sequence transformer we might define as such:
 
-
-\begin{transf}[\textbf{DNA to mRNA Encoder}]
+\vspace{1em}
+\begin{transf}[\textbf{DNA to mRNA Encoder}\index{transformer!mRNA Encoder}]
 \label{TRANSF1}
 $\Theta_n \quad \xrightarrow{O_{mRNA-encode}(\cdot)} \quad \Theta^*_n \quad;$\\
 $\forall a_i \in \Theta_n = \langle a_i,\rangle:n \in \mathbb{N}, \quad a_i \in \psi_{DNA} \equiv \{A, T, C, G\}$,\\
@@ -4803,6 +4796,7 @@ and if $\exists a_i \in \Theta_n : a_i = T \implies \exists a_i^* \in \Theta^*_n
 Otherwise $a_i = a_i^* \implies \invpi(a_i = T \in \Theta_n) = \invpi(U \in \Theta^*_n) \quad \land \quad \invpi(\Theta_n) = \invpi(\Theta^*_n) = n$.
 
 \end{transf}
+\vspace{1em}
 
 \begin{table}[h]
   \centering
@@ -4827,7 +4821,7 @@ Otherwise $a_i = a_i^* \implies \invpi(a_i = T \in \Theta_n) = \invpi(U \in \The
   \label{TAB1}
 \end{table}
 
-Thus, though the gene in its DNA form comprised of the sequence of amino-acid codes named as in \textbf{\hyperref[TAB1]{Table \ref{TAB1}}}, and yet, the resultant sequence after applying \textbf{\hyperref[TRANSF1]{Transformer \ref{TRANSF1}}} to $\Theta_4$ would be as explained in \textbf{\hyperref[TAB2]{Table \ref{TAB2}}}.
+Thus, though the gene in its DNA form comprised of the sequence of amino-acid codes named as in \textbf{\hyperref[TAB1]{Table \ref{TAB1}}}, and yet, the resultant sequence after applying \textbf{\hyperref[TRANSF1]{Transformer \ref{TRANSF1}}} to $\Theta_4$ would be as illustrated in \textbf{\hyperref[TAB2]{Table \ref{TAB2}}}.
 
 
 \begin{table}[h]
@@ -4855,18 +4849,21 @@ Thus, though the gene in its DNA form comprised of the sequence of amino-acid co
 
 So, note that the names (and code-names) of the mRNA encoded codons stay the same as those of their corresponding DNA-encoded codons in both tables --- this is actually generally/conventionally so. But also, note that the functions of the individual codons in either scenario are likewise expressed the same. So, this is because, when the genetic code is actually being executed (such as in standard protein-synthesis\footnote{\textbf{NOTE} that, in reality, protein synthesis is just the tip-of-the-iceberg for what DNA is actually useful for. \textbf{\hyperref[APPOTHERFUNC]{Chapter  \ref{APPOTHERFUNC}}} in the appendix of this book does cover, in summary, 6 other major functions of DNA in a biological system that the reader might wish to be aware of.}), the processor (the ribosome) merely operates on the mRNA-encoded gene and not directly on the original DNA-encoded code sequences.
 
-Also, important to note, the processor only produces an amino acid (as part of the protein synthesis program), only after having encountered a ``start" instruction, and we know that such instructions are the kind encoded by \textbf{start codons}, of which the most universally utilized START-codon is \textbf{ATG/AUG} known as Methionine, but also other rare-scenario\footnote{They are used less frequently, mostly in prokaryotes and some organelles. When used as START codons, they still recruit the initiator tRNA and translate as \textbf{methionine}, not their usual amino acid\cite{copilot_dna_assistant}} START-codons include the mRNA codes GUG and UUG --- used as such in prokaryotes, and then AUU and AUA, used as such in humans only. 
+Also, important to note, the processor only produces an amino acid (as part of the protein synthesis program), only after having encountered a ``start" instruction, and we know that such instructions are the kind encoded by \textbf{start codons}, of which the most universally utilized START-codon\index{START-codon} is \textbf{ATG/AUG} known as Methionine, but also other rare-scenario\footnote{They are used less frequently, mostly in prokaryotes and some organelles. When used as START codons, they still recruit the initiator tRNA and translate as \textbf{methionine}, not their usual amino acid\cite{copilot_dna_assistant}} START-codons include the mRNA codes GUG and UUG --- used as such in prokaryotes, and then AUU and AUA, used as such in humans only. 
 
-And then, the processor will stop the protein construction task once it encounters a gene instruction of the ``stop" kind. These are encoded using the \textbf{stop codons}, and these are strictly any one of: TAA/UAA (Ochre), TAG/UAG (Amber) and TGA/UGA (Opal)\cite{newsmedical2025startcodons}.
+And then, the processor will stop the protein construction task once it encounters a gene instruction of the ``stop" kind. These are encoded using the \textbf{stop codons}\index{STOP-codon}, and these are strictly any one of: TAA/UAA (Ochre), TAG/UAG (Amber) and TGA/UGA (Opal)\cite{newsmedical2025startcodons}.
 
 That said, further note that, after processing the gene, and after encountering a stop-codon, the ribosome (also understood as the ``protein factory") is then triggered to detach (from the ``assembly line") and then release/return the final assembled protein thus far. These resultant proteins are basically just a chain of \textbf{actual amino acids} generally starting with the Met-amino acid.
 
 And then, further note that, in case any codons were encountered before the AUG (or rather \textit{start-codon}), these shall then be merely skipped --- they are not processed or would not translate into any product such as the usual case of producing an amino-acid (this, even if they would normally have triggered the production of some amino acid). 
 
-\section{Protein Manufacturing Algorithm}
+These concepts and facts are the vital, fundamental truths known to underlie gene expression and the processing of gene programs, however, in the following sections, we shall undertake the task of further refining and rigorously, formally specifying what exactly goes on when such genetic code processing happens in a living organism or cell.
+
+
+\section{The Protein Manufacturing Algorithm}
 \label{SECPROT}
 
-So, overall, we might sum up this critically important protein generation process with a convenient formalism such as with a protein-production algorithm expressed as in the flow-chart depicted in \textbf{\hyperref[FIG3]{Figure \ref{FIG3}}}.
+So, overall, we might sum up this critically important protein generation process with a convenient formalism such as with a protein-production algorithm expressed as with a flow-chart --- depicted in \textbf{\hyperref[FIG3]{Figure \ref{FIG3}}} hereafter.
 
 
 \begin{figure}[H]
@@ -4881,7 +4878,7 @@ So, overall, we might sum up this critically important protein generation proces
 That process which is depicted in \textbf{\hyperref[FIG3]{Figure \ref{FIG3}}} is how the ribosome protein-manufacturing\index{ribosome!flow-chart} factory operates at a cellular level as depicted using a \textbf{Flow Chart Diagram} --- meaning, the states of the operating environment as well as those of the operator (the ribosome) are interlaced with decision-making scenarios so as to bring to mind the logic behind how the process proceeds. However, in a different diagram --- the \textbf{Ribosome State Machine} as depicted in \textbf{\hyperref[FIG4]{Figure \ref{FIG4}}}, we clearly abstract everything else away and focus on what actually happens from the point-of-view of the gene code sequence processor --- the ribosome it self. 
 
 
-In a way, that state machine not only depicts the various states the ribosome shall be in while operating on incoming gene-code sequences (kind of \textit{requests for solutions/solution-instances/proteins} to problems/specifications/genes) and then how it goes about producing the out-going amino-acid sequences (the proteins). It might even start to feel like the ribosome is a kind of 3D-printer, which, when presented with the specifications of a particular 3D-specification-sequence, knows to process it (translate it) and then produce the required/specified [3D-]object that is in the context of biological systems we are looking at here, essentially some protein\footnote{\textbf{FUTURE WORK}: Of course, for someone with a background in computer science and who also has interest in designing not just computer programs but also new kinds of computers --- abstract machines or not, studying the ribosome from a computing theory and computer architecture perspective --- such as; so one appreciates what Instruction Set the ribosome employs; how the ribosome compares to say a Von-Neumann architecture machine; is it Turing Complete or not? How might a pure-text processing languages such as TEA\cite{lutalo2024software} implement a ribosome simulation in say a web-browser environment?\cite{lutalo_tea_web} or that failing at that, at least allow for the creation of a protein generator or even an entire organism generator as a simulation of how gene code sequences can be translated into sequences of multi-dimension objects? etc.}.
+In a way, that state machine not only depicts the various states the ribosome shall be in while operating on incoming gene-code sequences (kind of \textit{requests for solutions/solution-instances/proteins} to problems/specifications/genes) and then how it goes about producing the out-going amino-acid sequences (the proteins). It might even start to feel like the ribosome is a kind of programmable 3D-printer, which, when presented with the specifications of a particular 3D-specification-sequence, knows to process it (translate it) and then produce the required/specified [3D-]object that is, in the context of biological systems we are looking at here, essentially some protein\footnote{\textbf{FUTURE WORK}: Of course, for someone with a background in computer science and who also has interest in designing not just computer programs but also new kinds of computers --- abstract machines or not, studying the ribosome from a computing theory and computer architecture perspective --- such as; so one appreciates what Instruction Set the ribosome employs; how the ribosome compares to say a Von-Neumann architecture machine; is it Turing Complete or not? How might a pure-text processing language such as TEA\cite{lutalo2024software} implement a ribosome simulation in say a web-browser environment\cite{lutalo_tea_web}? Or that, failing at that, at least allow for the creation of a protein generator or even an entire organism generator as a simulation of how gene code sequences can be translated into sequences of multi-dimension objects? etc.}.
 
 
 \begin{figure}[H]
@@ -4893,43 +4890,49 @@ In a way, that state machine not only depicts the various states the ribosome sh
 \end{figure}
 
 
-Before concluding this section on biological computing systems of the sequence generator kind\cite{lutalo2025transformatic}, it should be worth noting that, as depicted in \textbf{\hyperref[FIG4]{Figure \ref{FIG4}}}, the process that is naturally found in every living thing's tiniest cells (excluding the special case of viruses as we already saw in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}), could be --- as with any legitimate state machine,  used to implement a proof-of-concept [artificial] ribosome processor (or a \textit{ribosome computer}) --- a way to implement bio-automatons that behave like or function like a ribosome; which can process code similar to DNA and mRNA for starters, but also which, generally, operate on sequences to produce other (possibly more complex) sequences. 
+Before concluding this section on biological computing systems of the sequence generator kind\cite{lutalo2025transformatic}, it should be worth noting that, as depicted in \textbf{\hyperref[FIG4]{Figure \ref{FIG4}}}, the process that is naturally found in every living thing's tiniest cells (excluding the special case of viruses as we already saw in \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}), could be --- as with any legitimate state machine,  used to implement a proof-of-concept [artificial] ribosome processor (or a \textit{ribosome computer}\index{ribosome computer}) --- a way to implement bio-automatons that behave like or function like a ribosome; which can process code similar to DNA and mRNA for starters, but also which, generally, operate on n-gram sequences to produce other (possibly more complex) n-gram sequences. 
 
-Thinking up \textbf{a robotic ribosome} might not be something that is immediately required in contemporary medicine or in-organism computing systems, but might be a concept worth adapting or exploring, for the design and implementation of a self-contained robotic factory for the manufacturing of otherwise complex [multi-form] products producible via use of a sequence-processing, assembly-line kind of method, just like how proteins are produced in a bio-cell by the ribosome, and with the entire process regulated or guided merely using instructions in the form of a sequence [of few symbols from some finite, minimalistic alphabet].
+Thinking up \textbf{a robotic ribosome} might not be something that is immediately required in contemporary medicine or \textit{in-organism}\footnote{Meaning something like ``invasive", nano or embedded computing of a hybrid/bio-artificial kind perhaps.} computing systems, but might be a concept worth adapting or exploring, for the design and implementation of a self-contained robotic factory for the manufacturing of otherwise complex [multi-form] products producible via use of a sequence-processing, assembly-line kind of method, just like how proteins are produced in a bio-cell by the ribosome, and with the entire process regulated or guided merely using instructions in the form of a sequence [of few symbols from some finite, minimalistic alphabet], spanning a special kind of ``bio-instruction set".
 
-We might for example think of ``a sequence from which a complete, particular type of car can be manufactured at will" or ``a sequence from which certain kinds of sequential-form/sequence-based\footnote{Vertebrates anyone(?)} artificial, but also organic creatures, implements and bots might be systematically assembled at will or on-demand". These kinds of printers --- which, unlike mere printers of \textit{things on paper}, and not just like contemporary 3D-printers that only know to produce plastic variants of models they are fed with, might be the kind of printers with which we might entertain the idea of being able to \textit{print a human}\footnote{\textbf{FUTURE WORK}: Though we might touch on it in a future paper on philosophy --- say one dealing with \textit{Computational Mysticism}\cite{lutalo2024mysticism}, it might be interesting to air-out the author's illuminating view that unlike most other bio-automata such as beasts in the wild or fish in the seas, and definitely not as with silicon-based automatons such as GPT-powered modern \textit{disincarnate} artificial entities --- nor the likes of the ZHA qAGI\cite{jwlzha}, that the human in particular, has this peculiar attribute to them that, apart from just their material substratum as any physical robot might possess or need --- and which is say the domain of ``material producers" such as the ribosome is, and away from their conceptual/software substratum too, they seem to, or perhaps arguably, also possess a preternatural layer of existence that perhaps is or might not have anything to do with their DNA/material-blueprint(?) A better or more precise classification term for such [\textit{preter-}]intelligent -mata/matter(?) might be the still underground term and concept of a \textit{Psymaton} or \textbf{Psymata} --- bits of this line of inquiry have already been touched upon in the Psymaz Interview\cite{lutalo2025unraveling}.}. Such might also be the kind of essential aspects of some machinery with which we might \textbf{teleport}\footnote{Refer to the appendix, \textbf{\hyperref[DEFTELEPORTATION]{Definition \ref{DEFTELEPORTATION}}} for some treatment of this concept.} a cow or a banana, etc. It might be interesting and worth it, to explore, as we look into the far-future, where, with humanity's ability to travel and survive in remote and ``unnatural" worlds away from their biological home environments (such as Earth's biosphere), might compel them to have to develop new kinds of machines that would not only print out ideas on paper, but also be able \textbf{to print complete food ready-to-eat}, medicines to particular kinds of ailments, certain kinds of companion creatures or species, etc. Essentially, the means to survive on/in alien worlds by leveraging smarter, general-purpose sequence processors and generators in form of general-purpose printers. 
+Thus, extending this idea of creating things based on genetic code, and not necessarily something to do with \textbf{genetic programming}\index{genetic programming}, we might for example think of ``a code sequence from which a complete, particular type of car can be manufactured at will" or ``a sequence from which certain kinds of sequential-form/sequence-based\footnote{Vertebrates anyone(?)} artificial, but also organic creatures, implements and bots might be systematically assembled at will or on-demand". It might call for special, yet-to-be kinds of ``programmable printers" --- which, unlike mere printers of \textit{things on paper}, and not just like contemporary 3D-printers that only know to produce plastic variants of models they are fed with, might be the kind of printers with which we might entertain the idea of being able to \textit{print a human}\footnote{\textbf{FUTURE WORK}: Though we might touch on it in a future paper on philosophy --- say one dealing with \textit{Computational Mysticism}\cite{lutalo2024mysticism}, it might be interesting to air-out the author's illuminating view that unlike most other bio-automata such as beasts in the wild or fish in the seas, and definitely not as with silicon-based automatons such as GPT-powered modern \textit{disincarnate} artificial entities --- nor the likes of the ZHA qAGI\cite{jwlzha}, that the human in particular, has this peculiar attribute to them, that, apart from just their material substratum as any physical robot might possess or need --- and which is say the domain of ``material producers" such as the ribosome is, and away from their conceptual/software substratum too, they seem to, or perhaps arguably, also possess a preternatural layer of existence that perhaps is or might not have anything to do with their DNA/material-blueprint(?) A better or more precise classification term for such [\textit{preter-}]intelligent -mata/matter(?) might be the still underground term and concept of a \textit{Psymaton} or \textbf{Psymata} --- bits of this line of inquiry have already been touched upon in the Psymaz Interview\cite{lutalo2025unraveling}; essentially, we need to answer the question of whether the ``spirit" or ``mind" in man is exactly just a result or consequence of their exact genetic code blueprint. Bits of this discussion have also been touched upon by the author, in their treatment of Psychology and how transformatics might help shed light on problems typically outside of the realm of strict-biological or anatomical studies --- see \cite{Lutalo2025transpsy}.}. Such might also be the kind of essential aspects of some machinery with which we might \textbf{teleport}\footnote{Refer to the appendix, \textbf{\hyperref[DEFTELEPORTATION]{Definition \ref{DEFTELEPORTATION}}} for some treatment of this concept.} a cow or a banana, etc. It might be interesting and worth it, to explore, as we look into the far-future, where, with humanity's ability to travel and survive in remote and ``unnatural" worlds away from their biological home environments (such as Earth's biosphere), whether or not mankind might not be compelled to have to develop new kinds of machines that would not only print out ideas on paper, but also be able \textbf{to print complete food ready-to-eat}, medicines for particular kinds of ailments, certain kinds of companion or life-supporting creatures, artificially re-producing rare or endangered species, etc. Essentially, the means to survive on/in alien worlds by leveraging smarter, general-purpose sequence processors and genetic-code-based material might become a thing not of fiction but of necessity and fact. 
 
-Talking of which, the next section shall help us start to appreciate this perspective of using the case of genetic code sequences and the ribosome sequence processor to think of, reason about artificial, conceptual or hypothetical bio-machines that like the bio-cell can produce complex artefacts via the processing of some kind of instruction sequences --- essentially, programmable bio-automata.
+Talking of which, the next section shall help us start to appreciate this perspective of using the case of genetic code sequences and the ribosome sequence processor, to think of and reason about artificial, conceptual or hypothetical bio-machines that like the bio-cell, can produce complex artefacts via the processing of some kind of instruction sequences --- essentially, [re-]programmable bio-automata.
 
 \section{Gene Expression in Living Things and for Bio-Automata via Ribosomes}
 \label{SEC5}
 
 One might begin by wondering: \textbf{using the concepts from transformatics and pure mathematics, how might we model or express a general and realistic ribosome?} 
 
-A plausible and meaningful solution to this problem would be to begin by acquiring or developing \textit{a rigorous and correct working definition of what a ribosome is.} The answer would follow directly from that, thus our first definition in this section; a formal definition of a ribosome in any system natural or artificial:
+A plausible and meaningful solution to this problem would be to begin by acquiring or developing \textit{a rigorous and correct working definition of what a ribosome is.} The answer would follow directly from that, thus our next definition; a formal specification of a ribosome in any system natural or artificial:
 
 
 %\fbox{\begin{minipage}{0.9\textwidth}
 
-\begin{defn}[A \textbf{Ribosome}]
+\vspace{2em}
+\begin{defn}[A \textbf{Ribosome}\index{definition!ribosome}]
 \label{DEFRIBOSOME}
 Assuming we re-write a sequence of DNA code in terms of the [ordered] sequence of nucleotides it contains, as in \textbf{\hyperref[EQ3]{Equation \ref{EQ3}}} re-written as in \textbf{\hyperref[EQ7]{Equation \ref{EQ7}}}:
 
+\vspace{1em}
  \begin{equation}
 \label{EQ7}
 \Theta_n = \{a_i \quad | \quad a_i = \prod\limits_{\rho \in \psi_{DNA}}^3 \rho \quad \land \quad n \in \mathbb{N} \}
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
-$\Theta_n$ would then be any sequence of DNA-codons of length $n$, equivalent to a flat-structure  sequence of nucleotides of length $n \times 3$. We can then produce mRNA-codons from $\Theta_n$ as per \textbf{\hyperref[TRANSF1]{Transformer \ref{TRANSF1}}}, so that we produce a new mRNA-codon sequence of length $n$ that is generated as such:
+$\Theta_n$ would then be any sequence of DNA-codons, and of length $n$, equivalent to a first-order sequence of nucleotides of length $n \times 3$. We can then produce mRNA-codons from $\Theta_n$ as per \textbf{\hyperref[TRANSF1]{Transformer \ref{TRANSF1}}}, so that we produce a new mRNA-codon sequence of length $n$ that is generated as such:
 
+\vspace{1em}
 \begin{trans}
 \label{TRANS1}
 $\Theta_n \quad \xrightarrow{O_{mRNA-encode}(\cdot)} \quad \Theta^*_n;$\\
 $\Theta^*_n = \{a_i^* \quad | \quad a_i^* = \prod\limits_{\rho \in \psi_{RNA}}^3 \rho \} \quad \land \quad \invpi(\Theta_n) = \invpi(\Theta^*_n) = n$
 \end{trans}
+\vspace{1em}
 
 And with $\Theta^*_n$ thus produced, we can then merely generate the corresponding sequence of amino-acids, denoted as $[\Theta^*_n]^*$, via the following mRNA to amino-acid transformer: 
 
+\vspace{1em}
 \begin{transf}[\textbf{mRNA to Amino-Acid Translator}]
 \label{TRANSF2}
 $ $\\
@@ -4940,10 +4943,11 @@ $\Theta^*_n \quad \xrightarrow{O_{mRNA-translate}(\cdot)} \quad [\Theta^*_n]^* \
 \end{enumerate}
 $\qed$
 \end{transf}
+\vspace{2em}
 
 A \textbf{Ribosome} then, is any combination of transformers that can result in $[\Theta^*_n]^*$ when presented with just $\Theta_n$ as per the two intermediate transformer processes \textbf{\hyperref[TRANSF1]{Transformer \ref{TRANSF1}}} and \textbf{\hyperref[TRANSF2]{Transformer \ref{TRANSF2}}}, and whose overall processing algorithm is as depicted in \textbf{\hyperref[FIG3]{Figure \ref{FIG3}}} and its corresponding state machine as in \textbf{\hyperref[FIG4]{Figure \ref{FIG4}}}. 
 
-So, overall, a ribosome is any machine that can implement the combined transformer defined as in \textbf{\hyperref[TRANSF3]{Transformer \ref{TRANSF3}}}:
+So, overall, a ribosome is any machine that can implement the higher-order transformer defined as in \textbf{\hyperref[TRANSF3]{Transformer \ref{TRANSF3}}}:
 
 \vspace{1em}
 
@@ -4951,21 +4955,38 @@ So, overall, a ribosome is any machine that can implement the combined transform
 \label{TRANSF3}
 $ $\\
 $\Theta_n  \xrightarrow{O_{mRNA-encode}(\cdot)}  \Theta^*_n  \xrightarrow{O_{mRNA-translate}(\cdot)} [\Theta^*_n]^*;$\\
-$\invpi([\Theta^*_n]^*) < \invpi(\Theta^*_n) = \invpi(\Theta_n) = n:$\\
+$\invpi([\Theta^*_n]^*) < (\invpi(\Theta^*_n) = \invpi(\Theta_n) = n):$\\
 $\psi_{\Theta} \subseteq \psi_{DNA} \quad \land \psi_{\Theta^*_n} \subseteq \psi_{RNA} \quad \land \psi([\Theta^*_n]^*) \subseteq \psi_{amino-acids}$
 \end{transf}
+\vspace{1em}
 
 And thus, we can finally merely call any machine capable of implementing the protein generator  in \textbf{\hyperref[TRANSF3]{Transformer \ref{TRANSF3}}} as a \textbf{Ribosome}.
 
 \end{defn}
+\vspace{1em}
 
 %\end{minipage}}
 %\\
 
+{
+\LARGE
+
+\hl{
+
+TODO: Continue indexing starting from here
+
+}
+}
 
 
+{
+\LARGE
 
-\chapter{Transformatics and Lu-Genome Expression System in Bio-Automata}
+\hl{TODO: proceed from here...}
+}
+
+
+\chapter{Transformatics and the Lu-Genome Expression System in Bio-Automata}
 \label{SEC4}
 
 

@@ -182,8 +182,18 @@
 \indexentry{transformer!RSG|hyperpage}{100}
 \indexentry{DNA!random sequences|hyperpage}{108}
 \indexentry{artificial intelligence|hyperpage}{108}
+\indexentry{genetic code!origin problem|hyperpage}{111}
+\indexentry{symbol set!codon|hyperpage}{113}
+\indexentry{codon|hyperpage}{113}
+\indexentry{amino acid|hyperpage}{113}
+\indexentry{transformer!mRNA Encoder|hyperpage}{115}
+\indexentry{START-codon|hyperpage}{116}
+\indexentry{STOP-codon|hyperpage}{116}
 \indexentry{ribosome!flow-chart|hyperpage}{118}
 \indexentry{ribosome!state machine|hyperpage}{119}
+\indexentry{ribosome computer|hyperpage}{119}
+\indexentry{genetic programming|hyperpage}{120}
+\indexentry{definition!ribosome|hyperpage}{121}
 \indexentry{generator!protein generator|hyperpage}{122}
 \indexentry{ribosome|hyperpage}{122}
 \indexentry{sequences!decimal|hyperpage}{125}
