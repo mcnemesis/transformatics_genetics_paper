@@ -683,7 +683,7 @@ In the introduction (see \textbf{\hyperref[SEC1]{Chapter \ref{SEC1}}}), I have a
 \begin{defn}[The \textbf{DNA Symbol Set}\index{DNA!symbol set}, $\psi_{DNA}$]
 \label{DEFDNASS}
 
-For any possible sequence of standard \textit{deoxyribonucleic acid} (\textbf{DNA}) for any possible living organism, the distinct nucleic acid base units are known as nucleotides\cite{wikipedia_nucleic_acid}, and these are essentially and exactly only four\footnote{Actually, or rather, in general, for nucleic acid sequences, the bases are four for either DNA or RNA, but, there are also conventions that extend this set to 17 or more to cater for cases like where there might be ambiguity about what the exact nucleotide\index{nucleotides}\index{DNA!nucleotides} in a particular position might be\cite{wikipedia_nucleic_acid} --- possibly during automated inference or sequencing of DNA sequences.};
+For any possible sequence of standard \textit{deoxyribonucleic acid} (\textbf{DNA}) for any possible living organism, the distinct nucleic acid base units are known as nucleotides\cite{wikipedia_nucleic_acid}, and these are essentially and exactly only four\footnote{Actually, or rather, in general, for nucleic acid sequences\index{nucleic acids}, the bases are four for either DNA or RNA, but, there are also conventions that extend this set to 17 or more to cater for cases like where there might be ambiguity about what the exact nucleotide\index{nucleotides}\index{DNA!nucleotides} in a particular position might be\cite{wikipedia_nucleic_acid} --- possibly during automated inference or sequencing of DNA sequences.};
 \begin{itemize}
 \item Adenine(A)
 \item Cytosine(C)
@@ -729,7 +729,7 @@ For all practical purposes unless where we merely wish to emphasize adherence to
 \begin{defn}[The \textbf{RNA Symbol Set}\index{RNA!symbol set}, $\psi_{RNA}$]
 \label{DEFRNASS}
 
-For any possible sequence of standard \textit{ribonucleic acid} (\textbf{RNA}) for any possible living organism, the distinct nucleic acid base units are known as nucleotides\index{nucleotides}\index{RNA!nucleotides}, and these are essentially and exactly only four;
+For any possible sequence of standard \textit{ribonucleic acid} (\textbf{RNA}) for any possible living organism, the distinct nucleic acid base units are known as nucleotides\index{nucleotides}\index{RNA!nucleotides}\index{nucleic acids}, and these are essentially and exactly only four;
 \begin{itemize}
 \item Adenine(A)
 \item Cytosine(C)
@@ -788,7 +788,7 @@ We shall appreciate how relevant and important \textbf{\hyperref[DEFUNA]{Definit
 
 \begin{law}[1 Universal \textbf{Nucleic Acid Identifier Symbol Set}: $\psi_{na}$]
 \label{LAWNA}
- The \textit{universal} symbol set $\psi_{na}$ is spanned by any natural nucleic acid sequence $\Theta$.
+ The \textit{universal} symbol set $\psi_{na}$ is spanned by any natural nucleic acid sequence $\Theta$\index{nucleic acids!universal symbol set}.
 \begin{proof}
 $\psi_{na} = \psi_{DNA} \cup \psi_{RNA} = \langle A, C, G, T, U \rangle \quad \land \quad \forall \omega \in \Theta, \omega \in \psi_{DNA} \lor \omega \in \psi_{RNA}$.
 \end{proof}
@@ -5007,6 +5007,10 @@ TODO: Continue indexing starting from here
 
 \vspace{2em}
 
+In this chapter, we are going to do a lot of creative work besides just the core mathematical analysis and modeling. We are going to explore a phenomena somewhat similar to encountering a computer program's source-file, which, when processed in the right environment, somewhat has the program source code transform [itself?] into some dynamic object complete with a distinct appearance, an identity and the ability to somewhat replicate or reproduce itself!\footnote{A good metaphor for those coming to Genetics with a sane background in fiction and Hollywood entertainment --- such as the stuff, thrilling studies and adventures of \textbf{Professor Walter Bishop}, Agent Olivia Dunham, and Peter Bishop in the sci-fi series \textit{Fringe}. Except, ours isn't really science fiction... Bits of this theory and exploratory pragmatic work might come off as abstract and merely conceptual, but it is all grounded in factual sensibilities and concrete mathematics.}
+
+\vspace{2em}
+
 \noindent
 \begin{minipage}{1\textwidth}
 \vspace{1em}
@@ -5034,7 +5038,7 @@ We shall use \textbf{a thought experiment} and \textit{hypothetical cases} lever
 \begin{minipage}{0.9\textwidth}
 \textbf{Applying Transformatics:}\\
 
-Away from using transformatics to make sense of the differences between organisms based on their genetic code sequences, an even more exciting application of the theory and practical methods of transformatics would be in conceptualizing, analyzing and explaining the important, biological, physical, chemical, informational, mathematical, and \textit{aesthetic} concept of \textbf{genome expression}.
+Away from what we have already encountered in earlier parts of the book; such as using transformatics to make sense of the differences between organisms based on their genetic code sequences; an even more exciting application of the theory and practical methods of transformatics would be in conceptualizing, analyzing and explaining the important biological, physical, chemical, informational, mathematical, and \textit{aesthetic} concept of \textbf{genome expression}; how a sequence of ``symbols" transforms into something sublime --- perhaps only remotely akin to the sequence from which it first originated.
 
 \end{minipage}}
 \\
@@ -5042,33 +5046,37 @@ Away from using transformatics to make sense of the differences between organism
 
 
 \vspace{2em}
-First, we shall define a basic cipher that can encode the basic digits (of base-10), as some unique, but non-digit forms (essentially, with non-digit \textit{glyphs}). This, so when we speak of a living organism --- for example a pine-apple or a feline, we don't expect that in nature, or rather, that by physically dissecting the organism, that one shall find trapped or stored inside it, the literal genetic code symbols (such as those in $\psi_{na}$), but rather, that they shall find natural literal expressions or instances of genetic code's \textbf{material basis} --- such as the chemical base molecules that define nucleobases, or nucleotides, and also complex molecular structures such as transcribed amino-acids post-RNA translation of DNA expressions.
+First, we shall define a basic cipher\index{cipher} that can encode the basic digits (of base-10) as some unique, but non-digit forms (essentially, with non-digit \textit{glyphs}). This, so when we speak of a living organism --- for example a pine-apple or a feline, we don't expect that in nature, or rather, that by physically dissecting the organism, that one shall find trapped or stored inside it, the literal genetic code symbols (such as those in $\psi_{na}$), but rather, that they shall find natural literal expressions or instances of genetic code's \textbf{material basis} --- such as the chemical base molecules that define nucleobases, or nucleotides, and also complex molecular structures such as transcribed amino-acids post-RNA translation of DNA expressions.
 
-So, in our hypothetical genome expression model --- the \textbf{Lu-Genome Expression System} (LGES), we are going to expect and express elements from our basic hypothetical DNA symbol set --- an alphabet\footnote{In our mathematics, and especially in Transformatics, we conventionally talk of \textbf{a symbol set} where other literature might talk of \textit{an alphabet}.} we shall call \textbf{Base-Omega}.\\
+So, in our hypothetical genome expression model --- the \textbf{Lu-Genome Expression System} (LGES)\index{Lu-Genome Expression System (LGES)}, we are going to expect and express elements from our basic hypothetical DNA symbol set --- an alphabet\footnote{In our mathematics, and especially in Transformatics, we conventionally talk of \textbf{a symbol set} where other literature might talk of \textit{an alphabet}.} we shall call \textbf{Base-Omega}\index{Base-Omega}.
 
+\vspace{1em}
 \begin{equation}
 \label{EQHYPDNASS}
 \psi_{\Omega} = \langle 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \rangle \equiv \psi_{10}
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
-Which, especially for curiosity's sake, but also, for creative and expressive reasons, is meant to allow us to explore a peculiar genetics model based not on just some four base symbols as is the case in $\psi_{DNA}$, but which allows us to look at any base-10 number expression --- essentially any \textit{decimal sequence}\index{sequences!decimal}\index{number expression} --- as a potential genetic code sequence with \textbf{each digit expressing a distinct hypothetical nucleic acid}. 
+Which, especially for curiosity's sake, but also, for creative and expressive reasons, is meant to allow us to explore a peculiar genetics model based not on just some four base symbols as is the case in $\psi_{DNA}$, but which allows us to look at any base-10 number expression --- essentially any \textit{decimal sequence}\index{sequences!decimal}\index{number expression} --- as a potential genetic code sequence --- with \textbf{each digit expressing a distinct hypothetical nucleic acid}\index{nucleic acids!hypothetical}. 
 
 
-For example, we might describe some fictitious organism --- for simplicity's sake, perhaps, just a virus, that we shall name \textbf{the Euler Virus}\footnote{I called it that, simply because of the fact the associated genome sequence is based on the important natural physical constant --- 2.718281828459, the \textbf{Euler number}, that is one of those irrational numbers that also happens to be the base of the natural logarithm and which arises naturally in many areas of mathematics, especially in calculus, complex analysis, and probability theory.} or just ``veuler", as having its entire genome sequence encoded as just:
+For example, we might describe some fictitious organism --- for simplicity's sake, perhaps, just a virus, that we shall name \textbf{the Euler Virus}\footnote{I called it that, simply because of the fact that the associated genome sequence is based on the important natural physical constant --- 2.718281828459, the \textbf{Euler number}, that is one of those irrational numbers that also happens to be the base of the natural logarithm and which arises naturally in many areas of mathematics, especially in calculus, complex analysis, and probability theory, and which number I trust, is very likely to be of relevance to geneticists too.} or just ``veuler"\index{Euler virus}\index{virus!veuler (Euler virus)}, as having its entire\footnote{For keeping the analysis simple, we of course chose to truncate the expression to just the first 8 significant digit symbols of the natural constant, but in future treatments, might as well explore using longer versions of the sequence.} genome sequence encoded as just:
 
+\vspace{1em}
 \begin{equation}
 \label{EQDNAV}
 \Omega_{veuler} = 27182818
 \end{equation}
+\vspace{1em}
 
 
-However, that is the DNA-side of the story. As in real nature, we need a \textit{different} alphabet or symbol set for expressing genetic code in its \textit{intermediate form} --- as genome expression typically proceeds via expression of DNA into mRNA first of all, and then finally into functions such as proteins. So, in our case, the intermediate expressions shall be expressed using the \textbf{Ozin Cipher}\footnote{More about this in the \textbf{\hyperref[APPOZIN]{Appendix}}.}, which we are to describe hereafter.
+However, that is just the DNA-side of the story. As in real nature, we shall also need an extra, \textit{different}, alphabet or symbol set for expressing genetic code in its \textit{intermediate form} --- as genome expression typically proceeds via expression of DNA into mRNA first of all, and then finally into functions such as proteins, via which and from which the final organism is then fully expressed. So, in our case, the intermediate expressions shall be expressed using what we are going to refer to as the \textbf{Ozin Cipher}\footnote{More about this in  \textbf{\hyperref[APPOZIN]{Appendix \ref{APPOZIN}}}.}, which we are to describe hereafter --- especially because its symbols are potentially less familiar to most than would be the case of the decimal-digit based Omega alphabet specified above.
 
 
 \section{The Ozin Genetic Code Cipher}
 \label{SECOZIN}
 
-With the background we have obtained thus far, note that, the special \textbf{transcription level} expression of our genetic code originally expressed via $\psi_{10}$, shall be transcribed into the intermediate \textbf{ozin genetic code} that spans the symbol set $\psi_{oz}$ that is mapped from the genetic code's storage expression, via a mapping as depicted in \textbf{\hyperref[FIGOZIN]{Figure \ref{FIGOZIN}}}.
+With the background we have obtained thus far, note that, the special \textbf{transcription level} expression of our genetic code originally expressed via $\psi_{\Omega}$ --- as \textbf{omega genetic code}, shall then be transcribed into the intermediate \textbf{ozin genetic code} that spans the symbol set $\psi_{oz}$, so that then, it is mapped from the genetic code's [original] storage expression into the actionable, intermediate form\footnote{For those coming to Genetics from fields such as Computer Science and Software Engineering, this idea of nature requiring genetic information to first be translated into some intermediate form\index{genome expression!intermediate language} so as to be operated on, shall likewise reflect ideas such as what we find being utilized in many modern software operating environments\cite{lutalo2020dnap} --- such as say the .NET common-language runtime --- a virtual machine kind of platform, that takes program code in its usual natural form such as in C\#, F\# or VB, and then translates it into IL (Intermediate Language) first, which then the CLR (Common Language Runtime) knows to compile (Just-In-Time/JIT), so as to have it executable platform-independently as native machine code. Similar ideas are also found in SOEs such as Java's, when code in languages such as JRuby, Kotlin, Scala, and Groovy need to first be translated into the JVM intermediate language (Java bytecode), so that they then can take advantage of the cross-platform/platform-indepedent JVM (Java Virtual Machine)\cite{copilot_dna_assistant}. These ideas of essential language transforms are thus common in artificial software operating environments, but also underlie the execution of ``biological software" in the form of genetic code.\index{language transforms}\index{transcription}}, via a mapping as depicted in \textbf{\hyperref[FIGOZIN]{Figure \ref{FIGOZIN}}}.
 
 
 
@@ -5076,16 +5084,19 @@ With the background we have obtained thus far, note that, the special \textbf{tr
   \begin{center}
   %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
    \includegraphics[trim=0cm 6cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER.pdf}\\
-   \caption{The OZIN Cipher\cite{lutalo_2025_ozin}, a mapping from Decimal Symbols (our base-$\Omega$) to Symbols for Intermediate Genetic Code.}
+   \caption{The OZIN Cipher\cite{lutalo_2025_ozin}, a mapping from Decimal Symbols (our base-$\Omega$) to Symbols for Intermediate Genetic Code.\index{cipher!ozin}\index{ozin cipher}}
   \label{FIGOZIN}
   \end{center}
 \end{figure}
 
 
-For simplicity's sake, we might interpret or transcribe from base-$\Omega$ DNA into our base-OZ RNA expression as such:
+Without further ado, note that we might interpret or transcribe from base-$\Omega$ DNA into our base-OZ RNA expression as such:
 
-If for some organism such as that expressed via $\Omega_{veuler} = 27182818$, we wish to encode the equivalent intermediate [physical] expression, then we iterate through each symbol in the source code sequence, and re-write it as the equivalent symbolic structure in OZIN, and this, so as to center the ozin glyphs along a \textbf{backbone structure} of just a mere line that starts with a tiny dot and ends with the last ozin structure from the source sequence thus transcribed. Essentially, for our
-Euler Virus, it would render as something of the sort shown in \textbf{\hyperref[FIGOZEVIRUS]{Figure \ref{FIGOZEVIRUS}}}
+If for some organism such as that expressed via $\Omega_{veuler} = 27182818$, we wish to encode the equivalent intermediate [physical] expression, then we iterate through each symbol in the source code sequence, and re-write it as the equivalent or corresponding symbolic structure in OZIN item-wise, and this, being done in a way so as to \textbf{center the ozin glyphs along a \textit{backbone structure}} of just a mere line that starts with a tiny dot and ends with the last ozin glyph from the source sequence thus being transcribed\index{transcription!LGES protocol}. That is the basic LGES protocol for transcription from omega genetic code into ozin genetic expressions. 
+
+
+Essentially, for our Euler Virus, the LGES transcription protocol would result in an expression such as what we see depicted in \textbf{\hyperref[FIGOZEVIRUS]{Figure \ref{FIGOZEVIRUS}}}.
+
 
 \begin{figure}[H]
   \begin{center}
@@ -5097,14 +5108,16 @@ Euler Virus, it would render as something of the sort shown in \textbf{\hyperref
 \end{figure}
 
 
-Another organism, which we might just refer to as the \textbf{HiFinelle}, is actually based off of our favorite base-10 o-SSI --- the \textbf{Hi-Fi o-SSI}\cite{adtpaper}, and thus, its corresponding genetic code at rest is as:
+For another organism, which we might just refer to as the \textbf{HiFinelle} --- particularly because it  actually is based off of our favorite base-10 o-SSI\footnote{Refer to \textbf{\hyperref[THEOCOMPLOSSI]{Theorem  \ref{THEOCOMPLOSSI}}} and \textbf{\hyperref[PROP1]{Proposal  \ref{PROP1}}} for related treatments.} --- the \textbf{Hi-Fi o-SSI}\cite{adtpaper}, and thus, its corresponding genetic code at rest is as:
 
 
+
+\vspace{1em}
 \begin{equation}
 \label{EQDNHIFI}
 \Omega_{HiFinelle} = 8649137520
 \end{equation}
-
+\vspace{1em}
 
 And which, after we have it transcribed into intermediate OZIN genetic expression, shall appear as shown in \textbf{\hyperref[FIGOZHIFI]{Figure \ref{FIGOZHIFI}}}
 
@@ -5120,12 +5133,14 @@ And which, after we have it transcribed into intermediate OZIN genetic expressio
 
 Of course, in our simple genome expression system, the occurrence of that last ``0" symbol in the HiFinelle genome sequence tells us to STOP or just exclude that symbol with a GAP in case any other symbols follow thereafter. It is our STOP-codon equivalent.
 
-Another genome sequence,\\
+Another genome sequence,
 
+\vspace{1em}
 \begin{equation}
 \label{EQDNEXA}
 \Omega_{3} = 0123026
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 Might help illustrate that point --- see \textbf{\hyperref[FIGOZEXA]{Figure \ref{FIGOZEXA}}}
 
@@ -5134,7 +5149,7 @@ Might help illustrate that point --- see \textbf{\hyperref[FIGOZEXA]{Figure \ref
   \begin{center}
   %\includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
    \includegraphics[trim=0cm 22cm 7cm 5cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
-   \caption{The equivalent OZIN expression of the $\Omega_{3}$ genome sequence.}
+   \caption{The equivalent OZIN expression of the $\Omega_{3}$ genome sequence with multiple STOP-codon elements in the original genetic code, including some in the middle of the code.}
   \label{FIGOZEXA}
   \end{center}
 \end{figure}
@@ -5142,37 +5157,38 @@ Might help illustrate that point --- see \textbf{\hyperref[FIGOZEXA]{Figure \ref
 
 \subsection{$\Omega$-to-OZIN Genetic Code Transcription Rules}
 
-So, in general, we might sum up our gene transcription rules as such:
+So, in general, we might sum up our gene transcription rules (the \textit{LGES transcription protocol}) as such:
 
-\begin{alg}[The \textbf{$\Omega$-to-OZIN Genetic Code Transcription Algorithm}]
+\vspace{2em}
+\begin{alg}[The \textbf{$\Omega$-to-OZIN Genetic Code Transcription Algorithm}\index{algorithm!$\Omega$-to-OZIN Genetic Code Transcription}\index{transcription!LGES protocol}]
 \label{ALGCOZIN}
 
 Assuming we have an $\Omega$-base encoded genetic code sequence $\Theta_\Omega$ of some length $n > 0$.
 
 \begin{enumerate}
-\item \textbf{INITIALIZE} the transcription by constructing a backbone-structure that's essentially just a line with a dot at the head/start. This is the transcribed sequence $OZ(\Theta_\Omega)$.
-\item{\textbf{FOREACH} symbol $\omega_i$ in $\Theta_\Omega$: 
+\item \textbf{INITIALIZE} the transcription by constructing a backbone-structure that essentially is just a line with a dot at the head/start. That structure shall encode the initial or baseline transcribed sequence $OZ(\Theta_\Omega)$.
+\item{\textbf{FOREACH}/Next symbol $\omega_i$ in $\Theta_\Omega$: 
 \begin{enumerate}
     \item \textbf{USE} the transcription mapping: $\psi_\Omega \rightarrow \psi_{oz}$ as depicted in \textbf{\hyperref[FIGOZIN]{Figure \ref{FIGOZIN}}}, to \textbf{ENCODE} $\omega_i$  in the equivalent form for the intermediate code.
 	\item{\textbf{IF} $\omega_i = 0$:
 	\begin{enumerate}
 	\item{ \textbf{IF} $OZ(\Theta_\Omega)$ was still empty:
 	\begin{enumerate}
-		\item Simply \textbf{SKIP} to the next symbol in $\Theta_\Omega$ (loop from \textbf{Step\#2)}.
+		\item Simply \textbf{SKIP} to the next symbol in $\Theta_\Omega$ (jump to \textbf{Step\#2)}.
 	\end{enumerate}
 		}
 		\item{ \textbf{ELSE}: 
 		\begin{enumerate}
 		\item  \textbf{APPEND}/Insert a GAP in $OZ(\Theta_\Omega)$
-		\item \textbf{JUMP} to the next symbol in $\Theta_\Omega$ (loop from \textbf{Step\#2)}.
+		\item Then \textbf{JUMP} to the next symbol in $\Theta_\Omega$ (jump to \textbf{Step\#2)}.
 		\end{enumerate}
 		}
 	\end{enumerate}
 	}
 	\item { \textbf{ELSE}:
 	\begin{enumerate}
-	\item \textbf{APPEND} that encoded version of $\omega_i$ along the backbone structure, $OZ(\Theta_\Omega)$, at the next vacant position ($\leq i$).
-	\item \textbf{JUMP} to the next symbol in $\Theta_\Omega$ (loop from \textbf{Step\#2)}.
+	\item \textbf{APPEND} that encoded version of $\omega_i$ along the backbone structure, $OZ(\Theta_\Omega)$, at the next vacant position before the end ($\leq i < n$).
+	\item Then \textbf{JUMP} to processing the next symbol in $\Theta_\Omega$ (jump to \textbf{Step\#2)}.
 	\end{enumerate}
 	}
 \end{enumerate}
@@ -5182,6 +5198,7 @@ Assuming we have an $\Omega$-base encoded genetic code sequence $\Theta_\Omega$ 
 \end{enumerate}
 
 \end{alg}
+\vspace{2em}
 
 
 
@@ -5217,51 +5234,57 @@ And which, if we transcribe it into the intermediate OZIN code, we get:
   \end{center}
 \end{figure}
 
-Now, notice something interesting here. In particular, if we compare the transcribed forms of $\Omega_{pal}$ and $\Omega_{3}$, we shall notice that even though the two sequences had some differences --- for example, $\Omega_{3}$ contains the ``0" symbol twice, including at the start, and yet, somewhat, because that STOP-codon is skipped during expression/transcription, so we note that, the OZIN-expressions of the two sequences are somewhat similar --- they both share a similar prefix structure, that upon inspection of their genetic code sequences, can be attributed to the 3-gram subsequence ``123".
+Now, notice something interesting here. In particular, if we compare the transcribed forms of $\Omega_{pal}$ and $\Omega_{3}$, we shall notice that even though the two sequences had some differences --- for example, $\Omega_{3}$ contains the ``0" symbol twice, including at the start, and yet, somewhat, because that STOP-codon is skipped during expression/transcription, we note that, the OZIN-expressions of the two sequences are somewhat similar --- they both share a similar prefix structure, that upon inspection of their genetic code sequences, can be attributed to the 3-gram subsequence ``123".
 
 In fact, this later case is an interesting way to appreciate that even where two organisms, genes or proteins might exhibit significant differences in their appearance or even genetic code, and yet, upon close inspection, we might find some telling signs that they share some \textbf{common-traits}. In this case, we see that the palindromic $\Omega_{pal}$ looks somewhat like the otherwise different $\Omega_{3}$ --- at least in their prefix structures after transcription (and possibly beyond!)
+
+However, thus far, we have mostly focused on the expression of genetic code in its intermediate form --- meaning, these expressions at best, only help to demonstrate what genetic code might look or behave like, when translated from DNA into mRNA. But mRNA isn't where the story ends, even though it does indeed play a vital role in how the actual gene and genome expression might or shall proceed. And so then, let us progress, and develop our LGES theory further, so we can appreciate what happens with the intermediate code expressions and beyond...
+
 
 \section{Genetic Code Sequences Processed as Modal Sequence Statistics}
 \label{SECGENEXPRE}
 
-Now that we have finished looking at how to express genetic code from its base/storage-form (equivalent to DNA) into its intermediate-form (equivalent to RNA), we can then consider the matter of how that intermediate code eventually gets \textbf{translated} into the final organism\footnote{I say ``final organism" here, because, much as in reality, genome expression might be more complex than merely translating genetic code from DNA into RNA and then final proteins and tissue, and yet, conceptually, that is all there is to it!}.
+Now that we have finished looking at how to express genetic code from its storage-form (equivalent to DNA) into its intermediate-form (equivalent to RNA), we can then consider the matter of how that intermediate code eventually gets \textbf{translated} into the final organism\footnote{I say ``final organism" here, because, much as in reality, genome expression might be more complex than merely translating genetic code from DNA into RNA and then final proteins and tissue, and yet, conceptually, that is all there is to it!}.
 
-So, in further advancement our thought experiment concerning genome expression (modeled using hypothetical bio-automata), we shall again utilize the OZIN cipher introduced in \textbf{\hyperref[SECOZIN]{Section \ref{SECOZIN}}}, but shall also introduce another formalism in the form of decoding position within a sequence (such as genetic code in this case), as information about how to express or process the associated symbols. This idea, of leveraging \textit{subtle instructions} embedded in genetic code but which might not be explicit as the actual nucleic acid combinations (such as amino-acid encoding-codons), can be justified when we consider that the genetic code processor (such as the ribosome in our major context --- see \textbf{\hyperref[SEC5]{Section \ref{SEC5}}}), has a way of interpreting sequences not just by what they contain, but also based on the context within which they exist --- or occur to it. 
+So, as an advancement of our thought experiment concerning genome expression (modeled using hypothetical bio-automata), we shall again utilize the OZIN cipher introduced in \textbf{\hyperref[SECOZIN]{Section \ref{SECOZIN}}}, but shall also introduce another formalism in the form of decoding position within a sequence (such as genetic code in this case), as information about how to express or process the associated symbols. This idea, of leveraging \textit{subtle instructions} embedded in genetic code but which might not be explicit as the actual nucleic acid combinations (such as amino-acid encoding-codons), can be justified when we consider that the genetic code processor (such as the ribosome in our main context here --- see \textbf{\hyperref[SEC5]{Section \ref{SEC5}}}), has a way of interpreting sequences not just by what they contain, but also based on the context within which they manifest --- basically, that the order of occurrence of sequences does matter when their actual interpretation or execution happens. 
 
-For example, though generally, the appearance of the RNA codon, \textbf{AAA}, would cause the ribosome to synthesize the corresponding amino-acid Lysine (see \textbf{\hyperref[TAB1]{Table \ref{TAB1}}}), and yet, if such a codon appears in a sequence where no earlier instruction compels the ribosome to START manufacturing a protein, the appearance of that codon shall be useless --- or rather, it shall be interpreted differently merely because of being in the \textit{wrong} context. We saw this in \textbf{\hyperref[SEC05]{Chapter \ref{SEC05}}}, and especially the Ribosome's protein-manufacturing process diagram (\textbf{\hyperref[FIG3]{Figure \ref{FIG3}}}) as well as the State Machine (\textbf{\hyperref[FIG4]{Figure \ref{FIG4}}}) help bring this out clearly. For example, if we modify the gene-program  in \textbf{\hyperref[EQ6]{Equation \ref{EQ6}}} as such:
+For example, though generally, the appearance of the RNA codon, \textbf{AAA}, would cause the ribosome to synthesize the corresponding amino-acid Lysine (see \textbf{\hyperref[TAB1]{Table \ref{TAB1}}}), and yet, if such a codon appears in a sequence where no earlier instruction compels the ribosome to START manufacturing a protein, the appearance of that codon shall be useless --- or rather, it shall be interpreted differently merely because of being in the \textit{wrong} context. We saw this in \textbf{\hyperref[SEC05]{Chapter \ref{SEC05}}}, and especially via the Ribosome's protein-manufacturing process diagram (\textbf{\hyperref[FIG3]{Figure \ref{FIG3}}}) as well as the State Machine (\textbf{\hyperref[FIG4]{Figure \ref{FIG4}}}) that help bring this out clearly. For example, if we modify the gene-program  in \textbf{\hyperref[EQ6]{Equation \ref{EQ6}}} as such:
 
-
+\vspace{1em}
  \begin{equation}
 \label{EQ6B}
 \Theta_4^* = \langle \langle A, A, A \rangle, \langle A, U, G \rangle, \langle U, U, A \rangle, \langle U, A, G \rangle \rangle
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 
 Then, where we would have expected the ribosome to manufacture a protein whose structure includes the AAA/Lysine amino-acid, the result/effect of our modified sequence shall actually be different from what the original gene-program would have produced. In particular, since the START-codon, AUG (Methionine) appears after AAA, the effective protein to be synthesized would be as equivalent to just the program:
 
+\vspace{1em}
  \begin{equation}
 \label{EQ6C}
-\Theta_4^* = \langle \langle A, U, G \rangle, \langle U, U, A \rangle, \langle U, A, G \rangle \rangle
-\end{equation}\\
+\bar{\Theta}_4^* = \langle \langle A, U, G \rangle, \langle U, U, A \rangle, \langle U, A, G \rangle \rangle
+\end{equation}
+\vspace{1em}
 
 Which would produce the protein with just \textbf{UUA}(Leucine) in it! So, positioning of symbols or terms within genetic code does matter, and does encode some important gene or even genome expression information that we can't take for granted, thus the following suggested system for how to express post-RNA genetic code sequences.
+
 
 \subsection{The Platonic Form Cipher and Position-Sensitive Genetic Code Translation}
 \label{SECPLATONIC}
 
-Just like we developed a system for how to map numbers (in base-10) to some non-trivial expressions that we equate to a kind of intermediate genetic code (the OZIN-encoded expressions), we shall similarly start by considering a way to map (still base-10) numbers to spatial-structures\footnote{Especially because, and essentially that, when compared to the code that expresses them, proteins and the organism taken as a whole, \textit{occupy more space} than does just the basic DNA code from which they are expressed.}.
-
-So, with the exception of ``0'', which again is treated as an instruction to `skip' or `stop' within our genome expression system\footnote{Perhaps, and as we shall adopt here, we shall interpret `0', especially \textit{within} and not at the start or end of a sequence, to mean not just a GAP as was the case in \textbf{\hyperref[ALGCOZIN]{Algorithm \ref{ALGCOZIN}}}, but as a JOINT. It somewhat makes biological/anatomical sense.}, we shall adopt the mapping from numbers to spatial-structures as depicted in \textbf{\hyperref[FIGPLATONICCIPH]{Figure \ref{FIGPLATONICCIPH}}} in what we are calling the \textbf{PLATONIC Cipher} System\cite{lutalo_2025_platonic}.
-
+Just like we developed a system for how to map numbers (base-Omega) to some non-trivial expressions that we equate to a kind of intermediate genetic code (the OZIN-encoded expressions), we shall similarly start by considering a way to map (still decimal-encoded) numbers to spatial-structures\footnote{Especially because, and essentially that, when compared to the code that expresses them, proteins and the organism taken as a whole, \textit{occupy more space} and are more \textit{spatially-elaborate} than does just the basic [compact] DNA code from which they are expressed.}.
 
 \begin{figure}[H]
   \begin{center}
   %\includegraphics[trim=2cm 8cm 2cm 8cm, clip, width=0.9\textwidth,]{resources/pdfs/ProteinSynthesisStateMachine.pdf}\\
    \includegraphics[trim=0cm 4cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/PLATOCIPHER.pdf}\\
-   \caption{The PLATONIC Cipher\cite{lutalo_2025_platonic} a mapping from Decimal Symbols (our base-$\Omega$) to Spatial-Geometric Forms ($\psi_{pf}$).}
+   \caption{The PLATONIC Cipher\cite{lutalo_2025_platonic} a mapping from Decimal Symbols (our base-$\Omega$) to Spatial-Geometric Forms ($\psi_{pf}$).\index{cipher!platonic}\index{platonic cipher}}
   \label{FIGPLATONICCIPH}
   \end{center}
 \end{figure}
+
+So, with the exception of ``0'', which again is treated as an instruction to `skip' or `stop' within our genome expression system\footnote{Perhaps, and as we shall adopt here, we shall interpret `0', especially \textit{within} and not at the start or end of a sequence, to mean not just a GAP as was the case in \textbf{\hyperref[ALGCOZIN]{Algorithm \ref{ALGCOZIN}}}, but as a JOINT. It somewhat makes biological/anatomical sense.}, we shall adopt the mapping from numbers to spatial-structures as depicted in \textbf{\hyperref[FIGPLATONICCIPH]{Figure \ref{FIGPLATONICCIPH}}} in what we are calling the \textbf{PLATONIC Cipher} System\cite{lutalo_2025_platonic}.
 
 
 How does it work?
@@ -6735,6 +6758,7 @@ Further, if we have any two elements from the sequence (whether or not they are 
 As you shall come to appreciate when studying formulations and expressions in transformatics, the position operator or measure, $I(\cdot, \cdot)$ is very fundamental, useful and indispensable especially when treating of (sic) \textbf{ordered sequences} or of order in any sequence.
 
 \subsection{Proposal 1: The o-SSI Sequence from any Sequence\cite{ossipaper}}
+\label{PROP1}
 
 Assume we consider the sequence $\Theta: \mathbb{N} \times \psi_*$ of any length and spanning an arbitrary symbol set $\psi_*$. Then, in case we wish to reduce $\Theta$ to a representative sequence $\Theta_{ossi}$ that only contains elements of $\Theta$ spanning the symbol set, $\psi_\beta$, of some particular base, $\beta$; in which case, $\Theta_{ossi}$ would be an \textbf{orthogonal symbol set identity} (o-SSI) sequence under base-$\beta$, then, the following o-SSI-generator --- also \textbf{an extractor}\footnote{In the sense that, where a sequence already contains the essential symbols spanning some particular symbol set, and even though they might be scattered about or `buried' around in the sequence surrounded by `noise', the function would merely extract those essential symbols [only,] from that sequence in their natural order of first occurrence.} and \textbf{a reducer} transformer, defined using the calculus and semantics of transformatics, would suffice\footnote{Say, and as almost all transformatics might be in practice --- consists of a clear, succinct and complete specification that can readily be translatable into a working or equivalent computer program based on or defined using the chaining of sequence transformers such as in a language as TEA\cite{cli_tttt}.}:
 

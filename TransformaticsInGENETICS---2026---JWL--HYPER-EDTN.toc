@@ -52,19 +52,19 @@
 \contentsline {section}{\numberline {9.1}The Protein Manufacturing Algorithm}{117}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Gene Expression in Living Things and for Bio-Automata via Ribosomes}{121}{section.9.2}%
 \contentsline {chapter}{\numberline {10}Transformatics and the Lu-Genome Expression System in Bio-Automata}{123}{chapter.10}%
-\contentsline {section}{\numberline {10.1}The Ozin Genetic Code Cipher}{125}{section.10.1}%
-\contentsline {subsection}{\numberline {10.1.1}$\Omega $-to-OZIN Genetic Code Transcription Rules}{128}{subsection.10.1.1}%
-\contentsline {subsection}{\numberline {10.1.2}Examples of $\Omega $-Genetic Code Transcription}{129}{subsection.10.1.2}%
-\contentsline {section}{\numberline {10.2}Genetic Code Sequences Processed as Modal Sequence Statistics}{130}{section.10.2}%
-\contentsline {subsection}{\numberline {10.2.1}The Platonic Form Cipher and Position-Sensitive Genetic Code Translation}{131}{subsection.10.2.1}%
-\contentsline {subsection}{\numberline {10.2.2}$\psi _{\Omega }$-to-$\psi _{pf}$: PLATONIC Form Genetic Code Translation Rules}{132}{subsection.10.2.2}%
-\contentsline {subsection}{\numberline {10.2.3}Examples of Complete Lu-Genome Expressions}{136}{subsection.10.2.3}%
-\contentsline {section}{\numberline {10.3}The Extended Lu-Genome Expression System (x-LGES)}{142}{section.10.3}%
-\contentsline {subsection}{\numberline {10.3.1}$\psi _{\Omega }$-to-($\psi _{oz}$-$\psi _{pf}$-$\psi _{oz}$): The x-LGES Algorithm}{143}{subsection.10.3.1}%
-\contentsline {section}{\numberline {10.4}Actual DNA Sequences Expressed in the Extended Lu-Genome Expression System}{145}{section.10.4}%
-\contentsline {subsection}{\numberline {10.4.1}Converting Between Nucleic Acid Code and Numeric Codes}{146}{subsection.10.4.1}%
-\contentsline {subsection}{\numberline {10.4.2}Revisiting Numeric Sequences}{149}{subsection.10.4.2}%
-\contentsline {subsection}{\numberline {10.4.3}x-LGES applied to named DNA Sequences}{151}{subsection.10.4.3}%
+\contentsline {section}{\numberline {10.1}The Ozin Genetic Code Cipher}{126}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}$\Omega $-to-OZIN Genetic Code Transcription Rules}{129}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Examples of $\Omega $-Genetic Code Transcription}{130}{subsection.10.1.2}%
+\contentsline {section}{\numberline {10.2}Genetic Code Sequences Processed as Modal Sequence Statistics}{131}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}The Platonic Form Cipher and Position-Sensitive Genetic Code Translation}{133}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}$\psi _{\Omega }$-to-$\psi _{pf}$: PLATONIC Form Genetic Code Translation Rules}{134}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}Examples of Complete Lu-Genome Expressions}{138}{subsection.10.2.3}%
+\contentsline {section}{\numberline {10.3}The Extended Lu-Genome Expression System (x-LGES)}{143}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}$\psi _{\Omega }$-to-($\psi _{oz}$-$\psi _{pf}$-$\psi _{oz}$): The x-LGES Algorithm}{144}{subsection.10.3.1}%
+\contentsline {section}{\numberline {10.4}Actual DNA Sequences Expressed in the Extended Lu-Genome Expression System}{146}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Converting Between Nucleic Acid Code and Numeric Codes}{147}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Revisiting Numeric Sequences}{150}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}x-LGES applied to named DNA Sequences}{152}{subsection.10.4.3}%
 \contentsline {chapter}{\numberline {11}Conclusion}{155}{chapter.11}%
 \contentsline {section}{\numberline {11.1}Future Directions}{160}{section.11.1}%
 \contentsline {chapter}{Appendix \numberline {A}Other Functions of DNA Beyond Protein Synthesis}{165}{appendix.a.A}%

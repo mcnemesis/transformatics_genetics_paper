@@ -23,6 +23,7 @@
 \indexentry{DNA!as sequences|hyperpage}{11}
 \indexentry{DNA!symbol set|hyperpage}{12}
 \indexentry{$\psi _{DNA}$|hyperpage}{12}
+\indexentry{nucleic acids|hyperpage}{12}
 \indexentry{nucleotides|hyperpage}{12}
 \indexentry{DNA!nucleotides|hyperpage}{12}
 \indexentry{DNA!base-pairing|hyperpage}{12}
@@ -30,8 +31,10 @@
 \indexentry{RNA!symbol set|hyperpage}{13}
 \indexentry{nucleotides|hyperpage}{13}
 \indexentry{RNA!nucleotides|hyperpage}{13}
+\indexentry{nucleic acids|hyperpage}{13}
 \indexentry{$\psi _{RNA}$|hyperpage}{13}
 \indexentry{$\psi _{na}$|hyperpage}{13}
+\indexentry{nucleic acids!universal symbol set|hyperpage}{13}
 \indexentry{na-sequence|hyperpage}{14}
 \indexentry{data|hyperpage}{14}
 \indexentry{DNA!sequence example|hyperpage}{15}
@@ -196,9 +199,21 @@
 \indexentry{definition!ribosome|hyperpage}{121}
 \indexentry{generator!protein generator|hyperpage}{122}
 \indexentry{ribosome|hyperpage}{122}
+\indexentry{cipher|hyperpage}{124}
+\indexentry{Lu-Genome Expression System (LGES)|hyperpage}{125}
+\indexentry{Base-Omega|hyperpage}{125}
 \indexentry{sequences!decimal|hyperpage}{125}
 \indexentry{number expression|hyperpage}{125}
-\indexentry{sequences!decimal|hyperpage}{149}
+\indexentry{nucleic acids!hypothetical|hyperpage}{125}
+\indexentry{Euler virus|hyperpage}{125}
+\indexentry{virus!veuler (Euler virus)|hyperpage}{125}
+\indexentry{genome expression!intermediate language|hyperpage}{126}
+\indexentry{language transforms|hyperpage}{126}
+\indexentry{transcription|hyperpage}{126}
+\indexentry{transcription!LGES protocol|hyperpage}{127}
+\indexentry{algorithm!$\Omega $-to-OZIN Genetic Code Transcription|hyperpage}{129}
+\indexentry{transcription!LGES protocol|hyperpage}{129}
+\indexentry{sequences!decimal|hyperpage}{150}
 \indexentry{ADM|hyperpage}{194}
 \indexentry{sequence analysis!anagram distance|hyperpage}{194}
 \indexentry{super-sequence|hyperpage}{205}
