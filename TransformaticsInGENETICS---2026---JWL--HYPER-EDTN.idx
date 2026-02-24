@@ -58,7 +58,8 @@
 \indexentry{generator!natural symbol set|hyperpage}{20}
 \indexentry{$\psi _{na-START}$|hyperpage}{21}
 \indexentry{START-codons|hyperpage}{21}
-\indexentry{gene programs!non-coding|hyperpage}{22}
+\indexentry{gene programs!non-coding (introns)|hyperpage}{22}
+\indexentry{introns|hyperpage}{22}
 \indexentry{$\psi _{na-STOP}$|hyperpage}{22}
 \indexentry{STOP-codons|hyperpage}{22}
 \indexentry{gene program!evil programs|hyperpage}{22}
@@ -202,6 +203,7 @@
 \indexentry{definition!ribosome|hyperpage}{121}
 \indexentry{generator!protein generator|hyperpage}{122}
 \indexentry{ribosome|hyperpage}{122}
+\indexentry{exons|hyperpage}{122}
 \indexentry{cipher|hyperpage}{124}
 \indexentry{Lu-Genome Expression System (LGES)|hyperpage}{125}
 \indexentry{Base-Omega|hyperpage}{125}
@@ -224,7 +226,10 @@
 \indexentry{LGES protocol|hyperpage}{134}
 \indexentry{algorithm!$\Omega $-to-PLATONIC Form Genetic Code Expression|hyperpage}{134}
 \indexentry{Lu-Genome Expression System (LGES)!PFA resolution protocol|hyperpage}{136}
+\indexentry{Lu-Genome Expression System (LGES)!complete transformatic derivation|hyperpage}{138}
+\indexentry{Lu-Genome Expression System (LGES)!complete transformatic derivation|hyperpage}{140}
 \indexentry{sequences!decimal|hyperpage}{151}
+\indexentry{Lu-Genome Expression System (LGES)!derivation (DNA sequences)|hyperpage}{154}
 \indexentry{Lu-Genome Expression System (LGES)|hyperpage}{175}
 \indexentry{Second Lu-Shuffle Algorithm (SLSA)|hyperpage}{175}
 \indexentry{table!Platonic Form Encoding Keys via SLSA|hyperpage}{176}
