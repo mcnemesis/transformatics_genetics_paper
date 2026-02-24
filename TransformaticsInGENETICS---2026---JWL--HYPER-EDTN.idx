@@ -34,6 +34,7 @@
 \indexentry{nucleic acids|hyperpage}{13}
 \indexentry{$\psi _{RNA}$|hyperpage}{13}
 \indexentry{$\psi _{na}$|hyperpage}{13}
+\indexentry{law!na-Identifier Symbol Set|hyperpage}{13}
 \indexentry{nucleic acids!universal symbol set|hyperpage}{13}
 \indexentry{na-sequence|hyperpage}{14}
 \indexentry{data|hyperpage}{14}
@@ -59,6 +60,7 @@
 \indexentry{$\psi _{na-START}$|hyperpage}{21}
 \indexentry{START-codons|hyperpage}{21}
 \indexentry{gene programs!non-coding (introns)|hyperpage}{22}
+\indexentry{law!Introns|hyperpage}{22}
 \indexentry{introns|hyperpage}{22}
 \indexentry{$\psi _{na-STOP}$|hyperpage}{22}
 \indexentry{STOP-codons|hyperpage}{22}
@@ -124,10 +126,12 @@
 \indexentry{statistical artificial intelligence|hyperpage}{54}
 \indexentry{anagram distance measure!for non-anagrams|hyperpage}{54}
 \indexentry{genome sequence!of a population|hyperpage}{55}
+\indexentry{law!IGS|hyperpage}{55}
 \indexentry{algorithm!Closest Sequence Search|hyperpage}{56}
 \indexentry{sequence!higher-order|hyperpage}{59}
 \indexentry{generator!Sequence Lookup System|hyperpage}{59}
 \indexentry{sequence entropy|hyperpage}{59}
+\indexentry{law!IGS|hyperpage}{59}
 \indexentry{G$\ddot  {o}$del number|hyperpage}{59}
 \indexentry{G$\ddot{o}$del number!sequence similarity test|hyperpage}{61}
 \indexentry{sequence!cardinality under multiplication|hyperpage}{61}
@@ -158,6 +162,7 @@
 \indexentry{genetic test|hyperpage}{76}
 \indexentry{IGS Law|hyperpage}{76}
 \indexentry{genome sequencing!a law|hyperpage}{76}
+\indexentry{law!IGS|hyperpage}{76}
 \indexentry{entropy|hyperpage}{79}
 \indexentry{Gaussian sequence|hyperpage}{79}
 \indexentry{lu-shuffle algorithm|hyperpage}{80}
@@ -201,6 +206,7 @@
 \indexentry{ribosome computer|hyperpage}{119}
 \indexentry{genetic programming|hyperpage}{120}
 \indexentry{definition!ribosome|hyperpage}{121}
+\indexentry{law!Introns|hyperpage}{122}
 \indexentry{generator!protein generator|hyperpage}{122}
 \indexentry{ribosome|hyperpage}{122}
 \indexentry{exons|hyperpage}{122}
@@ -228,33 +234,36 @@
 \indexentry{Lu-Genome Expression System (LGES)!PFA resolution protocol|hyperpage}{136}
 \indexentry{Lu-Genome Expression System (LGES)!complete transformatic derivation|hyperpage}{138}
 \indexentry{Lu-Genome Expression System (LGES)!complete transformatic derivation|hyperpage}{140}
-\indexentry{sequences!decimal|hyperpage}{151}
+\indexentry{Lu-Genome Expression System (LGES)!extension (x-LGES)|hyperpage}{144}
+\indexentry{algorithm!x-LGES Algorithm|hyperpage}{145}
+\indexentry{law!na-Identifier Symbol Set|hyperpage}{147}
+\indexentry{sequences!decimal|hyperpage}{150}
 \indexentry{Lu-Genome Expression System (LGES)!derivation (DNA sequences)|hyperpage}{154}
 \indexentry{Lu-Genome Expression System (LGES)|hyperpage}{175}
 \indexentry{Second Lu-Shuffle Algorithm (SLSA)|hyperpage}{175}
 \indexentry{table!Platonic Form Encoding Keys via SLSA|hyperpage}{176}
 \indexentry{table!Platonic Form Encoding Keys via FLSA|hyperpage}{177}
-\indexentry{ADM|hyperpage}{196}
-\indexentry{sequence analysis!anagram distance|hyperpage}{196}
-\indexentry{super-sequence|hyperpage}{207}
-\indexentry{matrices|hyperpage}{208}
-\indexentry{sequence!as matrices|hyperpage}{208}
-\indexentry{sequence!higher-order|hyperpage}{208}
-\indexentry{TEA!as higher-order transformers|hyperpage}{209}
-\indexentry{transformer chain|hyperpage}{211}
-\indexentry{sequence entropy!definition|hyperpage}{212}
-\indexentry{entropy|hyperpage}{212}
-\indexentry{table!mathematical structures|hyperpage}{218}
-\indexentry{sequence!definition|hyperpage}{219}
-\indexentry{matrix!definition|hyperpage}{224}
-\indexentry{matrices!as linear transformations|hyperpage}{225}
-\indexentry{data!coded or raw|hyperpage}{227}
-\indexentry{sequence!higher-order|hyperpage}{227}
-\indexentry{transformatics!mappings|hyperpage}{233}
-\indexentry{mappings|hyperpage}{233}
-\indexentry{transformatics!mappings|hyperpage}{234}
-\indexentry{transformer!as mapping|hyperpage}{234}
-\indexentry{sequence!algebra|hyperpage}{254}
-\indexentry{sequence algebra|hyperpage}{254}
-\indexentry{transformatics!as an algebra|hyperpage}{254}
-\indexentry{transformatics!definition|hyperpage}{254}
+\indexentry{ADM|hyperpage}{186}
+\indexentry{sequence analysis!anagram distance|hyperpage}{186}
+\indexentry{super-sequence|hyperpage}{197}
+\indexentry{matrices|hyperpage}{198}
+\indexentry{sequence!as matrices|hyperpage}{198}
+\indexentry{sequence!higher-order|hyperpage}{198}
+\indexentry{TEA!as higher-order transformers|hyperpage}{199}
+\indexentry{transformer chain|hyperpage}{201}
+\indexentry{sequence entropy!definition|hyperpage}{202}
+\indexentry{entropy|hyperpage}{202}
+\indexentry{table!mathematical structures|hyperpage}{208}
+\indexentry{sequence!definition|hyperpage}{209}
+\indexentry{matrix!definition|hyperpage}{214}
+\indexentry{matrices!as linear transformations|hyperpage}{215}
+\indexentry{data!coded or raw|hyperpage}{217}
+\indexentry{sequence!higher-order|hyperpage}{217}
+\indexentry{transformatics!mappings|hyperpage}{223}
+\indexentry{mappings|hyperpage}{223}
+\indexentry{transformatics!mappings|hyperpage}{224}
+\indexentry{transformer!as mapping|hyperpage}{224}
+\indexentry{sequence!algebra|hyperpage}{244}
+\indexentry{sequence algebra|hyperpage}{244}
+\indexentry{transformatics!as an algebra|hyperpage}{244}
+\indexentry{transformatics!definition|hyperpage}{244}

@@ -11,7 +11,7 @@
 
   \indexspace
 
-  \item ADM, \hyperpage{19}, \hyperpage{45}, \hyperpage{194}
+  \item ADM, \hyperpage{19}, \hyperpage{45}, \hyperpage{186}
   \item algorithm
     \subitem $\Omega $-to-OZIN Genetic Code Transcription, 
 		\hyperpage{129}
@@ -21,6 +21,7 @@
     \subitem computing MCS, \hyperpage{66}
     \subitem First Lu-Shuffle (FLSA), \hyperpage{80}
     \subitem Second Lu-Shuffle (SLSA), \hyperpage{87}
+    \subitem x-LGES Algorithm, \hyperpage{145}
   \item amino acid, \hyperpage{113}
   \item anagram, \hyperpage{30}, \hyperpage{88}
   \item Anagram Distance Measure, \hyperpage{45}
@@ -54,7 +55,7 @@
   \indexspace
 
   \item data, \hyperpage{14}
-    \subitem coded or raw, \hyperpage{225}
+    \subitem coded or raw, \hyperpage{217}
   \item decision surface, \hyperpage{51}, \hyperpage{54}
   \item definition
     \subitem ribosome, \hyperpage{121}
@@ -73,9 +74,10 @@
 
   \indexspace
 
-  \item entropy, \hyperpage{79}, \hyperpage{96}, \hyperpage{210}
+  \item entropy, \hyperpage{79}, \hyperpage{96}, \hyperpage{202}
   \item eukaryotes, \hyperpage{5}
   \item Euler virus, \hyperpage{125}
+  \item exons, \hyperpage{122}
 
   \indexspace
 
@@ -93,7 +95,7 @@
     \subitem hacking, \hyperpage{23}
     \subitem pathologies, \hyperpage{23}
   \item gene programs, \hyperpage{17}
-    \subitem non-coding, \hyperpage{22}
+    \subitem non-coding (introns), \hyperpage{22}
   \item generator, \hyperpage{18}
     \subitem k- or n-gram generator, \hyperpage{18}
     \subitem natural symbol set, \hyperpage{20}
@@ -134,24 +136,30 @@
   \indexspace
 
   \item IGS Law, \hyperpage{76}
+  \item introns, \hyperpage{22}
 
   \indexspace
 
   \item language transforms, \hyperpage{126}
   \item LGES protocol, \hyperpage{127}, \hyperpage{134}
-  \item Lu-Genome Expression System, \hyperpage{173}
-  \item Lu-Genome Expression System (LGES), \hyperpage{125}
+  \item Lu-Genome Expression System (LGES), \hyperpage{125}, 
+		\hyperpage{175}
+    \subitem complete transformatic derivation, \hyperpage{138}, 
+		\hyperpage{140}
+    \subitem derivation (DNA sequences), \hyperpage{154}
+    \subitem extension (x-LGES), \hyperpage{144}
+    \subitem PFA resolution protocol, \hyperpage{136}
   \item lu-number system, \hyperpage{25}
   \item lu-shuffle algorithm, \hyperpage{80}, \hyperpage{86}
 
   \indexspace
 
   \item machine learning, \hyperpage{54}
-  \item mappings, \hyperpage{11}, \hyperpage{231}
-  \item matrices, \hyperpage{206}
-    \subitem as linear transformations, \hyperpage{223}
+  \item mappings, \hyperpage{11}, \hyperpage{223}
+  \item matrices, \hyperpage{198}
+    \subitem as linear transformations, \hyperpage{215}
   \item matrix
-    \subitem definition, \hyperpage{222}
+    \subitem definition, \hyperpage{214}
   \item Maximum Common Subsequence (MCS), \hyperpage{66}
   \item modal sequence statistic
     \subitem for a population, \hyperpage{53}
@@ -212,29 +220,29 @@
   \indexspace
 
   \item Second Lu-Shuffle Algorithm (SLSA), \hyperpage{86}, 
-		\hyperpage{173}
+		\hyperpage{175}
   \item sequence
-    \subitem algebra, \hyperpage{26}, \hyperpage{252}
+    \subitem algebra, \hyperpage{26}, \hyperpage{244}
     \subitem anagram, \hyperpage{30}, \hyperpage{88}
-    \subitem as matrices, \hyperpage{206}
+    \subitem as matrices, \hyperpage{198}
     \subitem cardinality under multiplication, \hyperpage{61}
     \subitem complement, \hyperpage{25}, \hyperpage{27}
-    \subitem definition, \hyperpage{217}
+    \subitem definition, \hyperpage{209}
     \subitem flat-structure, \hyperpage{17}
     \subitem gene-program, \hyperpage{18}
     \subitem higher-order, \hyperpage{18}, \hyperpage{59}, 
-		\hyperpage{206}, \hyperpage{225}
+		\hyperpage{198}, \hyperpage{217}
     \subitem shuffling, \hyperpage{83}
     \subitem string notation, \hyperpage{15}
-  \item sequence algebra, \hyperpage{252}
+  \item sequence algebra, \hyperpage{244}
   \item sequence analysis, \hyperpage{35}
-    \subitem anagram distance, \hyperpage{19}, \hyperpage{194}
+    \subitem anagram distance, \hyperpage{19}, \hyperpage{186}
     \subitem base membership, \hyperpage{19}
     \subitem genetic pathologies, \hyperpage{22}
   \item sequence characteristic, \hyperpage{49}
     \subitem relation to cardinality, \hyperpage{50}
   \item sequence entropy, \hyperpage{59}
-    \subitem definition, \hyperpage{210}
+    \subitem definition, \hyperpage{202}
   \item sequences
     \subitem decimal, \hyperpage{29}, \hyperpage{125}, \hyperpage{150}
   \item sequencing, \hyperpage{12}, \hyperpage{63, 64}
@@ -244,7 +252,7 @@
   \item statistical artificial intelligence, \hyperpage{54}
   \item STOP-codon, \hyperpage{116}
   \item STOP-codons, \hyperpage{22}
-  \item super-sequence, \hyperpage{205}
+  \item super-sequence, \hyperpage{197}
   \item symbol set
     \subitem codon, \hyperpage{113}
     \subitem natural, \hyperpage{20}
@@ -256,13 +264,13 @@
   \indexspace
 
   \item table
-    \subitem mathematical structures, \hyperpage{216}
+    \subitem mathematical structures, \hyperpage{208}
     \subitem na-Sequence Analysis, \hyperpage{42}
-    \subitem Platonic Form Encoding Keys via FLSA, \hyperpage{175}
-    \subitem Platonic Form Encoding Keys via SLSA, \hyperpage{174}
+    \subitem Platonic Form Encoding Keys via FLSA, \hyperpage{177}
+    \subitem Platonic Form Encoding Keys via SLSA, \hyperpage{176}
     \subitem sequence transforms, \hyperpage{26}
   \item TEA
-    \subitem as higher-order transformers, \hyperpage{207}
+    \subitem as higher-order transformers, \hyperpage{199}
     \subitem installation guide, \hyperpage{38}
   \item TEA program
     \subitem modal sequence statistic, \hyperpage{40}
@@ -270,21 +278,21 @@
   \item transcription, \hyperpage{126}
     \subitem LGES protocol, \hyperpage{127}, \hyperpage{129}
   \item transformatics
-    \subitem as an algebra, \hyperpage{252}
-    \subitem definition, \hyperpage{252}
+    \subitem as an algebra, \hyperpage{244}
+    \subitem definition, \hyperpage{244}
     \subitem genetics introduction, \hyperpage{5}
     \subitem in medicine, \hyperpage{23}
-    \subitem mappings, \hyperpage{11}, \hyperpage{231, 232}
+    \subitem mappings, \hyperpage{11}, \hyperpage{223, 224}
     \subitem relation to frobenoids, \hyperpage{11}
   \item transformer
-    \subitem as mapping, \hyperpage{232}
+    \subitem as mapping, \hyperpage{224}
     \subitem complement, \hyperpage{28}
     \subitem mRNA Encoder, \hyperpage{115}
     \subitem RSG, \hyperpage{93}, \hyperpage{100}
     \subitem tGS, Genome Sequencer, \hyperpage{74}
     \subitem tMCS, for maximum common subsequence, \hyperpage{66}
     \subitem tORS, for Overlap Resultant Sequence, \hyperpage{71}
-  \item transformer chain, \hyperpage{74}, \hyperpage{209}
+  \item transformer chain, \hyperpage{74}, \hyperpage{201}
 
   \indexspace
 

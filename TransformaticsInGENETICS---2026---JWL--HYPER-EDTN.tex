@@ -455,6 +455,7 @@ Despite not having been funded by any one or any particular organization, the au
 \textbf{DNA} & Deoxyribonucleic Acid \\
 \textbf{FGE} & Full Genome Expression \\
 \textbf{FLSA} & First Lu-Shuffle Algorithm \\
+\textbf{GXS} & Genome Expression Suffix \\
 \textbf{IFA} & Intermediate Form Affix \\
 \textbf{I*POW} & International Portfolio of Writers \\
 \textbf{IGS} & Identity Genome Sequence \\
@@ -643,8 +644,6 @@ Finally, there are a few extra materials that have been set aside in the appendi
 
 \item \textbf{\hyperref[SECIFAMSSPFMAPS]{Chapter \ref{SECIFAMSSPFMAPS}}} that covers the matter of how to compute \textbf{PFA}s for particular na-Sequences.
 
-\item \textbf{\hyperref[SECALTPFGESA]{Chapter \ref{SECALTPFGESA}}} that preserves the original \textbf{PFA} construction algorithm as part of the \textbf{LGES} theory.
-
 \item \textbf{\hyperref[CHAPTRANS]{Chapter \ref{CHAPTRANS}}} that presents the formal distillation of all the essential foundational results (10)  and proposed general [theoretical] applications (10) of transformatics, these being presented in this book for the first time, as a verbatim reprint of the material originally presented in the \textbf{``Transformatics 101 explained"} mini-thesis\cite{Lutalo2025_transformatics_thesis}.
 
 \item \textbf{\hyperref[CHAPSITTRANS]{Chapter \ref{CHAPSITTRANS}}}, comprising of material and theorizing that comes a little later than the material originally in \cite{Lutalo2025_transformatics_thesis}, and which attempts, for the first time ever, to rigorously situate the newly proposed sub-field and theory of transformatics, in the grand spectrum of most of mathematics as well as applied mathematics.
@@ -786,7 +785,7 @@ We shall appreciate how relevant and important \textbf{\hyperref[DEFUNA]{Definit
 \fbox{\begin{minipage}{0.9\textwidth}
 \large
 
-\begin{law}[1 Universal \textbf{Nucleic Acid Identifier Symbol Set}: $\psi_{na}$]
+\begin{law}[1 Universal \textbf{Nucleic Acid Identifier Symbol Set}: $\psi_{na}$\index{law!na-Identifier Symbol Set}]
 \label{LAWNA}
  The \textit{universal} symbol set $\psi_{na}$ is spanned by any natural nucleic acid sequence $\Theta$\index{nucleic acids!universal symbol set}.
 \begin{proof}
@@ -1120,7 +1119,7 @@ One interesting consequence of that definition is the following law:\\
 \fbox{\begin{minipage}{0.9\textwidth}
 \large
 
-\begin{law}[\textbf{Non-Coding Gene Programs\footnote{Also known as \textbf{Introns} in some contexts\index{introns}.}}\index{gene programs!non-coding (introns)}]
+\begin{law}[\textbf{Non-Coding Gene Programs\footnote{Also known as \textbf{Introns} in some contexts\index{introns}.}}\index{gene programs!non-coding (introns)}\index{law!Introns}]
 \label{LAW2}
 If any gene-program $\Theta_{na}$ is processed by a ribosome, and yet it has the property:
 
@@ -2260,7 +2259,7 @@ Concerning this, note that, unlike \textbf{\hyperref[SECSCENA]{Scenario A}} wher
 
 \begin{defn}[The \textbf{Sequence Characteristic}\index{sequence characteristic}\index{characteristic!sequence}, $\hbar(\overset{>}{\Theta})$]
 \label{DEFSEQCHAR}
-If a sequence $\Theta$ has the modal sequence statistic\footnote{Refer to rigorous definition: \textbf{\hyperref[DEFMSSFIN]{Definition \ref{DEFMSSFIN}}}} $\overset{>}{\Theta} = \langle \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i, \rangle$, so that we can express it as a string concatenation of its distinct symbols in their relative order of highest frequency and first occurrence such as $\omega_1\omega_2\omega_3\ldots\omega_k$ for some $k$ the size of $\overset{>}{\Theta}$, then, if for each $\omega_i$ we also know its corresponding frequency in $\Theta$, such as $f_i$ for $\omega_i$, then writing the frequency next to the symbol such as $\omega_if_i$ for all terms in $\overset{>}{\Theta}$ produces a string that contains both the information about the unique modal sequence of $\Theta$, but also the information about how frequent each symbol occurred. We shall call such an expression the \textbf{Sequence Characteristic}, and shall denote it as  $\hbar(\overset{>}{\Theta})$, so that we can then write for $\Theta$, its corresponding sequence characteristic as:
+If a sequence $\Theta$ has the modal sequence statistic\footnote{Refer to rigorous definition: \textbf{\hyperref[DEFMSSFINb]{Definition \ref{DEFMSSFINb}}}} $\overset{>}{\Theta} = \langle \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i, \rangle$, so that we can express it as a string concatenation of its distinct symbols in their relative order of highest frequency and first occurrence such as $\omega_1\omega_2\omega_3\ldots\omega_k$ for some $k$ the size of $\overset{>}{\Theta}$, then, if for each $\omega_i$ we also know its corresponding frequency in $\Theta$, such as $f_i$ for $\omega_i$, then writing the frequency next to the symbol such as $\omega_if_i$ for all terms in $\overset{>}{\Theta}$ produces a string that contains both the information about the unique modal sequence of $\Theta$, but also the information about how frequent each symbol occurred. We shall call such an expression the \textbf{Sequence Characteristic}, and shall denote it as  $\hbar(\overset{>}{\Theta})$, so that we can then write for $\Theta$, its corresponding sequence characteristic as:
 
 \vspace{1em}
 \begin{equation}
@@ -2398,7 +2397,7 @@ And which we might also express more elaborately via [sparse\footnote{Especially
 Then, given some query sequence such as $Q_k$, and the consequences of \textbf{Theorem 2} in \cite{transformatics}\footnote{Concerning ``Equivalence of Distributions under Modal Sequence
 Analysis" --- that if any two sequences otherwise so unlike in literal membership, ordering, size, etc, instead end up having similar or equal modal sequence statistics, then we can safely conclude they possibly belong to the same probability distribution.}, we can safely classify the query sequence as \textbf{belonging to} or \textbf{being appreciably close} to a given population, if we find that computing the anagram distance between the query and the population via their representative modal sequence statistics results in an ADM value of 0, or if, where there are two or more populations to compare against, that we select that population whose ADM against the query sequence's MSS is appreciably close enough to 0 --- or perhaps the least when comparing against multiple populations.
 
-With that useful theory then, and given we already know how to compute an MSS, $\overset{>}{Q_k}$, for any particular sequence\footnote{In this work, check \textbf{\hyperref[SECFANAL]{First Analysis}}, but also \textbf{Section 4.1} and especially \textbf{Definition 1} in \cite{transformatics} concerning how to compute the modal sequence statistic. Also consult \textbf{\hyperref[DEFMSSFIN]{Definition \ref{DEFMSSFIN}}} in the appendix.} $Q_k$, we instead better start by solving the matter of how to compute an MSS for a set of sequences --- a \textbf{representative population modal sequence statistic}.
+With that useful theory then, and given we already know how to compute an MSS, $\overset{>}{Q_k}$, for any particular sequence\footnote{In this work, check \textbf{\hyperref[SECFANAL]{First Analysis}}, but also \textbf{Section 4.1} and especially \textbf{Definition 1} in \cite{transformatics} concerning how to compute the modal sequence statistic. Also consult \textbf{\hyperref[DEFMSSFINb]{Definition \ref{DEFMSSFINb}}} in the appendix.} $Q_k$, we instead better start by solving the matter of how to compute an MSS for a set of sequences --- a \textbf{representative population modal sequence statistic}.
 
 
 So, assuming we have $Q_k = \langle a, d, c \rangle$, $\Omega1 = \langle a, b, c, d, e, f \rangle$ and $\Omega2 = \langle a, b, a, d, c \rangle$, and so that $\Omega^n = \langle \Omega1, \Omega2 \rangle$, we wish to compute $\overset{>}{\Omega^n}$, a population modal sequence statistic representing or summarizing the membership and frequency distribution across the two sequences. So, how should we go about [correctly] computing $\overset{>}{\Omega^n}$?
@@ -2487,7 +2486,7 @@ This process would proceed somewhat like this:
 
 \begin{itemize}
 \item Using the provided collection of sequences $\Omega^n$, and the process outlined in \textbf{\hyperref[SECCOMPGENSEQ]{Section \ref{SECCOMPGENSEQ}}}, especially via processing such a collection via the \textbf{\hyperref[DEFGENOMESEQ]{Genome Sequencer}} machine/transformer, we shall obtain a representative summary, well-aligned and potentially complete [na-]sequence $\Omega_{gs}$ that represents the entire collection/population specified.
-\item By the \textbf{\hyperref[LAWGDL]{Identity Genome Sequence Law}}, we trust that such a sequence shall be unique for any two distinct collections or populations.
+\item By the \textbf{\hyperref[LAWGDL]{Identity Genome Sequence Law}}\index{law!IGS}, we trust that such a sequence shall be unique for any two distinct collections or populations.
 \item {And thus, having obtained $\Omega_{gs}$, we then compute the RPMSS not from the individual sequences in a population, but instead from their representative genome sequence. That is to say:
 
 \vspace{1em}
@@ -2623,7 +2622,7 @@ Thus, for optimal lookup mechanisms --- concerns about space and [polynomial] ti
 
 
 
- --- see definition of $R_{\Theta^n_k} \approx \Theta_n$ in \textbf{\hyperref[LAWGDL]{IGS Law}} (\textbf{\hyperref[SECIGSL]{Section \ref{SECIGSL}}}), while the special sequence operator $\ddot{o}(\Theta_n)$ computes and returns a \textbf{G$\ddot{o}$del Number}\cite{illingworth1996computing}\footnote{Based on the concept of \textbf{G$\ddot{o}$del numbering}\index{G$\ddot{o}$del number} --- ``A one-to-one mapping (i.e. an injection) of the symbols, formulas, and finite sequences of formulas of the formal system onto some subset of the natural numbers. The mapping must be such that there is an algorithm that, for any symbol, formula, or finite sequence of formulas, identifies the corresponding natural number; this is the \textit{G$\ddot{o}$del number} of that object."\cite{illingworth1996computing}. G$\ddot{o}$del numbers are a method developed by Kurt G$\ddot{o}$del in 1931\cite{godel1931} to encode symbols, formulas, and entire proofs from formal mathematical systems as unique natural numbers. This encoding allows syntactic objects to be treated arithmetically\cite{godel1931english}.}, $\ddot{o}(\Theta_n): \psi_{\Theta_n}^k \times\mathbb{N}^k \rightarrow \mathbb{N}$ that is derived optimally using the characteristic, $\hbar(\overset{>}{\Theta_n})$, for $\Theta_n$ a sequence of length $n$, and the first $k$ prime numbers such that $k = \invpi(\overset{>}{\Theta_n}) \quad \land \quad \forall \omega_i \in \hbar(\overset{>}{\Theta_n}): \ddot{o}(\omega_i) : \ddot{o}(i) = f_i \times (p_i \in \mathbb{P})$ --- $p_i$ is the $i$-th prime\footnote{$\mathbb{P}$ is the set of all prime numbers.} starting from 2 and spanning $\mathbb{N}$.
+ --- see definition of $R_{\Theta^n_k} \approx \Theta_n$ in \textbf{\hyperref[LAWGDL]{IGS Law}} (\textbf{\hyperref[SECIGSL]{Section \ref{SECIGSL}}})\index{law!IGS}, while the special sequence operator $\ddot{o}(\Theta_n)$ computes and returns a \textbf{G$\ddot{o}$del Number}\cite{illingworth1996computing}\footnote{Based on the concept of \textbf{G$\ddot{o}$del numbering}\index{G$\ddot{o}$del number} --- ``A one-to-one mapping (i.e. an injection) of the symbols, formulas, and finite sequences of formulas of the formal system onto some subset of the natural numbers. The mapping must be such that there is an algorithm that, for any symbol, formula, or finite sequence of formulas, identifies the corresponding natural number; this is the \textit{G$\ddot{o}$del number} of that object."\cite{illingworth1996computing}. G$\ddot{o}$del numbers are a method developed by Kurt G$\ddot{o}$del in 1931\cite{godel1931} to encode symbols, formulas, and entire proofs from formal mathematical systems as unique natural numbers. This encoding allows syntactic objects to be treated arithmetically\cite{godel1931english}.}, $\ddot{o}(\Theta_n): \psi_{\Theta_n}^k \times\mathbb{N}^k \rightarrow \mathbb{N}$ that is derived optimally using the characteristic, $\hbar(\overset{>}{\Theta_n})$, for $\Theta_n$ a sequence of length $n$, and the first $k$ prime numbers such that $k = \invpi(\overset{>}{\Theta_n}) \quad \land \quad \forall \omega_i \in \hbar(\overset{>}{\Theta_n}): \ddot{o}(\omega_i) : \ddot{o}(i) = f_i \times (p_i \in \mathbb{P})$ --- $p_i$ is the $i$-th prime\footnote{$\mathbb{P}$ is the set of all prime numbers.} starting from 2 and spanning $\mathbb{N}$.
  
 
 Computing a hashkey based on a G$\ddot{o}$del number is just one approach to the optimal way to implement a sequence lookup mechanism with \textbf{\hyperref[TRANSFSEQLOOKUP]{Transformer \ref{TRANSFSEQLOOKUP}}}. Among the \textbf{attractive properties} of this method, is the realization that, unlike the case of using the \textbf{ADM}, the G$\ddot{o}$del number approach boils down to comparing sequences using pure numbers and to which mere basic arithmetic tests can be applied than using sequences directly or sequence projections (themselves still potentially non-numeric sequences) to which we can not readily apply search or measurements by pure arithmetic means.
@@ -3311,7 +3310,7 @@ Otherwise $\Omega_{na} \ne \Theta_{gs}$, for $\epsilon \leq 1$.
 \section{The Identity Genome Sequence (IGS) Law}
 \label{SECIGSL}
 
-\begin{law}[The \textbf{Identity Genome Sequence Law}\index{IGS Law}\index{genome sequencing!a law}]
+\begin{law}[The \textbf{Identity Genome Sequence Law}\index{IGS Law}\index{genome sequencing!a law}\index{law!IGS}]
 \label{LAWGDL}
 The Identity Genome Sequence, $R_{\Theta^n}(\Omega): \mathbb{N} \times \psi_{DNA}$, is derived from some collection of sequences, $\Theta^n \langle \prod\limits^n \theta_i \rangle$ such that $\theta_i \subset \Omega \lor \theta_i \approx \Omega$ are approximations of $\Omega$, the longest known genome sequence of the entity, whose exact genome sequence would be $\Omega$, and which can uniquely identify it. For sufficiently large $n$, and where the sample sequences $\theta_i$ were read or generated correctly by scanning or sequencing the entity, then 
 
@@ -4938,7 +4937,7 @@ And with $\Theta^*_n$ thus produced, we can then merely generate the correspondi
 $ $\\
 $\Theta^*_n \quad \xrightarrow{O_{mRNA-translate}(\cdot)} \quad [\Theta^*_n]^* \quad;$\\
 \begin{enumerate}
-\item $\invpi([\Theta^*_n]^*) < \invpi(\Theta^*_n)$ because\footnote{\textbf{FUTURE WORK}: Verify, either empirically or theoretically, whether indeed this inequality is universally true or whether there is a computable upper limit to the length of the produced amino-acid sequence relative to the length of the gene program sequence that describes its production.} we only count each codon in the source once, and as per the rules of gene processing/transcription, all non-coding codons (introns) --- basically, codons not able to be translated into an amino-acid given the state of the gene processor\footnote{See \textbf{\hyperref[FIG3]{Figure \ref{FIG3}}} and \textbf{\hyperref[FIG4]{Figure \ref{FIG4}}}} don't contribute to the generated resultant sequence in terms of sections it contains --- with the exception of the special ``Met" codon\footnote{A START-codon also counted among genuine ``exons" --- coding codons\index{exons}.} that might or might not be retained in the resultant sequence even though it is automatically included as the first produced amino-acid in any legitimate gene sequence transcription result.
+\item $\invpi([\Theta^*_n]^*) < \invpi(\Theta^*_n)$ because\footnote{\textbf{FUTURE WORK}: Verify, either empirically or theoretically, whether indeed this inequality is universally true or whether there is a computable upper limit to the length of the produced amino-acid sequence relative to the length of the gene program sequence that describes its production.} we only count each codon in the source once, and as per the rules of gene processing/transcription, all non-coding codons (introns)\index{law!Introns} --- basically, codons not able to be translated into an amino-acid given the state of the gene processor\footnote{See \textbf{\hyperref[FIG3]{Figure \ref{FIG3}}} and \textbf{\hyperref[FIG4]{Figure \ref{FIG4}}}} don't contribute to the generated resultant sequence in terms of sections it contains --- with the exception of the special ``Met" codon\footnote{A START-codon also counted among genuine ``exons" --- coding codons\index{exons}.} that might or might not be retained in the resultant sequence even though it is automatically included as the first produced amino-acid in any legitimate gene sequence transcription result.
 \item The entire sequence $[\Theta^*_n]^*$ is a kind of 3-Dimension molecule based on the chain of amino-acids it contains, and is technically referred to as a protein.
 \end{enumerate}
 $\qed$
@@ -4968,22 +4967,6 @@ And thus, we can finally merely call any machine capable of implementing the pro
 %\end{minipage}}
 %\\
 
-{
-\LARGE
-
-\hl{
-
-TODO: Continue indexing starting from here
-
-}
-}
-
-
-{
-\LARGE
-
-\hl{TODO: proceed from here...}
-}
 
 
 \chapter{Transformatics and the Lu-Genome Expression System in Bio-Automata}
@@ -5569,15 +5552,15 @@ And finally, it shall be worth noting that this notion also underlies the presen
 \section{The Extended Lu-Genome Expression System (x-LGES)}
 \label{SECxLGES}
 
-If you look at the genome sequence expressions that we have encountered in \textbf{\hyperref[SECFULLGES]{Section \ref{SECFULLGES}}}, and compare that to the case of our pineapple in \textbf{\hyperref[FIGPINEAPPLE]{Figure \ref{FIGPINEAPPLE}}} that opens the introductory chapter, you shall notice that, just in case we assume our \textbf{LGES} protocols to be sufficient for the expression of not just bits of an organism, but also relevant to the expression of \textbf{the complete organism}, then, it might seem like something is still missing, and thus the \textbf{Extended Lu-Genome Expression System} (x-LGES).
+If you look at the genome sequence expressions that we have encountered in \textbf{\hyperref[SECFULLGES]{Section \ref{SECFULLGES}}}, and compare that to the case of our pineapple in \textbf{\hyperref[FIGPINEAPPLE]{Figure \ref{FIGPINEAPPLE}}} that opens the introductory chapter, you shall notice that, just in case we assume our \textbf{LGES} protocols to be sufficient for the expression of not just bits of an organism, but also relevant to the expression of \textbf{the complete organism}, then, it might seem like something is still missing, and thus the \textbf{Extended Lu-Genome Expression System} (x-LGES)\index{Lu-Genome Expression System (LGES)!extension (x-LGES)}.
 
 
 So, what exactly is missing from our genome expressions thus far? We shall call out a few telling points to help drive the point home:
 
 \begin{enumerate}
 \item As has been stressed already, and as is the case that we wish our science to not be constructed in ivory towers alienated from facts and reality in nature, we must borrow a leaf from how actual DNA is utilized to express organisms in reality. For example, it is not that one genome expresses the hands, another the heart, and yet another the eyes! Well, of course, in a particular organism's DNA, there shall be specific subsequences that best define the expression of particular features or aspects of an organism, however, overall, a single, complete genome sequence is and should be sufficient for the complete expression of an entire organism with all its various attributes and distinct aspects well catered for.
-\item When we consider the way the original \textbf{LGES} algorithm is specified\footnote{Not to be confused with \textbf{\hyperref[ALGCOZINPLATO_ORIG]{Algorithm \ref{ALGCOZINPLATO_ORIG}}} (now in the \textbf{Appendix}: \textbf{\hyperref[SECALTPFGESA]{Chapter \ref{SECALTPFGESA}}}).} --- \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}  being the one that combines both transcription and translation into a single process, we shall note that, the final output of that process --- as depicted in \textbf{\hyperref[EQTRANSLGENSEQ]{Equation \ref{EQTRANSLGENSEQ}}} for the general case, and as in \textbf{\hyperref[EQGFEEVIRUS]{Equation \ref{EQGFEEVIRUS}}} for one particular organism's expression (in \textit{numerical form}), we notice that, especially when approached from the point of view of the fully-processed rendering of the \textbf{FGE}, $\boxed{OZ(\Theta_\Omega)}^*$, some potentially relevant information could be considered to be \textit{missing}\footnote{Well, technically, unless when one is only studying the visual expressions corresponding to a particular genome sequence --- which might introduce a lot of variations and exploit a lot of creative freedom, when we instead express the genome in the mathematical form as in \textbf{\hyperref[EQGFEEVIRUS]{Equation \ref{EQGFEEVIRUS}}}, almost all the necessary information about the genome is present at that moment, including the important statistical summary information from the \textbf{IFA MSS}.} from that expression at that point. In particular, when we have the \textbf{PFA} expressed in its platonic form, it might not readily be possible to discern the vital $\overset{>}{OZ(\Theta_\Omega)}$ aspect since the actual \textbf{PFA} is a combination (see \textbf{\hyperref[EQFBOXED]{Equation \ref{EQFBOXED}}}) of that \textbf{IFA MSS} in its OZIN form as well as its translation into complementary Platonic Form expressions via the \textbf{\hyperref[FIGPLATONICCIPH]{PLATO CIPHER}}.
-\item Finally, and again, returning to nature as our authority on genome expression, we note that, most organisms --- plants or animals, typically manifest in a \textbf{PREFIX-THORAX-SUFFIX}/\textbf{HEAD-BODY-ROOT} form. Looking at our \textbf{LGES} renderings in \textbf{\hyperref[SECFULLGES]{Section \ref{SECFULLGES}}}, we see that the \textbf{IFA} aspect properly caters for the ``PREFIX/HEAD" component --- it somewhat contains the entire [genome] sequence just encoded in base-OZ\footnote{Interesting to say, ``the brains" of the expressed organism, especially since it has the complete genome almost unaltered, and in its \textit{actionable form}.}. Then we have the ``THORAX/BODY" bit. It feels plausible to equate that with the protracted spatial-expressions of the \textbf{PFA}. But what of the ``SUFFIX/ROOT" component? And talking of suffixes in natural genome expressions; we can appreciate that for humans, birds and most animals, we can talk of \textbf{legs}; for aquatic animals especially, such as fish, we might talk of \textbf{tail-fins}; for insects and all various kinds of arthropods, we can not only talk of a body form that's generally made up of chained bits or adjoined segments such as in our \textbf{LGES}, but that they generally terminate in a kind of suffix we might consider to be \textbf{an abdomen}. And then finally, for plants, it's obvious they typically terminate in \textbf{roots} --- and especially for the case of food-crops, we find that these roots contain sufficient \textit{bio-information} to allow us to reproduce the original plant organism from just those suffixes\footnote{Though not all root-crops might readily be grown from their root tubers, some good examples from observation and experience author has obtained practicing domestic crop-husbandry include irish potatoes (\textit{obutakuli}), yams (\textit{ebihuna}), onions (\textit{obutunguru}), ginger (\textit{entangahuzi}) and (\textit{binyobwa}) ground-nuts! And talking of which, for the aspect of being able to re-grow an organism from its affixes --- head/prefix or root/suffix, the interesting case of the sweet-potato, would be a fun case; despite being a root-crop as those mentioned before, attempts to re-grow it say by reburying a sweet-potato tuber, is so futile! Only way is to take the leaves (prefixes) and partially-bury them in soil, so as to re-grow the complete sweet-potato plant!}.
+
+\item And then, returning to nature as our authority on genome expression, we note that, most organisms --- plants or animals, typically manifest in a \textbf{PREFIX-THORAX-SUFFIX}/\textbf{HEAD-BODY-ROOT} form. Looking at our \textbf{LGES} renderings in \textbf{\hyperref[SECFULLGES]{Section \ref{SECFULLGES}}}, we see that the \textbf{IFA} aspect properly caters for the ``PREFIX/HEAD" component --- it somewhat contains the entire [genome] sequence just encoded in base-OZ\footnote{Interesting to say, ``the brains" of the expressed organism, especially since it has the complete genome almost unaltered, and in its \textit{actionable form}.}. Then we have the ``THORAX/BODY" bit. It feels plausible to equate that with the protracted spatial-expressions of the \textbf{PFA}. But what of the ``SUFFIX/ROOT" component? And talking of suffixes in natural genome expressions; we can appreciate that for humans, birds and most animals, we can talk of \textbf{legs}; for aquatic animals especially, such as fish, we might talk of \textbf{tail-fins}; for insects and all various kinds of arthropods, we can not only talk of a body form that's generally made up of chained bits or adjoined segments such as in our \textbf{LGES}, but that they generally terminate in a kind of suffix we might consider to be \textbf{an abdomen}. And then finally, for plants, it's obvious they typically terminate in \textbf{roots} --- and especially for the case of food-crops, we find that these roots contain sufficient \textit{bio-information} to allow us to reproduce the original plant organism from just those suffixes\footnote{Though not all root-crops might readily be grown from their root tubers, some good examples from observation and experience author has obtained practicing domestic crop-husbandry include irish potatoes (\textit{obutakuli}), yams (\textit{ebihuna}), onions (\textit{obutunguru}), ginger (\textit{entangahuzi}) and (\textit{binyobwa}) ground-nuts! And talking of which, for the aspect of being able to re-grow an organism from its affixes --- head/prefix or root/suffix, the interesting case of the sweet-potato, would be a fun case; despite being a root-crop as those mentioned before, attempts to re-grow it say by reburying a sweet-potato tuber, is so futile! Only way is to take the leaves (prefixes) and partially-bury them in soil, so as to re-grow the complete sweet-potato plant!}.
 \end{enumerate}
 
 So, with those observations and criticisms of the original \textbf{LGES}, we can provide a solution in form of the following algorithm that extends \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}:
@@ -5589,66 +5572,71 @@ So, with those observations and criticisms of the original \textbf{LGES}, we can
 
 To render a complete genome expression using this extended algorithm, and starting from the original genome sequence encoded as a base-$\Omega$ expression, we proceed as such: 
 
-\begin{alg}[The \textbf{x-LGES Algorithm}]
+\begin{alg}[The \textbf{x-LGES Algorithm}\index{algorithm!x-LGES Algorithm}]
 \label{ALGCOZINPLATOEXT}
 
 Assuming we have an $\Omega$-base encoded genetic code sequence $\Theta_\Omega$ of some length $n > 0$.
 
 \begin{enumerate}
-\item{\textbf{INITIALIZE} the final expression by constructing the initial part of the \textbf{FGE} using \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}} to construct the \textbf{Intermediate Form Affix} (IFA) of $\Theta_\Omega$ \textbf{and} the \textbf{Platonic Form Aspect (PFA)} --- so that at this point, the complete expressed(transcribed+translated) sequence shall be as:\\
+\item{\textbf{INITIALIZE} the final expression by constructing the initial two parts of the \textbf{FGE} using \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}} to construct the \textbf{Intermediate Form Affix} (IFA) of $\Theta_\Omega$ \textbf{and} the \textbf{Platonic Form Aspect (PFA)} --- so that, at the end of this step, the \textbf{FGE} thus far shall be as:
 
+\vspace{1em}
 \begin{equation}
 \label{EQTRANSLGENSEQEXT}
-\boxed{OZ(\Theta_\Omega)}^* = OZ(\Theta_\Omega)\cdot\boxed{OZ(\Theta_\Omega)}
-\end{equation}\\
+\boxed{OZ(\Theta_\Omega)}^* =   OZ(\Theta_\Omega) \cdot \boxed{\omega}_{joint} \cdot \boxed{OZ(\Theta_\Omega)}
+\end{equation}
+\vspace{1em}
 
 }
 \item {
 \textbf{EXTEND} that initial \textbf{FGE} with just \textbf{a single GAP/JOINT extension}, so that we then have the \textbf{FGE} as such:
 
+\vspace{1em}
 		\begin{equation}
 		\label{EQEXTFGEJOINTEXT}
-		\boxed{OZ(\Theta_\Omega)}^* = \boxed{OZ(\Theta_\Omega)}^* \cdot \boxed{\omega_i^*}_{joint}
-		\end{equation}		
-		
-		And equivalently:
-		
-		\begin{equation}
-		\label{EQEXTFGEJOINTSUFEXT}
-		\boxed{OZ(\Theta_\Omega)}^* = OZ(\Theta_\Omega)\cdot\boxed{OZ(\Theta_\Omega)} \cdot \boxed{\omega_i^*}_{joint}
-		\end{equation}				
+		\boxed{OZ(\Theta_\Omega)}^* = \boxed{OZ(\Theta_\Omega)}^* \cdot \boxed{\omega_i^*}_{joint} = OZ(\Theta_\Omega) \cdot \boxed{\omega}_{joint} \cdot \boxed{OZ(\Theta_\Omega)} \cdot \boxed{\omega_i^*}_{joint}
+		\end{equation}	
+		\vspace{1em}				
 
 }
 \item {
 
-Then, \textbf{USE} the \textbf{IFA MSS} from \textbf{Step\#1}/\textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}, that is $\overset{>}{OZ(\Theta_\Omega)}$, as the \textbf{Genome Expression Suffix (GES)} to extend the current \textbf{FGE} so that
+Then, \textbf{USE} the \textbf{IFA MSS} from \textbf{Step\#2(b)}/\textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}, that is $\overset{>}{OZ(\Theta_\Omega)}$, as the \textbf{Genome Expression Suffix (GXS)} to extend the current \textbf{FGE} so that in simplified form, we have:
 
+\vspace{1em}
 \begin{equation}
 \label{EQTRANSLGENSEQEXT}
-\boxed{OZ(\Theta_\Omega)}^* = OZ(\Theta_\Omega)\cdot\boxed{OZ(\Theta_\Omega)}\cdot\overset{>}{OZ(\Theta_\Omega)}
-\end{equation}\\
+\boxed{OZ(\Theta_\Omega)}^* = \textbf{IFA} \cdot \textbf{PFA} \cdot \textbf{GXS} = OZ(\Theta_\Omega)\cdot\boxed{OZ(\Theta_\Omega)}\cdot\overset{>}{OZ(\Theta_\Omega)}
+\end{equation}
+\vspace{1em}
 
 Which, if qualified with the necessary encoding bases is as such:
 
+\vspace{1em}
 \begin{equation}
 \label{EQTRANSLGENSEQEXTQUAL}
-\boxed{OZ(\Theta_\Omega)}^* = OZ(\Theta_\Omega)_{oz}\cdot\boxed{OZ(\Theta_\Omega)}_{pf}\cdot\overset{>}{OZ(\Theta_\Omega)}_{oz}
+\boxed{OZ(\Theta_\Omega)}^* = OZ(\Theta_\Omega)_{oz}\cdot\boxed{OZ(\Theta_\Omega)}_{pf\cup oz}\cdot\overset{>}{OZ(\Theta_\Omega)}_{oz}
 \end{equation}
+\vspace{1em}
 
 And if we express this as the update to \textbf{\hyperref[EQEXTFGEJOINTEXT]{Equation \ref{EQEXTFGEJOINTEXT}}}, we have:
 
+\vspace{1em}
 \begin{equation}
 		\label{EQEXTFGEJOINTEXT_B}
-		\boxed{OZ(\Theta_\Omega)}^* = \boxed{OZ(\Theta_\Omega)}^* \cdot \boxed{\omega_i^*}_{joint} \cdot\overset{>}{OZ(\Theta_\Omega)}_{oz}
+		\boxed{OZ(\Theta_\Omega)}^* =  OZ(\Theta_\Omega) \cdot \boxed{\omega}_{joint} \cdot \boxed{OZ(\Theta_\Omega)} \cdot \boxed{\omega_i^*}_{joint} \cdot\overset{>}{OZ(\Theta_\Omega)}
 		\end{equation}	
+		\vspace{1em}
 		
-		Which tells us that the final \textbf{FGE} is the original \textbf{FGE} extended with just one extra JOINT and the \textbf{GES}/\textbf{IFA MSS} encoded in base-OZIN.
+		Which tells us that the final \textbf{FGE} is the original \textbf{FGE} extended with just one extra JOINT and the \textbf{GXS}/\textbf{IFA MSS} encoded in base-OZIN.
 
 }
 \item \textbf{TRUNCATE} the final-structure after the final term in \textbf{FGE}.
-\item \textbf{RETURN} that final \textbf{FGE}, $\boxed{OZ(\Theta_\Omega)}^*$, as the final transcribed and translated version of $\Theta_\Omega$. The culmination of our extended genome expression system.
+\item \textbf{RETURN} that final resultant \textbf{FGE}, $\boxed{OZ(\Theta_\Omega)}^*$, as the final genome expression projection of $\Theta_\Omega$. The culmination of our extended genome expression system.
 \end{enumerate}
+$\qed$
 \end{alg}
+\vspace{2em}
 
 
 We shall come to appreciate this updated protocol in \textbf{\hyperref[ALGCOZINPLATOEXT]{Algorithm \ref{ALGCOZINPLATOEXT}}}, by taking a few of the \textbf{FGE} examples we looked at earlier, and re-render them using the \textbf{x-LGES} to see what difference it makes.
@@ -5664,12 +5652,12 @@ We shall come to appreciate this updated protocol in \textbf{\hyperref[ALGCOZINP
   \end{center}
 \end{figure}
 
-The first example is with the notorious \textbf{Euler Virus} originally defined in \textbf{\hyperref[EQDNAV]{Equation \ref{EQDNAV}}}, and this rendering shown in \textbf{\hyperref[FIGLGESEULERVIRUSv2EXT]{Figure \ref{FIGLGESEULERVIRUSv2EXT}}} shall start to paint the new picture for you, if you compare it to the original OZIN-expression of its equivalent \textbf{mRNA} as shown in \textbf{\hyperref[FIGOZEVIRUS]{Figure \ref{FIGOZEVIRUS}}}, and then, that same organism as the basic \textbf{LGES}-form in \textbf{\hyperref[FIGLGESEULERVIRUSv2]{Figure \ref{FIGLGESEULERVIRUSv2}}} which shows the full genome expression minus the extension \textbf{GES} SUFFIX/ROOT.
+The first example is with the notorious \textbf{Euler Virus} originally defined in \textbf{\hyperref[EQDNAV]{Equation \ref{EQDNAV}}}, and whose updated genome expression rendering as shown in \textbf{\hyperref[FIGLGESEULERVIRUSv2EXT]{Figure \ref{FIGLGESEULERVIRUSv2EXT}}} shall start to paint the new picture for you, if you compare it to the original OZIN-expression of its equivalent \textbf{mRNA} as shown in \textbf{\hyperref[FIGOZEVIRUS]{Figure \ref{FIGOZEVIRUS}}}, and then, that same organism as the basic \textbf{LGES}-form in \textbf{\hyperref[FIGLGESEULERVIRUSv2]{Figure \ref{FIGLGESEULERVIRUSv2}}} which shows the full genome expression minus the extension \textbf{GXS} SUFFIX/ROOT.
 
 
 \section{Actual DNA Sequences Expressed in the Extended Lu-Genome Expression System}
 
-So, now that we have finished looking at what could happen with genome expression under the hypothetical LGES protocols, one might wonder, and correctly so, how might we use that system to attempt to visualize actual na-Sequences such as DNA or RNA sequences or subsequences?
+So, now that we have finished looking at what could happen with genome expression under the hypothetical LGES protocols, one might wonder, and correctly so, how might we use that system to attempt to visualize actual na-Sequences such as DNA or RNA sequences or perhaps just their subsequences?
 
 
 \vspace{2em}
@@ -5677,21 +5665,40 @@ So, now that we have finished looking at what could happen with genome expressio
 \begin{minipage}{0.9\textwidth}
 \textbf{On Barriers to Entry:}\\
 
-Concerning working with the \textbf{LGES} or \textbf{x-LGES} as it is at the moment, the entry point barrier is that the system is defined for sequences expressed in base-10 only. That means, unless your sequence is expressed using symbols from $\psi_{10}$, there is no direct way to leverage the theory we have just presented. So, that's where we need put our attention first, with regards to processing DNA or RNA in this thought experiment --- and for any other kinds of sequences one might wish/attempt to visually express using our system.
+Concerning working with the \textbf{LGES} or \textbf{x-LGES} as it is at the moment, the entry point barrier is that \textbf{the system is well defined for sequences expressed in base-10 only.} That means, unless your sequence is expressed using symbols from $\psi_{10}$, there is no direct way to leverage the theory we have just presented. So, that's where we need put our attention first, with regards to processing DNA or RNA leveraging our thought experiment --- also applies to any other kinds of sequences one might wish/attempt to visually-spatially express using our system.
 
 \end{minipage}}
 \\
 \vspace{2em}
 
 
-Good enough, we have had extensive background concerning transformation of sequences across symbol sets in earlier chapters and works by the author\cite{base36paper}\cite{lnspaper}\footnote{Also see \cite{bosse2025repeating}.}, and so, we can just re-iterate some points here.
+Good enough, we have had extensive background concerning transformation of sequences across symbol sets in earlier chapters and works by the author\cite{base36paper}\cite{lnspaper}\footnote{Also see \cite{bosse2025repeating}, J. Bossé and William Cook on general base-conversions for numerical expressions (only).}, and so, we can just re-iterate some important points here.
 
 \begin{itemize}
-\item We know that any na-Sequence shall span $\psi_{na}$, which has cardinality 5 (refer to \textbf{\hyperref[LAWNA]{Law \ref{LAWNA}}}), and yet, $\invpi(\psi_{10}) = 10 > \invpi(\psi_{na})$.
-\item For either DNA ($\psi_{DNA}$) or RNA ($\psi_{RNA}$), their corresponding symbol set cardinalities are just \textbf{4} and \textbf{4} respectively, which still doesn't map well to the base-10 or rather $\psi_{10}$ symbol set that the Lu-Genome Expression System requires.
+\item We know that any na-Sequence shall span $\psi_{na}$, which has cardinality 5 (refer to \textbf{\hyperref[LAWNA]{Law \ref{LAWNA}}}), and yet, $\invpi(\psi_{10}) = 10 > \invpi(\psi_{na})$\index{law!na-Identifier Symbol Set}.
+\item For either DNA ($\psi_{DNA}$) or RNA ($\psi_{RNA}$), their corresponding symbol set cardinalities are just \textbf{4} and \textbf{4} respectively, which still doesn't map well to the base-10 or rather $\psi_{\Omega}$ symbol set that the Lu-Genome Expression System requires.
 \end{itemize}
 
-So, using sequences we have already encountered, such as $\Theta_4^*$ in \textbf{\hyperref[EQ6B]{Equation \ref{EQ6B}}} --- an RNA sequence, or its original DNA form (as in \textbf{\hyperref[EQ5]{Equation \ref{EQ5}}}) how, should we go about expressing it in equivalent or sufficient $\Omega$-form?
+So, using sequences we have already encountered, such as $\Theta_4^*$ in \textbf{\hyperref[EQ6B]{Equation \ref{EQ6B}}} --- an RNA sequence, or its original DNA form (as in \textbf{\hyperref[EQ5]{Equation \ref{EQ5}}}) how, should we go about expressing it in equivalent decimal or essential $\Omega$-form?
+
+
+{
+\LARGE
+
+\hl{
+
+TODO: Continue indexing starting from here
+
+}
+}
+
+
+{
+\LARGE
+
+\hl{TODO: proceed from here...}
+}
+
 
 \subsection{Converting Between Nucleic Acid Code and Numeric Codes}
 
@@ -6045,8 +6052,6 @@ In terms of concrete \textbf{Key Metrics and Contributions} this single work has
 	\item \textbf{\hyperref[ALGCOZIN]{Algorithm \ref{ALGCOZIN}}}: The \textbf{$\Omega$-to-OZIN Genetic Code Transcription Algorithm}.
 	\item \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}: The \textbf{$\Omega$-to-PLATONIC Form Genetic Code Expression Algorithm} --- chosen as core of \textbf{LGES}, leverages \textbf{PFEK} translation keys to process BODY/THORAX aspect of \textbf{FGE}.
 	\item \textbf{\hyperref[ALGCOZINPLATOEXT]{Algorithm \ref{ALGCOZINPLATOEXT}}}: The \textbf{x-LGES Algorithm} --- extends \textbf{LGES} with processing of a ROOT/SUFFIX component.
-
-	\item \textbf{\hyperref[ALGCOZINPLATO_ORIG]{Algorithm \ref{ALGCOZINPLATO_ORIG}}}: The [original] \textbf{LGES Algorithm} --- renders the genome expression using complement sequences.
 	\end{enumerate}
 }
 \item \textbf{3 Tabular Analyses} were presented, including \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}} that depicts how to perform comparative statistical analysis of DNA, RNA or any na-Sequence using some measures and methods from transformatics.
@@ -6441,249 +6446,12 @@ Of course, once one has the correct $\boxed{\omega_i^*}$, they can just attach i
 
 
 
-
-\chapter{Alternative[ORIGINAL] $\Omega$-to-PLATONIC Form Genetic Code Expression Algorithm}
-\label{SECALTPFGESA}
-
-While developing the theory for the \textbf{Lu-Genome Expression System}, and particularly while and after looking at the way the original concept of the algorithm for generating the BODY-components of the \textbf{FGE} was working --- for example, it uses the \textbf{IFA MSS} as key to pick corresponding platonic form structures from $\lnot(\psi_{pf})$ and not directly from $\psi_{pf}$ --- because, the idea was that, the most frequent term in the \textbf{IFA MSS} should correspond to a \textit{larger} or \textit{more prominent} or \textit{more complex} geometric form than the least significant terms. And thus, we shall see that, since natural genetic sequences (or rather, DNA-sequences) only span $\psi_{DNA}$ which has only 4 distinct symbols, then we would never have a meaningful way to utilize the complete set of 10 distinct geometrical structures from $\psi_{pf}$. 
-
-
-That last observation is one of the interesting consequences of \textbf{\hyperref[ALGCOZINPLATO_ORIG]{Algorithm \ref{ALGCOZINPLATO_ORIG}}} (particularly \textbf{\hyperref[EQFBOXED_ORIG]{Equation \ref{EQFBOXED_ORIG}}}) that performs the translation from \textbf{mRNA}-equivalent $\Omega$-encoded \textbf{IFA MSS} to geometric $pf$-encoded \textbf{PFA}, using the $\lnot(\psi_{pf})$. We find that (\textbf{irrespective} of the organism or species we would look at) it seems as though the resulting \textbf{PFA} expressions \textbf{must} always \textbf{only} utilize the \textbf{first four} elements of $\lnot(\psi_{pf})$ --- $\langle 9, 8, 7, 6 \rangle$, since all possible \textbf{IFA MSS} would only have at most, $4$ distinct symbols in them. And if we had not used $\lnot(\psi_{pf})$, still, a direct use of $\psi_{pf}$ would only utilize the start of that symbol set if we map elements in $\psi_{DNA}$ to those in $\psi_{pf}$ (even via $\psi_\Omega$ as we do in \textbf{\hyperref[TRANSSEQATG]{Transformation \ref{TRANSSEQATG}}}), thus why we returned to the drawing board, and developed \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}} instead.
-
-Studying the resulting genome expressions visually, one would find that it seems like we always express the BODY of any \textbf{FGE} with some structure containing a \textbf{nucleus}\footnote{Of course, the way the platonic forms corresponding to \textbf{9} and \textbf{7} were simplified to those of \textbf{8} (octagon-\textit{chaosstar}-octagram) and \textbf{6}(hexagon-\textit{hexagram}) respectively, with \textbf{the twist} that the \textbf{extra appendage point is placed at the center of the geometric structure instead of creating an extra vertex/appendage point} does have some good justification though --- \textit{\textbf{Occam's Razor} principle in a way, but also that, while observing nature, we typically find that \textbf{Simple is Better}}. Nonetheless, the sensibilities of mapping any $i$ in $\psi_{10}$ or rather $\psi_\Omega$ to a platonic form corresponding to \textbf{the regular polygon with each internal angle} corresponding to $\frac{360}{i}$ still makes sense for all 10 terms in $\psi_\Omega$.}\footnote{The inverse would be \textbf{BODY} made of mostly gaps or joints, basic linear structures and triangles!}!
-
-We shall keep that original algorithm here, for mostly study/comparison purposes...
-
-\begin{alg}[The \textbf{$\Omega$-to-PLATONIC Form Genetic Code Expression Algorithm}]
-\label{ALGCOZINPLATO_ORIG}
-
-Assuming we have an $\Omega$-base encoded genetic code sequence $\Theta_\Omega$ of some length $n > 0$.
-
-\begin{enumerate}
-    \item{Initialize the expression with a transcription, by Using \textbf{\hyperref[ALGCOZIN]{Algorithm \ref{ALGCOZIN}}} to construct the \textbf{Intermediate Form Affix} (IFA) of $\Theta_\Omega$ --- essentially return $OZ(\Theta_\Omega)$ as the start of the \textbf{Final Genome Expression} (FGE) $\boxed{OZ(\Theta_\Omega)}^*$ --- so that the final complete expressed(transcribed+translated ) sequence shall be as:\\
-
-\begin{equation}
-\label{EQTRANSLGENSEQ_ORIG}
-\boxed{OZ(\Theta_\Omega)}^* = OZ(\Theta_\Omega)\cdot\boxed{OZ(\Theta_\Omega)}
-\end{equation}\\
-
-$\boxed{OZ(\Theta_\Omega)}: \mathbb{N} \times \psi_{pf}$ is the suffix of expressed na-Sequence $\Theta_\Omega$, and is expressed in our genome expression system, as PLATONIC-Form encoded \textbf{modal sequence statistic} of $OZ(\Theta_\Omega)$\footnote{We render the \textbf{suffix of FGE} as $\overset{>}{OZ(\Theta_\Omega)}$ because it allows us to not express $\Theta_\Omega$ naively at the genome or gene level, but also, so that, from an information-theoretic perspective, the completed genome expression is somewhat a statistical summary of what the genome sequence contains --- the appearance of an animal or a plant or virus, depicting or expressing the summary of its DNA code. We do this then, by not merely doing a 1-to-1 translation of the intermediate Ozin-code expression $OZ(\Theta_\Omega)$, but instead computing its summary in form of $\overset{>}{OZ(\Theta_\Omega)}$, and then instead translating that into the final spatial/geometric forms as per $\psi_{pf}$. This shall then help complete the entire processing/synthesis of sequence $\Theta_\Omega$, or rather our genome expression.} --- the \textbf{PFA}\footnote{Platonic Form Aspect}, i.e.:\\
-
-\begin{equation}
- \boxed{OZ(\Theta_\Omega)} = \boxed{\overset{>}{OZ(\Theta_\Omega)}}_{pf}
-\end{equation}\\
-
-
-}
-\item{ So once we have the \textbf{IFA}, $OZ(\Theta_\Omega)$, proceed to use it to generate the rest of the sequence expression as follows: 
-\begin{enumerate}
-\item {\textbf{INITIALIZE} FGE, $\boxed{OZ(\Theta_\Omega)}^*$ as just:\\
-
-\begin{equation}
-\label{EQSTARTFGE_ORIG}
-\boxed{OZ(\Theta_\Omega)}^* = \langle \langle OZ(\Theta_\Omega) \rangle \langle \rangle \rangle
-\end{equation}\\
-
-This ensures, we have the prefix affix, \textbf{IFA}, as the contents of the sequence start of \textbf{FGE} \textit{extended} by a \textbf{still empty subsequence} --- in expression form, this shall merely be a backbone structure with \textbf{IFA} as its head, and a terminal that is ready to have more units appended to it, \textbf{after a single GAP/JOINT extension to IFA}. So, it also means, at this juncture, \textbf{PFA} is just:\\
-
-\begin{equation}
-\label{EQSTARTFGESUF_ORIG}
-\boxed{OZ(\Theta_\Omega)} = \langle \rangle
-\end{equation}\\
-
-}
-\item {
-	\textbf{COMPUTE} the \textbf{IFA MSS}, $\overset{>}{OZ(\Theta_\Omega)}$
-}
-\item{\textbf{FOREACH} symbol/term $\omega_i^*$ in \textbf{IFA MSS}, $\overset{>}{OZ(\Theta_\Omega)}$: 
-\begin{enumerate}
-    \item{\textbf{USE} the translation mapping: $\psi_\Omega \rightarrow \lnot(\psi_{pf}) \rightarrow \psi_{pf}$ as depicted in \textbf{\hyperref[FIGPLATONICCIPH]{Figure \ref{FIGPLATONICCIPH}}}, to translate $\omega_i^*$ into the equivalent \textbf{Platonic Form}, $\boxed{\omega_i^*}$ for the final code as such:}
-\item { \textbf{IF} $\omega_i^* \equiv 0$:Operating on the current \textbf{FGE}: 
-		\begin{enumerate}
-		\item { Append/Insert a JOINT onto \textbf{FGE},  $\boxed{OZ(\Theta_\Omega)}^*$
-
-		\begin{equation}
-		\label{EQEXTFGEJOINT_ORIG}
-		\boxed{OZ(\Theta_\Omega)}^* = \boxed{OZ(\Theta_\Omega)}^* \cdot \boxed{\omega_i^*}_{joint}
-		\end{equation}		
-		
-		And equivalently:
-		
-		\begin{equation}
-		\label{EQEXTFGEJOINTSUF_ORIG}
-		\boxed{OZ(\Theta_\Omega)} = \boxed{OZ(\Theta_\Omega)} \cdot \boxed{\omega_i^*}_{joint}
-		\end{equation}				
-		
-		}
-		\item \textbf{PROCEED} to the next symbol in \textbf{IFA MSS}, $\overset{>}{OZ(\Theta_\Omega)}$\\ (loop from \textbf{Step\#2(c))}.
-		\end{enumerate}
-	}
-	\item { \textbf{ELSE}: \textbf{resolve} the correct  $\boxed{\omega_i^*}$  for  $\omega_i^*$  by using the relation:\\
-
-\begin{equation}
-\label{EQFBOXED_ORIG}
- \boxed{\omega_i^*} = \rho_j +  j \times \omega_i^* : j = I(\rho_j,\lnot(\psi_{pl})) = I(\omega_i^*,\psi_\Omega)
-\end{equation}\\
-
-	\begin{enumerate}
-        \item{\textbf{PLACE} that encoded version, $\boxed{\omega_i^*}$, along the existing \textbf{FGE} structure at the next vacant position ($\invpi(\Theta_\Omega)+i$). Expressible with another version of \textbf{\hyperref[EQEXTFGEJOINT_ORIG]{Equation \ref{EQEXTFGEJOINT_ORIG}}} as:
-	
-	\begin{equation}
-	\label{EQEXTFGEPF_ORIG}
-		\boxed{OZ(\Theta_\Omega)}^* = \boxed{OZ(\Theta_\Omega)}^* \cdot \boxed{\omega_i^*}
-		\end{equation}	
-		
-		And equivalently:
-		
-		\begin{equation}
-		\label{EQEXTFGEPFSUF_ORIG}
-		\boxed{OZ(\Theta_\Omega)} = \boxed{OZ(\Theta_\Omega)} \cdot \boxed{\omega_i^*}
-		\end{equation}	
-		
-            Where the special term, $\boxed{\omega_i^*}$, as per \textbf{\hyperref[EQFBOXED_ORIG]{Equation \ref{EQFBOXED_ORIG}}}, is basically the PLATONIC Form corresponding to position $j$ in $\lnot(\psi_{pf})$ --- a \textbf{complement/inverted symbol set}, thus one of the final form platonic geometry structures, but also with the intermediate form $\omega_i^*$ expressed $j$ times as an attachment to $\rho_j$, such that:\\
-	
-	\begin{equation}
-	0 \leq (j = (\invpi(\psi_{pf})-i)) \leq (\invpi(\psi_{pf}) = \invpi(\psi_\Omega)) \geq \invpi(\overset{>}{OZ(\Theta_\Omega)})
-	\end{equation}\\
-	
-	
-            as depicted in example \textbf{\hyperref[FIGEXAPLATONICFORMPFA]{Figure \ref{FIGEXAPLATONICFORMPFA}}}, with each expression of $\omega_i^*$ attached to one of the $j$ \textbf{appendage spots} on the shape for $\boxed{\omega_i^*}$.
-	}
-	\item \textbf{PROCEED} to the next symbol in \textbf{IFA MSS}, $\overset{>}{OZ(\Theta_\Omega)}$\\ (loop from \textbf{Step\#2(c))}.
-	\end{enumerate}
-	}
-\end{enumerate}
-}
-\end{enumerate}
-}
-
-\item \textbf{TRUNCATE} the final-structure after the final term in \textbf{FGE}.
-\item \textbf{RETURN} \textbf{FGE}, $\boxed{OZ(\Theta_\Omega)}^*$ as the final transcribed and translated version of $\Theta_\Omega$. The culmination of our conceptual genome expression.
-\end{enumerate}
-$\qed$
-\end{alg}
-
-
-\vspace{2em}
-\begin{center}
-\fbox{\begin{minipage}{0.9\textwidth}
-\large
-\textbf{NOTE:}\\
- 
-Besides the introductory notes about this alternative algorithm given at the start of this appendix chapter, it might be worth the effort, looking at what kinds of expressions the algorithm can produce, so one has a basic means to weigh it against the version we prefer/chose (\textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}} in \textbf{\hyperref[SECGENSEQEXPRES]{Section \ref{SECGENSEQEXPRES}}}). Thus, without delving much into how they were generated, we shall [re-]iterate some of the highlights of how \textbf{\hyperref[ALGCOZINPLATO_ORIG]{Algorithm \ref{ALGCOZINPLATO_ORIG}}} would render various sequences under the \textbf{Lu-Genome Expression System}.
-
-\end{minipage}}
-\\
-\end{center}
-\vspace{2em}
-
-
-\textbf{IMPORTANT:} Realize that \textbf{Step\#2(c)iii(A)} of \textbf{\hyperref[ALGCOZINPLATO_ORIG]{Algorithm \ref{ALGCOZINPLATO_ORIG}}} processes/operates on the \textbf{IFA MSS}, $\overset{>}{OZ(\Theta_\Omega)}$, and not the \textbf{IFA} directly. This, so that, first, we don't process multiple times any term or symbol from the \textbf{IFA}\footnote{Which is a direct translation of the genetic code.} in the \textbf{PFA}. And then also, the way the translation works, is that if $\omega_x^* > \omega_y^*$ or rather that $|\omega_x^*| > |\omega_y^*|$,  then $\omega_x^*$ shall correspond to a term in $\lnot(\psi_{pf})$ that is simpler\footnote{The idea was somewhat to assign more complex forms to terms in the associated symbol set that occur earlier than others, since it somewhat depicts their relative higher significance --- a concept similar to how we would attempt to regenerate a sequence from its modal sequence statistic without say consulting its sequence characteristic --- an inversion of and adaptation of the \textbf{string chart} concept first presented in the \textbf{LOMT-1 Transformer} (\textbf{Transformer 6} in \cite{transformatics}).} in form than $\omega_y^*$ --- higher significance being assigned to earlier-occurrence in the underlying symbol set $\psi_\Omega$. 
-
-
-Good enough, we have already treated of sequence complements and inverted look-ups in \textbf{\hyperref[SECSIGCOMPLE]{Section \ref{SECSIGCOMPLE}}}, and so, for this case, the corresponding mapping from terms (or rather, magnitudes) in $\overset{>}{OZ(\Theta_\Omega)}$ to indices in  $\lnot(\psi_{pf})$ is as below --- also stressing the fact that $0 \leq |\omega_i^*| = |\omega_i| < \invpi(\psi_{pf})$ for all $\omega_i \in \Theta_\Omega \quad \land \quad \omega_i^* \in \overset{>}{\Theta_\Omega}$.
-
-
-\[
-\begin{tikzpicture}[baseline=(current bounding box.center)]
-  % Matrix A
-  \matrix (A) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em] {
-    0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
-  };
-
-  % Matrix B
-  \matrix (B) [matrix of math nodes, left delimiter={[}, right delimiter={]}, row sep=1em, column sep=2em, below=3em of A] {
-    9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0\\
-  };
-
-  % Draw arrows from A_i to B_i
-  \foreach \i in {1,2,3,4,5,6,7,8,9,10}
-    \draw[->] (A-1-\i) -- (B-1-\i);
-\end{tikzpicture}
-\]
-
-Looking at some example genome expressions rendered using \textbf{\hyperref[ALGCOZINPLATO_ORIG]{Algorithm \ref{ALGCOZINPLATO_ORIG}}} shall help most reviewers to appreciate whether or not it is better or worse than \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}, and whether or not it is better at representing how natural genome expression occurs as seen in our inspiration case --- see \textbf{\hyperref[FIGPINEAPPLE]{Figure \ref{FIGPINEAPPLE}}}.
-
-\subsection{Examples of Complete Lu-Genome Expressions}
-\label{SECFULLGES_ORIG}
-
-We get to see the first example of the output of processing some na-Sequence expressed originally in base-$\Omega$ such as for $\Omega_{3}$ from \textbf{\hyperref[EQDNEXA]{Equation \ref{EQDNEXA}}}, in its final expression form as in \textbf{\hyperref[FIGPLATONICEXA_ORIG]{Figure \ref{FIGPLATONICEXA_ORIG}}}\cite{lutalo_2025_exa} --- more importantly, since we have already seen its \textbf{IFA} (the \textbf{FGE} prefix) in \textbf{\hyperref[FIGOZEXA]{Figure \ref{FIGOZEXA}}}, we note that, we essentially see the update as the result of expressing the entire \textbf{FGE} via the \textbf{IFA MSS} equivalent to:
-
-\begin{equation}
-\overset{>}{\Omega_{3}} = \langle 0, 2, 1, 3, 6 \rangle \implies \boxed{OZ(\Omega_{3})} \approx \langle GAP, 7, 8, 6, 3 \rangle
-\end{equation}
-
-
-\begin{figure}[H]
-  \begin{center}
-  %\includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
-   \includegraphics[trim=0cm 0cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/PLATONIC-EXA-landscape_ORIG.pdf}\\
-      \caption{The equivalent LGES complete genome expression of the $\Omega_{3}$ genome sequence (from \textbf{\hyperref[EQDNEXA]{Equation \ref{EQDNEXA}}})}
-  \label{FIGPLATONICEXA_ORIG}
-  \end{center}
-\end{figure}
-
-
-Though we won't delve into exploring all kinds of possible \textit{interesting} scenarios with regards to the \textbf{LGES}, we can look at one other example and then move on. From the example hypothetical genome sequences we have encountered, perhaps let us revisit \textbf{\hyperref[EQDNAV]{Equation \ref{EQDNAV}}} and see what the \textbf{Euler Virus} might look like when fully expressed in this system.
-
-So, note that, we already did the first-leg of \textbf{\hyperref[ALGCOZINPLATO_ORIG]{Algorithm \ref{ALGCOZINPLATO_ORIG}}}, and have seen what the \textbf{FGE} prefix --- the \textbf{IFA}, would look like in \textbf{\hyperref[FIGOZEVIRUS]{Figure \ref{FIGOZEVIRUS}}}. So, like we did for $\Omega_{3}$ in the last exploration, let us start by looking at what the numeral-equivalence of the processed $\Omega_{veuler}$ would be like. For brevity, we can sum up the entire production/transformation that leads to the complete \textbf{FGE} with correct prefix and suffix, and thus $\boxed{OZ(\Omega_{veuler})}^*$ as:
-
-\begin{center}
-\fbox{
-\begin{minipage}{\textwidth}
-
-\begin{trans}
-\label{TRANSGENSEQEVIRUS_ORIG}
-$\Omega_{veuler} = \langle 2,7,1,8,2,8,1,8 \rangle \rightarrow \hbar(\overset{>}{\Omega_{veuler}}) = \text{\textbf{8}3\textbf{2}2\textbf{1}2\textbf{7}1} \rightarrow \overset{>}{\Omega_{veuler}} = \langle 8, 2, 1, 7 \rangle \implies \boxed{OZ(\Omega_{veuler})} \approx \lnot{\langle 8, 2, 1, 7  \rangle_{pf}} \implies \boxed{OZ(\Omega_{veuler})}^* =  \langle 2,7,1,8,2,8,1,8 \rangle_{oz}\cdot\boxed{\langle 1, 7, 8, 2 \rangle}_{pf}$\\
-\end{trans}
-
-\end{minipage}}
-\\
-\end{center}
-
-
-Note that, in the derivation depicted in \textbf{\hyperref[TRANSGENSEQEVIRUS_ORIG]{Transformation \ref{TRANSGENSEQEVIRUS_ORIG}}}, one of the most tricky parts is computing that \textbf{FGE} suffix, $\boxed{OZ(\Omega_{veuler})}$, the \textbf{PFA} --- which is formalized/defined by \textit{especially}\footnote{\textbf{\hyperref[EQEXTFGEJOINTSUF_ORIG]{Equation \ref{EQEXTFGEJOINTSUF_ORIG}}} is what covers the special symbol `0', that is treated as a JOINT/GAP in the \textbf{PFA} and as STOP/GAP in \textbf{IFA}.} \textbf{\hyperref[EQFBOXED_ORIG]{Equation \ref{EQFBOXED_ORIG}}}. So, once that is done, then we have our final numeral-\textbf{FGE} expressible as such:\\
-
-\begin{equation}
-\label{EQGFEEVIRUS_ORIG}
-\boxed{OZ(\Omega_{veuler})}^* =  \langle 2,7,1,8,2,8,1,8 \rangle_{oz}\cdot\boxed{\langle 1, 7, 8, 2 \rangle}_{pf}
-\end{equation}\\
-
-Of course, concerning \textbf{\hyperref[EQGFEEVIRUS_ORIG]{Equation \ref{EQGFEEVIRUS_ORIG}}}, note that, or rather, keep in mind that concerning the \textbf{PFA} component, $\boxed{OZ(\Omega_{veuler})}$, the corresponding associated sequence in numeral form is the \textbf{IFA MSS}, $\overset{>}{OZ(\Omega_{veuler})} = \overset{>}{\Omega_{veuler}} = \langle 8, 2, 1, 7 \rangle$. And thus, using necessary transcription and translation ciphers as well as the multiplication rules required by \textbf{\hyperref[EQFBOXED_ORIG]{Equation \ref{EQFBOXED_ORIG}}} when treating of the \textbf{PFA}, we then generate the final genome expression for the \textbf{Euler Virus} under the \textbf{LGES} that looks as in \textbf{\hyperref[FIGLGESEULERVIRUS_ORIG]{Figure \ref{FIGLGESEULERVIRUS_ORIG}}}.
-
-
-\begin{figure}[H]
-  \begin{center}
-  %\includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
-   \includegraphics[trim=0cm 0cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/PLATONIC-EULERVIRUS-landscape_ORIG.pdf}\\
-      \caption{The equivalent LGES complete genome expression of the $\Omega_{veuler}$ (Euler Virus) genome sequence (from \textbf{\hyperref[EQGFEEVIRUS_ORIG]{Equation \ref{EQGFEEVIRUS_ORIG}}})}
-  \label{FIGLGESEULERVIRUS_ORIG}
-  \end{center}
-\end{figure}
-
-
-Now, concerning that rendering of the genome sequence expressed in \textbf{\hyperref[EQGFEEVIRUS_ORIG]{Equation \ref{EQGFEEVIRUS_ORIG}}}, it might be worth noting, that unlike the earlier examples of \textbf{LGES} expressions, we have taken the liberty to exploit that special joint that kick-starts the \textbf{PFA}, or rather, which separates the \textbf{IFA} from the \textbf{PFA} in a \textbf{FGE} expression. So, just like an organism with a physical joint might sometimes appear as angled or curved, so we have chosen to depict the $\Omega_{veuler}$ with its one joint\footnote{Definitely, and interesting to explore, a genome sequence with multiple JOINT points in it might be how an organism with say, multiple appendages, such as legs, hands, and a head that can move independently of the core/thorax of the body is possibly arrived at. The interested student should go ahead and explore more non-trivial $\Omega$-base sequences just to see what's possible.} well utilized. However, and important to note; it is not just joints that might appear different across different renderings of the same basis genome sequence. So, in \textbf{\hyperref[FIGLGESEULERVIRUSv2_ORIG]{Figure \ref{FIGLGESEULERVIRUSv2_ORIG}}}, we see another variation of the same sequence, with readily noticeable differences being the IFA-PFA joint in its neutral position, and then the second node in the PFA (corresponding to \textbf{$7_{pf} \otimes 2_{oz}$} or rather \textbf{$7_{pf} + 7 \times 2_{oz}$}) with the $2_{oz}$ appendages depicted mostly aligned horizontally --- more accurately, \textit{tangentially}, while in the former expression, they were all perpendicular/orthogonal to the platonic form they are appended to.
-
-
-\begin{figure}[H]
-  \begin{center}
-  %\includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
-   \includegraphics[trim=0cm 0cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/v2-PLATONIC-EULERVIRUS-landscape_ORIG.pdf}\\
-   \caption{The \textbf{alternative rendering}  of the same sequence as $\Omega_{veuler}$.}
-  \label{FIGLGESEULERVIRUSv2_ORIG}
-  \end{center}
-\end{figure}
-
-Concerning \textbf{\hyperref[FIGLGESEULERVIRUSv2_ORIG]{Figure \ref{FIGLGESEULERVIRUSv2_ORIG}}}, the alternative rendering  of the same sequence as $\Omega_{veuler}$ first depicted in \textbf{\hyperref[FIGLGESEULERVIRUS_ORIG]{Figure \ref{FIGLGESEULERVIRUS_ORIG}}}, we see that underlying the variations is how the \textit{degrees of freedom} in rendering the genome have somewhat been exploited. Notice how the joint and appendages are placed or oriented about the platonic forms that mostly remain unchanged across the two renderings --- except perhaps in scale. And talking of scaling nodes, in the future, we might want to explore whether in such a system as \textbf{LGES} in which the expression is sensitive to measures such as the \textbf{IFA MSS}, whether it might make sense to scale each subsequent pf-node in the \textbf{PFA} based on its position within the sequence? Though we didn't have such a rule included in \textbf{\hyperref[ALGCOZINPLATO_ORIG]{Algorithm \ref{ALGCOZINPLATO_ORIG}}}, and yet, our example renderings here have somewhat taken advantage of that plausible logic.
-
-That said, note that, we started this work with a photograph of a pineapple ready to harvest (see \textbf{\hyperref[FIGPINEAPPLE]{Figure \ref{FIGPINEAPPLE}}}), and though the associated discussion\footnote{Checkout video/mini-lecture on the matter at author's YouTube: \url{https://youtube.com/shorts/yTJzBEpw7Z4}} by the author did bring up the matter of how it might inspire a genome expression system in which the prefix is the actual DNA that renders the rest of the organism (fruit, plant-base and roots in this case of the pineapple), it is left as an exercise to the reader, to decide whether example genome sequence expressions/renderings such as in \textbf{\hyperref[FIGLGESEULERVIRUS_ORIG]{Figure \ref{FIGLGESEULERVIRUS_ORIG}}} depict this pineapple-inspired philosophy or not.
-
-
 %%%%%%%%%%%%%%%| TRANSFORMATICS 101 - explained mini-booklet as an appendix chapter |%%%%%%%%%
 
 
 % insert [front] cover --- could just be a PNG or PDF
 \includepdf[pages=1]{resources/pdfs/trans_front_cover.pdf}
+
 
 \chapter{TRANSFORMATICS 101 - explained:\\\small{A rigorous, succinct introduction to all the essential foundations and proposed theory of Transformatics}}
 \label{CHAPTRANS}
@@ -8567,7 +8335,7 @@ $(g \odot f)(x) \equiv g(f(x))$ for all $x$ in $D$.
 
 \vspace{2em}
 
-And so that, if we are to attempt to express the notion of composition as Fitzpatrick depicts above, but instead using the notation and methods of transformatics, we would process in a manner similar to what we did in \textbf{\hyperref[TRANSINTEGRAL]{Transformation \ref{TRANSINTEGRAL}}}, but more so, as we did in \textbf{\hyperref[TRANSTEAPROG]{Transformation \ref{TRANSTEAPROG}}} that indeed demonstrates the concept of composing \textbf{higher-order transformers} via the method of chaining basic transformes (in this case, functions or just mappings) back to back, and so that, we would rewrite his definition's core concept as such:
+And so that, if we are to attempt to express the notion of composition as Fitzpatrick depicts above, but instead using the notation and methods of transformatics, we would process in a manner similar to what we did in \textbf{\hyperref[TRANSINTEGRAL]{Transformation \ref{TRANSINTEGRAL}}}, but more so, as we did in \textbf{\hyperref[TRANSTEAPROGb]{Transformation \ref{TRANSTEAPROGb}}} that indeed demonstrates the concept of composing \textbf{higher-order transformers} via the method of chaining basic transformes (in this case, functions or just mappings) back to back, and so that, we would rewrite his definition's core concept as such:
 
 
 \begin{transf}[\textbf{Function Composition}, $g(f(x))$]
