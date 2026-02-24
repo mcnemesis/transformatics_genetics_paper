@@ -72,6 +72,7 @@
 \indexentry{sequence!complement|hyperpage}{25}
 \indexentry{lu-number system|hyperpage}{25}
 \indexentry{$\psi_{01}$|hyperpage}{25}
+\indexentry{table!sequence transforms|hyperpage}{26}
 \indexentry{sequence!algebra|hyperpage}{26}
 \indexentry{sequence!complement|hyperpage}{27}
 \indexentry{complement sequences|hyperpage}{27}
@@ -100,6 +101,7 @@
 \indexentry{TEA program!modal sequence statistic|hyperpage}{40}
 \indexentry{program!Sequence Characteristic|hyperpage}{41}
 \indexentry{TEA program!sequence characteristic|hyperpage}{41}
+\indexentry{table!na-Sequence Analysis|hyperpage}{42}
 \indexentry{ADM|hyperpage}{45}
 \indexentry{Anagram Distance Measure|hyperpage}{45}
 \indexentry{symbol set!parent|hyperpage}{48}
@@ -162,6 +164,7 @@
 \indexentry{sequence!shuffling|hyperpage}{83}
 \indexentry{program!FLSA|hyperpage}{86}
 \indexentry{lu-shuffle algorithm|hyperpage}{86}
+\indexentry{Second Lu-Shuffle Algorithm (SLSA)|hyperpage}{86}
 \indexentry{algorithm!Second Lu-Shuffle (SLSA)|hyperpage}{87}
 \indexentry{sequence!anagram|hyperpage}{88}
 \indexentry{anagram|hyperpage}{88}
@@ -210,30 +213,43 @@
 \indexentry{genome expression!intermediate language|hyperpage}{126}
 \indexentry{language transforms|hyperpage}{126}
 \indexentry{transcription|hyperpage}{126}
+\indexentry{cipher!ozin|hyperpage}{127}
+\indexentry{ozin cipher|hyperpage}{127}
 \indexentry{transcription!LGES protocol|hyperpage}{127}
+\indexentry{LGES protocol|hyperpage}{127}
 \indexentry{algorithm!$\Omega $-to-OZIN Genetic Code Transcription|hyperpage}{129}
 \indexentry{transcription!LGES protocol|hyperpage}{129}
-\indexentry{sequences!decimal|hyperpage}{150}
-\indexentry{ADM|hyperpage}{194}
-\indexentry{sequence analysis!anagram distance|hyperpage}{194}
-\indexentry{super-sequence|hyperpage}{205}
-\indexentry{matrices|hyperpage}{206}
-\indexentry{sequence!as matrices|hyperpage}{206}
-\indexentry{sequence!higher-order|hyperpage}{206}
-\indexentry{TEA!as higher-order transformers|hyperpage}{207}
-\indexentry{transformer chain|hyperpage}{209}
-\indexentry{sequence entropy!definition|hyperpage}{210}
-\indexentry{entropy|hyperpage}{210}
-\indexentry{sequence!definition|hyperpage}{217}
-\indexentry{matrix!definition|hyperpage}{222}
-\indexentry{matrices!as linear transformations|hyperpage}{223}
-\indexentry{data!coded or raw|hyperpage}{225}
-\indexentry{sequence!higher-order|hyperpage}{225}
-\indexentry{transformatics!mappings|hyperpage}{231}
-\indexentry{mappings|hyperpage}{231}
-\indexentry{transformatics!mappings|hyperpage}{232}
-\indexentry{transformer!as mapping|hyperpage}{232}
-\indexentry{sequence!algebra|hyperpage}{252}
-\indexentry{sequence algebra|hyperpage}{252}
-\indexentry{transformatics!as an algebra|hyperpage}{252}
-\indexentry{transformatics!definition|hyperpage}{252}
+\indexentry{cipher!platonic|hyperpage}{133}
+\indexentry{platonic cipher|hyperpage}{133}
+\indexentry{LGES protocol|hyperpage}{134}
+\indexentry{algorithm!$\Omega $-to-PLATONIC Form Genetic Code Expression|hyperpage}{134}
+\indexentry{Lu-Genome Expression System (LGES)!PFA resolution protocol|hyperpage}{136}
+\indexentry{sequences!decimal|hyperpage}{151}
+\indexentry{Lu-Genome Expression System (LGES)|hyperpage}{175}
+\indexentry{Second Lu-Shuffle Algorithm (SLSA)|hyperpage}{175}
+\indexentry{table!Platonic Form Encoding Keys via SLSA|hyperpage}{176}
+\indexentry{table!Platonic Form Encoding Keys via FLSA|hyperpage}{177}
+\indexentry{ADM|hyperpage}{196}
+\indexentry{sequence analysis!anagram distance|hyperpage}{196}
+\indexentry{super-sequence|hyperpage}{207}
+\indexentry{matrices|hyperpage}{208}
+\indexentry{sequence!as matrices|hyperpage}{208}
+\indexentry{sequence!higher-order|hyperpage}{208}
+\indexentry{TEA!as higher-order transformers|hyperpage}{209}
+\indexentry{transformer chain|hyperpage}{211}
+\indexentry{sequence entropy!definition|hyperpage}{212}
+\indexentry{entropy|hyperpage}{212}
+\indexentry{table!mathematical structures|hyperpage}{218}
+\indexentry{sequence!definition|hyperpage}{219}
+\indexentry{matrix!definition|hyperpage}{224}
+\indexentry{matrices!as linear transformations|hyperpage}{225}
+\indexentry{data!coded or raw|hyperpage}{227}
+\indexentry{sequence!higher-order|hyperpage}{227}
+\indexentry{transformatics!mappings|hyperpage}{233}
+\indexentry{mappings|hyperpage}{233}
+\indexentry{transformatics!mappings|hyperpage}{234}
+\indexentry{transformer!as mapping|hyperpage}{234}
+\indexentry{sequence!algebra|hyperpage}{254}
+\indexentry{sequence algebra|hyperpage}{254}
+\indexentry{transformatics!as an algebra|hyperpage}{254}
+\indexentry{transformatics!definition|hyperpage}{254}

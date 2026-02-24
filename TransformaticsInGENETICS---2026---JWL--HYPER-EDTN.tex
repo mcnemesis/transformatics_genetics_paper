@@ -1201,7 +1201,7 @@ Assume we start by exploring simple binary sequences --- especially because bits
 		\hline
 	              
 \end{tabular}
- \caption{An example of exploring symbol and sequence complements in sequence transformations}
+ \caption{An example of exploring symbol and sequence complements in sequence transformations\index{table!sequence transforms}}
   \label{TABCOMPLEMENTS}
 \end{table}
 
@@ -2033,7 +2033,7 @@ Such is the power of the sequence analysis we can do with the TEA language, with
 	
 	              
 \end{tabular}
- \caption{A First Analysis of the 5 na-Sequences from \textbf{\hyperref[SEC4ASEQ]{Section \ref{SEC4ASEQ}}}}
+ \caption{A First Analysis of the 5 na-Sequences from \textbf{\hyperref[SEC4ASEQ]{Section \ref{SEC4ASEQ}}}\index{table!na-Sequence Analysis}}
   \label{TABFAN}
 \end{table}
 
@@ -3641,7 +3641,7 @@ def flsa(s, k0):
 \section{The Second Lu-Shuffle Algorithm (SLSA)}
 \label{APPSLSA}
 
-This second algorithm --- the Second Lu-Shuffle Algorithm (SLSA)\index{lu-shuffle algorithm}, is a variation of and enhancement of \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} --- the First Lu-Shuffle Algorithm. Also, and \textbf{IMPORTANT to NOTE}; this second algorithm combines with the first algorithm at each invocation, so that it takes the output of \textbf{FLSA} and further transforms it to produce the (\textbf{\textit{more} randomized}) resultant  sequence as we see in the following algorithm specification and illustrative examples that follow thereafter.
+This second algorithm --- the Second Lu-Shuffle Algorithm (SLSA)\index{lu-shuffle algorithm}\index{Second Lu-Shuffle Algorithm (SLSA)}, is a variation of and enhancement of \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}} --- the First Lu-Shuffle Algorithm. Also, and \textbf{IMPORTANT to NOTE}; this second algorithm combines with the first algorithm at each invocation, so that it takes the output of \textbf{FLSA} and further transforms it to produce the (\textbf{\textit{more} randomized}) resultant  sequence as we see in the following algorithm specification and illustrative examples that follow thereafter.
 
 Moreover, just like the FLSA, the SLSA also has a simple signature that essentially accepts just a finite sequence, $\Theta$, of length $n$, and a corresponding initial partitioning index parameter, $k$, that can take on values in the range $1 \leq k < n$. It returns a resultant sequence of length $n$, $\Theta^*$, that is essentially a well randomized version of the input sequence --- essentially, a consistent anagram of $\Theta$ relative to a particular value of $k$.
 
@@ -5092,7 +5092,7 @@ With the background we have obtained thus far, note that, the special \textbf{tr
 
 Without further ado, note that we might interpret or transcribe from base-$\Omega$ DNA into our base-OZ RNA expression as such:
 
-If for some organism such as that expressed via $\Omega_{veuler} = 27182818$, we wish to encode the equivalent intermediate [physical] expression, then we iterate through each symbol in the source code sequence, and re-write it as the equivalent or corresponding symbolic structure in OZIN item-wise, and this, being done in a way so as to \textbf{center the ozin glyphs along a \textit{backbone structure}} of just a mere line that starts with a tiny dot and ends with the last ozin glyph from the source sequence thus being transcribed\index{transcription!LGES protocol}. That is the basic LGES protocol for transcription from omega genetic code into ozin genetic expressions. 
+If for some organism such as that expressed via $\Omega_{veuler} = 27182818$, we wish to encode the equivalent intermediate [physical] expression, then we iterate through each symbol in the source code sequence, and re-write it as the equivalent or corresponding symbolic structure in OZIN item-wise, and this, being done in a way so as to \textbf{center the ozin glyphs along a \textit{backbone structure}} of just a mere line that starts with a tiny dot and ends with the last ozin glyph from the source sequence thus being transcribed\index{transcription!LGES protocol}\index{LGES protocol}. That is the basic LGES protocol for transcription from omega genetic code into ozin genetic expressions. 
 
 
 Essentially, for our Euler Virus, the LGES transcription protocol would result in an expression such as what we see depicted in \textbf{\hyperref[FIGOZEVIRUS]{Figure \ref{FIGOZEVIRUS}}}.
@@ -5293,76 +5293,63 @@ How does it work?
 \label{SECGENSEQEXPRES}
 
 
-So, in general, we might sum up our start to finish gene (and genome) expression protocol with the post-transcription rules and process as such:
+So, in general, we might sum up our start to finish gene (and genome) expression protocol\index{LGES protocol} with the post-transcription rules included, and process as such:
 
-\begin{alg}[The \textbf{$\Omega$-to-PLATONIC Form Genetic Code Expression Algorithm}]
+\vspace{2em}
+\begin{alg}[The \textbf{$\Omega$-to-PLATONIC Form Genetic Code Expression Algorithm}\index{algorithm!$\Omega$-to-PLATONIC Form Genetic Code Expression}]
 \label{ALGCOZINPLATO}
 
-Assuming we have an $\Omega$-base encoded genetic code sequence $\Theta_\Omega$ of some length $n > 0$.
+Assuming we have an $\Omega$-base encoded genetic code sequence $\Theta_\Omega$ of some length $n > 0$, we shall start by constructing the \textbf{Intermediate Form Affix} (IFA), and finalize with the entire genome expression as \textbf{Final Genome Expression} (FGE), $\boxed{OZ(\Theta_\Omega)}^*$. The process, step-by-step, is as follows:\\
 
 \begin{enumerate}
-    \item{\textbf{INITIALIZE} the expression with a transcription, by Using \textbf{\hyperref[ALGCOZIN]{Algorithm \ref{ALGCOZIN}}} to \textbf{CONSTRUCT} the \textbf{Intermediate Form Affix} (IFA) of $\Theta_\Omega$ --- essentially return $OZ(\Theta_\Omega)$ as the start of the \textbf{Final Genome Expression} (FGE) $\boxed{OZ(\Theta_\Omega)}^*$ --- so that the final complete expressed(transcribed+translated ) sequence shall be as:\\
-
-\begin{equation}
-\label{EQTRANSLGENSEQ}
-\boxed{OZ(\Theta_\Omega)}^* = OZ(\Theta_\Omega)\cdot\boxed{OZ(\Theta_\Omega)}
-\end{equation}\\
-
-$\boxed{OZ(\Theta_\Omega)}: \mathbb{N} \times \psi_{pf}$ is the suffix of expressed na-Sequence $\Theta_\Omega$, and is expressed in our genome expression system, as PLATONIC-Form encoded \textbf{modal sequence statistic} of $OZ(\Theta_\Omega)$\footnote{We render the \textbf{suffix of FGE} as $\overset{>}{OZ(\Theta_\Omega)}$ because it allows us to not express $\Theta_\Omega$ naively at the genome or gene level, but also, so that, from an information-theoretic perspective, the completed genome expression is somewhat a statistical summary of what the genome sequence contains --- the appearance of an animal or a plant or virus, depicting or expressing the summary of its DNA code. We do this then, by not merely doing a 1-to-1 translation of the intermediate Ozin-code expression $OZ(\Theta_\Omega)$, but instead computing its summary in form of $\overset{>}{OZ(\Theta_\Omega)}$, and then instead translating that into the final spatial/geometric forms as per $\psi_{pf}$. This shall complete the entire processing/synthesis of sequence $\Theta_\Omega$, or rather our genome expression.} --- the \textbf{PFA}\footnote{Platonic Form Aspect}, i.e.:\\
-
-\begin{equation}
- \boxed{OZ(\Theta_\Omega)} = \boxed{\overset{>}{OZ(\Theta_\Omega)}}_{pf}
-\end{equation}\\
-
-
-}
-\item{ So, once we have the \textbf{IFA}, $OZ(\Theta_\Omega)$, \textbf{PROCEED} to use it to generate the rest of the sequence expression as follows: 
+    \item{\textbf{INITIALIZE} the expression with a transcription, by using \textbf{\hyperref[ALGCOZIN]{Algorithm \ref{ALGCOZIN}}} to \textbf{CONSTRUCT} the intermediate code expression of $\Theta_\Omega$ --- essentially compute $OZ(\Theta_\Omega)$, which is the \textbf{IFA}.
+    }
+\item{ So, once we have the \textbf{IFA}, $OZ(\Theta_\Omega)$, \textbf{PROCEED} to use it to generate the rest of the [intended FGE] sequence expression as follows: 
 \begin{enumerate}
-\item {\textbf{INITIALIZE} FGE, $\boxed{OZ(\Theta_\Omega)}^*$ as just:\\
+\item {\textbf{INITIALIZE} FGE  as just:
 
+\vspace{1em}
 \begin{equation}
 \label{EQSTARTFGE}
 \boxed{OZ(\Theta_\Omega)}^* = \langle \langle OZ(\Theta_\Omega) \rangle \langle \rangle \rangle
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
-This ensures, we have the prefix affix, \textbf{IFA}, as the contents of the sequence start of \textbf{FGE} \textit{extended} by a \textbf{still empty subsequence} --- in expression form, this shall merely be a backbone structure with \textbf{IFA} as its head, and a terminal that is ready to have more units appended to it, \textbf{after a single GAP/JOINT extension to IFA}. So, it also means, at this juncture, \textbf{PFA} is just:\\
+This ensures we have the \textbf{IFA} as the prefix of our \textbf{FGE}, whose only other element at this moment is a \textbf{still empty subsequence}. In the spatial expression form, this shall merely be a backbone or tree structure\footnote{For those not aware, realize that in the past, we have worked on a rigorous treatment of how transformatic sequence algebras relate to other earlier ideas such as tree and graph algebras, and this for example would explain how or why we can encode a spatial expression such as a tree or graph using sequence notation as we are doing here. Details are covered well in \cite{treealgebras_review}.} with \textbf{IFA} as its head or initial [child] node, and with the other part... the terminal node (or ``alternate child branch" when thinking in terms of trees or graphs) as just an empty node that is ready to have more units appended to it. Betwixt these, there must be \textbf{a single GAP/JOINT extension} --- essentially the ``root" if thinking in terms of trees --- to bridge the two parts (IFA and PFA) that shall make up the FGE. That [still] empty sequence node represents the \textbf{PFA}\footnote{Platonic Form Aspect}. So, it also means, at this juncture, \textbf{PFA} is just:
 
+\vspace{1em}
 \begin{equation}
 \label{EQSTARTFGESUF}
 \boxed{OZ(\Theta_\Omega)} = \langle \rangle
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 }
 \item {
-	\textbf{COMPUTE} the \textbf{IFA MSS}, $\overset{>}{OZ(\Theta_\Omega)}$
+	\textbf{COMPUTE} the \textbf{IFA MSS}\footnote{We shall render the \textbf{PFA} based on $\overset{>}{OZ(\Theta_\Omega)}$ because it allows us to not express $\Theta_\Omega$ naively at the genome or gene level as we finalize the \textbf{FGE} construction. But also, so that, from an information-theoretic perspective, and as we shall demonstrate, that the completed genome expression is somewhat a statistical summary of what the original genome sequence contained --- \textbf{the idea that the appearance of an animal, a plant or a virus depicts or expresses a summary of its underlying DNA code.} Thus, we approach expression in the LGES, not via a simple 1-to-1 translation of the underlying genetic code into the final spatial form, but instead via first computing its summary in form of $\overset{>}{\Theta_\Omega}$, and then  translating that into the final spatial/geometric forms as per the $\psi_{\Omega} \rightarrow \psi_{pf}$ transform rules specified hereafter. This process shall help suitably model the gene/genome expression processes that follow the initial transcription steps in natural gene or genome expression, and so this step is a very critically important aspect of the LGES protocols.}, $\overset{>}{OZ(\Theta_\Omega)}$ --- basically, or simply, compute the MSS of the original sequence ($\overset{>}{\Theta_\Omega}$), then convert that into OZIN.
 }
 \item {
 	\textbf{COMPUTE} $m$, the cardinality of the \textbf{IFA MSS}, $m = \invpi(\overset{>}{OZ(\Theta_\Omega)})$
 }
 \item {
-	\textbf{COMPUTE} the \textbf{Platonic Form Encoding Key}(PFEK), $\boxed{\psi_{pf}}_m$, corresponding to $m$ and based on the \textbf{SLSA Algorithm}\footnote{The \textbf{SLSA}, \textbf{Second Lu-Shuffle Algorithm} is well introduced and explained in \textbf{\hyperref[APPSLSA]{Section \ref{APPSLSA}}}, and it basically is about generating an exact anagram of the input sequence, corresponding to a particular partitioning index --- in this case (and by \textbf{LGES} convention, denoted), $m$, the size of the \textbf{IFA MSS}.}
+	\textbf{COMPUTE} the \textbf{Platonic Form Encoding Key}(PFEK), $\boxed{\psi_{pf}}_m$, corresponding to $m$ and based on the \textbf{SLSA Algorithm}\footnote{The \textbf{SLSA}, \textbf{Second Lu-Shuffle Algorithm} is well introduced and explained in \textbf{\hyperref[APPSLSA]{Section \ref{APPSLSA}}}, and it basically is about generating an exact anagram of the input sequence, corresponding to a particular partitioning index --- in this case (and by \textbf{LGES} convention, denoted) $m$, the size of the \textbf{IFA MSS}.}
 }
 \item{\textbf{FOREACH} symbol/term $\omega_i^*$ in \textbf{IFA MSS}, $\overset{>}{OZ(\Theta_\Omega)}$: 
 \begin{enumerate}
-    \item{\textbf{USE} the \textbf{symbol set translation mapping}: $\psi_\Omega \rightarrow \boxed{\psi_{pf}}_m \rightarrow \psi_{pf}$ where that final term corresponds to the mapping depicted in \textbf{\hyperref[FIGPLATONICCIPH]{Figure \ref{FIGPLATONICCIPH}}}, to translate $\omega_i^*$ into the equivalent \textbf{Platonic Form}, $\boxed{\omega_i^*}$, for the final expression as such:}
-\item { \textbf{IF} $\omega_i^* \equiv 0$:Operating on the current \textbf{FGE}: 
+    \item{\textbf{USE} the \textbf{symbol set translation mapping}\footnote{So, instead of directly translating from the base-$\Omega$ expression into base-PLATO/$\psi_{pf}$, we instead use the parameter $m$ which shall be constant for a particular genetic code sequence, so that it gets us a new/random but consistent alternative anagram of the symbol set $\psi_\Omega$ --- essentially, an anagram of the base-10 digits in this model, and so that, if in $\psi_\Omega$ the symbol ``1" occupied position 2 and yet, for a given $m$ such as 3, it shall occupy position 8! For $\psi_{10}$, these anagrams are captured in \textbf{\hyperref[TABSSLAPERK]{Table \ref{TABSSLAPERK}}}. But how we exactly use them in LGES is explained in a later step in the present algorithm, so read on...} $\psi_\Omega \rightarrow \boxed{\psi_{pf}}_m \rightarrow \psi_{pf}$ where that final term corresponds to the mapping depicted in \textbf{\hyperref[FIGPLATONICCIPH]{Figure \ref{FIGPLATONICCIPH}}}, to translate $\omega_i^*$ into the equivalent \textbf{Platonic Form}, $\boxed{\omega_i^*}$, for the final expression as such:}
+\item { \textbf{IF} $\omega_i^* \equiv 0$:Operating on the \textbf{PFA}: 
 		\begin{enumerate}
-		\item { \textbf{APPEND}/Insert a JOINT onto \textbf{FGE},  $\boxed{OZ(\Theta_\Omega)}^*$\\
+		\item { \textbf{APPEND}/Insert a JOINT onto the \textbf{PFA}:
 
-		\begin{equation}
-		\label{EQEXTFGEJOINT}
-		\boxed{OZ(\Theta_\Omega)}^* = \boxed{OZ(\Theta_\Omega)}^* \cdot \boxed{\omega_i^*}_{joint}
-		\end{equation}\\		
-		
-		And equivalently/thus:\\
-		
+		\vspace{1em}
 		\begin{equation}
 		\label{EQEXTFGEJOINTSUF}
 		\boxed{OZ(\Theta_\Omega)} = \boxed{OZ(\Theta_\Omega)} \cdot \boxed{\omega_i^*}_{joint}
-		\end{equation}\\				
+		\end{equation}
+		\vspace{1em}				
 		
 		}
-		\item \textbf{PROCEED} to the next symbol in \textbf{IFA MSS}, $\overset{>}{OZ(\Theta_\Omega)}$\\ (loop from \textbf{Step\#2(e))}.
+		\item \textbf{PROCEED} to the next symbol in \textbf{IFA MSS}, $\overset{>}{OZ(\Theta_\Omega)}$\\ (jump to \textbf{Step\#2(e))}.
 		\end{enumerate}
 	}
 	\item { \textbf{ELSE}: \textbf{RESOLVE} the correct  $\boxed{\omega_i^*}$  for  $\omega_i^*$  by using the relation\footnote{Concerning how to actually arrive at the correct $\boxed{\omega_i^*}$ via the correct $\boxed{\psi_\Omega}_m$ for a given \textbf{IFA MSS}, refer to \textbf{\hyperref[SECIFAMSSPFMAPS]{Appendix \ref{SECIFAMSSPFMAPS}}} that covers how to compute or look-up the necessary \textbf{platonic form encoding key}.}\\
@@ -5373,8 +5360,21 @@ This ensures, we have the prefix affix, \textbf{IFA}, as the contents of the seq
 
 \begin{equation}
 \label{EQFBOXED}
- \boxed{\omega_i^*} = \rho_j \in \psi_{pl} +  j \times \omega_i^* : j = \boxed{j} : I(\boxed{j},\boxed{\psi_{pf}}_m) = I(\omega_i^*,\overset{>}{OZ(\Theta_\Omega)})
-\end{equation}\\
+ \boxed{\omega_i^*} = \rho_j \in \psi_{pf} +  j \times \omega_i^* : j = \boxed{j} : I(\boxed{j},\boxed{\psi_{pf}}_m) = I(\omega_i^*,\overset{>}{OZ(\Theta_\Omega)})
+\end{equation}
+\vspace{1em}
+
+The core; \textbf{LGES}-\textbf{PFA} component resolution protocol\index{Lu-Genome Expression System (LGES)!PFA resolution protocol}; which, as we shall be using in other parts of the literature, we might also write using \textbf{PFA component configuration notation} as such:
+
+\vspace{1em}
+\begin{equation}
+\label{EQFBOXEDb}
+ \boxed{\omega_i^*} = (\rho_j \in \psi_{pf}) +  j \times (\omega_i^* \in \psi_{oz}) = j_{pf}  \otimes (\omega_i^*)_{oz}
+\end{equation}
+\vspace{1em}
+
+To mean, we express $\boxed{\omega_i^*}$ by writing the $j$-th platonic form it corresponds to, with the associated ozin term $\omega_i^*$ attached to it $j$-times.
+\vspace{1em}
 
 \end{minipage}}
 \\
@@ -5382,35 +5382,40 @@ This ensures, we have the prefix affix, \textbf{IFA}, as the contents of the seq
 
 
 	\begin{enumerate}
-        \item{\textbf{PLACE} that encoded version, $\boxed{\omega_i^*}$, along the existing \textbf{FGE} structure at the next vacant position ($\invpi(\Theta_\Omega)+i$). Expressible with another version of \textbf{\hyperref[EQEXTFGEJOINT]{Equation \ref{EQEXTFGEJOINT}}} as:\\
+        \item{\textbf{PLACE} that encoded version, $\boxed{\omega_i^*}$, along the existing \textbf{PFA} structure at the next vacant position ($\invpi(\Theta_\Omega)+i$). Expressible and approached as we did in \textbf{\hyperref[EQEXTFGEJOINTSUF]{Equation \ref{EQEXTFGEJOINTSUF}}}, updating/extending and overriding the current \textbf{PFA} as:
 	
-	\begin{equation}
-	\label{EQEXTFGEPF}
-		\boxed{OZ(\Theta_\Omega)}^* = \boxed{OZ(\Theta_\Omega)}^* \cdot \boxed{\omega_i^*}
-		\end{equation}\\
-		
-		And equivalently:\\
-		
+
+	    \vspace{1em}
 		\begin{equation}
 		\label{EQEXTFGEPFSUF}
 		\boxed{OZ(\Theta_\Omega)} = \boxed{OZ(\Theta_\Omega)} \cdot \boxed{\omega_i^*}
-		\end{equation}\\
+		\end{equation}
+		\vspace{1em}
 		
-            Where the special \textbf{PFA} term, $\boxed{\omega_i^*}$, as per \textbf{\hyperref[EQFBOXED]{Equation \ref{EQFBOXED}}}, is basically the PLATONIC Form corresponding to position $j$ in $\boxed{\psi_{pf}}_m$ --- an \textbf{anagrammatized $pf$-symbol set} relative to $m$ and which is used to look-up the \textbf{correct indices} for the \textbf{corresponding} geometric structure components from $\psi_{pf}$, the symbol set of the final form of the \textbf{PFA}, but also with the \textit{twist} that the intermediate form $\omega_i^*$ is attached to that geometric structure $j$ times --- as depicted in example\footnote{It shall be interesting to note, that based on the \textbf{PFEK} by \textbf{SLSA} --- see \textbf{\hyperref[TABSSLAPERK]{Table \ref{TABSSLAPERK}}}, that assuming we had [an actually \textit{strange}] organism whose equivalent $\Omega$-encoded DNA sequence were just the sequence $\Theta$ = \textbf{666}, its corresponding \textbf{IFA} characteristic would be just $\hbar(\overset{>}{\Theta}) = $\textit{\textbf{6}3}, the corresponding \textbf{MSS} just $\langle$\textbf{6}$\rangle$, and so its \textbf{PFEK} look-up key, $m = \invpi(\overset{>}{\Theta}) = 1$, so that, its corresponding $\boxed{\psi_{pf}}_1 = \langle 4 \rangle$, and so that for its \textbf{BODY} component in the associated full genome expression, the entire \textbf{PFA} would just be $\boxed{\omega_1^*} \implies 4_{pf} \otimes 6_{oz}$ --- which is exactly what we see in this picture in \textbf{\hyperref[FIGEXAPLATONICFORMPFA]{Figure \ref{FIGEXAPLATONICFORMPFA}}}!} \textbf{\hyperref[FIGEXAPLATONICFORMPFA]{Figure \ref{FIGEXAPLATONICFORMPFA}}}, with each expression of $\omega_i^*$ attached to one of the $j$ \textbf{appendage spots} on the shape for $\boxed{\omega_i^*}$.
+            Where the special \textbf{PFA} term, $\boxed{\omega_i^*}$, as per \textbf{\hyperref[EQFBOXED]{Equation \ref{EQFBOXED}}}, is basically the PLATONIC Form corresponding to position $j$ in $\boxed{\psi_{pf}}_m$ --- an \textbf{anagrammatized $pf$-symbol set} relative to $m$ and which is used to look-up the \textbf{correct indices} for the \textbf{corresponding} geometric structure components from $\psi_{pf}$, the symbol set of the final form of the \textbf{PFA}, but also with the \textit{twist} that the intermediate form $\omega_i^*$ is attached to that geometric structure $j$ times --- as depicted in example\footnote{It shall be interesting to note (but also a great, quick illustration), that based on the \textbf{PFEK} by \textbf{SLSA} --- see \textbf{\hyperref[TABSSLAPERK]{Table \ref{TABSSLAPERK}}}, that assuming we had [an actually \textit{strange}] organism whose equivalent $\Omega$-encoded DNA sequence were just the sequence $\Theta$ = \textbf{666}, its corresponding \textbf{IFA} characteristic would be just $\hbar(\overset{>}{\Theta}) = $\textit{\textbf{6}3}, the corresponding \textbf{MSS} just $\langle$\textbf{6}$\rangle$, and so its \textbf{PFEK} look-up key, $m = \invpi(\overset{>}{\Theta}) = 1$, so that, its corresponding $\boxed{\psi_{pf}}_1 = \langle 4 \rangle$, and so that for its \textbf{BODY} component in the associated full genome expression, the entire \textbf{PFA} would just be $\boxed{\omega_1^*} \implies 4_{pf} \otimes 6_{oz}$ --- which is exactly what we see in this picture in \textbf{\hyperref[FIGEXAPLATONICFORMPFA]{Figure \ref{FIGEXAPLATONICFORMPFA}}}!} \textbf{\hyperref[FIGEXAPLATONICFORMPFA]{Figure \ref{FIGEXAPLATONICFORMPFA}}}, with each expression of $\omega_i^*$ attached to one of the $j$ \textbf{appendage spots} on the shape for $\boxed{\omega_i^*}$.
 	}
-	\item \textbf{PROCEED} to the next symbol in \textbf{IFA MSS}, $\overset{>}{OZ(\Theta_\Omega)}$\\ (loop from \textbf{Step\#2(e))}.
+	\item \textbf{PROCEED} to the next symbol in \textbf{IFA MSS}, $\overset{>}{OZ(\Theta_\Omega)}$\\ (jump to \textbf{Step\#2(e))}.
 	\end{enumerate}
 	}
 \end{enumerate}
+}
+\item{ Now that the \textbf{PFA} is complete, \textbf{UPDATE} the \textbf{FGE} as such:
+
+\vspace{1em}
+\begin{equation}
+\textbf{FGE} = \textbf{IFA} \cdot \textbf{PFA} \quad \Leftrightarrow \quad \boxed{OZ(\Theta_\Omega)}^* =   OZ(\Theta_\Omega) \cdot \boxed{\omega}_{joint} \cdot \boxed{OZ(\Theta_\Omega)}
+\end{equation}
+\vspace{1em}
 }
 \end{enumerate}
 }
 
 \item \textbf{TRUNCATE} the final-structure after the final term in \textbf{FGE}.
-\item \textbf{RETURN} \textbf{FGE}, $\boxed{OZ(\Theta_\Omega)}^*$ as the final transcribed and translated version of $\Theta_\Omega$. The culmination of our conceptual genome expression.
+\item \textbf{RETURN} \textbf{FGE}, $\boxed{OZ(\Theta_\Omega)}^*$ as the final transcribed and translated version of $\Theta_\Omega$. The culmination of our conceptual genome expression process.
 \end{enumerate}
 $\qed$
 \end{alg}
+\vspace{2em}
 
 
 \begin{figure}[H]
@@ -5424,7 +5429,7 @@ $\qed$
 
 
 
-After looking at some examples of actual genome expressions rendered using the \textbf{LGES}, perhaps most reviewers of \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}} shall come to appreciate that it is not only non-trivial, but is likewise plausible given the sensibilities of how actual expression occurs in nature/reality\footnote{That said, it shall be up to others --- botanists, zoologists, molecular biologists, virologists, etc. to either confirm or refute whether or not \textbf{LGES} does indeed echo the reality in nature or whether it is a theory only applicable to a subsection of reality --- \textit{which, if not all?}} --- see a natural expression as in \textbf{\hyperref[FIGPINEAPPLE]{Figure \ref{FIGPINEAPPLE}}}, and that it encapsulates the ideals of both distinctiveness but also diversity for the minutest of organic creatures that are just as basic as mere genetic code with a basic encapsulating body (such as viruses), but also complex organisms belonging to distinct families of prokaryotes and eukaryotes.
+After looking at some examples of actual genome expressions rendered using the \textbf{LGES}, perhaps most reviewers of \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}} shall come to appreciate that it is not only non-trivial, but is likewise plausible given the sensibilities of how actual expression occurs in nature/reality\footnote{\textbf{FUTURE WORK:} That said, it shall be up to others --- botanists, zoologists, molecular biologists, virologists, etc. to either confirm or refute whether or not \textbf{LGES} does indeed echo the reality in nature or whether it is a theory only applicable to a subsection of reality --- \textit{which, if not all?}} --- see a natural expression as in \textbf{\hyperref[FIGPINEAPPLE]{Figure \ref{FIGPINEAPPLE}}}, and that it encapsulates the ideals of both distinctiveness but also diversity for the minutest of organic creatures that are just as basic as mere genetic code with a basic encapsulating body (such as viruses), but also complex organisms belonging to distinct families of prokaryotes and eukaryotes.
 
 
 \subsection{Examples of Complete Lu-Genome Expressions}
@@ -6219,28 +6224,31 @@ For some, the \textbf{Ozin Cipher}\cite{lutalo_2025_ozin} (see \textbf{\hyperref
   \end{center}
 \end{figure}
 
-\chapter{Computing Platonic-Form Encoding Keys (PFEKs), $\boxed{\psi_\Omega}_m$ for a Particular na-Sequence $\Theta$ and some $m$}
+\chapter{Computing Platonic-Form Encoding Keys (PFEKs), $\boxed{\psi_\Omega}_m$, for a Particular na-Sequence $\Theta$ and some $m$}
 \label{SECIFAMSSPFMAPS}
 
 
-It is one of the tricky, but otherwise readily solvable aspects of the \textbf{Lu-Genome Expression System} (LGES), that when constructing the \textbf{BODY} aspect of a \textbf{Full Genome Expression} (FGE) corresponding to a particular sequence $\Theta$, that we correctly pick or generate the corresponding platonic-form encoding key, $\boxed{\psi_\Omega}_m$, that corresponds to the sequence's characteristic, or rather, the \textbf{modal sequence}. 
+It is one of the tricky, but otherwise readily solvable aspects of the \textbf{Lu-Genome Expression System} (LGES)\index{Lu-Genome Expression System (LGES)}, that when constructing the \textbf{BODY} aspect of a \textbf{Full Genome Expression} (FGE) corresponding to a particular sequence $\Theta$, that we correctly pick or generate the corresponding platonic-form encoding key, $\boxed{\psi_\Omega}_m$, that corresponds to the sequence's characteristic, or rather, the \textbf{modal sequence}. 
 
 
 In particular, we use the concept of shuffling/anagrammatizing a sequence relative to some initial/specific input \textbf{partitioning index} $k$ --- in this case, denoted $m$, and which is derived as such:
 
+\vspace{1em}
 \begin{equation}
  m = \invpi(\overset{>}{\Theta})
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
-So that, for the case of rendering \textbf{FGE} basing on some sequence $\Theta$ --- possibly an na-Sequence, encoded (for \textbf{LGES}) using base-$\Omega$, we use the \textbf{Second Lu-Shuffle Algorithm} (SLSA) --- introduced in \textbf{\hyperref[APPSLSA]{Section \ref{APPSLSA}}}, and for which, important, example look-up-tables are shown in \textbf{\hyperref[SECAPPLYSLSA]{Section \ref{SECAPPLYSLSA}}}, to anagrammatize $\psi_\Omega$ \textbf{relative to} $m$, so as to arrive at a correct $\boxed{\psi_\Omega}_m$ that we then use to render the \textbf{PFA} for $\Theta$. Essentially, we must compute the transform:\\
+So that, for the case of rendering \textbf{FGE} basing on some sequence $\Theta$ --- possibly an na-Sequence, encoded (for \textbf{LGES}) using base-$\Omega$, we use the \textbf{Second Lu-Shuffle Algorithm} (SLSA)\index{Second Lu-Shuffle Algorithm (SLSA)}\footnote{Introduced in \textbf{\hyperref[APPSLSA]{Section \ref{APPSLSA}}}, and for which, important, example look-up-tables are shown in \textbf{\hyperref[SECAPPLYSLSA]{Section \ref{SECAPPLYSLSA}}}.} to anagrammatize $\psi_\Omega$ \textbf{relative to} $m$, so as to arrive at a correct $\boxed{\psi_\Omega}_m$ that we then use to render the \textbf{PFA} for $\Theta$. Essentially, we must compute the transform:
 
-
+\vspace{1em}
 \begin{trans}[Generating the \textbf{Platonic-Form Encoding Key}]
 $ $\\
 $\psi_\Omega \xrightarrow{slsa(\psi_\Omega, m)} \boxed{\psi_\Omega}_m$\\
 \end{trans}
+\vspace{1em}
  
-Where $slsa(\Theta,m)$ is equivalent to invoking \texttt{lu\_shuffler\_b$(\Theta,m)$} as examples in \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}} show. 
+Where $slsa(\Theta,m)$ works as examples in \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}} show. 
 
 Good enough, we not only have ready-to-use shuffled versions of $\psi_\Omega$ = $\psi_{10}$ = $\langle 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \rangle$ as shown in \textbf{\hyperref[FIGTRACESLSA]{Figure \ref{FIGTRACESLSA}}}, but also, in case one wishes to manually compute or perhaps automatically generate the necessary key for a given $m$ or \textit{any} sequence, the Python program in \textbf{\hyperref[LST_SLSA]{Listing \ref{LST_SLSA}}} can be utilized for this purpose.
  
@@ -6281,7 +6289,7 @@ That said, basing on the algorithm that generated the mappings in \textbf{\hyper
 	10 & \textbf{6} & \textbf{3} & \textbf{8} & \textbf{2} & \textbf{1} & \textbf{9} & \textbf{7} & \textbf{4} & \textbf{0} & \textbf{5}\\
 	              \hline
 \end{tabular}
- \caption{Platonic Form Encoding Keys (PFEK) mapped to corresponding values of $m = \invpi(\overset{>}{\Theta})$ using \textbf{SLSA}}
+ \caption{Platonic Form Encoding Keys (PFEK) mapped to corresponding values of $m = \invpi(\overset{>}{\Theta})$ using \textbf{SLSA}\index{table!Platonic Form Encoding Keys via SLSA}}
   \label{TABSSLAPERK}
 \end{table}
 
@@ -6322,7 +6330,7 @@ And if one wishes to render their \textbf{PFA} --- the platonic form aspect, of 
 	\hline
 	              
 \end{tabular}
- \caption{Platonic Form Encoding Keys (PFEK) mapped to corresponding values of $m = \invpi(\overset{>}{\Theta})$ using \textbf{FLSA}}
+ \caption{Platonic Form Encoding Keys (PFEK) mapped to corresponding values of $m = \invpi(\overset{>}{\Theta})$ using \textbf{FLSA}\index{table!Platonic Form Encoding Keys via FLSA}}
   \label{TABFSLAPERK}
 \end{table}
 
@@ -6381,9 +6389,11 @@ And so, for the last term in that \textbf{MSS}, $\boxed{\omega_5^*} = 8$
 \begin{enumerate}
 \item So, now that you know the \textbf{PFEK} for your $m$, such as $\boxed{\psi_{pf}}_5 = \langle 2, 1, 0, 6, 8 \rangle $ from above, and have the correct pf-term for a particular term in the \textbf{MSS} such as $\boxed{\omega_5^*} = 8$ in the example above, the corresponding pf-term is the platonic structure from \textbf{\hyperref[FIGPLATONICCIPH]{Figure \ref{FIGPLATONICCIPH}}} that corresponds to the index $8$ --- so that would be the \textbf{octagon} or rather \textbf{octa-gram} with nothing at the center. But also, given the term we are decoding is $\omega_5^*$ = 6, then the overall structure would be as per configuration \textbf{$8_{pf} + 8 \times 6_{oz}$}: That is to say:
 
+\vspace{1em}
 \begin{equation}
 \boxed{\omega_5^*}_{pf} = 8_{pf} \otimes 6_{oz} = 8_{pf} + 8 \times 6_{oz}
 \end{equation}
+\vspace{1em}
 
 So that the final rendered term for this element alone would be as shown:
 
@@ -7571,6 +7581,7 @@ Space & N/A & N/A & $n$D (abstract) & \makecell[l]{Set with algebraic\\or topolo
 \hline
 \end{tabular}
 \label{TABCOMPCONCEPTS}
+\caption{Comparison of Several Fundamental Mathematical Structures related to Sequences in Transformatics\index{table!mathematical structures}}
 \end{center}
 
 \section*{Definitions and Examples}

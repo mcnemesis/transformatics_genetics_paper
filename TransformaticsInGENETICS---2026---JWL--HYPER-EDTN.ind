@@ -13,6 +13,10 @@
 
   \item ADM, \hyperpage{19}, \hyperpage{45}, \hyperpage{194}
   \item algorithm
+    \subitem $\Omega $-to-OZIN Genetic Code Transcription, 
+		\hyperpage{129}
+    \subitem $\Omega $-to-PLATONIC Form Genetic Code Expression, 
+		\hyperpage{134}
     \subitem Closest Sequence Search, \hyperpage{56}
     \subitem computing MCS, \hyperpage{66}
     \subitem First Lu-Shuffle (FLSA), \hyperpage{80}
@@ -26,10 +30,17 @@
 
   \indexspace
 
+  \item Base-Omega, \hyperpage{125}
+
+  \indexspace
+
   \item characteristic, \hyperpage{50}
     \subitem population, \hyperpage{53}
     \subitem sequence, \hyperpage{49}
   \item chromosomes, \hyperpage{6}
+  \item cipher, \hyperpage{124}
+    \subitem ozin, \hyperpage{127}
+    \subitem platonic, \hyperpage{133}
   \item codon, \hyperpage{32}, \hyperpage{113}
     \subitem complements, \hyperpage{32}
   \item codons, \hyperpage{6}, \hyperpage{17}
@@ -64,6 +75,7 @@
 
   \item entropy, \hyperpage{79}, \hyperpage{96}, \hyperpage{210}
   \item eukaryotes, \hyperpage{5}
+  \item Euler virus, \hyperpage{125}
 
   \indexspace
 
@@ -102,6 +114,7 @@
     \subitem analysis, \hyperpage{19}
     \subitem sequencing, \hyperpage{63}
   \item genome expression, \hyperpage{4}
+    \subitem intermediate language, \hyperpage{126}
   \item genome sequence, \hyperpage{72}
     \subitem defining problem, \hyperpage{72}
     \subitem limits on size, \hyperpage{73}
@@ -124,6 +137,10 @@
 
   \indexspace
 
+  \item language transforms, \hyperpage{126}
+  \item LGES protocol, \hyperpage{127}, \hyperpage{134}
+  \item Lu-Genome Expression System, \hyperpage{173}
+  \item Lu-Genome Expression System (LGES), \hyperpage{125}
   \item lu-number system, \hyperpage{25}
   \item lu-shuffle algorithm, \hyperpage{80}, \hyperpage{86}
 
@@ -146,6 +163,9 @@
     \subitem application in computing ORS, \hyperpage{72}
   \item na-Sequence, \hyperpage{36}
   \item na-sequence, \hyperpage{14}
+  \item nucleic acids, \hyperpage{12, 13}
+    \subitem hypothetical, \hyperpage{125}
+    \subitem universal symbol set, \hyperpage{13}
   \item nucleobase, \hyperpage{7}
   \item nucleotides, \hyperpage{7}, \hyperpage{12, 13}
   \item number expression, \hyperpage{125}
@@ -154,9 +174,11 @@
 
   \item orthogonal symbol set identity, \hyperpage{30}
   \item Overlap Resultant Sequence (ORS), \hyperpage{71}
+  \item ozin cipher, \hyperpage{127}
 
   \indexspace
 
+  \item platonic cipher, \hyperpage{133}
   \item population characteristic, \hyperpage{53}
   \item program
     \subitem FLSA, \hyperpage{86}
@@ -189,6 +211,8 @@
 
   \indexspace
 
+  \item Second Lu-Shuffle Algorithm (SLSA), \hyperpage{86}, 
+		\hyperpage{173}
   \item sequence
     \subitem algebra, \hyperpage{26}, \hyperpage{252}
     \subitem anagram, \hyperpage{30}, \hyperpage{88}
@@ -212,7 +236,7 @@
   \item sequence entropy, \hyperpage{59}
     \subitem definition, \hyperpage{210}
   \item sequences
-    \subitem decimal, \hyperpage{29}, \hyperpage{125}, \hyperpage{149}
+    \subitem decimal, \hyperpage{29}, \hyperpage{125}, \hyperpage{150}
   \item sequencing, \hyperpage{12}, \hyperpage{63, 64}
   \item sex, \hyperpage{5}
   \item START-codon, \hyperpage{116}
@@ -231,12 +255,20 @@
 
   \indexspace
 
+  \item table
+    \subitem mathematical structures, \hyperpage{216}
+    \subitem na-Sequence Analysis, \hyperpage{42}
+    \subitem Platonic Form Encoding Keys via FLSA, \hyperpage{175}
+    \subitem Platonic Form Encoding Keys via SLSA, \hyperpage{174}
+    \subitem sequence transforms, \hyperpage{26}
   \item TEA
     \subitem as higher-order transformers, \hyperpage{207}
     \subitem installation guide, \hyperpage{38}
   \item TEA program
     \subitem modal sequence statistic, \hyperpage{40}
     \subitem sequence characteristic, \hyperpage{41}, \hyperpage{51}
+  \item transcription, \hyperpage{126}
+    \subitem LGES protocol, \hyperpage{127}, \hyperpage{129}
   \item transformatics
     \subitem as an algebra, \hyperpage{252}
     \subitem definition, \hyperpage{252}
@@ -257,5 +289,6 @@
   \indexspace
 
   \item virus, \hyperpage{5}, \hyperpage{23}
+    \subitem veuler (Euler virus), \hyperpage{125}
 
 \end{theindex}

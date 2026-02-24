@@ -59,56 +59,56 @@
 \contentsline {subsection}{\numberline {10.2.1}The Platonic Form Cipher and Position-Sensitive Genetic Code Translation}{133}{subsection.10.2.1}%
 \contentsline {subsection}{\numberline {10.2.2}$\psi _{\Omega }$-to-$\psi _{pf}$: PLATONIC Form Genetic Code Translation Rules}{134}{subsection.10.2.2}%
 \contentsline {subsection}{\numberline {10.2.3}Examples of Complete Lu-Genome Expressions}{138}{subsection.10.2.3}%
-\contentsline {section}{\numberline {10.3}The Extended Lu-Genome Expression System (x-LGES)}{143}{section.10.3}%
-\contentsline {subsection}{\numberline {10.3.1}$\psi _{\Omega }$-to-($\psi _{oz}$-$\psi _{pf}$-$\psi _{oz}$): The x-LGES Algorithm}{144}{subsection.10.3.1}%
-\contentsline {section}{\numberline {10.4}Actual DNA Sequences Expressed in the Extended Lu-Genome Expression System}{146}{section.10.4}%
-\contentsline {subsection}{\numberline {10.4.1}Converting Between Nucleic Acid Code and Numeric Codes}{147}{subsection.10.4.1}%
-\contentsline {subsection}{\numberline {10.4.2}Revisiting Numeric Sequences}{150}{subsection.10.4.2}%
-\contentsline {subsection}{\numberline {10.4.3}x-LGES applied to named DNA Sequences}{152}{subsection.10.4.3}%
-\contentsline {chapter}{\numberline {11}Conclusion}{155}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Future Directions}{160}{section.11.1}%
-\contentsline {chapter}{Appendix \numberline {A}Other Functions of DNA Beyond Protein Synthesis}{165}{appendix.a.A}%
-\contentsline {chapter}{Appendix \numberline {B}Origins of the OZIN Cipher}{167}{appendix.a.B}%
-\contentsline {chapter}{Appendix \numberline {C}Computing Platonic-Form Encoding Keys (PFEKs), $\boxed {\psi _\Omega }_m$ for a Particular na-Sequence $\Theta $ and some $m$}{173}{appendix.a.C}%
-\contentsline {subsection}{\numberline {C.0.1}Example of Resolving PFA Components, $\boxed {\omega _i^*}$}{175}{subsection.a.C.0.1}%
-\contentsline {chapter}{Appendix \numberline {D}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{179}{appendix.a.D}%
-\contentsline {subsection}{\numberline {D.0.1}Examples of Complete Lu-Genome Expressions}{183}{subsection.a.D.0.1}%
-\contentsline {chapter}{Appendix \numberline {E}TRANSFORMATICS 101 - explained:\\\small {A rigorous, succinct introduction to all the essential foundations and proposed theory of Transformatics}}{189}{appendix.a.E}%
-\contentsline {section}{\numberline {E.1}Foundations of a New Mathematics of Sequences}{189}{section.a.E.1}%
-\contentsline {subsection}{\numberline {E.1.1}Result 1: The Empty Sequence\cite {lnspaper}}{189}{subsection.a.E.1.1}%
-\contentsline {subsection}{\numberline {E.1.2}Result 2: A Symbol Set\cite {Lutalo2024gtnc}}{189}{subsection.a.E.1.2}%
-\contentsline {subsection}{\numberline {E.1.3}Result 3: A Sequence\cite {lnspaper}}{190}{subsection.a.E.1.3}%
-\contentsline {subsection}{\numberline {E.1.4}Result 4: Sequence Cardinality\cite {adtpaper}\cite {Lutalo2024gtnc}}{190}{subsection.a.E.1.4}%
-\contentsline {subsection}{\numberline {E.1.5}Result 5: A Sequence Symbol Set\cite {ossipaper}\cite {Lutalo2024gtnc}}{190}{subsection.a.E.1.5}%
-\contentsline {subsection}{\numberline {E.1.6}Result 6: A Sequence Transformation\cite {transformatics}\cite {lnspaper}}{190}{subsection.a.E.1.6}%
-\contentsline {subsection}{\numberline {E.1.7}Result 7: A Sequence Transformer\cite {Lutalo2025transpsy}\cite {transformatics}}{190}{subsection.a.E.1.7}%
-\contentsline {subsection}{\numberline {E.1.8}Result 8: A Sequence Filter\cite {transformatics}}{190}{subsection.a.E.1.8}%
-\contentsline {subsection}{\numberline {E.1.9}Result 9: A Sequence Generator\cite {transformatics}\cite {lutalo2025transformatic}}{190}{subsection.a.E.1.9}%
-\contentsline {subsection}{\numberline {E.1.10}Result 10: A Sequence Sampler\cite {lutalo_2025_trans_genetics}}{190}{subsection.a.E.1.10}%
-\contentsline {section}{\numberline {E.2}Proposed Abstractions Leveraging Transformatics}{192}{section.a.E.2}%
-\contentsline {subsection}{\numberline {E.2.1}Proposal 1: The o-SSI Sequence from any Sequence\cite {ossipaper}}{193}{subsection.a.E.2.1}%
-\contentsline {subsection}{\numberline {E.2.2}Proposal 2: The Anagram Distance Between Any Two Sequences\cite {adtpaper}}{194}{subsection.a.E.2.2}%
-\contentsline {subsection}{\numberline {E.2.3}Proposal 3: The Transformer Compression Ratio of any Sequence Transformation\cite {transformatics}}{195}{subsection.a.E.2.3}%
-\contentsline {subsection}{\numberline {E.2.4}Proposal 4: The Piecemeal Compression Ratio of Any Sequence Transformation\cite {transformatics}}{196}{subsection.a.E.2.4}%
-\contentsline {subsection}{\numberline {E.2.5}Proposal 5: The Modal Sequence Statistic of Any Sequence\cite {transformatics}}{197}{subsection.a.E.2.5}%
-\contentsline {subsection}{\numberline {E.2.6}Proposal 6: The Characteristic of Any Sequence\cite {lutalo_2025_trans_genetics}}{199}{subsection.a.E.2.6}%
-\contentsline {subsection}{\numberline {E.2.7}Proposal 7: The Population Characteristic of Any Collection of Sequences\cite {lutalo_2025_trans_genetics}}{203}{subsection.a.E.2.7}%
-\contentsline {subsection}{\numberline {E.2.8}Proposal 8: A Super Sequence from One or More Sequences\cite {lutalo_2025_trans_genetics}}{204}{subsection.a.E.2.8}%
-\contentsline {subsection}{\numberline {E.2.9}Proposal 9: Programs as Chains of Sequence Transformers (Transformer-Chains)\cite {lutalo_2025_trans_genetics}\cite {cli_tttt}}{207}{subsection.a.E.2.9}%
-\contentsline {subsection}{\numberline {E.2.10}Proposal 10: Entropy of a Sequence\cite {lnspaper}}{210}{subsection.a.E.2.10}%
-\contentsline {section}{\numberline {E.3}Conclusion}{212}{section.a.E.3}%
-\contentsline {chapter}{Appendix \numberline {F}Situating TRANSFORMATICS (as a Theory or Field) within Mathematics:}{215}{appendix.a.F}%
-\contentsline {section}{\numberline {F.1}A Working Definition and Clarification on Fundamental Nomenclature}{215}{section.a.F.1}%
-\contentsline {section}{\numberline {F.2}Comparison with Other Fields}{224}{section.a.F.2}%
-\contentsline {subsection}{\numberline {F.2.1}Relation to Statistics}{224}{subsection.a.F.2.1}%
-\contentsline {subsection}{\numberline {F.2.2}Relation to Linear Algebra}{225}{subsection.a.F.2.2}%
-\contentsline {subsection}{\numberline {F.2.3}Relation to Calculus}{232}{subsection.a.F.2.3}%
-\contentsline {subsection}{\numberline {F.2.4}Relation to Several Other Branches of [Applied] Mathematics}{241}{subsection.a.F.2.4}%
-\contentsline {subsubsection}{Signal Processing}{241}{section*.79}%
-\contentsline {subsubsection}{Artificial Intelligence and Machine Learning: Natural Language Processing via Neural Networks --- so-called ``Transformers"}{246}{section*.80}%
-\contentsline {subsection}{\numberline {F.2.5}Transformatics as a new Algebra of Sequences}{251}{subsection.a.F.2.5}%
-\contentsline {section}{\numberline {F.3}A Final Definition and Justification of a Field}{252}{section.a.F.3}%
-\contentsline {chapter}{Appendix \numberline {G}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{253}{appendix.a.G}%
-\contentsline {chapter}{Final Dedication}{269}{appendix*.83}%
-\contentsline {chapter}{About the Author}{272}{appendix*.85}%
-\contentsline {chapter}{Colophon}{279}{appendix*.88}%
+\contentsline {section}{\numberline {10.3}The Extended Lu-Genome Expression System (x-LGES)}{144}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}$\psi _{\Omega }$-to-($\psi _{oz}$-$\psi _{pf}$-$\psi _{oz}$): The x-LGES Algorithm}{145}{subsection.10.3.1}%
+\contentsline {section}{\numberline {10.4}Actual DNA Sequences Expressed in the Extended Lu-Genome Expression System}{147}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Converting Between Nucleic Acid Code and Numeric Codes}{148}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Revisiting Numeric Sequences}{151}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}x-LGES applied to named DNA Sequences}{153}{subsection.10.4.3}%
+\contentsline {chapter}{\numberline {11}Conclusion}{157}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Future Directions}{162}{section.11.1}%
+\contentsline {chapter}{Appendix \numberline {A}Other Functions of DNA Beyond Protein Synthesis}{167}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}Origins of the OZIN Cipher}{169}{appendix.a.B}%
+\contentsline {chapter}{Appendix \numberline {C}Computing Platonic-Form Encoding Keys (PFEKs), $\boxed {\psi _\Omega }_m$, for a Particular na-Sequence $\Theta $ and some $m$}{175}{appendix.a.C}%
+\contentsline {subsection}{\numberline {C.0.1}Example of Resolving PFA Components, $\boxed {\omega _i^*}$}{177}{subsection.a.C.0.1}%
+\contentsline {chapter}{Appendix \numberline {D}Alternative[ORIGINAL] $\Omega $-to-PLATONIC Form Genetic Code Expression Algorithm}{181}{appendix.a.D}%
+\contentsline {subsection}{\numberline {D.0.1}Examples of Complete Lu-Genome Expressions}{185}{subsection.a.D.0.1}%
+\contentsline {chapter}{Appendix \numberline {E}TRANSFORMATICS 101 - explained:\\\small {A rigorous, succinct introduction to all the essential foundations and proposed theory of Transformatics}}{191}{appendix.a.E}%
+\contentsline {section}{\numberline {E.1}Foundations of a New Mathematics of Sequences}{191}{section.a.E.1}%
+\contentsline {subsection}{\numberline {E.1.1}Result 1: The Empty Sequence\cite {lnspaper}}{191}{subsection.a.E.1.1}%
+\contentsline {subsection}{\numberline {E.1.2}Result 2: A Symbol Set\cite {Lutalo2024gtnc}}{191}{subsection.a.E.1.2}%
+\contentsline {subsection}{\numberline {E.1.3}Result 3: A Sequence\cite {lnspaper}}{192}{subsection.a.E.1.3}%
+\contentsline {subsection}{\numberline {E.1.4}Result 4: Sequence Cardinality\cite {adtpaper}\cite {Lutalo2024gtnc}}{192}{subsection.a.E.1.4}%
+\contentsline {subsection}{\numberline {E.1.5}Result 5: A Sequence Symbol Set\cite {ossipaper}\cite {Lutalo2024gtnc}}{192}{subsection.a.E.1.5}%
+\contentsline {subsection}{\numberline {E.1.6}Result 6: A Sequence Transformation\cite {transformatics}\cite {lnspaper}}{192}{subsection.a.E.1.6}%
+\contentsline {subsection}{\numberline {E.1.7}Result 7: A Sequence Transformer\cite {Lutalo2025transpsy}\cite {transformatics}}{192}{subsection.a.E.1.7}%
+\contentsline {subsection}{\numberline {E.1.8}Result 8: A Sequence Filter\cite {transformatics}}{192}{subsection.a.E.1.8}%
+\contentsline {subsection}{\numberline {E.1.9}Result 9: A Sequence Generator\cite {transformatics}\cite {lutalo2025transformatic}}{192}{subsection.a.E.1.9}%
+\contentsline {subsection}{\numberline {E.1.10}Result 10: A Sequence Sampler\cite {lutalo_2025_trans_genetics}}{192}{subsection.a.E.1.10}%
+\contentsline {section}{\numberline {E.2}Proposed Abstractions Leveraging Transformatics}{194}{section.a.E.2}%
+\contentsline {subsection}{\numberline {E.2.1}Proposal 1: The o-SSI Sequence from any Sequence\cite {ossipaper}}{195}{subsection.a.E.2.1}%
+\contentsline {subsection}{\numberline {E.2.2}Proposal 2: The Anagram Distance Between Any Two Sequences\cite {adtpaper}}{196}{subsection.a.E.2.2}%
+\contentsline {subsection}{\numberline {E.2.3}Proposal 3: The Transformer Compression Ratio of any Sequence Transformation\cite {transformatics}}{197}{subsection.a.E.2.3}%
+\contentsline {subsection}{\numberline {E.2.4}Proposal 4: The Piecemeal Compression Ratio of Any Sequence Transformation\cite {transformatics}}{198}{subsection.a.E.2.4}%
+\contentsline {subsection}{\numberline {E.2.5}Proposal 5: The Modal Sequence Statistic of Any Sequence\cite {transformatics}}{199}{subsection.a.E.2.5}%
+\contentsline {subsection}{\numberline {E.2.6}Proposal 6: The Characteristic of Any Sequence\cite {lutalo_2025_trans_genetics}}{201}{subsection.a.E.2.6}%
+\contentsline {subsection}{\numberline {E.2.7}Proposal 7: The Population Characteristic of Any Collection of Sequences\cite {lutalo_2025_trans_genetics}}{205}{subsection.a.E.2.7}%
+\contentsline {subsection}{\numberline {E.2.8}Proposal 8: A Super Sequence from One or More Sequences\cite {lutalo_2025_trans_genetics}}{206}{subsection.a.E.2.8}%
+\contentsline {subsection}{\numberline {E.2.9}Proposal 9: Programs as Chains of Sequence Transformers (Transformer-Chains)\cite {lutalo_2025_trans_genetics}\cite {cli_tttt}}{209}{subsection.a.E.2.9}%
+\contentsline {subsection}{\numberline {E.2.10}Proposal 10: Entropy of a Sequence\cite {lnspaper}}{212}{subsection.a.E.2.10}%
+\contentsline {section}{\numberline {E.3}Conclusion}{214}{section.a.E.3}%
+\contentsline {chapter}{Appendix \numberline {F}Situating TRANSFORMATICS (as a Theory or Field) within Mathematics:}{217}{appendix.a.F}%
+\contentsline {section}{\numberline {F.1}A Working Definition and Clarification on Fundamental Nomenclature}{217}{section.a.F.1}%
+\contentsline {section}{\numberline {F.2}Comparison with Other Fields}{226}{section.a.F.2}%
+\contentsline {subsection}{\numberline {F.2.1}Relation to Statistics}{226}{subsection.a.F.2.1}%
+\contentsline {subsection}{\numberline {F.2.2}Relation to Linear Algebra}{227}{subsection.a.F.2.2}%
+\contentsline {subsection}{\numberline {F.2.3}Relation to Calculus}{234}{subsection.a.F.2.3}%
+\contentsline {subsection}{\numberline {F.2.4}Relation to Several Other Branches of [Applied] Mathematics}{243}{subsection.a.F.2.4}%
+\contentsline {subsubsection}{Signal Processing}{243}{section*.79}%
+\contentsline {subsubsection}{Artificial Intelligence and Machine Learning: Natural Language Processing via Neural Networks --- so-called ``Transformers"}{248}{section*.80}%
+\contentsline {subsection}{\numberline {F.2.5}Transformatics as a new Algebra of Sequences}{253}{subsection.a.F.2.5}%
+\contentsline {section}{\numberline {F.3}A Final Definition and Justification of a Field}{254}{section.a.F.3}%
+\contentsline {chapter}{Appendix \numberline {G}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{255}{appendix.a.G}%
+\contentsline {chapter}{Final Dedication}{271}{appendix*.83}%
+\contentsline {chapter}{About the Author}{274}{appendix*.85}%
+\contentsline {chapter}{Colophon}{283}{appendix*.88}%
