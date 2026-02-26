@@ -1,0 +1,48 @@
+So, folks at Nuchwezi Research have done the difficult: given us little TEA programs that can be used from a smartphone, and which can take actual genetic code (DNA or RNA) and convert it into base-10 sequences (which can then be visualized via systems such as LGES protocols). The basic program is just:
+
+
+```
+v:vINPUT|z!:|d!:[ACGTU, <>]|r!:A:0|r!:C:1|r!:G:2|r!:T:3|r!:U:4
+```
+
+Which, if we give it the following genetic code:
+
+```
+ A, T, G, A, A, A, T, T, A, T, A, G
+```
+
+maps it to
+
+```
+0, 3, 2, 0, 0, 0, 3, 3, 0, 3, 0, 2
+```
+
+(that's base-NA to base-10: works for DNA and RNA)
+
+But also, we can convert from any base-10 number or sequence into genetic code via:
+
+```
+#----[ DECIMAL to GENETIC CODE ENCODER v1 ]
+#############################################
+# The program maps any decimal sequence to
+# corresponding genetic code sequence
+# symbols spanning the Base-na (A,C,G,T,U).
+# REFERENCE: based on a transformer in book
+# "Applying Transformatics in GENETICS" (2026)
+#############################################
+v:vINPUT 
+d!:[0-9, <>] # just digits and delimiters
+r!:[05]:A | r!:[16]:C | r!:[27]:G | r!:[38]:T | r!:[49]:U
+```
+
+Which can take a number such as our beautiful Hi-Fi o-SSI: "8 6 4 9 1 3 7 5 2 0" and return the corresponding genetic code as just "T C U U C T G A G A". The quirk here being, we need to post-transform transform that sequence into either pure DNA or RNA depending on need/context.
+
+So, that's it! Go checkout and start using these programs via TEA WEB IDE:
+
+1. https://tea.nuchwezi.com
+2. DNA-to-DEC: https://bit.ly/genetic2decimalcode
+3. DEC-to-DNA: https://bit.ly/decimal2geneticcode
+
+Who knows, in the future, you might do DNA test directly from the comfort of your smartphone or PC, from anywhere!
+
+#breakthroughs #research #genetics #geneticengineering #transformatics #teaprogramming #nuchweziresearch #oxforduniversity

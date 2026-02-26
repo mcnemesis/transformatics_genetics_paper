@@ -747,7 +747,7 @@ Finally, there are a few extra materials that have been set aside in the appendi
 \textbf{NOTE:}\\
  On \textbf{Potentially Similar Mathematics}: \textit{Frobenoids?} \\
 
-Frobenioids\cite{mochizuki_frobenioids1}\index{transformatics!relation to frobenoids}, as introduced by \textbf{Prof. Shinichi Mochizuki}, offer a category-theoretic abstraction of arithmetic structures such as divisors and line bundles, encoding transformations via morphisms that resemble symbolic rewritings under algebraic constraints\cite{copilot_dna_assistant}. In spirit, they parallel the logic of sequence transformers (from transformatics\cite{transformatics}), which operate by mapping\index{mappings}\index{transformatics!mappings} one symbolic sequence to another through rule-based transformations constrained by set-theoretic, statistical or general mathematical logic. However, even though both systems might serve as structured environments for encoding and navigating symbolic changes across mathematical objects such as general sequences and sets, I just wanted to bring this up here, so students and researchers interested in our transformatics mathematics, and who wish to take the discussions and ideas I present in this work to even more advanced levels or in unconventional directions, to readily pick a leaf and comfortably proceed to do so\footnote{Also refer to \textbf{\hyperref[CHAPSITTRANS]{Chapter \ref{CHAPSITTRANS}}} for more material --- even more detailed --- concerning contrasting transformatics to several other existing fields of mathematics and [applied] mathematical theories.}.
+Frobenioids\cite{mochizuki_frobenioids1}\index{transformatics!rel. to Frobenoids}, as introduced by \textbf{Prof. Shinichi Mochizuki}, offer a category-theoretic abstraction of arithmetic structures such as divisors and line bundles, encoding transformations via morphisms that resemble symbolic rewritings under algebraic constraints\cite{copilot_dna_assistant}. In spirit, they parallel the logic of sequence transformers (from transformatics\cite{transformatics}), which operate by mapping\index{mappings}\index{transformatics!mappings} one symbolic sequence to another through rule-based transformations constrained by set-theoretic, statistical or general mathematical logic. However, even though both systems might serve as structured environments for encoding and navigating symbolic changes across mathematical objects such as general sequences and sets, I just wanted to bring this up here, so students and researchers interested in our transformatics mathematics, and who wish to take the discussions and ideas I present in this work to even more advanced levels or in unconventional directions, to readily pick a leaf and comfortably proceed to do so\footnote{Also refer to \textbf{\hyperref[CHAPSITTRANS]{Chapter \ref{CHAPSITTRANS}}} for more material --- even more detailed --- concerning contrasting transformatics to several other existing fields of mathematics and [applied] mathematical theories.}.
 
 \end{minipage}}
 \\
@@ -883,6 +883,7 @@ As with many kinds of sequences dealt with in transformatics, the possession of 
 
 \begin{defn}[The \textbf{$na-$Sequences} --- (D/R)-NA Sequences: $\Theta_{na}:\mathbb{N} \times \psi_{na}$]
 \label{DEFNASEQ}
+\index{definition!$na-$Sequences}
 
 Any sequence of either DNA or RNA nucleotides, or both --- basically a sequence of nucleic acids, expressible as some sequence of symbols from $\psi_{na}$ is a \textbf{na-Sequence} and its symbol set is potentially a superset of both $\psi_{DNA}$ and $\psi_{RNA}$. Equivalently:
 
@@ -1179,6 +1180,7 @@ First, given the START-codon symbol set, $\psi_{na-START}$, a sequence of all th
 
 \begin{defn}[The \textbf{Nucleic Acid START-codons}\index{$\psi_{na-START}$}\index{START-codons}]
 \label{DEFSTARTCOD}
+\index{definition!START-codons}
 For any known organism, prokaryote or eukaryote, the only legitimate and known codons of the START-kind are any of the codons or START 3-grams in the unordered set $\psi_{na-START}$ --- the \textbf{nucleic acid START-codon symbol set}.
 
 \vspace{1em}
@@ -1229,6 +1231,7 @@ That said, another, closely related case is that of the consequences of the STOP
 
 \begin{defn}[The \textbf{Nucleic Acid STOP-codons}\index{$\psi_{na-STOP}$}\index{STOP-codons}]
 \label{DEFSTOPCOD}
+\index{definition!STOP-codons}
 For any known organism, prokaryote or eukaryote, the only legitimate and known codons of the STOP-kind are any of the codons or STOP 3-grams in the unordered set $\psi_{na-STOP}$ --- the \textbf{nucleic acid STOP-codon symbol set}.
 
 \vspace{1em}
@@ -2127,7 +2130,7 @@ To re-iterate the essential steps used to arrive at \textbf{\hyperref[TABFAN]{Ta
 \item{ \textit{Column 2}: \textbf{Unspecific Symbol Set}: 
 
   \begin{tcolorbox}[teaterminalstyle, title=Computing Unspecific Symbol Set]
-  \begin{lstlisting}[language=TEA]
+  \begin{lstlisting}[language=TEA,label=LSTUNSPECSS,caption=USS in TEA]
   b:
    \end{lstlisting}
   \end{tcolorbox}
@@ -2137,7 +2140,7 @@ To re-iterate the essential steps used to arrive at \textbf{\hyperref[TABFAN]{Ta
 
 
   \begin{tcolorbox}[teaterminalstyle, title=Computing Sequence Characteristic]
-  \begin{lstlisting}[language=TEA,breaklines=True]
+  \begin{lstlisting}[language=TEA,breaklines=True,label=LSTSC1,caption=SC in TEA]
 v:vSEQ|v:vANA:{}|u!:|v:vMS|l:lMS|y:vMS|d!:^.|v:vSY|y:vMS|d:^.|v:vMS|y:vSEQ|d*!:vSY|g:|v:|v!:|v:vSYN|g*:{}:vSY:vSYN|x*:vANA|v:vANA|y:vMS|f:^$:lFIN|j:lMS|l:lFIN|y:vANA
    \end{lstlisting}
   \end{tcolorbox}
@@ -2195,7 +2198,7 @@ So, since we can't use the usually sufficient \textbf{modal sequence statistic}\
 \textbf{NOTE:}\\
  A Quick Recap \textbf{Concerning Interpreting ADM, $\tilde{A}(\Theta,\Theta^*)$} \\
 
-The Anagram Distance Measure (ADM)\index{ADM}\index{Anagram Distance Measure}, associated testing method, background and justifications for the new statistic were first laid out in the seminal paper\cite{adtpaper} introducing that measure and its theory. That work was later advanced in the transformatics paper\cite{transformatics}, and essentially, we can note that:
+The Anagram Distance Measure (ADM)\index{ADM}\index{Anagram Distance Measure (ADM)}, associated testing method, background and justifications for the new statistic were first laid out in the seminal paper\cite{adtpaper} introducing that measure and its theory. That work was later advanced in the transformatics paper\cite{transformatics}, and essentially, we can note that:
 
 \begin{itemize}
 \item{Given any two sequences, $\Theta$ and $\Theta^*$, that ideally should be of the same length, and with the same\footnote{Or more accurately, ``similar composition" symbol sets --- such as $\psi(\Theta) \cong \psi(\Theta^*)$ --- or perhaps similar natural symbols sets as per some base $\beta$ --- $\psi_\beta(\Theta) = \psi_\beta(\Theta^*)$ --- with this condition being most important for cases where the two sequences being compared aren't of same length or same symbol distribution, so that then, a more accurate approximate analysis might be applied to their modal sequence statistics --- which only makes sense if both MSS contain the same exact symbols irrespective of their member ordering.} sequence symbol set, then we compute the anagram distance between them via the formula:
@@ -2341,6 +2344,7 @@ Concerning this, note that, unlike \textbf{\hyperref[SECSCENA]{Scenario A}} wher
 
 \begin{defn}[The \textbf{Sequence Characteristic}\index{sequence characteristic}\index{characteristic!sequence}, $\hbar(\overset{>}{\Theta})$]
 \label{DEFSEQCHAR}
+\index{definition!Sequence Characteristic}
 If a sequence $\Theta$ has the modal sequence statistic\footnote{Refer to rigorous definition: \textbf{\hyperref[DEFMSSFINb]{Definition \ref{DEFMSSFINb}}}} $\overset{>}{\Theta} = \langle \prod\limits_{\omega_i \in \psi(\Theta)} \omega_i, \rangle$, so that we can express it as a string concatenation of its distinct symbols in their relative order of highest frequency and first occurrence such as $\omega_1\omega_2\omega_3\ldots\omega_k$ for some $k$ the size of $\overset{>}{\Theta}$, then, if for each $\omega_i$ we also know its corresponding frequency in $\Theta$, such as $f_i$ for $\omega_i$, then writing the frequency next to the symbol such as $\omega_if_i$ for all terms in $\overset{>}{\Theta}$ produces a string that contains both the information about the unique modal sequence of $\Theta$, but also the information about how frequent each symbol occurred. We shall call such an expression the \textbf{Sequence Characteristic}, and shall denote it as  $\hbar(\overset{>}{\Theta})$, so that we can then write for $\Theta$, its corresponding sequence characteristic as:
 
 \vspace{1em}
@@ -2491,6 +2495,7 @@ So, assuming we have $Q_k = \langle a, d, c \rangle$, $\Omega1 = \langle a, b, c
 \vspace{1em}
 \begin{defn}[The \textbf{Population Characteristic}\index{population characteristic}\index{characteristic!population}]
 \label{DEFPOPCHAR}
+\index{definition!Population Characteristic}
 Given a collection, $\Theta^n$, of $n$ sequences of arbitrary length and composition, the representative \textbf{population characteristic}, that summarizes all the sequences within that population, denoted $\hbar(\overset{>}{\Theta^n})$, is derived from the sequence characteristics of the contained sequences, $\hbar(\overset{>}{\Theta_1})$, $\hbar(\overset{>}{\Theta_2})$, ... , $\hbar(\overset{>}{\Theta_n})$ as such:
 
 \vspace{1em}
@@ -2514,7 +2519,7 @@ $\qed$
 \vspace{1em}
 
 
-Thus having computed the representative population characteristic for our sample/collection/list/set of sequences as $\hbar(\overset{>}{\Omega^n})$, we then proceed to extract or reduce it to just the \textbf{representative population modal sequence statistic} (RPMSS)\footnote{Any careful analyst shall realize that computing or deriving the RPMSS as in the given process, or as per \textbf{\hyperref[EQPOPCHAR]{Definition \ref{EQPOPCHAR}}}, shall make the most sense, because, any other way would either ignore the important per-sequence symbol distribution information, or might just not be efficient or robust/trustworthy enough. Plus, where the frequencies don't matter --- such as when each symbol only appears once across all sequences, then working from the per-sequence MSS would help generate a RPMSS that is close-enough to the relative ordering of terms in each member sequence with minimal or no effort.}\index{representative population modal sequence statistic}\index{RPMSS}\index{modal sequence statistic!for a population}, $\overset{>}{\Omega^n}$. Essentially, this strategy is summarized by the following transformations\footnote{We are using the variable $\Omega$ and not $\Theta$ as was used in \textbf{\hyperref[EQPOPCHAR]{Definition \ref{EQPOPCHAR}}} to especially relate this transformation to the example we opened with in this section, but the concepts should stay clear and consistent even if we had used the former sequence symbols.}
+Thus having computed the representative population characteristic for our sample/collection/list/set of sequences as $\hbar(\overset{>}{\Omega^n})$, we then proceed to extract or reduce it to just the \textbf{representative population modal sequence statistic} (RPMSS)\footnote{Any careful analyst shall realize that computing or deriving the RPMSS as in the given process, or as per \textbf{\hyperref[EQPOPCHAR]{Definition \ref{EQPOPCHAR}}}, shall make the most sense, because, any other way would either ignore the important per-sequence symbol distribution information, or might just not be efficient or robust/trustworthy enough. Plus, where the frequencies don't matter --- such as when each symbol only appears once across all sequences, then working from the per-sequence MSS would help generate a RPMSS that is close-enough to the relative ordering of terms in each member sequence with minimal or no effort.}\index{RPMSS}\index{modal sequence statistic!for a population}, $\overset{>}{\Omega^n}$. Essentially, this strategy is summarized by the following transformations\footnote{We are using the variable $\Omega$ and not $\Theta$ as was used in \textbf{\hyperref[EQPOPCHAR]{Definition \ref{EQPOPCHAR}}} to especially relate this transformation to the example we opened with in this section, but the concepts should stay clear and consistent even if we had used the former sequence symbols.}
 
 
 \vspace{1em}
@@ -2533,7 +2538,7 @@ Concerning this method too, it is important to note that, given there might be c
 \fbox{\begin{minipage}{0.9\textwidth}
 \large
 \textbf{EXAMPLE:}\\
-  \textbf{How to Compute\index{anagram distance measure!for non-anagrams} $\tilde{A}(\approx\overset{>}{Q_k} \rightarrow \approx\overset{>}{\Omega^n})$} \\
+  \textbf{How to Compute\index{Anagram Distance Measure!for non-anagrams} $\tilde{A}(\approx\overset{>}{Q_k} \rightarrow \approx\overset{>}{\Omega^n})$} \\
 
 Assume we use the given sequences: $Q_k = \langle a, d, c \rangle$, $\Omega1 = \langle a, b, c, d, e, f \rangle$ and $\Omega2 = \langle a, b, a, d, c \rangle$, and so that $\Omega^n = \langle \Omega1, \Omega2 \rangle$, then:
 
@@ -3300,6 +3305,7 @@ Max(\invpi(\Theta_i)) \leq \invpi(\Diamond(\Theta^n)) \leq \sum\limits_{\forall 
 \fbox{\begin{minipage}{0.9\textwidth}
 \begin{defn}[A \textbf{Genome Sequencer}]
 \label{DEFGENOMESEQ} 
+\index{definition!Genome Sequencer}
 A solution to \textbf{\hyperref[PROBGS]{Problem \ref{PROBGS}}}, is a special sequence processor, $\tilde{T}(\Theta^n)$, that can compute and return a resultant sequence, $R_{\Theta^n}$, also known as the \textbf{genome sequence}, defined as\footnote{Note that in our formalism here we express the \textbf{sequence difference} of $\{\Theta_m\}$ from $\Theta^n$ as $\Theta^n \setminus \Theta_m$ --- essentially using a set-theoretic notation even though we are actually dealing with sequences here. This, so as to keep the notation simple, but otherwise, later also appeal to the same concept when considering the remaining higher-order sequence after the first $j$ member sequences have been processed and removed from it, with the notation $\Theta^{n-j}$.}
 
 \vspace{1em}
@@ -4602,7 +4608,7 @@ RSG result: ['T', 'G', 'A']
   \vspace{1em}
   
   
-  In fact, we can appreciate how useful this RSG is, at generating random sequences, if we turn off debugging, combine the results into a string, and then perform multiple invocations to get us a sequence of random sequences as we see in the next output that shows a sequence of random DNA codons it generates when we invoke it 10 times in a row with the same parameters as in the last example...
+  In fact, we can appreciate how useful this RSG is, at generating random sequences, if we turn off debugging, combine the results into a string, and then perform multiple invocations to get us a sequence of random sequences as we see in the next output that shows a sequence of random DNA codons\index{random DNA}\index{DNA!random}\index{na-Sequence!random} it generates when we invoke it 10 times in a row with the same parameters as in the last example...
   
   
     
@@ -4992,6 +4998,7 @@ A plausible and meaningful solution to this problem would be to begin by acquiri
 \vspace{2em}
 \begin{defn}[A \textbf{Ribosome}\index{definition!ribosome}]
 \label{DEFRIBOSOME}
+\index{definition!Ribosome}
 Assuming we re-write a sequence of DNA code in terms of the [ordered] sequence of nucleotides it contains, as in \textbf{\hyperref[EQ3]{Equation \ref{EQ3}}} re-written as in \textbf{\hyperref[EQ7]{Equation \ref{EQ7}}}:
 
 \vspace{1em}
@@ -5497,6 +5504,17 @@ $\qed$
 After looking at some examples of actual genome expressions rendered using the \textbf{LGES}, perhaps most reviewers of \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}} shall come to appreciate that it is not only non-trivial, but is likewise plausible given the sensibilities of how actual expression occurs in nature/reality\footnote{\textbf{FUTURE WORK:} That said, it shall be up to others --- botanists, zoologists, molecular biologists, virologists, etc. to either confirm or refute whether or not \textbf{LGES} does indeed echo the reality in nature or whether it is a theory only applicable to a subsection of reality --- \textit{which, if not all?}} --- see a natural expression as in \textbf{\hyperref[FIGPINEAPPLE]{Figure \ref{FIGPINEAPPLE}}}, and that it encapsulates the ideals of both distinctiveness but also diversity for the minutest of organic creatures that are just as basic as mere genetic code with a basic encapsulating body (such as viruses), but also complex organisms belonging to distinct families of prokaryotes and eukaryotes.
 
 
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
+   \includegraphics[trim=0cm 0cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/images/profjwl.jpg}\\
+   \caption{A 2025 photo of Fut. Prof. \textbf{Joseph Willrich Lutalo} (author), at LINJOS Primary School (Mpala) where his two kids (Shona and Theo) study from, on the day he'd gone to take them their copy of the Anagram Distance Theory paper. The picture also mentions the original \textbf{LGES} algorithm that has since been edited out of this treatise, but which still exists in earlier editions for those interested in a \textbf{PFA} leveraging sequence complements.}
+  \label{FIGPROFJWLLINJOS}
+  \end{center}
+\end{figure}
+
+
+
 \subsection{Examples of Complete Lu-Genome Expressions}
 \label{SECFULLGES}
 
@@ -5522,7 +5540,7 @@ $\implies \boxed{OZ(\Omega_{3})}^* = \langle 0,1,2,3,0,2,6 \rangle_{oz} \cdot \l
 \end{center}
 
 
-The corresponding complete rendered \textbf{FGE} for $\Omega_{3}$ would then be as shown in \textbf{\hyperref[FIGPLATONICEXA]{Figure \ref{FIGPLATONICEXA}}}.
+The corresponding complete rendered \textbf{FGE} for $\Omega_{3}$ would then be as shown\index{genome expression!FGE example} in \textbf{\hyperref[FIGPLATONICEXA]{Figure \ref{FIGPLATONICEXA}}}.
 
 
 
@@ -5764,38 +5782,27 @@ Good enough, we have had extensive background concerning transformation of seque
 So, using sequences we have already encountered, such as $\Theta_4^*$ in \textbf{\hyperref[EQ6B]{Equation \ref{EQ6B}}} --- an RNA sequence, or its original DNA form (as in \textbf{\hyperref[EQ5]{Equation \ref{EQ5}}}) how, should we go about expressing it in equivalent decimal or essential $\Omega$-form?
 
 
-{
-\LARGE
-
-\hl{
-
-TODO: Continue indexing starting from here
-
-}
-}
-
-
-{
-\LARGE
-
-\hl{TODO: proceed from here...}
-}
-
-
 \subsection{Converting Between Nucleic Acid Code and Numeric Codes}
 
-First, given the constraints we have seen above, one plausible solution might be to start with a naive\footnote{I think it is naive, because, using the position-index operator $I(\omega,\Theta)$ in the encoding definition, it isn't clear how we shall ever resolve for the digit `0' given DNA has only 4 distinct symbols.} encoding that merely maps every element in $\psi_{DNA}$ to a corresponding term in $\psi_{10}$ \textbf{based not on the quantity of the symbol --- since na-Sequences aren't made of `literal numbers', but rather, based on the position of the symbol within the DNA symbol set}. So that, we have the following basic encoding-transformer:\\
+First, given the constraints we have seen above, one plausible solution might be to start with a naive\footnote{I think it is naive, or perhaps \textit{hacky} because, using the position-index operator $I(\omega,\Theta)$ in the encoding definition, it isn't clear how we shall ever resolve for the digit `0' given DNA has only 4 distinct symbols; $I(\cdot,\cdot)$ has range $\mathbb{N}$.} encoding that merely maps every element in $\psi_{DNA}$ to a corresponding term in $\psi_{10}$ \textbf{based not on the quantity of the symbol --- since na-Sequences aren't made of `literal numbers', but rather, based on the position of the symbol within the DNA symbol set}. So that, we have the following basic encoding-transformer:
 
 
+\vspace{1em}
 \begin{transf}[$\psi_{DNA}$ to $\psi_{10}$ \textbf{DNA-Decimal Encoder}]
 \label{TRANSFDNADECEN}
 $ $\\
-$\Theta \xrightarrow{O_{dna-dec-encode}(\cdot)} \Theta^*; \quad \forall \omega \in \Theta: I(\omega,\Theta) = k, \exists \rho \in \Theta^*: I(\rho,\Theta^*) = k \implies \rho = I(\omega,\psi_{DNA})$\\
+$\Theta \xrightarrow{O_{dna-dec-encode}(\cdot)} \Theta^*; \quad \forall \omega \in \Theta: I(\omega,\Theta) = k, \quad \exists \rho \in \Theta^*: I(\rho,\Theta^*) = k$\\
+$ \implies \rho = I(\omega,\psi_{DNA})$
+$\land \quad \omega \in \Theta:\mathbb{N} \times \psi_{DNA} \quad \land \quad \rho \in \Theta^*: \mathbb{N} \times \psi_{10}$\\
+$\invpi(\Theta) = \invpi(\Theta^*)$\\
+$\qed$
 \end{transf}
+\vspace{1em}
 
 
 And so, using that \textbf{\hyperref[TRANSFDNADECEN]{Transformer \ref{TRANSFDNADECEN}}}, we can process any DNA sequence and map it to corresponding $\Omega$-form (or rather \textit{decimal form}) as such:
 
+\vspace{1em}
 \[
 \begin{tikzpicture}[baseline=(current bounding box.center)]
   % Matrix A
@@ -5813,46 +5820,50 @@ And so, using that \textbf{\hyperref[TRANSFDNADECEN]{Transformer \ref{TRANSFDNAD
     \draw[<->] (A-1-\i) -- (B-1-\i);
 \end{tikzpicture}
 \]
+\vspace{1em}
 
 
 With that basic mapping, and our example DNA sequence from \textbf{\hyperref[EQ5]{Equation \ref{EQ5}}}) we see that the corresponding decimal-encoded DNA sequence shall merely be as in the following transformation:
 
+\vspace{1em}
 \begin{trans}
 \label{TRANSSEQATG}
 $\Theta = \langle  A, T, G, A, A, A, T, T, A, T, A, G \rangle$\\
 $ \xrightarrow{O_{dna-dec-encode}(\cdot)} \langle  1, 4, 3, 1, 1, 1, 4, 4, 1, 4, 1, 3 \rangle$
 \end{trans}
+\vspace{1em}
 
-Essentially, the symbol set for DNA sequences encoded in decimal shall only span the special symbol set we might refer to as \textbf{DNA-Digits Symbol Set}, and which we might denote as $\psi_{DD}$, and which is just:\\
+Essentially, the symbol set for DNA sequences encoded in decimal shall only span the special symbol set we might refer to as \textbf{DNA-Digits Symbol Set}\index{symbol set!DNA-Digits}, and which we might denote as $\psi_{DD}$, and which is just:
 
-
+\vspace{1em}
 \begin{equation}
 \label{EQDNADIGSS}
 \psi_{DD} = \langle 1, 2, 3, 4 \rangle
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 
-So, with $\psi_{DD}$ and knowing the mapping from DNA to Decimal, we could also work backwards from decimal sequences back into DNA sequences. So, for example, assuming we took the interesting \textbf{Hi-Fi o-SSI} from \textbf{\hyperref[EQDNHIFI]{Equation \ref{EQDNHIFI}}}, and wanted to map it to an equivalent DNA sequence, we might proceed by combining the consequences of \textbf{\hyperref[THEOCOMPEQUIV]{Theorem \ref{THEOCOMPEQUIV}}} and  \textbf{\hyperref[TRANSFDNADECEN]{Transformer \ref{TRANSFDNADECEN}}}. Thus, we might start by resolving to the following approximate numerical sequence:\\
+So, with $\psi_{DD}$ and knowing the mapping from DNA to Decimal, we could also work backwards from decimal sequences back into DNA sequences. So, for example, assuming we took the interesting \textbf{Hi-Fi o-SSI}\footnote{Also which, in a [creative] manner such as we learn from Sesiano\cite{Sesiano2009} was used by medieval mathematician \textbf{Niccolo Fontana} (Tartaglia) when he passed down his ``secret" knowledge of how to solve systems of equations in the 3$^{rd}$ degree via a [mathematical] poem that he got compelled to share with embattled contemporary \textbf{Girolamo Cardano}, we note that even without divulging the ``special" technique via which this special number was derived\cite{ossipaper}, that one can recall or quickly write its digits out in their correct order via the mnemonic ``\texttt{Hi-Fi-DIM-GET}" --- short for ``High Fidelity Dimension Get" --- that maps the capitalized letters in the brief mnemonic to ``8-6-4913-7520", with the tricky bits being translating ``M" as 13 and ``T" as 20 (these two, but also the others, using the technique of decoding from $\psi_{az}$ to $\psi_{10}$ via $\rho = I(\alpha,\psi_{az}) \quad \forall \alpha \in \psi_{az} \land \rho \in \psi_{10} : \Theta_{az}\langle \alpha, \rangle^n \rightarrow \Theta^*_{10}\langle \rho, \rangle^n$). More on this covered in \textbf{Question 4} of \cite{transformatics_interview} by the author.} from \textbf{\hyperref[EQDNHIFI]{Equation \ref{EQDNHIFI}}}, and wanted to map it to an equivalent DNA sequence, we might proceed by combining the consequences of \textbf{\hyperref[THEOCOMPEQUIV]{Theorem \ref{THEOCOMPEQUIV}}} and  \textbf{\hyperref[TRANSFDNADECEN]{Transformer \ref{TRANSFDNADECEN}}}. Thus, we might start by resolving to the following approximate nucleic-acid sequence:
 
 
+\vspace{1em}
 \begin{trans}
 \label{EQDNHIFINUM}
 $ $\\
-$\Omega_{HiFinelle} = \langle 8,6,4,9,1,3,7,5,2,0 \rangle \rightarrow  \langle 8,6,T,9,A,G,7,5,C,0 \rangle $\\
+$\Omega_{HiFinelle} = \langle 8,6,4,9,1,3,7,5,2,0 \rangle \rightarrow  \langle 8,6,T,9,A,G,7,5,C,0 \rangle $
 \end{trans}
-
-
+\vspace{1em}
 
 
 However, as warned earlier on, transformations via \textbf{\hyperref[TRANSFDNADECEN]{Transformer \ref{TRANSFDNADECEN}}} would be somewhat \textit{weak} when dealing with the reverse case --- decimal-to-DNA decoding, especially because not all symbols in $\psi_{10}$ shall have meaningful equivalent terms in $\psi_{DNA}$. So, better we start by solving that problem instead.
 
 Thus, with some \textit{necessary tweak} --- that, instead of mapping from $\psi_{DNA}$ to $\psi_{10}$ and vice-versa, we take $\psi_{na}$ which has exactly 5 elements and which is a superset of $\psi_{DNA}$\footnote{Refer to \textbf{\hyperref[DEFNASEQ]{Definition \ref{DEFNASEQ}}}}, and then map any symbol from $\psi_{na}$ to $\psi_{10}$ and vice-versa as per the following non-trivial transformer:
 
-
+\vspace{1em}
 \begin{center}
 \fbox{
 \begin{minipage}{\textwidth}
-\begin{transf}[$\psi_{na}$ to $\psi_{10}$ \textbf{na-to-Decimal Decoder}]
+\begin{transf}[$\psi_{na}$ to $\psi_{10}$ \textbf{na-to-Decimal Decoder}\index{transformer!na-to-Decimal Decoder}]
 \label{TRANSFDECTONASEQ}
 $ $\\
 $\Theta \xrightarrow{O_{na-dec-decode}(\cdot)} \Theta^*;$\\
@@ -5861,15 +5872,13 @@ $\land \quad \forall \alpha_k \in \Theta \quad \exists d_k \in \Theta^*: I(\alph
 $\qed$\\
 \end{transf}
 \end{minipage}}
-\\
 \end{center}
-
-
+\vspace{1em}
 
 
 So that, by \textbf{\hyperref[TRANSFDECTONASEQ]{Transformer \ref{TRANSFDECTONASEQ}}}, we arrive at complete decimal-to-DNA and decimal-to-RNA or generally decimal-to-na-Sequence symbol encoding-decoding is as shown in the following diagram:
 
-
+\vspace{1em}
 \[
 \begin{tikzpicture}[baseline=(current bounding box.center)]
   % Matrix A
@@ -5896,60 +5905,77 @@ So that, by \textbf{\hyperref[TRANSFDECTONASEQ]{Transformer \ref{TRANSFDECTONASE
     \draw[<->] (B-1-\i) -- (C-1-\i);
 \end{tikzpicture}
 \]
+\vspace{1em}
 
-Of course, the necessary tweak here, especially for target sequences specific to either DNA or RNA and not both, the tricky terms `T' and `U' need to be dealt with as necessary --- possibly with a basic swapping of all `U' with `T' for an na-Sequence targeting a DNA processor, and vice-versa for those targeting strict RNA processors. 
+Of course, the necessary tweak here, especially for target sequences specific to either DNA or RNA and not both, would be the tricky terms `T' and `U' that would need to be dealt with as necessary --- possibly with a basic swapping of all `U' with `T' for an na-Sequence targeting a DNA processor, and vice-versa for those targeting strict RNA processors (as a \textit{post-transform} transform). 
 
-Also, that mapping offers us a basic protraction na-Sequence that is a basic multiplication of the $\psi_{na}$ symbol set by 2. Because it maps nicely to terms in $\psi_{10}$, both sequences having equal length, we could use it in various problems such as in generating random na-Sequences or mapping random base-10 o-SSI sequences to corresponding na-Sequences --- or virtually any decimal sequence of any length. 
+Also, that mapping offers us a basic protraction na-Sequence that is a basic multiplication of the $\psi_{na}$ symbol set by 2. Because it maps nicely to terms in $\psi_{10}$, both sequences having equal length, we could use it in various problems such as in generating random na-Sequences\footnote{Essentially, since, as we saw in \textbf{\hyperref[SECRNGFUNC]{Section \ref{SECRNGFUNC}}}, we can generate random numbers in any range, but also as was shown in \textbf{\hyperref[SECRSGFUNC]{Section \ref{SECRSGFUNC}}} that we can directly generate random sequences of numeric digits, we can leverage these two methods (but also methods such as when we have such sequences originating from say natural processes we have little control over --- such as atmospheric noise or the rolling of fair dice) and what we now know concerning transforming $\psi_{10} \rightarrow \psi_{na}$, to generate or obtain [pure or true] random DNA, RNA or na-Sequences!} or mapping random base-10 o-SSI sequences to corresponding na-Sequences\index{random DNA}\index{DNA!random}\index{na-Sequence!random} --- or virtually any decimal sequence of any length. 
 
 That said, let us set that special sequence aside for later use in the following equation:
 
+\vspace{1em}
 \begin{equation}
 \label{EQDUPLNASEQ}
 \Theta_{2na} =  = \psi_{na} \cdot \psi_{na} = \langle A , C , G , T , U , A , C , G , T , U \rangle
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
-However, and also related, we might also come to appreciate a related sequence, $\Theta_{palna}$, that is a palindrome derived from $\psi_{na}$, and definitely, with the same length as $\psi_{10}$.
+
+However, and also related, we might also come to appreciate a related sequence, $\Theta_{palna}$, that is a palindrome derived\footnote{The method employed here involves sequence complements that we covered well in \textbf{\hyperref[SEC3A]{Chapter \ref{SEC3A}}}.} from $\psi_{na}$, and definitely, with the same length as $\psi_{10}$.
 
 
+\vspace{1em}
 \begin{equation}
 \label{EQPALNASEQ}
 \Theta_{palna} = \psi_{na} \cdot \lnot(\psi_{na}) =  \langle A , C , G , T , U , U , T , G , C , A \rangle
-\end{equation}\\
+\end{equation}
+\vspace{1em}
 
 
 That said, and back to our \textbf{x-LGES} problem...
+
 
 \subsection{Revisiting Numeric Sequences}
 
 Before we proceed with actual na-Sequences, we shall first revisit hypothetical genome sequences expressed in numeric form\index{sequences!decimal}, and then shall use the experience we garner to handle processing of actual na-Sequences later.
 
-So, returning to that interesting \textbf{Hi-Fi o-SSI} sequence --- $\Omega_{HiFinelle} = 8649137520$, only partially translated into DNA-code in  \textbf{\hyperref[EQDNHIFINUM]{Transformation \ref{EQDNHIFINUM}}}, if we are to convert it to an equivalent na-Sequence using the new information we have, we would obtain the results:\\
+So, returning to that interesting \textbf{Hi-Fi o-SSI} sequence --- $\Omega_{HiFinelle} = 8649137520$, only partially translated into DNA-code in  \textbf{\hyperref[EQDNHIFINUM]{Transformation \ref{EQDNHIFINUM}}}, if we are to convert it to an equivalent na-Sequence using the new information we have, we would obtain the results:
 
+\vspace{1em}
 \begin{trans}
 \label{EQDNHIFINUMCOMPLETE}
 $\Omega_{HiFinelle} = \langle 8,6,4,9,1,3,7,5,2,0 \rangle \xrightarrow{O_{na-dec-decode}(\cdot)}$\\
 $  \langle T,C,U,U,C,T,G,A,G,A \rangle = TCUUCTGAGA$\\
 \end{trans}
+\vspace{1em}
 
 
-Which, if we wish to constrain it to just the DNA symbol set, would be as:\\
+Which, if we wish to constrain it to just the DNA symbol set, would be as:
 
-
+\vspace{1em}
 \begin{trans}
 $\Omega_{HiFinelle} = 8649137520 \xrightarrow{O_{na-dec-decode}(\cdot)} TCUUCTGAGA$\\
-$ \quad  \xrightarrow{O_{mRNA-encode}(\cdot)} UCUUCUGAGA \quad  \xrightarrow{O_{DNA-encode}(\cdot)} TCTTCTGAGA$\\
+$ \quad  \xrightarrow{O_{mRNA-encode}(\cdot)} UCUUCUGAGA \quad  \xrightarrow{O_{DNA-encode}(\cdot)} TCTTCTGAGA$
 \end{trans}
+\vspace{1em}
 
 
-And that last transformation was made possible by chaining several transformers, some of which we have already encountered in earlier discussions, so that the final sequence is strictly DNA-encoded. Thus, our $\Omega_{HiFinelle}$ can be mapped from base-$\Omega$ into base-DNA and vice-versa as we have seen. These ideas can definitely then be used to process any other numeric sequence when there is need to map it to or treat is as a legitimate na-Sequence.
+And that last transformation was made possible by chaining several transformers, some of which we have already encountered in earlier discussions, so that the final sequence is strictly DNA-encoded. Thus, our $\Omega_{HiFinelle}$ can be mapped from base-$\Omega$ into base-DNA and vice-versa as we can see. These ideas can definitely then be used to process any other numeric sequence when there is need to map it to or treat is as a legitimate na-Sequence.
 
 However, for the case of our gene expression system, we really don't care or need the na-Sequence expressions to begin with. And so, given we already have the numeral equivalent of $\Omega_{HiFinelle}$, we can directly advance to rendering the organism that might ensue from processing it via \textbf{x-LGES}. 
 
-Note that, for this particular sequence, we had already dealt with its \textbf{IFA} prefix encoded in base-OZIN --- see \textbf{\hyperref[FIGOZHIFI]{Figure \ref{FIGOZHIFI}}}. Thus, proceeding via a meaningful \textbf{transformatic-distillation} such as we did for the Euler Virus in \textbf{\hyperref[TRANSGENSEQEVIRUS]{Transformation \ref{TRANSGENSEQEVIRUS}}}\\
+Note that, for this particular sequence, we had already dealt with its \textbf{IFA} prefix encoded in base-OZIN --- see \textbf{\hyperref[FIGOZHIFI]{Figure \ref{FIGOZHIFI}}}. Thus, proceeding via a meaningful \textbf{transformatic-derivation} such as we did for the Euler Virus in \textbf{\hyperref[TRANSGENSEQEVIRUS]{Transformation \ref{TRANSGENSEQEVIRUS}}}
 
 
+
+
+\begin{center}
+\fbox{
+\begin{minipage}{\textwidth}
+
+\vspace{1em}
 \begin{trans}
-\small
+%\normalsize
 \label{TRANSGENSEQHiFinelle}
 $\Omega_{HiFinelle} = \langle 8,6,4,9,1,3,7,5,2,0 \rangle \rightarrow$\\
 $ \hbar(\overset{>}{\Omega_{HiFinelle}}) = \text{\textbf{8}1\textbf{6}1\textbf{4}1\textbf{9}1\textbf{1}1\textbf{3}1\textbf{7}1\textbf{5}1\textbf{2}1\textbf{0}1} \rightarrow \overset{>}{\Omega_{HiFinelle}} = \langle 8,6,4,9,1,3,7,5,2,0 \rangle$\\
@@ -5959,8 +5985,11 @@ $\implies \boxed{OZ(\Omega_{HiFinelle})}^* = \langle  8,6,4,9,1,3,7,5,2,0 \rangl
 
 \end{trans}
 
+\end{minipage}}
+\end{center}
 
-And without actually wasting time or space rendering the visual equivalence of that organism, among interesting things to note from \textbf{\hyperref[TRANSGENSEQHiFinelle]{Transformation \ref{TRANSGENSEQHiFinelle}}} is that unlike in \textbf{\hyperref[TRANSGENSEQEVIRUS]{Transformation \ref{TRANSGENSEQEVIRUS}}}, we have applied the extended LGES algorithm --- \textbf{\hyperref[ALGCOZINPLATOEXT]{Algorithm \ref{ALGCOZINPLATOEXT}}}, so that the final expression in that transformation specifies the HEAD, BODY and ROOT of the organism. Also, and interesting to note, that despite this particular sequence having no exciting \textbf{IFA MSS} --- since all the symbols in the original sequence have frequency 1 (which is why we see the organism's HEAD and ROOT looking exactly the same\footnote{I won't show many pictures here except perhaps \textbf{Figure \ref{FIGEARTHWORM}}, but some kinds of \textbf{millipedes} and \textbf{centipedes} have this strange symmetrical anatomy that makes it difficult to distinguish the head from the tail. Earthworms too! Someone suggested the concept of the \textit{Ouroboros} from esoteric folklore, that exhibits a kind of self-referential form, however, in my local folklore and vocabulary, we have a peculiar snake-like creature known as \textit{namunungu} that exhibits this peculiar form too.} \textit{in numeric form}), though, because of the consequences of how the BODY component is generated, we see a potential mid-BODY-JOINT --- \textbf{PFA} node $0_{pf} \otimes 2_{oz}$, that would definitely make the corresponding \textbf{FGE} interesting to look at. Also, given $0_{oz}$ maps to ``STOP/GAP", the final term in the \textbf{PFA}, $5_{pf} \otimes 0_{oz}$, would potentially look something like \textbf{a hand} perhaps --- it is a geometric structure of exactly 5 vertices (just like on a human palm), and like it, with \textit{discontinuities} at the appendage points/vertices\footnote{Jokes aside, normally in esoterica, \textit{magical wands} are depicted as being a rod that terminates in a 5-vertex shape --- typically a pentagram, so a creative mind might start to think of the $\Omega_{HiFinelle}$ creature as a potentially \texttt{magical [wand-like] creature}!}. 
+
+And without actually wasting time or space rendering the visual-spatial equivalence of that organism (possibly an \textit{animal}) under the x-LGES, among interesting things to note from \textbf{\hyperref[TRANSGENSEQHiFinelle]{Transformation \ref{TRANSGENSEQHiFinelle}}} is that unlike in \textbf{\hyperref[TRANSGENSEQEVIRUS]{Transformation \ref{TRANSGENSEQEVIRUS}}}, we have applied the extended LGES algorithm --- \textbf{\hyperref[ALGCOZINPLATOEXT]{Algorithm \ref{ALGCOZINPLATOEXT}}}, so that the final expression in the new transformation specifies the HEAD, BODY and ROOT of the organism. Also, and interesting to note, that despite this particular sequence having \textbf{no exciting IFA MSS}\index{genome expression!analysis of FGEs} --- since all the symbols in the original sequence have frequency 1 (which is why we see the organism's HEAD and ROOT looking exactly the same\footnote{I won't show many pictures here except perhaps \textbf{Figure \ref{FIGEARTHWORM}}, but some kinds of \textbf{millipedes} and \textbf{centipedes} have this strange symmetrical anatomy that makes it difficult to distinguish the head from the tail. Earthworms too! Someone suggested the concept of the \textit{Ouroboros} from esoteric folklore, that exhibits a kind of self-referential form, however, in my local folklore and vocabulary, we have a peculiar snake-like creature known as \textit{namunungu} that exhibits this peculiar form too.} \textit{in numeric form}), though, because of the consequences of how the BODY component is generated, we see a potential mid-BODY-JOINT --- \textbf{PFA} node $0_{pf} \otimes 2_{oz}$, that would definitely make the corresponding \textbf{FGE} interesting to look at. Also, given $0_{oz}$ maps to ``STOP/GAP", the final term in the \textbf{PFA}, $5_{pf} \otimes 0_{oz}$, would potentially look something like \textbf{a hand} perhaps --- it is a geometric structure of exactly 5 vertices (somewhat like on a human palm, but possibly unlike it), with \textit{discontinuities} at the appendage points/vertices\footnote{Could be a mapping to some aquatic anatomical structure such as a webbed-palm! But, jokes aside, and realizing that this FGE still extends past the interesting $5_{pf} \otimes 0_{oz}$ part (perhaps a weird abdomen or even the head!), in esoterica, 5-vertex forms are reminiscent of stars but also \textit{magical wands} --- the later usually depicted as being a rod that terminates in a 5-vertex shape --- typically a pentagram, so that, a creative mind might \textit{stretch} this further, and perhaps start to think of the $\Omega_{HiFinelle}$ creature as a potentially \texttt{magical creature}! Perhaps a peculiar glowworm, sea fish or even some special minuscule organelle!}. 
 
 
 \begin{figure}[H]
@@ -5994,11 +6023,164 @@ So that we can just obtain a name for the sequence using the above suggested str
 $\langle Met, Lys, Leu, Amber \rangle \rightarrow \langle M, L, L, A \rangle \rightarrow MLLA$
 \end{trans}
 
-Thus, we might formally refer to our gene-program with a proper name as $\Theta_{MLLA}$ or just the \textbf{MLLA}-gene program --- where no confusion might arise, we shall just refer to it as $\Theta_{ml}$. 
+Thus, we might formally refer to our gene-program with a proper name as $\Theta_{MLLA}$ or just the \textbf{MLLA}-gene program\index{gene program!deriving their names} --- where no confusion might arise, we shall just refer to it as $\Theta_{ml}$. 
 
 So, how would this program's corresponding sequence appear if it were expressed in the \textbf{x-LGES}?
 
-We have its corresponding $\Omega$-form expression in \textbf{\hyperref[TRANSSEQATG]{Transformation \ref{TRANSSEQATG}}}, so that\footnote{\textbf{NOTE} that, when encoding from na-Sequences constrained to just $\psi_{DNA}$ or $\psi_{RNA}$, then, the corresponding $\Omega-$base sequences shall always only span $\psi_{DD}$ (see \textbf{\hyperref[EQDNADIGSS]{Equation \ref{EQDNADIGSS}}}), but this need not be the case when mapping from $\psi_{na}$ to $\psi_{\Omega}$.}\\
+First, note that, since we already have a non-trivial transformer for converting between na-Sequences and decimal Sequences as in \textbf{\hyperref[TRANSFDECTONASEQ]{Transformer \ref{TRANSFDECTONASEQ}}}, that we might do away with translating between either kinds of sequences by instead leveraging suitable corresponding computer programs. For example, and to keep things simple, note that we can use the following TEA program to convert from na-Sequences into corresponding decimal sequences as per the updated rules and specifications in that transformer:
+
+
+\vspace{2em}
+  \begin{tcolorbox}[teaterminalstyle, title=GENETICS: GENETIC to DECIMAL CODE TRANSFORMER (v1)]
+  \begin{lstlisting}[language=TEA, label=LSTGEN2DEC,caption=GEN2DEC in TEA]
+#----[ DNA to DECIMAL DECODER v1 ]
+#################################
+# The program maps any legitimate
+# genetic code sequence of
+# symbols spanning the Base-na (A,C,G,T,U)
+# to their corresponding digit 
+# equivalents in base-10
+#################################
+v:vINPUT
+z!: # pre-process: capitalize 
+d!:[ACGTU, <>] # constrain to just na and delimiters
+r!:A:0 | r!:C:1 | r!:G:2 | r!:T:3 | r!:U:4
+   \end{lstlisting}
+  \end{tcolorbox}
+\vspace{2em}
+
+In fact, stripped of comments and just with the essential code, the entire program\index{TEA program!genetic to decimal code transformer} would just be:
+
+
+\vspace{2em}
+  \begin{tcolorbox}[teaterminalstyle, title=GENETIC to DECIMAL CODE TRANSFORMER (minified)]
+  \begin{lstlisting}[language=TEA]
+v:vINPUT|z!:|d!:[ACGTU, <>]|r!:A:0|r!:C:1|r!:G:2|r!:T:3|r!:U:4
+   \end{lstlisting}
+  \end{tcolorbox}
+\vspace{2em}
+
+
+And so that, if we apply this program to $\Theta_{ml}$, we would obtain: 
+
+
+\vspace{1em}
+\begin{trans}
+\label{TRANSSEQATGDECDEC}
+$\Theta_{ml} = \langle  A, T, G, A, A, A, T, T, A, T, A, G \rangle$\\
+$ \xrightarrow{O_{na-dec-decode}(\cdot)} \langle  0, 3, 2, 0, 0, 0, 3, 3, 0, 3, 0, 2 \rangle$
+\end{trans}
+\vspace{1em}
+
+
+And which, is indeed what we see obtained when we run the above TEA programs against the example input genetic code sequence we are currently concerned with, as shown in the WEB TEA IDE session screenshot depicted in \textbf{\hyperref[FIGTRANSSEQATGDECDEC]{Figure \ref{FIGTRANSSEQATGDECDEC}}}
+
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
+   \includegraphics[trim=0cm 0cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/images/tea_program_na_sequence_to_decimal_program.png}\\
+   \caption{An interactive session on the WEB TEA IDE demonstrating the results of running a minified TEA program that converts the input genetic code sequence from base-NA into corresponding decimal sequence in base-10. The example demonstrates what we see depicted in \textbf{\hyperref[TRANSSEQATGDECDEC]{Transformation \ref{TRANSSEQATGDECDEC}}}.}
+  \label{FIGTRANSSEQATGDECDEC}
+  \end{center}
+\end{figure}
+
+
+This program can be accessed but also be leveraged via the \textbf{TEA standard programs} when one visits the official online TEA program editing and execution environment via \url{https://tea.nuchwezi.com}, but also, one can load and run the same program (in the above code listings) either via the command-line as has been explained in \textbf{\hyperref[SECFANAL]{Section \ref{SECFANAL}}}, or, if one wishes not to work offline or that they for example wish to work via their smartphone or while on the move, can load and run the same program via the following provided [quick-access] links:
+
+ 
+ \vspace{1em}
+
+ \url{https://tea.nuchwezi.com/?i=paste+genetic+code+here&fc=https://gist.githubusercontent.com/mcnemesis/41ab5c18e62a7994ebba762574f56071/raw/genetic_code_to_decimal_sequence.tea}
+
+\vspace{1em} 
+
+OR just
+
+\vspace{1em} 
+
+ \url{https://bit.ly/genetic2decimalcode}
+
+\vspace{1em}
+
+And then, if one instead starts out with genetic code (either DNA, RNA or just na-Sequence), they can still use a suitable TEA program to convert it automatically into corresponding decimal sequence via a program such as:
+
+
+\vspace{2em}
+  \begin{tcolorbox}[teaterminalstyle, title=GENETICS: DECIMAL to GENETIC CODE TRANSFORMER (v1)]
+  \begin{lstlisting}[language=TEA, label=LSTDEC2GEN, caption=DEC2GEN in TEA]
+#----[ DECIMAL to GENETIC CODE ENCODER v1 ]
+#############################################
+# The program maps any decimal sequence to
+# corresponding genetic code sequence
+# symbols spanning the Base-na (A,C,G,T,U).
+# REFERENCE: based on a transformer in book
+# "Applying Transformatics in GENETICS" (2026)
+#############################################
+v:vINPUT 
+d!:[0-9, <>] # just digits and delimiters
+r!:[05]:A | r!:[16]:C | r!:[27]:G | r!:[38]:T | r!:[49]:U
+   \end{lstlisting}
+  \end{tcolorbox}
+\vspace{2em}
+
+
+So that the minified version of that entire transformer program\index{TEA program!decimal to genetic code transformer} would just be:
+
+
+\vspace{2em}
+  \begin{tcolorbox}[teaterminalstyle, title=DECIMAL to GENETIC CODE TRANSFORMER (minified)]
+  \begin{lstlisting}[language=TEA]
+v:vINPUT|d!:[0-9, <>]|r!:[05]:A|r!:[16]:C|r!:[27]:G|r!:[38]:T|r!:[49]:U
+   \end{lstlisting}
+  \end{tcolorbox}
+\vspace{2em}
+
+
+Which, if we apply it to the output we obtained from converting $\Theta_{ml}$ into decimal as shown in \textbf{\hyperref[TRANSSEQATGDECDEC]{Transformation \ref{TRANSSEQATGDECDEC}}}, we obtain the result:
+
+\vspace{1em}
+ $\langle A, T, G, A, A, A, T, T, A, T, A, G \rangle$ 
+ \vspace{1em}
+ 
+As shown in the following corresponding screenshot \textbf{\hyperref[FIGTRANSSEQATGDECDECb]{Figure \ref{FIGTRANSSEQATGDECDECb}}}:
+
+
+
+\begin{figure}[H]
+  \begin{center}
+  %\includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
+   \includegraphics[trim=0cm 0cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/images/tea_program_decimal_sequence_to_genetic_sequence_program.png}\\
+   \caption{A session on the WEB TEA IDE demonstrating the results of running a minified TEA program that converts the input decimal sequence from base-10 into corresponding genetic code sequence in base-NA. The example demonstrates a reversal transform of what was depicted in \textbf{\hyperref[TRANSSEQATGDECDEC]{Transformation \ref{TRANSSEQATGDECDEC}}}.}
+  \label{FIGTRANSSEQATGDECDECb}
+  \end{center}
+\end{figure}
+
+
+And if we apply that program to $\Omega_{HiFinelle}$  that we encountered earlier on, written as just ``8 6 4 9 1 3 7 5 2 0", it indeed gives us the result we expect, as just ``T C U U C T G A G A".
+
+
+So, for quick access to this TEA program (also now part of the TEA standard programs), use either of the following links:
+
+
+
+ \vspace{1em}
+
+ \url{https://tea.nuchwezi.com/?i=paste+decimal+code+here&fc=https://gist.githubusercontent.com/mcnemesis/cb762d209d9a7a85d598aa37e285467d/raw/decimal_code_to_genetic_sequence.tea}
+
+\vspace{1em} 
+
+OR just
+
+\vspace{1em} 
+
+ \url{https://bit.ly/decimal2geneticcode}
+
+\vspace{1em}
+
+
+And so then, with those utilities out of the way, we might return to our [still unfinished] problem of computing and rendering the \textbf{FGE} corresponding to $\Theta_{ml}$. Moreover, despite having obtained automation solutions for converting from DNA or na-Sequence into base-$\Omega$ that \textbf{x-LGES} requires, we shall continue our demonstration using the decimal sequence we first obtained using 
+ \textbf{\hyperref[TRANSSEQATG]{Transformation \ref{TRANSSEQATG}}}, so that\footnote{\textbf{NOTE} that, when encoding from na-Sequences constrained to just $\psi_{DNA}$ or $\psi_{RNA}$, then, the corresponding $\Omega-$base sequences \textbf{could} always only span $\psi_{DD}$ (see \textbf{\hyperref[EQDNADIGSS]{Equation \ref{EQDNADIGSS}}}), but this need not be the case when mapping from $\psi_{na}$ to $\psi_{\Omega}$.}\\
 
 \begin{equation}
 \label{EQSEQMLLA}
@@ -6048,12 +6230,12 @@ $\Theta = \langle \langle  A, T, G \rangle, \langle A, A, A \rangle, \langle T, 
 \\
 \end{center}
 
-And the corresponding, fully rendered \textbf{FGE} would be as depicted in \textbf{\hyperref[FIGLGESMLLA]{Figure \ref{FIGLGESMLLA}}} hereafter.
+And the corresponding, fully rendered \textbf{FGE} \index{Lu-Genome Expression System (LGES)!example genome expression}\index{genome expression!FGE example} would be as depicted in \textbf{\hyperref[FIGLGESMLLA]{Figure \ref{FIGLGESMLLA}}} hereafter.
 
 \begin{figure}[H]
   \begin{center}
   %\includegraphics[trim=0cm 20cm 0cm 0cm, clip, width=0.9\textwidth,]{resources/pdfs/OZINCIPHER-APP3-EXA.pdf}\\
-   \includegraphics[trim=0cm 0cm 0cm 0cm, clip, height=0.9\textheight,]{resources/pdfs/xLGES-PLATONIC-MLLA-landscape.pdf}\\
+   \includegraphics[trim=0cm 0cm 0cm 0cm, clip, height=0.8\textheight,]{resources/pdfs/xLGES-PLATONIC-MLLA-landscape.pdf}\\
    \caption{The \textbf{x-LGES form rendering} of the sequence $\Theta_{mlla}$, depicting its complete \textbf{FGE} with HEAD, BODY and ROOT segments.}
   \label{FIGLGESMLLA}
   \end{center}
@@ -6070,13 +6252,16 @@ Thus we conclude our treatment of TRANSFORMATICS in GENETICS.
 %---refs fixed up to this point...
 
 
-In this book\footnote{Originally, first a paper, then a monograph, and finally a mini-treatise!}, we have advanced our knowledge concerning the important and fundamental subject of genetics with new theory and practical ideas previously only held informally or totally unknown. We have explored several useful and interesting ways by which the newly proposed mathematical field of inquiry, known as \textbf{TRANSFORMATICS} --- potentially a sub-field of/fusion of mathematical statistics and linear algebra\footnote{As in the conclusion of the original transformatics paper\cite{transformatics}, the author strongly feels that in the future, and with further investments in research, development of theory and applications, transformatics might become its own sub-field of mathematics, distinct from both statistics and linear algebra, but also, though inspired by sequence processors in computer science, also more general than or distinct from that field too.}, might be applied in the sub-field of the biological sciences known as \textbf{GENETICS}. 
+In this book\footnote{Originally, first a paper, then a monograph, mini-treatise, and finally a treatise! This should also help explain why, unlike most academic books you'll ever come across, ours is the one that actually has a conclusion chapter!}, a treatise, we have advanced our knowledge concerning the important and fundamental subject of genetics; with new theory and practical ideas previously only held informally or totally unknown. We have explored several useful and interesting ways by which the newly proposed mathematical field of inquiry, known as \textbf{TRANSFORMATICS} might be applied in a mathematical science. Transformatics itself is \textbf{a modern mathematics treating of information expressions in the form of sequences, their algebra, processing, application, and analysis via sequence transformers and transformations.}  In other respects, Transformatics is potentially \textbf{a \textit{sub-field of} or \textit{fusion of} computational mathematics, mathematical statistics, mathematical logic, set theory and linear algebra}\footnote{As in the conclusion of the original transformatics paper\cite{transformatics}, the author strongly feels that in the future, and with further investments in \textit{mathematical research}, development of theory and applications, transformatics might become its own field of mathematics, distinct from any of the other fields it was inspired by or based upon. More about this in \textbf{\hyperref[CHAPSITTRANS]{Chapter \ref{CHAPSITTRANS}}}.}. In this volume, emphasis and focus was on its application to the fundamental sub-field of the biological sciences known as \textbf{GENETICS}. 
 
 Though much of the work was mathematical in nature, we have also had lots of useful theory presented and some only proposed, in the form of conceptual and especially philosophical ideas relating to how to understand or explore genetics through the lens of a sequence analyst or processor. 
 
-In terms of concrete \textbf{Key Metrics and Contributions} this single work has brought to surface:
+\section{Book's Significant Contributions and KPIs}
+\label{SECKPIS}
+
+In terms of concrete \textbf{Key Metrics and Contributions} this single work has brought to surface\footnote{For completeness's sake, also accounting for the relevant, mostly pro-transformatics material we have placed in the appendices.}:
 \begin{enumerate}
-\item{ \textbf{16 Working Definitions} were developed in relation to various concepts in analytical genetics, sequence analysis and sequence processing in general (including 3 \textit{Extra Definitions} not directly under Genetics, but also meant to demonstrate how Transformatics could be leveraged/applied --- in Physics: refer to Appendix  \textbf{\hyperref[SECFUTDIRECT]{Chapter \ref{SECFUTDIRECT}}}), and these include:
+\item{ \textbf{19 Working Definitions} were developed in relation to various concepts in analytical genetics, sequence analysis and sequence processing or sequence transforms in general (including 3 \textit{Extra Definitions} not directly under Genetics, but also meant to demonstrate how Transformatics could be leveraged/applied --- in Physics: refer to Appendix  \textbf{\hyperref[SECFUTDIRECT]{Chapter \ref{SECFUTDIRECT}}}), and these include:
 
 	\begin{enumerate}
 	\item The \textbf{na-Sequences} --- see  \textbf{\hyperref[DEFNASEQ]{Definition \ref{DEFNASEQ}}}
@@ -6086,15 +6271,22 @@ In terms of concrete \textbf{Key Metrics and Contributions} this single work has
 	\item The \textbf{Population Characteristic} --- see  \textbf{\hyperref[DEFPOPCHAR]{Definition \ref{DEFPOPCHAR}}}
 	\item The \textbf{Genome Sequencer} --- see  \textbf{\hyperref[DEFGENOMESEQ]{Definition \ref{DEFGENOMESEQ}}}
 	\item The \textbf{Ribosome} --- see  \textbf{\hyperref[DEFRIBOSOME]{Definition \ref{DEFRIBOSOME}}}
+	\item The \textbf{Modal Sequence Statistic} --- see  \textbf{\hyperref[DEFMSSFINb]{Definition \ref{DEFMSSFINb}}}
+	\item \textbf{Sequence Entropy} --- see  \textbf{\hyperref[DEFENTROPYb]{Definition \ref{DEFENTROPYb}}}
+	\item{ Two Working Definitions of \textbf{Transformatics} --- see  \textbf{\hyperref[DEFTRANS]{Definition \ref{DEFTRANS}}} (simple) and \textbf{\hyperref[DEFTRANS2]{Definition \ref{DEFTRANS2}}} (rigorous)
+	}
+	\item{ [BONUS] \textbf{Teleportation} (\textbf{\hyperref[DEFTELEPORTATION]{Definition \ref{DEFTELEPORTATION}}}) and \textbf{Teleportation-Time Machine} (\textbf{\hyperref[DEFTIMEMACHINE]{Definition \ref{DEFTIMEMACHINE}}})
+	}
 	\end{enumerate}
 
 }
-\item{ \textbf{4 Theorems} were developed and presented for the first time, spanning genetic sequences and then sequence complements in general. These include...
+\item{ \textbf{5 Theorems} were developed and presented for the first time, especially treating of important results concerning genetic sequences and sequence complements in general. And then one earlier theorem (from work on GTNC\cite{Lutalo2024gtnc}) concerning finite bounds on transforms involving the multiplication of pure numbers (result relevant in theory on leveraging G$\ddot{o}$del numbers for managing genetic sequence data). These include...
 
 	\begin{enumerate}
 	\item \textbf{Complement Sequences} --- see  \textbf{\hyperref[THEOCOMPLEMENTS]{Theorem \ref{THEOCOMPLEMENTS}}}
 	\item \textbf{Complement of an o-SSI is an o-SSI} --- see  \textbf{\hyperref[THEOCOMPLOSSI]{Theorem \ref{THEOCOMPLOSSI}}} 
 	\item \textbf{Equivalence of Sequences} under the Complement Transform  --- see  \textbf{\hyperref[THEOCOMPEQUIV]{Theorem \ref{THEOCOMPEQUIV}}} 
+	\item \textbf{Cardinality under Multiplication for Pure Numbers}  --- see  \textbf{\hyperref[T10]{Theorem \ref{T10}}} 
 	\end{enumerate}
 }
 \item {\textbf{3 Laws} were distilled and presented for the first time:
@@ -6104,41 +6296,47 @@ In terms of concrete \textbf{Key Metrics and Contributions} this single work has
 	\item \textbf{\hyperref[LAWGDL]{Law \ref{LAWGDL}}}: The \textbf{Identity Genome Sequence} Law.
 	\end{enumerate}
 }
-\item{ \textbf{16 Transformers} were developed and presented for the first time, including...
+\item{ \textbf{27 Transformers} were developed and presented for the first time, including...
 
 	\begin{enumerate}
 	\item The formal definition of the \textbf{Ribosome} as a \textbf{Protein Generator} (\textbf{\hyperref[TRANSF3]{Transformer \ref{TRANSF3}}})
 	\item The \textbf{n-Gram Generator} (\textbf{\hyperref[TRANSFBUND]{Transformer \ref{TRANSFBUND}}})
 	\item The \textbf{Sequence Look-up System} that leverages G$\ddot{o}$del numbers for efficient DNA-database queries (\textbf{\hyperref[TRANSFSEQLOOKUP]{Transformer \ref{TRANSFSEQLOOKUP}}})
-	\item The \textbf{Random Sequence/Symbol Generator} that can construct random DNA/RNA sequences, but also any arbitrary random\footnote{We could have wanted to generalize this generator so that it can also handle the case of non-random sequence generation --- especially since it already bases its generated sequence on the properties of some input sequence, so that for example we can generate sequences that reflect the symbol distribution within the input/sample sequence (something akin to how a ChatGPT model can generate new text based on/related to some samples with say non-uniform symbol distributions), but we chose to not do that within the context of this present work, and shall leave that for a future publication and treatment.} sequence (\textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}})
+	\item The \textbf{Random Sequence/Symbol Generator} that can construct random DNA/RNA sequences, but also any arbitrary random\footnote{\textbf{FUTURE WORK:} We could have wanted to generalize this generator so that it can also handle the case of non-random sequence generation --- especially since it already bases its generated sequence on the properties of some input sequence, so that for example we can generate sequences that reflect the symbol distribution within the input/sample sequence (something akin to how a ChatGPT model can generate new text based on/related to some samples with say non-uniform symbol distributions), but we chose to not do that within the context of this present work, and shall leave that for a future publication and treatment.} sequence (\textbf{\hyperref[TRANSFRSG]{Transformer \ref{TRANSFRSG}}})
 	\item A transformer for converting between pure numbers (in base-10) into DNA/RNA code, and vice-versa --- the $\psi_{na}$ to $\psi_{10}$ \textbf{na-to-Decimal Decoder} (\textbf{\hyperref[TRANSFDECTONASEQ]{Transformer \ref{TRANSFDECTONASEQ}}})
+	\item The \textbf{n-Gram Generator} (\textbf{\hyperref[TRANSMSSGENb]{Transformer \ref{TRANSMSSGENb}}})
+	\item The \textbf{General Signal Amplitude Transformer} (\textbf{\hyperref[TRANSFGSATSIG]{Transformer \ref{TRANSFGSATSIG}}})
+	\item The \textbf{Teleportation Transform} (\textbf{\hyperref[TRANSFTELEP]{Transformer \ref{TRANSFTELEP}}})
 	\end{enumerate}
 	
 	and many more simple and some complex, but essential transformer utilities and specifications.
 
 }
-\item{ \textbf{30 Transformations} were presented to help advance generic as well as particular computational solutions to many kinds of basic problems in sequence analysis, processing and several concerning gene/genome expression problems, including some special ones such as:
+\item{ \textbf{48 Transformations} were presented to help advance generic as well as particular computational solutions to many kinds of basic problems in genetics that involve sequence analysis, processing and several concerning gene/genome expression problems, including some special ones such as:
 
 	\begin{itemize}
 	\item \textbf{\hyperref[TRANSGENSEQ]{Transformation \ref{TRANSGENSEQ}}} that generalizes the intricate process of generating a correct \textbf{consensus genome sequence} via \textbf{genome sequencing}.
 	\item \textbf{\hyperref[TRANSGENSEQHiFinelle]{Transformation \ref{TRANSGENSEQHiFinelle}}} that serves as a good template for the intricate process underlying the \textbf{derivation of a Full Genome Expression} from a plain sequence using the \textbf{x-LGES}.
+		\item \textbf{\hyperref[TRANSGENSEQMLLA]{Transformation \ref{TRANSGENSEQMLLA}}} that demonstrates how, starting from a normal genetic code sequence (in base-NA, DNA or RNA), we can convert into base-$\Omega$ and eventually derive the \textbf{FGE} for some biological entity under \textbf{x-LGES}.
+		\item \textbf{\hyperref[TRANSTEAPROGb]{Transformation \ref{TRANSTEAPROGb}}} that demonstrates how higher-order transformers such as a TEA computer program can be expressed mathematically using the notation and semantics of transformatics as pure mathematics.
+		\item \textbf{\hyperref[TRANSINTEGRAL]{Transformation \ref{TRANSINTEGRAL}}} that demonstrates how traditional mathematics formulations (involving transforms) such as \textbf{Integration in Calculus}  (with change of variables) can be expressed correctly using the notation and semantics of transformatics.
 	\end{itemize}
 
  }
-\item{\textbf{8 Algorithms} were developed and presented for the first time, including:
+\item{\textbf{7 Algorithms} were developed and presented for the first time, including:
 	\begin{enumerate}
 	\item \textbf{\hyperref[ALGCSA]{Algorithm \ref{ALGCSA}}}: The \textbf{Closest Sequence Algorithm}.
 	\item \textbf{\hyperref[ALGtMCS]{Algorithm \ref{ALGtMCS}}}: The \textbf{tMCS} Algorithm for computing the Maximum Common Subsequence.
-		\item \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}}: The \textbf{First Lu-Shuffle Algorithm} (FLSA): $\text{lu\_shuffler\_a}(\Theta, k)$.
-	\item \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLUSHUFFLEB}}}: The \textbf{Second Lu-Shuffle Algorithm} (SLSA): $\text{lu\_shuffler\_b}(\Theta, k)$.
+		\item \textbf{\hyperref[ALGLUSHUFFLEA]{Algorithm \ref{ALGLUSHUFFLEA}}}: The \textbf{First Lu-Shuffle Algorithm} (FLSA): $\text{flsaa}(\Theta, k)$.
+	\item \textbf{\hyperref[ALGLUSHUFFLEB]{Algorithm \ref{ALGLUSHUFFLEB}}}: The \textbf{Second Lu-Shuffle Algorithm} (SLSA): $\text{slsa}(\Theta, k)$.
 	\item \textbf{\hyperref[ALGCOZIN]{Algorithm \ref{ALGCOZIN}}}: The \textbf{$\Omega$-to-OZIN Genetic Code Transcription Algorithm}.
-	\item \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}: The \textbf{$\Omega$-to-PLATONIC Form Genetic Code Expression Algorithm} --- chosen as core of \textbf{LGES}, leverages \textbf{PFEK} translation keys to process BODY/THORAX aspect of \textbf{FGE}.
+	\item \textbf{\hyperref[ALGCOZINPLATO]{Algorithm \ref{ALGCOZINPLATO}}}: The \textbf{$\Omega$-to-PLATONIC Form Genetic Code Expression Algorithm} --- chosen as core of \textbf{LGES}, leverages \textbf{PFEK} translation keys to process BODY/THORAX aspect of \textbf{FGE} --- the \textbf{PFA}.
 	\item \textbf{\hyperref[ALGCOZINPLATOEXT]{Algorithm \ref{ALGCOZINPLATOEXT}}}: The \textbf{x-LGES Algorithm} --- extends \textbf{LGES} with processing of a ROOT/SUFFIX component.
 	\end{enumerate}
 }
-\item \textbf{3 Tabular Analyses} were presented, including \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}} that depicts how to perform comparative statistical analysis of DNA, RNA or any na-Sequence using some measures and methods from transformatics.
-\item \textbf{Overall, a total of 7 Tables} were presented, including the two critically important \textbf{PFEK} tables \textbf{\hyperref[TABSSLAPERK]{Table \ref{TABSSLAPERK}}} and \textbf{\hyperref[TABFSLAPERK]{Table \ref{TABFSLAPERK}}} for helping in computing predictable shuffles/anagrams of the base-10 n-SSI using the \textbf{SLSA} and \textbf{FLSA} algorithms respectively.
-\item{ \textbf{2 Original Ciphers} --- very rare and universally usable cryptographic keys were presented as part of the \textbf{Lu-Genome Expression System}, as well as proper justification for their practical relevance and sufficient historical background and example applications of both.
+\item \textbf{3 Tabular Analyses}  were presented, including \textbf{\hyperref[TABFAN]{Table \ref{TABFAN}}} that depicts how to perform comparative statistical analysis of DNA, RNA or any na-Sequence using some measures and methods from transformatics.
+\item \textbf{Overall, a total of 7 Tables} were presented, including the two critically important \textbf{PFEK} tables \textbf{\hyperref[TABSSLAPERK]{Table \ref{TABSSLAPERK}}} and \textbf{\hyperref[TABFSLAPERK]{Table \ref{TABFSLAPERK}}} for helping in computing predictable shuffles/anagrams of the base-10 n-SSI using the \textbf{SLSA} and \textbf{FLSA} algorithms respectively (leveraged in genome expression for example).
+\item{ \textbf{2 Original Ciphers} --- very rare and universally usable cryptographic keys were presented as part of the \textbf{Lu-Genome Expression System}, as well as proper justification for their practical relevance and sufficient historical background and example applications of both\footnote{More on these also covered in \cite{lutalo_2025_grimlumtauto}.}.
 
 \begin{enumerate}
 \item The \textbf{OZIN Cipher} key depicted in \textbf{\hyperref[FIGOZIN]{Figure \ref{FIGOZIN}}}
@@ -6146,7 +6344,7 @@ In terms of concrete \textbf{Key Metrics and Contributions} this single work has
 \end{enumerate}
 
 }
-\item \textbf{3 Core Problems} in the matter/domain of \textbf{Genome Sequencing} were formally defined and their theoretical solutions also presented\footnote{\textbf{FUTURE WORK:} We could have delved into actually demonstrating how to use the proposed theory and solutions to conduct actual genome sequencing, especially by hand, however, I have decided to postpone that to a later publication or edition of this book.}. Refer to  \textbf{\hyperref[SEC3COREPROB]{Section \ref{SEC3COREPROB}}} or \textbf{\hyperref[SECMATHSEQ]{Chapter \ref{SECMATHSEQ}}}.
+\item \textbf{3 Core Problems} in the matter/domain of \textbf{Genome Sequencing} were formally defined and their theoretical solutions also presented\footnote{\textbf{FUTURE WORK:} Beyond developing the necessary mathematical and computational theory, we could have delved into actually demonstrating how to use the proposed theory and formal solutions to conduct practical/empirical genome sequencing, especially via a computer program, but also by hand, however, I have decided to postpone that to a later publication or edition of this book.}. Refer to  \textbf{\hyperref[SEC3COREPROB]{Section \ref{SEC3COREPROB}}} or \textbf{\hyperref[SECMATHSEQ]{Chapter \ref{SECMATHSEQ}}}.
 
 \item{ \textbf{More than 10 Source Code Examples}, some in the TEA language (by the author\cite{cli_tttt}), and relating to conducting quick analyses of arbitrary na-Sequences via the commandline (refer to \textbf{\hyperref[SECFANAL]{Section \ref{SECFANAL}}}), and 8 (in \textbf{\hyperref[SECRSG]{Chapter \ref{SECRSG}}}), related to how to generate arbitrary random sequences using Python and the proposed \textbf{RSG} Transformer Machine:
 
@@ -6161,15 +6359,27 @@ In terms of concrete \textbf{Key Metrics and Contributions} this single work has
 \item \textbf{\hyperref[LST_RSG]{Listing \ref{LST_RSG}}} --- Generate a random sequence of a specified length and whose terms derive from the symbol set of a specified input sequence.
 \end{enumerate}
 
+And as for some of the TEA programs:
+
+\begin{enumerate}
+\item \textbf{\hyperref[LSTUNSPECSS]{Listing \ref{LSTUNSPECSS}}} --- Computing Unspecific Symbol Set
+\item \textbf{\hyperref[LSTSC1]{Listing \ref{LSTSC1}}} --- Computing a Sequence Characteristic
+\item \textbf{\hyperref[LSTGEN2DEC]{Listing \ref{LSTGEN2DEC}}} --- Genetic Code to Decimal Code Transformer
+\item \textbf{\hyperref[LSTDEC2GEN]{Listing \ref{LSTDEC2GEN}}} --- Decimal Code to Genetic Code Transformer
+\item \textbf{\hyperref[LSTCONSFIL]{Listing \ref{LSTCONSFIL}}} --- Consonant Filter
+\item \textbf{\hyperref[LSTSEQENTROPY]{Listing \ref{LSTSEQENTROPY}}} --- Sequence Entropy Computer
+\end{enumerate}
+
+
 }
 \item And many other quantifiable and unquantifiable major and minor contributions to genetics, mathematics, computer science, philosophy and more.
 \end{enumerate}
 
 \vspace{1em}
 
-Thus, we set out to explore ways to leverage as well as further the newly proposed discipline of \textbf{Transformatics}, by using it to explain problems in \textbf{Genetics}\footnote{Which happens to be one of the major, fundamental sciences that hinges much on the concept of sequences, their processing and analysis.}, but also, so as to be able to use it to derive or develop solutions to any such problems we identify and find tractable under the theory and mechanics of sequence transformers. 
+Thus, we set out to explore ways to leverage as well as further the newly proposed discipline of \textbf{Transformatics}, by using it to explain but also solve problems in \textbf{Genetics}\footnote{Which happens to be one of the major, fundamental sciences that hinges much on the concept of sequences, their processing and analysis.}, but also, so as to be able to use it to derive or develop solutions to any such problems we identify and find tractable under the theory and mechanics of sequence transformers. 
 
-In this regard, as highlighted in the enumerations above, we have formalized many working definitions of important fundamental concepts (from a transformatic-analytical point-of-view) spanning symbol sets, various statistical measures applicable to sequences, several abstract machines applicable to specific and general problems in genetics and more. 
+In this regard, and as highlighted in the KPI enumerations above, we have formalized many working definitions of important fundamental concepts (from a transformatic-analytical point-of-view) spanning symbol sets, various statistical measures applicable to sequences, several abstract machines applicable to specific and general problems in genetics and more. 
 
 We have distilled some useful general results in the form of theorems, have immortalized some critical and relevant laws relating to genetic code sequences, have extensively demonstrated how the concept of modeling general solutions to various problems can be accomplished using the notion of [re-usable] transformers --- defined not in programming code as some might think, but as mathematical operators usable with or without computers. We have demonstrated how such transformers can be leveraged to solve specific or particular practical problems via numerous well-structured transformations. 
 
@@ -6177,40 +6387,40 @@ We have invented and presented some new algorithms that would allow the concepts
 
 We have demonstrated ways to leverage statistical analysis so as to make sense of differences in and quantifiable similarities between two or more sequences --- DNA related or not. We have also presented some reference tables that would help anyone attempting to leverage the proposed theory and algorithms of the \textbf{Lu-Genome Expression System} to be able to readily do so without having to guess or dive into the daunting process of generating \textbf{Platonic Form Encoding Keys} by hand. 
 
-Related to the \textbf{LGES}, we have also presented and demonstrated for the first time, two very interesting and universally usable [originally esoteric] ciphers that would help not in genetics-related cryptography problems, but in helping both students and researchers of genetics to readily explore and communicate otherwise difficult to express concepts relating to genetic diversity, genetic similarity, the consequences of genetic mutations --- additions, subtractions or alterations to genetic sequences, etc. using a visual language that is reminiscent of actual molecular-level expressions resulting from the natural processing of DNA and mRNA code, all the way up to the expression of entire organisms from mere genetic code. 
+Related to the \textbf{LGES}, we have also presented and demonstrated for the first time, two very interesting and universally usable [originally esoteric] ciphers that would help not in genetics-related cryptography problems, but in helping both students and researchers of genetics to readily explore and communicate otherwise difficult to express concepts relating to genetic diversity, genetic similarity, the consequences of genetic mutations --- additions, subtractions or alterations to genetic sequences, etc. using a visual-spatial language that is reminiscent of actual molecular-level expressions resulting from the natural processing of DNA and mRNA code, all the way up to the expression of entire organisms from mere genetic code. 
 
 With regards to understanding or explaining how a full genome might be derived from bits of DNA sequence read from or known, concerning an individual organism, an individual species, a genus, an entire family or populations of organisms, we have advanced the literature by developing rigorous mathematical concepts and solutions to the matter of genome sequencing whether performed by hand as in the classical context of Fred Sanger, or with advanced computation such as in modern genome banks and DNA processors. 
 
-Overall, this book, though it originally started out as just a paper, and though some would envision it to have been a longer treatise than it actually is, surely has helped lay the ground for much future work in genetics, the mathematical sciences as well as in transformatics itself, so they can take advantage of and leverage the methods, theory and mechanics/calculus of transformatics as presented in this work, and especially so that it makes easier, the definition of new problems, design new solutions to existing as well as new problems, but also, so that it is possible to readily take many ideas previously either intractable or only appreciable in theory, into the practical domain --- especially via computational methods leveraging sequence transformers.
+Overall, this book, though it originally started out as just a paper, and though some would envision it to have been a longer treatise than it actually is, surely has helped lay the ground for much future work in genetics, the mathematical sciences as well as in transformatics itself. We envision that others shall be able to take advantage of and leverage the methods, theory and mechanics/calculus of transformatics as presented in this work, and especially so that it makes easier, the definition of new problems, the design of new solutions to existing as well as new problems, but also, so that it is possible to readily take many ideas previously either intractable or only appreciable in theory, into the practical domain --- especially via computational methods leveraging sequence transformers such as with the TEA programming language.
 
-It is in the dreams and hopes of the author, that the work that started with the treatment of basic sequences in the form of pure number expressions --- see \textbf{GTNC}\footnote{The original paper actually first got written circa 2020: \url{https://scholar.archive.org/work/apn4f26kdzatfodrap7avqafce}}\cite{Lutalo2024gtnc}, circa 2020, while only getting started with their MSc and at that time\footnote{Joseph, despite having been very active in the contemporary scientific and mathematical research community (see ORCID: \url{https://orcid.org/0000-0002-0002-4657}), still hasn't been generally well appreciated --- they are still not affiliated with any academic institution or faculty, have not managed to secure a teaching position despite much of their work contributing to global open-learning via the Internet (see \url{https://t.me/bclectures} and \url{https://www.youtube.com/playlist?list=PL9nqA7nxEPgv_CqHOxIDj2Jf1gHAEV-B-}), and despite having expressed interest in pursuing their PhD in either Computer Science or Mathematics at Oxford\cite{lutalo_2025_sop}, haven't yet secured a PhD position nor scholarship.}, only looking at sequences as though they were a concept native to only \textbf{number theory}, does not stop with recent advances such as the \textbf{LNS}\cite{lnspaper} that started to explore these ideas in the context of physics and computer science, and then \textbf{ADT} that ushered in the sensibilities of mathematical statistics, but that transformatics and the collective mathematical theories of treating of sequences of symbols via transformers and analytical specifications, gets its own wings and finally flies off the ground into any and all fields of inquiry with useful results and advancements of human understanding and knowledge. 
+It is in the dreams and hopes of the author, that the work that started with the treatment of basic sequences in the form of pure number expressions --- see \textbf{GTNC}\footnote{The original paper actually first got written circa 2020: \url{https://scholar.archive.org/work/apn4f26kdzatfodrap7avqafce}}\cite{Lutalo2024gtnc}, circa 2020, while only getting started with their MSc and at that time\footnote{Joseph, despite having been very active in the contemporary scientific and mathematical research community (see ORCID: \url{https://orcid.org/0000-0002-0002-4657}), still hasn't been generally well appreciated --- they are still not affiliated with any academic institution or faculty, have not managed to secure a teaching position despite much of their visible efforts in contributing to global open-learning via the Internet (see \url{https://t.me/bclectures} and \url{https://www.youtube.com/playlist?list=PL9nqA7nxEPgv_CqHOxIDj2Jf1gHAEV-B-}), and despite having expressed interest in pursuing their PhD in either Computer Science or Mathematics at Oxford\cite{lutalo_2025_sop}, haven't yet secured a PhD position nor scholarship.}, only looking at sequences as though they were a concept native to only \textbf{number theory}, does not stop with recent advances such as the \textbf{LNS}\cite{lnspaper} that started to explore these ideas in the context of physics and computer science, and then \textbf{ADT} that ushered in the sensibilities of mathematical statistics, but that transformatics and the collective mathematical theories of treating of sequences of symbols via transformers and logic specifications, gets its own wings and finally flies off the ground into any and all fields of inquiry with useful results and advancements of human understanding and knowledge. 
 
 
-\section{Future Directions}
+\section{Future Directions and Open Problems}
 \label{SECFUTUREDIRECT}
 
-In this single work, several issues, problems and potential areas of further research and inquiry have been identified, as well as highlighted all throughout the book. For purposes of bringing attention to the key points thus identified, we shall only enumerate them as highlights and in brief:
+In this single work, several issues, problems and potential areas of further research and inquiry have been identified, as well as highlighted all throughout the book --- all such sections starting with the clear label ``\textbf{FUTURE WORK:}" --- especially in footnotes. For purposes of bringing attention to the key points thus identified, we shall only enumerate them as highlights and in brief:
 
 \begin{enumerate}
-\item \textbf{Pathological Gene Programs:} Given we isolated the START and STOP codons that regulate or constrain how protein synthesis is conducted at the ribosome level, we wish to establish if there might exist malicious gene programs that might exploit the ribosome's na-Sequence processing logic so as to cause problems such as failure to manufacture some necessary proteins or amino-acids (due to absence of or misplacement of START-codons), but also the terrible, pathological case where a ribosome starts to construct a protein (as an amino-acid chain), but fails to return/complete since it is presented with an infinitely long or non-terminating gene program. \textbf{Refer to \textbf{\hyperref[SECSYMBOLSETSNGRAMS]{Section \ref{SECSYMBOLSETSNGRAMS}}}}
+\item \textbf{Pathological Gene Programs:} Given we isolated the START and STOP codons that regulate or constrain how protein synthesis is conducted at the ribosome level, we wish to establish if there might exist malicious gene programs that might exploit the ribosome's na-Sequence processing logic so as to cause problems such as failure to manufacture some necessary proteins or amino-acids (due to absence of or misplacement of START-codons for example), but also the terrible, pathological case where a ribosome starts to construct a protein (as an amino-acid chain), but fails to return/complete since it is presented with an infinitely long or non-terminating gene program. \textbf{Refer to \textbf{\hyperref[SECSYMBOLSETSNGRAMS]{Section \ref{SECSYMBOLSETSNGRAMS}}}}
 
-\item \textbf{Automatic Sequence Characteristic:} Having established the fundamental relevance of the modal sequence statistic, as well as the more elaborate sequence characteristic measure and its usefulness in several aspects of genetic sequence analysis and processing (similarity tests, classification problems, genome expression, etc.), we wish to make sure that there is a simple and straightforward way by which, when presented with a sequence of symbols such as the complete genome sequence of some organism stored in a flat text file, we can automatically compute and present the corresponding sequence characteristic statistic. This, especially via use of the TEA programming language on the command line. \textbf{Refer to \textbf{\hyperref[SECFANAL]{Section \ref{SECFANAL}}}}
+\item \textbf{Automated Sequence and Population Characteristics:} Having established the fundamental relevance of the modal sequence statistic, as well as the more elaborate sequence characteristic measure based off of it, as well as its usefulness in several aspects of genetic sequence analysis and processing (similarity tests, classification problems, genome expression, etc.), we wish to make sure that there is a simple and straightforward way by which, when presented with a sequence of symbols such as the complete genome sequence of some organism stored in a flat text file, we can automatically compute and present the corresponding sequence characteristic statistic. And also related, the basic computation of a population characteristic --- which results not just from a single sequence but an entire collection of them. This, especially via use of the TEA programming language. \textbf{Refer to \textbf{\hyperref[SECFANAL]{Section \ref{SECFANAL}}} but also \textbf{\hyperref[SECSCEND]{Section \ref{SECSCEND}}}}
 
 \item \textbf{Evaluate G$\ddot{o}$del Number Indices for na-Sequences:} Since we realized that computation of and use of special indices --- in the form of hash keys, corresponding to especially very long na-Sequences (such as those of the human genome that might shoot into millions and up to billions of symbols) might help lessen the space-time complexity with regards to storage, lookup and comparison of na-Sequences as in a database system, we shall want to empirically and theoretically establish if use of G$\ddot{o}$del numbers (especially when combined with use of a sequence's modal statistic or sequence characteristic) might offer an optimal solution for storage, lookup and comparison of large or arbitrarily long na-Sequences. \textbf{Refer to \textbf{\hyperref[SECSEQSTORAGE]{Section \ref{SECSEQSTORAGE}}}}
 
-\item \textbf{Implementing Entropy Sources:} Especially because, as we have identified in several problems and solutions concerning sequence processing (shuffling, anagrammatizing, sequence generation, etc.), but also in genetics (simulation of meiosis, genome expression, etc) that use of and generation of/harnessing of randomness is fundamentally important, we shall want to ascertain, and especially both in theory and with empirical computable solutions, how we can produce randomness from scratch, and especially in a closed-system or with mere pen and paper. And to ascertain whether such is actually feasible or not. \textbf{Refer to \textbf{\hyperref[SECRNGFUNC]{Section \ref{SECRNGFUNC}}}} 
+\item \textbf{Implementing Entropy Sources:} Especially because, as we have identified in several problems and solutions concerning sequence processing (shuffling, anagrammatizing, sequence generation, etc.), but also in genetics (simulation of meiosis, genome expression, etc) that use of and generation of/harnessing of randomness is fundamentally important, we shall want to ascertain, and especially both in theory and with empirical computable solutions, how we can produce true randomness from scratch, and especially in a closed-system or with mere pen and paper (algebraically for example). And to ascertain whether such is actually feasible or not. \textbf{Refer to \textbf{\hyperref[SECRNGFUNC]{Section \ref{SECRNGFUNC}}}} 
 
 \item \textbf{Further Computational Model of The Ribosome:} Since we have already embarked on developing, presenting and exploiting a computational model for the protein synthesis mechanism in living cells, and have managed to not only develop a formal process that captures the gist of how a ribosome works, it raises new and important extra problems for the computer scientist studying the ribosome, and which problems we would want to find reliable answers for. These include the matter of the Instruction Set of the Ribosome Machine, its computer architecture and how it relates to the von Neumann Architecture, whether or not the ribosome is Turing Complete, how we might implement a virtual or robotic ribosome etc. \textbf{Refer to \textbf{\hyperref[SECPROT]{Section \ref{SECPROT}}}} 
 
-\item \textbf{Concerning the Relationship Between DNA, Psychology and Spirituality:} Though it might not directly fall in the domain of pure genetics, it shall be interesting and very likely rewarding if not enlightening, to study, explore and expound on the matter or problem of whether it is indeed true (or false) that genetics underlies the spiritual-functions in a human? Could genetics explain or underlie peculiarities in human psychology both at an individual as well as from the context of entire communities, families, nations or an entire species? Since artificial (though intelligent) constructs such as robots and AGIs don't share the same material basis as does living things --- in the sense that they aren't controlled/limited by nor based on organic tissue, no semblance of genetic code underlying their expression or functions\footnote{Of course, one might argue, and plausibly so, that artificial intelligences are nonetheless designed by and brought to life by humans who are controlled or limited by genetics, and also, there is a strong community in computing, that bases the design and implementation of artificial systems on not just code that somewhat is reminiscent of genetic code, but also which directly or indirectly mimics natural/biological systems such as neural networks in living things, but also use of genetic programming for optimizing self-regulating learning algorithms, etc. But, this point here, specifically refers to whether or not such artificial constructs are directly built with or using natural, genetic material... bio-automata constructed out of actual living tissue or synthetic organisms that can exist around or inside living things might otherwise cause us to relax this stressed point.}, etc. Could it be that they can't exhibit or participate in the same spiritual, psycho-spiritual, or even preternatural phenomena that living things (especially humans), seem to be inseparable from?  \textbf{Refer to \textbf{\hyperref[SECPROT]{Section \ref{SECPROT}}} and \textbf{\hyperref[SECFUTDIRECT]{Chapter \ref{SECFUTDIRECT}}}} 
+\item \textbf{Concerning the Relationship Between DNA, Psychology and Spirituality:} Though it might not directly fall in the domain of pure genetics, it shall be interesting and very likely rewarding if not enlightening, to study, explore and expound on the matter or problem of whether it is indeed true (or false) that genetics underlies the psychological\footnote{Refer to author's other significant work on applying transformatics in Psychology\cite{Lutalo2025transpsy}, and which also touches on these matters with the \textbf{Willrich model of Psychology}.}, but also spiritual-functions in a human? Could genetics explain or underlie peculiarities in human psychology both at an individual as well as from the context of entire communities, families, nations or an entire species? Since artificial (though intelligent) constructs such as robots and AGIs don't share the \textit{same} material basis as do living things --- in the sense that they aren't controlled/limited by nor based on organic tissue, no semblance of genetic code underlying their expression or functions\footnote{Of course, one might argue, and plausibly so, that artificial intelligences are nonetheless designed by and brought to life by humans who are controlled or limited by genetics, and also, there is a strong community in computing, that bases the design and implementation of artificial systems on not just code that somewhat is reminiscent of genetic code, but also which directly or indirectly mimics natural/biological systems such as neural networks in living things, but also use of genetic programming for optimizing self-regulating learning algorithms, etc. But, this point here, specifically refers to whether or not such artificial constructs are directly built with or using natural, genetic material... bio-automata constructed out of actual living tissue or synthetic organisms that can exist around or inside living things might otherwise cause us to relax this stressed point.}, etc. Could it be that they can't exhibit or participate in the same spiritual, psycho-spiritual, or even preternatural phenomena that living things (especially humans), seem to be inseparable from?  \textbf{Refer to \textbf{\hyperref[SECPROT]{Section \ref{SECPROT}}} but also \textbf{\hyperref[SECFUTDIRECT]{Chapter \ref{SECFUTDIRECT}}}} 
 
 \item \textbf{Establish Bounds on Protein or Amino-Acid Chain Relative to Gene Program:} While formalizing the concept of gene expression in living things, and especially when dealing with the matter of how na-Sequences get translated into an amino-acid chain, and thus into a protein, a problem arose; since it is that most of the protein manufacturing process is somewhat linear and especially a matter of 1-to-1 encoding or translation of genetic code into other materials, it would be useful to prove or perhaps clarify on whether it is true that the length of a gene-program (since it is essentially the chain of codons that eventually get translated into the protein) imposes a finite limit on the length of the material (such as a protein or amino-acid chain) that a ribosome can produce from a particular genetic code sequence? \textbf{Refer to \textbf{\hyperref[SEC5]{Section \ref{SEC5}}} and especially \textbf{\hyperref[TRANSF2]{Transformer \ref{TRANSF2}}}} 
 
 
-\item \textbf{Genetics and Mysticism, Genetic Veves:} So, despite this being a book on especially the mathematics of genetics and sequence analysis, we did come across important matters (especially for the \textit{humanities} and philosophy) concerning the (not-very surprising) role genetics and especially genetic code might play in humane culture, the arts and traditions across the world. Particularly, while studying and developing the \textbf{LGES}, we found that the systematic diagrams --- the \textbf{FGEs}, derivable from or expressing particular na-Sequences as well as any numeric sequence, have so many similarities to or that they are somewhat reminiscent of concepts such as sacred geometry, voodoo veves, magical seals and sigils, psycho-cultural archetypes, etc. from various contexts, cultures and traditions all over the world. Is it just because of the fact that geometry and geometrical forms are generally universal and cut-across cultures, space and time, or is there something deeper, perhaps not immediately discernible concerning our \textbf{Lu-Genome Expression System} that might hint at critical aspects of universal human culture, mysticism as well as spirituality? Could a genetic veve disrupt contemporary voodoo veves or traditional cabalistic seals when considered from the perspective of visual-spatial glyphs that speak to the human subconscious for example? \textbf{Refer to \textbf{\hyperref[SECFULLGES]{Section \ref{SECFULLGES}}}} 
+\item \textbf{Genetics and Mysticism, Genetic Veves:} So, despite this being a book on especially the mathematics of genetics and sequence analysis, we did come across important matters (especially for the \textit{humanities} and philosophy) concerning the (not-very surprising) role genetics and especially genetic code might play in humane culture, the arts and traditions across the world. Particularly, while studying and developing the \textbf{LGES}, we found that the systematic diagrams --- the \textbf{FGEs}, derivable from or expressing particular na-Sequences as well as any numeric sequence, have so many similarities to or that they are somewhat reminiscent of concepts such as sacred geometry, voodoo veves, magical seals and sigils, psycho-cultural archetypes, etc. from various contexts, cultures and traditions all over the world. Is it just because of the fact that geometry and geometrical forms are generally universal and cut-across cultures, space and time, or is there something deeper, perhaps not immediately discernible concerning our \textbf{Lu-Genome Expression System} that might hint at critical aspects of universal human culture, mysticism as well as spirituality? Could the idea of \textbf{a genetic veve} disrupt contemporary voodoo veves or traditional cabalistic seals when considered from the perspective of visual-spatial glyphs that speak to the human subconscious for example? \textbf{Refer to \textbf{\hyperref[SECFULLGES]{Section \ref{SECFULLGES}}} but also \cite{lutalo_2025_grimlumtauto} and \cite{Lutalo2025transpsy}}. 
 
 
-\item \textbf{Practical Genome Sequencing:} We have laid down most, if not all of the necessary theoretical and conceptual machinery for how to go about practically solving the matter of reducing a collection of sequences to their most correct, representative genome sequence. However, in this work, we have not actually gone ahead to demonstrate how this theory shall be applied or utilized, say with sample na-Sequences much as we have done this for most of the other problems and concepts we have tackled in the book. Thus, future work shall need to expound on this with illustrative or representative examples and complete solutions to how to perform actual genome sequencing for genetic code first of all, but also, and given the theory can be applied to any kinds of symbol sequences, for arbitrary scenarios too.  \textbf{Refer to \textbf{\hyperref[SECMATHSEQ]{Chapter \ref{SECMATHSEQ}}}} 
+\item \textbf{Practical Genome Sequencing:} We have laid down most, if not all of the necessary theoretical and conceptual machinery for how to go about practically solving the matter of reducing a collection of sequences to their most correct, representative genome sequence. However, in this work, we have not actually gone ahead to demonstrate how this theory shall be applied or utilized, say with sample na-Sequences much as we have done this for most of the other problems and concepts we have tackled in the book --- for example, despite having developed and presented an algorithm for sequencing, we didn't illustrate nor apply it using a computer program. Thus, future work shall need to expound on this with illustrative or representative examples and complete solutions to how to perform actual genome sequencing for genetic code first of all, but also, and given the theory can be applied to any kinds of symbol sequences, for arbitrary scenarios too.  \textbf{Refer to \textbf{\hyperref[SECMATHSEQ]{Chapter \ref{SECMATHSEQ}}}} 
 
 
 \end{enumerate}
@@ -6222,6 +6432,7 @@ In this single work, several issues, problems and potential areas of further res
 %---[ BEGIN BOOK END/APPENDICES]
 \begin{appendices}
 
+
 \chapter{Other Functions of DNA Beyond Protein Synthesis}
 \label{APPOTHERFUNC}
 
@@ -6231,7 +6442,7 @@ While most of this book focused on DNA's most well-known function as the materia
 
 \vspace{2em}
 
-\textbf{Deoxyribonucleic acid} is widely known for its role in protein synthesis, however, it also serves several other critical functions in biological systems as enumerated in summary here:
+\textbf{Deoxyribonucleic acid}\index{DNA!other functions} is widely known for its role in protein synthesis, however, it also serves several other critical functions in biological systems as enumerated in summary here:
 
 \begin{enumerate}
     \item{ \textbf{Regulation of Gene Expression\cite{alberts2002molecular}} 
@@ -6312,7 +6523,7 @@ While most of this book focused on DNA's most well-known function as the materia
 \end{figure}
 
 
-For some, the \textbf{Ozin Cipher}\cite{lutalo_2025_ozin} (see \textbf{\hyperref[SECOZIN]{Section \ref{SECOZIN}}}) might not seem that important or useful, but, perhaps because not everyone can immediately appreciate the fact that basic [visual and symbolic] cryptography is such a dear part of expression in nature, that whoever is the Architect of Life, has applied it abundantly throughout nature, in many creative ways --- or, cast in a different light, that when we (humans) explore nature using our creative and intellectual faculties, we find or see it vastly applied across most of nature; camouflage in reptiles and viruses, the occult languages of birds, telling, but cryptic signatures of various herbs, etc. And these phenomena have indeed inspired many observant minds throughout the ages, to pick a leaf from nature and leverage this diversity and stealthiness in expression via various ideas and in many humane fields; in mathematics and computing, in mundane as well as esoteric philosophy, and yes... in \textit{magick}! Talking of which, for those interested in getting a deeper idea concerning how such a beautiful numeric symbol system --- an alternative to the commonplace Arabic Numerals, came to be, one useful resource (and some clues) is the \textbf{CODE OGF}\cite{lutalo_2025_ogf} and a queer fascination with the \textbf{sacredness of numbers} --- especially the \texttt{kaballah} system!
+For some, the \textbf{Ozin Cipher}\cite{lutalo_2025_ozin}\index{ozin cipher!origins} (see \textbf{\hyperref[SECOZIN]{Section \ref{SECOZIN}}}) might not seem that important or useful, but, perhaps because not everyone can immediately appreciate the fact that basic [visual and symbolic] cryptography is such a dear part of expression in nature, that whoever is the Architect of Life, has applied it abundantly throughout nature, in many creative ways --- or, cast in a different light, that when we (humans) explore nature using our creative and intellectual faculties, we find or see it vastly applied across most of nature; camouflage in reptiles and viruses, the occult languages of birds, telling, but cryptic signatures of various herbs, etc. And these phenomena have indeed inspired many observant minds throughout the ages, to pick a leaf from nature and leverage this diversity and stealthiness in expression via various ideas and in many humane fields; in mathematics and computing, in mundane as well as esoteric philosophy, and yes... in \textit{magick}! Talking of which, for those interested in getting a deeper idea concerning how such a beautiful numeric symbol system --- an alternative to the commonplace Arabic Numerals, came to be, one useful resource (and some clues) is the \textbf{CODE OGF}\cite{lutalo_2025_ogf} and a queer fascination with the \textbf{sacredness of numbers} --- especially the \texttt{kaballah} system!
 
 \begin{figure}[H]
   \begin{center}
@@ -6540,7 +6751,7 @@ Of course, once one has the correct $\boxed{\omega_i^*}$, they can just attach i
 
 \section*{ABSTRACT\footnote{Note that this chapter attempts to present \cite{Lutalo2025_transformatics_thesis} verbatim, with the only major difference being the numbering of citations and references, which are co-shared with the main manuscript.}:}
 %\Large
-In only \textbf{10 general foundational results}\cite{lutalo_2025_trans101_1page} --- all \textbf{based on earlier mathematical research} by the author, as well as \textbf{10 extra abstractions} spanning \textbf{how transformatics might be leveraged} as \textbf{a basis mathematics} \texttt{for problems} in; \texttt{number theory} and \texttt{cryptography} (o-SSIs); \texttt{mathematical statistics} (ADM, TCR, PCR, MSS, SC, PC); \texttt{linear algebra} (super sequences); \texttt{computer science} (TEA language, transformer-chains or sequence-transformers) and \texttt{information theory} (entropy of a sequence) among others, we distill and establish, in a summarized form, the \textbf{core foundations of Transformatics}\cite{transformatics} as its own mathematical theory, branch, or \textbf{discipline}. In this \textbf{mini-thesis}. Each foundational result presented is likewise accompanied by one or \textbf{more references} to some earlier work where the idea or presented concept was first developed, presented, or applied by the author during their research. \textbf{Useful notes and commentary} are also included where necessary, and in the extension decade of \textbf{proposed abstractions}, also commentary about how the proposals relate to the decade of foundational results likewise is catered for.
+In only \textbf{10 general foundational results}\cite{lutalo_2025_trans101_1page} --- all \textbf{based on earlier mathematical research} by the author, as well as \textbf{10 extra abstractions} spanning \textbf{how transformatics might be leveraged} as \textbf{a basis mathematics} \texttt{for problems} in; \texttt{number theory} and \texttt{cryptography} (o-SSIs); \texttt{mathematical statistics} (ADM, TCR, PCR, MSS, SC, PC); \texttt{linear algebra} (super sequences); \texttt{computer science} (TEA language, transformer-chains or sequence-transformers) and \texttt{information theory} (entropy of a sequence) among others, we distill and establish, in a summarized form, the \textbf{core foundations of Transformatics}\cite{transformatics} as its own mathematical theory, branch, or \textbf{discipline}. In this \textbf{mini-thesis}. Each foundational result presented is likewise accompanied by one or \textbf{more references} to some earlier work where the idea or presented concept was first developed, presented, or applied by the author during their research. \textbf{Useful notes and commentary} are also included where necessary, and in the extension decade of \textbf{proposed abstractions}, also commentary about how the proposals relate to the decade of foundational results likewise is catered for.\index{transformatics!foundations}
  \newline\newline
      \textbf{Keywords}: Foundations, Transformatics, Sequence Analysis,  Sequence Transformers, Thesis
 %\end{abstract}
@@ -6577,6 +6788,7 @@ $\psi(\Theta^n) = \langle \theta_{i \in [1,k]} \rangle : k,n \in \mathbb{N} \lan
 
 \subsection{Result 6: A Sequence Transformation\cite{transformatics}\cite{lnspaper}}
 
+\index{transformation}\index{sequence transformation}
 $\Theta^n = \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_\beta \rightarrow \Theta^* = \langle \theta^*_{i \in [1,k]} \rangle : \mathbb{N} \times \psi_* : \psi_\beta \neq \psi_{*} \lor \psi(\Theta^n) \neq \psi(\Theta^*) \lor \overset{>}{\psi}(\Theta^n) \neq \overset{>}{\psi}(\Theta^*)$
 
 
@@ -6639,12 +6851,12 @@ I(\theta_i, \Theta^n) = i \quad \forall \theta_i \in \Theta^n
 
 Further, if we have any two elements from the sequence (whether or not they are equal: $\theta_i = \theta_j$ or not: $\theta_i \neq \theta_j$), and yet, if $i \neq j$, then $I(\theta_i, \Theta^n) \neq I(\theta_j, \Theta^n)$, and if $i \leq j$, then $I(\theta_i, \Theta^n) \leq I(\theta_j, \Theta^n)$. 
 
-As you shall come to appreciate when studying formulations and expressions in transformatics, the position operator or measure, $I(\cdot, \cdot)$ is very fundamental, useful and indispensable especially when treating of (sic) \textbf{ordered sequences} or of order in any sequence.
+As you shall come to appreciate when studying formulations and expressions in transformatics, the position operator or measure, $I(\cdot, \cdot)$ is very fundamental, useful and indispensable especially when treating of (sic) \textbf{ordered sequences} or of order in any sequence\index{transformatics!proposed applications}.
 
 \subsection{Proposal 1: The o-SSI Sequence from any Sequence\cite{ossipaper}}
 \label{PROP1}
 
-Assume we consider the sequence $\Theta: \mathbb{N} \times \psi_*$ of any length and spanning an arbitrary symbol set $\psi_*$. Then, in case we wish to reduce $\Theta$ to a representative sequence $\Theta_{ossi}$ that only contains elements of $\Theta$ spanning the symbol set, $\psi_\beta$, of some particular base, $\beta$; in which case, $\Theta_{ossi}$ would be an \textbf{orthogonal symbol set identity} (o-SSI) sequence under base-$\beta$, then, the following o-SSI-generator --- also \textbf{an extractor}\footnote{In the sense that, where a sequence already contains the essential symbols spanning some particular symbol set, and even though they might be scattered about or `buried' around in the sequence surrounded by `noise', the function would merely extract those essential symbols [only,] from that sequence in their natural order of first occurrence.} and \textbf{a reducer} transformer, defined using the calculus and semantics of transformatics, would suffice\footnote{Say, and as almost all transformatics might be in practice --- consists of a clear, succinct and complete specification that can readily be translatable into a working or equivalent computer program based on or defined using the chaining of sequence transformers such as in a language as TEA\cite{cli_tttt}.}:
+Assume we consider the sequence $\Theta: \mathbb{N} \times \psi_*$ of any length and spanning an arbitrary symbol set $\psi_*$. Then, in case we wish to reduce $\Theta$ to a representative sequence $\Theta_{ossi}$ that only contains elements of $\Theta$ spanning the symbol set, $\psi_\beta$, of some particular base, $\beta$; in which case, $\Theta_{ossi}$ would be an \textbf{orthogonal symbol set identity} (o-SSI)\index{orthogonal symbol set identity} sequence under base-$\beta$, then, the following o-SSI-generator --- also \textbf{an extractor}\footnote{In the sense that, where a sequence already contains the essential symbols spanning some particular symbol set, and even though they might be scattered about or `buried' around in the sequence surrounded by `noise', the function would merely extract those essential symbols [only,] from that sequence in their natural order of first occurrence.} and \textbf{a reducer} transformer, defined using the calculus and semantics of transformatics, would suffice\footnote{Say, and as almost all transformatics might be in practice --- consists of a clear, succinct and complete specification that can readily be translatable into a working or equivalent computer program based on or defined using the chaining of sequence transformers such as in a language as TEA\cite{cli_tttt}.}:
 
 \vspace{1em}
 \begin{transf}[The \textbf{o-SSI Extractor}]
@@ -6704,7 +6916,7 @@ $
 \end{trans}
 \vspace{1em}
 
-However \textbf{\hyperref[TRANS1b]{Transformation \ref{TRANS1b}}} and \textbf{\hyperref[TRANS1Ab]{Transformation \ref{TRANS1Ab}}} only cater for comparisons or analysis relative to size of the sequences being compared. And such that $\invdel_{\Theta,\Theta^*}$ or $|\invdel|_{\Theta,\Theta^*}$ shall work just fine where the purpose of the sequence analysis is just concerned with the relative sizes of the sequences. But, and as we established in the \textbf{Anagram Distance Theory}(ADT) paper\cite{adtpaper}, there are many important cases when it is necessary to compare two or more sequences \textbf{based on the relative ordering of members in them and not just by their member composition or frequencies}. Thus the \textbf{Anagram Distance Measure}(ADM)\index{ADM}\index{sequence analysis!anagram distance}, and which, for any two sequences as presented above, the essential measure would be:
+However \textbf{\hyperref[TRANS1b]{Transformation \ref{TRANS1b}}} and \textbf{\hyperref[TRANS1Ab]{Transformation \ref{TRANS1Ab}}} only cater for comparisons or analysis relative to size of the sequences being compared. And such that $\invdel_{\Theta,\Theta^*}$ or $|\invdel|_{\Theta,\Theta^*}$ shall work just fine where the purpose of the sequence analysis is just concerned with the relative sizes of the sequences. But, and as we established in the \textbf{Anagram Distance Theory}(ADT) paper\cite{adtpaper}\index{Anagram Distance Measure!the theory}, there are many important cases when it is necessary to compare two or more sequences \textbf{based on the relative ordering of members in them and not just by their member composition or frequencies}. Thus the \textbf{Anagram Distance Measure}(ADM)\index{ADM}\index{sequence analysis!anagram distance}, and which, for any two sequences as presented above, the essential measure would be\index{sequence transformation!anagram distance}:
 
 \vspace{1em}
 \begin{equation}
@@ -6745,7 +6957,7 @@ And thus can help us observe/compute, quantify and [objectively] appreciate, the
 \subsection{Proposal 3: The Transformer Compression Ratio of any Sequence Transformation\cite{transformatics}}
 \label{PROP3}
 
-In  \textbf{\hyperref[TRANS1b]{Transformation \ref{TRANS1b}}} we have seen that there might be cases in which a transformation results in a sequence that is observably larger or smaller than the source sequence; \textbf{protraction} or \textbf{compression} respectively. And as was laid down in \cite{transformatics} --- refer to \textbf{Section 4.3} of \cite{transformatics} --- we can measure the \textit{overall} effect of a transform on the \textit{entire} sequence merely by comparing the sequence cardinalities of the source and resultant sequence as such:
+In  \textbf{\hyperref[TRANS1b]{Transformation \ref{TRANS1b}}} we have seen that there might be cases in which a transformation results in a sequence that is observably larger or smaller than the source sequence; \textbf{protraction} or \textbf{compression} respectively. And as was laid down in \cite{transformatics} --- refer to \textbf{Section 4.3} of \cite{transformatics} --- we can measure the \textit{overall} effect of a transform on the \textit{entire} sequence merely by comparing the sequence cardinalities of the source and resultant sequence as such\index{sequence transformation!transformer compression ratio (TCR)}:
 
 \vspace{1em}
 \begin{equation}
@@ -6782,7 +6994,7 @@ $\Theta: \mathbb{N} \times \psi_\beta \rightarrow \Omega: \mathbb{N} \times \psi
 \end{trans}
 \vspace{1em}
 
-As explained in \cite{transformatics} --- refer to \textbf{Section 4.3} of \cite{transformatics} --- when the source and resultant sequence do not share any members in common, \textbf{and yet we wish to evaluate the deformation aspects of the transform}, then we can only compare them using a measure such as \textbf{TCR} --- it only cares about sizes and not membership. However, in case they \textbf{at least} share 1 member in common, then, we can restrict our comparison to only their common aspects --- i.e $\psi(\Theta) \cap \psi(\Theta^*)$, and thus, as laid out in \textbf{Definition 3} in \cite{transformatics}, we can compute a special measure called the \textbf{Piecemeal Compression Ratio}(PCR) as such:
+As explained in \cite{transformatics} --- refer to \textbf{Section 4.3} of \cite{transformatics} --- when the source and resultant sequence do not share any members in common, \textbf{and yet we wish to evaluate the deformation aspects of the transform}, then we can only compare them using a measure such as \textbf{TCR} --- it only cares about sizes and not membership. However, in case they \textbf{at least} share 1 member in common, then, we can restrict our comparison to only their common aspects --- i.e $\psi(\Theta) \cap \psi(\Theta^*)$, and thus, as laid out in \textbf{Definition 3} in \cite{transformatics}, we can compute a special measure called the \textbf{Piecemeal Compression Ratio}(PCR) as such\index{sequence transformation!piecemeal compression ratio(PCR)}:
 
 \vspace{1em}
 \begin{equation}
@@ -6866,7 +7078,9 @@ Finally, note that, as per the notation and arguments employed in \textbf{\hyper
 \vspace{1em}
 \begin{defn}[The \textbf{Modal Sequence Statistic}, $\overset{>}{\Theta}$]
 \label{DEFMSSFINb}
+\index{definition!Modal Sequence Statistic}
 $ $\\
+\index{modal sequence statistic!definition}
 Given any sequence $\Theta$ that consists of well ordered finite collection of $n$ symbols, $\omega_i$, possibly with some being repeated --- essentially that we have the sequence $\Theta : \mathbb{N} \times \psi_{\omega} \quad \land \quad \invpi(\Theta) = n$, then the measure:
 
 \vspace{1em}
@@ -6929,7 +7143,7 @@ Given the sequence $\Theta_{gr}$ in \textbf{\hyperref[EQPROP6b]{Equation \ref{EQ
 
 Note that though we might attempt to solve \textbf{\hyperref[PROBSC1b]{Problem \ref{PROBSC1b}}} naively by merely counting the terms in the sequence under question, or by merely checking the relative positions of the involved terms in the computed MSS such as in \textbf{\hyperref[TRANSMSS1b]{Transformation \ref{TRANSMSS1b}}}, it is not the best way to arrive at a solution. Moreover, and as we have encountered in the previous proposal, and especially since we know that elements that tie on frequency shall occur adjacent to each other in the MSS of a sequence --- ignoring their order of first-occurrence --- and yet, without having a way to look at the frequencies of each element in the MSS, we might not correctly solve this problem \textit{elegantly} and/or optimally (for very large sequences such as the kind we saw when treating of genetic code sequences\cite{lutalo_2025_trans_genetics} that might span millions of terms). 
 
-And so, as laid out in a treatise on how transformatics might be applied in the sequence-heavy science of genetics\cite{lutalo_2025_trans_genetics}, in particular, \textbf{Section 6.4} of \cite{lutalo_2025_trans_genetics}, instead of just the MSS, we can instead compute the related \textbf{sequence characteristic} (SC) statistic, and which, as per \textbf{Definition 8} in that work, consists of both the same exact elements as in the MSS, but with each distinct symbol followed by/annotated by its relative frequency in the original/source sequence. Essentially, given some sequence $\Theta$, and given we know its modal sequence statistic is $\overset{>}{\Theta}$, the SC is as:
+And so, as laid out in a treatise on how transformatics might be applied in the sequence-heavy science of genetics\cite{lutalo_2025_trans_genetics}, in particular, \textbf{Section 6.4} of \cite{lutalo_2025_trans_genetics}, instead of just the MSS, we can instead compute the related \textbf{sequence characteristic} (SC) statistic, and which, as per \textbf{Definition 8} in that work, consists of both the same exact elements as in the MSS, but with each distinct symbol followed by/annotated by its relative frequency in the original/source sequence. Essentially, given some sequence $\Theta$, and given we know its modal sequence statistic is $\overset{>}{\Theta}$, the SC is as\index{sequence characteristic}:
 
 \vspace{1em}
 \begin{equation}
@@ -7015,7 +7229,7 @@ y:vSC | r!:__:.|d:.$
 #(=8_4.9_3.1_2.3_2.6_1.0_1.7_1.4_1.5_1)
    \end{lstlisting}
   \end{tcolorbox}
-  \captionof{figure}{TEA EXAMPLE: \textbf{SC-Computer}: transforms any input sequence into its sequence characteristic!}
+  \captionof{figure}{TEA EXAMPLE: \textbf{SC-Computer}: transforms any input sequence\index{sequence characteristic!TEA program} into its sequence characteristic!}
   \label{LISTSC}
   
   \vspace{2em}
@@ -7043,7 +7257,7 @@ In this section though, and building upon what we have already encountered, we a
 \item Where two or more sequences are involved, and where the SC for each sequence is already known or computed, the PC for the entire collection can readily be derived from the SCs thus already computed as an optimal strategy.
 \end{enumerate}
 
-In summary though, and given a collection of $n$ sequences\footnote{Potentially of arbitrary length and composition.} --- basically a sequence of n-subsequences --- denoted $\Theta^n$, we then can compute the PC as such:
+In summary though, and given a collection of $n$ sequences\footnote{Potentially of arbitrary length and composition.} --- basically a sequence of n-subsequences --- denoted $\Theta^n$, we then can compute the PC as such\index{population characteristic}:
 
 \vspace{1em}
 \begin{equation}
@@ -7091,7 +7305,7 @@ And that if we wish to re-write the same sequence such that every $k$ terms are 
 \vspace{1em}
 
 
-Further, and for any arbitrary sequences, we saw that we could leverage a special kind of transformer that can take a flat-structure or lower-order sequence and from it generate a similar, but higher-order sequence (also understood to mean, a sequence of some n-grams/k-grams such that $k > 1$), as such:
+Further, and for any arbitrary sequences, we saw that we could leverage a special kind of transformer that can take a flat-structure or lower-order sequence and from it generate a similar, but higher-order sequence\footnote{Also which we might refer to as a ``super-sequence"\index{sequence!super-sequence}.} (also understood to mean, a sequence of some n-grams/k-grams such that $k > 1$), as such:
 
 \vspace{1em}
 \begin{transf}[The \textbf{k-GRAM Generator}]
@@ -7231,7 +7445,7 @@ v:vIN|u!:|v:vMSS|v:vSC:{}|l:lPROC|y:vMSS|d!:^.|v:vW|y:vMSS|d:^.|v:vMSS|y:vW|f:^$
  
  As one shall establish while studying \textbf{the 26 TEA primitives A: to Z:}\cite{Lutalo2024TEATAZ}, or if they dive deeper into the potential \textbf{182 distinct TEA commands}\cite{Lutalo2024TEATAZ}; apart from branching commands such as \textbf{F:} (the ``Fork") and \textbf{Q:} (the ``Quit") and commands such as \textbf{L:} (the ``Label") that don't modify or alter the \textbf{Active Input}(AI)\cite{Lutalo2024TEATAZ} --- meaning, when they are encountered in a TEA program, they merely pass on  the current input to the next instruction unmodified, most, or all of the bulk of TEA programming consists of some sequence processing instruction that accepts some input [sequence], processes it or transforms it, and then returns the resultant [sequence] as the \textbf{Instruction Output}(IO).\\
  
- Thus, and without loss of generality, we can \textbf{model or think of any program expressible in the TEA language as a computer program, abstract machine or automaton, expressible as or reducible to just an ordered chain of sequence transformers.} A good demonstration of this is the following basic program, which, when presented with any input text (a sequence of characters), reduces or transforms it into a resultant sequence of characters, preserving their original order, but with the transformation resulting in only UPPER-CASE CONSONANTS [derived from the source/input sequence].\\
+ Thus, and without loss of generality, we can \textbf{model or think of any program expressible in the TEA language as a computer program, abstract machine or automaton, expressible as or reducible to just an ordered chain of sequence transformers.}\index{program!as higher-order transformer} A good demonstration of this is the following basic program, which, when presented with any input text (a sequence of characters), reduces or transforms it into a resultant sequence of characters, preserving their original order, but with the transformation resulting in only UPPER-CASE CONSONANTS [derived from the source/input sequence].\\
 
 \vspace{2em} 
  
@@ -7239,7 +7453,7 @@ v:vIN|u!:|v:vMSS|v:vSC:{}|l:lPROC|y:vMSS|d!:^.|v:vW|y:vMSS|d:^.|v:vMSS|y:vW|f:^$
   %\centering
   \begin{tcolorbox}[teaterminalstyle, title=TEA Program: CONSONANT FILTER, breakable]
     %\begin{lstlisting}[language=TEA, caption={SC-Generator Minified}, label={LSTSCGENMINI}, numbers=left]
-    \begin{lstlisting}[language=TEA,breaklines=true]
+    \begin{lstlisting}[language=TEA,breaklines=true,label={LSTCONSFIL},caption=CF in TEA]
 i:{This is a TEST 123} | z!: | d:[AEIOU] | d!:[A-Z]
    \end{lstlisting}
   \end{tcolorbox}
@@ -7293,8 +7507,9 @@ $\langle \text{\textit{hello world 123?}} \rangle \xrightarrow{i:\{\text{This is
 Most important about what we can glean from \textbf{\hyperref[EQPROP10b]{Equation \ref{EQPROP10b}}} is the fact that we might be able to compute a kind of \textbf{information-content} measure for any arbitrary sequence, merely by looking at the length of the sequence Vs the length of the symbol set spanned by that sequence. Essentially, and as shown in that distillation, given any sequence $\Theta$, we could compute a \textbf{Sequence Entropy} for it --- $\Phi(\Theta)$ as such:
 
 \vspace{1em}
-\begin{defn}[The \textbf{Sequence Entropy}, $\Phi(\Theta)$\index{sequence entropy!definition}\index{entropy}]
+\begin{defn}[The \textbf{Sequence Entropy}, $\Phi(\Theta)$\index{sequence entropy!definition}\index{entropy}\index{sequence!entropy}]
 \label{DEFENTROPYb}
+\index{definition!Sequence Entropy}
 Given any sequence $\Theta \langle \theta_{i \in [1,n]} \rangle : \mathbb{N} \times \psi_*$, we can compute a measure of how much information (\textbf{sequence entropy}) there is in the sequence, using the following measure:
 
 \vspace{1em}
@@ -7355,12 +7570,21 @@ For any particular sequence of interest, the following associated, and generic \
   %\centering
   \begin{tcolorbox}[teaterminalstyle, title=TEA Program: Sequence Entropy Computer, breakable]
     %\begin{lstlisting}[language=TEA, caption={SC-Generator Minified}, label={LSTSCGENMINI}, numbers=left]
-    \begin{lstlisting}[language=TEA,breaklines=true]
+    \begin{lstlisting}[language=TEA,breaklines=true,label={LSTSEQENTROPY},caption=SEC in TEA]
+####################################
+# SEQUENCE ENTROPY COMPUTER v2
+#----------------------------------|
+# computes a measure of information
+# for any input based on new theory
+# by Fut. Prof. JWL 
+# (ref: "Transformatics 101 - Explained")
+#-----------------------------------|
+
 # e.g given input as `hello hello world'
 v:vIN|v*!:vIN|v:vLIN|y:vIN
 |u!:|v:vMSS|v*!:vMSS|v:vLMSS
 |g*:{/}:vLMSS:vLIN|v:vCMD|
-z*:vCMD
+r.:
 # returns something like: 0.47058823529411764
    \end{lstlisting}
   \end{tcolorbox}
@@ -7421,7 +7645,8 @@ Lutalo, Joseph Willrich (2025). \textbf{TRANSFORMATICS 101 - explained.} I*POW. 
 
 \begin{defn}[\textbf{Transformatics}]
 \label{DEFTRANS}
-The study of \textbf{sequences of symbols}, their transformations and analysis.
+\index{definition!transformatics}\index{transformatics!definition (simple)}
+The \textbf{study of sequences of symbols}, their transformations and analysis.
 \end{defn}
 
 \vspace{2em}
@@ -7770,6 +7995,7 @@ Before we close our focus on extending what was originally introduced via the Tr
 \subsection{Relation to Statistics}
 \label{SECRELSTAT}
 
+\index{transformatics!rel. to Statistics}
 It shall be helpful to note that, earlier attempts to situate this theory within the spectrum of mathematics --- such as when we penned the paper \cite{transformatics}, mostly relied on ``bias" towards where it is that most of the developed theory at that point would find its closest relatives. Thus, it should not be so shocking that initially, we thought perhaps Transformatics had better be treated as a theory within \textbf{mathematical statistics} --- especially because, as one can tell looking at the proposed applications of the theory (\textbf{\hyperref[SECPROP]{Section \ref{SECPROP}}}), many of the proposed and developed ideas back then indeed resonated well with work in \textbf{Statistics}, and that, as with many theories and formalisms in that field, much of what makes statistics what it is, starts by the \textit{special} treatment of sequences known as \texttt{data}\footnote{Whether as ``raw data" or as ``coded data"\cite{clarke1992basic}}\index{data!coded or raw} --- such as when we treat of a variable $X$, that might taken on values $x_i$ spanning some symbol set ($\psi_X$) and ordered by the naturals ($\mathbb{N}$) --- i.e 
 
 \begin{equation}
@@ -7785,6 +8011,7 @@ However, and despite the fact that statistics heavily and naturally relates to n
 \subsection{Relation to Linear Algebra}
 \label{SECRELLINALG}
 
+\index{transformatics!rel. to Linear Algebra}
 The other competing field might for example be \textbf{Linear Algebra}\footnote{Majorly\cite{copilot_dna_assistant} attributed  to \textbf{Hermann Grassmann} the 19th century German polymath that first \textit{created} linear algebra in its modern form when he penned the 1844 work \textit{Die Lineale Ausdehnungslehre} (``Theory of Linear Extension") which introduced the ideas of vector spaces and linear combinations.  Other contributors\cite{copilot_dna_assistant} are Gottfried Willhelm Leibniz (1693) that introduced early ideas of matrices and determinants; Gabriel Cramer (1750) that published \textit{Cramer's Rule} for solving $n$ equations in $n$ unknowns; Joseph-Louis Lagrange (late 1700s) that used matrices to study bilinear forms, and finally Giuseppe Peano (1888) that introduced the abstract modern concept of a vector space, in essence, completing the conceptual framework that underlies all of linear algebra.}; in that field, sequences do show up right at the start (see for example Chapter 1 of \cite{nef1967linear}), and particularly, they \textit{initially} manifest in the form or under the terminology of \texttt{sets}, and then \textit{soon enough} in the [more transformatic] form of matrices of many kinds, and that, very often, much of the theory and formalisms of linear algebra rotate around encoding data as the mathematical structure known as a matrix\footnote{Which we have seen to actually be based on sequences --- refer to \textbf{\hyperref[SECDEFSTRUCTURES]{Section \ref{SECDEFSTRUCTURES}}}}, whether of a simple form such as 1-dimensional finite sequence, or as high-dimensional dense or sparse matrices encoding infinitely large spaces or quantifiably large datasets. That field also presents many processes that deal with reducing such basic or higher-order sequences\index{sequence!higher-order} (\textbf{\hyperref[PROP8]{Section \ref{PROP8}}}), also sometimes likened to or related to ``vectors", to just simple expressions or quantities such as scalars --- basic numbers in their simplest forms, via \textbf{linear-transformations} of many kinds. And talking of transformations, we find in the field of linear algebra, many kinds of ways that one sequence might be mapped or reduced to another sequence, via processes or computations such as computing the basis (a sequence from which other sequences of similar structure can be derived), endomorphisms (linear transforms that map a type onto itself), inverses (sequences which would result in the identity sequence when multiplied with the source sequence), etc.\cite{nef1967linear}
 
 \vspace{2em}
@@ -8111,6 +8338,7 @@ So that, where we have been talking of a transformer (in transformatics), we mig
 \subsection{Relation to Calculus}
 \label{SECRELCALCULUS}
 
+\index{transformatics!rel. to Calculus}
 And then we encounter sequences and especially [linear] sequence transformations, when dealing with sequence-based mathematical structures known as series. Concerning this, note that Sequences and Series are especially commonplace in texts and mathematics dealing with Calculus such as \cite{ronlarsoncalculus}, \cite{fitzpatrick1995advanced} and \cite{Grossman1986CalculusOneVariable} to name a few. Moreover, and as laid out in \cite{Grossman1986CalculusOneVariable}, when sequences are treated of in calculus, it is mostly, or especially in the context of ``sequences of numbers"\footnote{In fact, especially as ``sequence of real numbers", for which  \cite{fitzpatrick1995advanced} says ``A sequence of real numbers is a real-valued function whose domain is the set of natural numbers", and which he generalizes as $f:\mathbb{N} \rightarrow \mathbb{R}$, but which we might also understand to be $f: \mathbb{N} \times \mathbb{R}$ when we wish to emphasize the fact that the sequence is otherwise reducible to set of pairs where for each natural number [position] index, there is a corresponding real number --- this later notation is more common in our transformatics literature.} as we see when he says:
 
 
@@ -8447,11 +8675,12 @@ With those discussions then, we close our review of calculus vis-a-vis what is h
 
 Next, we shall quickly look at a few other [sub-]fields that also somewhat relate to either the concepts or the nomenclature used in transformatics. 
 
+
 \vspace{2em}
 
 \subsubsection{Signal Processing}
 
-
+\index{transformatics!rel. Signal Processing}
 In his book\cite{Wang2012} that is critically important for modern practice in signal processing and analysis, \textbf{Professor Ruye Wang}\footnote{Professor of Engineering at Harvey Mudd College (Claremont, California), also past Principal Investigator at NASA's Jet Propulsion Laboratory.} brings to surface many basic and nuanced applications of [especially linear] transformations on data originating from sensors and natural phenomena. We bring up Wang's work here, not just because of the somewhat \textit{shocking} absence of the term ``transformer" throughout a book treating of transformations, and whose title --- \textbf{``Introduction to Orthogonal Transforms: With Applications in Data Processing and Analysis"} --- would make anyone already familiar with transformatics turn an eye; but especially because, as we shall briefly demonstrate, several [,if not most,] of the kind of transformation operations described in relation to data processing and analysis as presented in his work, could be reduced to or perhaps expressed using our notion of transformers --- without loss of generality or accuracy.
 
 
@@ -8642,6 +8871,7 @@ Thus, whether it is in economics, or in chemical engineering or perhaps any of t
 
 \subsubsection{Artificial Intelligence and Machine Learning: Natural Language Processing via Neural Networks --- so-called ``Transformers"}
 
+\index{transformatics!rel. Artificial Intelligence}
 Our final discussion is going to be centered around a very important blog-post\cite{Rohrer2020} that I first came across while browsing the high-signal, ultra-busy technology and research news fire-hose known as \textbf{Hacker News}\footnote{Very popular among elite technocrats all over the world, but especially in the Silicon Valley and mostly because of its \textbf{Y-Combinator}/Paul Graham-biased Internet Community regulars from across all kinds of [tech-]startups and firms big and small.}\footnote{See \url{http://news.ycombinator.com/news}}.
 
 \vspace{2em}
@@ -8831,6 +9061,7 @@ And thus, or rather, finally, we might advance a more concrete definition for th
 
 \begin{defn}[\textbf{Transformatics}]
 \label{DEFTRANS2}
+\index{transformatics!definition (rigorous)}
 The study of \textbf{sequence algebra}\index{sequence!algebra}\index{sequence algebra}\index{transformatics!as an algebra}\index{transformatics!definition}, \textbf{sequence transformations} and \textbf{sequence analysis} ---- succinctly: \texttt{the study of the algebra, transformations and analysis of sequences}.
 \end{defn}
 
@@ -8849,22 +9080,29 @@ So that then, transformatics is \textbf{based on} set theory, algebra and mathem
 \label{SECFUTDIRECT}
 
 
-\begin{defn}[The Transformatics of \textbf{Teleportation}\footnote{In this (mostly speculative) exploration, we shall simply treat \textbf{teleportation} and \textbf{time travel} as though they were the same or related phenomena}.]
+\begin{prop}[The Transformatics of \textbf{Teleportation}\footnote{In this (mostly speculative) exploration, we shall simply treat \textbf{teleportation} and \textbf{time travel} as though they were the same or related phenomena}.]
+
+\vspace{1em}
 
 \begin{defn}[\textbf{Teleportation}]
 \label{DEFTELEPORTATION}
- is a natural, simulated or preternatural phenomena, by which a collection of particles existing in some definite space and time, are projected to an alternate collection of similar particles, with one or more of their properties altered --- in the case of conventional concepts of teleportation, such might mean expressing \textit{a thing} that is existing at the present time, as it were or shall be in either a past or future time frame respectively. In the language and calculus of transformatics, such might be a transformation of some given sequence of \textit{n}-grams of dimension 1 or more --- e.g particles of something, where each particle is described by a set of 4 or more numeric values such as their $x$, $y$, $z$ coordinates in space, and a fourth coordinate, $t$, that captures the time at which that particular particle located at a definite location is expressed. A teleportation machine then, would be any abstract or \textit{actual} machine, which, when presented with \textit{the thing} --- say, a matrix of particles expressing its [initial] location in some particular space-time, can then produce and return another matrix depicting how that space-expression shall be at a later or earlier (basically, different) time, as per the following \textbf{time machine} specification:
+\index{definition!Teleportation}
+ is a natural, simulated or preternatural phenomena, by which a collection of particles existing in some definite space and time, are projected to an alternate collection of similar particles, with one or more of their properties altered --- in the case of conventional concepts of teleportation, such might mean expressing \textit{a thing} that is existing at the present time, as it were or shall be in either a past or future time frame respectively. In the language and calculus of transformatics, such might be a transformation of some given sequence of \textit{n}-grams of dimension 1 or more --- e.g particles of something, where each particle is described by a set of 4 or more numeric values such as their $x$, $y$, $z$ coordinates in space, and a fourth coordinate, $t$, that captures the time at which that particular particle located at a definite location is expressed. A teleportation machine then, would be any abstract or \textit{actual} machine, which, when presented with \textit{the thing} --- say, a matrix of particles expressing its [initial] location in some particular space-time, can then produce and return another matrix depicting how that information-expression shall be at a later or earlier (basically, different) time, as per the following \textbf{time machine} specification:
+ 
+ \vspace{1em}
 
-\begin{defn}[The \textbf{Teleportation Machine}, M$\{\Delta T \rightarrow \Delta P\}$] 
-is the machine, which, when given a sequence, $P^n\langle \rho_{i \in [1,\alpha]} | \invpi(\rho) = 3+k \land \forall \rho_i \in \ddot{P} : k \in \mathbb{N}, i \in [1,3+k], \alpha = \frac{n}{3+k} \rangle$ such that $\ddot{P}$ is $P^n$ expressed as a higher-order sequence of $(3+k)$-gram particles, and so that $\invpi(\ddot{P})=\alpha$ or rather that $\invpi(\ddot{P}^\alpha)=\alpha$, and so $\ddot{P}^{2\alpha}$ is some derived resultant sequence of particles\footnote{Basically, coordinates in some \textbf{$(3+k)$-space}, such that $k = 0$ represents \textbf{3D} space for example. However, for the teleportation machine, we need to also cater for \textbf{the time property} of each particle in the sequence $\ddot{P}$, and so, perhaps we need $k \geq 1$ so as to also cater for space-time. $\ddot{P}^{2\alpha}$ then, is meant to be a sequence capable of containing the original sequence of particles as well as their new/alternate projections, losslessly.} of $3+k$ dimension, and so that the machine produces that new sequence of similar dimensions and protracted cardinality, $P^*$ = $\ddot{P}^{2\alpha}$,such that for each original particle $\rho_i \in \ddot{P}^{\alpha}$, there is a corresponding complement or pairwise-transformed-partner particle, $\rho^*_i$, in the resultant sequence, $P^*$ --- the later half of $\ddot{P}^{2\alpha}$, as produced by the following sequence transformer specification:\\
+\begin{defn}[The \textbf{Teleportation-Time Machine}, M$\{\Delta T \rightarrow \Delta P\}$] 
+\label{DEFTIMEMACHINE}
+\index{definition!Time Machine}
+is the machine, which, when given a sequence, $P^n\langle \rho_{i \in [1,\alpha]} | \invpi(\rho) = 3+k \land \forall \rho_i \in \ddot{P} : k \in \mathbb{N}, i \in [1,3+k], \alpha = \frac{n}{3+k} \rangle$ such that $\ddot{P}$ is $P^n$ expressed as a higher-order sequence of $(3+k)$-gram particles, and so that $\invpi(\ddot{P})=\alpha$ or rather that $\invpi(\ddot{P}^\alpha)=\alpha$, and so $\ddot{P}^{2\alpha}$ is some derived resultant sequence of particles\footnote{Basically, coordinates in some \textbf{$(3+k)$-space}, such that $k = 0$ represents \textbf{3D} space for example. However, for the teleportation machine, we need to also cater for \textbf{the time property} of each particle in the sequence $\ddot{P}$, and so, perhaps we need $k \geq 1$ so as to also cater for space-time. $\ddot{P}^{2\alpha}$ then, is meant to be a sequence capable of containing the original sequence of particles as well as their new/alternate projections, losslessly.} of $3+k$ dimension, and so that the machine produces that new sequence of similar dimensions and protracted cardinality, $P^*$ = $\ddot{P}^{2\alpha}$,such that for each original particle $\rho_i \in \ddot{P}^{\alpha}$, there is a corresponding complement or pairwise-transformed-partner particle, $\rho^*_i$, in the resultant sequence, $P^*$ --- such as in the later half of $\ddot{P}^{2\alpha}$, as produced by the following sequence transformer specification:\\
 
 \begin{transf}[The \textbf{Teleportation Transform}]
 \label{TRANSFTELEP}
 $P^{n} \rightarrow P^* ;$\\
-$\invpi(P^*) = 2 \times \invpi(P^{n}) = 2 \times n$\\
-$\land P^n \equiv \ddot{P}^{\alpha} \quad \land \quad P^* \equiv \ddot{P}^{2\alpha}$\\
-$\land \forall \rho_i \in \ddot{P}^{\alpha} \quad \exists \rho^*_i \in \ddot{P}^{2\alpha} : \rho^*_i = \rho_i \quad \land \exists \rho^*_{i+\alpha} : \tilde{A}(\rho_i \rightarrow \rho^*_{i+\alpha}) > 0$\\
-$\land \rho^*_{i+\alpha} = f(\rho_i,\Delta T)$
+$\invpi(P^*) = 2 \times \invpi(P^{n}) = 2n$\\
+$\land \quad P^n \equiv \ddot{P}^{\alpha} \quad \land \quad P^* \equiv \ddot{P}^{2\alpha}$\\
+$\land \quad \forall \rho_i \in \ddot{P}^{\alpha} \quad \exists \rho^*_i \in \ddot{P}^{2\alpha} : \rho^*_i = \rho_i \quad \land \quad \exists \rho^*_{i+\alpha} : \tilde{A}(\rho_i \rightarrow \rho^*_{i+\alpha}) > 0$\\
+$\land \quad \rho^*_{i+\alpha} = f(\rho_i,\Delta T)$
 $\qed$\\
 \end{transf}
 \end{defn}
@@ -8877,12 +9115,16 @@ With \textbf{\hyperref[TRANSFTELEP]{Transformer \ref{TRANSFTELEP}}}, and some ti
 f({x,y,z,t_1,t_n}) = \Gamma(\delta x,\delta y,\delta z,\Delta T)
 \end{equation}\\
 
-We can predict/extrapolate any point or particle between two or more moments across space and time, relative to the absolute change one or more of the (3+k) dimensions --- in the simplest case, in the time-dimension (4$^{th}$ dimension) as well as a particular resolution/reference space-time frame. Thus, and for example, we could take a plane and by translating it to another plane removed from the first by a reasonable significant distance, and such that the translation is orthogonal to some dimension $dim < 3 + k$, we might describe a solid --- \textbf{a teleportation} of particles too, formed by rotating the plane about some axis such as orthogonal to it, and such that the space-time thus spanned is bound by the source and resultant plane sequences, but also defined by them.
+We can predict/extrapolate any point or particle between two or more moments across space and time, relative to the absolute change in one or more of the (3+k) dimensions --- in the simplest case, in the time-dimension (4$^{th}$ dimension) as well as a particular resolution/reference space-time frame. Thus, and for example, we could take a plane and by translating it to another plane removed from the first by a reasonable significant distance, and such that the translation is orthogonal to some dimension $dim < 3 + k$, we might describe a solid --- \textbf{a teleportation} of particles too, formed by rotating the plane about some axis such as orthogonal to it, and such that the space-time thus spanned is bound by the source and resultant plane sequences, but also defined by them.
 $\qed$
-\end{defn}
+\end{prop}
 
+%draw horizontal line
+\noindent\rule{\textwidth}{0.4pt}
 
 Because this volume is about how we might apply transformatics in GENETICS, and yet the underlying \textit{original} intent was to also explore how to further transformatics as its own line of inquiry, not just in Genetics, but also in other sciences and perhaps even the arts(?), it shall make sense to add to what has already been discussed and shared in the rest of this book, with a sharing of a recent excerpt from the author's psychoanalytic notes --- because, like we mentioned in the \textbf{\hyperref[SECPREFACE]{Preface}} of this work, Carl Jung's ideas\cite{jung1964symbols} on leveraging \hl{dream-analysis} to further not just our understanding of ourselves but also of the world, did have such a great impact on the author over the years, it wouldn't make sense closing this book without sharing an aspect of how dreaming and Jung's methods have helped in making much of this work possible, as well as how it might help define the future directions of our further research and studies in relation to the current subject (and transformatics in general). 
+
+\vspace{1em}
 
 Talking of which, the following is a verbatim excerpt, and is accompanied by a painting --- ``Arrival of the Anunnaki"\footnote{Image credit from author's Art Portfolio: \url{https://www.deviantart.com/nemesisfixx/art/Arrival-of-the-Anunnaki-inverted-942888530}}, also by the author, and part of their \textbf{Zermelo Frankael Dream Collection}\footnote{To get an idea what was in the other paintings in that collection from 2022, checkout \url{https://www.deviantart.com/nemesisfixx/art/The-Zermelo-Frankael-Dream-Collection-II-942887985} and \url{https://www.deviantart.com/nemesisfixx/art/Best-of-JWL-Art-from-2022-940119085}} most of whose art pieces have since been either sold or given out as souvenirs to friends and family.
 
@@ -8921,7 +9163,7 @@ Talking of which, the following is a verbatim excerpt, and is accompanied by a p
 \textbf{NOTE:} \textit{After waking up and thinking a bit about all this.. a stunning realization occurred to me; there's an acrylic painting I once did (titled ``Arrival of the Annunaki", and which I had exhibited at the then Ndugu Art Gallery in Entebbe Town circa 2022, but which now was at home with me), in which I painted a vision that had occurred to me concerning a spaceship that visited Earth some day (in the future perhaps), and that the ship shone a very brilliant light upon some village, and that as people freaked out, a ladder descended from the ship onto the earth, and some few bold people ascended into the ship by climbing up that ladder, while others, too afraid, only scattered and ran away.} 
 
 
-\textit{So, while thinking about this Bermuda experiment on TRANSFORMATICS and also this interesting painting, and trying to connect the dots... I feel like.. perhaps there is something about the DNA ladder-like structure that could get us to understanding the biology or natural powers of aliens? Life on other planets or worlds perhaps? Jacob's ladder from the Scriptures perhaps? Basically, it strongly feels like these two ``dreams" might be telling us (or me in particular) or pointing us towards something both alarming and exhilarating! Also, it could indeed inspire future directions and explorations of TRANSFORMATICS in both PHYSICS and GENETICS!}
+\textit{So, while thinking about this Bermuda experiment on TRANSFORMATICS and also this interesting painting, and trying to connect the dots... I feel like.. perhaps there is something about the DNA ladder-like structure that could get us to understand the biology or natural powers of aliens? Life on other planets or worlds perhaps? Jacob's ladder from the Scriptures perhaps? Basically, it strongly feels like these two ``dreams" might be telling us (or me in particular) or pointing us towards something both alarming and exhilarating! Also, it could indeed inspire future directions and explorations of TRANSFORMATICS in both PHYSICS and GENETICS!}
 
 
 \textit{\#dream \#diary \#advanced \#physics \#transformatics \#jwl \#reflections \#futuredirections
