@@ -1,13 +1,6 @@
 \begin{theindex}
 
   \item $\dot{\psi}_{DNA}$, \hyperpage{29}
-  \item $\psi _{DNA}$, \hyperpage{12}
-  \item $\psi _{RNA}$, \hyperpage{13}
-  \item $\psi _{ascii}$, \hyperpage{61}
-  \item $\psi _{na-START}$, \hyperpage{21}
-  \item $\psi _{na-STOP}$, \hyperpage{22}
-  \item $\psi _{na}$, \hyperpage{13}
-  \item $\psi_{01}$, \hyperpage{25}
 
   \indexspace
 
@@ -69,8 +62,8 @@
     \subitem Sequence Entropy, \hyperpage{209}
     \subitem START-codons, \hyperpage{21}
     \subitem STOP-codons, \hyperpage{22}
-    \subitem Teleportation, \hyperpage{253}
-    \subitem Time Machine, \hyperpage{253}
+    \subitem Teleportation, \hyperpage{255}
+    \subitem Time Machine, \hyperpage{255}
     \subitem transformatics, \hyperpage{215}
   \item DNA, \hyperpage{5}
     \subitem as sequences, \hyperpage{11}
@@ -248,7 +241,7 @@
   \item Second Lu-Shuffle Algorithm (SLSA), \hyperpage{86}, 
 		\hyperpage{181}
   \item sequence
-    \subitem algebra, \hyperpage{26}, \hyperpage{252}
+    \subitem algebra, \hyperpage{26}, \hyperpage{253}
     \subitem anagram, \hyperpage{30}, \hyperpage{88}
     \subitem as matrices, \hyperpage{204}
     \subitem cardinality under multiplication, \hyperpage{61}
@@ -262,7 +255,7 @@
     \subitem shuffling, \hyperpage{83}
     \subitem string notation, \hyperpage{15}
     \subitem super-sequence, \hyperpage{203}
-  \item sequence algebra, \hyperpage{252}
+  \item sequence algebra, \hyperpage{253}
   \item sequence analysis, \hyperpage{35}
     \subitem anagram distance, \hyperpage{19}, \hyperpage{192}
     \subitem base membership, \hyperpage{19}
@@ -287,6 +280,13 @@
   \item STOP-codons, \hyperpage{22}
   \item super-sequence, \hyperpage{203}
   \item symbol set
+    \subitem $\psi _{DNA}$, \hyperpage{12}
+    \subitem $\psi _{RNA}$, \hyperpage{13}
+    \subitem $\psi _{ascii}$, \hyperpage{61}
+    \subitem $\psi _{na-START}$, \hyperpage{21}
+    \subitem $\psi _{na-STOP}$, \hyperpage{22}
+    \subitem $\psi _{na}$, \hyperpage{13}
+    \subitem $\psi_{01}$, \hyperpage{25}
     \subitem codon, \hyperpage{113}
     \subitem DNA-Digits, \hyperpage{149}
     \subitem natural, \hyperpage{20}
@@ -314,9 +314,9 @@
   \item transcription, \hyperpage{126}
     \subitem LGES protocol, \hyperpage{127}, \hyperpage{129}
   \item transformatics
-    \subitem as an algebra, \hyperpage{252}
-    \subitem definition, \hyperpage{252}
-    \subitem definition (rigorous), \hyperpage{252}
+    \subitem as an algebra, \hyperpage{253}
+    \subitem definition, \hyperpage{253}
+    \subitem definition (rigorous), \hyperpage{253}
     \subitem definition (simple), \hyperpage{215}
     \subitem foundations, \hyperpage{187}
     \subitem genetics introduction, \hyperpage{5}
@@ -326,6 +326,7 @@
     \subitem rel. Artificial Intelligence, \hyperpage{246}
     \subitem rel. Signal Processing, \hyperpage{241}
     \subitem rel. to Calculus, \hyperpage{232}
+    \subitem rel. to Computational Mathematics, \hyperpage{251}
     \subitem rel. to Frobenoids, \hyperpage{11}
     \subitem rel. to Linear Algebra, \hyperpage{225}
     \subitem rel. to Statistics, \hyperpage{224}

@@ -22,7 +22,7 @@
 \indexentry{transformatics!mappings|hyperpage}{11}
 \indexentry{DNA!as sequences|hyperpage}{11}
 \indexentry{DNA!symbol set|hyperpage}{12}
-\indexentry{$\psi _{DNA}$|hyperpage}{12}
+\indexentry{symbol set!$\psi _{DNA}$|hyperpage}{12}
 \indexentry{nucleic acids|hyperpage}{12}
 \indexentry{nucleotides|hyperpage}{12}
 \indexentry{DNA!nucleotides|hyperpage}{12}
@@ -32,8 +32,8 @@
 \indexentry{nucleotides|hyperpage}{13}
 \indexentry{RNA!nucleotides|hyperpage}{13}
 \indexentry{nucleic acids|hyperpage}{13}
-\indexentry{$\psi _{RNA}$|hyperpage}{13}
-\indexentry{$\psi _{na}$|hyperpage}{13}
+\indexentry{symbol set!$\psi _{RNA}$|hyperpage}{13}
+\indexentry{symbol set!$\psi _{na}$|hyperpage}{13}
 \indexentry{law!na-Identifier Symbol Set|hyperpage}{13}
 \indexentry{nucleic acids!universal symbol set|hyperpage}{13}
 \indexentry{na-sequence|hyperpage}{14}
@@ -59,13 +59,13 @@
 \indexentry{symbol set!natural|hyperpage}{20}
 \indexentry{generator!natural symbol set|hyperpage}{20}
 \indexentry{definition!START-codons|hyperpage}{21}
-\indexentry{$\psi _{na-START}$|hyperpage}{21}
+\indexentry{symbol set!$\psi _{na-START}$|hyperpage}{21}
 \indexentry{START-codons|hyperpage}{21}
 \indexentry{gene programs!non-coding (introns)|hyperpage}{22}
 \indexentry{law!Introns|hyperpage}{22}
 \indexentry{introns|hyperpage}{22}
 \indexentry{definition!STOP-codons|hyperpage}{22}
-\indexentry{$\psi _{na-STOP}$|hyperpage}{22}
+\indexentry{symbol set!$\psi _{na-STOP}$|hyperpage}{22}
 \indexentry{STOP-codons|hyperpage}{22}
 \indexentry{gene program!evil programs|hyperpage}{22}
 \indexentry{sequence analysis!genetic pathologies|hyperpage}{22}
@@ -77,7 +77,7 @@
 \indexentry{transformatics!in medicine|hyperpage}{23}
 \indexentry{sequence!complement|hyperpage}{25}
 \indexentry{lu-number system|hyperpage}{25}
-\indexentry{$\psi_{01}$|hyperpage}{25}
+\indexentry{symbol set!$\psi_{01}$|hyperpage}{25}
 \indexentry{table!sequence transforms|hyperpage}{26}
 \indexentry{sequence!algebra|hyperpage}{26}
 \indexentry{sequence!complement|hyperpage}{27}
@@ -140,7 +140,7 @@
 \indexentry{G$\ddot{o}$del number!sequence similarity test|hyperpage}{61}
 \indexentry{sequence!cardinality under multiplication|hyperpage}{61}
 \indexentry{GTNC|hyperpage}{61}
-\indexentry{$\psi _{ascii}$|hyperpage}{61}
+\indexentry{symbol set!$\psi _{ascii}$|hyperpage}{61}
 \indexentry{sequencing|hyperpage}{63}
 \indexentry{genome!sequencing|hyperpage}{63}
 \indexentry{sequencing|hyperpage}{64}
@@ -314,10 +314,11 @@
 \indexentry{transformatics!rel. to Calculus|hyperpage}{232}
 \indexentry{transformatics!rel. Signal Processing|hyperpage}{241}
 \indexentry{transformatics!rel. Artificial Intelligence|hyperpage}{246}
-\indexentry{transformatics!definition (rigorous)|hyperpage}{252}
-\indexentry{sequence!algebra|hyperpage}{252}
-\indexentry{sequence algebra|hyperpage}{252}
-\indexentry{transformatics!as an algebra|hyperpage}{252}
-\indexentry{transformatics!definition|hyperpage}{252}
-\indexentry{definition!Teleportation|hyperpage}{253}
-\indexentry{definition!Time Machine|hyperpage}{253}
+\indexentry{transformatics!rel. to Computational Mathematics|hyperpage}{251}
+\indexentry{transformatics!definition (rigorous)|hyperpage}{253}
+\indexentry{sequence!algebra|hyperpage}{253}
+\indexentry{sequence algebra|hyperpage}{253}
+\indexentry{transformatics!as an algebra|hyperpage}{253}
+\indexentry{transformatics!definition|hyperpage}{253}
+\indexentry{definition!Teleportation|hyperpage}{255}
+\indexentry{definition!Time Machine|hyperpage}{255}

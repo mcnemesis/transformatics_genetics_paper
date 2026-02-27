@@ -105,9 +105,11 @@
 \contentsline {subsection}{\numberline {E.2.4}Relation to Several Other Branches of [Applied] Mathematics}{241}{subsection.a.E.2.4}%
 \contentsline {subsubsection}{Signal Processing}{241}{section*.79}%
 \contentsline {subsubsection}{Artificial Intelligence and Machine Learning: Natural Language Processing via Neural Networks --- so-called ``Transformers"}{246}{section*.80}%
-\contentsline {subsection}{\numberline {E.2.5}Transformatics as a new Algebra of Sequences}{251}{subsection.a.E.2.5}%
-\contentsline {section}{\numberline {E.3}A Final Definition and Justification of a Field}{252}{section.a.E.3}%
-\contentsline {chapter}{Appendix \numberline {F}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{253}{appendix.a.F}%
-\contentsline {chapter}{Final Dedication}{269}{appendix*.83}%
-\contentsline {chapter}{About the Author}{272}{appendix*.85}%
-\contentsline {chapter}{Colophon}{281}{appendix*.88}%
+\contentsline {subsubsection}{Computational Mathematics}{251}{section*.81}%
+\contentsline {subsection}{\numberline {E.2.5}Transformatics as a new Algebra of Sequences}{253}{subsection.a.E.2.5}%
+\contentsline {section}{\numberline {E.3}A Final Definition and Justification of a Field}{253}{section.a.E.3}%
+\contentsline {chapter}{Appendix \numberline {F}Future Directions and Explorations of TRANSFORMATICS in both PHYSICS and GENETICS?}{255}{appendix.a.F}%
+\contentsline {chapter}{Final Dedication}{271}{appendix*.84}%
+\contentsline {chapter}{About the Author}{274}{appendix*.86}%
+\contentsline {chapter}{The Index}{277}{appendix*.88}%
+\contentsline {chapter}{Colophon}{283}{appendix*.89}%
